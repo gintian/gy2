@@ -1,0 +1,70 @@
+/* CSS Document */
+*{margin:0;padding:0;border:0;}
+body {
+ font-family:"宋体";
+        font-size:12px;
+}
+
+
+#nav {
+  line-height: 24px;  list-style-type: none; background:;float:right;
+}
+
+#nav a {
+ display: block; text-align:center; font-size:13px;
+}
+
+#nav a:link  {
+ color:#666; text-decoration:none;
+}
+#nav a:visited  {
+ color:#666;text-decoration:none;
+}
+#nav a:hover  {
+ color:#666;text-decoration:none;
+}
+
+#nav li {
+ float: left; width: 68px;
+}
+#nav li a:hover{
+  
+}
+#nav li ul {
+ line-height: 24px;  list-style-type: none;text-align:left;
+ left: -999em; width: 100px; position: absolute;
+}
+#nav li ul li{
+ float: left; width: 100px;
+
+}
+
+
+#nav li ul a{
+ display: block;w\idth: 140px;text-align:left;padding-left:15px;font-size:12px;background:#ebeff3; border-bottom:1px solid #fff;
+}
+
+#nav li ul a:link  {
+ color:#666; text-decoration:none;
+}
+#nav li ul a:visited  {
+ color:#666;text-decoration:none;background:#ebeff3; font-size:12px;
+}
+#nav li ul a:hover  {
+ color:#666;text-decoration:none;font-size:12px;
+ background:#dde3ea;
+}
+
+#nav li:hover ul {
+ left: auto;
+}
+#nav li.sfhover ul {
+ left: auto;
+}
+#content {
+ clear: left;
+}
+.left_40{ *margin-left:-40px;}
+.left_30{ *margin-left:-30px;}
+
+

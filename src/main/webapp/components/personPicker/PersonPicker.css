@@ -1,0 +1,331 @@
+@CHARSET "UTF-8";
+
+/* 閬僵灞� */
+#hidebg {
+	  background: #ccc;
+      filter:alpha(opacity=50);  /*璁剧疆閫忔槑搴︿负60%*/ 
+      opacity:.5;  /*闈濱E娴忚鍣ㄤ笅璁剧疆閫忔槑搴︿负60%*/ 
+      z-index: 100;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+      zoom: 1; 
+      } 
+
+#person_picker_multiple_view body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,span,table,tr,td{margin:0;padding:0; border:none;}
+#person_picker_single_view body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,span,table,tr,td{margin:0;padding:0; border:none;}
+
+/* 閫変汉鎺т欢 */
+.PersonPicker-Main {
+	background: #FFF;
+	width: 280px;
+	height: 340px;
+	z-index: 2;
+	color: #666;
+	font-family: tahoma, arial, verdana, sans-serif;
+	font-size: 12px;
+}
+
+/* 閫変汉鎺т欢(鍗曢��) */
+.PersonPicker-Single.PersonPicker-Main {
+	position: absolute;
+	border: 1px #D5D5D5 solid;
+	z-index: 2147483584;
+}
+
+/* 閫変汉鎺т欢(澶氶��) */
+.PersonPicker-Multiple .PersonPicker-Main {
+	margin-left: 10px;
+}
+
+/* 閫変汉鎺т欢鍖呰９杈撳叆妗嗙殑div */
+.PersonPicker-Main-Keyword {
+	background: #FFFFFF;
+/* 	padding-top: 10px; */
+	height: 46px;
+}
+
+/* 杈撳叆妗� */
+.PersonPicker-Main-Keyword input {
+	font-size: 13px;
+	/* background: #DFE8F1; */
+	border: 1px #5BB0FF solid;
+	height: 28px;
+	line-height: 28px\9;
+	padding-left: 5px;
+	display: block;
+	position: relative;
+	top: 10px;
+}
+
+/* 杈撳叆妗�(鍗曢��) */
+.PersonPicker-Single .PersonPicker-Main-Keyword input {
+	margin: 0px auto;
+	width: 240px;
+}
+
+/* 杈撳叆妗�(澶氶��) */
+.PersonPicker-Multiple .PersonPicker-Main-Keyword input {
+	width: 273px;
+	box-sizing: content-box;
+	margin-left: 0px;
+}
+
+/* 鍏抽敭瀛楄緭鍏ユ娓呯┖鎸夐挳 */
+.PersonPicker-Main-Keyword img {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+/* 娓呯┖鍏抽敭瀛楁寜閽�(鍗曢��) */
+.PersonPicker-Single .PersonPicker-Main-Keyword img {
+	top: 17px;
+	right: 25px;
+}
+
+/* 娓呯┖鍏抽敭瀛楁寜閽�(澶氶��) */
+.PersonPicker-Multiple .PersonPicker-Main-Keyword img {
+	top: 15px;
+	right: 6px;
+}
+
+/* ##################################### 鍏抽敭瀛楅�変汉 ######################################## */
+.PersonPicker-Main-Candidate {
+	height: 292px;
+}
+
+.PersonPicker-Main-Candidate ul {
+	list-style-type: none;
+	overflow: auto;
+	height: 100%;
+}
+
+.PersonPicker-Main-Candidate ul li {
+	height: 44px;
+	cursor: pointer;
+	padding-left: 12px;
+	margin-top: 5px;
+}
+
+.PersonPicker-Main-Candidate ul li:hover {
+	background: #eee;
+}
+
+/* 鍊欓�変汉淇℃伅 */
+.PersonPicker-Main-Candidate-Info {
+	white-space:nowrap;
+	margin-top: 9px;
+	margin-top: 5px\9;
+}
+
+.PersonPicker-Main-Candidate-Photo img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+/* 鍊欓�変汉鐓х墖 */
+.PersonPicker-Main-Candidate-Photo {
+	float: left;
+	margin: 6px 10px 0 0;
+}
+
+/* ##################################### 缁勭粐鏋舵瀯 ######################################## */
+.PersonPicker-Main-Organization {
+	height: 292px;
+	overflow: auto;
+}
+
+/* 澶氶�� */
+.PersonPicker-Multiple .PersonPicker-Main-Organization {
+	border: 1px #D5D5D5 solid;
+}
+
+/* 缁勭粐鏈烘瀯鏍囬 */
+.PersonPicker-Main-Organization>p {
+	height: 30px;
+	line-height: 30px;
+	background: #4695d0;
+	color: #FFF;
+	padding-left: 10px;
+	font-size: 13px;
+}
+
+/* 鍗曚綅鎴栦汉鍛樼殑鏍囬(鍖呭惈鍚嶇О鍜屽浘鏍�) */
+.PersonPicker-Main-Organization p {
+	margin-top: 1px;
+	height: 25px;
+	line-height: 26px;
+	outline-width: 0px;
+}
+
+/* 鍗曚綅鑺傜偣鐨勪笅绾ч儴闂ㄦ垨鍛樺伐鐨刣iv */
+.PersonPicker-Main-Organization div[display=unfold]>div {
+	min-height: 10px;
+}
+
+.PersonPicker-Main-Organization p img {
+	width: 16px;
+	height: 15px;
+	vertical-align: -9%;
+}
+
+.PersonPicker-Main-Organization p label {
+	margin-left: 3px;
+}
+
+.PersonPicker-Main-Organization p[type=person] {
+	cursor: pointer;
+}
+
+/* 缁勭粐鏈烘瀯涓嬬殑浜哄憳閫変腑鍚庣殑鏍峰紡 */
+.PersonPicker-Main-Organization-Checked {
+	cursor: default !important;
+}
+
+/* display=fold鐨勫崟浣嶏紝鎶樺彔鍏朵笅绾у崟浣嶆垨浜哄憳 */
+.PersonPicker-Main-Organization [display=fold]>div {
+	display: none;
+}
+
+.PersonPicker-Main-Organization p[type=unit] {
+	background-color: #F2F2F2;
+	position: relative;
+}
+
+/* 榧犳爣鍦ㄥ崟浣嶄箣涓婏紝鏀瑰彉鑳屾櫙棰滆壊 */
+.PersonPicker-Main-Organization p[type=unit]:hover {
+	background-color: #CFE6FF;
+}
+
+/* 榧犳爣鍦ㄤ汉鍛樹箣涓婏紝鏂囧瓧鍙樿摑鑹诧紙澶氶�変笉鍙樿壊锛� */
+.PersonPicker-Single .PersonPicker-Main-Organization p[type=person]:hover {
+	color: #529FE5;
+}
+
+/* 鍗曚綅鍙充晶鐨勨�滄坊鍔犲叏閮ㄢ�濇寜閽� */
+.PersonPicker-Main-Organization-AddAll {
+	display: inline-block;
+	visibility: hidden;
+	margin: 0 10px 0 10px;
+}
+
+/* 澶氶��,浜哄憳涔嬪悗鐨�"娣诲姞"鎸夐挳 */
+.PersonPicker-Multiple .PersonPicker-Main-Organization p[type=person] span {
+	display: inline-block;
+	visibility: hidden;
+	margin: 0 10px 0 10px;
+}
+
+/* ##################################### 鍏僣ss ######################################## */
+
+/* 灞呬腑 */
+.taCenter {
+	width:42px;
+	text-align: center;
+}
+
+/* <a>鏍囩鎸夐挳 */
+.AnchorBtn {
+	color: #549fe3;
+	text-decoration: none;
+	text-align: center;
+	text-overflow: clip;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+/** 閫変腑鍏冪礌鐨勮儗鏅壊 */
+.bgSelected {
+	background-color: #CFE6FF !important;
+}
+
+/* ##################################### 澶氶�� ######################################## */
+
+/* 澶氶�� */
+.PersonPicker-Multiple {
+	width: 560px;
+	height: 400px;
+	position: absolute;
+	left: -1px;
+	top:-1px;
+	z-index: 2147483584;
+}
+
+/* 澶氶�夊ぇ琛ㄦ牸 */
+.PersonPicker-Multiple>table {
+	border: 1px #D5D5D5 solid;
+	font-family: tahoma, arial, verdana, sans-serif;
+	font-size: 12px;
+/* 	width: 560px; */
+/* 	height: 400px; */
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+}
+
+/* "娣诲姞XXX"鎸夐挳 */
+.PersonPicker-Multiple-AddBtn {
+	display: block;
+	padding-left: 7px;
+	padding-right: 7px;
+	height: 22px;
+	line-height: 21px;
+	color: #333 !important;/*鎸夐挳鏍峰紡鏀逛负鍜孍xt缁勪欢椋庢牸涓�鑷� haosl 2018骞�7鏈�27鏃�;*/
+	/* background-color: #F9F9F9;
+	color: #1B70BF !important; */
+	float: right;
+	margin: 8px 10px 8px auto;
+	border:1px solid #C5C5C5;
+	font-size:12px;
+	background-color:#f9f9f9;
+}
+
+.PersonPicker-Multiple-AddBtn:hover{
+	background-color:#E2E1E1;
+}
+
+/* 閫変腑鐨勪汉鍛� */
+.PersonPicker-Multiple-CheckedPerson {
+	height: 292px;
+	background-color: #fff;
+	border: 1px #D5D5D5 solid;
+	overflow: auto;
+}
+
+/* 閫変腑浜哄憳鐨勫崟涓垹闄ゆ寜閽� */
+.PersonPicker-Multiple-CheckedPerson-Remove {
+	display: inline-block;
+	visibility: hidden;
+}
+
+/* 閫変腑鐨勪汉鍛樼収鐗� */
+.PersonPicker-Multiple-CheckedPerson img {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+}
+
+/* 宸查�変腑鐨勪汉鍛樺垪琛�-tr */
+.PersonPicker-Multiple-CheckedPerson tr {
+	height: 34px;
+	cursor: default;
+}
+
+/* 宸查�変腑鐨勪汉鍛樺垪琛�-td */
+.PersonPicker-Multiple-CheckedPerson td {
+	padding: 3px;
+	overflow: hidden;
+}
+
+/* 宸查�変腑鐨勪汉鍛樺垪琛�-tr(榧犳爣鎮诞鍏朵笂鏀瑰彉鍏惰儗鏅壊) */
+.PersonPicker-Multiple-CheckedPerson tr:hover {
+	background-color: #CFE6FF;
+}
+#PersonPicker-Multiple-OnClose{
+	position:absolute;
+	clip:rect(0px 15px 15px 0px);/* 鍏煎ie6銆�7 */
+	clip:rect(0px,15px,15px,0px);
+}

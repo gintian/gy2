@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" 
+"http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+  <head>
+    <title>计划跟踪</title>
+	
+	<meta http-equiv="content-type"content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+    <script language="JavaScript"src="../../../module/utils/js/template.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../module/workplan/style/yearplantrace.css" />
+  </head>
+  <script type="text/javascript">
+	  var url = window.location.search.replace(/`/g,"&");
+	  var planId=undefined;
+	  var quarter=undefined;
+	  var year=undefined;
+	  if(url && url.split('?')[1] && url.split('?')[1].split('&')[1]
+	  	&&url.split('?')[1].split('&')[2]
+	    &&url.split('?')[1].split('&')[3]){
+		  //url格式：?b_query=link&planId=12&quarter=4&year=2017
+		  planId = url.split('?')[1].split('&')[1].split('=')[1];
+		  quarter = url.split('?')[1].split('&')[2].split('=')[1];
+		  year = url.split('?')[1].split('&')[3].split('=')[1];
+	  }
+	  
+  		Ext.Loader.setPath('YearPlanTraceUL','../../../module/workplan/yearplan');
+  		Ext.onReady(function(){
+  			Ext.require('YearPlanTraceUL.YearPlanTrace',function(){
+  				Ext.create('YearPlanTraceUL.YearPlanTrace',{
+  					planId:planId,
+  					quarter:quarter,
+  					year:year
+  				}); 
+  			});
+  		});
+  </script>
+</html>

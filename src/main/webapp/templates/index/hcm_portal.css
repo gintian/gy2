@@ -1,0 +1,154 @@
+/**面板边框*/
+.x-panel {
+	border-color: #C5D7E6;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.x-panel-body-default {
+	font-size:14px;
+}
+
+/**覆盖ext-all.css中面板左边框*/
+.x-panel-ml {
+	background: none;
+	padding-left: 6px;
+}
+
+/**覆盖ext-all.css中面板底部边框*/
+.x-panel-bc {
+	background: none;
+}
+
+/**覆盖ext-all.css中面板右下角边框圆角*/
+.x-panel-br {
+	background: none;
+	padding-right: 6px;
+}
+
+/**覆盖portal.css中面板左下角边框圆角*/
+.x-portlet .x-panel-nofooter .x-panel-bc {
+	height: 0px;
+}
+
+/**覆盖portal.css中面板左下角边框圆角 for ie*/
+.x-panel-bl {
+	background-image: none;
+}
+
+/**覆盖portal.css中面板右边框*/
+.x-panel-mr {
+	background: none;
+	padding-right: 6px;
+}
+
+/**覆盖ext-all.css中面板头部两侧背景*/
+.x-panel-tl {
+	height: 33px;
+	line-height: 33px;
+	font-size: 14px;
+	background: none;
+	border-bottom: 1px solid #C5D7E6;
+}
+
+.x-panel-header {
+	background: none !important;
+	padding: 10px 0 4px;;
+}
+
+.x-panel-tr {
+	background: none;
+}
+
+.x-panel-tc {
+	background: none;
+}
+
+.x-panel-mc {
+	background: none;
+}
+/**覆盖ext-all.css中面板头部title字体*/
+.x-panel-tl .x-panel-header {
+    font:normal;
+    font-family:"微软雅黑"; 
+    color:#464646;
+}
+/**覆盖ext-all.css中面板头部收缩按钮*/
+.x-tool {
+    /*background: url("../images/default/panel/tool-sprites.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    float: right;
+    height: 15px;
+    margin-left: 2px;
+    overflow: hidden;
+    width: 15px;*/
+    margin-top:3px;
+}
+
+/**面板头部控制 */
+.x-panel-mc .x-panel-body {
+            background:white;
+            /*background-color:#F4F7F7;
+            background-image:url(/images/tal_jb.png);*/
+            line-height: 50px;          
+            border:0;  
+            background-repeat:repeat-x;  
+            text-align: left;           
+            background-position:top right; 
+        }
+       .my-icon{ background-image: url(../../images/hmc.gif) 0 6px no-repeat !important; }  
+       .x-panel-header-text {
+        font-size:12px
+        font:bold 12px tahoma,arial,verdana,sans-serif;
+       }  
+       .x-tool {
+            width: 40px;
+            height: 20px;
+       }
+       
+       .x-tool-toggle {
+            background-position: 0 -600px;
+        }
+        .x-panel-collapsed .x-tool-toggle {
+            background-position: 0 -600px;
+        }
+        .x-tool-right {
+            background-position: 0 0px;
+            background: url("/images/hcm/themes/default/icon/icon55.png") no-repeat scroll 0 3px transparent;
+        }
+
+
+.x-panel-header-default-framed{
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    background: none repeat scroll 0% 0% transparent;
+    border-bottom: 1px solid #C5D7E6;
+}
+.x-tool-img{
+    background-position: 0 0px;
+    background: url("/images/hcm/themes/default/icon/icon55.png") no-repeat scroll 0 3px transparent;
+    width:35px !important;
+}
+
+.x-tool-close{
+    background: url("/ext/ext6/resources/images/tools/tool-sprites.gif") ;
+    width:15px !important;
+    height:15px !important;
+    margin-left:35px;
+}
+
+.x-tool-collapse-top{
+	background-image:none  !important;
+}
+.x-tool-expand-bottom{
+	background-image:none  !important;
+}
+.x-tool-after-title{
+	width:35px !important;
+	left:auto !important;
+	right:20px !important;
+}
+.x-header-body{
+	margin-top:-3px;
+}

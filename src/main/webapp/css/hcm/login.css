@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, tr,
+td, img, div, dl, dt, dd, span {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+	color: #4C4C4C;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	widtd: 100%;
+	background: #fff;
+}
+
+input::-ms-clear{
+	display: none;
+}
+
+input::-ms-reveal{
+	display: none;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+select, input, img {
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearit {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.bh-clear {
+	clear: both;
+}
+
+.bh-space {
+	height: 10px;
+	clear: both;
+}
+
+/*====================================content======================================*/
+.hj-hy-all {
+	width: 100%;
+}
+
+.hj-hy-all-one {
+	margin: 0px auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+	z-index: -10;
+	zoom: 1;
+	background-color: #fff;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+/*
+.hj-hy-all-one-logo img {
+	height: 45px;
+	margin: 35px 0 0 35px;
+}
+*/
+.hj-hy-form {
+	width: 360px;
+	background: white;
+	margin: 9% 0 0 39%;
+	border-radius: 6px;
+	border: 1px #DE0011 solid;
+}
+
+.hj-hy-form table {
+	margin: 0 0 0 14%;
+	width: 280px;
+}
+.hj-hy-form table tr {
+	width: 100%;
+}
+
+.hj-hy-form table h2 {
+	display: inline-block;
+	color: #c61408;
+	font-size: 20px;
+}
+
+.hj-wzm-jiantou {
+	width: 32px;
+	height: 32px;
+	margin: 10px 0 0 10px;
+}
+
+.hj-hy-form table td {
+	height: 55px;
+}
+
+.hj-hy-yonhum {
+	width: 210px;
+	height: 30px;
+	font-weight: 600;
+	line-height: 30px;
+	border-radius: 0px;
+	border: none;
+	border-bottom: 1px #DE0011 solid;
+	font-size: 14px;
+//color: #999;
+	padding-left: 50px;
+	margin-top: 25px;
+	background-image: url(/images/hcm/themes/default/login/user.svg);
+	background-position-x: 3%;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: 23px;
+	/*	background-color:transparent;*/
+}
+
+.hj-hy-mima {
+	width: 210px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 0px;
+	border: none;
+	border-bottom: 1px #DE0011 solid;
+	font-size: 14px;
+//color: #999;
+	padding-left: 50px;
+	margin-top: 15px;
+	background-image: url(/images/hcm/themes/default/login/password.svg);
+	background-position-x: 3%;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: 23px;
+}
+
+.hj-hy-yzm {
+	width: 110px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 0px;
+	border: none;
+	border-bottom: 1px #DE0011 solid;
+	font-size: 14px;
+//color: #999;
+	padding-left: 50px;
+	margin-top: 15px;
+	background-image: url(/images/hcm/themes/default/login/validatecode.svg);
+	background-position-x: 4.5%;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: 23px;
+}
+
+.hj-hy-riqi {
+	width: 210px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 0px;
+	border: none;
+	border-bottom: 1px #DE0011 solid;
+	font-size: 14px;
+//color: #999;
+	padding-left: 50px;
+	margin-top: 15px;
+	background-image: url(/images/hcm/themes/default/login/datetime.svg);
+	background-position-x: 3%;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: 23px;
+}
+
+.hj-hy-login {
+//background: #0096ff;
+	background: #DE0011;
+	color: #FFF;
+	width: 260px;
+	height: 35px;
+	border: none;
+	line-height: 35px;
+	font-size: 16px;
+	border-radius: 6px;
+	font-weight: bolder;
+	margin-top: 25px;
+	cursor:pointer;
+}
+
+.hj-hy-jzzh {
+	margin: -3px -4px 0 10px;
+}
+
+.hj-hy-wjmm {
+	height: 30px;
+	color: #fff;
+}
+
+.hj-form1 {
+	border-radius: 2px;
+	border: none;
+}
+
+.hj-wzm-copyright {
+	color: black;
+	margin-top: 30px;
+	margin-left: 42%;
+	font-size: 11px;
+	position: fixed;
+	bottom: 30px;
+	width: 245px;
+	text-align: center;
+	height: 20px;
+}
+
+.hj-hy-title {
+	width:200px;
+	margin:25px 0 0 30px;
+}
+
+.hj-hy-yzm-img {
+	margin:14px 0 0 6px;
+	cursor:pointer;
+}
+
+.hj-wzm-li {
+	color: #FFFFFF;
+	font-size: 14px;
+	bottom: 20px;
+	width: 150px;
+	text-align: center;
+	height: 5px;
+	margin-left:45%;
+}
+
+.hj-wzm-li img {
+	vertical-align: top;
+}
+
+.hj-wzm-li li {
+	float: left;
+	margin: auto 3px;
+}
+
+.wjmm {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+#name_hint, #pwd_hint {
+	font-size: 14px
+}

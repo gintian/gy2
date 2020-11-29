@@ -1,0 +1,56 @@
+.header_l_locked
+{
+ 
+	background-color:#f4f7f7;	
+	background-repeat:repeat;
+	background-position : center left;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 0pt solid; 
+	BORDER-TOP: #94B6E6 0pt solid;
+	height:32;
+	font-weight: bold;	
+	valign:middle;
+	top: expression(document.getElementById("tbl-container").scrollTop); /*IE5+ only*/
+	position: relative;
+    cursor: default; 
+	z-index: 15;
+}
+
+.header_r_locked
+{
+ 
+	background-color:#f4f7f7;	
+	background-repeat:repeat;
+	background-position : center left;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 0pt solid;
+	height:32;
+	font-weight: bold;	
+	valign:middle;
+	top: expression(document.getElementById("tbl-container").scrollTop); /*IE5+ only*/
+	position: relative;
+    cursor: default; 
+	z-index: 15;
+}
+
+.header_locked
+{
+ 
+	background-color:#f4f7f7;	
+	background-repeat:repeat;
+	background-position : center left;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 0pt solid; 
+	BORDER-TOP: #94B6E6 0pt solid;
+	height:32;
+	font-weight: bold;	
+	valign:middle;
+	top: expression(document.getElementById("tbl-container").scrollTop); /*IE5+ only*/
+	position: relative;
+    cursor: default; 
+	z-index: 15;
+}

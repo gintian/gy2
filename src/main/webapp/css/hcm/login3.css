@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, tr,
+	td, img, div, dl, dt, dd, span {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+	color: #4C4C4C;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	widtd: 100%;
+	background: #fff;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+select, input, img {
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearit {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.bh-clear {
+	clear: both;
+}
+
+.bh-space {
+	height: 10px;
+	clear: both;
+}
+
+/*====================================content======================================*/
+.hj-hy-all {
+	width: 100%;
+}
+
+.hj-hy-all-one {
+	margin: 0px auto;
+	background: url(/images/hcm/themes/default/login/bg1.jpg) no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+	z-index: -10;
+	zoom: 1;
+	background-color: #fff;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+
+.hj-hy-all-one-logo img {
+	height: 50px;
+	margin: 40px 0 0 40px;
+}
+
+.hj-hy-all-one-logo a {
+	float: right;
+	margin: 54px 100px 0 0px;
+	font-size: 16px;
+	color: #FFF;
+}
+
+.hj-hy-form {
+	width: 475px;
+/*	height: 447px;*/
+	background: url("/images/hcm/themes/default/login/form-bg.png") repeat-y;
+	margin: 0 auto;
+}
+
+.hj-hy-form table {
+	margin: 25% 0 0 14%;
+}
+
+.hj-hy-form table h2 {
+	display: inline-block;
+	color: #c61408;
+	font-size: 20px;
+}
+
+.hj-wzm-jiantou {
+	width: 32px;
+	height: 32px;
+	margin: 10px 0 0 10px;
+}
+
+.hj-hy-form table img {
+	margin: 45px 6px 0 20px;
+}
+
+.hj-hy-form table td {
+	height: 66px;
+}
+
+.hj-hy-yonhum {
+	width: 295px;
+	height: 40px;
+	border-radius: 6px;
+	border: 1px #eeeeee solid;
+	font-size: 14px;
+	color: #999;
+	padding-left: 50px;
+	margin-top: 30px;
+	background: url(/images/hcm/themes/default/login/pic1.png) no-repeat 3% #FFF;
+}
+
+.hj-hy-mima {
+	width: 295px;
+	height: 40px;
+	border-radius: 6px;
+	border: 1px #eeeeee solid;
+	font-size: 14px;
+	color: #999;
+	padding-left: 50px;
+	margin-top: 20px;
+	background: url(/images/hcm/themes/default/login/pic2.png) no-repeat 3% #FFF;
+}
+
+.hj-hy-yzm {
+	width: 200px;
+	height: 40px;
+	border-radius: 6px;
+	border: 1px #eeeeee solid;
+	font-size: 14px;
+	color: #999;
+	padding-left: 50px;
+	margin-top: 18px;
+	background: url(/images/hcm/themes/default/login/pic3.png) no-repeat 4.2% #FFF;
+}
+
+.hj-hy-riqi {
+	width: 295px;
+	height: 40px;
+	border-radius: 6px;
+	border: 1px #eeeeee solid;
+	font-size: 14px;
+	color: #999;
+	padding-left: 50px;
+	margin-top: 18px;
+	background: url(/images/hcm/themes/default/login/pic4.png) no-repeat 3% #FFF;
+}
+
+.hj-hy-login {
+	background: #0096ff;
+	color: #FFF;
+	width: 353px;
+	height: 40px;
+	border: none;
+	line-height: 40px;
+	font-size: 16px;
+	border-radius: 6px;
+	font-weight: bolder;
+	margin-top: 25px;
+}
+
+.hj-hy-jzzh {
+	margin: -3px -4px 0 10px;
+}
+
+.hj-hy-wjmm {
+	height: 40px;
+	color: #fff;
+}
+
+.hj-form1 {
+	border-radius: 2px;
+	border: none;
+}
+
+.hj-wzm-copyright {
+	color: #FFFFFF;
+	margin: 30px auto;
+	font-size: 14px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	height: 20px;
+}
+
+.hj-hy-title {
+	margin:30px 0 0 70px;
+}

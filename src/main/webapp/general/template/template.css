@@ -1,0 +1,114 @@
+.clearmargin {
+	margin: -0px 0px 0px -8px;
+	padding: 0px;
+}
+/**待办**/
+.dbmargin {
+	margin: -0px 0px 0px 0px;
+	padding: 0px;
+}
+/**已办、任务监控**/
+.ybmargin {
+	margin: -0px 0px 0px 0px;
+	padding: 0px;
+}
+/**列表**/
+.listmargin {
+	margin: -5px 0px 0px -5px;
+	padding: 0px;
+}
+/**批量处理**/
+.batchupdate_margin {
+	margin-top:0px ;
+	margin-left:2px ;
+	padding: 0px;
+}
+/**上下按钮间距**/
+.vButtonmargin {
+	margin-bottom: 30px;
+
+}
+
+/**左右按钮间距**/
+.hButtonmargin {
+	margin-right: 10px;
+
+}
+
+/**hrms:commandbutton 这种button样式微调**/
+.button{
+  margin-left:-1px;
+}
+/**审批过程**/
+.spyjformmragin {
+	margin-top: -2px;
+	margin-left: -3px;
+	padding: 0px;
+}
+/**设置业务日期**/
+.setdatemragin {
+	margin-top: -10px;
+
+}
+/**计算公式主界面**/
+.formulatemplatemargin {
+	margin-top: -1px;
+}
+/**计算公式**/
+.formulamargin {
+	margin-top: -5px;
+	margin-left: -2px;
+
+}
+/**校验公式**/
+.chkformulamargin {
+	margin-top: -6px;
+	margin-left: -1px;
+
+}
+/**临时变量**/
+.tempvarmargin {
+	margin-top: -5px;
+	margin-left: -2px;
+
+}
+/**显示隐藏指标**/
+.hidefieldmargin {
+	margin-top: -5px;
+	margin-left: -2px;
+
+}
+
+/**调整指标顺序 校验公式、临时变量调整顺序**/
+.sortingmargin {
+	margin-top:px;
+	margin-left: -2px;
+
+}
+/**锁定指标**/
+.viewLockmargin {
+	margin-top: -4px;
+	margin-left: -1px;
+
+}
+
+/**人员筛选**/
+.personSortingmargin {
+	margin-top: -1px;
+	margin-left: 0px;
+
+}
+
+/**计算公式调整顺序**/
+.formulaSortmargin {
+	margin-top: -2px;
+	margin-left: -2px;
+
+}
+
+/**计算公式条件**/
+.formulaconditonformmragin {
+	margin-top: -5px;
+	margin-left: -1px;
+	padding: 0px;
+}

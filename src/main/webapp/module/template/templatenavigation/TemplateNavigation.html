@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>人事业务</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7"> 
+	<script language="JavaScript"src="../../../module/utils/js/template.js"></script>
+	<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+	<script language="JavaScript" src="../../../module/template/utils/template_util.js"></script>
+	<script language='JavaScript' src='../../../ckeditor/ckeditor.js'></script>
+	<link rel="stylesheet" href="../../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+	<link rel="stylesheet" href="../../../../module/gz/tax/DateYm.css" type="text/css" />
+
+</head>
+<style>
+.RecordRow {/*td样式*/
+	border: inset 1px #e8e8e8;
+	BORDER-BOTTOM: #e8e8e8 1pt solid; 
+	BORDER-LEFT: #e8e8e8 1pt solid; 
+	BORDER-RIGHT: #e8e8e8 1pt solid; 
+	BORDER-TOP: #e8e8e8 1pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:40px;
+	padding:0 5px 0 5px;
+}
+.ListTable {/*table样式*/
+	background:#FFFFFF; 
+	border-collapse:collapse; 
+	font-size:12px;  
+	/*color:#666633;*/
+}
+.stylet{
+	border-bottom: #e8e8e8 1pt solid;
+}
+
+.hj-wzm-clock{top:10px;left:10px;z-index:1000;padding:3px 0;}
+
+
+</style>
+ <body Style="width:100%">
+	</body>
+  	<script type="text/javascript">
+		Ext.Loader.setPath('TemplateNavigation',"../../../module/template/templatenavigation");
+		var url = window.location.search;
+		var templateNav = {};
+		function parseUrl(url) {  
+			if (url.indexOf('encryptParam')>0){			
+				var map = new HashMap();
+				map.put("url",url);
+			    Rpc({functionId:'MB00001002',async:false,success: parseUrlOK},map);			
+			}
+			else {
+				var params= getRequest(url);
+				Ext.apply(templateNav,params);
+			}
+	    }
+	    function parseUrlOK(form) {  
+	    	var result = Ext.decode(form.responseText);
+	    	Ext.apply(templateNav,result);
+	    }
+		Ext.onReady(function(){
+			/**54278 中国人民大学：机构调整的菜单定制到招聘模块下，用谷歌浏览器一点就提示超时，ie和360浏览器正常*/
+			parseUrl(url);
+			Ext.require('TemplateNavigation.TemplateNavigation', function(){
+				Ext.create("TemplateNavigation.TemplateNavigation", {templateNav:templateNav});
+			});
+		});
+  </script>
+</html>

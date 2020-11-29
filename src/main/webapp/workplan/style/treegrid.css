@@ -1,0 +1,159 @@
+.x-btn-default-small .x-btn-inner, .x-btn-default-medium .x-btn-inner, .x-btn-default-large .x-btn-inner, .x-btn-default-toolbar-small .x-btn-inner, .x-btn-default-toolbar-medium .x-btn-inner, .x-btn-default-toolbar-large .x-btn-inner, .x-menu-item-text, .x-html-editor-tb .x-font-select, .x-panel-header-default, .x-panel-header-text-default, .x-panel-header-default-framed, .x-tip-header, .x-tip-body, .x-form-invalid-tip-body, .x-tip-header-text, .x-progress-text, .x-toolbar, .x-toolbar .x-form-item-label, .x-toolbar .x-toolbar-text, .x-window-header-text-default, .x-tab-bar, .x-tab button, .x-grid-rowbody, .x-grid-row .x-grid-cell, .x-grid-group-title, .x-grid-row-editor .x-form-field, .x-grid-row-editor .x-form-display-field, .x-form-invalid-under, .x-fieldset-header, .x-column-header, .x-mask-msg div, .x-btn-group-header-text-default-framed, table.x-datepicker-inner a, .x-monthpicker-item, .x-dd-drag-ghost             
+{  
+    font-size: 12px;             
+}             
+              
+.x-column-header              
+{             
+    text-shadow:0 0 0 rgba(255, 255, 255, 0.3);          
+}  
+.x-panel-default {
+    	border-color: #C5C5C5;
+}
+.x-panel-body-default {
+    	border-color: #C5C5C5;
+}
+		
+.x-grid-header-ct {
+			border-color: #C5C5C5;#C5C5C5;#C5C5C5;
+}
+    
+/*选中行 背景颜色
+.x-grid-row-alt .x-grid-td {
+	background-color: #FFF8D2 !important;
+}*/
+    
+.x-grid-td {
+    overflow: hidden;
+    /*  border-width: 1px;   */
+    border: inset 0px  #C5C5C5;
+      BORDER-BOTTOM:  #C5C5C5 1pt solid; 
+      BORDER-LEFT:  #C5C5C5 0pt solid; 
+      BORDER-RIGHT:  #C5C5C5 0pt solid; 
+      BORDER-TOP:  #C5C5C5 0pt solid;
+    vertical-align: middle;
+}
+   
+.x-grid-cell-inner {
+	    text-overflow: ellipsis;
+	   /* padding: 10px 6px 4px;*/
+}
+.x-grid-cell-inner-treecolumn {
+    padding: 3px 6px 4px 0px;
+    display:inline-flex;
+    
+}
+	 
+.x-grid-cell-inner-checkcolumn {
+    padding: 0px 6px 0px ;
+}
+	 
+.x-grid-no-row-lines .x-grid-row-focused .x-grid-cell-inner {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+	 
+.x-grid-cell {
+	 	 font-size:12px;
+	 	 font-family:"微软雅黑"; 
+  /*   font: 11px/13px tahoma,arial,verdana,sans-serif;  */  
+}
+	 
+.x-column-header {
+    	color: #000;
+    	font-size:13px;
+	 	  font-family:"宋体";
+	 	  text-align: center;
+    /* 	font: 11px/13px tahoma,arial,verdana,sans-serif; */ 
+}
+	 
+.x-tree-node-text {
+	    font-size: 12px;
+	    padding-left: 3px;
+	    /*float:left;
+	     width:0px; */
+}
+	 
+.x-tree-icon-leaf {
+		/* background-image: url('images/tree/leaf.gif'); */
+			 background-image:url('')
+}
+	 
+.x-grid-tree-node-expanded .x-tree-icon-parent {
+   /* background-image: url('images/tree/folder-open.gif'); */
+   		background-image:url('')
+}
+.x-tree-icon-parent {
+		/* background-image: url('images/tree/folder.gif'); */
+				background-image:url('')
+}
+.x-tree-icon {
+       width: 0px;
+       height: 0px;
+       display:none;
+       /* float:left; */
+}
+.x-tree-elbow-img {
+	float:left;
+	padding:inherit;
+}
+.x-nlg {
+	background-image: url('');
+}
+.x-grid-cell-special {
+   	border-width: 0pt 0pt 1pt;
+	  border-style: solid;
+   background-image: url('');
+   background-color: #FFFFFF;
+}
+.x-grid-dirty-cell{
+/*行出现红箭头*/
+background-image: url('');
+}
+
+.x-btn-inner{ 
+    font-size:15px; 
+} 
+.x-btn-inner-center{ 
+    font-size:15px; 
+} 
+.x-grid-table{ 
+    width:100%; 
+}
+
+/*table row onmouseover 鼠标指向行 背景颜色(原来的不能整行变色,覆盖升级ext6表格统一的样式)*/
+.x-grid-item-over .x-grid-td {
+	color: #000;
+	background-color: rgb(255, 248, 210)/*#efefef*/
+}
+
+/*选中行 背景颜色(原来的不能整行变色,覆盖升级ext6表格统一的样式)*/
+.x-grid-item-selected .x-grid-td {
+	color: #000;
+	background-color: rgb(255, 248, 210)
+}
+
+.x-tree-checkbox {
+	border: 0;
+	padding: 0;
+	vertical-align: top;
+	position: relative;
+	background-color: transparent
+}
+
+.x-grid-checkcolumn {
+	vertical-align: middle
+}
+/*ie样式,设置透明,此处用于设置遮罩层透明*/
+.x-ie8 .x-mask {
+	filter: alpha(opacity=50);
+	zoom: 1
+}
+
+/*计划页面转给他人负责不能显示,显示级别不够,需要覆盖这个样式*/
+.x-grid-cell-inner {
+	overflow: hidden;
+	white-space: nowrap;
+	width:100%;
+	zoom: 1
+}

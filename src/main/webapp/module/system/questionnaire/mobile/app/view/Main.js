@@ -1,0 +1,20 @@
+Ext.define('Questionnaire.view.Main',{
+	extend:'Ext.form.Panel',
+	xtype:'mainView',
+	params:{},
+	scoreparams:{},
+	allQuestionNum:{},
+	nunberArr:{},
+	id:'mobileMainView',
+	config:{
+		fullscreen:true,
+		layout:{
+			type:'vbox',
+			align:'stretch'
+		},
+		autoScroll : false,
+		bodyStyle:"overflow-x:hidden;overflow-y:auto",
+		width:'100%',
+		items:[]
+	}
+});

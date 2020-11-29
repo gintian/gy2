@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <tools>         
+	    <menubar privid="311080701" type="button" id="" text="功能导航"  icon="">
+            <menuitem  functype="export" id="" privid="31108070101" text="导出Excel" icon="/images/export.gif" />
+            <menuitem  id="" privid="31108070102" handler="ExamineeGlobal.achieveMent" text="导出成绩" icon="/images/export.gif" />
+            <menuitem  id="" privid="311080709" handler="examinee_me.importData" text="导入成绩" icon="/images/import.gif" />
+            <menuitem  id="" privid="311080705" handler="examinee_me.printExamNoCards" text="打印准考证" icon="" />
+            <menuitem  id="" privid="311080708" handler="examinee_me.updateExamTime" text="批量修改" icon="" />
+        </menubar>
+	      <!-- <toolbar type='button' functype="analyse" privid="" /> -->
+        <!--不在此处加载，保证位置，用ButtonInfo生成查询组件<toolbar type='querybox' text="请输入姓名、准考证号、报考单位、报考部门、报考职位或考场号..." functionid="0000002556" />-->
+    </tools>
+<table selectable="true" editable="true" sortable="true" lockable="true" />
+</tableconstant>
+

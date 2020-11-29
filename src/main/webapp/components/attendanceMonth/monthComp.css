@@ -1,0 +1,8 @@
+.calendar-selected{
+	position:relative !important;
+	top:-18px !important;
+	left:22px !important;
+	width:0px;
+	border:8px solid transparent;
+	border-bottom-color:white;
+}

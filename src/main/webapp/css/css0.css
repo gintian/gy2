@@ -1,0 +1,182 @@
+/* CSS Document */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background-image: url();
+}
+td {
+	font-size: 9pt;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+	
+.style8 {color: #003300}
+a.a1:active {
+	color: #003100;
+	text-decoration: none;
+}
+a.a1:hover {
+	color: #FFCC00;
+	text-decoration: none;
+}
+a.a1:visited {
+	color: #003100;
+	text-decoration: none;
+}
+a.a1:link {
+	color: #003100;
+	text-decoration: none;
+}
+.a1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.layerbackborder {
+	margin: 1px;
+	padding: 1px;
+}
+.overbackground {
+	background-color: #495C0E;
+	color: #FFFFFF;
+	cursor: default;
+}
+.outbackground {
+	background-color: #efefef;
+	color: #000000;
+	cursor: default;
+}
+.mainbackground {
+	background-color: #FFFFFF;
+}
+.f14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: 3px;
+	color: #FFFFFF;
+}
+.td {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.list2 {
+	background-color: #D1E39B;
+}
+.f10{
+	FILTER: dropshadow(color=#000000, offx=1, offy=1, positive=1);
+	FONT-FAMILY: "??ì?";
+	FONT-SIZE: 9pt;
+	width:100%;
+		font-weight: bold;
+}.list1 {
+	font-size: 14px;
+	background-color: #A9CB43;
+	font-weight: bold;
+}
+.list3 {
+	background-color: #E8EFC9;
+	color: #993300;
+	text-align: left;
+}
+.left1 {
+	font-size: 14px;
+	background-color: #ACCA45;
+	font-weight: bold;
+}
+.text1 {
+	font-size: 9pt;
+	border-top: 1px inset #006600;
+	border-right: 1px inset #003300;
+	border-bottom: 1px inset #003300;
+	border-left: 1px inset #006600;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	height: 20px;
+	border:1pt solid #2AA5F2;	
+}
+.text2 {
+	font-size: 9pt;
+	border-top: 1px inset #006600;
+	border-right: 1px inset #003300;
+	border-bottom: 1px inset #003300;
+	border-left: 1px inset #006600;
+	color: #0033CC;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	height: 15px;
+	background-color: #FFFFFF;
+}
+.buttomleft1 {
+	background-image: url(/images/e.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.buttommiddle1 {
+	background-image: url(/images/8a.jpg);
+	background-repeat: repeat-x;
+}
+.buttomright1 {
+	background-image: url(/images/d.jpg);
+ 	background-repeat: no-repeat; 
+	background-position: right;
+}
+.fasong {	
+	background-repeat: no-repeat;
+	width: 55px;
+	height: 20px;
+	font-size: 9pt;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.topbackground {
+	background-image: url(/images/top3_1.jpg);
+	background-repeat: repeat-x;
+}
+.top1background {
+	background-image: url(/images/top3.jpg);
+	background-repeat: no-repeat;
+}
+.top2background {
+	background-image: url(/images/top3_2.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+a.a2:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.a2:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.a2:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.a2:link {
+		color: #ffffff;;
+	text-decoration: none;
+}
+.a2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+		color: #ffffff;
+}
+.leftBanner {
+	 BACKGROUND-IMAGE: url(/images/s_left.jpg); BACKGROUND-REPEAT: no-repeat;WIDTH: 316; BACKGROUND-REPEAT: no-repeat; HEIGHT: 102;
+; background-attachment: fixed; background-position: left bottom
+}
+.mBanner {
+	 BACKGROUND-IMAGE: url(/images/middle.jpg); BACKGROUND-REPEAT: repeat-x; HEIGHT: 102;
+; background-attachment: fixed; background-position: left bottom
+}
+.rightBanner {
+	 BACKGROUND-IMAGE: url(/images/s_right.jpg); BACKGROUND-REPEAT: no-repeat;WIDTH: 383; BACKGROUND-REPEAT: no-repeat; HEIGHT: 102;
+; background-attachment: fixed; background-position: left bottom
+}
+.leftBanner1 {
+	 BACKGROUND-IMAGE: url(/images/x_left.jpg); BACKGROUND-REPEAT: no-repeat;WIDTH: 227; BACKGROUND-REPEAT: no-repeat; HEIGHT: 35;
+; background-attachment: fixed; background-position: left bottom
+}
+.mBanner1 {
+	 BACKGROUND-IMAGE: url(/images/x_bg.jpg); BACKGROUND-REPEAT: repeat-x; HEIGHT: 35;
+; background-attachment: fixed; background-position: left bottom
+}
+

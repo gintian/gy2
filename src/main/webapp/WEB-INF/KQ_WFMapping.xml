@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	********************声明*******************
+	1.我的考勤日历编号：KQ10000001――
+	2.微信考勤汇总数据编号：KQ20000001――
+	3.团队请假日历编号：KQ90000001――
+	4.假期管理编号：KQ00010001――KQ00019999
+	5.班组管理：KQ00021301――KQ00021399
+	6.考勤参数：KQ00021501――KQ00021599
+	7.打卡数据：KQ00021601――KQ00021699
+ -->
+<wf-mappings>
+	<wfi-mapping funcid="KQ10000001">
+         <transaction-name>我的考勤日历</transaction-name>
+         <transaction-desc>我的考勤日历</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqself.kqempcal.transaction.KqEmpCalTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ20000001">
+         <transaction-name>部门考勤汇总数据</transaction-name>
+         <transaction-desc>部门考勤汇总数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.org.transaction.SearchDeptKqAnalyseDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ20000002">
+         <transaction-name>人员考勤汇总数据</transaction-name>
+         <transaction-desc>人员考勤汇总数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.org.transaction.SearchDeptPersonKqDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+     <wfi-mapping funcid="KQ90000001">
+         <transaction-name>团队请假日历</transaction-name>
+         <transaction-desc>团队请假日历</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.org.transaction.KqLeaveCalTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010001">
+         <transaction-name>假期管理</transaction-name>
+         <transaction-desc>假期管理</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.ShowHolidayDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010002">
+         <transaction-name>假期管理―快速查询</transaction-name>
+         <transaction-desc>假期管理―快速查询</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.SearchHolidayTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010003">
+         <transaction-name>假期管理―快速查询</transaction-name>
+         <transaction-desc>假期管理―快速查询</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.DeleteHolidayTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010004">
+         <transaction-name>假期管理―导出数据</transaction-name>
+         <transaction-desc>假期管理―导出数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.ExportHolidayDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010005">
+         <transaction-name>假期管理―下载模板</transaction-name>
+         <transaction-desc>假期管理―下载模板</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.ExportHolidayTemplateTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010006">
+         <transaction-name>假期管理―导入数据</transaction-name>
+         <transaction-desc>假期管理―导入数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.ImportHolidayDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010007">
+         <transaction-name>假期管理―查询计算指标</transaction-name>
+         <transaction-desc>假期管理―查询计算指标</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.SearchHolidayCalculateFieldTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010008">
+         <transaction-name>假期管理―查询计算指标</transaction-name>
+         <transaction-desc>假期管理―查询计算指标</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.HolidayCalculateDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010009">
+         <transaction-name>假期管理―保存数据</transaction-name>
+         <transaction-desc>假期管理―保存数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.SaveHolidayDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010010">
+         <transaction-name>假期管理―请假明细</transaction-name>
+         <transaction-desc>假期管理―请假明细</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.ShowLeaveDetailedTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010011">
+         <transaction-name>假期管理―请假明细</transaction-name>
+         <transaction-desc>假期管理―请假明细</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.ImportLeaveTimeTypeDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010012">
+         <transaction-name>假期管理―调休假导入数据</transaction-name>
+         <transaction-desc>假期管理―调休假导入数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.InsertLeaveTimeTypeDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="KQ00010013">
+         <transaction-name>假期管理―调休假明细</transaction-name>
+         <transaction-desc>假期管理―调休假明细</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.ShowOverTimeLeaveDetailedTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00010014">
+         <transaction-name>假期管理―调休假明细</transaction-name>
+         <transaction-desc>假期管理―调休假明细</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.holiday.transaction.GetPrivItemsTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00020401">
+         <transaction-name>考勤管理―考勤项目</transaction-name>
+         <transaction-desc>考勤管理―考勤项目</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.item.transaction.ItemMainTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <!-- 考勤管理―班次管理 -->
+    <wfi-mapping funcid="KQ00020101">
+         <transaction-name>考勤管理―班次管理</transaction-name>
+         <transaction-desc>考勤管理―班次管理</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.shifts.transaction.ShiftsMainTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <!-- 考勤管理―考勤期间-->
+    <wfi-mapping funcid="KQ00020301">
+         <transaction-name>考勤管理―考勤期间</transaction-name>
+         <transaction-desc>考勤管理―考勤期间</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.period.transaction.PeriodMainTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00020201">
+         <transaction-name>考勤管理―考勤方案</transaction-name>
+         <transaction-desc>考勤管理―考勤方案</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.scheme.transaction.SchemeMainTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="KQ00021201">
+         <transaction-name>考勤管理―获得考勤数据审批界面数据</transaction-name>
+         <transaction-desc>考勤管理―获得考勤数据审批界面数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.KqDataSpMainTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021204">
+         <transaction-name>考勤管理―考勤数据明细</transaction-name>
+         <transaction-desc>考勤管理―考勤数据明细</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.GetKqDataMxTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <!-- 考勤管理―班组管理 -->
+    <wfi-mapping funcid="KQ00021301">
+         <transaction-name>考勤管理―班组管理</transaction-name>
+         <transaction-desc>考勤管理―班组管理</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.shiftgroup.transaction.ShiftGroupListTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021302">
+         <transaction-name>考勤管理―班组管理</transaction-name>
+         <transaction-desc>考勤管理―班组管理</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.shiftgroup.transaction.ShiftGroupTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <!-- 排班管理 -->
+    <wfi-mapping funcid="KQ00021303">
+         <transaction-name>考勤管理―排班管理</transaction-name>
+         <transaction-desc>考勤管理―排班管理</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.shiftgroup.transaction.ShiftTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021307">
+         <transaction-name>考勤管理―导出排班数据</transaction-name>
+         <transaction-desc>考勤管理―导出排班数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.shiftcheck.transaction.ExportShiftTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021308">
+         <transaction-name>考勤管理―排班数据</transaction-name>
+         <transaction-desc>考勤管理―排班数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.shiftgroup.transaction.ShiftDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021305">
+         <transaction-name>考勤管理―排班-班组成员</transaction-name>
+         <transaction-desc>考勤管理―排班-班组成员</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.shiftgroup.transaction.ShiftEmpTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021401">
+         <transaction-name>考勤管理―排班审查</transaction-name>
+         <transaction-desc>考勤管理―排班审查</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.shiftcheck.transaction.ShiftCheckTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+   	<wfi-mapping funcid="KQ00021402">
+         <transaction-name>考勤管理―排班审查-导出</transaction-name>
+         <transaction-desc>考勤管理―排班审查-导出</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.shiftcheck.transaction.ExportShiftCheckTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021101">
+         <transaction-name>考勤管理―数据上报</transaction-name>
+         <transaction-desc>考勤管理―数据上报</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.KqDataAppealMainTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+        <wfi-mapping funcid="KQ00021205">
+         <transaction-name>考勤管理―保存考勤数据明细</transaction-name>
+         <transaction-desc>考勤管理―保存考勤数据明细</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.OptKqDataMxTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021202">
+         <transaction-name>导出考勤明细</transaction-name>
+         <transaction-desc>导出考勤明细</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.ExpKqDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+   	<wfi-mapping funcid="KQ00021203">
+         <transaction-name>考勤管理―考勤数据归档方案配置</transaction-name>
+         <transaction-desc>考勤管理―考勤数据归档方案配置</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.KqDataArchiveTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021206">
+         <transaction-name>考勤管理―出勤异常显示</transaction-name>
+         <transaction-desc>考勤管理―出勤异常显示</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.KqExceptTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021207">
+         <transaction-name>考勤管理―出勤异常导出</transaction-name>
+         <transaction-desc>考勤管理―出勤异常导出</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.ExportKqExceptTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021208">
+         <transaction-name>导入月汇总</transaction-name>
+         <transaction-desc>导入月汇总</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqdata.transaction.ImportKqDataMxTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <!-- 考勤参数 -->
+    <wfi-mapping funcid="KQ00021501">
+         <transaction-name>考勤参数</transaction-name>
+         <transaction-desc>考勤参数</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.parameter.transaction.KqParameterTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+  
+    <wfi-mapping funcid="KQ00021601">
+         <transaction-name>打卡数据</transaction-name>
+         <transaction-desc>打卡数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.card.transaction.KqCardDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021602">
+         <transaction-name>打卡数据-快速查询</transaction-name>
+         <transaction-desc>打卡数据-快速查询</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.card.transaction.KqCardDataSearchTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021603">
+         <transaction-name>打卡数据分析</transaction-name>
+         <transaction-desc>打卡数据分析</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.card.transaction.KqCardDataAnalysisTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021604">
+         <transaction-name>打卡数据分析</transaction-name>
+         <transaction-desc>打卡数据分析</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.card.transaction.KqCardDataAnalysisSearchTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021605">
+         <transaction-name>打卡数据分析</transaction-name>
+         <transaction-desc>打卡数据分析</transaction-desc>
+         <lock-attribute>2</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.card.transaction.KqCardDataAnalysisStatisticsTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ00021606">
+         <transaction-name>防止链接超时</transaction-name>
+         <transaction-desc>防止链接超时</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.card.transaction.PreventTimeoutsTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ000205401">
+         <transaction-name>考勤管理―查询工作日历设置数据</transaction-name>
+         <transaction-desc>考勤管理―查询工作日历设置数据</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.calendar.transaction.KqSearchCalendarTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ000205402">
+         <transaction-name>考勤管理―保存工作日历参数设置</transaction-name>
+         <transaction-desc>考勤管理―保存工作日历参数设置</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.calendar.transaction.KqSaveCalendarTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ000205403">
+         <transaction-name>考勤管理―保存节假日</transaction-name>
+         <transaction-desc>考勤管理―保存节假日</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.calendar.transaction.KqSaveHolidayTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ000205404">
+         <transaction-name>考勤管理―删除节假日</transaction-name>
+         <transaction-desc>考勤管理―删除节假日</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.calendar.transaction.KqDeleteHolidayTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ000205405">
+         <transaction-name>考勤管理―保存公休日倒休</transaction-name>
+         <transaction-desc>考勤管理―保存公休日倒休	</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.calendar.transaction.KqSaveTurnDateTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ000205406">
+         <transaction-name>考勤管理―删除公休日倒休记录</transaction-name>
+         <transaction-desc>考勤管理―删除公休日倒休记录</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.calendar.transaction.KqDeleteTurnDateTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="KQ000205407">
+         <transaction-name>考勤管理―导入工作日历设置</transaction-name>
+         <transaction-desc>考勤管理―导入工作日历设置</transaction-desc>
+         <lock-attribute>0</lock-attribute>
+         <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.config.calendar.transaction.KqImportCalendarTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

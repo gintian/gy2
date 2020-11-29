@@ -1,0 +1,36 @@
+body{
+	font-family:'Helvetica Neue'
+}
+
+.x-codeselector{
+	font-size:1.0em;
+	
+}
+.x-codeselector-collapse{
+	background:url(../images/closed.png) no-repeat;
+	background-size:30px 30px;
+	border:none;
+}
+
+.x-codeselector-expand{
+	background:url(../images/expend.png) no-repeat;
+	background-size:30px 30px;
+}
+.x-codeselector-label{
+	padding-left:0px;
+	padding-right:0px;
+}
+.x-codeselector-label span{
+	float:left;
+}
+.x-field-select .x-component-outer .x-field-input .x-clear-icon{/*只会在日期型  添加箭头， 代码型指标不会 处理*/
+	background:url(../images/selecticon.png) no-repeat;
+	height: 4em;
+    margin: -1.1em 0.5em 0.5em;
+    top:1.7em;
+    right: -2.5em;
+    width: 4em;
+    display:block!important;
+    pointer-events: none;/*屏蔽clearicontap事件*/
+}
+

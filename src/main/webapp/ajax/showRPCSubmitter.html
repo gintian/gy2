@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="javascript">
+function window_onload()
+{
+  var popupWindow = window.parent;
+  var args = popupWindow.dialogArguments;
+  formUpdate.action = args.action;
+  formUpdate["__type"].value = args.type;
+  formUpdate["__xml"].value = args.xml;
+  formUpdate["__viewInstanceId"].value = args.viewInstanceId;
+  setTimeout("formUpdate.submit();", 0);
+  
+}
+</script>
+</head>
+<body language="javascript" onload="return window_onload()">
+  <form method="post" id="formUpdate">
+    <input name="__type">
+    <input name="__xml">
+    <input name="__viewInstanceId">
+    <input name="__rpc" value="true">
+    <input name="__rpcAgent" value="true">
+  </form>
+</body>
+</html>

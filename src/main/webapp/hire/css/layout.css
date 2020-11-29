@@ -1,0 +1,115 @@
+/**顶部是含有menubar的那种界面  最外面布局用的table级这个样式**/
+.setmp{
+   margin-top:-5px;
+   margin-left:-4px;
+}
+/**顶部是含有menubar的那种界面 直接包括menubar的table加这个样式**/
+.left1table{
+    margin-left:-2px;
+}
+/**hrms:commandbutton 只调节了  新增按钮其余的没有更改   **/
+#buttonadd,#buttonsave{
+  margin-left:-2px;
+}
+
+/**按审批状态查询的控制**/
+.selectPreForBP{/**需求报批下的**/
+    position:absolute;
+    left:310px;
+    top:37px;
+    z-index: 10;
+}
+.selectPreForSH{/**需求审核下的**/
+    position:absolute;
+    left:430px;
+    top:37px;
+    z-index: 10;
+}
+/**顶部直接是table表格的并且直接顶部没有按钮的 那个布局用的table加这个样式**/
+.normalmp{
+   margin-top:0px;
+   margin-left:0px;
+}
+/**顶部直接是table表格的并且直接顶部有按钮的 那个布局用的table加这个样式**/
+.normalbuttomp{
+   margin-top:0px;
+   margin-left:0px;
+}
+/**中间的普通table**/
+.nomalCommonTable{
+   margin-left:0px;
+   padding-left:0px;
+}
+.nopaddingTable{
+	margin-left:-10px;
+}
+/**由于第一个布局的table没有边框文字比较靠下所以写成50**/
+.rightsmallTable{
+	margin-top:50px;
+}
+/**这种table用于包含确定取消按钮与上面table的距离，为了不影响v6.x hr界面放在css中**/
+.containButtonTable{
+	margin-top:5px;
+}
+/**页面设置确定和取消按钮的控制**/
+.contabinBTTable{
+	margin-top:-19px;
+}
+/**招聘需求汇总表页面布局**/
+.tablelayout{
+	width:650px;
+	margin-top:0px;
+	margin-left:0px;
+}
+.buttonmargin{
+	margin-top:5px;
+}
+/**设置引入岗位信息布局**/
+.setFieldTable{
+	margin-top:-4px;
+    margin-left:0px;
+    margin-right:0px;
+}
+/**新增招聘需求页面底部的button控制**/
+.buttonmarginLeft{
+	margin-left:-1px;
+}
+/**查看应聘界面布局begin*****************/
+/**最外层table布局**/
+.normalbuttompCKYP{
+	margin-top:0px;
+	padding-top:0px;
+	position:absolute;
+	top:10px;
+}
+/**包含查询条件的table**/
+.containqueryExpTable{
+	margin-top:-8px;
+}
+/**包含radio和查询说明查询条件外部table**/
+.nopaddingCKYPTable{
+    margin-left:-8px;
+    margin-top:0px;
+}
+/**直接包含查询说明查询条件的table**/
+.ckypTopButtonCtrolTable{
+	 margin-top:2px;
+}
+/**生成的一条线**/
+.nopaddingTableckyp{
+	margin-left:0px;
+}
+/**设置赛选状态、评语、转入人才库、删除、收藏、打印、导出、发送消息、群发消息、显示照片、返回  (top)那一排按钮的控制**/
+.nomalCommonTable2{
+	margin-left:0px;
+}
+/**列表table的控制**/
+.nomalCommonTable3{
+	margin-left:0px;
+}
+/**需求报批报批界面控制**/
+.bpTableCon{
+   margin-top:0px;
+   margin-left:-2px;
+}
+/**查看应聘界面布局end*****************/

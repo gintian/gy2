@@ -1,0 +1,15 @@
+.under_line_input_cls {
+	border-top:none !important;
+	border-left:none;
+	border-right:none;
+ }
+ .field-input .x-form-text-field-body .x-form-trigger-wrap .x-form-text-wrap {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+ }
+ .x-form-text-wrap .x-form-text-wrap-default{
+	border-top:none !important;
+	border-left:none !important;
+	border-right:none !important;
+ }

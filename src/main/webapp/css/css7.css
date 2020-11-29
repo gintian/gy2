@@ -1,0 +1,49 @@
+.rshead{
+	background-color: #A2D1FB;
+	font-size: 10pt;
+	font-family:"宋体";
+	font-size:9pt;
+	color:#0455A0;
+	
+
+
+.trShallow {  
+	background-color: #F5FAFF; 
+	
+}
+.trDeep {  
+	background-color: #E5F2FF; 
+}
+
+
+.tdFontcolor{
+	color: #0559A7;
+	text-decoration: none;
+	Font-family:宋体;
+	Font-size=9pt;
+	height=20px;
+	align="center"
+}
+.tdPage{
+	color: #000063;
+	text-decoration: none
+}
+.pagerecordcount{
+	color: #FF6100;
+	text-decoration: none
+}
+.borderstyle{
+	border:1pt solid #2AA5F2;
+}
+
+.bodycolor{
+ background-color: #F5F5F5; 
+}
+.wordcolor{
+color: #097BE7;
+Font-family:宋体;
+Font-size=11pt;
+Font-weight:100;
+}
+.shuoming{
+color: #0C6AB9;}

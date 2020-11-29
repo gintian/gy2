@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>个税专项附加申报</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7">
+    <script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+    <link rel="stylesheet" href="../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+    <script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+    <script language='JavaScript' src='../gz_resource_zh_CN.js'></script>
+    <style type="text/css">
+        .querylabel{color: #1B4A98}
+    </style>
+</head>
+<body>
+    <script>
+        var selectIds="";//被选中的数据
+        Ext.Loader.setPath("Declare",".");
+        Ext.Loader.setConfig({
+            scriptCharset:'UTF-8',
+            paths:{
+                "EHR":rootPath+"/components"
+            }
+        });
+        Ext.Loader.setPath("SYSF",rootPath+"/components/fileupload");
+        Ext.onReady(function(){
+            Ext.require('Declare.DeclareList',function () {
+                Ext.widget('viewport',{
+                    layout:'fit',
+                    items:Ext.create("Declare.DeclareList")
+                })
+            })
+        });
+    </script>
+</body>
+</html>

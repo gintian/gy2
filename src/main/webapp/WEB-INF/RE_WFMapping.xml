@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="RE100000001">
+         <transaction-name>项目信息管理--展现</transaction-name>
+         <transaction-desc>项目信息管理--展现</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.redevelopment.extractexperter.transaction.ShowProjectInforTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="RE100000002">
+         <transaction-name>项目信息管理--查询</transaction-name>
+         <transaction-desc>项目信息管理--查询</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.redevelopment.extractexperter.transaction.SearchProjectInforTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="RE100000003">
+         <transaction-name>项目信息管理--删除</transaction-name>
+         <transaction-desc>项目信息管理--删除</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.redevelopment.extractexperter.transaction.DeleteProjectInforTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+       <wfi-mapping funcid="RE100000004">
+         <transaction-name>添加项目页面</transaction-name>
+         <transaction-desc>添加项目页面</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.redevelopment.extractexperter.transaction.AddProjectInforTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="RE100000005">
+         <transaction-name>项目信息添加以及修改</transaction-name>
+         <transaction-desc>项目信息添加到数修改</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.redevelopment.extractexperter.transaction.InsertProjectInforTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

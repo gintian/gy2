@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <tools position="top">
+    	<menubar id="" privid="3110404" text="输出"  icon="">
+          <menuitem functype="export" privid="31104041"  text="导出Excel" icon="/images/export.gif" />
+        </menubar>
+        <toolbar type="button" functype="scheme" text="栏目设置"/>
+        <toolbar type="split"/>
+        <toolbar type='button' text='button.insert' privid="3110401" handler='insertheadergroup' icon=""/>
+        <toolbar type='button' privid="3110403" handler='deletegroup' text="删除"/><!--functype="delete" functionid="0000002152" -->
+        <!-- 统计分析 -->
+       <!--  <toolbar type='button' functype="analyse" privid="3110410" /> -->
+        <toolbar type='querybox'  functionid='ZP0000002151' text='输入公司名称关键字...'/>
+    </tools>
+    <table selectable="true" sortable="true" lockable="true" editable="false" rowdbclick="actionRow" />
+</tableconstant>

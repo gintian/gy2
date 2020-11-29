@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF" monitorInterval="5">
+	<Properties>
+		<Property name="HRS_LOG">/export/logs/HRS</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<!-- 控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch) -->
+			<!-- <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"
+				/> -->
+			<PatternLayout
+					pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|HRS|进程号 %pid|线程号 %tid|%class{36} %L %M| %msg%xEx%n" />
+		</Console>
+		<RollingRandomAccessFile name="hrs_appender"
+								 immediateFlush="true" fileName="${HRS_LOG}/hrs.log"
+								 filePattern="${HRS_LOG}/HRS-%d{yyyy-MM-dd}-%i.log.gz">
+			<!-- %d{yyyy-MM-dd HH:mm:ss, SSS} : 日志生产时间 %p : 日志输出格式 %c : logger的名称
+				%m : 日志内容，即 logger.info("message") %n : 换行符 %C : Java类名 %L : 日志输出所在行数 %M
+				: 日志输出所在方法名 hostName : 本地机器名 hostAddress : 本地ip地址 -->
+			<PatternLayout>
+				<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|HRS|进程号 %pid|线程号 %tid|%class{36} %L %M| %msg%xEx%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<!-- 这个配置要和filePattern结合使用,上面filePattern中的命名规则是${HRS_LOG}/HRS-%d{yyyy-MM-dd}-%i.gz,最小的时间粒度是天，即每天生成一个日志-->
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+				<!--单个文件最大100M-->
+				<SizeBasedTriggeringPolicy size="100M"/>
+			</Policies>
+			<!-- 最多备份30天以内的日志，此处为策略限制，Delete中可以按自己需要用正则表达式编写 -->
+			<!-- DefaultRolloverStrategy字段中加入max=“30”经测试是配合SizeBasedTriggeringPolicy限制%i的存在数量，并没有发现是网上流传的是最多保存多少个文件的限制，也或许是我写的有问题 -->
+			<DefaultRolloverStrategy>
+				<Delete basePath="${HRS_LOG}" maxDepth="30">
+					<IfFileName glob="HRS.log.*.gz" />
+					<IfLastModified age="30d" />
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingRandomAccessFile>
+	</Appenders>
+
+	<Loggers>
+		<logger name="org.springframework" level="ERROR" additivity="true">
+			<appender-ref ref="Console" />
+		</logger>
+		<logger name="org.apache" level="INFO" additivity="true">
+			<appender-ref ref="Console" />
+		</logger>
+		<root level="INFO">
+			<AppenderRef ref="Console" />
+			<appender-ref ref="hrs_appender" />
+		</root>
+	</Loggers>
+
+</configuration>

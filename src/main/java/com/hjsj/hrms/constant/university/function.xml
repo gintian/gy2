@@ -1,0 +1,2936 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hrp_function>
+  <function id="0" name="自助服务平台">
+	<function id="11" name="HR服务台">
+	   <function id="1107" name="规章制度"/>
+	   <function id="1108" name="办事流程"/>
+	   <function id="1109" name="人事表格"/>
+	   <function id="1105" name="意见箱">
+	      <function id="110501" name="意见箱答复"/>
+	      <function id="110502" name="导出Excel"/>
+	      <function id="110503" name="新增"/>
+	   </function>
+	   <function id="1106" name="咨询台">
+	      <function id="110601" name="咨询台答复"/>
+	   </function>
+	   <function id="1112" name="看板管理"/>
+	   <function id="1113" name="通讯录"/>
+	   <!--
+	   <function id="1111" name="知识中心"/>
+	    -->
+
+	</function>
+	<function id="01" name="我的信息">
+	   <function id="010101" name="信息浏览">
+	     	<function id="0101010" name="电子档案"/>
+	   </function>
+	   <function id="010201" name="我的薪酬"/>
+	   <function id="0106" name="我的个税"/>
+	   <function id="0107" name="业务申请">
+		    <function id="010706" name="我的申请"/>
+			<function id="010703" name="提交"/>
+			<function id="010704" name="报批"/>
+			<function id="010730" name="撤销"/>
+			<function id="010705" name="打印"/>
+			<function id="010701" name="邮件抄送"/>
+			<function id="010707" name="批量审批"/>
+			<function id="010708" name="人员筛选"/>
+			<function id="010723" name="历史数据"/>
+			<function id="010714" name="返回"/>
+			<function id="010724" name="生成序号"/>
+			<function id="010729" name="删除"/>
+		    <function id="010731" name="自定义审批流程"/>
+            <function id="010732" name="审批流程"/>
+            <function id="010733" name="上会"/>
+            <function id="010734" name="刷新"/>
+		</function>
+	   <function id="010301" name="信息维护">
+	      <function id="01030101" name="多媒体信息增加"/>
+	      <function id="01030102" name="多媒体信息删除"/>
+	      <function id="01030103" name="多媒体信息修改"/>
+	      <function id="01030104" name="报批"/>
+	      <function id="01030115" name="整体报批"/>
+	      <function id="01030106" name="我的变动信息明细">
+	      	<function id="0103010601" name="保存"/>
+	      	<function id="0103010602" name="报批"/>
+	      	<function id="0103010603" name="删除"/>
+	      </function>
+	      <function id="01030117" name="上传照片"/>
+	   </function>
+	   <function id="010401" name="发表意见"/>
+		<function id="0109" name="我的团队">
+			<function id="010901" name="基本信息"/>
+			<function id="010902" name="员工薪酬"/>
+			<function id="010903" name="个人所得税"/>
+			<function id="010908" name="汇报关系图"/>
+		</function>
+
+	</function>
+	<function id="03" name="职工信息">
+	 <function id="030" name="信息浏览">
+	   <function id="030101" name="信息浏览">
+		  <function id="0301010" name="电子档案"/>
+		  <function id="260112" name="申请修改">
+	   	  	   <function id="26011201" name="整体报批"/>
+			   <function id="26011202" name="报批"/>
+	   	  </function>
+	   </function>
+	   <function id="030701" name="综合信息"/>
+	   <function id="030301" name="信息查询">
+	   	<function id="0303010" name="常用查询删除"/>
+	   	<function id="0303011" name="常用查询编辑"/>
+	   	<function id="0303012" name="常用查询顺序调整"/>
+	   	<function id="0303013" name="导出Excel"/>
+	   	<function id="0303014" name="高级查询"/>
+	   </function>
+	    <function id="030401" name="信息维护">
+	         <function id="0304011" name="新增"/>
+	         <function id="0304012" name="删除"/>
+	         <function id="0304013" name="移库"/>
+	         <function id="0304019" name="上传照片"/>
+	         <function id="030401A" name="计算"/>
+	         <function id="030401B" name="批量修改"/>
+	         <function id="030401C" name="批量导入">
+	                <function id="030401C1" name="下载"/>
+	                <function id="030401C2" name="导入"/>
+	         </function>
+             <function id="030401D" name="批量删除子集记录"/>
+             <function id="01030101" name="多媒体信息增加"/>
+             <function id="01030102" name="多媒体信息删除"/>
+             <function id="01030103" name="多媒体信息修改"/>
+	   </function>
+
+	   <function id="0308" name="信息审核">
+	    <function id="03081" name="退回"/>
+	    <function id="03082" name="批准"/>
+	    <function id="03083" name="整体批准"/>
+	    <function id="03084" name="整体退回"/>
+	    <function id="03085" name="删除"/>
+	    <function id="03086" name="保存"/>
+	   </function>
+	   <function id="030201" name="职工薪酬">
+	    <!--  <function id="03020102" name="列表方式">
+		    	<function id="03020101" name="输出PDF"/>
+	        	<function id="03020104" name="输出Excel"/>
+		    </function>
+		    <function id="03020103" name="表格方式">
+		    	<function id="0302010301" name="输出PDF"/>
+	        	<function id="0302010302" name="输出WORD"/>
+		    </function> -->
+	   </function>
+       <function id="030501" name="多媒体">
+         <function id="03050101" name="多媒体分类增加"/>
+         <function id="03050102" name="多媒体分类删除"/>
+         <function id="03050103" name="多媒体分类修改"/>
+         <function id="01030101" name="多媒体文件增加"/>
+         <function id="01030102" name="多媒体文件删除"/>
+         <function id="01030103" name="多媒体文件修改"/>
+         <function id="03050104" name="多媒体文件退回"/>
+         <function id="03050105" name="多媒体文件批准"/>
+       </function>
+       </function>
+       <function id="031" name="员工名册">
+	     <function id="0309" name="花名册"/>
+	      <function id="030901" name="新建花名册"/>
+          <function id="030902" name="删除花名册"/>
+          <function id="030903" name="新建花名册分类"/>
+          <function id="030904" name="删除花名册分类"/>
+          <function id="030905" name="页面设置"/>
+	  	  <function id="030906" name="栏目设置"/>
+	  	  <function id="030907" name="导出Excel"/>
+	  	  <function id="030908" name="导出PDF"/>
+	  	  <function id="030909" name="数据范围"/>
+	     <function id="0311" name="高级花名册"/>
+	   </function>
+	   <function id="0314" name="数据上报">
+	   		<function id="031401" name="报审"/>
+	   		<function id="031402" name="计算"/>
+	   		<function id="031403" name="报表输出"/>
+	   		<function id="031404" name="新增项目过滤"/>
+			<function id="031405" name="导入数据"/>
+			<function id="031406" name="审核"/>
+			<function id="031407" name="栏目设置（公有）" ctrl_ver="70"/>
+	   </function>
+	   <function id="0315" name="统计分析"/>
+	</function>
+		<function id="0K" name="移动服务">
+        <function id="0K00" name="首页">
+            <function id="0K0D" name="移动考勤">
+                 <function id="0K0D01" name="签到"/>
+                 <function id="0K0D02" name="我的轨迹"/>
+                 <function id="0K0D03" name="员工轨迹"/>
+            </function>
+            <function id="0K0E" name="假期" />
+            <function id="0K0L" name="考勤申请"/>
+            <function id="0K0F" name="请假申请"/>
+            <function id="0K0G" name="加班申请"/>
+            <function id="0K0H" name="公出申请"/>
+            <function id="0K0K" name="异动申请">
+                <function id="0K0K1" name="待办任务"/>
+                <function id="0K0K2" name="已办任务"/>
+                <function id="0K0K3" name="我的申请"/>
+                <function id="0K0K4" name="业务申请"/>
+            </function>
+            <function id="0K02" name="统计分析"/>
+            <function id="0K04" name="员工查询">
+                <function id="0K041" name="汇报对象" />
+                <function id="0K042" name="下属员工" />
+                <function id="0K043" name="最近入职" />
+                <function id="0K044" name="最近离职" />
+            </function>
+            <function id="0K01" name="通 讯 录">
+                <function id="0K0101" name="保存联系方式"/>
+                <function id="0K0102" name="转发联系方式"/>
+                <!-- <function id="0K0103" name="即时通讯"/>  -->
+            </function>
+            <function id="0K0I" name="业务协同">
+               <function id="0K0I1" name="待办任务"/>
+               <function id="0K0I2" name="已办任务"/>
+               <function id="0K0I3" name="我的申请"/>
+               <function id="0K0I4" name="业务申请"/>
+            </function>
+            <function id="0K03" name="我的团队">
+                <function id="0K0301" name="员工薪酬"/>
+            </function>
+            <function id="0K05" name="我的薪酬">
+               <function id="0K0501" name="下载" />
+            </function>
+            <function id="0K0N" name="扫一扫"/>
+            <function id="0K0J" name="本人资料"/>
+        </function>
+        <function id="0K0A" name="我的待办"/>
+        <function id="0K0C" name="我的打卡"/>
+        <function id="0K0M" name="我的假期"/>
+        <function id="0K07" name="签    到"/>
+        <function id="0K08" name="签    退"/>
+        <function id="0K06" name="员工名册"/>
+    </function>
+	<!-- 微信移动端 功能授权-->
+    <function id="0L" name="H5移动服务">
+   		<function id="0L01" name="我的薪酬"/>
+   		<function id="0L02" name="业务办理"/>
+   		<function id="0L101" name="我的任务"/>
+   		<function id="0L03" name="项目工时"/>
+   		<function id="0L04" name="移动考勤">
+   			<function id="0K09" name="部门考勤"/>
+   		</function>
+   		<function id="0L05" name="职工档案"/>
+   		<function id="0L06" name="本人档案"/>
+   		<function id="0L07" name="知识中心"/>
+   		<function id="0L08" name="党费管理"/>
+   		<function id="0L09" name="我的党费"/>
+   		<function id="0L21" name="个税附加申报"/>
+   		<function id="0L22" name="我的个税"/>
+   		<function id="0L23" name="人力分析"/>
+   		<function id="0L24" name="内部竞聘"/>
+    </function>
+	<function id="05" name="机构信息">
+	   <function id="050101" name="信息浏览"/>
+	   <function id="050104" name="信息维护">
+	   	  <function id="0501040" name="多媒体分类">
+	    	 <function id="05010401" name="多媒体分类增加"/>
+	    	 <function id="05010402" name="多媒体分类删除"/>
+	     	 <function id="05010403" name="多媒体分类修改"/>
+	   	  </function>
+	   	  <function id="0501041" name="多媒体文件">
+	    	 <function id="05010411" name="多媒体文件增加"/>
+	    	 <function id="05010412" name="多媒体文件删除"/>
+	     	 <function id="05010413" name="多媒体文件修改"/>
+	   	  </function>
+	   </function>
+	   <function id="050102" name="机构图">
+	   		<function id="0501021" name="历史时点查询" />
+	   		<function id="0501020" name="机构图显示&amp;隐藏当前组织单元" />
+	   </function>
+	</function>
+	<function id="04" name="统计分析">
+	   <function id="040101" name="常用统计分析">
+	   		<function id="04010101" name="设置统计范围"/>
+	   		<function id="04010102" name="新增"/>
+	        <function id="04010103" name="删除"/>
+	        <function id="04010104" name="修改"/>
+	        <function id="04010105" name="排序"/>
+	        <function id="04010106" name="信息集设置"/>
+	        <function id="04010107" name="统计数据归档"/>
+	   </function>
+	    <function id="040102" name="数据简报"/>
+	</function>
+
+    <function id="09" name="培训自助">
+            <function id="09A1" name="计划申报"/>
+            <function id="09A2" name="进修申报"/>
+            <function id="09A3" name="进修信息登记"/>
+            <function id="09A4" name="国内访学申请"/>
+            <function id="09A5" name="国内访学信息登记"/>
+            <function id="09A6" name="其他培训信息登记"/>
+    </function>
+	<function id="06" name="360评估">
+	   <function id="0605" name="考评实施">
+	      <function id="060501" name="考核表分发"/>
+	   </function>
+	   <function id="0606" name="考评打分">
+	   	<function id="060602" name="自我评价"/>
+	   	<function id="060603" name="单人考评"/>
+	   	<function id="060601" name="多人考评">
+	   		<function id="06060102" name="一键评分"/>
+	   		<function id="06060103" name="计算"/>
+	   		<function id="06060101" name="导出Excel"/>
+	   	</function>
+	   	<function id="060605" name="评分调整">
+	 	  	<function id="06060501" name="计算"/>
+	 	  	<function id="06060502" name="保存"/>
+	 	  	<function id="06060503" name="提交"/>
+	 	  	<function id="06060504" name="退回"/>
+	   	</function>
+	   	<function id="060604" name="打分状态">
+	   	   <function id="06060401" name="重新打分"/>
+	   	   <function id="06060402" name="考评进度统计表"/>
+	   	</function>
+	   </function>
+
+	   <function id="0603" name="考评反馈">
+	   	<function id="060301" name="本人考核结果">
+	   	   <function id="06030101" name="总分"/>
+	   	   <function id="06030102" name="详细"/>
+	   	</function>
+	   	<function id="060401" name="员工考核结果">
+	   	   <function id="06040101" name="总分"/>
+	   	   <function id="06040102" name="详细"/>
+	   	</function>
+	   	<function id="060303" name="团队考核结果">
+	   	   <function id="06030301" name="总分"/>
+	   	   <function id="06030302" name="详细"/>
+	   	</function>
+	   	<function id="060302" name="考评分数查询"/>
+	   </function>
+	</function>
+	<function id="0B" name="考勤自助">
+       <function id="0B4" name="请假申请"/>
+	   <function id="0B5" name="公出申请"/>
+	</function>
+	<function id="0F" name="竞聘上岗">
+        <function id="0F1" name="拟竞聘岗位"/>
+        <function id="0F2" name="申请竞聘岗位"/>
+        <function id="0F3" name="竞聘名单"/>
+        <function id="0F4" name="参数设置"/>
+    </function>
+	<function id="0D" name="干部考察">
+	   <function id="0D1" name="述职述廉">
+	    <function id="0D12" name="提交述职报告"/>
+	   	<function id="0D11" name="查阅述职报告"/>
+
+	   </function>
+	   <function id="0D2" name="民主评议">
+	   	<function id="0D21" name="领导班子测评"/>
+	   	<function id="0D22" name="班子成员测评"/>
+	   	<function id="0D23" name="自我评价"/>
+	   	<function id="0D24" name="打分状态"/>
+	   </function>
+	   <function id="0D4" name="后备推荐">
+	   	<function id="0D41" name="候选人提名">
+	   		<function id="0D4101" name="扫描"/>
+	        <function id="0D4102" name="推荐参数"/>
+	   	</function>
+	   	<function id="0D42" name="民主推荐"/>
+	   </function>
+	   <function id="0D3" name="结果分析">
+	   	<function id="0D31" name="本人测评结果"/>
+	   	<function id="0D32" name="成员测评结果"/>
+	   	<function id="0D33" name="后备推荐结果分析"/>
+	   	<function id="0D34" name="投票状况分析"/>
+	   </function>
+
+	</function>
+	<function id="0Z" name="绩效考核">
+		<function id="0Z1" name="教职工聘期考核"/>
+		<function id="0Z2" name="教学岗位年度考核"/>
+		<function id="0Z3" name="非教学岗年度考核"/>
+		<function id="0Z4" name="未参加考核登记"/>
+	</function>
+	<!--
+	<function id="07" name="参数设置及信息维护">
+	   <function id="070101" name="查询设置"/>
+	   <function id="070201" name="薪酬表设置(表格)"/>
+	   <function id="070202" name="薪酬表设置(列表)"/>
+	   <function id="070102" name="人员主集指标设置"/>
+	   <function id="070103" name="参数设置"/>
+	   <function id="070902" name="友情链接"/>
+	   <function id="070903" name="邮件服务器"/>
+	   <function id="080803" name="岗位说明书设置"/>
+	   <function id="080805" name="系统公告维护"/>
+	   <function id="080806" name="数据导出"/>
+       <function id="080807" name="后台作业"/>
+       <function id="080809" name="通讯录设置"/>
+       <function id="080808" name="数据视图"/>
+
+	   <function id="070901" name="职位信息">
+	   	<function id="0709010" name="多媒体">
+	    	 <function id="07090101" name="多媒体分类增加"/>
+	    	 <function id="07090102" name="多媒体分类删除"/>
+	     	 <function id="07090103" name="多媒体分类修改"/>
+	   	 </function>
+	   	 <function id="0709011" name="多媒体文件">
+	    	 <function id="07090111" name="多媒体文件增加"/>
+	    	 <function id="07090112" name="多媒体文件删除"/>
+	     	 <function id="07090113" name="多媒体文件修改"/>
+	   	 </function>
+	   </function>
+	   <function id="070301" name="流程上传"/>
+	   <function id="070401" name="表格上传"/>
+	   <function id="070501" name="公告栏维护">
+	      <function id="07050101" name="公告栏审批"/>
+	   </function>
+	   <function id="070601" name="问卷调查表定义"/>
+	   <function id="071101" name="知识维护">
+		      <function id="0711010" name="新增库"/>
+		      <function id="0711011" name="删除库"/>
+		      <function id="0711012" name="修改库"/>
+		      <function id="0711013" name="调整显示顺序"/>
+		      <function id="0711014" name="重建索引"/>
+		      <function id="0711015" name="导出"/>
+		      <function id="0711016" name="导入"/>
+		      <function id="0711017" name="授权"/>
+		      <function id="0711018" name="清除授权"/>
+		      <function id="0711019" name="删除文件"/>
+		      <function id="0711020" name="重新归类"/>
+		      <function id="0711021" name="授权初始化"/>
+	   </function>
+	   <function id="070701" name="规章制度维护">
+		      <function id="0707010" name="新增库"/>
+		      <function id="0707011" name="删除库"/>
+		      <function id="0707012" name="修改库"/>
+		      <function id="0707013" name="调整显示顺序"/>
+		      <function id="0707014" name="重建索引"/>
+		      <function id="0707015" name="导出"/>
+		      <function id="0707016" name="导入"/>
+		      <function id="0707017" name="授权"/>
+		      <function id="0707018" name="清除授权"/>
+		      <function id="0707019" name="删除文件"/>
+		      <function id="0707020" name="重新归类"/>
+		      <function id="0707021" name="授权初始化"/>
+	   </function>
+	</function>
+	-->
+	<!--
+	<function id="08" name="系统管理">
+	   <function id="080101" name="角色管理"/>
+	   <function id="080201" name="用户管理">
+	   			<function id="08020101" name="新增用户组"/>
+		      	<function id="08020102" name="新增管理员"/>
+		      	<function id="08020103" name="新增用户"/>
+		      	<function id="08020104" name="编辑"/>
+		      	<function id="08020110" name="修改密码"/>
+		      	<function id="08020105" name="删除"/>
+		      	<function id="08020106" name="角色分配"/>
+	      		<function id="08020107" name="关联人员"/>-->
+	      		<!-- function id="08020108" name="按业务划分操作单位"/> -->
+	      		<!--
+	      		<function id="08020109" name="调整用户组/用户"/>
+	   </function>
+	   <function id="080301" name="帐号分配">
+	   		<function id="08030101" name="设置账号"/>
+	      	<function id="08030102" name="角色分配"/>
+	      	<function id="08030103" name="帐号锁定|解锁"/>
+	      	<function id="08030104" name="生成随机密码"/>
+	      	<function id="08030105" name="全部生成随机密码"/>
+	   </function>
+	   <function id="080701" name="快速角色分配"/>
+	   <function id="080801" name="高级授权"/>
+	   <function id="0810" name="资源分配">
+	      		<function id="081000" name="统计表"/>
+	      		<function id="081001" name="登记表"/>
+	      		<function id="081002" name="常用花名册"/>
+	      		<function id="081003" name="高级花名册"/>
+	      		<function id="081004" name="常用统计"/>
+	      		<function id="081005" name="常用查询"/>
+	      		<function id="081006" name="规章制度"/>
+	      		<function id="081009" name="问卷调查表"/>
+	      		<function id="081010" name="培训班"/>
+	      		<function id="081011" name="公告栏"/>
+	      		<function id="081012" name="档案分类"/>
+				<function id="081014" name="基本班次"/>
+				<function id="081015" name="考勤班组"/>
+				-->
+				<!--
+				<function id="081013" name="知识分类"/>
+				 -->
+				 <!--
+	   </function>
+	   <function id="080102" name="权限明细"/>
+	   <function id="080401" name="IP地址管理"/>
+	   <function id="080501" name="认证用户库"/>
+	   <function id="080601" name="认证用户名"/>
+	   <function id="080804" name="LDAP目录认证配置"/>
+	   <function id="080901" name="操作日志">
+	   		<function id="0809011" name="清空"></function>
+	   		<function id="0809012" name="删除"></function>
+	   </function>
+	   <function id="0820" name="资源下载">
+          <function id="082001" name="SVG View"/>
+          <function id="082002" name="PDF阅读器"/>
+	   </function>
+	</function>
+-->
+	<function id="00" name="小工具条">
+	   <function id="000101" name="修改密码"/>
+	   <function id="000102" name="版权"/>
+	   <function id="000107" name="设置IE"/>
+	   <function id="000103" name="注销"/>
+	   <function id="000104" name="消息"/>
+	   <function id="000105" name="短信"/>
+	   <function id="000106" name="代理人设置"/>
+	</function>
+  </function>
+  <function id="2" name="人事业务平台" >
+
+	    <function id="231" name="组织机构">
+	       <function id="2310" name="单位管理">
+	          <function id="23011" name="信息浏览"/>
+	          <function id="23060" name="信息维护"/>
+	          <function id="230600" name="信息维护">
+	             <function id="2306000" name="新建"/>
+	             <function id="2306001" name="复制"/>
+	             <function id="2306002" name="编辑"/>
+	             <function id="2306003" name="删除"/>
+	             <function id="2306004" name="撤销"/>
+	             <function id="2306005" name="浏览"/>
+	             <function id="2306006" name="划转"/>
+	             <function id="2306009" name="合并"/>
+	             <function id="2306007" name="历史时点查询"/>
+	             <function id="2306008" name="人员信息浏览"/>
+	             <function id="230600A" name="刷新"/>
+	             <function id="23031" name="花名册">
+	                <function id="2303101" name="新建花名册"/>
+					<function id="2303102" name="删除花名册"/>
+					<function id="2303103" name="新建花名册分类"/>
+					<function id="2303104" name="删除花名册分类"/>
+					<function id="2303105" name="页面设置"/>
+            		<function id="2303106" name="栏目设置"/>
+            		<function id="2303107" name="导出Excel"/>
+            		<function id="2303108" name="导出PDF"/>
+            		<function id="2303109" name="数据范围"/>
+	             </function>
+	             <function id="23032" name="高级花名册"/>
+	             <function id="2304" name="登记表">
+	                <function id="2304001" name="输出PDF"/>
+	                <function id="2304002" name="输出WORD"/>
+					<function id="2304003" name="打印预演"/>
+	             </function>
+	             <function id="2317" name="统计分析">
+	                 <function id="231702" name="新增"/>
+	                 <function id="231703" name="删除"/>
+	                 <function id="231704" name="修改"/>
+	                 <function id="231705" name="排序"/>
+	                 <function id="231706" name="信息集设置"/>
+	                 <function id="231708" name="统计数据归档"/>
+	                 <function id="231707" name="统计方式设置"/>
+	             </function>
+	             <function id="2306010" name="多媒体">
+	               <function id="23063" name="多媒体分类">
+	                <function id="2306301" name="多媒体分类增加"/>
+	                <function id="2306302" name="多媒体分类删除"/>
+	                <function id="2306303" name="多媒体分类修改"/>
+	              </function>
+	              <function id="23066" name="多媒体文件">
+	                <function id="2306601" name="多媒体文件增加"/>
+	                <function id="2306602" name="多媒体文件删除"/>
+	                <function id="2306603" name="多媒体文件修改"/>
+	              </function>
+	             </function>
+	          </function>
+	          <function id="23067" name="机构调整">
+		          <function id="2306721" name="下载模板"/>
+		          <function id="2306722" name="导入数据"/>
+		          <function id="2306703" name="打印输出"/>
+		          <function id="2306704" name="设置计算公式"/>
+		          <function id="2306706" name="设置审核公式"/>
+		          <function id="2306726" name="设置业务日期"/>
+		          <function id="2306709" name="选机构"/>
+		          <function id="2306718" name="机构筛选"/>
+		          <function id="2306719" name="批量修改"/>
+		          <function id="2306724" name="生成序号"/>
+		          <function id="2306705" name="计算"/>
+		          <function id="2306707" name="新增"/>
+		          <function id="2306708" name="撤销"/>
+		          <function id="2306730" name="刷新"/>
+		          <function id="2306725" name="自定义审批流程"/>
+		          <function id="2306727" name="审批过程"/>
+		          <function id="2306714" name="返回"/>
+			        <function id="2306728" name="我的申请"/>
+	     		    <function id="2306729" name="任务监控">
+	      	  		<function id="230672901" name="流程终止"/>
+		     		    <function id="230672902" name="运行中删除"/>
+		     		    <function id="230672906" name="已终止删除"/>
+		      		  <function id="230672903" name="结束删除"/>
+		      		  <function id="230672904" name="重新分派"/>
+		      		  <function id="230672905" name="导出Excel"/>
+		      		  <function id="230672907" name="变动日志"/>
+		      		  <!-- <function id="230672908" name="流程归档"/>暂时屏蔽 -->
+	     		    </function>
+	          </function>
+	          <function id="23051" name="机构图">
+	          		<function id="230511" name="历史时点查询" />
+	          		<function id="230510" name="机构图显示&amp;隐藏当前组织单元" />
+	          </function>
+	          <function id="230521" name="汇报关系图">
+	              <function id="23052101" name="设置"/>
+	              <function id="23052102" name="审批关系维护"/>
+	          </function>
+	       </function>
+	       <function id="2311" name="岗位管理">
+	           <function id="25012" name="基准岗位">
+	               <function id="2501201" name="新建基准岗位"/>
+	               <function id="2501202" name="撤销基准岗位"/>
+	               <function id="2501203" name="删除基准岗位"/>
+	               <function id="2501204" name="编辑基准岗位"/>
+	               <function id="2501205" name="设置对应指标"/>
+	               <function id="2501206" name="高级花名册"/>
+                   <function id="2501207" name="基准岗位说明书">
+	                  <function id="250120701" name="输出PDF"/>
+	                  <function id="250120702" name="输出WORD"/>
+	                  <function id="250120703" name="打印预演"/>
+	               </function>
+	           </function>
+	       </function>
+	       <function id="2306" name="编制管理">
+	           <function id="23061" name="数据联动">
+					<function id="2306101" name="设置变化子集"/>
+					<function id="2306102" name="保存"/>
+					<function id="2306103" name="计算"/>
+					<function id="2306104" name="设置扫描库"/>
+					<function id="2306105" name="设置项目"/>
+					<function id="2306106" name="显示&amp;隐藏指标"/>
+					<function id="2306107" name="导出Excel"/>
+					<function id="2306108" name="导出模板"/>
+					<function id="2306109" name="导入模板数据"/>
+				 </function>
+				 <function id="23064" name="编制管理">
+	             	<function id="2306401" name="报批"/>
+	                <function id="2306402" name="驳回"/>
+	                <function id="2306403" name="批准"/>
+	             </function>
+	       </function>
+
+	       <function id="2313" name="基础设置">
+	             <function id="23050" name="机构编码">
+	             	<function id="230500" name="历史时点初始化"/>
+	             	<function id="230501" name="历史时点查询"/>
+	             	<function id="2305013" name="刷新"/>
+	             	<function id="230502" name="新增">
+	             	   <function id="23053" name="新增单位"/>
+		               <function id="23054" name="新增部门"/>
+		               <function id="23055" name="新增职位"/>
+	             	</function>
+	             	<function id="230503" name="修改"/>
+	             	<function id="2305012" name="删除"/>
+	             	<function id="230504" name="合并"/>
+	             	<function id="230505" name="划转"/>
+	             	<function id="230506" name="撤销"/>
+	             	<function id="230507" name="调整顺序"/>
+	             	<function id="230508" name="机构归档"/>
+	             	<function id="230509" name="机构导出"/>
+	             	<function id="2305010" name="机构导入"/>
+	             	<function id="2305011" name="重置机构层级"/>
+	             </function>
+	             <function id="23057" name="职务体系设置"/>
+		         <function id="23056" name="职务级别设置"/>
+		         <function id="25059" name="岗位体系设置"/>
+		         <function id="23058" name="岗位级别设置"/>
+	       </function>
+	       <function id="2314" name="参数设置">
+	          <function id="23062" name="编制参数设置"/>
+	          <function id="25062" name="岗位参数设置"/>
+	       </function>
+	   </function>
+
+
+	   <function id="260" name="职工管理" >
+
+		  <function id="2601" name="查询浏览">
+	              <function id="26011" name="信息浏览">
+	             	<function id="260111" name="生成花名册"/>
+	             	<function id="260112" name="申请修改"/>
+	             	<function id="260113" name="批量导出照片"/>
+	             </function>
+				 <function id="26010" name="信息查询">
+	               <function id="2601001" name="常用查询删除" />
+	               <function id="2601005" name="常用查询编辑"/>
+	               <function id="2601006" name="常用查询顺序调整"/>
+	               <function id="2601002" name="简单查询"/>
+	               <function id="2601003" name="通用查询"/>
+	               <function id="2601004" name="复杂查询"/>
+	               <function id="2601007" name="导出Excel"/>
+	               <function id="2601008" name="高级查询"/>
+	             </function>
+
+	              <function id="26012" name="历史时点" >
+	              	<function id="260121" name="历史时点">
+	              		<function id="2601211" name="删除" />
+	              	</function>
+	              	<function id="260123" name="统计" >
+	              		<function id="26012301" name="一维统计" />
+	              		<function id="26012302" name="多维统计" />
+	              		<function id="26012303" name="删除" />
+	              		<function id="26012304" name="编辑" />
+	              		<function id="26012305" name="调整顺序" />
+	              	</function>
+	              	<function id="260124" name="快照" />
+	              	<function id="260122" name="配置" />
+	              	<function id="260125" name="导出Excel" />
+	             </function>
+	      </function>
+		  <function id="2602" name="统计分析">
+	             <function id="26020" name="简单统计"/>
+	             <function id="26021" name="通用统计"/>
+	             <function id="26022" name="二维统计"/>
+	             <function id="26025" name="多维统计"/>
+	             <function id="26023" name="常用统计">
+	                 <function id="2602301" name="设置统计范围"/>
+	                 <function id="2602302" name="新增"/>
+	                 <function id="2602303" name="删除"/>
+	                 <function id="2602304" name="修改"/>
+	                 <function id="2602305" name="排序"/>
+	                 <function id="2602306" name="信息集设置"/>
+	                 <function id="2602307" name="统计数据归档"/>
+	                 <function id="2602308" name="统计方式设置"/>
+	             </function>
+	             <function id="26024" name="单项统计"/>
+	      </function>
+		  <function id="2603" name="花名册">
+	            <function id="26031" name="常用花名册">
+					<function id="2603101" name="新建花名册"/>
+					<function id="2603102" name="删除花名册"/>
+					<function id="2603103" name="新建花名册分类"/>
+					<function id="2603104" name="删除花名册分类"/>
+					<function id="2603105" name="页面设置"/>
+            		<function id="2603106" name="栏目设置"/>
+            		<function id="2603107" name="导出Excel"/>
+            		<function id="2603108" name="导出PDF"/>
+            		<function id="2603109" name="数据范围"/>
+				</function>
+	            <function id="26032" name="高级花名册"/>
+		  </function>
+		  <function id="2604" name="登记表">
+	                <function id="2604001" name="输出PDF"/>
+	                <function id="2604002" name="输出WORD"/>
+	                <function id="2604003" name="打印预演"/>
+	      </function>
+
+		  <function id="2605" name="干部管理">
+	      			<function id="260501" name="干部信息"/>
+	                <function id="260502" name="干部信息维护"/>
+	                <function id="260503" name="参数设置"/>
+	      </function>
+		  <!--
+	      <function id="2603" name="花名册">
+	             <function id="26030" name="新建花名册"/>
+	             <function id="26031" name="花名册"/>
+	             <function id="26032" name="高级花名册"/>
+	      </function>
+		  -->
+
+	      <function id="2606" name="信息维护">
+				 <function id="26000" name="快速录入"/>
+
+	             <function id="26060" name="记录方式">
+	                <function id="260601" name="新增"/>
+	                <function id="260602" name="删除"/>
+	                <function id="260603" name="移库"/>
+	                <function id="260606" name="计算"/>
+	                <function id="260608" name="人员排序"/>
+	                <function id="26060A" name="生成随机账号"/>
+	                <function id="260607" name="批量修改"/>
+	                <function id="260605" name="批量导入">
+	                	<function id="2606051" name="下载"/>
+	                	<function id="2606052" name="导入"/>
+	                </function>
+	                <function id="260609" name="批量导入照片"/>
+	         		<function id="260610" name="批量导入多媒体"/>
+	                <function id="260604" name="上传照片"/>
+                    <function id="2606501" name="多媒体信息增加"/>
+                    <function id="2606502" name="多媒体信息删除"/>
+                    <function id="2606503" name="多媒体信息修改"/>
+                    <function id="260611" name="批量删除子集记录"/>
+	             </function>
+
+	             <function id="26062" name="表格方式"/>
+				 <function id="26064" name="表格录入">
+					<function id="2606401" name="人员移库"/>
+					<function id="2606402" name="新增">
+						<function id="260640201" name="新增主集记录"/>
+						<function id="260640202" name="新增子集记录"/>
+					</function>
+					<function id="2606403" name="插入">
+						<function id="260640301" name="插入主集记录"/>
+						<function id="260640302" name="插入子集记录"/>
+					</function>
+					<function id="2606404" name="删除">
+						<function id="260640401" name="删除主集记录"/>
+						<function id="260640402" name="删除子集记录"/>
+					</function>
+					<function id="2606421" name="保存"/>
+					<function id="2606405" name="移动记录"/>
+					<function id="2606406" name="批量修改单个指标"/>
+					<function id="2606407" name="批量修改多个指标"/>
+					<function id="2606408" name="批量追加子集记录"/>
+					<function id="2606409" name="批量删除子集记录"/>
+					<function id="2606410" name="计算"/>
+					<function id="2606411" name="简单审核"/>
+					<function id="2606412" name="花名册"/>
+					<function id="2606413" name="登记表"/>
+					<function id="2606414" name="高级花名册"/>
+					<function id="2606415" name="显示照片">
+						<function id="260641501" name="修改照片"/>
+					</function>
+					<function id="2606416" name="显示多媒体"/>
+					<function id="2606417" name="人员排序"/>
+					<function id="2606418" name="子集排序"/>
+					<function id="2606419" name="显示&amp;隐藏指标"/>
+					<function id="2606420" name="调整指标顺序"/>
+					<function id="2606421" name="简单查询"/>
+	             	<function id="2606422" name="通用查询"/>
+	             	<function id="2606423" name="常用查询"/>
+				 </function>
+  	   			 <function id="26063" name="信息审核">
+	    			<function id="260631" name="驳回"/>
+	    			<function id="260632" name="批准"/>
+	   				<function id="260633" name="整体批准"/>
+	   				<function id="260634" name="整体驳回"/>
+	   				<function id="260635" name="删除"/>
+	   				<function id="260636" name="保存"/>
+	  			</function>
+
+	      </function>
+	   </function>
+
+
+	    <function id="311" name="招聘管理">
+	            <function id="31100" name="招聘批次">
+	                <function id="3110001" name="新建批次"/>
+                    <function id="3110002" name="编辑批次"/>
+                    <function id="3110003" name="删除批次"/>
+                    <function id="3110004" name="发布"/>
+                    <function id="3110005" name="结束"/>
+                    <function id="3110006" name="输出">
+                        <function id="311000601" name="导出Excel"/>
+                    </function>
+                    <function id="3110007" name="栏目设置（公有）"></function>
+	            </function>
+	  			<function id="31101" name="招聘职位">
+	  			  <function id="3110101" name="输出">
+	  			      <function id="311010101" name="导出excel"></function>
+	  			  </function>
+				  <function id="3110112" name="报批"></function>
+	  			  <function id="3110113" name="撤回"></function>
+	  			  <function id="3110114" name="批准"></function>
+	  			  <function id="3110115" name="退回"></function>
+	  			  <function id="3110102" name="职位发布"></function>
+	  			  <function id="3110103" name="暂停"></function>
+	  			  <function id="3110104" name="结束"></function>
+	  			  <function id="3110108" name="编辑"></function>
+	  			  <function id="3110105" name="新建职位"></function>
+				  <function id="3110111" name="人岗匹配"></function>
+	  			  <function id="3110106" name="删除职位"></function>
+	  			  <function id="3110107" name="栏目设置（公有）"></function>
+	  			  <function id="3110110" name="保存默认查询模板"/>
+	  			  <function id="3110109" name="简历筛选器">
+	  			      <function id="311010901" name="设置筛选指标"/>
+	  			      <function id="311010902" name="新增筛选规则"/>
+	  			      <function id="311010903" name="保存筛选规则"/>
+	  			      <function id="311010904" name="删除筛选规则"/>
+	  			  </function>
+						<function id="3110117" name="职位候选人">
+								<function id="311011708" name="栏目设置（公有）"/>
+								<function id="311011701" name="导出Excel"/>
+								<function id="311011704" name="导出简历PDF"/>
+								<function id="311011707" name="导出简历WORD"/>
+								<function id="311011705" name="打印简历"/>
+								<function id="311011706" name="导入推荐排名"/>
+	   			  </function>
+	  			</function>
+	  			<function id="31102" name="简历中心">
+	  			    <function id="3110201" name="输出">
+	  			        <function id="311020101" name="导出Excel"/>
+	  			        <function id="311020102" name="数据迁移"/>
+	  			        <function id="311020104" name="导出简历PDF"/>
+	  			        <function id="311020105" name="打印简历"/>
+						<function id="311020106" name="生成公示材料"/>
+	  			    </function>
+	  			    <function id="3110202" name="删除"/>
+	  			    <function id="3110203" name="接受职位申请"/>
+	  			    <function id="3110204" name="拒绝职位申请"/>
+	  			    <function id="3110205" name="转人才库"/>
+	  			    <function id="3110206" name="推荐职位"/>
+	  			    <function id="3110207" name="栏目设置（公有）"/>
+	  			    <function id="3110208" name="保存默认查询模板"/>
+	  			</function>
+	  			<function id="31103" name="人才库">
+	  			     <function id="3110301" name="输出">
+	  			        <function id="311030101" name="导出Excel"/>
+	  			    </function>
+	  			    <function id="3110302" name="删除"/>
+	  			    <function id="3110303" name="移出人才库"/>
+	  			    <function id="3110306" name="推荐职位"/>
+	  			    <function id="3110307" name="栏目设置（公有）"/>
+	  			    <function id="3110308" name="保存默认查询模板"/>
+	  			</function>
+	  			<function id="26067" name="第三方简历导入">
+	    			<function id="2606701" name="定义导入方案"/>
+	    			<function id="2606702" name="导入简历"/>
+	  			</function>
+				<function id="31108" name="考务管理">
+
+				    <function id="3110803" name="考试科目"/>
+				    <function id="3110805" name="考场设置">
+				        <function id="311080501" name="输出"/>
+				        <function id="311080502" name="新增考场"/>
+				        <function id="311080503" name="修改考场"/>
+				        <function id="311080504" name="删除考场"/>
+				        <function id="311080505" name="考场分派"/>
+				    </function>
+				    <function id="3110807" name="考生管理">
+				        <function id="311080701" name="输出">
+				            <function id="31108070101" name="导出EXCEL"/>
+				            <function id="31108070102" name="导出成绩"/>
+				        </function>
+				        <function id="311080702" name="删除考生"/>
+				        <function id="311080703" name="清除考场分派记录"/>
+				        <function id="311080704" name="生成准考证号"/>
+				        <function id="311080705" name="打印准考证"/>
+						<function id="311080711" name="保存"/>
+				        <function id="311080709" name="导入成绩"/>
+				        <function id="311080708" name="批量修改"/>
+				        <function id="311080710" name="保存默认查询模板"/>
+				        <!--
+				        <function id="311080207" name="计算总分和排名"/> <function id="311080706" name="导入成绩"/>
+				         -->
+				    </function>
+				</function>
+
+	  			<function id="31106" name="招聘设置">
+	  			    <function id="3110601" name="参数设置">
+		  			     <function id="311060101" name="应聘简历子集"/>
+		  			     <function id="311060102" name="应聘简历指标"/>
+		  			     <function id="311060103" name="后台参数"/>
+		  			     <function id="311060104" name="前台参数"/>
+                         <function id="311060105" name="数据初始化"/>
+		  			</function>
+		  			<function id="3110602" name="招聘流程"/>
+		  			<function id="3110603" name="通知模板">
+		  				<function id="311060301" name="新建"/>
+		  				<function id="311060302" name="删除"/>
+		  			</function>
+		  			<function id="3110604" name="外网内容管理"/>
+	  			</function>
+	  			<function id="31107" name="简历附件">
+	  			    <function id="3110701" name="预览"/>
+	  			    <function id="3110702" name="下载"/>
+	  			    <function id="3110703" name="删除"/>
+	  			</function>
+	   </function>
+	   <function id="320" name="人员调配">
+	      <function id="3200" name="业务办理">
+		      <function id="32002" name="批量审批"/>
+		      <function id="32001" name="批准"/>
+		      <function id="32003" name="打印"/>
+		      <function id="32004" name="公式定义"/>
+
+		      <function id="32018" name="人员筛选"/>
+		      <function id="32019" name="批量修改"/>
+		      <function id="32005" name="批量计算"/>
+		      <function id="32006" name="校验公式"/>
+		      <function id="32016" name="设置临时变量"/>
+		      <function id="32007" name="新增"/>
+		      <function id="32008" name="撤销"/>
+		      <function id="32009" name="选人"/>
+		      <function id="32015" name="邮件抄送"/>
+		      <function id="32017" name="同意"/>
+		      <function id="32014" name="返回"/>
+		      <function id="32024" name="下载模板"/>
+		      <function id="32025" name="导入数据"/>
+		      <function id="32028" name="生成序号"/>
+		      <function id="32029" name="删除"/>
+		      <function id="32030" name="自定义审批流程"/>
+		      <function id="32031" name="设置业务日期"/>
+			  <function id="32032" name="审批过程"/>
+	      </function>
+	      <function id="32026" name="历史数据">
+	      	  <function id="320261" name="导出EXCEl"/>
+		      <function id="320262" name="流程归档"/>
+	      </function>
+	      <function id="3204" name="我的消息"/>
+	      <function id="3205" name="我的申请"/>
+	      <function id="3201" name="任务监控">
+	      	  <function id="32010" name="流程终止"/>
+		      <function id="32012" name="运行中删除"/>
+		      <function id="32027" name="结束删除"/>
+		      <!--
+		      <function id="32010" name="任务终止"/>
+		       -->
+		      <function id="32011" name="重新分派"/>
+		      <function id="32013" name="导出Excel"/>
+		      <function id="32014" name="变动日志"/>
+		      <function id="32015" name="流程归档"/>
+	      </function>
+	      <function id="3202" name="流程定义">
+		      <function id="32020" name="增加"/>
+		      <function id="32021" name="删除"/>
+		      <function id="32022" name="编辑"/>
+		      <function id="32023" name="调整顺序"/>
+	      </function>
+
+	      <function id="3203" name="业务说明编辑"/>
+	      <function id="3206" name="电子签章"/>
+	   </function>
+
+	   <function id="330" name="合同管理">
+	   		<function id="33001" name="合同办理">
+	   		  <function id="3300100" name="业务办理">
+			      <function id="33001002" name="批量审批"/>
+			      <function id="33001001" name="批准"/>
+			      <function id="33001003" name="打印"/>
+			      <function id="33001004" name="公式定义"/>
+
+			      <function id="33001018" name="人员筛选"/>
+			      <function id="33001019" name="批量修改"/>
+			      <function id="33001005" name="批量计算"/>
+			      <function id="33001006" name="校验公式"/>
+			      <function id="33001016" name="设置临时变量"/>
+			      <function id="33001007" name="新增"/>
+			      <function id="33001008" name="撤销"/>
+			      <function id="33001009" name="选人"/>
+			      <function id="33001015" name="邮件抄送"/>
+			      <function id="33001017" name="同意"/>
+			      <function id="33001014" name="返回"/>
+			      <function id="33001024" name="下载模板"/>
+			      <function id="33001025" name="导入数据"/>
+			      <function id="33001026" name="历史数据"/>
+			      <function id="33001028" name="生成序号"/>
+			      <function id="33001029" name="删除"/>
+			      <function id="33001030" name="自定义审批流程"/>
+			      <function id="33001031" name="设置业务日期"/>
+			      <function id="33001032" name="审批过程"/>
+		      </function>
+		      <function id="3300104" name="我的消息"/>
+		      <function id="3300105" name="我的申请"/>
+		      <function id="3300101" name="任务监控">
+		      	  <function id="33001033" name="流程终止"/>
+			      <function id="33001012" name="运行中删除"/>
+			      <function id="33001027" name="结束删除"/>
+			      <function id="33001011" name="重新分派"/>
+			      <function id="33001013" name="导出Excel"/>
+			      <function id="33001015" name="流程归档"/>
+		      </function>
+		      <function id="3300102" name="流程定义">
+			      <function id="33001020" name="增加"/>
+			      <function id="33001021" name="删除"/>
+			      <function id="33001022" name="编辑"/>
+			      <function id="33001023" name="调整顺序"/>
+		      </function>
+		      <function id="3300103" name="业务说明编辑"/>
+
+	   		</function>
+	   		<function id="33002" name="合同台帐">
+	   			<function id="3300201" name="查询">
+		   			<function id="330020101" name="简单查询"/>
+		   			<function id="330020102" name="通用查询"/>
+		   			<function id="330020103" name="常用查询"/>
+		   			<function id="330020104" name="显示查询结果"/>
+	   			</function>
+	   			<function id="3300202" name="批量处理">
+	   				<function id="330020201" name="计算"/>
+	   			</function>
+	   			<function id="3300203" name="打印输出">
+		   			<function id="330020301" name="花名册"/>
+		   			<function id="330020302" name="登记表"/>
+		   			<function id="330020303" name="合同台帐"/>
+	   			</function>
+	   			<function id="3300205" name="子集记录新增"/>
+	   			<function id="3300206" name="子集记录删除"/>
+	   			<function id="3300207" name="子集记录修改"/>
+	   		</function>
+	   		<function id="33003" name="统计分析">
+	   			<function id="330031" name="设置指标项"/>
+	   		</function>
+	   		<function id="33004" name="参数设置">
+	   			<function id="330041" name="基础参数"/>
+	   		</function>
+	   </function>
+	   <!-- 过渡性方案，从761起去掉，如仍需使用，可放开此处
+	   <function id="271" name="考勤管理">
+	       <function id="27015" name="业务办理">
+		       <function id="2701524" name="下载模板"/>
+	      	   <function id="2701525" name="导入数据"/>
+	      	   <function id="2701503" name="打印输出"/>
+	      	   <function id="2701516" name="设置临时变量"/>
+	      	   <function id="2701504" name="设置计算公式"/>
+	      	   <function id="2701506" name="设置审核公式"/>
+	      	   <function id="2701531" name="设置业务日期"/>
+	      	   <function id="2701509" name="选人"/>
+	      	   <function id="2701518" name="人员筛选"/>
+	      	   <function id="2701519" name="批量修改"/>
+	      	   <function id="2701528" name="生成序号"/>
+	      	   <function id="2701505" name="计算"/>
+	      	   <function id="2701507" name="新增"/>
+		       <function id="2701508" name="撤销"/>
+	      	   <function id="2701533" name="刷新"/>
+	      	   <function id="2701530" name="自定义审批流程"/>
+	      	   <function id="2701501" name="批准"/>
+		       <function id="2701502" name="批量审批"/>
+		       <function id="2701529" name="删除待办任务"/>
+		       <function id="2701517" name="同意"/>
+		       <function id="2701532" name="审批过程"/>
+		       <function id="2701515" name="邮件抄送"/>
+		       <function id="2701514" name="返回"/>
+	       </function>
+	       <function id="27016" name="任务监控">
+	      	   <function id="270160" name="流程终止"/>
+		       <function id="270162" name="运行中删除"/>
+		       <function id="270164" name="已终止删除"/>
+		       <function id="270167" name="结束删除"/>
+		       <function id="270161" name="重新分派"/>
+		       <function id="270163" name="导出Excel"/>
+		       <function id="270165" name="流程归档"/>
+           </function>
+		   <function id="32402" name="数据上报">
+		       <function id="324020301" name="新建"/>
+	   		   <function id="3240207" name="删除"/>
+	   		   <function id="3240202" name="保存"/>
+	   		   <function id="324020504" name="提交"/>
+	   		   <function id="324020403" name="计算"/>
+	   		   <function id="3240208" name="报批"/>
+	   		   <function id="3240225" name="报审"/>
+	   		   <function id="3240213" name="审核"/>
+	   		   <function id="3240224" name="重新导入"/>
+	   		   <function id="324020505" name="发送通知"/>
+	   			<function id="3240230" name="上报功能导航">
+		   			<function id="324020303" name="导出"/>
+		   			<function id="3240231" name="上报Excel导入" ctrl_ver="70">
+		   				<function id="324020302" name="按方案导入数据"/>
+		   				<function id="324020305" name="按模板导入数据"/>
+		   			</function>
+		   			<function id="3240232" name="上报数据变化处理" ctrl_ver="70">
+			   			<function id="3240201" name="与档案数据比对"/>
+			   			<function id="3240217" name="与上期数据比对"/>
+			   			<function id="3240212" name="上报人员引入" ctrl_ver="70">
+			   			   <function id="324021201" name="可引入管理范围外人员"/>
+			   			</function>
+		   			</function>
+		   			<function id="3240204" name="上报批量处理" ctrl_ver="70">
+		   				<function id="324020401" name="批量引入"/>
+		   				<function id="324020402" name="批量修改"/>
+		   				<function id="3240216" name="同步人员顺序"/>
+		   			</function>
+		   			<function id="324020503" name="上报报表输出" ctrl_ver="70">
+		   				<function id="32402050301" name="新增"/>
+		   				<function id="32402050302" name="修改"/>
+		   				<function id="32402050303" name="删除"/>
+		   				<function id="32402050304" name="栏目设置（公有）"/>
+		   			</function>
+		   			<function id="3240206" name="上报设置" ctrl_ver="70">
+		   				<function id="324020601" name="重置业务日期"/>
+		   				<function id="324020607" name="设置业务日期"/>
+		   				<function id="324020602" name="薪资重发"/>
+		   				<function id="324020603" name="计算公式"/>
+		   				<function id="324020605" name="定义审核公式"/>
+		   				<function id="324020606" name="栏目设置（公有）"/>
+		   			</function>
+	   			</function>
+		      </function>
+		      <function id="32403" name="数据审批">
+		      	<function id="3240311" name="报批"/>
+	   			<function id="3240312" name="批准"/>
+	   			<function id="3240303" name="驳回"/>
+	   			<function id="3240309" name="审核"/>
+	   			<function id="3240304" name="保存"/>
+	   			<function id="3240308" name="计算"/>
+	   			<function id="3240305" name="提交"/>
+	   			<function id="3240306" name="删除"/>
+	   			<function id="324031003" name="审批确认"/>
+	   			<function id="3240329" name="栏目设置（公有）"/>
+	   			<function id="3240330" name="明细页栏目设置（公有）"/>
+	   			<function id="3240326" name="数据审批功能导航">
+		   			<function id="3240307" name="与上期数据比对"/>
+		   			<function id="32403002" name="数据审批批量处理">
+		   				<function id="3240317" name="批量引入"/>
+		   				<function id="3240316" name="同步人员顺序"/>
+		   			</function>
+		   			<function id="3240318" name="导出"/>
+		   			<function id="3240314" name="导入明细表"/>
+	 				<function id="324031002" name="数据审批报表输出">
+		   			    <function id="32403100101" name="新增"/>
+		   				<function id="32403100102" name="修改"/>
+		   				<function id="32403100103" name="删除"/>
+		   				<function id="32403100104" name="栏目设置（公有）"/>
+		   			</function>
+	   			</function>
+		      </function>
+		      <function id="2713" name="假期管理">
+	             <function id="27040" name="修改"/>
+	             <function id="27041" name="计算"/>
+	             <function id="27042" name="定义公式"/>
+	             <function id="27043" name="打印"/>
+	             <function id="27044" name="休假计划制订">
+                    <function id="2704400" name="新增"/>
+                    <function id="2704401" name="删除"/>
+                    <function id="2704402" name="发布"/>
+                    <function id="2704404" name="审核"/>
+                    <function id="2704405" name="批准"/>
+                    <function id="2704406" name="详细信息"/>
+                    <function id="2704407" name="修改计划信息"/>
+                    <function id="2704408" name="修改员工计划信息"/>
+                </function>
+                <function id="27046" name="下载模板"/>
+                <function id="27048" name="数据导入"/>
+	          </function>
+	          <function id="2714" name="参数设置">
+	             <function id="27032" name="节假日维护"/>
+                 <function id="27034" name="公休日维护"/>
+                 <function id="27036" name="公休日倒休"/>
+              </function>
+	    </function>
+	    -->
+	   <function id="272" name="考勤管理">
+		  <function id="27201" name="考勤申请">
+		    <function id="27015" name="业务办理">
+		      <function id="2701524" name="下载模板"/>
+	      	  <function id="2701525" name="导入数据"/>
+	      	  <function id="2701503" name="打印输出"/>
+	      	  <function id="2701516" name="设置临时变量"/>
+	      	  <function id="2701504" name="设置计算公式"/>
+	      	  <function id="2701506" name="设置审核公式"/>
+	      	  <function id="2701531" name="设置业务日期"/>
+	      	  <function id="2701509" name="选人"/>
+	      	  <function id="2701518" name="人员筛选"/>
+	      	  <function id="2701519" name="批量修改"/>
+	      	  <function id="2701528" name="生成序号"/>
+	      	  <function id="2701505" name="计算"/>
+	      	  <function id="2701507" name="新增"/>
+		      <function id="2701508" name="撤销"/>
+	      	  <function id="2701533" name="刷新"/>
+	      	  <function id="2701530" name="自定义审批流程"/>
+	      	  <function id="2701501" name="批准"/>
+		      <function id="2701502" name="批量审批"/>
+		      <function id="2701529" name="删除待办任务"/>
+		      <function id="2701517" name="同意"/>
+		      <function id="2701532" name="审批过程"/>
+		      <function id="2701515" name="邮件抄送"/>
+		      <function id="2701514" name="返回"/>
+		    </function>
+		    <function id="27016" name="任务监控">
+	      	  <function id="270160" name="流程终止"/>
+		      <function id="270162" name="运行中删除"/>
+		      <function id="270164" name="已终止删除"/>
+		      <function id="270167" name="结束删除"/>
+		      <function id="270161" name="重新分派"/>
+		      <function id="270163" name="导出Excel"/>
+		      <function id="270165" name="流程归档"/>
+	        </function>
+	      </function>
+	      <function id="27206" name="打卡数据">
+	      	<function id="2720601" name="功能导航">
+	      	  <function id="272060101" name="导出数据"/>
+	      	</function>
+	      	<function id="2720602" name="导入数据"/>
+	      	<function id="2720603" name="删除数据"/>
+	      	<function id="2720604" name="数据分析">
+	      	  <function id="272060401" name="功能导航">
+	      	  	<function id="27206040101" name="导出数据"/>
+	      	  </function>
+	      	  <function id="272060402" name="数据分析"/>
+	      	</function>
+	      	<function id="2720605" name="栏目设置"></function>
+	      </function>
+		  <function id="27202" name="排班管理">
+			  <function id="2720201"  name="班次管理">
+			  	<function id="272020101"  name="新建"/>
+			  	<function id="272020102"  name="修改"/>
+			  	<function id="272020103"  name="删除"/>
+			  </function>
+			  <function id="2720202"  name="班组管理">
+			  	<function id="272020201"  name="创建班组"/>
+				<function id="272020202"  name="编辑班组"/>
+				<function id="272020203"  name="删除班组"/>
+				<function id="272020204"  name="排班管理">
+					<function id="27202020401"  name="班组人员维护"/>
+					<function id="27202020402"  name="排班"/>
+					<function id="27202020403"  name="计算"/>
+					<function id="27202020404"  name="发布"/>
+					<function id="27202020405"  name="导出周排班表"/>
+					<function id="27202020406"  name="导出月排班汇总表"/>
+					<function id="27202020407"  name="栏目设置（公有）"/>
+				</function>
+			  </function>
+			  <function id="2720203"  name="排班审查">
+				<function id="272020301"  name="导出工作分析表"/>
+				<function id="272020302"  name="导出排班表"/>
+			</function>
+		  </function>
+		  <function id="27203" name="考勤数据">
+		  	  <function id="2720300"  name="重置"/>
+			  <function id="2720301"  name="数据上报">
+			  	<function id="272030106"  name="删除" />
+			  	<function id="272030101"  name="计算" />
+			  	<function id="272030105"  name="归档" />
+				<function id="272030102"  name="输出EXCEL"/>
+			  	<function id="272030103"  name="输出日明细"/>
+			  	<function id="272030104"  name="输出月汇总"/>
+			  	<function id="272030107"  name="出勤异常情况"/>
+			  	<function id="272030108"  name="导入月汇总"/>
+			  </function>
+			  <function id="2720302"  name="数据审批" >
+			  	<function id="272030201"  name="计算" />
+			  	<function id="272030202"  name="归档" />
+			  	<function id="272030203"  name="输出EXCEL"/>
+			  	<function id="272030204"  name="输出日明细"/>
+			  	<function id="272030205"  name="输出月汇总"/>
+			  	<function id="272030207"  name="出勤异常情况"/>
+			  	<function id="272030208"  name="栏目设置（公有）"/>
+			  	<function id="272030209"  name="导入月汇总"/>
+			  </function>
+		  </function>
+		  <function id="27204" name="假期管理">
+             <function id="27040" name="修改"/>
+             <function id="27041" name="计算"/>
+             <function id="27042" name="定义公式"/>
+             <function id="27043" name="打印"/>
+             <function id="27046" name="下载模板"/>
+             <function id="27048" name="数据导入"/>
+	      </function>
+		  <function id="27205" name="业务配置">
+		  	  <function id="2720507"  name="考勤参数"/>
+			  <function id="2720501"  name="考勤方案"/>
+			  <function id="2720502"  name="考勤期间">
+			  	 <function id="272050201"  name="新建">
+			  		<function id="27205020101"  name="同上一年度"/>
+			  		<function id="27205020102"  name="按自然月"/>
+			  		<function id="27205020103"  name="按指定期间"/>
+			  	 </function>
+			  	 <function id="272050202"  name="删除"/>
+			  </function>
+			  <function id="2720503"  name="考勤项目"/>
+			  <!--
+			  <function id="27032" name="节假日维护"/>
+              <function id="27034" name="公休日维护"/>
+              <function id="27036" name="公休日倒休"/>
+              -->
+              <function id="27032" name="工作日历"/>
+		  </function>
+	   </function>
+		<function id="324" name="薪资管理">
+	   		<function id="32401" name="薪资变动">
+	   			<function id="3240101" name="业务办理">
+				      <function id="324010101" name="批量审批"/>
+				      <function id="324010102" name="批准"/>
+				      <function id="324010120" name="打印结束状态表单"/>
+				      <function id="324010103" name="打印"/>
+				      <function id="324010104" name="公式定义"/>
+				      <function id="324010118" name="人员筛选"/>
+ 					  <function id="324010119" name="批量修改"/>
+				      <function id="324010105" name="批量计算"/>
+				      <function id="324010106" name="校验公式"/>
+				      <function id="324010116" name="设置临时变量"/>
+				      <function id="324010107" name="新增"/>
+				      <function id="324010108" name="撤销"/>
+				      <function id="324010109" name="选人"/>
+				      <function id="324010115" name="邮件抄送"/>
+				      <function id="324010117" name="同意"/>
+				      <function id="324010121" name="下载模板"/>
+				      <function id="324010122" name="导入数据"/>
+				      <function id="324010114" name="返回"/>
+				      <function id="324010124" name="生成序号"/>
+				      <function id="324010129" name="删除"/>
+				      <function id="324010130" name="自定义审批流程"/>
+				      <function id="324010131" name="设置业务日期"/>
+				      <function id="324010132" name="审批流程"/>
+			    </function>
+			    <function id="324010123" name="历史数据">
+			    	<function id="3240101231" name="导出EXCEl"/>
+		        	<function id="3240101232" name="流程归档"/>
+	      		</function>
+			    <function id="3240104" name="我的消息"/>
+	      		<function id="3240105" name="我的申请"/>
+			    <function id="3240102" name="任务监控">
+			    	  <function id="324010202" name="流程终止"/>
+				      <function id="324010201" name="运行中删除"/>
+				      <function id="324010227" name="结束删除"/>
+				      <!--
+				      <function id="324010202" name="任务终止"/>
+				       -->
+				      <function id="324010203" name="重新分派"/>
+				      <function id="324010204" name="导出Excel"/>
+				      <function id="324010206" name="变动日志"/>
+				      <function id="324010207" name="流程归档"/>
+			    </function>
+			    <function id="3240103" name="流程定义">
+				      <function id="324010301" name="增加"/>
+				      <function id="324010302" name="删除"/>
+				      <function id="324010303" name="编辑"/>
+				      <function id="324010304" name="调整顺序"/>
+			    </function>
+			    <function id="3240113" name="业务说明编辑"/>
+	   		</function>
+	   		<function id="32402" name="薪资发放" ctrl_ver="70">
+	   			<function id="324020301" name="新建"/>
+	   			<function id="3240207" name="删除"/>
+	   			<function id="3240202" name="保存"/>
+	   			<function id="324020504" name="提交"/>
+	   			<function id="324020403" name="计算"/>
+	   			<function id="3240208" name="报批"/>
+	   			<function id="3240226" name="下发"/>
+	   			<function id="3240225" name="报审"/>
+	   			<function id="3240213" name="审核"/>
+	   			<function id="3240224" name="重新导入"/>
+	   			<function id="324020505" name="发送通知"/>
+  				<function id="324020801" name="历史数据栏目设置（公有）"/>
+	   			<function id="3240230" name="功能导航">
+		   			<function id="324020303" name="导出"/>
+		   			<function id="3240231" name="Excel导入" ctrl_ver="70">
+		   				<function id="324020302" name="按方案导入数据"/>
+		   				<function id="324020305" name="按模板导入数据"/>
+		   			</function>
+		   			<function id="3240232" name="数据变化处理" ctrl_ver="70">
+			   			<function id="3240201" name="与档案数据比对"/>
+			   			<function id="3240217" name="与上期数据比对"/>
+			   			<function id="3240212" name="人员引入" ctrl_ver="70">
+			   			   <function id="324021201" name="可引入管理范围外人员"/>
+			   			   <!--<function id="324021202" name="设置单位部门变动子集"/>-->
+			   			</function>
+		   			</function>
+		   			<function id="3240204" name="批量处理" ctrl_ver="70">
+		   				<function id="324020401" name="批量引入"/>
+		   				<function id="324020402" name="批量修改"/>
+		   				<function id="3240216" name="同步人员顺序"/>
+		   			</function>
+
+		   			<function id="324020502" name="银行报盘"/>
+		   			<function id="324020503" name="薪资报表" ctrl_ver="70">
+		   				<function id="32402050301" name="新增"/>
+		   				<function id="32402050302" name="修改"/>
+		   				<function id="32402050303" name="删除"/>
+		   				<function id="32402050304" name="栏目设置（公有）"/>
+		   			</function>
+		   			<function id="3240206" name="设置" ctrl_ver="70">
+		   				<function id="324020601" name="重置业务日期"/>
+		   				<function id="324020607" name="设置业务日期"/>
+		   				<function id="324020602" name="薪资重发"/>
+		   				<function id="324020603" name="计算公式"/>
+		   				<function id="324020605" name="定义审核公式"/>
+		   				<function id="324020606" name="栏目设置（公有）"/>
+		   				<!--<function id="324020604" name="邮件模板"/>-->
+		   			</function>
+	   			</function>
+					<function id="3240233" name="个税专项附加申报">
+					  <function id="324023301" name="删除"/>
+				  </function>
+	   		</function>
+
+
+
+	   		<function id="32402" name="薪资发放" ctrl_ver="50,60">
+	   			<function id="3240201" name="变动比对"/>
+	   			<function id="3240212" name="人员引入" ctrl_ver="50,60">
+	   			   <function id="324021201" name="可引入管理范围外人员"/>
+	   			   <function id="324021202" name="设置单位部门变动子集"/>
+	   			</function>
+	   			<function id="3240202" name="保存"/>
+	   			<function id="3240207" name="删除"/>
+	   			<function id="3240208" name="报批"/>
+	   			<function id="3240225" name="报审"/>
+	   			<function id="3240211" name="个别计算"/>
+	   			<function id="3240213" name="审核"/>
+	   			<function id="32402140" name="引入奖金"/>
+	   			<function id="3242112" name="引入计件薪资"/>
+	   			<function id="3240203" name="薪资表">
+	   				<function id="324020301" name="新建"/>
+	   				<function id="324020302" name="导入"/>
+	   				<function id="324020303" name="导出"/>
+	   				<function id="324020304" name="下载模板"/>
+	   				<function id="324020305" name="导入数据"/>
+	   			</function>
+	   			<function id="3240204" name="批量处理" ctrl_ver="50,60">
+	   				<function id="324020401" name="批量引入"/>
+	   				<function id="324020402" name="批量修改"/>
+	   				<function id="324020403" name="批量计算"/>
+	   			</function>
+	   			<function id="3240210" name="隐藏/显示指标"/>
+	   			<function id="3240209" name="调整指标顺序"/>
+	   			<function id="3240216" name="同步人员顺序"/>
+	   			<function id="3240215"  name="默认排序"  />
+	   			<function id="3240205" name="薪资发放">
+	   				<function id="324020501" name="分钱清单"/>
+	   				<function id="324020502" name="银行报盘"/>
+	   				<function id="324020503" name="薪资报表">
+	   				   <function id="32402050301" name="新增"/>
+	   				   <function id="32402050302" name="修改"/>
+	   				   <function id="32402050303" name="删除"/>
+	   				</function>
+	   				<function id="324020504" name="提交"/>
+	   				<function id="324020505" name="发送邮件"/>
+	   				<function id="324020506" name="名册台帐"/>
+	   			</function>
+	   			<function id="3240206" name="设置" ctrl_ver="50,60">
+	   				<function id="324020601" name="重置业务日期"/>
+	   				<function id="324020602" name="薪资重发"/>
+	   				<function id="324020603" name="计算公式"/>
+	   				<function id="324020604" name="邮件模板"/>
+	   				<function id="324020605" name="定义审核公式"/>
+	   			</function>
+
+	   			<function id="3240223" name="新增项目过滤"/>
+	   			<function id="3240220" name="审批状态"/>
+	   			<function id="3240221" name="审批过程"/>
+	   			<function id="3240224" name="重新导入"/>
+	   		</function>
+
+
+	   		<function id="32403" name="薪资审批" ctrl_ver="70">
+	   			<function id="3240311" name="报批"/>
+	   			<function id="3240312" name="批准"/>
+	   			<function id="3240303" name="驳回"/>
+	   			<function id="3240309" name="审核"/>
+	   			<function id="3240304" name="保存"/>
+	   			<function id="3240308" name="计算"/>
+	   			<function id="3240305" name="提交"/>
+	   			<function id="3240306" name="删除"/>
+	   			<function id="324031003" name="审批确认"/>
+	   			<function id="3240329" name="栏目设置（公有）"/>
+	   			<function id="3240330" name="明细页栏目设置（公有）"/>
+	   			<function id="3240326" name="功能导航">
+
+		   			<function id="3240307" name="与上期数据比对"/>
+		   			<function id="32403002" name="批量处理">
+		   				<function id="3240317" name="批量引入"/>
+		   				<function id="3240316" name="同步人员顺序"/>
+		   			</function>
+		   			<function id="3240318" name="导出"/>
+		   			<!--<function id="3240313" name="下载模板"/>-->
+		   			<function id="3240314" name="导入明细表"/>
+	 				  <function id="324031002" name="薪资报表">
+		   			  <function id="32403100101" name="新增"/>
+		   				<function id="32403100102" name="修改"/>
+		   				<function id="32403100103" name="删除"/>
+		   				<function id="32403100104" name="栏目设置（公有）"/>
+		   			</function>
+					  <function id="324031001" name="银行报盘"/>
+
+	   			</function>
+
+
+	   			<!--
+	   			<function id="3240302" name="个别批准"/>
+	   			<function id="3240301" name="个别报批"/>
+	   			<function id="32403011" name="审核公式"/>
+				<function id="3240325" name="隐藏/显示指标"/>
+	   			<function id="3240310" name="审批发放">
+	   			   <function id="324031001" name="银行报盘"/>
+	   			</function>
+	   			<function id="3240320" name="审批状态"/>
+	   			<function id="3240321" name="审批过程"/>
+	   			<function id="3240323" name="新增项目过滤"/>
+	   			<function id="3240324" name="重新导入"/>
+	   			<function id="3240315" name="薪资汇总"/>
+	   			-->
+	   		</function>
+
+
+	   		<function id="32403" name="薪资审批" ctrl_ver="50,60">
+	   			<function id="3240301" name="个别报批"/>
+	   			<function id="3240302" name="个别批准"/>
+	   			<function id="3240317" name="批量引入"/>
+	   			<function id="3240311" name="报批"/>
+	   			<function id="3240312" name="批准"/>
+	   			<function id="3240303" name="驳回"/>
+	   			<function id="3240304" name="修改"/>
+	   			<function id="3240305" name="提交"/>
+	   			<function id="3240306" name="删除"/>
+	   			<function id="3240307" name="变动比对"/>
+	   			<function id="32403011" name="审核公式"/>
+	   			<function id="3240308" name="计算"/>
+	   			<function id="3240309" name="审核"/>
+	   			<function id="3240316" name="同步人员顺序"/>
+				<function id="3240325" name="隐藏/显示指标"/>
+	   			<function id="3240310" name="审批发放">
+	   			   <function id="324031001" name="银行报盘"/>
+	   			   <function id="324031002" name="薪资报表">
+	   			       <function id="32403100101" name="新增"/>
+	   				   <function id="32403100102" name="修改"/>
+	   				   <function id="32403100103" name="删除"/>
+	   			   </function>
+	   			   <function id="324031003" name="审批确认"/>
+	   			</function>
+	   			<function id="3240313" name="下载模板"/>
+	   			<function id="3240314" name="导入数据"/>
+	   			<function id="3240318" name="导出"/>
+	   			<function id="3240315" name="薪资汇总"/>
+	   			<function id="3240320" name="审批状态"/>
+	   			<function id="3240321" name="审批过程"/>
+
+	   			<function id="3240323" name="新增项目过滤"/>
+	   			<function id="3240324" name="重新导入"/>
+	   		</function>
+	   		<function id="32416" name="薪资汇总审批"   >
+	   			<function id="3241601" name="驳回"/>
+	   			<function id="3241602" name="报批"/>
+	   			<function id="3241603" name="批准"/>
+	   		</function>
+
+
+	   		<function id="32404" name="所得税管理" ctrl_ver="70">
+	   			<function id="3240409" name="个税归档表"/>
+	   			<function id="3240402" name="保存"/>
+	   			<function id="3240408" name="删除"/>
+	   			<function id="3240404" name="表结构维护"/>
+	   			<function id="3240411" name="导出Excel"/>
+	   			<function id="3240405" name="导入申报明细表"/>
+	   			<function id="3240406" name="导出申报明细表"/>
+	   			<function id="3240407" name="导出申报汇总表"/>
+	   			<function id="3240412" name="高级花名册"/>
+	   			<function id="3240410" name="栏目设置（公有）"/>
+	   		</function>
+
+	   		<function id="32404" name="所得税管理" ctrl_ver="60">
+	   			<function id="3240409" name="个税归档表"/>
+	   			<function id="3240401" name="新增"/>
+	   			<function id="3240402" name="修改"/>
+	   			<function id="3240403" name="个别删除"/>
+	   			<function id="3240408" name="批量删除"/>
+	   			<function id="3240404" name="表结构维护"/>
+	   			<function id="3240405" name="导入申报明细表"/>
+	   			<function id="3240406" name="导出申报明细表"/>
+	   			<function id="3240407" name="导出申报汇总表"/>
+	   		</function>
+	   		<function id="32415" name="审批流程"/>
+	   		<function id="32417" name="财务凭证">
+	   			<function id="3241701" name="生成"/>
+	   			<function id="3241702" name="报送"/>
+	   			<function id="3241704" name="导出"/>
+	   			<function id="3241703" name="删除"/>
+	   		</function>
+	   		<function id="32405" name="薪资总额">
+	   			<function id="3240501" name="增加"/>
+	   			<function id="3240502" name="删除"/>
+	   			<function id="3240503" name="修改"/>
+	   			<function id="3240504" name="驳回"/>
+				<function id="3240512" name="报批"/>
+	   			<function id="3240505" name="批准"/>
+	   			<function id="3240513" name="设置">
+	   				<function id="32405131" name="临时变量"/>
+	   				<function id="32405132" name="计算公式"/>
+	   			</function>
+				<function id="3240509" name="计算"/>
+	   			<function id="3240506" name="导出Excel"/>
+	   			<function id="3240507" name="导入数据"/>
+	   			<function id="3240508" name="下载模板"/>
+	   			<function id="3240511" name="封存"/>
+	   			<function id="3240510" name="解封"/>
+				<function id="3240514" name="引用上期总额"/>
+	   		</function>
+
+
+
+	   		<function id="32407" name="薪资分析">
+	   			<function id="324071" name="分析报表">
+ 	   			   <function id="32407101" name="新增"/>
+ 	   			   <function id="32407102" name="删除"/>
+	   			   <function id="32407104" name="修改"/>
+   		           <function id="32407105" name="复制"/>
+   		           <function id="32407103" name="包含审批过程的数据"/>
+	   			</function>
+	   			<function id="324072" name="薪资分析图"/>
+	   			<function id="324073" name="发放进展表">
+	   			    <function id="32407301" name="总额使用情况表"/>
+	   			    <function id="32407302" name="月度总额使用情况图"/>
+	   			    <function id="32407303" name="年度总额使用情况图"/>
+	   			    <function id="32407304" name="计划总额,实发总额,剩余额对比分析图"/>
+	   			</function>
+				<function id="324074" name="薪资历史数据">
+					<function id="32407401" name="归档"/>
+					<function id="32407403" name="还原"/>
+					<function id="32407404" name="删除"/>
+					<function id="32407405" name="保存栏目设置（公有）"/>
+					<function id="32407402" name="浏览">
+						<function id="3240740201" name="新增项目过滤"/>
+					</function>
+				</function>
+	   		</function>
+	   		<function id="32408" name="薪资类别" ctrl_ver="70">
+	   			<function id="3240801" name="新增"/>
+	   			<function id="3240802" name="删除"/>
+	   			<function id="3240803" name="另存为"/>
+	   			<function id="3240804" name="重命名"/>
+	   			<function id="3240813" name="调整顺序"/>
+	   			<function id="3240805" name="导入导出"/>
+	   			<function id="3240806" name="币种维护"/>
+	   			<function id="3240807" name="历史数据初始化"/>
+	   			<function id="3240814" name="结构同步"/>
+	   			<function id="3240808" name="属性设置">
+	   		    	<function id="324080801" name="限制用户管理范围"/>
+	   		    	<function id="324080802" name="提成工资"/>
+	   			</function>
+	   			<function id="3240809" name="临时变量"/>
+	   			<function id="3240810" name="计算公式"/>
+	   			<function id="3240811" name="项目维护"/>
+	   			<function id="3240812" name="审核公式"/>
+	   			<function id="3240815" name="所属单位"/>
+	   			<function id="3240816" name="应用机构"/>
+	   		</function>
+
+	   		<function id="32408" name="薪资类别" ctrl_ver="60">
+	   			<function id="3240801" name="新增"/>
+	   			<function id="3240802" name="删除"/>
+	   			<function id="3240803" name="另存为"/>
+	   			<function id="3240804" name="重命名"/>
+	   			<function id="3240813" name="调整顺序"/>
+	   			<function id="3240805" name="导入导出"/>
+	   			<function id="3240806" name="币种维护"/>
+	   			<function id="3240807" name="历史数据初始化"/>
+	   			<function id="3240814" name="结构同步"/>
+	   			<function id="3240808" name="属性设置">
+	   		    	<function id="324080801" name="限制用户管理范围"/>
+	   		    	<function id="324080802" name="提成工资"/>
+	   			</function>
+	   			<function id="3240809" name="临时变量"/>
+	   			<function id="3240810" name="计算公式"/>
+	   			<function id="3240811" name="项目维护"/>
+	   			<function id="3240812" name="审核公式"/>
+	   		</function>
+	   		<function id="32409" name="税率表">
+	   			<function id="3240901" name="新建"/>
+	   			<function id="3240902" name="删除"/>
+	   			<function id="3240903" name="另存"/>
+	   			<function id="3240904" name="编辑"/>
+	   			<function id="3240905" name="重命名"/>
+	   			<function id="3240906" name="导入导出"/>
+	   		</function>
+	   		<function id="32410" name="薪资标准">
+	   			<function id="3241001" name="新建历史沿革"/>
+	   			<function id="3241002" name="修改历史沿革"/>
+	   			<function id="3241003" name="删除历史沿革"/>
+	   			<function id="3241005" name="重命名历史沿革"/>
+	   			<function id="3241006" name="启用历史沿革"/>
+	   			<function id="3241007" name="导入导出历史沿革"/>
+	   			<function id="3241008" name="新建薪资标准"/>
+	   			<function id="3241009" name="编辑薪资标准"/>
+	   			<function id="3241010" name="删除薪资标准"/>
+	   			<function id="3241011" name="重命名薪资标准"/>
+	   			<function id="3241012" name="导出Excel"/>
+	   		</function>
+	   		<function id="32411" name="薪资总额参数"/>
+	   		<function id="32412" name="相关子集设置"/>
+	   		<function id="32413" name="基础数据维护"/>
+	   		<function id="32414" name="财务凭证定义"/>
+	   	 	<function id="32418" name="应用配置">
+	   			<function id="3241801" name="党费收缴"/>
+	   			<function id="3241802" name="我的薪酬"/>
+	   			<function id="3241803" name="我的个税"/>
+	   		</function>
+	   </function>
+	   <function id="325" name="保险管理">
+	   		<function id="32501" name="保险核定">
+	   			    <function id="3250101" name="业务办理">
+					      <function id="325010101" name="批量审批"/>
+					      <function id="325010102" name="批准"/>
+					      <function id="325010103" name="打印"/>
+					      <function id="325010104" name="公式定义"/>
+					      <function id="325010118" name="人员筛选"/>
+ 						  <function id="325010119" name="批量修改"/>
+					      <function id="325010105" name="批量计算"/>
+					      <function id="325010106" name="校验公式"/>
+					      <function id="325010116" name="设置临时变量"/>
+					      <function id="325010107" name="新增"/>
+					      <function id="325010108" name="撤销"/>
+					      <function id="325010109" name="选人"/>
+					      <function id="325010115" name="邮件抄送"/>
+					      <function id="325010117" name="同意"/>
+					      <function id="325010121" name="下载模板"/>
+					      <function id="325010122" name="导入数据"/>
+					      <function id="325010114" name="返回"/>
+					      <function id="325010124" name="生成序号"/>
+					      <function id="325010129" name="删除"/>
+					      <function id="325010130" name="自定义审批流程"/>
+					      <function id="325010132" name="设置业务日期"/>
+				      	  <function id="325010133" name="审批流程"/>
+				    </function>
+				    <function id="325010123" name="历史数据">
+				    	<function id="3250101231" name="导出EXCEl"/>
+		        		<function id="3250101232" name="流程归档"/>
+				    </function>
+				    <function id="3250104" name="我的消息"/>
+	     			<function id="3250105" name="我的申请"/>
+				    <function id="3250102" name="任务监控">
+				    	  <function id="325010202" name="流程终止"/>
+					      <function id="325010201" name="运行中删除"/>
+					      <function id="325010227" name="结束删除"/>
+					      <!--
+					      <function id="325010202" name="任务终止"/>
+					       -->
+					      <function id="3254010203" name="重新分派"/>
+					      <function id="3254010204" name="导出Excel"/>
+					      <function id="3254010206" name="变动日志"/>
+					      <function id="3254010207" name="流程归档"/>
+				    </function>
+				    <function id="3250103" name="流程定义">
+					      <function id="325010301" name="增加"/>
+					      <function id="325010302" name="删除"/>
+					      <function id="325010303" name="编辑"/>
+					      <function id="325010304" name="调整顺序"/>
+				    </function>
+				    <function id="3250113" name="业务说明编辑"/>
+	   		</function>
+	   		<function id="32502" name="缴费核算" ctrl_ver="70">
+	   			<function id="325020301" name="新建"/>
+	   			<function id="3250207" name="删除"/>
+	   			<function id="3250202" name="保存"/>
+	   			<function id="325020504" name="提交"/>
+	   			<function id="325020403" name="计算"/>
+	   			<function id="3250226" name="下发"/>
+	   			<function id="3250208" name="报批"/>
+	   			<function id="3250210" name="审核"/>
+	   			<function id="3250224" name="重新导入"/>
+  				<function id="3250215" name="历史数据栏目设置（公有）"/>
+	   			<function id="325020300" name="功能导航" ctrl_ver="70">
+	   				<function id="325020303" name="导出"/>
+		   			<function id="325020306" name="excel导入" ctrl_ver="70">
+		   				<function id="325020302" name="按方案导入数据"/>
+		 			    <function id="325020305" name="按模板导入数据"/>
+	 			    </function>
+	   				<function id="3250232" name="数据变化处理" ctrl_ver="70">
+			   			<function id="3250201" name="与档案数据比对"/>
+			   			<function id="3250218" name="与上期数据比对"/>
+			   			<function id="3250212" name="人员引入">
+			   			    <function id="325021201" name="可引入管理范围外人员"/>
+			   			     <!-- <function id="325021202" name="设置单位部门变动子集"/> -->
+			   			</function>
+		   			</function>
+		   			<function id="325020503" name="保险报表" ctrl_ver="70">
+		   				<function id="32502050301" name="新增"/>
+		   				<function id="32502050302" name="修改"/>
+		   				<function id="32502050303" name="删除"/>
+		   				<function id="32502050304" name="栏目设置（公有）"/>
+		   			</function>
+		   			<function id="3250204" name="批量处理" ctrl_ver="70">
+		   				<function id="325020401" name="批量引入"/>
+		   				<function id="325020402" name="批量修改"/>
+		   				<function id="3250216" name="同步人员顺序"/>
+		   			</function>
+		   			<function id="3250206" name="设置" ctrl_ver="70">
+		   				<function id="325020601" name="重置业务日期"/>
+		   				<function id="325020607" name="设置业务日期"/>
+		   				<function id="325020602" name="保险重发"/>
+		   				<function id="325020603" name="计算公式"/>
+		   				<function id="325020606" name="栏目设置（公有）"/>
+		   				<!--<function id="325020604" name="邮件模版定义"/> -->
+		   				<function id="325020605" name="定义审核公式"/>
+		   			</function>
+	   			</function>
+	   		</function>
+
+
+
+	   		<function id="32502" name="缴费核算" ctrl_ver="60">
+	   			<function id="3250201" name="变动比对"/>
+	   			<function id="3250212" name="人员引入" ctrl_ver="60">
+	   			    <function id="325021201" name="可引入管理范围外人员"/>
+	   			     <function id="325021202" name="设置单位部门变动子集"/>
+	   			</function>
+	   			<function id="32402140" name="引入奖金"/>
+	   			<function id="3250202" name="保存"/>
+	   			<function id="3250207" name="删除"/>
+	   			<function id="3250208" name="报批"/>
+	   			<function id="3250210" name="审核"/>
+	   			<function id="3250225" name="报审"/>
+	   			<function id="3250211" name="个别计算"/>
+	   			<function id="3250203" name="保险表">
+	   				<function id="325020301" name="新建"/>
+	   				<function id="325020302" name="导入"/>
+	   				<function id="325020303" name="导出"/>
+	   				<function id="325020304" name="下载模板"/>
+	 			    <function id="325020305" name="导入数据"/>
+	   			</function>
+	   			<function id="3250204" name="批量处理">
+	   				<function id="325020401" name="批量引入"/>
+	   				<function id="325020402" name="批量修改"/>
+	   				<function id="325020403" name="批量计算"/>
+	   			</function>
+	   			<function id="3240210" name="隐藏/显示指标"/>
+	   			<function id="3250209" name="调整指标顺序"/>
+	   			<function id="3250216" name="同步人员顺序"/>
+	   			<function id="3250217" name="默认排序"/>
+	   			<function id="3250205" name="缴费核算">
+	   				<function id="325020503" name="保险报表">
+	   				   <function id="32502050301" name="新增"/>
+	   				   <function id="32502050302" name="修改"/>
+	   				   <function id="32502050303" name="删除"/>
+	   				</function>
+	   				<function id="325020504" name="提交"/>
+	   				 <function id="325020505" name="发送邮件"/>
+	   				<function id="325020506" name="台帐名册"/>
+	   			</function>
+	   			<function id="3250206" name="设置">
+	   				<function id="325020601" name="重置业务日期"/>
+	   				<function id="325020602" name="保险重发"/>
+	   				<function id="325020603" name="计算公式"/>
+	   				<function id="325020604" name="邮件模版定义"/>
+	   				<function id="325020605" name="定义审核公式"/>
+	   			</function>
+	   			<function id="3250223" name="新增项目过滤"/>
+	   			<function id="3250220" name="审批状态"/>
+	   			<function id="3250221" name="审批过程"/>
+	   			<function id="3250224" name="重新导入"/>
+	   		</function>
+
+	   		<function id="32503" name="缴费审批" ctrl_ver="70">
+	   			<function id="3250311" name="报批"/>
+	   			<function id="3250312" name="批准"/>
+	   			<function id="3250303" name="驳回"/>
+	   			<function id="3250309" name="审核"/>
+	   			<function id="3250304" name="保存"/>
+	   			<function id="3250308" name="计算"/>
+	   			<function id="3250305" name="提交"/>
+	   			<function id="3250306" name="删除"/>
+	   			<function id="325031003" name="审批确认"/>
+	   			<function id="3250329" name="栏目设置（公有）"/>
+	   			<function id="3250330" name="明细页栏目设置（公有）"/>
+	   			<function id="3250326" name="功能导航">
+					<function id="3250315" name="导出"/>
+	   				<function id="3250319" name="导入明细表"/>
+	   				<function id="3250307" name="与上期数据比对"/>
+		   			<function id="32503002" name="批量处理">
+		   				<function id="3250317" name="批量引入"/>
+		   				<function id="3250316" name="同步人员顺序"/>
+		   			</function>
+			   		<function id="325031002" name="保险报表">
+	   			    	<function id="32503100201" name="新增"/>
+	   					<function id="32503100202" name="修改"/>
+	   					<function id="32503100203" name="删除"/>
+	   					<function id="32503100204" name="栏目设置（公有）"/>
+
+	   				</function>
+
+	   			</function>
+	   			<!--
+	   			<function id="32503011" name="定义审核公式"/>
+	   			<function id="3250313" name="缴费汇总"></function>
+	   			<function id="3250310" name="审批发放">
+	   			</function>
+	   			<function id="3250318" name="下载模板"/>
+	   			<function id="3250324" name="重新导入"/>
+	   			<function id="3250320" name="审批状态"/>
+	   			<function id="3250321" name="审批过程"/>
+	   			<function id="3250301" name="个别报批"/>
+	   			<function id="3250325" name="隐藏/显示指标"/>
+	   			<function id="3250302" name="个别批准"/>
+	   			<function id="3250323" name="新增项目过滤"/>
+	   			 -->
+
+	   		</function>
+
+
+	   		<function id="32503" name="缴费审批" ctrl_ver="60">
+	   			<function id="3250301" name="个别报批"/>
+	   			<function id="3250302" name="个别批准"/>
+	   			<function id="3250317" name="批量引入"/>
+	   			<function id="3250311" name="报批"/>
+	   			<function id="3250312" name="批准"/>
+	   			<function id="3250303" name="驳回"/>
+	   			<function id="3250304" name="修改"/>
+	   			<function id="3250305" name="提交"/>
+	   			<function id="3250306" name="删除"/>
+	   			<function id="3250307" name="变动比对"/>
+	   			<function id="32503011" name="定义审核公式"/>
+	   			<function id="3250308" name="计算"/>
+	   			<function id="3250309" name="审核"/>
+	   			<function id="3250316" name="同步人员顺序"/>
+				<function id="3250325" name="隐藏/显示指标"/>
+	   			<function id="3250318" name="下载模板"/>
+	 		    <function id="3250319" name="导入数据"/>
+	 		     <function id="3250315" name="导出"/>
+	   			<function id="3250310" name="审批发放">
+	   			   <function id="325031002" name="保险报表">
+	   			       <function id="32503100201" name="新增"/>
+	   				   <function id="32503100202" name="修改"/>
+	   				   <function id="32503100203" name="删除"/>
+	   			   </function>
+	   			   <function id="325031003" name="审批提交"/>
+	   			</function>
+	   			<function id="3250313" name="缴费汇总"></function>
+	   			<function id="3250320" name="审批状态"/>
+	   			<function id="3250321" name="审批过程"/>
+
+	   			<function id="3250323" name="新增项目过滤"/>
+	   			<function id="3250324" name="重新导入"/>
+	   		</function>
+	   		<function id="32516" name="缴费汇总审批">
+	   			<function id="3251601" name="驳回"/>
+	   			<function id="3251602" name="报批"/>
+	   			<function id="3251603" name="批准"/>
+	   		</function>
+	   		<function id="32508" name="审批流程" ctrl_ver="60"/>
+	   		<function id="32508" name="审批流程" ctrl_ver="70">
+	   			<function id="3250801" name="栏目设置（公有）"/>
+	   		</function>
+	   		<function id="32504" name="保险分析">
+	   		<function id="3250401" name="分析报表">
+	   		    <function id="325040101" name="新增"/>
+   		        <function id="325040102" name="删除"/>
+   		        <function id="325040104" name="修改"/>
+   		        <function id="325040105" name="复制"/>
+   		        <function id="325040103" name="包含审批过程的数据"/>
+	   		</function>
+	   		<function id="3250402" name="保险历史数据">
+	   		    <function id="325040201" name="归档"/>
+	   		    <function id="325040203" name="还原"/>
+	   		    <function id="325040204" name="删除"/>
+	   		    <function id="325040202" name="浏览"/>
+	   		</function>
+	   		</function>
+
+	   		<function id="32505" name="保险类别" ctrl_ver="70">
+	   			<function id="3250501" name="新建"/>
+	   			<function id="3250502" name="删除"/>
+	   			<function id="3250503" name="另存"/>
+	   			<function id="3250504" name="重命名"/>
+	   			<function id="3250513" name="调整顺序"/>
+	   			<function id="3250505" name="导入导出"/>
+	   		<!-- <function id="3250506" name="币种维护"/> -->
+	   			<function id="3250507" name="历史数据初始化"/>
+	   			<function id="3250514" name="结构同步"/>
+	   			<function id="3250508" name="属性设置">
+	   			   <function id="325050801" name="限制用户管理范围"/>
+
+	   			</function>
+	   			<function id="3250509" name="临时变量"/>
+	   			<function id="3250510" name="计算公式"/>
+	   			<function id="3250511" name="项目维护"/>
+	   			<function id="3250512" name="审核公式"/>
+	   			<function id="3250515" name="所属单位"/>
+	   			<function id="3250516" name="应用机构"/>
+	   		</function>
+
+	   		<function id="32505" name="保险类别" ctrl_ver="60">
+	   			<function id="3250501" name="新建"/>
+	   			<function id="3250502" name="删除"/>
+	   			<function id="3250503" name="另存"/>
+	   			<function id="3250504" name="重命名"/>
+	   			<function id="3250513" name="调整顺序"/>
+	   			<function id="3250505" name="导入导出"/>
+	   		<!-- <function id="3250506" name="币种维护"/> -->
+	   			<function id="3250507" name="历史数据初始化"/>
+	   			<function id="3250514" name="结构同步"/>
+	   			<function id="3250508" name="属性设置">
+	   			   <function id="325050801" name="限制用户管理范围"/>
+
+	   			</function>
+	   			<function id="3250509" name="临时变量"/>
+	   			<function id="3250510" name="计算公式"/>
+	   			<function id="3250511" name="项目维护"/>
+	   			<function id="3250512" name="审核公式"/>
+	   		</function>
+	   		<function id="32506" name="相关子集设置"/>
+	   		<function id="32507" name="基础数据维护"/>
+	   </function>
+
+		<function id="380" name="职称评审">
+		  <function id="38001" name="评审条件">
+		    <function id="3800101" name="新增"/>
+		    <function id="3800102" name="编辑"/>
+		    <function id="3800103" name="删除"/>
+		  </function>
+		  <function id="38002" name="评委会管理">
+		    <function id="3800201" name="专家库">
+		      <function id="380020101" name="导出"/>
+		      <function id="380020102" name="引入"/>
+		      <function id="380020103" name="新增"/>
+		      <function id="380020104" name="保存"/>
+		      <function id="380020105" name="撤销"/>
+		      <function id="380020109" name="信息同步"/>
+		      <function id="380020106" name="照片"/>
+		      <function id="380020107" name="栏目设置">
+		        <function id="38002010701" name="公有"/>
+		      </function>
+		      <!--  <function id="380020108" name="统计分析" />-->
+		    </function>
+		    <function id="3800202" name="评委会成员">
+		      <function id="380020201" name="导出"/>
+		      <function id="380020202" name="新增评委会"/>
+		      <function id="380020209" name="编辑评委会"/>
+		      <function id="380020210" name="删除评委会"/>
+			  <function id="380020212" name="新增外部专家"/>
+		      <function id="380020203" name="新增评委"/>
+		      <function id="380020204" name="专家抽取"/>
+		      <function id="380020205" name="撤销"/>
+		      <function id="380020206" name="保存"/>
+		      <function id="380020207" name="显示历史"/>
+		      <function id="380020208" name="栏目设置">
+		        <function id="38002020801" name="公有"/>
+		      </function>
+		    </function>
+		    <function id="3800203" name="学科组成员">
+		      <function id="380020301" name="新建学科组"/>
+		      <function id="380020302" name="编辑学科组"/>
+		      <function id="380020303" name="删除学科组"/>
+			  <function id="380020312" name="新增外部专家"/>
+		      <function id="380020304" name="新增成员"/>
+		      <function id="380020305" name="撤销成员"/>
+		      <function id="380020306" name="显示历史"/>
+		      <function id="380020307" name="专家抽取"/>
+		      <function id="380020308" name="设置组长"/>
+		      <function id="380020309" name="保存"/>
+		      <function id="380020310" name="栏目设置">
+		        <function id="38002031001" name="公有"/>
+		      </function>
+		    </function>
+		  </function>
+		  <function id="38003" name="职称认定"/>
+		  <function id="38004" name="考试认定"/>
+		  <function id="38005" name="职称评审">
+		    <function id="3800501" name="外语免考备案"/>
+		    <function id="3800502" name="破格申请审批"/>
+		    <function id="3800511" name="报名申请"/>
+		    <function id="3800503" name="材料审查"/>
+		    <function id="3800504" name="论文送审"/>
+		    <function id="3800505" name="评审会议">
+			      	<function id="380050501" name="创建会议" />
+			      	<function id="380050502" name="编辑会议" />
+			      	<function id="380050504" name="删除会议" />
+			      	<function id="380050506" name="启动会议" />
+			      	<function id="380050507" name="暂停会议" />
+		      		<function id="380050510" name="参会提醒" />
+		      		<function id="380050515" name="发起评审">
+                      <function id="38005051501" name="材料公示" />
+                      <function id="38005051502" name="导出账号和密码" />
+                      <function id="38005051503" name="票数统计" />
+                      <function id="38005051504" name="结果归档" />
+	                  <function id="38005051505" name="会议安排" />
+	                  <function id="38005051506" name="导出代表作" />
+		      		</function>
+		    </function>
+		    <function id="3800506" name="上会材料">
+			      	<function id="380050619" name="导出" />
+			      	<function id="380050613" name="保存" />
+			      	<function id="380050617" name="栏目设置" >
+		      				<function id="38005061701" name="公有" />
+		      		</function>
+		    </function>
+		    <!--  <function id="3800507" name="投票表决结果"/>
+					      <function id="3800508" name="结果公示"/>
+					      <function id="3800509" name="聘任审批"/>
+					      <function id="3800510" name="证书管理"/> -->
+		  </function>
+		  <function id="38006" name="配置"/>
+		  <!-- 职称暂时不需要这些了 -->
+		      <!-- <function id="38007" name="业务办理">
+		    <function id="3800702" name="批量审批"/>
+		    <function id="3800701" name="批准"/>
+		    <function id="3800703" name="打印"/>
+		    <function id="3800704" name="公式定义"/>
+		    <function id="3800718" name="人员筛选"/>
+		    <function id="3800719" name="批量修改"/>
+		    <function id="3800705" name="批量计算"/>
+		    <function id="3800706" name="校验公式"/>
+		    <function id="3800716" name="设置临时变量"/>
+		    <function id="3800707" name="新增"/>
+		    <function id="3800708" name="撤销"/>
+		    <function id="3800709" name="选人"/>
+		    <function id="3800715" name="邮件抄送"/>
+		    <function id="3800717" name="同意"/>
+		    <function id="3800714" name="返回"/>
+		    <function id="3800724" name="下载模板"/>
+		    <function id="3800725" name="导入数据"/>
+		    <function id="3800728" name="生成序号"/>
+		    <function id="3800729" name="删除"/>
+		    <function id="3800730" name="自定义审批流程"/>
+		    <function id="3800731" name="设置业务日期"/>
+		    <function id="3800732" name="审批过程"/>
+		    <function id="3800733" name="上会"/>
+		  </function>
+		  <function id="38008" name="我的申请"/> -->
+		</function>
+	   <function id="321" name="出国管理">
+	      <function id="3210" name="业务办理">
+		      <function id="32122" name="下载模板"/>
+		      <function id="32123" name="导入数据"/>
+		      <function id="32104" name="打印输出"/>
+		      <function id="32110" name="设置临时变量"/>
+		      <function id="32111" name="设置计算公式"/>
+		      <function id="32106" name="设置审核公式"/>
+		      <function id="32127" name="设置业务日期"/>
+		      <function id="32109" name="选人"/>
+		      <function id="32118" name="人员筛选"/>
+		      <function id="32119" name="批量修改"/>
+		      <function id="32124" name="生成序号"/>
+		      <function id="32105" name="计算"/>
+		      <function id="32107" name="新增"/>
+		      <function id="32129" name="刷新"/>
+		      <function id="32126" name="自定义审批流程"/>
+		      <function id="32101" name="批准"/>
+		      <function id="32102" name="批量审批"/>
+		      <function id="32103" name="删除待办任务"/>
+		      <function id="32117" name="同意"/>
+		      <function id="32128" name="审批过程"/>
+		      <function id="32115" name="邮件抄送"/>
+		      <function id="32114" name="返回"/>
+		      <function id="32100" name="编辑业务说明"/>
+		      <function id="32125" name="历史数据"/>
+	      </function>
+	      <function id="3215" name="我的消息"/>
+	      <function id="3216" name="我的申请"/>
+	      <function id="3211" name="任务监控">
+	      	  <function id="32131" name="流程终止"/>
+		      <function id="32138" name="运行中删除"/>
+		      <function id="32139" name="已终止删除"/>
+		       <function id="32137" name="结束删除"/>
+		      <!--
+		      <function id="32110" name="任务终止"/>
+		       -->
+		      <function id="32111" name="重新分派"/>
+		      <function id="32113" name="导出Excel"/>
+		      <function id="32112" name="变动日志"/>
+	      </function>
+	      <function id="3214" name="流程定义">
+		      <function id="32140" name="增加"/>
+		      <function id="32141" name="删除"/>
+		      <function id="32142" name="编辑"/>
+		      <function id="32143" name="调整顺序"/>
+	      </function>
+	      <function id="3219" name="业务说明编辑"/>
+	      <function id="3212" name="汇总统计">
+		      <function id="32120" name="汇总统计"/>
+		      <function id="32121" name="汇总统计删除"/>
+	      </function>
+	      <function id="3213" name="参数设置">
+		      <function id="32130" name="参数设置"/>
+	      </function>
+
+	   </function>
+	   <function id="40" name="问卷调查">
+	       <function id="4001" name="创建"/>
+           <function id="4002" name="删除"/>
+           <function id="4003" name="清空"/>
+           <function id="4005" name="收集配置"/>
+           <function id="4006" name="分析"/>
+           <function id="4007" name="暂停"/>
+           <function id="4008" name="结束"/>
+           <function id="4009" name="设计"/>
+           <function id="4010" name="开始或发布"/>
+           <function id="4011" name="查看模板"/>
+	   </function>
+	   <function id="323" name="师资培养">
+	   		 <function id="32301" name="培训进修">
+	   		 		<function id="3230101" name="计划申报"/>
+	   		 		<function id="3230102" name="进修申请"/>
+	   		 		<function id="3230103" name="进修结果登记"/>
+	   		 		<function id="3230104" name="国内访学申请"/>
+	   		 		<function id="3230105" name="国内访学结果登记"/>
+	   		 		<function id="3230106" name="培训信息登记"/>
+	   		 </function>
+	   		 <function id="32304" name="博士后管理">
+	   		 		<function id="3230401" name="师资博士后进站"/>
+	   		 		<function id="3230402" name="其他博士后进站"/>
+	   		 		<function id="3230403" name="博士后中期考核"/>
+	   		 		<function id="3230404" name="博士后出站"/>
+	   		 		<function id="3230405" name="博士后退站"/>
+	   		 </function>
+	   		 <function id="32305" name="教师资格证">
+	   		 		<function id="3230501" name="教师资格证"/>
+	   		 </function>
+	   </function>
+	   <function id="326" name="360评估">
+	   		 <function id="32601" name="考核体系" >
+	   		 	<function id="3260101" name="考核指标" />
+	   		 	<function id="3260102" name="考核模板" />
+	   		 	<function id="3260103" name="组织机构考核指标" >
+	   		 		<function id="326020101" name="设置" />
+	   		 		<function id="326020102" name="新增" />
+	   		 		<function id="326020103" name="删除" />
+	   		 		<function id="326020104" name="复制" />
+	   		 		<function id="326020105" name="保存" />
+	   		 	</function>
+	   		 </function>
+	   		 <function id="32602" name="考核计划" >
+	   		 	<function id="3260201" name="报批" />
+	   		 	<function id="3260202" name="审批" />
+	   		 	<function id="3260203" name="直批" />
+	   		 	<function id="3260204" name="发布" />
+	   		 	<function id="3260205" name="删除" />
+	   		 	<function id="3260206" name="删除历史计划" />
+	   		 	<function id="3260207" name="负责人员绩效计划" />
+	   		 	<function id="3260208" name="负责团队绩效计划" />
+	   		 </function>
+
+	   		 <function id="32603" name="考核实施" >
+	   		 	<function id="3260301" name="考核实施" >
+	   		 		<function id="326030100" name="打分状态">
+	   		 			<function id="32603010001" name="重新打分"/>
+	   		 		</function>
+	   		 		<function id="326030101" name="清除分数" />
+	   		 		<function id="326030102" name="计划启动" />
+	   		 		<function id="326030103" name="计划暂停" />
+	   		 		<function id="326030104" name="分发" />
+	   		 		<function id="326030126" name="数据采集" />
+	   		 		<function id="326030105" name="计划数据维护" />
+	   		 		<function id="326030106" name="目标卡制订" />
+	   		 		<function id="326030127" name="批量生成目标卡" />
+	   		 		<function id="326030107" name="导出Excel" />
+	   		 		<function id="326030108" name="手工选择考核对象" />
+	   		 		<function id="326030109" name="条件选择考核对象" />
+	   		 		<function id="326030221" name="生成Excel测评表" />
+	   		 		<function id="326030110" name="批量设置考核对象类别" />
+					<function id="326030136" name="批量设置考核关系" />
+	   		 		<function id="326030111" name="删除考核对象" />
+	   		 		<function id="326030134" name="设置对象得分范围" />
+	   		 		<function id="326030112" name="设置动态指标权重" />
+	   		 		<function id="326030113" name="设置动态项目分值权重" />
+	   		 		<function id="326030128" name="同步对象顺序" />
+	   		 		<function id="326030114" name="排序" />
+	   		 		<function id="326030115" name="引入标准考核关系" />
+	   		 		<function id="326030135" name="人员信息同步" />
+	   		 		<function id="326030116" name="指定考核主体">
+	   		 			<function id="32603011601" name="手工选人">
+	   		 				<function id="3260301160101" name="限制用户管理范围"/>
+	   		 			</function>
+	   		 			<function id="32603011602" name="条件选人"/>
+	   		 			<function id="32603011603" name="删除"/>
+	   		 		</function>
+	   		 		<function id="326030117" name="复制考核主体" />
+	   		 		<function id="326030118" name="粘帖考核主体" />
+	   		 		<function id="326030119" name="清除考核主体" />
+	   		 		<function id="326030129" name="删除考核主体" />
+	   		 		<function id="326030120" name="指标权限划分" />
+	   		 		<function id="326030121" name="恢复默认指标权限" />
+	   		 		<function id="326030122" name="项目权限划分" />
+	   		 		<function id="326030123" name="恢复默认项目权限" />
+	   		 		<function id="326030124" name="设置主体权重" />
+	   		 		<function id="326030125" name="设置动态主体权重" />
+	   		 		<function id="326030130" name="自动分配考核主体" >
+	   		 			<function id="326030131" name="应用" />
+	   		 		</function>
+	   		 		<function id="326030132" name="批量分发" />
+	   		 		<function id="326030133" name="批量启动" />
+	   		 	</function>
+	   		 	<function id="3260302" name="数据采集">
+	   		 		<function id="326030201" name="清空" />
+	   		 		<function id="326030202" name="保存" />
+	   		 		<function id="326030203" name="提交" />
+	   		 		<function id="326030204" name="导出" />
+	   		 		<function id="326030205" name="选票统计" />
+	   		 		<function id="326030206" name="新增" />
+	   		 		<function id="326030207" name="删除" />
+	   		 		<function id="326030208" name="读卡" />
+	   		 		<function id="326030209" name="图像" />
+	   		 	</function>
+	   		 </function>
+	   		 <function id="32604" name="绩效评估" >
+	   		 	<function id="3260412" name="评估表结构设置" />
+	   		 	<function id="3260401" name="计算" />
+	   		 	<function id="3260402" name="计算规则" />
+	   		 	<function id="3260403" name="修正分值" />
+	   		 	<function id="3260404" name="引入计划" />
+	   		 	<function id="3260405" name="计算公式">
+	   		 		<function id="326040501" name="总分公式" />
+	   		 		<function id="326040502" name="等级系数公式" />
+	   		 		<function id="326040503" name="等级公式" />
+	   		 	</function>
+	   		 	<function id="3260406" name="考核等级" />
+	   		 	<function id="3260407" name="调整等级" />
+	   		 	<function id="3260414" name="导出Excel" />
+	   		 	<function id="3260408" name="打印登记表" />
+	   		 	<!--   <function id="3260409" name="打印高级花名册" />  -->
+	   		 	<function id="3260410" name="发送考核反馈表" />
+	   		 	<function id="3260415" name="批量导出绩效报告" />
+	   		 	<function id="3260411" name="结果归档" >
+	   		 		<function id="326041101" name="归档" />
+	   		 		<function id="326041102" name="试归档" />
+	   		 	</function>
+	   		 	<function id="3260413" name="输出开放式意见明细表" />
+	   		 	<function id="3260416" name="查看得分明细" />
+	   		 </function>
+	   		 <function id="32605" name="绩效分析" />
+	   		 <function id="32606" name="参数设置" >
+	   		 	<function id="3260601" name="考核主体类别" />
+	   		 	<function id="3260602" name="考核对象类型" />
+	   		 	<function id="3260603" name="了解程度" />
+	   		 	<function id="3260604" name="等级分类" />
+	   		 	<function id="3260605" name="评语模版" />
+	   		 	<function id="3260606" name="数据初始化" />
+	   		 	<function id="3260607" name="考核关系" >
+	   		 		<function id="326060701" name="手工选择" />
+	   		 		<function id="326060702" name="条件选择" />
+	   		 		<function id="326060703" name="批量设置考核对象类别" />
+	   		 		<function id="326060704" name="删除考核对象" />
+	   		 		<function id="326060705" name="查询" />
+	   		 		<function id="326060706" name="同步人员顺序" />
+	   		 		<function id="326060707" name="个别自动生成考核主体" />
+	   		 		<function id="326060708" name="批量自动生成考核主体" />
+	   		 		<function id="326060709" name="指定考核主体">
+	   		 			<function id="32606070901" name="手工选人">
+	   		 				<function id="3260607090101" name="限制用户管理范围"/>
+	   		 			</function>
+	   		 			<function id="32606070902" name="条件选人"/>
+	   		 			<function id="32606070903" name="删除"/>
+	   		 		</function>
+	   		 		<function id="326060710" name="清除考核主体" />
+	   		 		<function id="326060711" name="复制考核主体" />
+	   		 		<function id="326060712" name="粘帖考核主体" />
+	   		 		<function id="326060713" name="删除考核主体" />
+	   		 	</function>
+	   		 	<function id="3260608" name="配置参数" />
+	   		 </function>
+	   </function>
+	   <function id="391" name="绩效考核">
+	   		<function id="39101" name="教职工聘期考核"/>
+	   		<function id="39102" name="教学岗位年度考核"/>
+	   		<function id="39103" name="非教学岗年度考核"/>
+	   		<function id="39104" name="未参加考核登记"/>
+	   </function>
+	   <function id="28" name="文档管理">
+		   <function id="280" name="制度政策">
+		      <function id="2801" name="制度浏览"/>
+		      <function id="2802" name="制度维护">
+			      <function id="28020" name="新增库"/>
+			      <function id="28021" name="删除库"/>
+			      <function id="28022" name="修改库"/>
+			      <function id="28023" name="调整顺序"/>
+			      <function id="28032" name="目录划转"/>
+			      <function id="28024" name="重建索引"/>
+			      <function id="28025" name="导出"/>
+			      <function id="28026" name="导入"/>
+			      <function id="28027" name="授权"/>
+			      <function id="28028" name="清除授权"/>
+			      <function id="28029" name="删除文件"/>
+			      <function id="28033" name="显示隐藏指标"/>
+			      <function id="28030" name="重新归类"/>
+			      <function id="28031" name="授权初始化"/>
+			      <function id="28034" name="分类指标设置"/>
+		      </function>
+		   </function>
+
+		   <function id="340" name="发文管理">
+		      <function id="3401" name="文档浏览"/>
+		      <function id="3402" name="文档维护">
+			      <function id="34020" name="新增库"/>
+			      <function id="34021" name="删除库"/>
+			      <function id="34022" name="修改库"/>
+			      <function id="34023" name="调整顺序"/>
+			      <function id="34033" name="目录划转"/>
+			      <function id="34024" name="重建索引"/>
+			      <function id="34025" name="导出"/>
+			      <function id="34026" name="导入"/>
+			      <function id="34027" name="授权"/>
+			      <function id="34028" name="清除授权"/>
+			      <function id="34029" name="删除文件"/>
+			      <function id="34034" name="显示隐藏指标"/>
+			      <function id="34030" name="重新归类"/>
+			      <function id="34031" name="导出Excel"/>
+			      <function id="34032" name="授权初始化"/>
+			      <function id="34035" name="分类指标设置"/>
+		      </function>
+		   </function>
+	   </function>
+
+	  <function id="AK" name="领导桌面">
+		  <function id="AK0" name="综合看板"/>
+		  <function id="AK1" name="人力资本构成">
+			  <function id="AK11" name="全员分析"/>
+			  <function id="AK12" name="领导人员"/>
+			  <function id="AK13" name="专业人才"/>
+			  <function id="AK14" name="人员流动"/>
+		  </function>
+		  <function id="AK2" name="人力资本运作"/>
+		  <function id="AK3" name="人力资本效能"/>
+	  </function>
+	   <function id="290" name="报表管理">
+	      <function id="2901" name="自动生成">
+	             <function id="29010" name="提取数据">
+	             	<function id="290100" name="批量取数"/>
+	             	<function id="290101" name="表达式分析"/>
+	             	<function id="290102" name="指标分析"/>
+	             	<function id="290103" name="表内校验"/>
+	             	<function id="290104" name="表间校验"/>
+	             	<function id="290105" name="报表查阅"/>
+	             	<function id="290106" name="重新取数"/>
+	             	<function id="290107" name="反查"/>
+	             	<function id="290108" name="导出Excel"/>
+	             </function>
+	             <function id="29011" name="取数范围"/>
+	      </function>
+	      <function id="2902" name="编辑报表">
+	             <function id="29020" name="文件">
+	             	<function id="290201" name="保存"/>
+                	<function id="290203" name="上报"/>
+                	<function id="290206" name="清零"/>
+             		<function id="290204" name="反查"/>
+             		<function id="290202" name="编辑报表参数"/>
+             		<function id="290205" name="输出"/>
+             		<function id="290207" name="统计口径">
+             		<function id="29020701" name="设置统计口径"/>
+             		<function id="29020702" name="口径取数"/>
+             		</function>
+	             </function>
+	             <function id="29022" name="校验">
+	             	<function id="290221" name="表内校验"/>
+	             	<function id="290222" name="表间校验"/>
+	             	<function id="290223" name="总校验"/>
+	             </function>
+	             <function id="29021" name="计算">
+	             	<function id="290211" name="表内计算"/>
+	             	<function id="290212" name="表间计算"/>
+	             	<function id="290214" name="新增计算公式"/>
+	             	<function id="290215" name="修改计算公式"/>
+	             	<function id="290216" name="删除计算公式"/>
+	             	<function id="290213" name="总计算"/>
+	             </function>
+	             <function id="29023" name="报表分析">
+	             	<function id="290231" name="报表数据归档"/>
+	             	<function id="290233" name="报表数据分析"/>
+	             	<function id="290232" name="表结构维护"/>
+	             </function>
+	             <function id="29024" name="接收报盘"/>
+	      </function>
+	      <function id="2903" name="报表汇总">
+	             <function id="29030" name="接收报盘"/>
+	             <function id="29031" name="报表汇总">
+	             	<function id="2903101" name="表内表间计算"/>
+	             </function>
+	             <function id="29032" name="编辑报表">
+		             <function id="290320" name="文件">
+		             	<function id="2903201" name="保存"/>
+		             	<function id="2903203" name="上报"/>
+	                	<function id="2903206" name="清零"/>
+	                	<function id="2903202" name="编辑报表参数"/>
+	             		<function id="2903205" name="输出"/>
+		             </function>
+		             <function id="290322" name="校验">
+		             	<function id="2903221" name="表内校验"/>
+		             	<function id="2903222" name="表间校验"/>
+		             	<function id="2903224" name="汇总校验"/>
+		             	<function id="2903223" name="总校验"/>
+		             </function>
+		             <function id="290321" name="计算">
+		             	<function id="2903211" name="表内计算"/>
+		             	<function id="2903212" name="表间计算"/>
+		             	<function id="2903214" name="新增计算公式"/>
+		             	<function id="2903215" name="修改计算公式"/>
+		             	<function id="2903216" name="删除计算公式"/>
+		             	<function id="2903213" name="总计算"/>
+		             	<function id="2903217" name="直属汇总"/>
+		             	<function id="2903218" name="生成综合表">
+		             		<function id="29032181" name="输出Excel"/>
+		             	</function>
+		             </function>
+		             <function id="290323" name="审核">
+		             	 <!-- <function id="2903231" name="封存"/>	-->
+		             	<function id="2903232" name="驳回"/>
+
+		             </function>
+		             <function id="290324" name="报表分析">
+		             	<function id="2903241" name="报表数据归档"/>
+		             	<function id="2903243" name="报表数据分析"/>
+		             	<function id="2903242" name="表结构维护"/>
+		             </function>
+	             </function>
+	             <function id="29033" name="表式收发"/>
+	             <function id="29034" name="报表归档">
+	             	<function id="2903401" name="归档类型设置"/>
+	             </function>
+	      </function>
+	      <function id="2904" name="报表分析">
+	             <function id="29040" name="报表浏览"/>
+	             <function id="2904001" name="反查"/>
+	             <function id="2904002" name="输出Excel"/>
+	             <function id="2904003" name="生成综合表"/>
+	             <function id="2904004" name="归档数据汇总"/>
+	      </function>
+	      <function id="2905" name="填报单位">
+	             <function id="29050" name="填报单位维护">
+	             	<function id="2905001" name="导入组织机构"/>
+	             	<function id="2905002" name="新增"/>
+	             	<function id="2905003" name="修改"/>
+	             	<function id="2905004" name="删除"/>
+	             	<function id="2905005" name="批量表类划分"/>
+	             	<function id="2905006" name="排序"/>
+	             	<function id="2905007" name="撤销"/>
+	             	<function id="2905008" name="报表分析用表的范围定义"/>
+	             </function>
+	             <function id="29052" name="按组织机构查阅报表状态">
+	            	 <function id="2905201" name="设置报表属期"/>
+	            	  <function id="2905202" name="发送通知"/>
+	            	  <function id="2905203" name="报表状态初始化"/>
+	            	  <function id="2905204" name="编辑报表数据初始化"/>
+	            	  <function id="2905205" name="报表汇总数据初始化"/>
+	             </function>
+				 <function id="29053" name="按报表分类查阅报表状态"/>
+	      </function>
+	      <function id="2906" name="精算报表">
+	      		<function id="290601" name="填报周期">
+	      		</function>
+	      		<function id="290602" name="编辑报表">
+	      			<function id="29060202" name="人员移库"/>
+	      		</function>
+	      		<function id="290603" name="报表汇总">
+	      		<function id="29060301" name="人员划转"/>
+	      		<function id="29060304" name="修改历史数据"/>
+	      		<function id="29060303" name="驳回"/>
+	      		</function>
+	      		<function id="290604" name="校验规则">
+	      		</function>
+	      </function>
+
+	   </function>
+
+	   <function id="9A0" name="工 具 箱">
+	      <function id="9907" name="表格工具">
+	      	  <function id="99071" name="登记表">
+	               <function id="9907101" name="人员登记表"/>
+	               <function id="9907102" name="机构登记表"/>
+	               <function id="9907103" name="岗位说明书"/>
+	               <function id="9907108" name="基准岗位说明书"/>
+	               <function id="9907107" name="绩效反馈表"/>
+	               <function id="9907104" name="导出表样式"/>
+	               <function id="9907105" name="导入表样式"/>
+	               <function id="9907109" name="导入Excel报表样式"/>
+	               <function id="9907106" name="登记表表类维护"/>
+	          </function>
+	          <function id="99072" name="高级花名册">
+	              <function id="9907201" name="人员花名册"/>
+	              <function id="9907202" name="机构花名册"/>
+	              <function id="9907203" name="岗位花名册"/>
+	              <function id="9907221" name="基准岗位花名册"/>
+	              <function id="9907204" name="合同台账"/>
+	              <function id="9907205" name="培训花名册"/>
+	              <function id="9907206" name="考勤花名册"/>
+	              <function id="9907207" name="人事异动模板花名册"/>
+	              <function id="9907208" name="薪资变动模板花名册"/>
+	              <function id="9907209" name="薪资自定义报表"/>
+	              <function id="9907210" name="薪资分析花名册"/>
+	              <function id="9907211" name="保险业务模板花名册"/>
+	              <function id="9907212" name="保险自定义报表"/>
+	              <function id="9907213" name="保险分析花名册"/>
+	              <function id="9907214" name="模板归档花名册"/>
+	              <function id="9907215" name="个人所得税花名册"/>
+	              <function id="9907220" name="绩效花名册"/>
+	              <function id="9907216" name="表式导出"/>
+	              <function id="9907217" name="表式导入"/>
+	              <function id="9907222" name="导入Excel报表样式"/>
+	              <function id="9907218" name="高级花名册表类维护"/>
+	              <function id="9907219" name="允许不按权限范围统计"/>
+	          </function>
+	          <function id="99073" name="模板设计">
+	             <function id="9907301" name="人事异动"/>
+	             <function id="9907302" name="薪资变动"/>
+	             <function id="9907303" name="保险业务"/>
+	             <function id="9907304" name="单位业务"/>
+	             <function id="9907305" name="岗位业务"/>
+	             <!-- function id="9907306" name="考勤业务"/ -->
+	             <function id="9907307" name="基准岗位业务"/>
+	             <function id="9907308" name="导入Excel报表样式"/>
+	          </function>
+	          <function id="99074" name="统计报表">
+	             <function id="9907401" name="新建报表"/>
+	             <function id="9907402" name="打开报表"/>
+	             <function id="9907403" name="删除报表"/>
+	             <function id="9907404" name="允许不按权限范围统计"/>
+	             <function id="9907405" name="表类设置">
+	                 <function id="99074051" name="增加表类"/>
+	                 <function id="99074052" name="删除表类"/>
+	                 <function id="99074053" name="修改表类"/>
+	             </function>
+	             <function id="9907406" name="表式导出"/>
+	             <function id="9907407" name="表式导入"/>
+	             <function id="9907408" name="导入Excel报表样式"/>
+	          </function>
+	      </function>
+	      <function id="9A2" name="实施工具"/>
+	      <function id="9A5" name="流程管理">
+		      <function id="9A51" name="审批关系">
+		       <function id="9A5101" name="新增"/>
+		       <function id="9A5102" name="删除"/>
+		       <function id="9A5111" name="有效设置" />
+		       <function id="9A5103" name="另存为"/>
+		       <function id="9A5104" name="重命名"/>
+		       <function id="9A5105" name="个别自动生成"/>
+		       <function id="9A5106" name="批量自动生成"/>
+		       <function id="9A5107" name="指定审批主体">
+		         <function id="9A510701" name="条件选择"/>
+		       	 <function id="9A510702" name="手工选择"/>
+		       	 <function id="9A510703" name="删除"/>
+		       </function>
+		       <function id="9A5108" name="清除审批主体"/>
+		       <function id="9A5109" name="复制审批主体"/>
+		       <function id="9A5110" name="粘贴审批主体"/>
+		      </function>
+			  <function id="9A52" name="流程定义"/>
+		  </function>
+	      <function id="9A4" name="平台接口">
+	      	  <function id="9A41" name="功能注册"/>
+			  <function id="9A42" name="菜单定制"/>
+			  <function id="9A43" name="门户定制"/>
+			  <function id="9A44" name="自助终端配置">
+                 <function id="9A441" name="新建分类"/>
+                 <function id="9A442" name="修改分类"/>
+                 <function id="9A443" name="删除分类"/>
+                 <function id="9A444" name="新增服务"/>
+                 <function id="9A445" name="修改服务"/>
+                 <function id="9A446" name="删除服务"/>
+              </function>
+	      </function>
+	   </function>
+	   <function id="300" name="系统管理">
+	      <function id="3002" name="内容维护">
+	      	<function id="30020" name="流程上传"/>
+	      	<function id="30021" name="表格上传"/>
+	      	<function id="30022" name="公告栏维护">
+	      		<function id="07050101" name="公告栏审批"/>
+	      	</function>
+
+	      <!-- 	<function id="30025" name="我的问卷">
+	      	    <function id="30025001" name="创建"/>
+                <function id="30025002" name="删除"/>
+                <function id="30025003" name="清空"/>
+                <function id="30025005" name="收集配置"/>
+                <function id="30025006" name="分析"/>
+                <function id="30025007" name="暂停"/>
+                <function id="30025008" name="结束"/>
+                <function id="30025009" name="设计"/>
+                <function id="30025010" name="开始或发布"/>
+        	</function> -->
+	      	<!--
+	      	<function id="071101" name="知识维护">
+		      <function id="0711010" name="新增库"/>
+		      <function id="0711011" name="删除库"/>
+		      <function id="0711012" name="修改库"/>
+		      <function id="0711013" name="调整顺序"/>
+		      <function id="0711014" name="重建索引"/>
+		      <function id="0711015" name="导出"/>
+		      <function id="0711016" name="导入"/>
+		      <function id="0711017" name="授权"/>
+		      <function id="0711018" name="清除授权"/>
+		      <function id="0711019" name="删除文件"/>
+		      <function id="0711022" name="显示隐藏指标"/>
+		      <function id="0711020" name="重新归类"/>
+		      <function id="0711021" name="授权初始化"/>
+	   		</function>
+	   		 -->
+	      </function>
+	      <function id="3001" name="应用设置">
+	        <function id="30015" name="参数设置">
+	      		<function id="300150" name="查询设置"/>
+	      		<function id="300151" name="预警设置"/>
+	      		<!-- <function id="300152" name="薪酬表设置(表格)">
+	      			<function id="3001520" name="取数和显示方式"/>
+	      		</function>
+	      		<function id="300154" name="薪酬表设置(列表)"/> -->
+	      		<function id="30015D" name="单位列表指标设置"/>
+	      		<function id="30015H" name="基准岗位列表指标设置"/>
+	      		<function id="30015C" name="人员主集指标设置"/>
+	      		<function id="30015A" name="基准岗位说明书设置"/>
+	      		<function id="30015B" name="系统参数"/>
+	      		<function id="300156" name="序号维护"/>
+	      		<function id="30015Y" name="单位介绍"/>
+			    <function id="300157" name="文档管理"/>
+			    <function id="30015Z" name="人员库指标范围"/>
+			    <function id="30015U" name="人员类别指标范围"/>
+			    <function id="300158" name="子集指标分类"/>
+			    <function id="300159" name="业务分类"/>
+			    <function id="30015K" name="帐号规则"/>
+			    <function id="30015L" name="文件存放目录"/>
+			    <function id="30015X" name="其他参数"/>
+			    <function id="30015I" name="二开参数设置"/>
+	      	</function>
+	      	<function id="3001A" name="系统公告维护"/>
+            <function id="3001B" name="后台作业"/>
+            <function id="3001C" name="邮件模板"/>
+            <function id="3001E" name="通讯录设置"/>
+	      	<function id="3001D" name="数据交换">
+                <function id="3001D01" name="数据视图">
+                    <function id="3001D0101" name="修改同步状态"/>
+                </function>
+                <function id="3001D02" name="数据导入"/>
+                <function id="3001D03" name="云集成"/>
+            </function>
+            <function id="3001F" name="平台数据接口设置"/>
+            <function id="3001G" name="报表关联">
+            	<function id="3001G01" name="新增"/>
+            	<function id="3001G02" name="发布"/>
+            	<function id="3001G03" name="暂停"/>
+            	<function id="3001G04" name="授权"/>
+            	<function id="3001G09" name="角色授权"/>
+            	<function id="3001G05" name="删除"/>
+            	<function id="3001G06" name="编辑"/>
+            	<function id="3001G07" name="下载模板"/>
+            	<function id="3001G08" name="下载SQL定义"/>
+            </function>
+            <function id="3001H" name="盒式报表">
+            	<function id="3001H01" name="新增"/>
+            	<function id="3001H02" name="删除"/>
+            	<function id="3001H03" name="编辑"/>
+            </function>
+            <function id="3001J" name="工作桌面"/>
+            <function id="3001L" name="服务大厅"/>
+			<function name="入职登记二维码制作" id="3001K">
+				<function name="新增" id="3001K01"/>
+				<function name="删除" id="3001K02"/>
+				<function name="清除" id="3001K03"/>
+			</function>
+	      </function>
+	      <function id="3007" name="库结构">
+	      		<function id="30071" name="指标体系">
+	      			<function id="3007101" name="初始化数据"/>
+	      			<function id="3007102" name="初始化结构"/>
+	      			<function id="3007103" name="采集表"/>
+	      			<function id="3007104" name="指标导出"/>
+	      			<function id="3007105" name="调整人员库">
+	      				<function id="30071051" name="新建"/>
+	      				<function id="30071052" name="修改"/>
+	      				<function id="30071053" name="删除"/>
+	      				<function id="30071054" name="调整顺序"/>
+	      			</function>
+	      			<function id="3007106" name="刷新数据字典"/>
+	      			<function id="3007107" name="构建应用库"/>
+	      			<function id="3007108" name="修改应用库"/>
+	      			<function id="3007109" name="删除应用库"/>
+	      			<function id="3007110" name="新建子集"/>
+	      			<function id="3007111" name="修改子集"/>
+	      			<function id="3007112" name="删除子集"/>
+	      			<function id="3007113" name="调整子集顺序"/>
+	      			<function id="3007114" name="新建指标"/>
+	      			<function id="3007115" name="修改指标"/>
+	      			<function id="3007116" name="删除指标"/>
+	      			<function id="3007117" name="调整指标顺序"/>
+	      			<function id="3007118" name="指标构库"/>
+	      		</function>
+	      		<function id="30072" name="代码体系">
+	      			<function id="3007201" name="新增代码类" />
+	      			<function id="3007202" name="修改代码类" />
+	      			<function id="3007203" name="删除代码类" />
+	      			<function id="3007204" name="导出" />
+	      			<function id="3007205" name="导入" />
+	      			<function id="3007206" name="新增代码" />
+	      			<function id="3007207" name="修改代码" />
+	      			<function id="3007208" name="删除代码" />
+	      			<function id="3007209" name="设置代码有效标识" />
+	      			<!-- function id="3007210" name="调整代码类顺序" /> -->
+	      		</function>
+	      		<function id="30073" name="业务字典">
+	      			<function id="3007301" name="构建应用库"/>
+	      			<function id="3007302" name="修改应用库"/>
+	      			<function id="3007303" name="删除应用库"/>
+	      			<function id="3007304" name="刷新数据字典"/>
+	      			<function id="3007305" name="新建子集"/>
+	      			<function id="3007306" name="修改子集"/>
+	      			<function id="3007307" name="删除子集"/>
+	      			<function id="3007308" name="指标导入"/>
+	      			<function id="3007309" name="新建指标"/>
+	      			<function id="3007310" name="插入指标"/>
+	      			<function id="3007311" name="修改指标"/>
+	      			<function id="3007312" name="删除指标"/>
+	      			<function id="3007313" name="调整指标顺序"/>
+	      			<function id="3007314" name="设置"/>
+	      		</function>
+	      </function>
+	      <function id="3003" name="权限管理">
+	      	<function id="30030" name="角色管理"/>
+	      	<function id="30031" name="用户管理">
+		      	<function id="3003101" name="新增用户组"/>
+		      	<function id="3003102" name="新增管理员"/>
+		      	<function id="3003103" name="新增用户"/>
+		      	<function id="3003104" name="编辑"/>
+		      	<function id="3003110" name="修改密码"/>
+		      	<function id="3003105" name="删除"/>
+		      	<function id="3003106" name="角色分配"/>
+	      		<function id="3003107" name="关联人员"/>
+	      		<!-- function id="3003108" name="按业务划分操作单位"/> -->
+	      		<function id="3003109" name="调整用户组/用户"/>
+	      	</function>
+	      	<function id="30032" name="帐号分配">
+	      		<function id="3003201" name="设置帐号"/>
+	      		<function id="3003202" name="角色分配"/>
+	      		<function id="3003203" name="帐号锁定|解锁"/>
+	      	</function>
+	      	<function id="30033" name="角色快速分配"/>
+	      	<function id="30038" name="权限分配">
+	           <function id="3003801" name="功能">
+	              <function id="300380101" name="撤销"/>
+	           </function>
+               <function id="3003802" name="人员库"/>
+               <function id="3003803" name="人员范围"/>
+               <function id="3003807" name="业务范围"/>
+               <function id="30036" name="党组织管理范围"/>
+	           <function id="30037" name="团组织管理范围"/>
+               <function id="3003804" name="子集"/>
+               <function id="3003805" name="指标"/>
+               <function id="3003806" name="多媒体"/>
+	        </function>
+	        <function id="30034" name="资源分配">
+	      		<function id="3003400" name="统计表"/>
+	      		<function id="3003401" name="登记表"/>
+	      	<!-- 	<function id="3003402" name="花名册"/> -->
+	      		<function id="3003403" name="高级花名册"/>
+	      		<function id="3003404" name="常用统计"/>
+	      		<function id="3003405" name="常用查询"/>
+	      		<function id="3003406" name="规章制度"/>
+	      		<function id="3003407" name="人事业务"/>
+	      		<function id="3003413" name="薪资类别"/>
+	      		<function id="3003416" name="保险类别"/>
+	      		<function id="3003408" name="薪资变动"/>
+	      		<function id="3003415" name="保险变动"/>
+	      		<function id="3003424" name="机构调整"/>
+	      		<function id="3003423" name="薪资保险分析表"/>
+				<function id="3003411" name="公告栏"/>
+	      		<function id="3003412" name="档案分类"/>
+	      		<function id="3003421" name="基本班次"/>
+
+	      		<function id="3003417" name="文档分类"/>
+	      		<function id="3003426" name="知识分类"/>
+				<function id="3003418" name="考核指标"/>
+				<function id="3003419" name="考核模板"/>
+				<function id="3003427" name="关键事件分类"/>
+	        </function>
+	        <function id="30035" name="权限明细"/>
+	      </function>
+	      <function id="3004" name="安全策略">
+	      	<function id="30043" name="操作日志">
+	      		<function id="300431" name="清空"></function>
+	      		<function id="300432" name="删除"></function>
+	      	</function>
+	      	<function id="30040" name="IP地址管理"/>
+	      	<function id="30045" name="登录认证规则"/>
+	      	<function id="30041" name="认证应用库"/>
+	      	<function id="30042" name="认证用户名"/>
+	      	<function id="30044" name="LDAP目录认证配置"/>
+					<function id="30047" name="集成服务注册">
+	      		<function id="300471" name="新增"/>
+	      		<function id="300472" name="删除"/>
+	      		<function id="300473" name="编辑"/>
+	      	</function>
+	      	<function id="30049" name="印章及U盾管理"/>
+	      </function>
+	      <function id="3006" name="通讯平台">
+	      	<function id="30064" name="短信信箱"/>
+	      	<function id="30065" name="发送短信"/>
+	      	<function id="30061" name="电话邮箱"/>
+	      	<function id="30062" name="邮件服务器"/>
+	      	<function id="30063" name="短信接口参数">
+		      	<function id="300631" name="短信猫"/>
+		      	<function id="300632" name="短信网关"/>
+	      	</function>
+	      	<function id="30066" name="第三方平台参数"/>
+	      	<function id="30067" name="微信配置"/>
+	      </function>
+	   </function>
+	   <function id="301" name="小工具条">
+	      	<function id="3010" name="修改密码"/>
+	        <function id="3018" name="头像设置"/>
+	        <function id="3016" name="代理设置"/>
+			<function id="3014" name="消息"/>
+			<function id="3015" name="短信"/>
+	      	<function id="3012" name="桌面设置">
+	      	   <function id="301201" name="刷新业务预警"/>
+	      	</function>
+	        <function id="3013" name="注销"/>
+	      	<function id="3011" name="版本"/>
+	   </function>
+       <function id="410" name="云"/>
+  </function>
+</hrp_function>

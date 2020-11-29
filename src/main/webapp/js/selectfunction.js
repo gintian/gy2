@@ -1,0 +1,2631 @@
+var tempid="";//为了控制“代码转名称2”这个公式
+
+function saveCalculation(){
+    var targetobj,hiddenobj;
+    var currnode=Global.selectedItem;	
+    if(currnode==null)
+    	return;
+    if(parent.document){
+    	targetobj = parent.document.getElementById("calculation") ;
+    	hiddenobj = parent.document.getElementById("formula") ;
+    }else if(window.opener){
+    }
+	var id = currnode.uid; 
+	switch (id){
+		case "0":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：数值函数";
+			break;
+		case "N_num0":
+			targetobj.innerHTML = "Int(129.11) <br>返回结果为：129";
+			hiddenobj.value = "取整";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：INT(数值表达式)";
+			parent.document.getElementById("explained").innerHTML="取整(数值表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "N_num1_4":
+			targetobj.innerHTML = "取余数(10, 3) <br>返回结果为: 1";
+			hiddenobj.value = "取余数";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：FUNCMOD(数值表达式,数值表达式)";
+			parent.document.getElementById("explained").innerHTML="取余数(数值表达式,数值表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "N_num2_2":
+			targetobj.innerHTML = "Round(129.166,2) <br>返回结果为：129.17";
+			hiddenobj.value = "四舍五入";
+			idstart(id); 
+			parent.document.getElementById("decimalname").innerHTML="整数  ";
+			parent.document.getElementById("note").innerHTML="说明：ROUND(数值表达式,保留小数点位数)";
+			parent.document.getElementById("explained").innerHTML="四舍五入(数值表达式,保留小数点位数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "N_num3":
+			targetobj.innerHTML = "SANQI(129.34) <br>返回结果为：129.5";
+			hiddenobj.value = "三舍七入";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：SANQI;三舍七入,其他为0.5";
+			parent.document.getElementById("explained").innerHTML="三舍七入(数值表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "N_num4_2":
+			targetobj.innerHTML = "YUAN(129.01) <br>返回结果为：130<br>YUAN(129.09, 10) <br>返回结果为：129<br>YUAN(129.10, 10) <br>返回结果为：130";
+			hiddenobj.value = "逢分进元";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：YUAN(数值表达式,[进元参数]),进元参数可选,默认为1";
+			parent.document.getElementById("explained").innerHTML="逢分进元(数值表达式,[进元参数])";
+			parent.document.getElementById("id").value=id;
+			parent.document.getElementById("decimal").value='1';
+			break;
+		case "N_num5":
+			targetobj.innerHTML = 'JIAO(129.11) <br>返回结果为：129.2"';
+			hiddenobj.value = "逢分进角";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：JIAO(129.11) \n返回结果为：129.2";
+			parent.document.getElementById("explained").innerHTML="逢分进角(数值表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "NN_num6":
+			targetobj.innerHTML = '幂(3,2) <br>返回结果为：9<br>注意: 在进行N次方根的计算时,第二个参数可用小数或分数(1/n),在用分数时,应使用类似1.0/n的格式';
+			hiddenobj.value = "幂(,)";
+			idstart(id);
+			parent.document.getElementById("decimalname").innerHTML="次方";
+			parent.document.getElementById("note").innerHTML="说明：求底数的n次方";
+			parent.document.getElementById("explained").innerHTML="幂(数值表达式,数值表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "1":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：字符串函数";
+			break;
+		case "A_str0":
+			targetobj.innerHTML = 'Trim("&nbsp;&nbsp;AbcD&nbsp;&nbsp;") <br>返回结果为："AbcD"';
+			hiddenobj.value = "去空格";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("note").innerHTML="说明：Trim(字符串表达式)";
+			parent.document.getElementById("explained").innerHTML="去空格(字符串表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "A_str1":
+			targetobj.innerHTML = 'LTrim("&nbsp;&nbsp;AbcD&nbsp;&nbsp;") <br>返回结果为："AbcD&nbsp;&nbsp;"';
+			hiddenobj.value = "去左空格";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("note").innerHTML="说明：LTRIM(字符串表达式)";
+			parent.document.getElementById("explained").innerHTML="去左空格(字符串表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "A_str2":
+			targetobj.innerHTML = 'RTrim("&nbsp;&nbsp;AbcD&nbsp;&nbsp;") <br>返回结果为："&nbsp;&nbsp;AbcD"';
+			hiddenobj.value = "去右空格";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("note").innerHTML="说明：RTRIM(字符串表达式)";
+			parent.document.getElementById("explained").innerHTML="去右空格(字符串表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "A_str3_2_2":
+			targetobj.innerHTML = 'SubStr("AykchrbcD",2,5) <br>返回结果为："ykchr"';
+			hiddenobj.value = "子串";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("decimalname").innerHTML="起&nbsp;&nbsp;&nbsp;&nbsp;始&nbsp;&nbsp;&nbsp;&nbsp;位  ";
+			parent.document.getElementById("note").innerHTML="说明：SUBSTR(字符串表达式,起始位,长度)";
+			parent.document.getElementById("explained").innerHTML="子串(字符串表达式,整数,整数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "A_str4":
+			targetobj.innerHTML = 'LEN("ykchrbcD") <br>返回结果为：8';
+			hiddenobj.value = "串长";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("note").innerHTML="说明：LEN(字符串表达式)";
+			parent.document.getElementById("explained").innerHTML="串长(字符串表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "A_str5_2":
+			targetobj.innerHTML = 'Left("ykchrbcD",5) <br>返回结果为："ykchr"';
+			hiddenobj.value = "左串";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("decimalname").innerHTML="长&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;度";
+			parent.document.getElementById("note").innerHTML="说明：LEFT(字符串表达式,长度)";
+			parent.document.getElementById("explained").innerHTML="左串(字符串表达式,长度)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "A_str6_2":
+			targetobj.innerHTML = 'Right("Abcykchr",5) <br>返回结果为："ykchr"';
+			hiddenobj.value = "右串";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("decimalname").innerHTML="长&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;度";
+			parent.document.getElementById("note").innerHTML="说明：RIGHT(字符串表达式,长度)";
+			parent.document.getElementById("explained").innerHTML="右串(字符串表达式,长度)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vols7_2":
+			targetobj.innerHTML = '';
+			hiddenobj.value = "登录用户名";
+			idstart(id);
+			parent.document.getElementById("decimalname").innerHTML="参数：";
+			parent.document.getElementById("note").innerHTML="说明：求登录用户名1(简写)|2(全称)<br>参数只能是1或者2，<br>1表示返回登录用户名，<br>2表示返回登录用户全名";
+			parent.document.getElementById("explained").innerHTML="登录用户名(1|2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vols8_9":
+			targetobj.innerHTML = '';
+			hiddenobj.value = "本单位";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="当前登录用户的操作单位,一般直接用于IN操作符后, 如:<br>如果 所在单位 IN 本单位() 那么 ...<br>参数是业务类别，可以是1-3:<br>0:默认，系统操作单位<br>1:工资发放<br>2:工资总额<br>3:所得税";
+			parent.document.getElementById("explained").innerHTML="";
+			parent.document.getElementById("id").value=id;
+			parent.document.getElementById("templatename").innerHTML="业务分类";
+			break;
+		case "V_vols8_10":
+			targetobj.innerHTML = '';
+			hiddenobj.value = "取兼职信息";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：<br>&nbsp;&nbsp;取兼职信息()：不显示兼职单位、部门信息<br>&nbsp;&nbsp;举例：<br>&nbsp;&nbsp;主任(兼职)，党委书记(-)<br>&nbsp;&nbsp;取兼职信息(单位部门):显示兼职单位、部门信息，<br>&nbsp;&nbsp;举例：<br>&nbsp;&nbsp;北京分公司\分公司领导\主任(兼职)，集团总部\党委书记(-)<br>&nbsp;&nbsp;取兼职信息(单位):显示兼职单位信息<br>&nbsp;&nbsp;举例：<br>&nbsp;&nbsp;北京分公司\主任(兼职)，集团总部\党委书记(-)<br>&nbsp;&nbsp;取兼职信息(部门):显示兼职部门信息<br>&nbsp;&nbsp;举例：<br>&nbsp;&nbsp;分公司领导\主任(兼职)，党委书记(-)";
+			parent.document.getElementById("explained").innerHTML="";
+			parent.document.getElementById("id").value=id; 
+			break;
+		case "V_vol9_3":
+			targetobj.innerHTML = '';
+			hiddenobj.value = "上一级代码";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML='说明：<br>&nbsp;&nbsp;上一级代码(指标名称,[代码类])：如代码类不填写，则默认使用指标名称关联的代码类<br>&nbsp;&nbsp;举例：<br>&nbsp;&nbsp;上一级代码(部门):取当前部门的上一级机构代码 <br>&nbsp;&nbsp;举例：<br>&nbsp;&nbsp;上一级代码(部门,"UM"):取当前部门的上一级机构代码';
+			parent.document.getElementById("explained").innerHTML="";
+			parent.document.getElementById("conditionssubset0").innerHTML="代码类";
+			parent.document.getElementById("id").value=id; 
+			break;
+		case "2":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：日期函数 ";
+			break;
+		case "D_data0":
+			targetobj.innerHTML = 'Year(#1992.10.10#) <br>返回结果为：1992';
+			hiddenobj.value = "年";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：YEAR(日期)：取日期的年";
+			parent.document.getElementById("explained").innerHTML="年(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data1":
+			targetobj.innerHTML = 'Month(#1992.10.13#) <br>返回结果为：10';
+			hiddenobj.value = "月";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：MONTH(日期)：取日期的月";
+			parent.document.getElementById("explained").innerHTML="月(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data2":
+			targetobj.innerHTML = 'Day(#1992.10.11#) <br>返回结果为：11';
+			hiddenobj.value = "日";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：DAY(日期)：取日期的日";
+			parent.document.getElementById("explained").innerHTML="日(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data3":
+			targetobj.innerHTML = 'QUARTER(#1992.10.11#) <br>返回结果为：4';
+			hiddenobj.value = "季度";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：QUARTER(日期)：取日期的季度";
+			parent.document.getElementById("explained").innerHTML="季度(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data4":
+			targetobj.innerHTML = 'Week(#1992.1.9#) <br>返回结果为：2';
+			hiddenobj.value = "周";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：WEEK(日期)：该日期为本年的第几周";
+			parent.document.getElementById("explained").innerHTML="周(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data5":
+			targetobj.innerHTML = 'WEEKDAY(#1992.1.9#) <br>返回结果为：4';
+			hiddenobj.value = "星期";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：WEEKDAY(日期)：该日期为星期几";
+			parent.document.getElementById("explained").innerHTML="星期(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data6":
+			targetobj.innerHTML = 'Today <br>返回结果为：#2007.06.26#';
+			hiddenobj.value = "今天";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：TODAY 或 TODAY()";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data7":
+			targetobj.innerHTML = 'TOWEEK <br>返回结果为：当前系统时间的周数';
+			hiddenobj.value = "本周";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：TOWEEK";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data8":
+			targetobj.innerHTML = 'TOMONTH <br>返回结果为：当前系统时间的月份';
+			hiddenobj.value = "本月()";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：TOMONTH";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data9":
+			targetobj.innerHTML = 'TOQUARTER <br>返回结果为：当前系统时间的季度数';
+			hiddenobj.value = "本季度()";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：TOQUARTER";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data10":
+			targetobj.innerHTML = 'TOYEAR <br>返回结果为：当前系统时间的年份';
+			hiddenobj.value = "今年()";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：TOYEAR";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data11":
+			targetobj.innerHTML = 'APPDATE() <br>返回结果为：用户设置的计算截止日期';
+			hiddenobj.value = "截止日期()";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：APPDATE";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data11":
+			targetobj.innerHTML = 'APPDATE() <br>返回结果为：用户设置的计算截止日期';
+			hiddenobj.value = "截止日期()";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：APPDATE";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data12":
+			targetobj.innerHTML = 'Age(#1992.7.12#) <br>返回结果为：计算到日的年龄';
+			hiddenobj.value = "年龄";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：AGE(日期)：计算到日的年龄";
+			parent.document.getElementById("explained").innerHTML="年龄(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data13":
+			targetobj.innerHTML = 'WorkAge(#1992.7.12#) <br>返回结果为：年份相减加1';
+			hiddenobj.value = "工龄";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("note").innerHTML="说明：WORKAGE(日期)：年份相减加1";
+			parent.document.getElementById("explained").innerHTML="工龄(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data14":
+			targetobj.innerHTML = 'WMONTHAGE(#1992.7.12#) <br>返回结果为：计算到月的年龄';
+			hiddenobj.value = "到月年龄";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式";
+			parent.document.getElementById("note").innerHTML="说明：WMONTHAGE(日期)：计算到月的年龄";
+			parent.document.getElementById("explained").innerHTML="到月年龄(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data15_1":
+			targetobj.innerHTML = 'Years(#2002.10.10#,#1992.7.12#) <br>返回结果为：两日期之间年数';
+			hiddenobj.value = "年数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期1  ";
+			parent.document.getElementById("datesubset1").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期2  ";
+			parent.document.getElementById("note").innerHTML="说明：YEARS(日期1,日期2)：从日期2到日期1的年数";
+			parent.document.getElementById("explained").innerHTML="年数(日期1,日期2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data16_1":
+			targetobj.innerHTML = 'Months(#2002.10.10#,#1992.7.12#) <br>返回结果为：两日期之间月数';
+			hiddenobj.value = "月数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期1  ";
+			parent.document.getElementById("datesubset1").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期2  ";
+			parent.document.getElementById("note").innerHTML="说明：MONTHS(日期1,日期2)：从日期2到日期1的月数";
+			parent.document.getElementById("explained").innerHTML="月数(日期1,日期2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data17_1":
+			targetobj.innerHTML = 'Days(#2002.10.10#,#1992.7.12#) <br>返回结果为：两日期之间天数';
+			hiddenobj.value = "天数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期1  ";
+			parent.document.getElementById("datesubset1").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期2  ";
+			parent.document.getElementById("note").innerHTML="说明：DAYS(日期1,日期2)：从日期2到日期1的天数";
+			parent.document.getElementById("explained").innerHTML="天数(日期1,日期2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data18_1":
+			targetobj.innerHTML = 'QUARTERs(#1992.7.12#,#2002.10.10#) <br>返回结果为：两日期之间季度数';
+			hiddenobj.value = "季度数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期1  ";
+			parent.document.getElementById("datesubset1").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期2  ";
+			parent.document.getElementById("note").innerHTML="说明：QUARTERS(日期1,日期2)：从日期1到日期2的季度数";
+			parent.document.getElementById("explained").innerHTML="季度数(日期1,日期2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data19_1":
+			targetobj.innerHTML = 'Weeks(#2002.10.10#,#1992.7.12#) <br>返回结果为：两日期之间周数';
+			hiddenobj.value = "周数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期1  ";
+			parent.document.getElementById("datesubset1").innerHTML="日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期2  ";
+			parent.document.getElementById("note").innerHTML="说明：WEEKS(日期1,日期2)：从日期1到日期2的周数";
+			parent.document.getElementById("explained").innerHTML="周数(日期1,日期2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data20_2":
+			targetobj.innerHTML = 'AddYear(#1992.7.12#,2) <br>返回结果为：日期';
+			hiddenobj.value = "增加年数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("decimalname").innerHTML="整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数  ";
+			parent.document.getElementById("note").innerHTML="说明：AddYear(日期,整数)";
+			parent.document.getElementById("explained").innerHTML="增加年数(日期,整数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data21_2":
+			targetobj.innerHTML = 'AddMonth(#1992.7.12#,21) <br>返回结果为：日期';
+			hiddenobj.value = "增加月数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("decimalname").innerHTML="整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数  ";
+			parent.document.getElementById("note").innerHTML="说明：AddMonth(日期,整数)";
+			parent.document.getElementById("explained").innerHTML="增加月数(日期,整数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data22_2":
+			targetobj.innerHTML = 'AddDay(#1992.7.12#,200) <br>返回结果为：日期';
+			hiddenobj.value = "增加天数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("decimalname").innerHTML="整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数  ";
+			parent.document.getElementById("note").innerHTML="说明：AddDay(日期,整数)";
+			parent.document.getElementById("explained").innerHTML="增加天数(日期,整数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data23_2":
+			targetobj.innerHTML = 'AddQUARTER(#1992.7.12#,200) <br>返回结果为：日期';
+			hiddenobj.value = "增加季度数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("decimalname").innerHTML="整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数  ";
+			parent.document.getElementById("note").innerHTML="说明：AddQUARTER(日期,整数)";
+			parent.document.getElementById("explained").innerHTML="增加季度数(日期,整数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data24_2":
+			targetobj.innerHTML = 'AddWeek(#1992.7.12#,12) <br>返回结果为：日期';
+			hiddenobj.value = "增加周数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("decimalname").innerHTML="整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数  ";
+			parent.document.getElementById("note").innerHTML="说明：AddWeek(日期,整数)";
+			parent.document.getElementById("explained").innerHTML="增加周数(日期,整数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "DD_data25":
+			targetobj.innerHTML = '说明：归属日期只能用于薪资发放和保险缴费核算业务中';
+			hiddenobj.value = "归属日期()";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="返回结果为：当前薪资发放的业务日期";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data26_1_7":
+			var expstr = "返回指定日期范围内的工作日天数.<br>参数说明:<br>";
+			expstr+="日期参数: 日期型指标、日期数值、截止日期和归属日期<br>";
+			expstr+='节假日标志: 可选参数，"含节假日"或"不含节假日"(不';
+			expstr+='含引号)。默认为"不含节假日"。';
+			expstr+="含节假日表示节假日为工作日。";
+			expstr+="公休日、节假日及倒休在考勤模块中设置";
+			targetobj.innerHTML = expstr;
+			hiddenobj.value = "工作日";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期1";
+			parent.document.getElementById("datesubset1").innerHTML="日期2";
+			parent.document.getElementById("note").innerHTML="说明：WorkDays(日期1,日期2,节假日标志)";
+			parent.document.getElementById("explained").innerHTML="工作日(日期,日期[,含节假日|不含节假日])";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "D_data27_3":
+			var strtext = "子集中符合条件的日期指标的月份数<br>";
+			strtext+="第一个参数必须为子集的日期指标，第二个参数为条件<br>";
+			strtext+="返回指标所在子集中,符合条件的所有日期值的年月份个数";
+			targetobj.innerHTML = strtext;
+			hiddenobj.value = "统计月数";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期指标  ";
+			parent.document.getElementById("note").innerHTML="说明：GroupMonths(日期指标,条件表达试)";
+			parent.document.getElementById("explained").innerHTML="统计月数(日期指标,条件表达试)";
+			parent.document.getElementById("id").value=id;
+			break;
+			case "D_data28_1_10_10":
+			var expstr = "参数说明:<br>";
+			expstr+="（1）表达式中只能用这两个时间或其它常量<br>（2）开始时间和结束时间有重复，则只算一次<br>例如：统计时间(任职时间,免职时间,职级=\"03\",月数(如果 为空(免职时间) 那么 今天 否则 免职时间 结束,任职时间))<br>返回值：任03职级的月数，如果同时兼职，相同月数只算一次";
+			targetobj.innerHTML = expstr;
+			hiddenobj.value = "统计时间";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="开始日期";
+			parent.document.getElementById("datesubset1").innerHTML="结束日期";
+			parent.document.getElementById("conditionssubset").innerHTML="表&nbsp;达&nbsp;式";
+			parent.document.getElementById("note").innerHTML="说明：统计时间(开始时间, 结束时间, 条件, 表达式())";
+			parent.document.getElementById("explained").innerHTML="统计时间(开始时间, 结束时间, 条件, 表达式())";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "3":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：转换函数";
+			break;
+		case "T_str0":
+			targetobj.innerHTML = 'CTOD("1992.7.2") <br>返回结果为：日期';
+			hiddenobj.value = "字符转日期";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("note").innerHTML="说明：CTOD(字符串表达式)";
+			parent.document.getElementById("explained").innerHTML="字符转换日期(字符串表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "T_str1":
+			targetobj.innerHTML = 'CTOI("12922.01") <br>返回结果为：12922.01';
+			hiddenobj.value = "字符转数值";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="字符串表达式";
+			parent.document.getElementById("note").innerHTML="说明：CTOI(字符串表达式)";
+			parent.document.getElementById("explained").innerHTML="字符转换数值(字符串表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "T_data2":
+			targetobj.innerHTML = 'DTOC(#1991.10.10#，"YYYY-MM-DD") <br>返回结果为："1991.10.10"';
+			hiddenobj.value = "日期转字符";
+			idstart(id);
+			parent.document.getElementById("datesubset").innerHTML="日期表达式  ";
+			parent.document.getElementById("datesubsettype").innerHTML="日期格式  ";
+			parent.document.getElementById("note").innerHTML="说明：DTOC(日期，格式)";
+			parent.document.getElementById("explained").innerHTML="日期转换字符(日期，格式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "T_num3":
+			targetobj.innerHTML = 'ITOC(129.02) <br>返回结果为："129.02"';
+			hiddenobj.value = "数值转字符";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：ITOC(数值表达式)";
+			parent.document.getElementById("explained").innerHTML="数值转换字符(数值表达式)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "T_vol7_2":
+			targetobj.innerHTML = '“编号”指标值为“第0003号”<br>数字转汉字(编号,1)<br>返回结果为：第○○○三号<br>数字转汉字(编号,2)<br>返回结果为：第零零零叁号<br>“基本工资”指标值为“1234.56”<br>数字转汉字(编号,3)<br>返回结果为：壹仟贰佰叁拾肆元伍角陆分';
+			hiddenobj.value = "数字转汉字";
+			idstart(id);
+			//parent.document.getElementById("strsubset").innerHTML="指标名称";
+			parent.document.getElementById("decimalname").innerHTML="参&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数";
+			parent.document.getElementById("note").innerHTML="说明：NumConversion(指标名称,1|2|3)";
+			parent.document.getElementById("explained").innerHTML="数字转汉字(指标,参数)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "T_code4":
+			targetobj.innerHTML = 'CTON(性别) <br>返回结果为：字符';
+			hiddenobj.value = "代码转名称";
+			idstart(id);
+			parent.document.getElementById("strsubset").innerHTML="指标名称";
+			parent.document.getElementById("note").innerHTML="说明：CTON(指标名称)";
+			parent.document.getElementById("explained").innerHTML="代码转名称(指标名称)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "T_num4_2":
+			targetobj.innerHTML = '返回结果为：指标整数部分，不足指定长度前面补0';
+			hiddenobj.value = "数值转代码";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：NUMTOCODE(指标名称,长度)";
+			parent.document.getElementById("explained").innerHTML="数值转代码(指标名称, 4)";
+			parent.document.getElementById("decimalname").innerHTML="长度";
+			parent.document.getElementById("numtitle").innerHTML="指标名称";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "TT_tra5":
+			targetobj.innerHTML = "";
+			hiddenobj.value = "~";
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：代码转换符号";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "T_item6_5":
+			targetobj.innerHTML = 'CTON2(性别,"AX") <br>如果性别为"1"<br>&nbsp;&nbsp;返回结果为：男<br>如果性别为"2"<br>&nbsp;&nbsp;返回结果为：女<br><br>CTON2(所学专业, "AI", 3, ".")<br>&nbsp;&nbsp;返回结果为: 经济学.经济学类.统计学';
+			hiddenobj.value = "代码转名称2";
+			idstart(id);
+			parent.document.getElementById("itemidname").innerHTML="表达式";
+			parent.document.getElementById("codeMaxname").innerHTML="代码类";
+			parent.document.getElementById("note").innerHTML="说明：CTON2(表达式,代码类,[,显示层级,分隔符])";
+			parent.document.getElementById("explained").innerHTML="代码转名称2(表达式,代码类[,显示层级,分隔符])";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "4":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：类型不定函数";
+			break;
+		case "VV_vol0":
+			targetobj.innerHTML = '如果 学历="01" 那么 100 <br>否则 200 <br>结束';
+			hiddenobj.value = '如果 <Lexp1> 那么 <exp1> \n否则 <exp1>  \n结束';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：IIF<Lexp1> THEN<exp1> ELSE<exp1> END";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "VV_vol1":
+			targetobj.innerHTML = '分情况<br>如果 学历="01" 那么 100 <br>如果 学历="02" 那么 200 <br>如果 学历="03" 那么 300 <br>否则 400 <br>结束';
+			hiddenobj.value = '分情况 \n如果 Lexp1 那么 exp1 \n如果 Lexp2 那么 exp2 \n否则 expn... \n结束';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：CASEIIF Lexp1 THEN exp1 IIF Lexp2 THEN exp2[ELSE expn]结束";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vol2_6":
+			targetobj.innerHTML = 'GetMax(192,22) <br>值为192';
+			hiddenobj.value = "较大值";
+			idstart(id);
+			parent.document.getElementById("datastrcssaname").innerHTML="表 达 式1  ";
+			parent.document.getElementById("datastrcss1name").innerHTML="表 达 式2  ";
+			parent.document.getElementById("note").innerHTML="说明：GETMAX(exp1,exp2)";
+			parent.document.getElementById("explained").innerHTML="较大值(exp1,exp2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vol3_6":
+			targetobj.innerHTML = 'GetMin(192,22) <br>值为22';
+			hiddenobj.value = "较小值";
+			idstart(id);
+			parent.document.getElementById("datastrcssaname").innerHTML="表 达 式1  ";
+			parent.document.getElementById("datastrcss1name").innerHTML="表 达 式2  ";
+			parent.document.getElementById("note").innerHTML="说明：GETMIN(exp1,exp2)";
+			parent.document.getElementById("explained").innerHTML="较小值(exp1,exp2)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vol4_2_1":
+			targetobj.innerHTML = '取 学历 最近第 1 条记录';
+			hiddenobj.value = '取';
+			idstart(id);
+			parent.document.getElementById("datastrcssaname").innerHTML="指标名称";
+			parent.document.getElementById("decimalname").innerHTML="整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数  ";
+			parent.document.getElementById("note").innerHTML="说明：GET(指标名称，整数，方向)";
+			parent.document.getElementById("explained").innerHTML="取 指标名称 [最近第|最初第] 整数 条记录";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vol5_3_3":
+			targetobj.innerHTML = '统计 失业保险个人缴费+失业保险个人补缴  满足 月(A94z0)=月(归属日期) 且 年(A94z0)=年(归属日期) 的最近第一条记录';
+			hiddenobj.value = '统计';
+			idstart(id);
+			parent.document.getElementById("datastrcssaname").innerHTML="指标名称";
+			parent.document.getElementById("note").innerHTML="说明：SELECT(四则运算表达式,条件,方式)";
+			parent.document.getElementById("explained").innerHTML="统计 四则运算表达式 满足 条件 [第一条记录..";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vol6":
+			targetobj.innerHTML = '例子: 为空(独生子女费)<br>独生子女费 IS NULL';
+			hiddenobj.value = '为空';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：指标 IS NULL";
+			parent.document.getElementById("explained").innerHTML="为空(指标)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "V_vol1_8_9_1_1":
+			var exprestr = "返回对应的结果值。<br>部分参数说明:<br>分组指标: ";
+			exprestr+="代码型指标<br>分组级数：需要分组统计到的代码层级. 默认为0，";
+			exprestr+="表示直接按代码值分组范围：可设为当前列表、当前人员库。默认为当前列表";
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '分组汇总';
+			idstart(id);
+			parent.document.getElementById("datastrcssaname").innerHTML="汇总指标";
+			parent.document.getElementById("itemidname").innerHTML="分组指标";
+			parent.document.getElementById("condname").innerHTML="方&nbsp;&nbsp;&nbsp;&nbsp;式";
+			parent.document.getElementById("rangeidname").innerHTML="范&nbsp;&nbsp;&nbsp;&nbsp;围";
+			parent.document.getElementById("note").innerHTML="说明：分组汇总(汇总指标,汇总方式,分组指标[,分组级数[,当前列表|当前人员库[,条件]]])";
+			parent.document.getElementById("explained").innerHTML="分组汇总(汇总指标,个数|平均数|总和|最大值|最小值,分组指标[,分组级数[,当前列表|当前人员库[,条件]]])";
+			parent.document.getElementById("id").value=id;
+			break;
+			case "V_vol9":
+			var exprestr = "在公式中使用单位子集指标时, 一般是取得人员所在单位的指标<br>有时, 需要取人员所在部门的指标, 此时可用本函数<br><br>";
+			exprestr+="注意: 在一个公式中, 不能既取单位的值,又取部门的值. 当一个公式使用了\"取部门值\"时, 所有单位子集指标都是取对应部门的值 ";
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '取部门值';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：GetE0122Value(指标名称)";
+			parent.document.getElementById("explained").innerHTML="取部门值(指标名称)";
+			parent.document.getElementById("id").value=id;
+			break;
+			case "V_volu9_20":
+			var exprestr = "返回值：关联指标跟单位信息集中单位名称进行关联，取关联上的单位对应的结果指标内容，当此函数只有一个参数时，返回人员所在部门在单位信息集中对应的指标内容<br>";
+			exprestr+="举例：“张三”，异动模板中变化前部门为“运输部”，变化后部门为“能源与环保”<br>取部门值(所属行业)<br>";
+				exprestr+="返回：张三所在部门“运输部”的所属行业，如果张三部门为空，返回张三所在单位的所属行业<br> ";
+			exprestr+="取部门值(变化后部门, 所属行业)<br>返回：张三变化后部门“能源与环保”部的所属行业<br>";
+			exprestr+="注意：公式取单位信息集指标时，一般取单位对应的指标内容；有时需要取部门对应的指标内容，可用本函数。";
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '取部门值';
+			idstart(id);
+			parent.document.getElementById("datastrcssaname").innerHTML="关联指标  ";
+			parent.document.getElementById("datastrcss2name").innerHTML="结果指标  ";
+			parent.document.getElementById("note").innerHTML="说明：(1)GetE0122Value(结果指标)<br>(2)GetE0122Value(关联指标,结果指标)<br>(2)GetE0122Value(关联指标,结果指标,条件)";
+			parent.document.getElementById("explained").innerHTML="&nbsp;取部门值(关联指标,结果指标,条件)";
+			parent.document.getElementById("id").value=id;
+			break;
+			case "V_volp7_20":
+			var exprestr = "返回值：关联指标跟岗位信息集中的岗位名称进行关联，取关联上的岗位对应的指标内容<br>举例：“张三”从“检修计划管理”岗（岗位属性为空）调到“机构点检员”（岗位属性为高温），那么人事异动业务中需要计算出此人变化前特殊工种标识以及变化后特殊工种标识。<br>取岗位值(拟岗位名称,岗位属性)<br>返回：张三变化后岗位的岗位属性，即高温";
+
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '取岗位值';
+			idstart(id);
+			parent.document.getElementById("datastrcssaname").innerHTML="关联指标  ";
+			parent.document.getElementById("datastrcss2name").innerHTML="结果指标  ";
+			parent.document.getElementById("note").innerHTML="说明：	(1)取岗位值(结果指标)<br>(2)取岗位值(关联指标,结果指标)<br>(3)取岗位值(关联指标,结果指标,条件)";
+			parent.document.getElementById("explained").innerHTML="&nbsp;取岗位值(关联指标,结果指标,条件)";
+			parent.document.getElementById("id").value=id;
+			break;
+			case "V_vols6_3_11_10_10":
+			var exprestr = "";   
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '执行存储过程';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：<br> 执行存储过程(过程名：参数1,参数2,参数3,...)参数中可用\"当前表\"<br> 举例：<br>  参数为数字型： 10<br>  参数为字符型： 'AAAAAA'<br>  参数为日期型： #2001.01.02#";
+			parent.document.getElementById("explained").innerHTML="执行存储过程(过程名：参数1,参数2,参数3,...)";
+			parent.document.getElementById("id").value=id;
+			parent.document.getElementById("conditionssubset0").innerHTML="过程名";
+			parent.document.getElementById("conditionssubset1").innerHTML="参数1";
+			parent.document.getElementById("conditionssubset").innerHTML="参数2";
+			parent.document.getElementById("conditionssubset3").innerHTML="参数3";
+			break;
+			case "V_vol9_100":
+			var exprestr = "";
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '对象指标';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：对象指标(指标名称)";
+			parent.document.getElementById("explained").innerHTML="对象指标(指标名称)";
+			parent.document.getElementById("id").value=id;
+			break;
+			case "V_volq1":
+			var exprestr = "";
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '取自于';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：取自于(变量名)";
+			parent.document.getElementById("explained").innerHTML="取自于(变量名)";
+			parent.document.getElementById("id").value=id;
+			break;
+			case "A_vol9_6_2_10_2":
+			var exprestr = "说明：例子：序号(单据编号，部门,2,\"序号名称\",1|0)<br>返回值：单据编号生成规则=部门前2位编码+A0104指标按序号维护中规则生成的编号<br>"+
+			"参数:1|0 按截取内容分类编号<br>1  表示按部门分组，每个部门人员的单据编号都从1开始连续编号<br>0  表示所有人的单据编号，按编号规则连续生成"+
+			 "例如：<br>部门	姓名	单据编号（1）	单据编号（0）<br>01	张三	01001		01001<br>01	李四	01002		01002<br>02	王五	02001		02003<br><br>注意"+
+			 "<br>（1）需到序号维护中分别定义：序号名称，序号名称_部门1前2位，序号名称_部门2前2位<br>（2）序号名称不能关联指标，必须是自定义的一个任意名称 ";   
+			targetobj.innerHTML = exprestr;
+			hiddenobj.value = '序号';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="序号(目标指标，参考值指标,n,\"序号名称\",1|0)";
+			parent.document.getElementById("explained").innerHTML="序号(单据编号，部门,n,\"序号名称\",1|0)";
+			parent.document.getElementById("id").value=id;
+			parent.document.getElementById("datastrcssaname").innerHTML="目标指标";
+			parent.document.getElementById("datastrcss1name").innerHTML="参考值指标";
+			parent.document.getElementById("conditionssubset").innerHTML="序号字符串";
+			parent.document.getElementById("initiationnumid").innerHTML="截取长度";
+			
+			break;
+		case "5":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：常量";
+			break;
+		case "CC_con0":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '真';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：逻辑常量(TRUE)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "CC_con1":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '假';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：逻辑常量(FALSE)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "CC_con2":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '空';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：空(日期)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "CC_con3":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '#2000.3.22#';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：#2000.3.22#表示2000年3月22日";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "CC_con4":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '#3.22#';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：#3.22#表示3月22日";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "CC_con5":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '"张三"';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：“张三”表示姓名为张三";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "6":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：逻辑操作符";
+			break;
+		case "LL_log0":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '且';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：AND";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "LL_log1":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '或';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：OR";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "LL_log2":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '非';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：NOT";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "7":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML ="";
+			break;
+		case "OO_opr0":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '+';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：加";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "OO_opr1":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '-';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：减";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "OO_opr2":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '*';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：乘";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "OO_opr3":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '/';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：除";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "OO_opr4":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '\\';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：整除";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "OO_opr5":
+			targetobj.innerHTML = '';
+			hiddenobj.value = 'DIV';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：整除";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "OO_opr6":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '%';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：求余";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "OO_opr7":
+			targetobj.innerHTML = '';
+			hiddenobj.value = 'MOD';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：求余";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "8":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：关系运算符";
+			break;
+		case "RR_rel0":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '=';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：等于";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "RR_rel1":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '>';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：大于";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "RR_rel2":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '>=';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：大于等于";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "RR_rel3":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '<';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：小于";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "RR_rel4":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '<=';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：小于等于";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "RR_rel5":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '<>';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：不等于";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "RR_rel6":
+			targetobj.innerHTML = '';
+			hiddenobj.value = 'LIKE';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：包含";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "RR_rel7":
+			hiddenobj.value = 'IN()';
+			idstart(id);
+			var exprestr = "IN操作符语法: IN (操作数列表)|本单位<br>操作数列表可以有两种, 字符串列表和整数列表, 字符串用双引号限定, 列表中操作数之间用,分隔.<br>";
+			exprestr+="示例: 如果 指标名称 IN (\"01\",\"02\",\"03\",\"05\",\"08\") 那么 ....<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp 如果 指标名称 IN (1,2,3,8) 那么 .... ";
+			targetobj.innerHTML = exprestr;
+			parent.document.getElementById("note").innerHTML="说明：在...内";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "9":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：其他";
+			break;
+		case "EE_oth0":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '(  )';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：括号";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "EE_oth1":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '[  ] ';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：中括号[表示指标]";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "EE_oth2":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '{  } ';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：大括号[临时变量]";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "EE_oth3":
+			targetobj.innerHTML = '';
+			hiddenobj.value = '// ';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：注释标识";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "10":
+			togglesParent("stepDark");
+			hidesParent("stepBrilliant");
+			targetobj.innerHTML="";
+			parent.document.getElementById("note").innerHTML="说明：工资函数";
+			break;
+		case "S_stan0":
+			targetobj.innerHTML = '执行标准(标准号,横一,横二,纵一,纵二)<br>例子：执行标准(12, 档次, 空, 工资级别, 空)<br>返回值：找出工资级别、工资档次对应的结果值（级别工资）';
+			hiddenobj.value = '执行标准';
+			idstart(id);
+			parent.document.getElementById("standname").innerHTML='标准表';
+			parent.document.getElementById("note").innerHTML="说明：ExecuteStandard(标准号,横一,横二,纵一,纵二)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "S_sthl1":
+			targetobj.innerHTML = '例子：就近就高(12, 工资级别, 级别工资)<br>只支持代码型指标建立的，且只有一个横向指标及一个纵向指标的标准!';
+			hiddenobj.value = '就近就高';
+			idstart(id);
+			parent.document.getElementById("standhlname1").innerHTML='标准表';
+			parent.document.getElementById("note").innerHTML="说明：NearByHigh(标准号,纵向指标,结果指标)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "S_sthl2":
+			targetobj.innerHTML = '例子：就近就低(12, 工资级别, 级别工资)<br>只支持代码型指标建立的，且只有一个横向指标及一个纵向指标的标准!';
+			hiddenobj.value = '就近就低';
+			idstart(id);
+			parent.document.getElementById("standhlname1").innerHTML='标准表';
+			parent.document.getElementById("note").innerHTML="说明：NearByLow(标准号,纵向指标,结果指标)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "S_tztd1":
+			targetobj.innerHTML = '例子：就近套级套档(12,基本工资,1)<br>只支持代码型指标建立的，且只有一个横向指标及一个纵向指标的标准!';
+			hiddenobj.value = '就近套级套档';
+			idstart(id);
+			parent.document.getElementById("standhlname").innerHTML='标准表';
+			parent.document.getElementById("note").innerHTML="说明：就近套级套档(标准表号,结果指标,取横|纵向指标标识)  1:横向指标 2：纵向指标";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "S_item3_2_4":
+			targetobj.innerHTML = '前一个代码(工资级别, 1, "03")<br>工资级别指标代码向前递一级，但不会超过"03"所代表级别<br>如"10"变为"09", "07"变为"06"';
+			hiddenobj.value = '前一个代码';
+			idstart(id);
+			parent.document.getElementById("itemidname").innerHTML='前一个代码';
+			parent.document.getElementById("decimalname").innerHTML='增量';
+			parent.document.getElementById("codeMaxname").innerHTML='极值代码';
+			parent.document.getElementById("note").innerHTML="说明：前一个代码(代码指标,增量,极值代码)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "S_item4_2_4":
+			targetobj.innerHTML = '后一个代码(工资级别, 1, "13")<br>工资级别指标代码向后递一级，但不会超过"13"所代表级别<br>如"08"变为"09", "07"变为"08"';
+			hiddenobj.value = '后一个代码';
+			idstart(id);
+			parent.document.getElementById("itemidname").innerHTML='后一个代码';
+			parent.document.getElementById("decimalname").innerHTML='增量';
+			parent.document.getElementById("codeMaxname").innerHTML='极值代码';
+			parent.document.getElementById("note").innerHTML="说明：后一个代码(代码指标,增量,极值代码)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "S_item5_7_4_5":
+			targetobj.innerHTML = '代码调整(工资级别, 调整级数, "03", "15")<br>代码调整(“05”,2, "03", "15") 返回值：07<br>代码调整(“05”,-2,"03","15") 返回值：03';
+			hiddenobj.value = '代码调整';
+			idstart(id);
+			parent.document.getElementById("itemidname").innerHTML='代码调整';
+			parent.document.getElementById("incrementalItemname").innerHTML='增量指标';
+			parent.document.getElementById("codeMaxname").innerHTML='极大值代码';
+			parent.document.getElementById("codeMinname").innerHTML='极小值代码';
+			parent.document.getElementById("note").innerHTML="说明：代码调整(代码指标,增量指标,极大值代码,极小值代码)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar5":
+			targetobj.innerHTML = '例子：分段计算(exp1)<br>&nbsp;&nbsp;基于子集 A02 满足 开始时间>=#1998.7.1#计算满足条件的∑(exp1)';
+			hiddenobj.value = '前一个代码(现所学专业,0,"0101分段计算(exp1) 基于子集 ... [满足 ...]") ';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：基于一个子集的历史记录，计算满足条件的表达式exp1累计之和";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar6":
+			targetobj.innerHTML = '例子：分段计算2(A07,开始时间, 结束时间,<br>'
+										+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exp1,"",<br>'
+										+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A10,聘任起始时间, 聘任终止时间,'
+										+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exp2,"",<br>'
+										+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exp3,"#2004.10.1", "")<br>'
+										+'计算2004.10.1后　∑(exp3*MAX(exp1,exp2))';
+			hiddenobj.value = '分段计算2(子集1, 开始时间1, 结束时间1, exp1, "",\n '
+								+'子集2, 开始时间2, 结束时间2, exp2, "",\n'
+								+'expl3, "", "")';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：分段计算的扩展，是基于两个子集的历史记录，满足条件的历史";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar7":
+			targetobj.innerHTML = '例子：历史记录最初指标值(任职时间,  职务名称="03")<br>'
+								+'返回指标必须是子集指标<br>'
+								+'返回子集中最近符合条件的记录连续上溯到第一条记录的指标值';
+			hiddenobj.value = '历史记录最初指标值(,)';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：历史记录最初指标值(返回指标，条件) ";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar8":
+			targetobj.innerHTML = '例子：历史记录最初指标值(任职时间,  职务名称="03")<br>'
+								+'返回指标必须是子集指标<br>'
+								+'返回子集中最近符合条件的记录连续上溯到第一条记录的指标值';
+			hiddenobj.value = '历史记录最初指标值(,)';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：历史记录最初指标值(返回指标,条件)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar9":
+			targetobj.innerHTML = '例子：上一个历史记录指标值(职务名称,  职务名称="03")<br>'
+								+'返回指标必须是子集指标<br>'
+								+'返回子集中最近符合条件的上一个不符条件的指标值';
+			hiddenobj.value = '上一个历史记录指标值(,)';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：上一个历史记录指标值(返回指标,条件)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar10":
+			targetobj.innerHTML = '例子:取上月实发工资人数("1,4,9",单位名称,发薪表示="0")<br>';
+			hiddenobj.value = '取上月实发工资人数(,,)';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="说明：取上月实发工资人数（薪资类别号，归属单位指标，条件）";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar11":
+			targetobj.innerHTML = '例子:分段计算(exp1)<br>基于子集  A02 满足  开始时间>=#1998.07.01#';
+			hiddenobj.value = '分段计算(exp1) 基于子集 ... [满足 ...]';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML="计算满足条件的∑(exp1)";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "SS_sar12":
+			targetobj.innerHTML = '例子:用工计划表：<br>用工人数=预算汇总(1,1=1,人员类别);<br>增加人数=预算汇总(1,姓名=新员工,人员类别);';
+			hiddenobj.value = '预算汇总(,,)';
+			idstart(id);
+			parent.document.getElementById("note").innerHTML='说明：预算汇总(表达式[，统计条件[，分组指标]])<br>'
+															+'表达式：为1时，表示汇总人数；表达式或指标时，表示汇总求和<br>'
+															+'统计条件：1=1时表示真，否则按统计条件汇总<br>'
+															+'分组指标：没有分组指标时表示汇总全部；有分组指标时，按分组指标汇总<br>';
+			parent.document.getElementById("id").value=id;
+			break;
+		case "K_num0_21_12": 
+			targetobj.innerHTML = '例子:可休天数(拟请假类型,拟请假起始时间,拟请假结束时间,0,1)<br>含在途单据 :  参数只能是0或1, 1 包含在途单据 <br>可休天数变量:  0 取本年+结余的可休天数，1 单独取本年可休天数，2 单独取结余部分可休天数 ';
+			hiddenobj.value = '可休天数';
+			idstart(id);
+			parent.document.getElementById("numtitle").innerHTML="请假类型";
+			parent.document.getElementById("datesubset").innerHTML="起始日期";
+			parent.document.getElementById("datesubset1").innerHTML="结束日期";
+			parent.document.getElementById("note").innerHTML="说明：可休天数（请假类型，请假起始时间，请假结束时间  [，含在途单据  [，可休天数变量]]）";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "K_num1_21_12":
+			targetobj.innerHTML = '例子:已休天数(拟请假类型,拟请假起始时间,拟请假结束时间)<br>';
+			hiddenobj.value = '已休天数';
+			idstart(id);
+			parent.document.getElementById("numtitle").innerHTML="请假类型";
+			parent.document.getElementById("datesubset").innerHTML="起始日期";
+			parent.document.getElementById("datesubset1").innerHTML="结束日期";
+			parent.document.getElementById("note").innerHTML="说明：已休天数（请假类型，请假起始时间，请假结束时间）";
+			parent.document.getElementById("id").value=id;
+			break;
+		case "K_num2_21_12":
+			targetobj.innerHTML = '例子:申请时长(拟类型,拟起始时间,拟结束时间)<br>';
+			hiddenobj.value = '申请时长';
+			idstart(id);
+			parent.document.getElementById("numtitle").innerHTML="类型";
+			parent.document.getElementById("datesubset").innerHTML="起始日期";
+			parent.document.getElementById("datesubset1").innerHTML="结束日期";
+			parent.document.getElementById("note").innerHTML="说明：申请时长（类型，起始时间，结束时间）";
+			parent.document.getElementById("id").value=id;
+			break;
+	} 	  
+	simulateClick(targetobj); 
+}
+
+function simulateClick(el) {
+	var evt;
+	if (document.createEvent) {
+		evt = document.createEvent("MouseEvents");
+		evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+		el.dispatchEvent(evt);
+	} else if (el.fireEvent) {
+		el.fireEvent('onclick');
+	}
+}
+
+function toggles(targetId){
+	if (document.getElementById(targetId)){
+		target = document.getElementById(targetId);
+		target.style.display = "block";
+	
+	}
+} 
+
+function hides(targetId){
+	if (document.getElementById(targetId)){
+		target = document.getElementById(targetId);
+		target.style.display = "none";
+	}
+}
+function togglesParent(targetId){
+	if (parent.document.getElementById(targetId)){
+		target = parent.document.getElementById(targetId);
+		target.style.display = "block";
+	}
+} 
+function hidesParent(targetId){
+	if (parent.document.getElementById(targetId)){
+		target = parent.document.getElementById(targetId);
+		target.style.display = "none";
+	}
+}
+function nextStep(){
+    toggles("stepDark");
+	hides("stepBrilliant");
+	hides("darkReturnStep");
+	toggles("brilliantReturnStep");
+	hides("darkCompleted");
+	toggles("brilliantCompleted");
+	hides("selectifram");
+	toggles("selectformula");
+	hides("partTimeJob");
+}
+function returnStep(){
+	hides("fieldsetview");
+    hides("stepDark");
+	toggles("stepBrilliant");
+	toggles("darkReturnStep");
+	hides("brilliantReturnStep");
+	toggles("darkCompleted");
+	hides("brilliantCompleted");
+	hides("directioncss");
+	hides("conditionscss");
+	hides("conditionscss2");
+	hides("conditionscss1");
+	hides("conditionscss3");
+	hides("datastrcss");
+	hides("datastrcss1");
+	hides("datastrcss2");
+	hides("waycss");
+	toggles("selectifram");
+	hides("selectformula");
+	hides("subsetstr");
+	hides("subsetnum1");
+	hides("subsetnum2");
+	hides("subsetdate1");
+	hides("subsetdatetype");
+	hides("subsetdate2");
+	hides("decimalpoint");
+	hides("incrementalItem");
+	hides("initiationnum");
+	hides("codeMax");
+	hides("codeMin");
+	hides("itemidSelect");
+	hides("stand");
+	hides("standHfactor");
+	hides("standVfactor");
+	hides("standS_hfactor");
+	hides("standS_vfactor");
+	hides("standTzTd");
+	hides("standhHighLow");
+	hides("standTzTd");
+	hides("standItem");
+	hides("rangeidview");
+	hides("condstrview");
+	hides("hdayslogoview");
+	hides("templates");
+	hides("sorting");
+	hides("fieldsetunitview");
+	hides("fieldsetposview");
+}
+function returnStepParent(){
+    hidesParent("stepDark");
+	togglesParent("stepBrilliant");
+	togglesParent("darkReturnStep");
+	hidesParent("brilliantReturnStep");
+	togglesParent("darkCompleted");
+	hidesParent("brilliantCompleted");
+}
+function idstart(id){
+	if(id.length>0){
+		var array = id.split("_");
+		if(array.length>0){
+			if(array[0].length==2){ 
+				togglesParent("stepDark");
+				togglesParent("brilliantCompleted");
+				hidesParent("stepBrilliant");
+				hidesParent("darkCompleted");
+			}else{ 
+				togglesParent("stepBrilliant");
+				togglesParent("darkCompleted");
+				hidesParent("stepDark");
+				hidesParent("brilliantCompleted");
+			}
+		}
+	}
+}
+
+function completed(){
+	var formula = document.getElementById("formula").value;
+	var id = document.getElementById("id").value;
+	var array = id.split("_");
+	var attribute = defvalue();
+	//IE 浏览器不变 非IE浏览器 改用open弹窗 通过调用父窗口    wangb 20180127
+	//var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+    var isIE = getBrowseVersion();//userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE浏览
+	if(array[0].length==2){
+		if(parent.opener || parent.window){//弹窗添加URL安全校验		
+			if(parent.Ext && parent.openReturn) {
+				parent.openReturn(formula); //回调方法
+			}
+			else if(parent.opener && parent.opener.openReturn) {//添加对ext 弹窗判断  wangb 20190318
+				parent.opener.openReturn(formula);
+				
+			}		
+			else if(isIE)
+				parent.window.returnValue = formula;
+		}else{
+		    if(opener && opener.openReturn)
+				opener.openReturn(formula);
+		    else if(isIE)
+		    	window.returnValue = formula;
+		}
+	}
+	else if(id=="K_num0_21_12"||id=="K_num1_21_12"||id=="K_num2_21_12")
+	{
+		var returns = formula;
+		var code_value=document.getElementById("numexpression1_item").value;
+		var date1_value=document.getElementById("dateexpression1_item").value;
+		var date2_value=document.getElementById("dateexpression2_item").value;
+		if(parent.Ext)//添加对ext 弹窗判断  wangb 20190318
+			returnVal(isIE, formula+"("+code_value+","+date1_value+","+date2_value+")");
+		else if(parent.opener || parent.window){//弹窗添加URL安全校验
+			if(parent.opener)
+				parent.opener.openReturn(formula+"("+code_value+","+date1_value+","+date2_value+")");
+			else if(isIE)
+				parent.window.returnValue = formula+"("+code_value+","+date1_value+","+date2_value+")";
+		}else{
+			if(opener)
+				opener.openReturn(formula+"("+code_value+","+date1_value+","+date2_value+")");
+			else if(isIE)
+				window.returnValue = formula+"("+code_value+","+date1_value+","+date2_value+")";
+		}
+	}
+	else if(id=="V_vol4_2_1"){
+		var returns = formula;
+		var dateexpression1=document.getElementById("datestr_item").value;
+		var direction=document.getElementById("direction").value;
+		var decimal=document.getElementsByName("decimal")[0].value;
+		 if(dateexpression1.length>0){
+			returns += " " +dateexpression1+" ";
+		 }
+		 if(direction.length>0){
+			returns += " " +direction+" ";
+		 }
+		 if(decimal.length>0){
+			returns += " " +decimal+" ";
+		 }else{
+			returns += " 0 ";
+		 }
+		  
+		if(parent.Ext){//添加对ext 弹窗判断  wangb 20190318
+			returnVal(isIE, returns + "条记录");
+		}else if(parent.opener || parent.window){//弹窗添加URL安全校验
+			if(parent.opener)
+				parent.opener.openReturn(returns + "条记录");
+			else if(isIE)
+				parent.window.returnValue = returns + "条记录";
+		}else{
+			if(opener)
+				opener.openReturn(returns + "条记录");
+			else if(isIE)
+				window.returnValue = returns + "条记录";
+		}
+	}else if(id=="V_vol5_3_3"){
+		var returns = formula;
+		var datestr=document.getElementById("datestr_item").value;
+		
+		var conditions=document.getElementById("conditions").value;
+		var way=document.getElementById("way").value;
+		if(datestr!=null&&datestr.length>0)
+			returns += " " +datestr+" ";
+		returns+= " 满足 ";
+		if(conditions.length>0){
+			returns+= " "+conditions+" ";
+		}
+		if(way.length>0){
+			returns+= " "+way+" ";
+		}
+		if(parent.Ext){//添加对ext 弹窗判断  wangb 20190318
+			returnVal(isIE, returns);
+		}else if(parent.opener || parent.window){//弹窗添加URL安全校验
+			if(parent.opener)
+				parent.opener.openReturn(returns);
+			else if(isIE)
+				parent.window.returnValue = returns;
+		}else{
+			if(opener)
+				opener.openReturn(returns);
+			else if(isIE)
+				window.returnValue = returns;
+		}
+	}else{
+		if(parent.opener || parent.window){//弹窗添加URL安全校验
+			if(parent.Ext && parent.openReturn)//添加对ext 弹窗判断  wangb 20190318
+				parent.openReturn(formula+"("+attribute+")");
+			else if(parent.Ext && parent.Ext.getCmp('function_Wizard')){
+                parent.Ext.getCmp('function_Wizard').return_vo = formula+"("+attribute+")";
+			}else if(parent.opener)
+				parent.opener.openReturn(formula+"("+attribute+")");
+			else if(isIE)
+				parent.window.returnValue = formula+"("+attribute+")";
+		}else{
+			if(opener)
+				opener.openReturn(formula+"("+attribute+")");
+			else if(isIE)
+				window.returnValue = formula+"("+attribute+")";
+		}
+	}
+	if(window.parent.window.opener){//非ie浏览器
+		if(window.parent.window.opener.Ext){//这段代码很早就有了  后来上面又加了兼容性处理的代码   这里需要判断一个  不是ext打开的该window 就不需要走下面代码 xiegh 35469
+			if(window.parent.window.opener.Ext.getCmp("formulaId") && window.parent.window.opener.Ext.getCmp("formulaId").getValue() && window.returnValue)
+				window.parent.window.opener.Ext.getCmp("formulaId").setValue(window.parent.window.opener.Ext.getCmp("formulaId").getValue()+window.returnValue);
+		}
+	}
+	if(parent.Ext){//关闭Ext 弹窗 wangb 20190318
+		if(parent.Ext.getCmp('formulaId')){
+			parent.Ext.getCmp('formulaId').close();
+			return;
+		}
+		if( parent.Ext.getCmp('function_Wizard')){
+            parent.Ext.getCmp('function_Wizard').close();
+            return;
+        }
+	}
+	
+	parent.window.close();
+}
+//返回值，兼容ext弹窗，非ext弹窗等
+function returnVal(isIE, value) {
+	if(parent && parent.openReturn) {
+		parent.openReturn(value);
+	}else if(parent && parent.Ext.getCmp('function_Wizard')){
+        parent.Ext.getCmp('function_Wizard').return_vo = value;
+	}else if(parent.opener && parent.opener.openReturn) {
+		parent.opener.openReturn(value);
+	}else if(isIE) {
+		parent.window.returnValue = value;
+	}
+}
+function subsetfunction(){
+	var id = document.getElementById("id").value; 
+	tempid=id;
+	if(tempid==null)
+		tempid="";
+	if(id!=null&&id.length>1){
+		var array = id.split("_");
+		var start1="";
+		var start2="";
+		var start3="";
+		var start4="";
+		var start5="";
+		var start6="";
+		
+		if(array.length>0){
+			start1=array[0];
+		}
+		if(array.length>1){
+			start2=array[1];
+		}
+		if(array.length>2){
+			start3=array[2];
+		}
+		if(array.length>3){
+			start4=array[3];
+		}
+		if(array.length>4){
+			start5=array[4];
+		}
+		if(array.length>5){
+			start6=array[5];
+		}
+	
+		if(start2.length>0){
+			var subset = "";
+			if(start2.length==6){
+				subset = start2.substring(0,start2.length-2);
+			}else{
+				subset = start2.substring(0,start2.length-1);
+			}
+			var formulaName = document.getElementById("formula").value;//因为就近就高和就近就低用的是一样的select，这里用名字区分是否回显
+			switch (subset){
+				case 'str':
+					toggles("fieldsetview");
+					toggles("subsetstr");
+					break;
+				case 'code':
+					toggles("fieldsetview");
+					toggles("subsetstr");
+					break;
+				case 'num':
+					toggles("fieldsetview");
+					toggles("subsetnum1");
+					break;
+				case 'data':
+					toggles("fieldsetview");
+					toggles("subsetdate1");
+					if(start1=="T")
+						toggles("subsetdatetype");
+					break;
+				case 'vol':
+					toggles("fieldsetview");
+					toggles("datastrcss");
+					break;
+				case 'item':
+					toggles("fieldsetview");
+					toggles("itemidSelect");
+					break;
+				case 'stan':
+					hides("fieldsetview");
+					toggles("stand");
+					showS_column("stan",formulaName);//点击下一步，是否显示出已生成的横纵指标
+					break;
+				case 'sthl':
+					hides("fieldsetview");
+					toggles("standhHighLow");
+					showS_column("sthl",formulaName);//点击下一步，是否显示出已生成的横纵指标
+					break;
+				case 'tztd':  
+					hides("fieldsetview");
+					toggles("standTzTd");
+					showS_column("tztd",formulaName);//点击下一步，是否显示出已生成的横纵指标
+					break;	
+				case 'strs':
+//					toggles("templates");
+					break;
+				case 'vols':
+//					toggles("templates");
+					break;
+				case 'volu':
+					toggles("fieldsetview");
+					toggles("fieldsetunitview");
+					toggles("datastrcss");
+					break;
+				case 'volp':
+					toggles("fieldsetview");
+					toggles("fieldsetposview");
+					toggles("datastrcss");
+					break; 
+				case 'volq':
+					toggles("getFrom");
+					break;
+			}
+		}
+		if(start3.length>0){
+		switch (start3){
+				case '1':
+					toggles("subsetdate2");
+					break;
+				case '2':
+					toggles("decimalpoint");
+					break;
+				case '3':
+					toggles("conditionscss");
+					break;
+				case '4':
+					toggles("subsetnum2");
+					break;
+				case '5':
+					toggles("codeMax");
+					break;
+				case '6':
+					toggles("datastrcss1");
+					break;
+				case '7':
+					toggles("incrementalItem");
+					break;
+				case '8':
+					toggles("condstrview");
+					break;
+				case '9':
+					toggles("templates");	
+					break;
+				case '10':
+					toggles("partTimeJob");	
+					break;
+				case '20':
+					toggles("datastrcss2");
+					break;
+				case '21':
+					toggles("subsetdate1");
+					break;
+			}
+		}
+		if(start4.length>0){
+			switch (start4){
+				case '1':
+					toggles("directioncss");
+					break;
+				case '2':
+					toggles("initiationnum");
+					break;
+				case '3':
+					toggles("waycss");
+					break;
+				case '4':
+					toggles("codeMax");
+					break;
+				case '5':
+					toggles("codeMin");
+					break;
+				case '6':
+					toggles("subsetstr");
+					break;
+				case '7':
+					toggles("hdayslogoview");
+					break;
+				case '9':
+					toggles("itemidSelect");
+					break;
+				case '10':
+					toggles("conditionscss");
+					break;
+				case '11':
+					toggles("conditionscss1");
+					break;
+				case '12':
+					toggles("subsetdate2");
+					break;
+			}
+		}
+		if(start5.length>0){
+			switch (start5){
+				case '1':
+					toggles("rangeidview");
+					break;
+				case '5':
+					toggles("codeMin");
+					break;
+				case '10':
+					toggles("conditionscss2");
+					break;
+			}
+		}
+		if(start6.length>0){
+			switch (start6){
+				case '1':
+					toggles("conditionscss");
+					break;
+				case '2':
+					toggles("sorting");
+					break;
+				case '10':
+					toggles("conditionscss3");
+					break;
+			}
+		}
+	}
+}
+function defvalue(){
+	var atvalue="";
+	var id = document.getElementById("id").value;
+	if(id!=null&&id.length>1){
+		var array = id.split("_");
+		var start1="";
+		var start2="";
+		var start3="";
+		var start4="";
+		var start5="";
+		var start6="";
+		
+		if(array.length>0){
+			start1=array[0];
+		}
+		if(array.length>1){
+			start2=array[1];
+		}
+		if(array.length>2){
+			start3=array[2];
+		}
+		if(array.length>3){
+			start4=array[3];
+		}
+		if(array.length>4){
+			start5=array[4];
+		}
+		if(array.length>5){
+			start6=array[5];
+		}
+		if(start2.length>0){
+			var subset = "";
+			if(start2.length==6){
+				subset = start2.substring(0,start2.length-2);
+			}else{
+				subset = start2.substring(0,start2.length-1);
+			}
+			switch (subset){
+				case 'str':
+					var strexpression=document.getElementById("strexpression_item").value;
+					if(strexpression!=null&&strexpression.length>0){
+						atvalue+=strexpression;
+					}
+					break;
+				case 'code':
+					var strexpression=document.getElementById("strexpression_item").value;
+					if(strexpression!=null&&strexpression.length>0){
+						atvalue+=strexpression;
+					}
+					break;
+				case 'num':
+					var numexpression1=document.getElementById("numexpression1_item").value;
+					if(numexpression1!=null&&numexpression1.length>0){
+						atvalue+=numexpression1;
+					}
+					break;
+				case 'data':
+					var dateexpression1=document.getElementById("dateexpression1_item").value;
+					if(dateexpression1!=null&&dateexpression1.length>0){
+						atvalue+=dateexpression1;
+					}
+					var datetype_item=document.getElementById("datetype_item").value;
+					if(start1=="T"&&datetype_item!=null&&datetype_item.length>0){
+						atvalue+=","+datetype_item;
+					}
+					break;
+				case 'vol':
+					var datestr=document.getElementById("datestr_item").value;
+					if(datestr!=null&&datestr.length>0){
+						atvalue+=datestr;
+					}
+					break;
+				case 'item':
+					var itemid=document.getElementById("itemid_item").value;
+					if(itemid!=null&&itemid.length>0){
+						atvalue+=itemid;
+					}
+					break;
+				case 'stan':
+					var standid=document.getElementById("standid").value;
+					var hfactor=getCodesid("hfactor_arr");
+					var vfactor=getCodesid("vfactor_arr");
+					var s_hfactor=getCodesid("s_hfactor_arr");
+					var s_vfactor=getCodesid("s_vfactor_arr");
+					if(standid.length>0){
+						var itemarr = standid.split(":"); 
+						if(itemarr.length==7){
+							atvalue+=itemarr[6];
+						}
+						if(hfactor.length>0){
+							var hfactorarr = hfactor.split(":");
+							if(hfactorarr.length==2){
+								atvalue+=','+hfactorarr[1];
+							}else{
+								atvalue+=",''";
+							}
+						}else{
+							atvalue+=',空';
+						}
+						
+						if(s_hfactor.length>0){
+							var s_hfactorarr = s_hfactor.split(":");
+							if(s_hfactorarr.length==2){
+								atvalue+=','+s_hfactorarr[1];
+							}else{
+								atvalue+=",''";
+							}
+						}else{
+							atvalue+=',空';
+						}
+						if(vfactor.length>0){
+							var vfactorarr = vfactor.split(":");
+							if(vfactorarr.length==2){
+								atvalue+=','+vfactorarr[1];
+							}else{
+								atvalue+=",''";
+							}
+						}else{
+							atvalue+=',空';
+						}
+						if(s_vfactor.length>0){
+							var s_vfactorarr = s_vfactor.split(":");
+							if(s_vfactorarr.length==2){
+								atvalue+=','+s_vfactorarr[1];
+							}else{
+								atvalue+=',空';
+							}
+						}else{
+							atvalue+=',空';
+						}
+					}
+					break;
+				case 'tztd':
+					var standhlid=document.getElementById("standhlid").value;
+					var item=getCodesid("item");
+					if(standhlid.length>0){
+						var itemarr = standhlid.split(":"); 
+						if(itemarr.length==7){
+							atvalue+=itemarr[6];
+						}
+						atvalue+=",";
+						if(item!=null&&item.length>0){
+							var itemarr = item.split(":");
+							if(itemarr.length==2){
+								atvalue+=itemarr[1];
+							}
+						}
+						atvalue+=",";
+					}
+					break;
+				case 'sthl':
+					var standhlid=document.getElementsByName("standhlid")[1].value;
+					var vfactor=getCodesid("vfactor_arr");
+					var s_vfactor=getCodesid("s_vfactor_arr");
+					var item=getCodesid("item");
+					if(standhlid.length>0){
+						var itemarr = standhlid.split(":"); 
+						if(itemarr.length==7){
+							atvalue+=itemarr[6];
+						}
+						if(vfactor.length>0){
+							var vfactorarr = vfactor.split(":");
+							if(vfactorarr.length==2){
+								atvalue+=','+vfactorarr[1];
+							}
+						}
+						if(s_vfactor.length>0){
+							var s_vfactorarr = s_vfactor.split(":");
+							if(s_vfactorarr.length==2){
+								atvalue+=','+s_vfactorarr[1];
+							}else{
+								atvalue+=',';
+							}
+						}else{
+							if(vfactor.length<1){
+								atvalue+=',';
+							}
+						}
+						if(item!=null&&item.length>0){
+							var itemarr = item.split(":");
+							if(itemarr.length==2){
+								atvalue+=','+itemarr[1];
+							}
+						}else{
+							atvalue+=',';
+						}
+					}
+					break;
+				case 'strs':
+//					var template=document.getElementById("template").value;
+//					if(template!=null&&template.length>0){
+//						atvalue+=""+template;
+//					}else{
+//						atvalue+="";
+//					}
+					break;
+				case 'vols':
+//					var template=document.getElementById("template").value;
+//					if(template!=null&&template.length>0){
+//						atvalue+=""+template;
+//					}else{
+//						atvalue+="";
+//					}
+					break;
+				case 'volu':
+					var datestr=document.getElementById("datestr_item").value;
+					if(datestr!=null&&datestr.length>0){
+						atvalue+=datestr;
+					}
+					break;
+				case 'volp':
+					var datestr=document.getElementById("datestr_item").value;
+					if(datestr!=null&&datestr.length>0){
+						atvalue+=datestr;
+					}
+					break;
+			}
+		}
+		if(start3.length>0){
+		switch (start3){
+				case '1':
+					var dateexpression2=document.getElementById("dateexpression2_item").value;
+					if(dateexpression2!=null&&dateexpression2.length>0){
+						atvalue+=","+dateexpression2;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '2':
+					var decimal=document.getElementsByName("decimal")[0].value;
+					if(id=="V_vols7_2"){
+					if(decimal!=null&&decimal.length>0){
+						atvalue+=decimal;
+					}else{
+						atvalue+="";
+					}
+					}else{
+					if(decimal!=null&&decimal.length>0){
+						atvalue+=","+decimal;
+					}else{
+						atvalue+=",";
+					}
+					}
+					break;
+				case '3':
+					var conditions=document.getElementById("conditions").value;
+					if(id=="V_vols6_3_11_10_10"){
+						if(conditions!=null&&conditions.length>0){
+							atvalue+=conditions;
+						}else{
+							atvalue+="";
+						}
+					}
+					if(id=="V_vol9_3"){
+						if(conditions!=null&&conditions.length>0){
+							atvalue+=',"'+conditions+'"';
+						}
+					}
+					else{
+						if(conditions!=null&&conditions.length>0){
+							atvalue+=","+conditions;
+						}else{
+							atvalue+=",";
+						}
+					}
+					break;
+				case '4':
+					var numexpression2=document.getElementById("numexpression2_item").value;
+					if(numexpression2!=null&&numexpression2.length>0){
+						atvalue+=","+numexpression2;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '5':
+					var codemax=getCodesid("code_maxarr");
+					if(codemax!=null&&codemax.length>0){
+						atvalue+=',"'+codemax+'"';
+					}else{
+						atvalue+=',""';
+					}
+					break;
+				case '6':
+					var strid=document.getElementById("strid_item").value;
+					if(strid!=null&&strid.length>0){
+						atvalue+=","+strid;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '7':
+					var incrementalItemid=document.getElementById("incrementalItem_item").value;
+					if(incrementalItemid!=null&&incrementalItemid.length>0){
+						atvalue+=","+incrementalItemid;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '8':
+					var statid=document.getElementById("statid").value;
+					if(statid!=null&&statid.length>0){
+						atvalue+=","+statid;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '9':
+					var template=document.getElementById("template").value;
+					if(template!=null&&template.length>0){
+						atvalue+=""+template;
+					}else{
+						atvalue+="";
+					}
+					break;
+				case '10': 
+					var template=document.getElementById("partTimeJob_select").value;
+					if(template!=null&&template.length>0){
+						atvalue+='"'+template+'"';
+					}else{
+						atvalue+="";
+					}
+					break;	
+				case '20':
+					var strid2=document.getElementById("strid2_item").value;
+					if(id=="V_volu9_20"){
+					var datestr=document.getElementById("datestr_item").value;
+					if(datestr!=null&&datestr.length>0){
+					if(strid2!=null&&strid2.length>0){
+						atvalue+=","+strid2;
+					}else{
+//						atvalue+=",";
+					}	
+					}else{
+					if(strid2!=null&&strid2.length>0){
+						atvalue+=","+strid2;
+					}else{
+						atvalue+=",";
+					}
+					}
+					
+					}else{
+					if(strid2!=null&&strid2.length>0){
+						atvalue+=","+strid2;
+					}else{
+						atvalue+=",";
+					}
+					}
+					
+					break;
+			}
+		}
+		if(start4.length>0){
+			switch (start4){
+				case '1':
+					var direction=document.getElementById("direction").value;
+					if(direction!=null&&direction.length>0){
+						atvalue+=","+direction;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '2':
+					var initiation=document.getElementById("initiation").value;
+					if(initiation!=null&&initiation.length>0){
+						atvalue+=","+initiation;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '3':
+					var way=document.getElementById("way").value;
+					if(way!=null&&way.length>0){
+						atvalue+=","+way;
+					}else{
+						atvalue+=",";
+					}
+					break;
+				case '4':
+					var codemax=getCodesid("code_maxarr");
+					if(codemax!=null&&codemax.length>0){
+						atvalue+=',"'+codemax+'"';
+					}else{
+						atvalue+=',""';
+					}
+					break;
+				case '5':
+					var codemin=getCodesid("code_minarr");
+					if(codemin!=null&&codemin.length>0){
+						atvalue+=',"'+codemin+'"';
+					}else{
+						atvalue+=',""';
+					}
+					break;
+				case '6':
+					var strexpression_item=document.getElementById("strexpression_item").value;
+					if(strexpression_item!=null&&strexpression_item.length>0){
+						atvalue+=','+strexpression_item;
+					}else{
+						atvalue+=',""';
+					}
+					break;
+				case '7':
+					var hdayslogo=document.getElementById("hdayslogo").value;
+					if(hdayslogo!=null&&hdayslogo.length>0){
+						atvalue+=','+hdayslogo;
+					}else{
+						atvalue+=',""';
+					}
+					break;
+				case '9':
+					var itemid_item=document.getElementById("itemid_item").value;
+					if(itemid_item!=null&&itemid_item.length>0){
+						atvalue+=','+itemid_item;
+					}else{
+						atvalue+=',';
+					}
+					break;
+					case '10':
+					var itemid_item=document.getElementById("conditions").value;
+					if(itemid_item!=null&&itemid_item.length>0){
+						atvalue+=','+itemid_item;
+					}else{
+						atvalue+=',';
+					}
+					break;
+					case '11':
+					var itemid_item=document.getElementById("conditions1").value;
+					if(id=="V_vols6_3_11_10_10"){
+					var conditions=document.getElementById("conditions").value;
+					if(conditions!=null&&conditions.length>0){
+					var itemid_item2=document.getElementById("conditions2").value;
+					var itemid_item3=document.getElementById("conditions3").value;
+							if((itemid_item!=null&&itemid_item.length>0)||(itemid_item2!=null&&itemid_item2.length>0)||(itemid_item3!=null&&itemid_item3.length>0)){
+						atvalue+=':'+itemid_item;
+					}
+					}else{
+						atvalue+="";
+					}
+					}else{
+					if(itemid_item!=null&&itemid_item.length>0){
+						atvalue+=','+itemid_item;
+					}else{
+						atvalue+=',';
+					}
+					}
+					break;
+			}
+		}
+		if(id=="V_vol1_8_9_1_1"){
+						atvalue+=',0';
+						}
+		if(start5.length>0){
+			switch (start5){
+				case '1':
+					var rangeid=document.getElementById("rangeid").value;
+					if(rangeid!=null&&rangeid.length>0){
+						atvalue+=','+rangeid;
+					}else{
+					if(id=="V_vol1_8_9_1_1"){
+						atvalue+=',0';
+						}else
+						atvalue+=',""';
+					}
+					break;
+				case '5':
+					var codemin=getCodesid("code_minarr");
+					if(codemin!=null&&codemin.length>0){
+						atvalue+=',"'+codemin+'"';
+					}else{
+						atvalue+=',""';
+					}
+					break;
+				case '10':
+					var itemid_item=document.getElementById("conditions2").value;
+					if(id=="A_vol9_6_2_10_2"){
+					if(itemid_item!=null&&itemid_item.length>0){
+						atvalue+=','+"\""+itemid_item+"\"";
+					}else{
+						atvalue+=',\"\"';
+					}
+					break;
+					}
+					if(id=="V_vols6_3_11_10_10"){
+					var conditions=document.getElementById("conditions").value;
+					if(conditions!=null&&conditions.length>0){
+						var itemid_item1=document.getElementById("conditions1").value;
+					var itemid_item3=document.getElementById("conditions3").value;
+							if((itemid_item!=null&&itemid_item.length>0)||(itemid_item1!=null&&itemid_item1.length>0)||(itemid_item3!=null&&itemid_item3.length>0)){
+						atvalue+=','+itemid_item;
+					}
+					}else{
+						atvalue+="";
+					}
+					break;
+					}
+					if(itemid_item!=null&&itemid_item.length>0){
+						atvalue+=','+itemid_item;
+					}else{
+						atvalue+=',';
+					}
+					break;
+			}
+		}
+		if(start6.length>0){
+			switch (start6){
+				case '1':
+					var conditions=document.getElementById("conditions").value;
+					if(conditions!=null&&conditions.length>0){
+						atvalue+=','+conditions;
+					}else{
+						if(id=="V_vol1_8_9_1_1"){
+							atvalue+=',1=1';
+						}else{
+							atvalue+=',""';
+						}
+					}
+					break;
+				case '2':
+					var sortingnum=document.getElementById("sortingnum").value;
+					if(sortingnum!=null&&sortingnum.length>0){
+						atvalue+=','+sortingnum;
+					}else{
+						atvalue+=',0';
+					}
+					break;
+					case'10':
+					var itemid_item=document.getElementById("conditions3").value;
+						if(id=="V_vols6_3_11_10_10"){
+					var conditions=document.getElementById("conditions").value;
+					if(conditions!=null&&conditions.length>0){
+						var itemid_item2=document.getElementById("conditions2").value;
+					var itemid_item1=document.getElementById("conditions1").value;
+							if((itemid_item!=null&&itemid_item.length>0)||(itemid_item2!=null&&itemid_item2.length>0)||(itemid_item1!=null&&itemid_item1.length>0)){
+						atvalue+=','+itemid_item;
+					}
+					}else{
+						atvalue+="";
+					}
+					break;
+					}
+					break;
+			}
+		}
+	}
+	return atvalue;
+}
+
+
+function upadd(valueadd){
+	var addValue  = document.getElementsByName(valueadd)[0].value;
+	var id = document.getElementById("id").value;
+	if(addValue.length<1){
+		addValue = 0;
+	}
+    document.getElementsByName(valueadd)[0].value = parseInt(addValue)+1;
+}
+function downcut(valuecut){
+	var cutValue  = document.getElementsByName(valuecut)[0].value;
+	var id = document.getElementById("id").value;
+	if(cutValue.length<1){
+		cutValue = 0;
+	}
+	 if(cutValue.length>0&&parseInt(cutValue)<=1){
+	if(id=="N_num4_2"){
+		document.getElementById(valuecut).value = 1;
+		return;
+		}
+	}
+    document.getElementsByName(valuecut)[0].value = parseInt(cutValue)-1;
+   
+}
+function getCodesid(code_arr){
+	var codeid="";
+	var codesetid_arr= document.getElementsByName(code_arr);
+	if(codesetid_arr==null){
+		return "";
+	}else{
+		var codesetid_arr_vo = codesetid_arr[0];
+		for(var i=0;i<codesetid_arr_vo.options.length;i++){
+			if(codesetid_arr_vo.options[i].selected){
+				codeid =codesetid_arr_vo.options[i].value;
+			}
+		}
+	}
+	return codeid;
+}
+function arrToNull(code_arr){
+	var codeid="";
+	var codesetid_arr= document.getElementsByName(code_arr);
+	if(codesetid_arr==null){
+		return "";
+	}else{
+		var codesetid_arr_vo = codesetid_arr[0];
+		for(var i=0;i<codesetid_arr_vo.options.length;i++){
+			if(codesetid_arr_vo.options[i].selected){
+				codesetid_arr_vo.options[i].selected=false;
+			}
+		}
+	}
+}
+function changeCodeValue(){
+   var itemid=getCodesid("itemid_arr");
+   var arr = itemid.split(":");
+   if(arr.length==2){
+   		var fieldsetid = getCodesid("fieldname");
+   		var hashvo=new ParameterSet();
+   		hashvo.setValue("itemid",arr[0]);
+   		hashvo.setValue("fieldsetid",fieldsetid);
+   		hashvo.setValue("tempid",tempid);
+	    var request=new Request({asynchronous:false,
+     		onSuccess:showCodeFieldList,functionId:'3020050012'},hashvo);
+   }
+}
+function showCodeFieldList(outparamters){
+	var codelist=outparamters.getValue("codelist");
+	if(codelist!=null&&codelist.length>1){
+		AjaxBind.bind(projectForm.code_maxarr,codelist);
+		if(document.getElementById("codeMin").style.display == "block"){
+			AjaxBind.bind(projectForm.code_minarr,codelist);
+		}
+	}
+}
+function showFactor(outparamters){
+	hides("standHfactor");
+	hides("standVfactor");
+	hides("standS_hfactor");
+	hides("standS_vfactor");
+	var hfactorlsit=outparamters.getValue("hfactorlsit");
+	var vfactorlsit=outparamters.getValue("vfactorlsit");
+	var s_hfactorlsit=outparamters.getValue("s_hfactorlsit");
+	var s_vfactorlsit=outparamters.getValue("s_vfactorlsit");
+	var str=outparamters.getValue("str");
+	
+	arrToNull("hfactor_arr");
+	arrToNull("vfactor_arr");
+	arrToNull("s_hfactor_arr");
+	arrToNull("s_vfactor_arr");
+	if(parent.document.getElementById("calculation")){
+        parent.document.getElementById("calculation").innerHTML=str;
+    }else{
+        document.getElementById("calculation").innerHTML=str;
+	}
+	if(hfactorlsit!=null&&hfactorlsit.length>0){
+		toggles("standHfactor");
+		if(parent.document.getElementById("hfactorname")){
+            parent.document.getElementById("hfactorname").innerHTML='横一';
+        }else{
+            document.getElementById("hfactorname").innerHTML='横一';
+		}
+		AjaxBind.bind(projectForm.hfactor_arr,hfactorlsit);
+	}else{
+		AjaxBind.bind(projectForm.hfactor_arr,hfactorlsit);
+	}
+	if(vfactorlsit!=null&&vfactorlsit.length>0){
+		toggles("standVfactor");
+        if(parent.document.getElementById("vfactorname")){
+            parent.document.getElementById("vfactorname").innerHTML='纵一';
+        }else{
+            document.getElementById("vfactorname").innerHTML='纵一';
+        }
+		AjaxBind.bind(projectForm.vfactor_arr,vfactorlsit);
+	}else{
+		AjaxBind.bind(projectForm.vfactor_arr,vfactorlsit);
+	}
+	if(s_hfactorlsit!=null&&s_hfactorlsit.length>0){
+		toggles("standS_hfactor");
+		if(parent.document.getElementById("s_hfactorname")){
+            parent.document.getElementById("s_hfactorname").innerHTML='横二';
+        }else{
+            document.getElementById("s_hfactorname").innerHTML='横二';
+		}
+		AjaxBind.bind(projectForm.s_hfactor_arr,s_hfactorlsit);
+	}else{
+		AjaxBind.bind(projectForm.s_hfactor_arr,s_hfactorlsit);
+	}
+	if(s_vfactorlsit!=null&&s_vfactorlsit.length>0){
+		toggles("standS_vfactor");
+		if(parent.document.getElementById("s_vfactorname")){
+            parent.document.getElementById("s_vfactorname").innerHTML='纵二';
+		}else {
+            document.getElementById("s_vfactorname").innerHTML='纵二';
+		}
+		AjaxBind.bind(projectForm.s_vfactor_arr,s_vfactorlsit);
+	}else{
+		AjaxBind.bind(projectForm.s_vfactor_arr,s_vfactorlsit);
+	}
+}
+
+//执行标准
+function standSelect(salaryid,tabid,checktemp){
+	 document.getElementById("lastFormulaName").value = document.getElementById("formula").value;//将进来的函数名字作为标记，在下一次进来的时候判断是否回显
+	 var standid=document.getElementById("standid").value;
+	 var codearr=document.getElementById("codearr").value;
+	 if(standid.length>0){
+	    var hashvo=new ParameterSet();
+	    hashvo.setValue("standid",standid);
+	    hashvo.setValue("salaryid",salaryid);
+	    hashvo.setValue("tabid",tabid);
+	    hashvo.setValue("checktemp",checktemp);
+	    var request=new Request({asynchronous:false,
+     		onSuccess:showFactor,functionId:'3020050012'},hashvo);
+     }
+}
+
+//就近就高套级
+function standSelect2(salaryid,tabid,checktemp)
+{ 
+	   document.getElementById("lastFormulaName").value = document.getElementById("formula").value;//将进来的函数名字作为标记，在下一次进来的时候判断是否回显
+	   var standhlid=document.getElementById("standhlid").value;
+	   if(standhlid.length>0){
+		    var hashvo=new ParameterSet();
+		    hashvo.setValue("standid",standhlid);
+		    hashvo.setValue("salaryid",salaryid);
+		    hashvo.setValue("tabid",tabid);
+		    hashvo.setValue("checktemp",checktemp);
+		    var request=new Request({asynchronous:false,
+	     		onSuccess:showItemFactor2,functionId:'3020050012'},hashvo);
+	    }
+}
+
+function showItemFactor2(outparamters){ 
+	hides("standVfactor");
+	hides("standS_vfactor");
+	hides("standItem"); 
+	var itemidlist=outparamters.getValue("itemidlist"); 
+	if(itemidlist!=null&&itemidlist.length>0){
+		toggles("standItem");
+		parent.document.getElementById("itemname").innerHTML='结果指标';
+		AjaxBind.bind(projectForm.item,itemidlist);
+	}
+}
+
+//就近就高，就近就低
+function changeItemValue(salaryid,tabid,checktemp){
+	document.getElementById("lastFormulaName").value = document.getElementById("formula").value;//将进来的函数名字作为标记，在下一次进来的时候判断是否回显
+   var standhlid=document.getElementsByName("standhlid")[1].value;
+   if(standhlid.length>0){
+	    var hashvo=new ParameterSet();
+	    hashvo.setValue("standid",standhlid);
+	    hashvo.setValue("salaryid",salaryid);
+	    hashvo.setValue("tabid",tabid);
+	    hashvo.setValue("checktemp",checktemp);
+	    var request=new Request({asynchronous:false,
+     		onSuccess:showItemFactor,functionId:'3020050012'},hashvo);
+    }
+}
+function showItemFactor(outparamters){
+	hides("standVfactor");
+	hides("standS_vfactor");
+	hides("standItem");
+	var vfactorlsit=outparamters.getValue("vfactorlsit");
+	var s_vfactorlsit=outparamters.getValue("s_vfactorlsit");
+	var itemidlist=outparamters.getValue("itemidlist");
+	var hlstr=outparamters.getValue("hlstr");
+	
+	arrToNull("vfactor_arr");
+	arrToNull("s_vfactor_arr");
+	arrToNull("item");
+	parent.document.getElementById("calculation").innerHTML=hlstr;
+	toggles("standVfactor");
+	parent.document.getElementById("vfactorname").innerHTML='纵向指标';
+	AjaxBind.bind(projectForm.vfactor_arr,vfactorlsit);
+	if(s_vfactorlsit!=null&&s_vfactorlsit.length>0){
+		hides("standVfactor");
+		toggles("standS_vfactor");
+		parent.document.getElementById("s_vfactorname").innerHTML='纵向指标';
+		AjaxBind.bind(projectForm.s_vfactor_arr,s_vfactorlsit);
+	}
+	if(itemidlist!=null&&itemidlist.length>0){
+		toggles("standItem");
+		parent.document.getElementById("itemname").innerHTML='结果指标';
+		AjaxBind.bind(projectForm.item,itemidlist);
+	}
+}
+function valueToNull(){
+	arrToNull("strexpression_arr");
+	arrToNull("numexpression1_arr");
+	arrToNull("numexpression2_arr");
+	
+	arrToNull("dateexpression1_arr");
+	arrToNull("dateexpression2_arr");
+	arrToNull("incrementalItem_arr");
+	
+	document.getElementById("fieldname").value='';
+	document.getElementById("decimal").value='';
+	document.getElementById("initiation").value='';
+	document.getElementById("direction").value='';
+	arrToNull("itemid_arr");
+	arrToNull("datestr_arr");
+	
+	document.getElementById("standhlid").value='';
+	arrToNull("strid_arr");
+	arrToNull("code_maxarr");
+	arrToNull("code_minarr");
+	
+	document.getElementById("standid").value='';
+	arrToNull("hfactor_arr");
+	arrToNull("vfactor_arr");
+	arrToNull("s_hfactor_arr");
+	arrToNull("s_vfactor_arr");
+	arrToNull("item");
+	
+	document.getElementById("statid").value='';
+	document.getElementById("rangeid").value='';
+}
+function changes(obj,salaryid,tabid,checktemp,mode){
+ 	var hashvo=new ParameterSet();
+ 	hashvo.setValue("salaryid",salaryid);
+ 	hashvo.setValue("tabid",tabid);
+	hashvo.setValue("fieldsetid",obj.value);
+	hashvo.setValue("checktemp",checktemp);
+	hashvo.setValue("mode",mode);
+	hashvo.setValue("functionid",document.getElementById("id").value);
+	var request=new Request({asynchronous:false,
+     		onSuccess:changesItem,functionId:'3020050013'},hashvo);
+}
+function changesunit(obj,salaryid,tabid,checktemp){
+ 	var hashvo=new ParameterSet();
+ 	hashvo.setValue("salaryid",salaryid);
+ 	hashvo.setValue("tabid",tabid);
+	hashvo.setValue("fieldsetid",obj.value);
+	hashvo.setValue("checktemp",checktemp);
+	hashvo.setValue("flag","1");
+	hashvo.setValue("functionid",document.getElementById("id").value);
+	var request=new Request({asynchronous:false,
+     		onSuccess:changesItem,functionId:'3020050013'},hashvo);
+}
+function changespos(obj,salaryid,tabid,checktemp){
+ 	var hashvo=new ParameterSet();
+ 	hashvo.setValue("salaryid",salaryid);
+ 	hashvo.setValue("tabid",tabid);
+	hashvo.setValue("fieldsetid",obj.value);
+	hashvo.setValue("checktemp",checktemp);
+	hashvo.setValue("flag","1");
+	hashvo.setValue("functionid",document.getElementById("id").value);
+	var request=new Request({asynchronous:false,
+     		onSuccess:changesItem,functionId:'3020050013'},hashvo);
+}
+function changesItem(outparamters){
+	var alist=outparamters.getValue("alist");
+	var dlist=outparamters.getValue("dlist");
+	var nlist=outparamters.getValue("nlist");
+	var vlist=outparamters.getValue("vlist");
+	var ilist=outparamters.getValue("ilist");
+	var itemlist=outparamters.getValue("itemlist");
+	var flag=outparamters.getValue("flag");
+	
+	var id = document.getElementById("id").value;
+	if(id!=null&&id.length>1){
+		var array = id.split("_");
+		var start1="";
+		var start2="";
+		var start3="";
+		var start4="";
+		var start5="";
+		
+		if(array.length>0){
+			start1=array[0];
+		}
+		if(array.length>1){
+			start2=array[1];
+		}
+		if(array.length>2){
+			start3=array[2];
+		}
+		if(array.length>3){
+			start4=array[3];
+		}
+		if(array.length>4){
+			start5=array[4];
+		}
+		
+		var temp='';
+		if(start2.length>0)
+			temp=start2.substring(0,start2.length-1);
+		if(start1=='K'&&temp=='num') //考勤函数
+		{
+			AjaxBind.bind(projectForm.numexpression1_arr,itemlist);
+			AjaxBind.bind(projectForm.dateexpression1_arr,dlist);
+			AjaxBind.bind(projectForm.dateexpression2_arr,dlist);
+		}
+		else
+		{
+			if(start2.length>0){
+				var subset = "";
+				if(start2.length==6){
+					subset = start2.substring(0,start2.length-2);
+				}else{
+					subset = start2.substring(0,start2.length-1);
+				}
+				switch (subset){
+					case 'str':
+						AjaxBind.bind(projectForm.strexpression_arr,alist);
+						break;
+					case 'code':
+						AjaxBind.bind(projectForm.strexpression_arr,alist);
+						break;
+					case 'num':
+						AjaxBind.bind(projectForm.numexpression1_arr,nlist);
+						break;
+					case 'data':
+						AjaxBind.bind(projectForm.dateexpression1_arr,dlist);
+						break;
+					case 'vol':
+						AjaxBind.bind(projectForm.datestr_arr,vlist);
+						break;
+					case 'volu':
+						if(flag=='1')
+						AjaxBind.bind(projectForm.strid2_arr,vlist);
+						else
+						AjaxBind.bind(projectForm.datestr_arr,vlist);
+						break;
+					case 'volp':
+						if(flag=='1')
+						AjaxBind.bind(projectForm.strid2_arr,vlist);
+						else
+						AjaxBind.bind(projectForm.datestr_arr,vlist);
+						break;
+					case 'item':
+						AjaxBind.bind(projectForm.itemid_arr,itemlist);
+						break;
+				}
+			}
+			if(start3.length>0){
+			switch (start3){
+					case '1':
+						AjaxBind.bind(projectForm.dateexpression2_arr,dlist);
+						break;
+					case '4':
+						AjaxBind.bind(projectForm.numexpression2_arr,nlist);
+						break;
+					case '6':
+						AjaxBind.bind(projectForm.strid_arr,vlist);
+						break;
+					case '7':
+						AjaxBind.bind(projectForm.incrementalItem_arr,ilist);
+						break;
+				}
+			}
+			if(start4.length>0){
+				switch (start4){
+					case '6':
+						AjaxBind.bind(projectForm.strexpression_arr,vlist);
+						break;
+					case '9':
+						AjaxBind.bind(projectForm.itemid_arr,itemlist);
+						break;
+				}
+			}
+		}
+	}
+	
+}
+function toggleSelect(itemtoArr){
+	toggles(itemtoArr+"_arr");
+	hides(itemtoArr+"_item");
+	document.getElementById(itemtoArr+"_arr").focus();
+}
+function toggleText(arrtoItem){
+	hides(arrtoItem+"_arr");
+	toggles(arrtoItem+"_item");
+	var itemvalue = document.getElementById(arrtoItem+"_arr").value;
+	var itemarr = itemvalue.split(":");
+	if(itemarr.length==2){
+		document.getElementById(arrtoItem+"_item").value=itemarr[1].replace(/@/g,":");//这块把@全转化成：了，防止用：分割的时候产生的问题，如果有特殊的发现在处理 zhaoxg 2016-3-7
+	}else{
+		document.getElementById(arrtoItem+"_item").value="";
+	}
+}
+
+//执行标准，就近就高等，选择标准表后，点击上一步，再点击下一步，纵向指标和结果指标不显示问题【31325】因为执行标准，就近就高用了同一个纵栏目div，这样回显就会错乱
+function showS_column(type, formulaName) {
+	var lastFormulaName = document.getElementById("lastFormulaName").value;
+	if(typeof(lastFormulaName) != "undefined") {
+		if(lastFormulaName == formulaName) {//如果和上一次进入的函数一样，则找到对应的回显
+			if(type == "stan") {
+				if(projectForm.hfactor_arr.length > 0) {
+					toggles("standHfactor");
+				}
+				if(projectForm.vfactor_arr.length > 0) {
+					toggles("standVfactor");
+				}
+				if(projectForm.s_hfactor_arr.length > 0) {
+					toggles("standS_hfactor");
+				}
+				if(projectForm.s_vfactor_arr.length > 0) {
+					toggles("standS_vfactor");
+				}//就近就高，就近就低函数用的同一个div，选择了高再选择低，应该清空标准表名，再选择回高的时候，只要标准表名没有就没必要显示横纵栏目等
+			}else if(type == "sthl" && document.getElementsByName("standhlid")[1].value != "") {
+				if(projectForm.vfactor_arr.length > 0) {
+					toggles("standVfactor");
+					toggles("standItem");
+				}else if(projectForm.s_vfactor_arr.length > 0) {
+					toggles("standS_vfactor");
+					toggles("standItem");
+				}else if(projectForm.item.length > 0) {
+					toggles("standVfactor");
+					toggles("standItem");
+				}
+			}else if(type == "tztd") {
+				if(projectForm.item.length > 0) {
+					toggles("standItem");
+				}
+			}
+		}else if(type == "sthl") {//只要上次点击的和这次点击的不一样，就清空所有重新选择//由于就近就高和就近就低用的同一个div，上一次就近就高到就近就低这种清空标准表内容，重新选择
+			document.getElementsByName("standhlid")[1].value = "";//就近就高
+		}else if(type == "stan") {//执行标准
+			document.getElementById("standid").value = "";//执行标准
+		}else if(type == "tztd") {
+			document.getElementsByName("standhlid")[0].value = "";//就近就高套级
+		}
+	}
+}

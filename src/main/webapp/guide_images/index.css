@@ -1,0 +1,13 @@
+*{margin:0px; padding:0px;}
+html,body { background-color:#FDFCFC; height:100%; width:100%; overflow:hidden; text-align:center; margin:0px}
+p { width:100%}
+.center1 { height:330px; width:966}
+.ct_left { width:287; float:left; height:330}
+.button { float:left; width:118px; background-image:url(EHR_04.gif); height:39px; display:block}
+.button:hover {background-image:url(EHR_04_fu.jpg); width:118px; height:39px; }
+.button_01 { float:left; width:118px; background-image:url(EHR_16.gif); height:39px; display:block}
+.button_01:hover {background-image:url(EHR_16_fu.jpg); width:118px; height:39px; }
+.button_02 { float:left; width:118px; background-image:url(EHR_13.gif); height:39px; display:block}
+.button_02:hover {background-image:url(EHR_13_fu.jpg); width:118px; height:39px; }
+.bottom_a {width:1024; height:45px; background-image:url(EHR_19.gif); background-repeat:repeat-x; float:left}
+

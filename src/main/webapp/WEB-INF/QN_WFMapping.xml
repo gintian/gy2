@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	********************声明*******************
+	1、我的问卷从QN10000001开始 
+	2、创建问卷从QN20000001开始
+	3、问卷设计从QN30000001开始
+	4、预览问卷从QN40000001开始
+	5、发布、回收问卷从QN50000001开始
+	6、结果分析从QN60000001开始
+
+ -->
+<wf-mappings>
+	<wfi-mapping funcid="QN10000001">
+         <transaction-name>请根据实际修改</transaction-name>
+         <transaction-desc>请根据实际修改</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN10000002">
+         <transaction-name>查询我的问卷</transaction-name>
+         <transaction-desc>查询我的问卷</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.plan.SearchMyQuestionnaireTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN10000004">
+         <transaction-name>删除计划</transaction-name>
+         <transaction-desc>删除计划</transaction-desc>
+         <!--删除 需要通过事务执行，防止中途出错数据混乱 -->
+         <transaction-type>1</transaction-type>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.plan.DeletePlanTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN10000005">
+         <transaction-name>计划搜索</transaction-name>
+         <transaction-desc>计划搜索</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.plan.PlanQueryTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN10000006">
+         <transaction-name>改变计划状态</transaction-name>
+         <transaction-desc>改变计划状态</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.plan.ChangePlanStatus"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN20000001">
+         <transaction-name>查询模板列表</transaction-name>
+         <transaction-desc>查询模板列表</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.SearchTemplateLibraryTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN20000002">
+         <transaction-name>模板搜索</transaction-name>
+         <transaction-desc>模板搜索</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.QueryTemplateLibraryTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN20000003">
+         <transaction-name>模板修改</transaction-name>
+         <transaction-desc>模板修改</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.SaveTemplateLibraryTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN30000001">
+    	<transaction-name>查询题目类型</transaction-name>
+        <transaction-desc>查询题目类型</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.SearchTemplateQuestionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN30000002">
+    	<transaction-name>保存问卷</transaction-name>
+        <transaction-desc>保存问卷</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.SaveTemplateQuestionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN30000003">
+         <transaction-name>文件设计查询代码</transaction-name>
+         <transaction-desc>文件设计查询代码</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.SearchCodeSetsTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN40000001">
+         <transaction-name>试卷预览</transaction-name>
+         <transaction-desc>试卷预览</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.SearchPreviewTemplateTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN40000002">
+         <transaction-name>答案保存</transaction-name>
+         <transaction-desc>答案保存</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.SaveAnswerTemplateTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN40000003">
+         <transaction-name>导出问卷pdf</transaction-name>
+         <transaction-desc>导出问卷pdf</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.template.transaction.Question2PDFTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN50000001">
+         <transaction-name>发布问卷</transaction-name>
+         <transaction-desc>发布问卷</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.recovery.transaction.SearchRecoveryQnTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN50000002">
+         <transaction-name>收集配置</transaction-name>
+         <transaction-desc>收集配置</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.recovery.transaction.SaveRecoveryQnSetTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="QN50000003">
+         <transaction-name>查询机构树和角色树</transaction-name>
+         <transaction-desc>查询机构树和角色树</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.recovery.transaction.SearchOrgorroleTreeTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN50000004">
+         <transaction-name>发送邮件</transaction-name>
+         <transaction-desc>发送邮件</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.recovery.transaction.SaveRecoveryQnSetTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.questionnaire.recovery.transaction.SaveOrgorroleTreeTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN60000001">
+    	<transaction-name>原始数据分析</transaction-name>
+        <transaction-desc>原始数据分析</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.analysis.transaction.CreateDataAnalysisTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN60000002">
+    	<transaction-name>查询图表分析数据</transaction-name>
+        <transaction-desc>查询图表分析数据</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.analysis.transaction.SearchChartAnalysisTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="QN60000006">
+    	<transaction-name>加载图表组装数据</transaction-name>
+        <transaction-desc>加载图表组装数据</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.analysis.transaction.InitChartAnalysisTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN60000003">
+    		<transaction-name>图标分析数据导出</transaction-name>
+        <transaction-desc>图标分析数据导出</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.analysis.transaction.ExportAnalysisDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="QN60000005">
+    	<transaction-name>图表分析表格分页</transaction-name>
+        <transaction-desc>图表分析表格分页</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.analysis.transaction.ChartTableDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN70000001">
+    	<transaction-name>微信端代码选择控件</transaction-name>
+        <transaction-desc>微信端代码选择控件</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.mobile.CodeSelectTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="QN70000002">
+    	<transaction-name>问卷调查手机答题</transaction-name>
+        <transaction-desc>问卷调查手机答题</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.questionnaire.mobile.QuestionnaireTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

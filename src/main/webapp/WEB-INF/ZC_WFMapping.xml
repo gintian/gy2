@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	
+    <wfi-mapping funcid="ZC00003001">
+        <transaction-name>上会材料</transaction-name>
+        <transaction-desc>上会材料</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.ReviewFileTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+ 	<wfi-mapping funcid="ZC00003002">
+        <transaction-name>上会-外部专家账号密码查询</transaction-name>
+        <transaction-desc>上会-外部专家账号密码查询</transaction-desc> 
+        <wf-sequence>
+                <wfi-class
+                	mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.OutProficientTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003003">
+        <transaction-name>上会-外部专家账号密码添加、修改</transaction-name>
+        <transaction-desc>上会-外部专家账号密码添加、修改</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.OutProficientUpdateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003004">
+        <transaction-name>上会-外部专家账号密码删除</transaction-name>
+        <transaction-desc>上会-外部专家账号密码删除</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.OutProficientDeleTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003005">
+        <transaction-name>上会-批量生成账号、密码</transaction-name>
+        <transaction-desc>上会-批量生成账号、密码</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.GenerateAcPwTrans"/>
+        </wf-sequence>
+         </wfi-mapping>
+         <wfi-mapping funcid="ZC00003006">
+        <transaction-name>上会-批量生成账号、密码</transaction-name>
+        <transaction-desc>上会-批量生成账号、密码</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.StartReviewTrans"/>
+        </wf-sequence>
+         </wfi-mapping>
+    <wfi-mapping funcid="ZC00003007">
+        <transaction-name>上会材料 主界面_撤销</transaction-name>
+        <transaction-desc>上会材料主界面_撤销</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.RevokeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+     <wfi-mapping funcid="ZC00003008">
+        <transaction-name>上会材料 专家账号密码导出</transaction-name>
+        <transaction-desc>上会材料 专家账号密码导出</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.ExportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZC00003009">
+        <transaction-name>职称评审卡片展示</transaction-name>
+        <transaction-desc>职称评审卡片展示</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.cardview.transaction.CardViewTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZC00003010">
+         <transaction-name>获取问卷号</transaction-name>
+        <transaction-desc>获取问卷号</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.GetQnIdByPlanId"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003011">
+         <transaction-name>更新审批状态</transaction-name>
+        <transaction-desc>更新审批状态</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.cardview.transaction.approvalStateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003012">
+         <transaction-name>上会材料_保存</transaction-name>
+        <transaction-desc>上会材料_保存</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.SaveInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003013">
+         <transaction-name>创建文件并返回文件名</transaction-name>
+        <transaction-desc>创建文件并返回文件名</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.cardview.transaction.CreateTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00003014">
+         <transaction-name>获取学科组数据源</transaction-name>
+        <transaction-desc>获取学科组数据源</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.GetGroupInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00003015">
+         <transaction-name>获取学科组数据（生成鉴定专家账号）</transaction-name>
+        <transaction-desc>获取学科组数据（生成鉴定专家账号）</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.GetSubjectsInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZC00003016">
+         <transaction-name>上会材料_生成账号密码_引入专家</transaction-name>
+        <transaction-desc>上会材料_生成账号密码_引入专家</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.OutProficientAddPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003017">
+         <transaction-name>上会材料_结果归档</transaction-name>
+        <transaction-desc>上会材料_结果归档</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.ResultsArchivingTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003018">
+         <transaction-name>通过业务模板编号获取模板名称</transaction-name>
+        <transaction-desc>通过业务模板编号获取模板名称</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.GetTabNameByTabId"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003019">
+         <transaction-name>上会材料-导入数据-下载模板</transaction-name>
+        <transaction-desc>上会材料-导入数据-下载模板</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.DownloadTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003020">
+         <transaction-name>上会材料-导入数据-浏览导入</transaction-name>
+        <transaction-desc>上会材料-导入数据-浏览导入</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.ImportTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003021">
+         <transaction-name>上会材料-公示材料右侧列表顺序</transaction-name>
+        <transaction-desc>上会材料-公示材料右侧列表顺序</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.ChangeOrderTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00003022">
+         <transaction-name>上会材料-获取数据源</transaction-name>
+        <transaction-desc>上会材料-获取数据源</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.GetDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00003023">
+         <transaction-name>上会材料-差额投票</transaction-name>
+        <transaction-desc>上会材料-差额投票</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.ReviewDiffTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00003025">
+         <transaction-name>列表投票</transaction-name>
+        <transaction-desc>列表投票</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.cardview.transaction.ListViewTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00004001">
+        <transaction-name>配置信息</transaction-name>
+        <transaction-desc>配置信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.ConfigTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00004002">
+        <transaction-name>配置信息存储</transaction-name>
+        <transaction-desc>配置信息存储</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.SaveTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00004003">
+	     <transaction-name>评审结果归档方案</transaction-name>
+	     <transaction-desc>评审结果归档方案</transaction-desc> 
+	     <wf-sequence>
+	             <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.GetFieldItemData"/>
+	     </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZC00004004">
+        <transaction-name>评审结果归档方案-配置信息存储</transaction-name>
+        <transaction-desc>评审结果归档方案-配置信息存储</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.SaveResultsArchivingConfigTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00004005">
+        <transaction-name>配置-公示材料配置</transaction-name>
+        <transaction-desc>配置-公示材料配置</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.NoticeConfigTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00004006">
+        <transaction-name>配置-获取材料汇总信息</transaction-name>
+        <transaction-desc>配置-获取材料汇总信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.GetSummaryInfoListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00004007">
+        <transaction-name>配置-测评表配置</transaction-name>
+        <transaction-desc>配置-测评表配置</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.InitEvaluationTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+   
+    <wfi-mapping funcid="ZC00002201">
+         <transaction-name>获取学科组信息</transaction-name>
+        <transaction-desc>获取学科组信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.GetSubjectsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002202">
+         <transaction-name>获取学科组组内人员信息</transaction-name>
+        <transaction-desc>获取学科组组内人员信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.GetSubjectsPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002203">
+         <transaction-name>新增/保存（修改）/删除学科组</transaction-name>
+        <transaction-desc>新增/保存（修改）/删除学科组</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.ChangeSubjectsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002204">
+         <transaction-name>新增/删除 学科组组内人员</transaction-name>
+        <transaction-desc>新增/删除 学科组组内人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.ChangeSubjectsPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002205">
+         <transaction-name>修改学科组是否显示历史</transaction-name>
+        <transaction-desc>修改学科组是否显示历史</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.ModifySubjectsHistoryTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002206">
+         <transaction-name>选择专家控件</transaction-name>
+        <transaction-desc>选择专家控件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.expertpicker.transaction.ExpertPickerTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002207">
+         <transaction-name>选择专家控件</transaction-name>
+        <transaction-desc>选择专家控件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.expertpicker.transaction.ExpertPickerFastSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002208">
+         <transaction-name>评委会_学科组获取sql</transaction-name>
+        <transaction-desc>评委会_学科组获取sql</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.GetSqlForSubjectsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00002209">
+         <transaction-name>选择专家控件_获取全部</transaction-name>
+        <transaction-desc>选择专家控件_获取全部</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.expertpicker.transaction.ExpertPickerGetAllTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002210">
+         <transaction-name>获取学科组信息(评审会议)</transaction-name>
+        <transaction-desc>获取学科组信息(评审会议)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.subjectsformeeting.GetSubjectsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002211">
+         <transaction-name>获取学科组组内人员信息(评审会议)</transaction-name>
+        <transaction-desc>获取学科组组内人员信息(评审会议)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.subjectsformeeting.GetSubjectsPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002212">
+         <transaction-name>新增/保存（修改）/删除学科组(评审会议)</transaction-name>
+        <transaction-desc>新增/保存（修改）/删除学科组(评审会议)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.subjectsformeeting.ChangeSubjectsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002213">
+         <transaction-name>新增/删除 学科组组内人员(评审会议)</transaction-name>
+        <transaction-desc>新增/删除 学科组组内人员(评审会议)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.subjectsformeeting.ChangeSubjectsPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002214">
+         <transaction-name>学科组获取sql(评审会议)</transaction-name>
+        <transaction-desc>学科组获取sql(评审会议)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.subjectsformeeting.GetSqlForSubjectsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002215">
+         <transaction-name>取得可选学科组(评审会议)</transaction-name>
+        <transaction-desc>取得可选学科组(评审会议)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.subjectsformeeting.SubjectsPickerTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002216">
+         <transaction-name>获取所有组(评审会议)</transaction-name>
+        <transaction-desc>获取所有组(评审会议)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.subjectsformeeting.GetAllSubjectsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002217">
+         <transaction-name>获取指定学科组的人员信息</transaction-name>
+        <transaction-desc>获取指定学科组的人员信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.GetSubjectsListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002218">
+         <transaction-name>学科组_检索</transaction-name>
+        <transaction-desc>学科组_检索</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.SubjectsFastSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002219">
+         <transaction-name>学科组列表方式_显示全部</transaction-name>
+        <transaction-desc>学科组列表方式_显示全部</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.SubjectsShowAllTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00002220">
+         <transaction-name>学科组_保存</transaction-name>
+        <transaction-desc>学科组_保存</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.SaveSubjectsListInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002221">
+        <transaction-name>学科组_返回信息</transaction-name>
+        <transaction-desc>学科组_返回信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.subjects.transaction.GetBackMapTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002001">
+         <transaction-name>委员会管理-专家列表</transaction-name>
+        <transaction-desc>委员会管理-专家列表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.experts.transaction.GetExpertDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002002">
+         <transaction-name>委员会管理-引入内部专家</transaction-name>
+        <transaction-desc>委员会管理-引入内部专家</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.experts.transaction.ImportExpertsDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00002003">
+         <transaction-name>委员会管理-查询专家图片资源</transaction-name>
+        <transaction-desc>委员会管理-查询专家图片资源</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.experts.transaction.SearchImageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZC00002005">
+         <transaction-name>委员会管理-撤销专家</transaction-name>
+        <transaction-desc>委员会管理-撤销专家</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.experts.transaction.CancelExpertTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002007">
+         <transaction-name>委员会管理-保存专家</transaction-name>
+        <transaction-desc>委员会管理-保存专家</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.experts.transaction.SaveExpertDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002008">
+         <transaction-name>委员会管理-查询专家</transaction-name>
+        <transaction-desc>委员会管理-查询专家</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.experts.transaction.QueryExpertTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002101">
+         <transaction-name>评委会_获取评委会信息</transaction-name>
+        <transaction-desc>评委会_获取评委会信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.GetCommitteeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002102">
+         <transaction-name>评委会_获取评委会人员信息</transaction-name>
+        <transaction-desc>评委会_获取评委会人员信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.GetCommitteePersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002103">
+         <transaction-name>评委会_新增、保存（修改）、删除评委会</transaction-name>
+        <transaction-desc>评委会_新增、保存（修改）、删除评委会</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.ChangeCommitteeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002104">
+         <transaction-name>评委会_新增、删除 评委会组内人员</transaction-name>
+        <transaction-desc>评委会_新增、删除 评委会组内人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.ChangeCommitteePersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002105">
+         <transaction-name>评委会_获取选专家控件的查询语句</transaction-name>
+        <transaction-desc>评委会_获取选专家控件的查询语句</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.GetSqlForCommitteeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002106">
+         <transaction-name>评委会_获取评委会信息</transaction-name>
+        <transaction-desc>评委会_获取评委会信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.GetEditInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002107">
+         <transaction-name>评委会_获取全部</transaction-name>
+        <transaction-desc>评委会_获取全部</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.GetAllCommitteePersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002108">
+         <transaction-name>评委会_保存</transaction-name>
+        <transaction-desc>评委会_保存</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.SaveCommitteeInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002109">
+         <transaction-name>评委会_检索</transaction-name>
+        <transaction-desc>评委会_检索</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.CommitteeFastSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002110">
+         <transaction-name>评委会_显示历史</transaction-name>
+        <transaction-desc>评委会_显示历史</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.CommitteeShowHistoryTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002111">
+         <transaction-name>评委会_导出</transaction-name>
+        <transaction-desc>评委会_导出</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.ExportCommitteeDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002112">
+         <transaction-name>评委会_随机选取_获取数据</transaction-name>
+        <transaction-desc>评委会_随机选取_获取数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.RandomSelectionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002113">
+         <transaction-name>评委会_随机选取_方案查询</transaction-name>
+        <transaction-desc>评委会_随机选取_方案查询</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.RandomSelectionFastSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002114">
+         <transaction-name>评委会_随机选取_确定</transaction-name>
+        <transaction-desc>评委会_随机选取_确定</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.RandomSelectionEnterTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002115">
+         <transaction-name>评委会_随机选取_获取数据集</transaction-name>
+        <transaction-desc>评委会_随机选取_获取数据集</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.GetRandomSchemeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002301">
+         <transaction-name>评审会议-加载会议列表</transaction-name>
+        <transaction-desc>评审会议-加载会议列表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.GetMeetingDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002302">
+         <transaction-name>评审会议-撤销</transaction-name>
+        <transaction-desc>评审会议-撤销</transaction-desc> 
+        <priv-funcid>380050504</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.DeleteMeetingDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002303">
+         <transaction-name>评审会议-保存</transaction-name>
+        <transaction-desc>评审会议-保存</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.SaveMeetingDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002304">
+         <transaction-name>为选中会议的所有参会人员随机生成账号密码</transaction-name>
+        <transaction-desc>为选中会议的所有参会人员随机生成账号密码</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.RandomCreateAPDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002305">
+         <transaction-name>评审会议-启动、暂停、结束</transaction-name>
+        <transaction-desc>评审会议-启动、暂停、结束</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.ChangeMeetingStatusTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002306">
+         <transaction-name>评审会议-选择参会人员</transaction-name>
+        <transaction-desc>评审会议-选择参会人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.GetStaffDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002307">
+         <transaction-name>新增-参会人员</transaction-name>
+        <transaction-desc>新增-参会人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.GetSqlForChooseExpertTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002308">
+         <transaction-name>更新评审会议-参会人数</transaction-name>
+        <transaction-desc>更新评审会议-参会人数</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.UpdateMeetingStaffDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002309">
+         <transaction-name>参会人员新增、删除、随机生成账号密码、修改操作</transaction-name>
+        <transaction-desc>参会人员新增、删除、随机生成账号密码、修改操作</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.ChangeStaffDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002310">
+         <transaction-name>通知提醒-发送</transaction-name>
+        <transaction-desc>通知提醒-发送</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.SendMessageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002315">
+         <transaction-name>初始化投票评分控制台</transaction-name>
+        <transaction-desc>初始化投票评分控制台</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.InitReviewConsoleTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002316">
+         <transaction-name>申报人分组设置功能</transaction-name>
+        <transaction-desc>申报人分组设置功能</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.ReviewConsoleOptTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00002317">
+         <transaction-name>导出评分明细表</transaction-name>
+        <transaction-desc>导出评分明细表</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.ExportScoreDetailsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00005001">
+		<transaction-name>职称首页获取显示项目</transaction-name>
+	    <transaction-desc>职称首页获取显示项目</transaction-desc> 
+	    <wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.portal.jobtitle.transaction.GetJobtitlePortal"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00005002">
+		<transaction-name>职称首页获取项目详情</transaction-name>
+        <transaction-desc>职称首页获取项目详情</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.portal.jobtitle.transaction.GetJobtitlePortalDetail"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00005003">
+		<transaction-name>职称首页获取说明信息</transaction-name>
+        <transaction-desc>职称首页获取说明信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.portal.jobtitle.transaction.GetJobtitlePortalMsg"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZC00005004">
+        <transaction-name>同步人员信息</transaction-name>
+        <transaction-desc>同步人员信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.experts.transaction.PersonInforSyn"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <!-- 专家信息筛选条件 -->
+    <wfi-mapping funcid="ZC00005005">
+		<transaction-name>专家信息筛选条件</transaction-name>
+        <transaction-desc>专家信息筛选条件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.filterconditions.transaction.FilterconditionsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <!-- 加载当前操作人作人所在单位范围内的院级聘委会 -->
+    <wfi-mapping funcid="ZC00005007">
+		<transaction-name>是否支持校内聘任组</transaction-name>
+        <transaction-desc>查询是否配置了学院聘任组评审，并且会议是否启用学院聘任组审核</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.committee.transaction.InitCommitteeListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 生成s上会材料页面需要的审核或者投票账号密码 -->
+     <wfi-mapping funcid="ZC00005008">
+		<transaction-name>生成审核或者投票账号密码</transaction-name>
+        <transaction-desc>生成审核或者投票账号密码</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.GenerateReviewFileAcPwTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00005009">
+		<transaction-name>已配置的通知方式</transaction-name>
+        <transaction-desc>已配置的通知方式</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.businessobject.GetEnableModesTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00005010">
+		<transaction-name>上会材料--同步投票结果（票数）</transaction-name>
+        <transaction-desc>上会材料--同步投票结果（票数）</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.SyncVoteStatus"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00005011">
+		<transaction-name>导出外审材料</transaction-name>
+        <transaction-desc>导出外审材料</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewfile.transaction.ExpOutApprovel"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 新版评审会议交易  haosl 2018-4-4 start -->
+     <wfi-mapping funcid="ZC00002311">
+		<transaction-name>评审会议初始化</transaction-name>
+        <transaction-desc>评审会议初始化</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.InitMeetingDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00002312">
+		<transaction-name>评审会议状态操作</transaction-name>
+        <transaction-desc>评审会议状态操作</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.OptMeetingDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00002313">
+		<transaction-name>创建|编辑会议</transaction-name>
+        <transaction-desc>创建|编辑会议</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.InitMeetingTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZC00002314">
+		<transaction-name>申报人分组设置功能</transaction-name>
+        <transaction-desc>申报人分组设置功能</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.reviewmeeting.transaction.InitRelationMapptingTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 新版评审会议交易  haosl 2018-4-4 end -->
+    <wfi-mapping funcid="ZC00004011">
+		<transaction-name>导出代表作参数设置功能</transaction-name>
+        <transaction-desc>导出代表作参数设置功能</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.jobtitle.configfile.transaction.RepresentativeParamTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF" monitorInterval="5">
+	<Properties>
+		<Property name="HRS_LOG">/export/logs/HRS</Property>
+		<Property name="fts.log4j2.dirs">/export/logs/HRS/fts-api/DCB/$${date:yyyyMMdd}</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+					pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|HRS|PID %pid|TID %tid|%class{36} %L %M| %msg%xEx%n" />
+		</Console>
+
+		<RollingFile name="hrs_appender" fileName="${HRS_LOG}/hrs.log"
+					 filePattern="${HRS_LOG}/HRS-%d{yyyy-MM-dd}-%i.log.gz">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}|%-5level|HRS|PID %pid|TID %tid|%class{36} %L %M| %msg%xEx%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+				<SizeBasedTriggeringPolicy size="200 MB"/>
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="fts_rollingFile_all" fileName="${fts.log4j2.dirs}/fts-datanode-server-${date:yyyy-MM-dd}.log"
+					 filePattern="${fts.log4j2.dirs}/fts-datanode-server-%d{yyyy-MM-dd}-%i.log.gz">
+			<PatternLayout pattern="%d{yyyy.MM.dd at HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+				<SizeBasedTriggeringPolicy size="200 MB"/>
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="fts_rollingFile_error"
+					 fileName="${fts.log4j2.dirs}/fts-datanode-server-${date:yyyy-MM-dd}.error.log"
+					 filePattern="${fts.log4j2.dirs}/fts-datanode-server-%d{yyyy-MM-dd}-%i.error.log.gz">
+			<ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+			<PatternLayout pattern="%d{yyyy.MM.dd at HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+				<SizeBasedTriggeringPolicy size="200 MB"/>
+			</Policies>
+		</RollingFile>
+	</Appenders>
+
+	<Loggers>
+		<root level="INFO">
+			<appender-ref ref="Console" />
+			<appender-ref ref="hrs_appender" />
+		</root>
+		<Logger name="com.dcfs.fts" level="debug" additivity="false">
+			<appender-ref ref="fts_rollingFile_all"/>
+			<appender-ref ref="fts_rollingFile_error"/>
+		</Logger>
+		<Logger name="org.apache.kafka" level="off"/>
+	</Loggers>
+
+</configuration>

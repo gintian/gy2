@@ -1,0 +1,190 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="/tags/struts-bean" prefix="bean" %>
+<%@ taglib uri="/tags/struts-html" prefix="html" %>
+<%@ taglib uri="/tags/struts-logic" prefix="logic" %>
+<%@ taglib uri="/WEB-INF/tlds/taglib.tld" prefix="hrms" %>
+<%@ page import="com.hjsj.hrms.actionform.sys.AccountForm"%>
+<%
+	int i=0;
+	AccountForm accountForm=(AccountForm)session.getAttribute("accountForm");
+	int maxpage=accountForm.getMaxpage();
+	int current=accountForm.getRoleListForm().getPagination().getCurrent();
+	maxpage=maxpage<current?current:maxpage;
+	accountForm.setMaxpage(maxpage);
+%>
+
+<style id=iframeCss>
+div{
+	cursor:hand;font-size:12px;
+   }
+a{
+text-decoration:none;color:black;font-size:12px;
+}
+
+a.a1:active {
+	color: #003100;
+	text-decoration: none;
+}
+a.a1:hover {
+	color: #FFCC00;
+	text-decoration: none;
+}
+a.a1:visited {	
+	text-decoration: none;
+}
+a.a1:link {
+	color: #003100;
+	text-decoration: none;
+}
+.fixedDiv3 
+{ 
+	overflow:auto; 	
+	width:537px; 
+	align:center;
+}
+.fixedDiv2 
+{ 
+	overflow:auto; 
+	height:400px;
+	width:537px;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+    BORDER-LEFT: #94B6E6 1pt solid; 
+    BORDER-RIGHT: #94B6E6 1pt solid; 
+    BORDER-TOP: #94B6E6 1pt solid ; 
+    margin:0 auto; 
+
+}
+</style>
+<script language="javascript">
+	function saveAssignRole()
+	{
+	    /**如果这样做的话，有的机器不提交b_o_save参数为空*/
+        accountForm.action="/system/security/assign_role.do?b_o_save=link";
+		accountForm.submit();
+		var i=0,j=0;
+		/*延时*/
+		//alert("hello ");
+		for(i=0;i<10000;i++)
+		{
+			j++;
+		}
+	}	
+</script>
+<base target="_self"/>
+<html:form action="/system/security/assign_role_org">
+<table width="70%" border="0" cellspacing="0"  align="center" cellpadding="0" class="RecordRow" style="margin-top:7px;">
+   	  <thead>
+           <!-- tr class="fixedHeaderTr"> -->
+           <tr>
+            <td align="center" class="TableRow" nowrap width="6%">
+            &nbsp;<input type="checkbox" name="selbox" onclick="batch_select(this,'roleListForm.select');" title='<bean:message key="label.query.selectall"/>'>&nbsp;	    
+            </td>           
+            <td align="center" class="TableRow" nowrap>
+		<bean:message key="column.name"/>&nbsp;
+	    </td>
+            <td align="center" class="TableRow" nowrap>
+		<bean:message key="column.desc"/>&nbsp;
+	    </td>
+   		        	        	        
+           </tr>
+   	  </thead>
+          <hrms:extenditerate id="element" name="accountForm" property="roleListForm.list" indexes="indexes"  pagination="roleListForm.pagination" pageCount="${accountForm.pagerows}" scope="session">
+          <%
+          if(i%2==0)
+          {
+          %>
+          <tr class="trShallow">
+          <%}
+          else
+          {%>
+          <tr class="trDeep">
+          <%
+          }
+          i++;          
+          %>  
+            <td align="center" class="RecordRow" nowrap>
+                 <logic:equal name="element" property="string(valid)" value="1">
+     		   &nbsp;<hrms:checkmultibox name="accountForm" property="roleListForm.select" value="false" indexes="indexes"/>&nbsp;
+            	 </logic:equal>  
+                 <logic:equal name="element" property="string(valid)" value="0">
+     		   &nbsp;<hrms:checkmultibox name="accountForm" property="roleListForm.select" value="true" indexes="indexes"/>&nbsp;
+            	 </logic:equal>
+            	 <!--其他人授予的本人没有的角色，不可编辑 guodd 2016-07-01 -->
+            	 <logic:equal name="element" property="string(valid)" value="2">
+     		   &nbsp;<input type="checkbox" checked=true disabled/>&nbsp;
+     		   <input type="hidden" name="roleListForm.select[${indexes}]" />
+            	 </logic:equal>              	    		   
+	    </td>            
+            <td align="left" class="RecordRow" nowrap>
+                   &nbsp;<bean:write name="element" property="string(role_name)" filter="true"/>
+	    </td>
+         
+            <td align="left" class="RecordRow" style="word-break:break-all;">
+                    &nbsp;<bean:write  name="element" property="string(role_desc)" filter="false"/>
+            </td>
+          </tr>
+        </hrms:extenditerate>
+        
+</table>
+</div> 
+<table  width="70%" align="center" class="RecordRowP">
+		<tr>
+		    <td valign="bottom" class="tdFontcolor">
+		            <hrms:paginationtag name="accountForm"
+								pagerows="${accountForm.pagerows}" property="roleListForm.pagination"
+								scope="session" refresh="true"></hrms:paginationtag>
+			</td>
+	               <td  align="right" nowrap class="tdFontcolor">
+		          <p align="right"><hrms:paginationlink name="accountForm" property="roleListForm.pagination"
+				nameId="roleListForm" propertyId="roleListProperty">
+				</hrms:paginationlink>
+			</td>
+		</tr>
+</table>
+<table width="70%" align="center">
+          <tr>
+            <td align="center" height="35px;">
+	 	 <!--根据登录的用户类型,返回到不同的页面 -->
+      <logic:equal name="accountForm" property="ret_ctrl" value="0">	 	 
+                 <logic:equal name="accountForm" property="status" value="1">
+         	   <hrms:submit styleClass="mybutton" property="b_save">
+            	   	<bean:message key="button.save"/>
+	 	   </hrms:submit>                 
+         	   <hrms:submit styleClass="mybutton" property="br_return">
+            		<bean:message key="button.return"/>
+	 	   </hrms:submit>
+            	 </logic:equal> 
+                 <logic:equal name="accountForm" property="status" value="0">
+         	   <hrms:submit styleClass="mybutton" property="b_save_user">
+            		<bean:message key="button.save"/>
+	 	   </hrms:submit>                 
+         	   <hrms:submit styleClass="mybutton" property="br_return_user">
+            		<bean:message key="button.return"/>
+	 	   </hrms:submit>
+            	 </logic:equal>    
+                 <logic:equal name="accountForm" property="status" value="2">
+         	   <hrms:submit styleClass="mybutton" property="b_save_org">
+            		<bean:message key="button.save"/>
+	 	   </hrms:submit>                 
+         	   <hrms:submit styleClass="mybutton" property="br_return_org">
+            		<bean:message key="button.return"/>
+	 	   </hrms:submit>
+            	 </logic:equal>   
+       </logic:equal> 
+      <logic:equal name="accountForm" property="ret_ctrl" value="1">	
+           <html:submit styleClass="mybutton" property="b_o_save">
+            	   	<bean:message key="button.save"/>
+  	       </html:submit> 
+  	      
+           <html:button styleClass="mybutton" property="b_o_close" onclick="window.close();">
+            	   	<bean:message key="button.close"/>
+  	       </html:button>   	       
+  	      
+      </logic:equal>                     	           	          	   	 	  
+            </td>
+          </tr>          
+</table>
+</html:form>
+<script language="javascript">
+  
+</script>

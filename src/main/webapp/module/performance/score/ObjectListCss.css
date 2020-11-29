@@ -1,0 +1,42 @@
+.hj_item_event {
+    height: 64px;
+    border-bottom: 1px solid #c5c5c5;
+    width: "100%";
+    padding: 3px 0px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.hj_item_odd {
+    background-color: #FAFAFA;
+}
+
+.overCls {
+    background-color: #FCFAEA;
+}
+
+#planView .x-view-item-focused {
+    outline-style: none !important;
+}
+
+.selectedCls {
+    background-color: #FFF8D2;
+    /*font-weight: bold;*/
+}
+
+.objectList_nameCls {
+    font-size: 11px;
+    /*line-height: 2;*/
+    font-family: 微软雅黑;
+    /*//padding-left: 10px;*/
+    height: 5px;
+}
+.peopleImg_Cls {
+    width:48px ;
+    height: 50px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+}
+/*去除树节点图标*/
+.x-tree-icon{width:0px;height:0px}

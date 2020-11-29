@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hrp_help>
+     <help help_id="0" name="人员管理" url="/help/report/report.html" moduleflag="">
+		 <help help_id="01" name="信息浏览" url="/help/report/report.html" moduleflag="">
+			 <help help_id="010" name="信息浏览1" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="011" name="信息浏览2" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="012" name="信息浏览3" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="013" name="信息浏览4" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="014" name="信息浏览5" url="/help/report/report.html" moduleflag=""/>
+		 </help>
+		 <help help_id="02" name="信息维护" url="/help/report/report.html" moduleflag="">
+			 <help help_id="020" name="信息维护1" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="021" name="信息维护2" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="022" name="信息维护3" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="023" name="信息维护4" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="024" name="信息维护5" url="/help/report/report.html" moduleflag=""/>
+		 </help>
+    </help>
+    <help help_id="1" name="职位管理" url="/help/report/report.html" moduleflag="">
+		 <help help_id="10" name="信息" url="/help/report/report.html" moduleflag="">
+			 <help help_id="100" name="信息1" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="101" name="信息2" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="102" name="信息3" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="103" name="信息4" url="/help/report/report.html" moduleflag=""/>
+			 <help help_id="104" name="信息5" url="/help/report/report.html" moduleflag=""/>
+		 </help>
+    </help>
+</hrp_help>

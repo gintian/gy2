@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+    <wfi-mapping funcid="MM01010001">
+    	<transaction-name>花名册管理主界面展现交易类</transaction-name>
+    	<transaction-desc>花名册管理主界面展现交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.mustermanage.transaction.MusterManageMainTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MM01010002">
+    	<transaction-name>花名册查询、删除交易类</transaction-name>
+    	<transaction-desc>花名册查询、删除交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.mustermanage.transaction.MusterQueryDelTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MM01010003">
+    	<transaction-name>花名册分类交易类</transaction-name>
+    	<transaction-desc>花名册分类交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.mustermanage.transaction.MusterClassTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="MM01020001">
+    	<transaction-name>花名册展现页面交易类</transaction-name>
+    	<transaction-desc>花名册展现页面交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.showmuster.transaction.ShowMusterMainTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="MM01020002">
+    	<transaction-name>花名册展现页面查询交易类</transaction-name>
+    	<transaction-desc>花名册展现页面查询交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.mustermanage.transaction.MusterManageMainTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MM01020003">
+    	<transaction-name>页面设置交易类</transaction-name>
+    	<transaction-desc>页面设置交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.showmuster.transaction.ShowMusterPageConfigTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MM01020004">
+    	<transaction-name>花名册导出PDF或Excel交易类</transaction-name>
+    	<transaction-desc>花名册导出PDF或Excel交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.showmuster.transaction.ExportMusterTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MM01020005">
+    	<transaction-name>花名册预览分页数据</transaction-name>
+    	<transaction-desc>华名册预览分页数据</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.showmuster.transaction.GetPreviewMusterDataTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MM01021001">
+    	<transaction-name>数据范围</transaction-name>
+    	<transaction-desc>数据范围</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.showmuster.transaction.ShowMusterDataRangeTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MM01030001">
+    	<transaction-name>花名册新增初始化交易类</transaction-name>
+    	<transaction-desc>花名册新增初始化交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.mustermanage.transaction.ShowMusterInfoTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="MM01030002">
+    	<transaction-name>花名册新保存数据交易类</transaction-name>
+    	<transaction-desc>花名册新保存数据交易类</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.muster.mustermanage.transaction.SaveMusterTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>职责&岗位说明配置</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7">
+    <script src='instructions_resource_zh_CN.js' type="text/javascript"></script>
+    <script language="JavaScript" src="/module/utils/js/template.js"></script>
+</head>
+<style>
+    .columnStyle{
+        border-right:0px !important
+    }
+</style>
+<body>
+<script type="text/javascript">
+    Ext.Loader.setPath("Instructions", ".");
+    Ext.Loader.setConfig({
+        scriptCharset: 'UTF-8',
+        paths: {
+            "EHR": rootPath + "/components"
+        }
+    });
+    //引用上传组件，因为有导入功能
+    Ext.Loader.setPath("SYSF", rootPath + "/components/fileupload");
+    Ext.onReady(function () {
+        Ext.require('Instructions.Instructions', function () {
+            Ext.widget('viewport', {
+                id:'instrucView',
+                layout: 'fit',
+                items: Ext.create("Instructions.Instructions")
+            });
+        });
+    });
+</script>
+</body>
+</html>

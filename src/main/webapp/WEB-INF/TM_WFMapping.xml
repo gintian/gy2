@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="TM000000001">
+		<transaction-name>人才市场门户界面</transaction-name>
+		<transaction-desc>人才市场门户界面</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.portaldashboard.transaction.PortalDashboardTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+    <wfi-mapping funcid="TM000000002">
+        <transaction-name>竞聘岗位列表</transaction-name>
+        <transaction-desc>竞聘岗位列表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.CompetitionJobsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="TM000000003">
+		<transaction-name>岗位编制</transaction-name>
+		<transaction-desc>岗位编制</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.JobPreparationTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="TM000000004">
+		<transaction-name>人才市场-竞聘人员</transaction-name>
+		<transaction-desc>人才市场-竞聘人员</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.CompetitorsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="TM000000005">
+		<transaction-name>竞聘人员列表栏目设置-获取人员信息集指标</transaction-name>
+		<transaction-desc>竞聘人员列表栏目设置-获取人员信息集指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.GetPsnFieldSetTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+    <wfi-mapping funcid="TM000000006">
+        <transaction-name>人才市场参数设置</transaction-name>
+        <transaction-desc>人才市场参数设置</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.parameter.transaction.TalentMarketsParameterTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="TM000000007">
+        <transaction-name>人才市场参数设置指标项查询</transaction-name>
+        <transaction-desc>人才市场参数设置指标项查询</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.parameter.transaction.QueryFieldItemTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="TM000000008">
+        <transaction-name>参数配置竞聘岗位详情拖拽排序</transaction-name>
+        <transaction-desc>参数配置竞聘岗位详情拖拽排序</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.parameter.transaction.AdjustsecFieldItemTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="TM000000009">
+        <transaction-name>发布申请初始化数据</transaction-name>
+        <transaction-desc>发布申请初始化数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.InitTempletDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="TM000000010">
+        <transaction-name>竞聘分析</transaction-name>
+        <transaction-desc>竞聘分析</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.CompetitionAnalyseTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="TM000000012">
+        <transaction-name>竞聘岗位列表栏目设置获取新增指标项</transaction-name>
+        <transaction-desc>竞聘岗位列表栏目设置获取新增指标项</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.GetFieldSetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="TM000000013">
+		<transaction-name>岗位编制-查询框</transaction-name>
+		<transaction-desc>岗位编制-查询框</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.JobPreparationQueryPlanTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="TM000000014">
+		<transaction-name>竞聘报名</transaction-name>
+		<transaction-desc>竞聘报名</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.CompetitionApplyTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+    <wfi-mapping funcid="TM000000015">
+        <transaction-name>竞聘岗位导出excel</transaction-name>
+        <transaction-desc>竞聘岗位导出excel</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.competition.transaction.ExportExcelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="TM000000201">
+        <transaction-name>人才展厅首页面</transaction-name>
+        <transaction-desc>人才展厅首页面</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.talentmarkets.talenthall.transaction.TalentHallTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

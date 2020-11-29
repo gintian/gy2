@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sync>
+	<!-- 注意：指标有配置有顺序，应与建表语句一致 -->
+    <fields_ref>
+      <!--主集指标对应:hrtable为当前主集所在的表，desttable对外的子集名称 -->
+	  <!--机构指标对应:-->
+      <mainset hrtable="t_org_view" desttable="ORG">
+	  	<field_ref hrfield="B01AA" destfield="OG_COD" desc="机构编码" />
+		<field_ref hrfield="CODESETID" destfield="CODESETID" desc="单位部门标识" />
+		<field_ref hrfield="B010A" destfield="HIG_ORG" desc="上级机构编码" />
+		<field_ref hrfield="B010B" destfield="BRA_ORG" desc="所属分行机构号" />
+		<field_ref hrfield="B010C" destfield="BRA_COD" desc="分行代码" />
+		<field_ref hrfield="B01AC" destfield="SHT_NAM_OF_OG" desc="机构简称" />
+		<field_ref hrfield="B01AD" destfield="INTL_IST_NAM" desc="机构名称" />
+		<field_ref hrfield="B01AE" destfield="FUL_ENG_NAM_OF_OG" desc="机构全称(英文)" />
+		<field_ref hrfield="B01AF" destfield="SHT_ENG_NAM_OF_OG" desc="机构简称(英文)" />
+		<field_ref hrfield="B0140" destfield="CUST_REG_LOCT" desc="注册地址" />
+		<field_ref hrfield="B010D" destfield="OFF_ADD_CHI" desc="机构办公地址" />
+		<field_ref hrfield="B01AK" destfield="INTL_IST_LVL" desc="机构层级" />
+		<field_ref hrfield="B01AB" destfield="OPN_DAT" desc="机构成立日期" />
+		<field_ref hrfield="B010H" destfield="BUS_TYP" desc="是否正常营业 " />
+		<field_ref hrfield="B01AN" destfield="OPN_ON_HOL" desc="机构允许假期营业标识" />
+		<field_ref hrfield="B01BK" destfield="OPEN_TIME_ON_WORK_DAY" desc="机构正常营业开始时间" /> 
+		<field_ref hrfield="B01BL" destfield="CLSG_TIME_ON_WORK_DAY" desc="机构正常营业结束时间" /> 
+		<field_ref hrfield="B01BM" destfield="OPEN_TIME_ON_HOL" desc="机构假日营业开始时间" />  
+		<field_ref hrfield="B01BN" destfield="CLSG_TIME_ON_HOL" desc="机构假日营业结束时间" /> 
+		<field_ref hrfield="B01AG" destfield="CNTC_PSN_COD" desc="组织联系人编号" />
+		<field_ref hrfield="B01AH" destfield="CNTC_PSN_NAM" desc="组织联系人姓名" />
+		<field_ref hrfield="B010I" destfield="CNTC_PSN_TEL" desc="组织联系人电话" />
+		<field_ref hrfield="B01AW" destfield="ACCT_CTER_FLG" desc="是否清算机构" />
+		<field_ref hrfield="B010L" destfield="POST_NUM" desc="机构邮政编码" />
+		<field_ref hrfield="B01BG" destfield="UNIF_SOCL_CR_COD" desc="统一社会信用代码" />
+		<field_ref hrfield="D0201" destfield="OG_CHG_TYP" desc="机构变更类型" />
+		<field_ref hrfield="D0203" destfield="OG_CHG_DAT" desc="机构变更日期" />
+		<field_ref hrfield="B01AS" destfield="BRCH_CLSR_STS" desc="机构停业状态" />
+		<field_ref hrfield="B01AT" destfield="CLOSE_DAT" desc="机构结束日期" />
+		<field_ref hrfield="B010N" destfield="PRINCIPAL_COD" desc="负责人编号" />
+		<field_ref hrfield="B010O" destfield="PRINCIPAL_NAM" desc="负责人姓名" />
+		<field_ref hrfield="B010P" destfield="PRINCIPAL_TEL" desc="负责人电话" />
+		<field_ref hrfield="B010Q" destfield="PRINCIPAL_DUTY" desc="负责人职务" />
+		<field_ref hrfield="B010R" destfield="FNCL_BUS_LCN_COD" desc="金融许可证号" />
+		<field_ref hrfield="UNIQUE_ID" destfield="DATA_ID" desc="唯一标识"/>
+	  </mainset>
+	  
+	    <!--岗位指标对应:-->
+      <mainset hrtable="t_post_view" desttable="POST">
+		<field_ref hrfield="K01AH" destfield="POST_COD" desc="岗位编码" />
+		<field_ref hrfield="CODEITEMDESC" destfield="POST_NAM" desc="岗位名称" />
+		<field_ref hrfield="K01AI" destfield="POST_EFF_DATE" desc="岗位生效日期" />
+		<field_ref hrfield="K01AJ" destfield="POST_CLSR_DATE" desc="岗位撤销日期" />
+		<field_ref hrfield="K01AY" destfield="AFLT_ORGN" desc="所属单位编码" />
+		<field_ref hrfield="K01AM" destfield="OG_COD" desc="所属部门编码" />
+		<field_ref hrfield="K01AK" destfield="POST_TYPE" desc="岗位类别" />
+		<field_ref hrfield="K0110" destfield="POST_OBJ" desc="岗位简介" />
+		<field_ref hrfield="UNIQUE_ID" destfield="DATA_ID" desc="唯一标识"/>
+	</mainset>
+	  
+	 <!--人员指标对应:-->
+	  <mainset hrtable="t_hr_view" desttable="EMP">
+		<field_ref hrfield="A0130" destfield="TYP_OF_IDV_ID_DOC" desc="个人证件类型" />
+		<field_ref hrfield="A0177" destfield="NUM_OF_IDV_ID_DOC" desc="个人证件号码" />
+		<field_ref hrfield="A0144" destfield="EMPE_ID" desc="员工编号" />
+		<field_ref hrfield="A0101" destfield="NAM" desc="姓名" />
+		<field_ref hrfield="A0103" destfield="PY_NAM" desc="拼音名" />
+		<field_ref hrfield="A0111" destfield="BRTH_DAT" desc="出生日期" />
+		<field_ref hrfield="A01AC" destfield="AFLT_ORGN" desc="单位" />
+		<field_ref hrfield="A010C" destfield="OG_COD" desc="部门" />
+		<field_ref hrfield="A01AD" destfield="POST_NAM" desc="职位名称" />
+		<field_ref hrfield="A01BK" destfield="POST_COD" desc="职位编码" />
+		<field_ref hrfield="A0142" destfield="ENTRY_TIME" desc="入行时间" />
+		<field_ref hrfield="A01CA" destfield="NATY_COD" desc="国籍" />
+		<field_ref hrfield="A0121" destfield="RACE_COD" desc="民族" />
+		<field_ref hrfield="A0107" destfield="GENDER" desc="性别" />
+		<field_ref hrfield="A0119" destfield="RSDT_PLCE" desc="常住地" />
+		<field_ref hrfield="A01BM" destfield="HGST_EDU_DGR" desc="最高学历" />
+		<field_ref hrfield="A01AH" destfield="EMPE_TYP" desc="员工类型" />
+		<field_ref hrfield="A0183" destfield="EMP_TYP" desc="用工形式" />
+		<field_ref hrfield="A01BH" destfield="DELETE_PRO" desc="减员进程状态" />
+		<field_ref hrfield="A01BJ" destfield="DELETE_END_DATE" desc="减员日期" />
+		<field_ref hrfield="A0148" destfield="CELLPHONE" desc="手机号" />
+		<field_ref hrfield="A0149" destfield="SHORTPHONE" desc="短号" />
+		<field_ref hrfield="A01AJ" destfield="WORKPHONE" desc="工作电话" />
+		<field_ref hrfield="A0146" destfield="EMAIL" desc="电子邮箱" />
+		<field_ref hrfield="A0182" destfield="PERSON_STATUS" desc="人员状态" />
+		<field_ref hrfield="A01AV" destfield="INCU_DUTY" desc="现任职务" />
+		<field_ref hrfield="A01BT" destfield="BANK_ACCOUT_NO" desc="工资账号" />
+		<field_ref hrfield="UNIQUE_ID" destfield="DATA_ID" desc="唯一标识"/>
+	  </mainset>
+	  <!-- 子集,hrtable为当前子集所在的表，desttable对外的子集名称，maintable当前子集属于的主集，
+	  		relationfield与主集的关联指标，hrkey实际对外唯一性标识指标，destkey对外唯一性标识 -->
+	  <!--<subset hrtable="USRA04" desttable="edu_table" maintable="USRA01" relationfield="A0100" hrkey="A0177" destkey="EMPE_ID">
+		<field_ref hrfield="A0425" destfield="A8102" desc="请假申请日期"></field_ref>
+		<field_ref hrfield="A0430" destfield="A8109" desc="请假起始时间"></field_ref>
+		<field_ref hrfield="A0435" destfield="A8110" desc="请假结束时间"></field_ref>
+		<field_ref hrfield="A0405" destfield="A8111" desc="请假事由"></field_ref>
+		<field_ref hrfield="A0410" destfield="A8114" desc="假时长"></field_ref>
+	  </subset> -->
+    </fields_ref>
+</sync>

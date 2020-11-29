@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+	<!--<menu>
+	    <menubar privid=""  id="" text="菜单一(菜单名字)"  icon="">
+	        <menuitem id=""  privid="" text="按钮" icon="" handler="" getdata="true"/>
+	    </menubar>
+	</menu> -->
+	
+	
+    <!--tools>
+    
+         <toolbar type='button' text='button.insert' privid="311060301" handler='Global.insertEmailTemplate' icon=""/>
+      
+    </tools-->
+    <table selectable="true" sortable="true" lockable="false" editable="false"  rowdbclick="actionRow"/>
+</tableconstant>

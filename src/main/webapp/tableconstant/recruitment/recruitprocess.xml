@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+ <!--    <tools>
+        <menubar privid="3110101" type="button" id="" text="输出"  icon="">
+            <menuitem  privid="311010101" handler="Global.exportWin" id="" text="导出Excel" icon="/images/export.gif"/>
+            <menuitem  privid="311020104" handler="Global.exportResumePDF" getdata="true" id="" text="导出简历PDF" icon="/images/export.gif"/>
+	        <menuitem  privid="311020105" handler="Global.printAX" getdata="true" id="" text="打印简历" icon="/images/export.gif"/>
+        </menubar>
+        <toolbar type='button' functype="analyse" privid="" />
+         <toolbar type="button" functype="scheme" text="栏目设置"/>
+        <toolbar type="split"></toolbar>
+    </tools> -->
+    <table selectable="true" editable="true" sortable="true" lockable="true"  rowheight="30" />
+</tableconstant>

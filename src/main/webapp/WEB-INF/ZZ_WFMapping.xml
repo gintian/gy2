@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+    <wfi-mapping funcid="ZZ00000006">
+        <transaction-name>待办列表数据获取交易类</transaction-name>
+        <transaction-desc>待办列表数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.TaskListDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000007">
+        <transaction-name>已办列表数据获取交易类</transaction-name>
+        <transaction-desc>已办列表数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.ApprovedListDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000016">
+        <transaction-name>模板表单数据获取</transaction-name>
+        <transaction-desc>模板表单数据获取</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.ApplyWorkFlowTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000017">
+        <transaction-name>保存模板数据交易类</transaction-name>
+        <transaction-desc>保存模板数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class
+                    mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.SaveWorkFlowTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000019">
+        <transaction-name>待办快速处理交易类</transaction-name>
+        <transaction-desc>待办快速处理交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.QuikDealWorkFlowTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000021">
+        <transaction-name>报备任务列表数据获取交易类</transaction-name>
+        <transaction-desc>报备任务列表数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.ReportingTaskListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000022">
+        <transaction-name>我的申请数据获取交易类</transaction-name>
+        <transaction-desc>我的申请数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.MyApplyDataList"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000027">
+        <transaction-name>导出统计图、表到Excel</transaction-name>
+        <transaction-desc>导出统计图、表到Excel</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.statistical.transaction.OutStatisticalExcelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000028">
+        <transaction-name>获取用户权限内的组织机构编码交易类</transaction-name>
+        <transaction-desc>获取用户权限内的组织机构编码交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.EmployeeLoadTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000029">
+        <transaction-name>员工档案列表数据交易类</transaction-name>
+        <transaction-desc>员工档案列表数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.EmployeeListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000030">
+        <transaction-name>获取可查看指标集列表数据交易类</transaction-name>
+        <transaction-desc>获取可查看指标集列表数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.SearchViewFieldSetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000031">
+        <transaction-name>查询人员单个指标集的数据信息</transaction-name>
+        <transaction-desc>查询人员单个指标集的数据信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.SearchMainSetFieldValueTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000032">
+        <transaction-name>查询人员子集的数据信息</transaction-name>
+        <transaction-desc>查询人员子集的数据信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.ViewEmployeeYKcardTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000033">
+        <transaction-name>查看员工子集某条记录附件数据</transaction-name>
+        <transaction-desc>查看员工子集某条记录附件数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.SubSetAttachmentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000035">
+        <transaction-name>查看登记表</transaction-name>
+        <transaction-desc>查看登记表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.usercenter.transction.ViewCardTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000036">
+        <transaction-name>上传人员头像</transaction-name>
+        <transaction-desc>上传人员头像</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.SavePhotoTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000045">
+        <transaction-name>模板表单获取代码类数据</transaction-name>
+        <transaction-desc>模板表单获取代码类数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class
+                    mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.GetCodeTreeTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000046">
+        <transaction-name>模板表单保存附件</transaction-name>
+        <transaction-desc>模板表单保存附件</transaction-desc>
+        <wf-sequence>
+            <wfi-class
+                    mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.saveAttachTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000047">
+        <transaction-name>自助服务同步子集数据</transaction-name>
+        <transaction-desc>自助服务同步子集数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.TempSyncDataFromArchiveTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000100">
+        <transaction-name>贵州银行CFCA生成随机数</transaction-name>
+        <transaction-desc>贵州银行CFCA生成随机数</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.bankgz.transction.GzBankGetCfcaRandomTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000048">
+        <transaction-name>自助服务导出word或pdf</transaction-name>
+        <transaction-desc>自助服务导出word或pdf</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.exportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000049">
+        <transaction-name>人事异动子集导入导出交易类</transaction-name>
+        <transaction-desc>人事异动子集导入导出交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.SubSetExcelOutTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

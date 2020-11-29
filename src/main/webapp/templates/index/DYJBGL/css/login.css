@@ -1,0 +1,148 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#FFFFFF;
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑",Arial, Helvetica, sans-serif;
+	OVERFLOW: hidden; 
+	}
+#box{
+	width:100%;
+	 margin-top:6%;
+	}
+#header{
+	width:100%;
+	height:150px;
+	background-image:url(../images/login/logintop_bg.gif);
+	background-repeat:repeat-x;
+	background-position:bottom left;
+	position:relative;
+	}
+#logo{
+	width:750px;
+	height:160px;
+	background-image:url(../images/login/login_logo.gif);
+	background-repeat:no-repeat;	
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0;
+	position:absolute;bottom:0;
+	position:absolute;left:23%;
+	}
+/*中间部分*/
+#logoncenter{
+	height:188px;
+	width:100%;
+	background-image:url(../images/login/login_centerbj.gif);
+	background-repeat:repeat-x;
+	}
+/*底部*/
+#footer{
+	height:200px;
+	width:100%;
+	background-image:url(../images/login/loginfoot_bg.gif);
+	background-repeat:repeat-x;
+	background-position:top left;
+	}
+#copyright{
+	height:245px;
+	width:1000px;
+	float:right;
+	position:relative;
+	background-image:url(../images/login/loginfoot_right.gif);
+	background-repeat:no-repeat;
+	background-position:top right;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	}
+#copyright p {
+	margin-bottom:20px;
+	padding-top:20%;
+	text-align:center;
+	font-size:12px;
+	color:#1a4498;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+.copyright {  
+	position:absolute;
+	width:240px;
+	height:22px;
+    bottom:40px;
+    left:50%;
+    margin-left:-100px;
+    background:url(../images/login6/copy_right.gif) no-repeat;
+}	
+#content{
+	width:1000px;
+	height:188px;
+	float:right;
+	position:relative;
+	top:0px;
+	right:0px;
+	background-image:url(../images/login/centerright.gif);
+	background-repeat:no-repeat;
+	background-position:top right;
+	}
+.login{
+	width:470px;
+	height:90px;
+	margin-left:464px;
+	margin-bottom:10px;
+	margin-top:25px;
+	color:#fff;
+	font-size:13px;
+	font-weight:bold;
+	display:block;
+	line-height:16px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	}
+.labbox {
+	width:140px;
+	height:18px;
+	margin-top:0px;
+	padding-top:2px;
+	margin-bottom:5px;
+	background-color:#FFFFFF;
+	BORDER-RIGHT: 1px solid #1f54bc; BORDER-TOP: 1px solid #1f54bc; BORDER-LEFT: 1px solid #1f54bc; BORDER-BOTTOM: 1px solid #1f54bc;
+		
+	}
+.labbox1 {
+	width:75px;
+	height:18px;
+	margin-top:0px;
+	padding-top:2px;
+	background-color:#FFFFFF;
+	BORDER-RIGHT: 1px solid #1f54bc; BORDER-TOP: 1px solid #1f54bc; BORDER-LEFT: 1px solid #1f54bc; BORDER-BOTTOM: 1px solid #1f54bc;
+	}
+.but1{
+	width:57px;
+	height:23px;
+	background-image:url(../images/login/dengbj.gif);
+	background-repeat:no-repeat;
+	text-align:center;
+	margin-left:5px;
+	padding-left:15px;
+	border:1px solid #95B6D9;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+}
+.line{
+	width:25px;height:90px;
+	float:left;
+	margin-top:3px;
+	}
+.text
+{
+    color:#fff;
+	font-size:13px;
+	font-weight:bold;
+	display:block;
+	line-height:16px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}

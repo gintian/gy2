@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type"content="text/html; charset=UTF-8">
+    <!--兼容浏览器，防止ie的怪异模式（quirks)下Ext报错-->
+    <meta http-equiv="X-UA-Compatible"content="IE=9; IE=8; IE=7">
+
+    <style>
+        .x-toolbar-default .x-toolbar-item{
+            margin-right: 20px !important;
+        }
+        a>img {
+            vertical-align: middle !important;
+        }
+    </style>
+
+    <!--加载ExtJs框架和一些必须的文件 -->
+    <script language="JavaScript"src="../../../module/utils/js/template.js"></script>
+    <script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+    <script type="text/javascript" src="../../../components/personPicker/PersonPicker.js"></script>
+
+    <script type="text/javascript">
+
+        Ext.Loader.setConfig({
+            enabled: true,
+            paths: {
+                'NumberRuleListUL': rootPath+'/module/system/numberrule'
+            }
+        });
+        Ext.onReady(function(){
+            Ext.require('NumberRuleListUL.NumberRuleList', function(){
+                OtherSysListGlobal = Ext.create("NumberRuleListUL.NumberRuleList");
+            });
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

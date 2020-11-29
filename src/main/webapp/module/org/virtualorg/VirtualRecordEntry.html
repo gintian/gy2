@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>记录录入-虚拟组织成员维护</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+  </head>
+ 	<script type = "text/javascript"  src="../../../module/utils/js/template.js"></script>
+ 	<script type = "text/javascript"  src='../../../module/org/virtualorg/VirtualRecordEntry.js'></script>
+ 	<script type="text/javascript" src="/components/personPicker/PersonPicker.js"></script>
+	<script src="../../../components/querybox/QueryBox.js" ></script>   
+	<script type = "text/javascript"  src='../../../components/tableFactory/tableFactory.js'></script>
+	<link rel="stylesheet" href="../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+	<script type = "text/javascript"  src='../../../module/org/virtualorg/VirturalRoleTrans.js'></script>
+	<script type = "text/javascript" >
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'Virtualorg': rootPath+'/module/org/virtualorg'
+			}
+		});
+		Ext.onReady(function(){
+			Ext.require("Virtualorg.VirtualRecordEntry",function(){
+				 Ext.create("Virtualorg.VirtualRecordEntry");			
+			});
+		});
+	</script>
+  <body>
+  </body>
+</html>

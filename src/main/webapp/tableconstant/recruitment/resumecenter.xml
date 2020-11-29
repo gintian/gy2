@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <!-- <tools>
+        <menubar privid="3110201" type="button" id="" text="输出"  icon="">
+	        <menuitem  privid="311020102" handler="Global.exportResume" getdata="true" id="" text="导出简历" icon="/images/export.gif"/>
+	        <menuitem  privid="311020102" handler="Global.showResumeWindow" getdata="true" id="" text="数据迁移" icon="/images/import.gif"/>
+	        <menuitem  privid="311020101" handler="Global.exportWin" id="" text="导出Excel" icon="/images/export.gif"/>
+	        <menuitem  privid="311020104" handler="Global.exportResumePDF" getdata="true" id="" text="导出简历PDF" icon="/images/export.gif"/>
+	        <menuitem  privid="311020105" handler="Global.printAX" getdata="true" id="printAXId" text="打印简历" icon="/images/export.gif"/>
+	        <menuitem  privid="311020106" handler="Global.selectField" getdata="true" id="" text="生成公示材料" icon="/images/export.gif"/>
+	    </menubar>
+	      <toolbar type='button' functype="analyse" privid="" />
+    </tools> -->
+    <table selectable="true" sortable="true" lockable="true" editable="false" />
+</tableconstant>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+    <wfi-mapping funcid="DB000000001">
+        <transaction-name>门户组件代理</transaction-name>
+        <transaction-desc>门户组件代理</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.dashboard.portlets.PortletProxyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="DB000000002">
+        <transaction-name>获取门户方案数据</transaction-name>
+        <transaction-desc>获取门户方案数据</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.dashboard.display.transaction.LoadPlanDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="DB000002001">
+        <transaction-name>获取公告数据</transaction-name>
+        <transaction-desc>获取公告数据</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.dashboard.portlets.common.announceboard.LoadAnnounceDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

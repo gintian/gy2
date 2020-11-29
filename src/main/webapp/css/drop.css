@@ -1,0 +1,49 @@
+*{font-size:12px}
+.dragTable{
+ font-size:12px;
+ margin-bottom: 10px;
+ width:100%;
+}
+.dragTR{
+ cursor:move;
+}
+td{vertical-align:top;}
+#parentTable{
+
+ letter-spacing:25px;
+}
+.partHeader {background-image:url(/images/handle.gif);background-position:1px right;background-repeat: no-repeat}
+.mod_tlc,.mod_trc-rtl{background-image:url(/images/lc.gif);background-position:left top;}
+.mod_trc,.mod_tlc-rtl{background-image:url(/images/rc.gif);background-position:right top;}
+.modhead{background-color:#AFC9CF;background-image:url(/images/mid_grad.gif);background-position:right top;background-repeat:repeat-x;}
+.pheader .modhead .partBuffer {width:18px}
+.fixedTable{table-layout:fixed}
+.ellipse{text-overflow:ellipsis;overflow:hidden;}
+.bold, strong{font-weight:bold;}
+.partDetail {width:100%}
+.rowheader {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	height:35;
+	color:#15428b;
+	vertical-align: middle;
+	background-image: url(/images/board_top.gif);
+}
+.rowbody {
+	background-image: url(/images/board_body.gif);
+
+	background-repeat: repeat-y;
+	height:170;		
+}
+.rowbodyp {
+	background-image: url(/images/board_body.gif);
+	background-repeat: repeat-y;
+}
+.rowbottom {
+
+	background-image: url(/images/board_bottom.gif);
+
+	height:8;
+}

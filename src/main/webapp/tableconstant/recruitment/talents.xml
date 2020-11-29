@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <tools>
+        <menubar privid="3110301" type="button" id="" text="输出"  icon="">
+	        <menuitem  privid="311030101" functype="export" id="" text="导出Excel" icon="/images/export.gif"/>
+	    </menubar>
+	      <!-- <toolbar type='button' functype="analyse" privid="" /> -->
+	    <!--<toolbar type='querybox' text="请输入姓名、职位、毕业学校..." functionid="0000002112" />-->
+    </tools>
+    <table selectable="true" sortable="true" lockable="true" editable="false" />
+</tableconstant>

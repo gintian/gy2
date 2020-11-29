@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="GB2312"?> 
+<jnlp 
+  spec="1.0+" 
+  codebase="http://192.192.100.102:8080/cs_deploy" 
+  href="ehr.jnlp"> 
+  <information>
+    <title>Hrms</title>
+    <vendor>HJSJ, Inc.</vendor>
+    <offline-allowed />
+  </information>
+  <security>
+    <all-permissions />
+  </security>
+  
+  <resources>
+    <j2se version="1.4+" />
+    <jar href="lib/jws_ehr.jar" />
+    <jar href="lib/ehr.jar" />
+  </resources>
+  <application-desc main-class="com.hrms.hjsj.utils.Load_eHr">
+
+  </application-desc>
+
+</jnlp> 
+
+
+
+
+
+

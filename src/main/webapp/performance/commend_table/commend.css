@@ -1,0 +1,93 @@
+.TableRowCommend {
+	BACKGROUND-COLOR: #f4f7f7; 
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	height:50;
+	valign:middle;
+}
+.TableRowBLOD {
+	BACKGROUND-COLOR: #D7E9FF; 
+	font-family:楷体_GB2312;
+	font-size: 21px; 
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 2pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	height:50;
+	font-weight: bold;	
+	valign:middle;
+}
+.RecordRowBLOD {
+	border: inset 1px #94B6E6;
+	font-family:楷体_GB2312;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 2pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	font-size: 16px;
+	border-collapse:collapse; 
+	height:30;
+}
+.RecordRowFONT {
+	border: inset 1px #94B6E6;
+	font-family:楷体_GB2312;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	font-size: 16px;
+	border-collapse:collapse; 
+	height:30;
+    width:100;
+}
+
+.tt5{
+  font-family:楷体_GB2312;
+  font-size: 23px;
+}
+.tt6{
+  font-family:楷体_GB2312;
+  font-size: 16px;
+}
+.mybuttonBig{
+	border:1px solid #84ADC9;
+	background-image:url(/images/button.jpg);
+	background-repeat:repeat-x;
+	background-position:right;
+	font-size:16px;
+	line-height:18px;
+	padding-left:1px;
+	padding-right:1px;
+	/*margin-left:1px;*/
+	color:#36507E;
+	background-color: transparent;	
+	cursor: hand ; 	
+ }
+.tt4Noweight {
+	font-size:18px;	
+	font-family:楷体_GB2312;
+}
+.TableRow {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:40px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+}
+.RecordRow {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:35px;
+}

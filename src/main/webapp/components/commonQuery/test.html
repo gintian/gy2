@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+	</head>
+	
+	<script language="JavaScript" src="../../module/utils/js/template.js"></script>
+	<style>
+	   .x-vavavava{
+	   
+	       border:none;
+	       border-color:white;
+	       border-width:0px;
+	   }
+	
+	</style>
+	<script type="text/javascript">
+		
+		Ext.onReady(function(){
+			
+			 //测试代码
+			Ext.require("EHR.commonQuery.CommonQuery",function(){
+				
+				var commonQuery = Ext.create("EHR.commonQuery.CommonQuery",{
+					subModuleId:'mySubModuleId',
+					defaultQueryFields:[
+					                    {fieldsetid:'A01',itemid:'a0101',itemdesc:'姓名',itemtype:'A',codesetid:'0'},
+					                    {itemid:'country',itemdesc:'国籍',itemtype:'A',codesetid:'AD'},
+					                    {fieldsetid:'A01',itemid:'a0111',itemdesc:'出生日期',itemtype:'D',formatlength:10},
+					                    {fieldsetid:'A01',itemid:'a0151',itemdesc:'连续工龄',itemtype:'N',formatlength:2},
+					                    {fieldsetid:'B01',itemid:'b0110',itemdesc:'单位名称',itemtype:'A',codesetid:'UN'}
+					                    ],
+					optionalQueryFields:[
+						                    {fieldsetid:'A01',itemid:'a0101',itemdesc:'姓名',itemtype:'A',codesetid:'0'},
+					                    {itemid:'country',itemdesc:'国籍',itemtype:'A',codesetid:'AD'},
+					                    {fieldsetid:'A01',itemid:'a0111',itemdesc:'出生日期',itemtype:'D',formatlength:10},
+					                    {fieldsetid:'A01',itemid:'a0151',itemdesc:'连续工龄',itemtype:'N',formatlength:2},
+					                    {fieldsetid:'B01',itemid:'b0110',itemdesc:'单位名称',itemtype:'A',codesetid:'UN'}
+						                    ],
+			        //通过设置field的codeData可以将不是代码的字段改为代码显示(只能是一级代码)
+					beforeFieldRender:function(field){
+									    		if(field.itemid=='a0101')
+									    		field.codeData=[{codeitemid:'1',codeitemdesc:'一'},{codeitemid:'2',codeitemdesc:'二'}];
+					}
+						                    
+				
+				});
+				
+				Ext.widget('viewport',{
+					padding:30,
+					layout:{type:'vbox',align:'stretch'},
+					items:commonQuery
+				})
+			});
+			
+		});
+	</script>
+	<body>
+	    
+	</body>
+</html>

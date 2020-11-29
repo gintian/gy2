@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+<script type="text/javascript" src="/module/utils/js/template.js"></script>
+<script type="text/javascript" src="/components/extWidget/proxy/TransactionProxy.js"></script>
+<style>
+	.x-panel-header-default{/*火狐浏览器 缩放 title 边框不显示*/
+		background-color:transparent !important;
+	}
+</style>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	//保存党费收缴配置参数
+	function save(){
+		var formValues = formPanel.getValues();
+		var setValue = formValues.set;
+		var computeFeesFieldValue = formValues.computeFeesField;
+		var payFeesFieldValue = formValues.payFeesField;
+		var payStatusFieldValue = formValues.payStatusField;
+		var payTimeFieldValue = formValues.payTimeField;
+		if(!setValue || setValue == '' || setValue == '请选择...'){
+			Ext.Msg.alert('提示信息','党费收缴子集不能为空');
+			return;
+		}	
+		if(!computeFeesFieldValue || computeFeesFieldValue =='' || computeFeesFieldValue =='请选择...'){
+			Ext.Msg.alert('提示信息','应缴金额指标不能为空');
+			return;
+		}
+		if(!payFeesFieldValue  || payFeesFieldValue =='' || payFeesFieldValue =='请选择...'){
+			Ext.Msg.alert('提示信息','实缴金额指标不能为空');
+			return;
+		}
+		if(!payTimeFieldValue || payTimeFieldValue=='' || payTimeFieldValue=='请选择...'){
+			Ext.Msg.alert('提示信息','缴纳时间不能为空');
+			return;
+		}
+		if(!payStatusFieldValue  || payStatusFieldValue=='' || payStatusFieldValue=='请选择...'){
+			Ext.Msg.alert('提示信息','缴纳状态不能为空');
+			return;
+		}
+		if(computeFeesFieldValue == payFeesFieldValue){
+			Ext.Msg.alert('提示信息','应缴金额指标与实缴金额指标不能重复');
+			return;
+		}
+		var count =2;
+		if(!formValues.email){
+			formValues.email="";
+			count--;
+		}
+		if(!formValues.sms){
+			formValues.sms="";
+			count--;
+		}
+		if(formPanel.paramlist){
+			//保存的指标同配置的指标相同时直接结束  wangb 20180328 bug 36129
+			var loadMessage =formPanel.paramlist.payFeesMessage==''? []:formPanel.paramlist.payFeesMessage.split(',');
+			var flag = false; //默认 保存时 额外消息 与初始化额外消息不同
+			if(loadMessage.length == count){
+				if(loadMessage.length != 1){
+					flag=true;
+				}else{
+					if(loadMessage[0] == formValues.email || loadMessage[0] == formValues.sms)
+						flag=true;
+				}
+			}
+			if( formPanel.paramlist.setid == setValue && formPanel.paramlist.computeFeesFieldId == computeFeesFieldValue && formPanel.paramlist.payFeesFieldId  == payFeesFieldValue && 
+				formPanel.paramlist.payStatusFieldId == payStatusFieldValue && formPanel.paramlist.payTimeFieldId == payTimeFieldValue && flag )
+			{
+				return;
+			}
+		}
+		var vo = new HashMap();
+		vo.put('partyFeesInfoList',formValues);		
+		Rpc({functionId:'3409000029',success:function(resp){
+			var resultObj = resp.responseText;
+            resultObj = JSON.parse(resultObj);
+            if(resultObj.result){
+            	formPanel.paramlist = resultObj.paramlist;           	
+            	Ext.Msg.alert('提示信息','党费收缴参数保存成功');
+            }
+            else{
+            	Ext.Msg.alert('提示信息','党费收缴参数保存失败');
+            }
+		}},vo);
+	}
+	
+	var formPanel;
+	Ext.onReady(function(){
+		formPanel = Ext.create('Ext.form.Panel', {
+        	title: '<div style="float:left;display:inline;width:100px;">应用参数设置</div><div style="float:right;padding-right:10px;display:inline;"><a href="javascript:void(0); onclick=save();">保存</a></div>',
+    		layout:{type:'vbox'},
+        	items: [{
+            	xtype:'panel',
+            	width:'100%',
+            	margin:'10 0 10 0',
+            	border:0,
+            	layout:{
+            		type:'hbox',
+            		align:'middle'
+            	},
+            	items:[{
+        				xtype:'component',
+        				width:'40%',
+        				html:'<div style="float:right;padding-right:10px;">党费收缴子集</div>'
+            		},{
+            			xtype: 'combobox',
+            			itemId:'set',
+            			name:'set',
+            			displayField:'fieldsetdesc',
+            			valueField:'fieldsetid',
+            			emptyText:'请选择...'
+            	},{
+            		xtype:'component',
+            		html:'<div style="padding-left:2px;"><span style="color:red;padding-right:2px;">*</span>(人员信息集中按月变化子集)</div>'
+            	}]
+        	},{
+        		xtype:'panel',
+            	width:'100%',
+            	margin:'0 0 10 0',
+            	border:0,
+            	layout:{
+            		type:'hbox',
+            		align:'middle'
+            	},
+            	items:[{
+            		xtype:'component',
+        			width:'40%',
+        			html:'<div style="float:right;padding-right:10px;">应缴金额</div>'
+            	},{
+            		xtype: 'combobox',
+            		itemId:'computeFeesField',
+            		name:'computeFeesField',
+            		displayField:'itemdesc',
+            		valueField:'itemid',
+            		emptyText:'请选择...'
+            	},{
+            		xtype:'component',
+            		html:'<div style="padding-left:2px;"><span style="color:red;padding-right:2px;">*</span>(数值型指标)</div>'
+            	}]
+        	},{
+        		xtype:'panel',
+            	width:'100%',
+            	margin:'0 0 10 0',
+            	border:0,
+            	layout:{
+            		type:'hbox',
+            		align:'middle'
+            	},
+            	items:[{
+            		xtype:'component',
+        			width:'40%',
+        			html:'<div style="float:right;padding-right:10px;">实缴金额</div>'
+            	},{
+            		xtype: 'combobox',
+            		itemId:'payFeesField',
+            		name:'payFeesField',
+            		displayField:'itemdesc',
+            		valueField:'itemid',
+            		emptyText:'请选择...'
+            	},{
+            		xtype:'component',
+            		html:'<div style="padding-left:2px;"><span style="color:red;padding-right:2px;">*</span>(数值型指标)</div>'
+            	}]
+        	},{
+        		xtype:'panel',
+            	width:'100%',
+            	margin:'0 0 10 0',
+            	border:0,
+            	layout:{
+            		type:'hbox',
+            		align:'middle'
+            	},
+            	items:[{
+            		xtype:'component',
+        			width:'40%',
+        			html:'<div style="float:right;padding-right:10px;">缴纳时间</div>'
+            	},{
+            		xtype: 'combobox',
+            		itemId:'payTimeField',
+            		name:'payTimeField',
+            		displayField:'itemdesc',
+            		valueField:'itemid',
+            		emptyText:'请选择...'
+            	},{
+            		xtype:'component',
+            		html:'<div style="padding-left:2px;"><span style="color:red;padding-right:2px;">*</span>(日期型指标，格式为：yyyy-mm-dd)</div>'
+            	}]
+        	},{
+        		xtype:'panel',
+            	width:'100%',
+            	margin:'0 0 10 0',
+            	border:0,
+            	layout:{
+            		type:'hbox',
+            		align:'middle'
+            	},
+            	items:[{
+            		xtype:'component',
+        			width:'40%',
+        			html:'<div style="float:right;padding-right:10px;">缴纳状态</div>'
+            	},{
+            		xtype: 'combobox',
+            		itemId:'payStatusField',
+            		name:'payStatusField',
+            		displayField:'itemdesc',
+            		valueField:'itemid',
+            		emptyText:'请选择...'
+            	},{
+            		xtype:'component',
+            		html:'<div style="padding-left:2px;"><span style="color:red;padding-right:2px;">*</span>(代码型指标，关联代码类45)</div>'
+            	}]
+        	},{
+        		xtype:'panel',
+        		width:'100%',
+        		margin:'0 0 10 0',
+        		border:0,
+        		layout:{
+            		type:'hbox',
+            		align:'middle'
+            	},
+        		items:[{
+        			xtype:'component',
+        			width:'40%',
+        			html:'<div style="float:right;padding-right:10px;">额外消息通知</div>'
+        		},{
+        			xtype:'panel',
+        			flex:1,
+        			border:0,
+        			layout:{
+        				type:'hbox',
+        				align:'middle'
+        			},
+        			items:[{
+        				xtype:'checkboxfield',
+        				itemId:'email',
+        				name:'email',
+        				inputValue:'email'
+        			},{
+        				xtype:'component',
+        				html:'<div style="margin-left:4px;">邮件</div>'
+        			},{
+        				xtype:'checkboxfield',
+        				style:'margin-left:10px',
+        				name:'sms',
+        				itemId:'sms',
+        				inputValue:'sms'
+        			},{
+        				xtype:'component',
+        				html:'<div style="margin-left:4px;">短信</div>'
+        			}]
+        		}]
+        	}]
+		});
+		Ext.create('Ext.container.Viewport',{
+			layout:'fit',
+			items:formPanel
+		});
+	//选中子集加载对应指标
+	function loadFeidItemParam(t,newValue,oldValue){
+		var vo = new HashMap();
+        vo.put('fieldsetid',newValue);
+        Rpc({functionId:'3409000028',success:function(resp){
+        	var resultObj = resp.responseText;
+        	resultObj = JSON.parse(resultObj);
+        	var payFeesStore = Ext.create('Ext.data.Store',{
+            	fields:['itemid','itemdesc'],
+            	data:resultObj.feesFieldlist
+        	});
+        	var computeFeesField = formPanel.query('#computeFeesField')[0];
+			computeFeesField.setStore(payFeesStore);
+        	computeFeesField.setValue('');
+            				
+        	var payFeesField = formPanel.query('#payFeesField')[0];
+        	payFeesField.setStore(payFeesStore);
+        	payFeesField.setValue('');
+            				
+        	var payTimeField = formPanel.query('#payTimeField')[0];
+        	var payTimeStore = Ext.create('Ext.data.Store',{
+        		fields:['itemid','itemdesc'],
+            	data:resultObj.payTimeFieldlist
+       		});
+       		payTimeField.setStore(payTimeStore);
+       		payTimeField.setValue('');
+            				
+       		var payStatusField = formPanel.query('#payStatusField')[0];
+       		var payStatusStore = Ext.create('Ext.data.Store',{
+       			fields:['itemid','itemdesc'],
+       			data:resultObj.payStatusFieldlist
+       		});
+       		payStatusField.setStore(payStatusStore);
+       		payStatusField.setValue('');
+        }},vo);	
+		
+	}	
+	//显示党费收缴配置参数指标
+	function showParamField(resultObj){
+		 var payFeesStore = Ext.create('Ext.data.Store',{
+            fields:['itemid','itemdesc'],
+            data:resultObj.feesFieldlist
+        });
+        var computeFeesField = formPanel.query('#computeFeesField')[0];
+		computeFeesField.setStore(payFeesStore);
+        computeFeesField.setValue(resultObj.paramlist.computeFeesFieldId);
+        
+        var payFeesField = formPanel.query('#payFeesField')[0];
+        payFeesField.setStore(payFeesStore);
+        payFeesField.setValue(resultObj.paramlist.payFeesFieldId);
+            				
+        var payTimeField = formPanel.query('#payTimeField')[0];
+        var payTimeStore = Ext.create('Ext.data.Store',{
+        	fields:['itemid','itemdesc'],
+            data:resultObj.payTimeFieldlist
+       });
+       payTimeField.setStore(payTimeStore);
+       payTimeField.setValue(resultObj.paramlist.payTimeFieldId);
+            				
+       var payStatusField = formPanel.query('#payStatusField')[0];
+       var payStatusStore = Ext.create('Ext.data.Store',{
+       		fields:['itemid','itemdesc'],
+       		data:resultObj.payStatusFieldlist
+       });
+       payStatusField.setStore(payStatusStore);
+       payStatusField.setValue(resultObj.paramlist.payStatusFieldId);
+       
+       if(resultObj.paramlist.payFeesMessage && resultObj.paramlist.payFeesMessage.indexOf('email') != -1){
+       		var email = formPanel.query('#email')[0];
+       		email.setValue(true);
+       }
+       if(resultObj.paramlist.payFeesMessage && resultObj.paramlist.payFeesMessage.indexOf('sms') != -1){
+       		var sms = formPanel.query('#sms')[0];
+       		sms.setValue(true);
+       }
+	}
+	
+	//初始化加载数据方法
+	function init(){
+		Rpc({functionId:'3409000027',success:function(resp){
+			var resultObj = resp.responseText;
+			resultObj = JSON.parse(resultObj);
+			var setStore = Ext.create('Ext.data.Store',{
+            	fields:['itemid','itemdesc'],
+            	data:resultObj.fieldsetlist
+            });
+            var set = formPanel.query('#set')[0];
+            set.setStore(setStore);
+            if(resultObj.paramlist && resultObj.paramlist.setid){
+            	formPanel.paramlist = resultObj.paramlist;//保存的指标同配置的指标相同时直接结束  wangb 20180328 bug 36129
+            	set.setValue(resultObj.paramlist.setid);
+            	showParamField(resultObj);
+            }
+            set.on('change',loadFeidItemParam);
+        }},new HashMap());
+	}
+	
+	init();
+});
+</script>
+</html>

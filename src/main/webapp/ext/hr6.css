@@ -1,0 +1,167 @@
+.x-panel{
+    background: url('../../ext/resources/images/default/panel/h3_bg.gif') repeat-x scroll 0px 0px transparent;
+
+
+}
+.x-border-box{
+	background-color:#ffffff;
+}
+.x-accordion-hd{
+
+}
+.x-box-inner{
+	
+}
+/**面板头部折叠图片 */
+.x-tool-img{
+	background-image:url(/images/tool-sprites.gif);
+}
+/**面板头部展开图片定位 */
+.x-tool-expand-top,.x-tool-collapse-top{
+    background-position: 0px -60px;
+}
+/**鼠标放到面板头部展开图片定位 */
+.x-tool-over .x-tool-expand-top, .x-tool-over .x-tool-collapse-top{
+    background-position: 0px -60px;
+}
+/**面板头部折叠图片定位 */
+.x-tool-expand-bottom,.x-tool-collapse-bottom{
+    background-position: 0px -75px;
+}
+/**鼠标放到面板头部折叠图片定位 */
+.x-tool-over .x-tool-expand-bottom, .x-tool-over .x-tool-collapse-bottom{
+    background-position: 0px -75px;
+}
+.x-panel-header-default-top:after{
+    display: none;
+    content: "x-slicer:bg:url(/images/shu_bg_bg.gif), stretch:bottom";
+}
+.x-panel-header{
+    line-height: 15px;
+    background-image:url(/images/shu_bg_bg.gif);
+    font-size: 12px;
+}
+.x-accordion-item .x-accordion-hd{
+    background-image:url(/images/shu_bg_bg.gif);
+    border-top-color: #F3F7FB;
+    padding: 1px 3px 3px;
+}
+.DIV{
+	border-bottom:0px;
+	border-left:0px;
+	border-top:0px;
+	border-right:0px;
+}
+.x-nlg .x-panel-header-default-top{
+	background-image:url(/images/shu_bg_bg.gif);
+}
+.x-panel-header-mc{
+	   background-image:url(/images/shu_bg_bg.gif);
+	   background-position:0px -2px;
+	  
+	   margin-left:3px;
+	   padding-left:0px;
+	   padding-right:5px;
+	   border-right:1px #c2d6f0 solid;
+	}
+	.x-panel-header-ml{
+	   background-image:url(/images/shu_bg_bg.gif);
+	   background-position:0px -2px;
+	   border-left:1px #c2d6f0 solid;
+	}
+	.x-panel-header-mr{
+	   background-image:url(/images/shu_bg_bg.gif);
+	   background-repeat: no-repeat;
+	   background-position:0px -2px;
+	}
+.x-panel-header-tc{
+	   background-image:url(/images/shu_bg_bg.gif);
+	}
+	.x-panel-header-tl{
+	   background-image:url(/images/panel-top-coners.gif);
+	   background-position:0px -8px;
+	   background-repeat: no-repeat;
+	}
+	.x-panel-header-tr{
+	   background-image:url(/images/panel-top-coners.gif);
+	   background-position:right -12px;
+	   background-repeat: no-repeat;
+	}
+	.x-panel-header-bc{
+	    background-image:url(/images/shu_bg_bg.gif);
+	    background-position:0px -20px;
+	}
+	.x-panel-header-br{
+	    background-image:url(/images/panel-top-collapsed-corners.gif);
+	    background-position:right -20px;
+	    background-repeat: no-repeat;
+	}
+	.x-panel-header-bl{
+	    background-image:url(/images/panel-top-collapsed-corners.gif);
+	    background-position:0px -16px;
+	    background-repeat: no-repeat;
+	}
+/* hr首页（定制信息展示线条调整） xiaoyun 2014-7-25 start */
+.x-panel-default-framed-mr{
+	background-image: none;
+	border-right-width: 1px;	
+	border-color: #C2D6F0;	
+	border-right-style: solid;	
+}
+.x-panel-default-framed-mc{	
+	background-color:#ffffff;
+}
+
+.x-panel {
+    background: url("/ext/resources/images/default/panel/h3_bg.gif") repeat-x scroll 0 0 transparent;
+}
+.x-panel-default-framed-ml {
+	background-image: none;
+	border-left-color: #c2d6f0;
+	border-left-style: solid;
+	border-left-width: 1px; 	
+}
+.x-panel-default-framed-bc {
+	zoom:1;
+	background-image: none;
+}
+.x-panel-default-framed-bl {
+	zoom:1;
+	background-image: none;
+	border-top-color: #c2d6f0;;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.x-panel-default-framed-br {
+	background-image: none;
+}
+/* hr首页（定制信息展示线条调整） xiaoyun 2014-7-25 end */
+
+/* hr首页 左侧功能菜单调整（去掉ext4.2中树的线条） xiaoyun 2014-7-26 start */
+.x-tree-lines .x-tree-elbow-plus{
+	background-image:url("/ext/resources/images/default/tree/elbow-plus-nl.gif");
+}
+.x-tree-lines .x-grid-tree-node-expanded .x-tree-elbow-plus {
+	background-image:url("/ext/resources/images/default/tree/elbow-minus-nl.gif");
+}
+.x-tree-lines .x-tree-elbow-line {
+	background-image:url("/ext/resources/images/default/tree/elbow-line-nl.gif");
+}
+.x-tree-lines .x-tree-elbow {
+	background-image:none;
+}
+.x-tree-lines .x-tree-elbow-end {
+	background-image:url("/ext/resources/images/default/tree/elbow-end-nl.gif")
+}
+.x-tree-lines .x-tree-elbow-end-plus {
+	background-image:url("/ext/resources/images/default/tree/elbow-plus-nl.gif");
+}
+.x-tree-lines .x-grid-tree-node-expanded .x-tree-elbow-end-plus {
+	background-image:url("/ext/resources/images/default/tree/elbow-minus-nl.gif");
+}
+/* hr首页 左侧功能菜单调整（去掉ext4.2中树的线条） xiaoyun 2014-7-26 end */
+/* hr首页 去掉滚动条 xiaoyun 2014-7-26 start */
+body{
+	overflow: hidden;
+}
+/* hr首页 去掉滚动条 xiaoyun 2014-7-26 end */

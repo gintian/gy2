@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;">
+    <title>我的薪酬</title>
+</head>
+<style type="text/css">
+
+    #yearHtml ul{
+        padding:0px 0px 0px 0px;
+        list-style-type:none;
+        margin-top: 0px;
+    }
+    #yearHtml ul li {
+        display: block;
+        color: #9A9A9A;
+        height: 23px;
+        line-height: 23px;
+        text-align: center;
+    }
+
+    #yearHtml ul li:hover {
+        color: #549FE3;;
+        background: #EEEEEE;
+    }
+
+    #yearHtml ul li a {
+        display: block;
+        text-align: left;
+        padding-left: 21px;
+    }
+</style>
+<script language="JavaScript" src="/module/utils/js/template.js"></script>
+<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+<script language="JavaScript" src='../../../ext/ext6/charts.js'></script>
+<script language="JavaScript" src="../../../echarts/echarts.min.js"></script>
+<script language='JavaScript' src='../gz_resource_zh_CN.js'></script>
+<script type="text/javascript">
+	var url = window.location.href;
+	var nbase = '';
+	var a0100 = '';
+	if(url.indexOf('?') != -1){
+		var param = url.split('?')[1];
+		var params = param.split('&');
+		for(var i = 0 ; i < params.length ; i++){
+			var temp = params[i].split('=');
+			if(temp && temp[0] && temp[0] == 'pre' ){
+				nbase = decodeURI(temp[1]);
+			}
+			if(temp && temp[0] && temp[0] == 'a0100' ){
+				a0100 = decodeURI(temp[1]);
+			}
+		}
+	}
+    Ext.Loader.setPath("mysalary", ".");
+    Ext.onReady(function () {
+        //加载功能组件
+        Ext.require("mysalary.MySalaryMain", function () {
+            //创建功能组件
+            Ext.create('Ext.container.Viewport', {
+                layout: 'fit',
+                items: Ext.create("mysalary.MySalaryMain")
+            });
+        });
+    });
+
+</script>
+<style>
+    .x-column-header-text {
+        padding:4px 0 4px 0;
+        text-align:center;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;/*nowrap grid 表头不自动换行*/
+    }
+</style>
+<body>
+</body>
+</html>

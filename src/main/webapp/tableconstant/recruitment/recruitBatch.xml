@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <tools>         
+	    <menubar privid="3110006" type="button" id="" text="输出"  icon="">
+            <menuitem  functype="export" id="" privid="311000601" text="导出Excel" icon="/images/export.gif" />
+        </menubar>
+        <toolbar type='querybox' text="请输入批次名称..." functionid="0000002537" />
+    </tools>
+<table selectable="true" editable="false" sortable="true" lockable="true" />
+</tableconstant>

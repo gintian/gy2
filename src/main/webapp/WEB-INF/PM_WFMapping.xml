@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="PM00000001">
+         <transaction-name>项目信息管理--展现</transaction-name>
+         <transaction-desc>项目信息管理--展现</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.project.transaction.ProjectManageTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000002">
+         <transaction-name>项目信息管理--查询</transaction-name>
+         <transaction-desc>项目信息管理--查询</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.project.transaction.SearchProjectManageTrans"/>
+         </wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000003">
+         <transaction-name>项目信息管理--导出excle</transaction-name>
+         <transaction-desc>项目信息管理--导出excle</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.project.transaction.ExportProjectManageTrans"/>
+         </wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000010">
+      <transaction-name>删除项目或里程碑</transaction-name>
+      <transaction-desc>删除项目或里程碑</transaction-desc> 
+      <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.project.transaction.DeleteProjectOrMilestoneTrans"/>
+      </wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000101">
+        <transaction-name>员工项目工时汇总修改</transaction-name>
+        <transaction-desc>员工项目工时汇总修改</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.workhours.manhoursdetail.transaction.ManHoursDetailUpdateTrans"/>
+        </wf-sequence>
+  </wfi-mapping>
+    
+  <wfi-mapping funcid="PM00000102">
+         <transaction-name>员工项目工时汇总</transaction-name>
+         <transaction-desc>员工项目工时汇总</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.workhours.manhoursdetail.transaction.SearchManHoursDetailTrans"/>
+    	</wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000201">
+         <transaction-name>员工项目工时明细</transaction-name>
+         <transaction-desc>员工项目工时明细</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.workhours.manhourssum.transaction.SearchManHoursSumTrans"/>
+    	</wf-sequence>           
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000202">
+         <transaction-name>员工项目工时同意</transaction-name>
+         <transaction-desc>员工项目工时同意</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.workhours.manhourssum.transaction.AccedeManHoursSumTrans"/>
+    	</wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000203">
+         <transaction-name>员工项目工时退回</transaction-name>
+         <transaction-desc>员工项目工时退回</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.workhours.manhourssum.transaction.RefuseManHoursSumTrans"/>
+    	</wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000204">
+         <transaction-name>快速查询</transaction-name>
+         <transaction-desc>快速查询</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.workhours.manhourssum.transaction.ManHoursSumQueryPlanTrans"/>
+    	</wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000100">
+         <transaction-name>项目进入添加页面</transaction-name>
+         <transaction-desc>项目进入添加页面</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.project.transaction.SearchManProjectHoursAddAddEditTrans"/>
+    	</wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="PM00000099">
+         <transaction-name>项目添加</transaction-name>
+         <transaction-desc>项目添加</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.project.transaction.ManProjectHoursAddAndEditTrans"/>
+    	</wf-sequence>
+  </wfi-mapping>
+    <!--员工月工时报表-->
+  <wfi-mapping funcid="PM00000301">
+        <transaction-name>员工月工时报表</transaction-name>
+        <transaction-desc>员工月工时报表</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.workhours.manprojecthours.transaction.ManProjectHoursTrans"/>
+        </wf-sequence>
+  </wfi-mapping>
+   <wfi-mapping funcid="PM00000098">
+        <transaction-name>工时统计</transaction-name>
+        <transaction-desc>工时统计</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.projectmanage.project.transaction.ProjectHoursSumTrans"/>
+        </wf-sequence>
+  </wfi-mapping>
+    <wfi-mapping funcid="PM01010001">
+        <transaction-name>评分组件获取模板信息</transaction-name>
+        <transaction-desc>评分组件获取模板信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.performance.score.transaction.InitScoreTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="PM01010002">
+        <transaction-name>评分组件获取人员信息</transaction-name>
+        <transaction-desc>评分组件获取人员信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.performance.score.transaction.InitScoreObjectListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="PM01010003">
+        <transaction-name>评分组件主界面显示</transaction-name>
+        <transaction-desc>评分组件主界面显示</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.performance.score.transaction.InitScoreViewTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="PM01010004">
+        <transaction-name>评分组件保存评分</transaction-name>
+        <transaction-desc>评分组件保存评分</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.performance.score.transaction.SaveScoreViewTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+
+    <wfi-mapping funcid="PM01010005">
+        <transaction-name>评分组件提交评分</transaction-name>
+        <transaction-desc>评分组件保存评分</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.performance.score.transaction.SubmitPerformanceScore"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="PM01010006">
+        <transaction-name>评分组件导出评分excel</transaction-name>
+        <transaction-desc>评分组件导出评分excel</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.performance.score.transaction.ExportScoreTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+
+
+</wf-mappings>

@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>职称评审专家评价系统</title>
+		<meta http-equiv="content-type" content="text/html;" charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+		<!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=yes">-->
+		<meta content="yes" name="apple-mobile-web-app-capable" /><!-- safari私有meta标签，它表示：允许全屏模式浏览 -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- safari私有meta标签，safari顶端的状态条的样式 -->
+		<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+		<meta http-equiv="Pragma" content="no-cache" />   
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	</head>
+
+    <link rel="stylesheet" href="../../../../module/system/questionnaire/mobile/Font-Awesome-3.2.1/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../ext/ext6/cupertino-resources/theme-cupertino.css" type="text/css" />
+	<link href='./CardView.css' rel='stylesheet' type='text/css'><link>
+    
+    <script type="text/javascript" src="../../../../ext/ext6/ext-modern-all.js"></script>
+    <script type="text/javascript" src="../../../../ext/ext6/cupertino-resources/theme-cupertino.js"></script>
+    <script type="text/javascript" src="../../../../ext/rpc_command.js"></script>
+	<script language="JavaScript" src="../../../jobtitle/jobtitle_resource_zh_CN.js"></script>
+	<script language="JavaScript" src="../../../system/questionnaire/questionnaire_resource_zh_CN.js"></script>
+	<script language="JavaScript" src="../../../../components/extWidget/proxy/TransactionProxy.js"></script>
+	<!--<script language="JavaScript" src="../../plugin/pdf/src/pdf.js"></script>
+    
+      <style type="text/css">
+    	.component-title2 {
+			font-size:1.1em;
+			color:#157EFB;
+			line-height:50px;
+			padding:5px !important;
+			text-align:center;
+			vertical-align: middle;
+		}
+    	.component-title .x-innerhtml{
+			background-color:#F8F9F9;
+			font-size:1.1em;
+			color:#157EFB;
+			line-height:30px;
+			padding:5px !important;
+		}
+		.option-title .x-innerhtml{
+			background-color:#fff;
+			font-size:1.1em;
+			line-height:35px;
+			padding-left:10px !important;
+			border-bottom:1px dashed #dbdbe0;
+			border-top:1px dashed #dbdbe0;
+		}
+		.x-input-myCls{
+			color:gray;
+		}
+		.x-form-label span{
+			font-weight:unset !important;
+			margin-left:5px;
+		}
+		.x-form-label-nowrap .x-form-label{
+			text-align: left !important;
+		}
+		.x-field-checkbox .x-field-mask::after, .x-field-radio .x-field-mask::after{
+			margin-right:10px;
+		}
+		.img-border-radius{
+			width:70px; height:70px;
+			border: solid 3px #f0f0f0;
+			border-radius:50px; 
+		}
+		.img-selected{
+			box-shadow: 0 0 0 3px #f0f0f0;
+			content:'3';
+			font-family:'Pictos';
+		  	border-radius: 50px;
+ 		 	filter:alpha(opacity=50); -moz-opacity:0.1; -khtml-opacity: 0.1; opacity: 0.3;
+		}
+		.sel-img{
+			position:Relative;
+		}
+		.x-form-label-nowrap .x-form-label{
+			text-align:left !important;
+			padding-right:20px;
+		}
+		.x-form-label1 {
+			margin-top:-40px;
+			margin-left:25px;
+    		padding: 0.6em 0.6em 0.6em 1em;
+		}
+    </style> -->
+    
+	<!-- 人事异动用资源文件
+	<script language="JavaScript" src="../../../template/utils/template_util.js"></script> -->
+	<!-- 调用人事异动模块 
+	<script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>-->
+	
+	<body>
+		<div id="bh-wzm-index-all">
+			<!--<div class="hj-wzm-pj-top">
+				职称评审专家评价系统
+			</div>-->
+			<div id="cardviewmain" class="hj-wzm-pj-midden">
+			<!-- 卡片显示区域 -->
+			</div>
+			<div class="bh-clear"></div>
+			<div style="height:50px;"></div>
+			<div class="hj-wzm-pj-bottom" >
+				<input type="button" style="display:none;" value="投　　票" class="hj-wzm-pj-toup" />
+				<input type="button" style="display:none;" value="刷　　新" class="hj-wzm-pj-toup" />
+			</div>
+		</div>
+	</body>
+<script>
+	var cardViewObj = {
+		initLoad:function(){
+			
+			Ext.Loader.setConfig({
+				enabled: true,
+				scriptCharset:'UTF-8',
+				paths: {
+					'JobtitleCardView': '.'//主界面
+				}
+			});
+			Ext.onReady(function(){
+			
+				Ext.require('JobtitleCardView.CardView', function(){
+					JobTitleCardView = Ext.create("JobtitleCardView.CardView", {});
+				});
+			});
+		},
+		logInCheck:function(uid, pwd, vc){
+			var bencrypt = false;
+			if(Ext.isEmpty(vc)){//二维码登录时，不需要验证码
+				bencrypt = true;
+			}
+			Ext.Ajax.request({
+				url: '../../logon/index/LoginCheck',
+				method:'post',
+				params: {
+			        username: uid,
+			        password: pwd,
+			        validatecode: vc,
+			        bencrypt:bencrypt
+			    },
+				success: function(response, opts) {
+					var obj = Ext.decode(response.responseText);
+			        var errorCode = obj.errorCode;
+			        if(errorCode == '0'){
+						cardViewObj.initLoad();
+			        } else {
+			        	alert('二维码有误，请使用正确的二维码！');
+						window.location.href = "../../logon/index/Logon.html";
+			        }
+			    }
+			 });
+		}
+	}
+	window.onload = function(){
+		var url = window.location.search;
+		// 如果是二维码入口，直接跳转
+		var username = '';
+		var password = '';
+		if(url.indexOf('uid')>-1 && url.indexOf('pwd')>-1){
+			username = url.split('?')[1].split('&')[0].split('=')[1];
+			password = url.split('?')[1].split('&')[1].split('=')[1];
+			if(Ext.isEmpty(username) || Ext.isEmpty(password)){//参数为空时
+				alert('二维码有误，请使用正确的二维码！');
+				window.location.href = "../../logon/index/Logon.html";
+			} else {
+				cardViewObj.logInCheck(username, password);
+			}
+		} else {
+			cardViewObj.initLoad();
+		}
+		
+		
+	}
+</script>
+</html>

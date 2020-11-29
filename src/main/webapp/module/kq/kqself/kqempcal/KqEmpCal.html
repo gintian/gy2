@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>我的考勤日历</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7"> 
+    <script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+    <script language="JavaScript" src="../../../../module/template/utils/template_util.js"></script>  
+    <script language="JavaScript" src="../../../../module/template/utils/template_property.js"></script>
+    <script language="JavaScript" src="../../../../module/template/template_resource_zh_CN.js"></script>
+
+    <script language="JavaScript" src='../../../../ext/ext6/charts.js'></script>
+	
+	<script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>
+	<script language="JavaScript" src="../../../../components/personPicker/PersonPicker.js"></script>
+    <script language="JavaScript" src="../../../../components/extWidget/proxy/TransactionProxy.js"></script>
+    <script language="JavaScript" src='../../../../components/dateTimeSelector/dateTimeSelector.js'></script>
+    
+	<script language="JavaScript" src="../../../../js/validate.js"></script>
+	<script type="text/javascript" src="../../../../js/popcalendar.js"></script>
+	<script type="text/javascript" src="../../../../kq/kq.js"></script>
+	<script type="text/javascript" src="../../../../module/kq/kq_resource_zh_CN.js"></script>
+	
+    <link rel="stylesheet" href="kqempcal.css" type="text/css"></link>
+	<style type="text/css">
+	
+	</style>
+  </head>
+  
+  <body style="width:100%">
+  </body>
+
+  	<script type="text/javascript">
+  
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'KqEmpCalURL': '/module/kq/kqself/kqempcal'
+			}
+		});
+		Ext.onReady(function(){
+			Ext.require('KqEmpCalURL.KqEmpCal', function(){
+				ReviewMeetingGlobal = Ext.create("KqEmpCalURL.KqEmpCal", {});
+			});
+		});
+ 	</script>
+    
+</html>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+<!-- 
+	********************新登记表*******************
+	    <wfi-mapping funcid="07020100011">
+        <transaction-name>新显示登记表</transaction-name>
+        <transaction-desc>新显示登记表</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.SearchCardsProtyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="07020100027">
+        <transaction-name>登记表通用查询</transaction-name>
+        <transaction-desc>登记表通用查询</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.CardCommSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="07020100028">
+        <transaction-name>登记表快速查询</transaction-name>
+        <transaction-desc>登记表快速查询</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.SearchPersonListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="07020100029">
+        <transaction-name>登记表页面展现</transaction-name>
+        <transaction-desc>登记表页面展现</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.CreateCardHtmlTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="07020100030">
+        <transaction-name>登记表导出</transaction-name>
+        <transaction-desc>登记表导出</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.CreateYkcardWordTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="07020100031">
+        <transaction-name>登记表打印预览查询数据</transaction-name>
+        <transaction-desc>登记表打印预览查询数据</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.SearchPrintviewPersonTran"/>
+        </wf-sequence>
+    </wfi-mapping>
+    07020100011   CARD0000001
+	07020100027	  CARD0000002
+	07020100028   CARD0000003
+	07020100029   CARD0000004
+	07020100030   CARD0000005
+	07020100031   CARD0000006
+ -->
+
+    <wfi-mapping funcid="CARD0000001">
+        <transaction-name>新显示登记表</transaction-name>
+        <transaction-desc>新显示登记表</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.SearchCardsProtyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="CARD0000002">
+        <transaction-name>登记表通用查询</transaction-name>
+        <transaction-desc>登记表通用查询</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.CardCommSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="CARD0000003">
+        <transaction-name>登记表快速查询</transaction-name>
+        <transaction-desc>登记表快速查询</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.SearchPersonListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="CARD0000004">
+        <transaction-name>登记表页面展现</transaction-name>
+        <transaction-desc>登记表页面展现</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.CreateCardHtmlTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="CARD0000005">
+        <transaction-name>登记表导出</transaction-name>
+        <transaction-desc>登记表导出</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.CreateYkcardWordTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="CARD0000006">
+        <transaction-name>登记表打印预览查询数据</transaction-name>
+        <transaction-desc>登记表打印预览查询数据</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>      
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.card.transaction.SearchPrintviewPersonTran"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+</wf-mappings>

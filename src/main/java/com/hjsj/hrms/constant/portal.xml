@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portals>
+  <!--
+		columns:整数,门户面板的列数,考虑屏幕大小,最大可支持3列
+		url:网页地址
+		icon:图标
+		hide:是否显示,=true时，不管有没有权限前台都不显示.
+		priv:是否需要权限控制,=true,授权给用户才能显示,=false,不用授权,对所有用户公开
+		colwidth:列宽比例 一列可以设置成1 二列可以设置成0.5,0.5
+		qicov7:hcm 图标
+		position: hcm 图标定位
+	-->
+  <portal id="01" name="领导桌面" columns="1" colwidth="1">
+    <column id="011" colwidth="0.5" name="第一列">
+      <panel id="0110" name="预警提示" height="350" url="/sys/portalinfo?flag=warn&amp;target=i_body&amp;id=0110" icon="" hide="true" priv="false" iconv7="" />
+      <panel id="0111" name="年龄分布" height="400" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=24&amp;chart_type=5" icon="" hide="true" priv="false" />
+      <panel id="0112" name="学历分布" height="400" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=25&amp;chart_type=11" icon="" hide="true" priv="false" />
+      <panel id="0113" name="职称分布" height="400" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=26&amp;chart_type=5" icon="" hide="true" priv="false" />
+      <panel id="0114" name="人员结构" height="350" url="/general/static/commonstatic/statshowmsgchart.do?b_tabset=link&amp;categories=leaderdesktop.personstruts&amp;chart_type=5&amp;infokind=1" icon="" hide="false" priv="false" iconv7="" />
+      <panel id="0015" name="岗位分布" height="350" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=36&amp;chart_type=40" iconv7="" hide="false" priv="false" />
+    </column>
+    <column id="013" colwidth="0.5" name="第三列">
+      <panel id="0135" name="岗位等级" height="350" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=37&amp;chart_type=40" icon="" hide="false" priv="false" iconv7="" />
+      <panel id="0131" name="连续工龄" height="400" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=27&amp;chart_type=5" icon="" hide="true" priv="false" />
+      <panel id="0132" name="劳动合同类型" height="400" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=35&amp;chart_type=5" icon="" hide="true" priv="false" />
+      <panel id="0133" name="性别分布" height="400" url="/general/static/commonstatic/statshowmsgchart.do?b_msgchart=link&amp;statid=33&amp;chart_type=5" icon="" hide="true" priv="false" />
+      <panel id="0134" name="劳动合同" height="350" url="/general/static/commonstatic/statshowmsgchart.do?b_tabset=link&amp;categories=leaderdesktop.laborcontract&amp;chart_type=5&amp;infokind=1" icon="" hide="false" priv="false" iconv7="" />
+    </column>
+  </portal>
+  <portal id="02" name="业务平台" columns="2" colwidth="1">
+    <column id="024" name="工作桌面" hide="true" colwidth="" />
+    <column id="025" name="服务大厅" hide="false" />
+    <column id="026" name="我的申请与待办任务" hide="false" />
+    <column id="022" colwidth="0.5" name="第一列">
+      <panel id="0221" name="预警提示" height="230" url="/sys/portalinfo?flag=warn&amp;target=il_body&amp;id=0221" icon="" hide="false" priv="false" iconv7="icon_business.png" position="0,-32" />
+      <panel id="0222" name="花 名 册" height="230" url="/sys/portalinfo?flag=muster&amp;target=il_body&amp;id=0222" icon="" hide="false" priv="false" iconv7="icon_business.png" position="-16,-48" />
+      <panel id="0223" name="常用统计" height="230" url="/sys/portalinfo?flag=stat&amp;target=il_body&amp;id=0223" icon="" hide="false" priv="false" iconv7="icon_business.png" position="-16,-32" />
+      <panel id="0224" name="常用报表" height="230" url="/sys/portalinfo?flag=report&amp;target=il_body&amp;id=0224" icon="" hide="false" priv="false" iconv7="icon_business.png" position="-16,-80" />
+      <panel id="0225" name="热点调查" height="230" url="/sys/portalinfo?flag=diaocha&amp;target=il_body&amp;id=0225" icon="" hide="true" priv="false" iconv7="icon_business.png" position="0,-16" />
+      <panel id="0226" name="明星员工" height="230" url="/templates/index/star_employees.do?b_search=link&amp;id=0226" icon="" hide="true" priv="false" iconv7="icon_work.png" />
+    </column>
+    <column id="023" colwidth="0.5" name="第二列">
+      <panel id="0231" name="公 告 栏" height="230" url="/sys/portalinfo?flag=boardcontent&amp;target=il_body&amp;id=0231" icon="" hide="false" priv="false" iconv7="icon_business.png" position="0,-48" />
+      <panel id="0236" name="职称评审" height="230" url="/sys/portalinfo?flag=jobtitle&amp;target=il_body&amp;id=0236" seftrender="true" icon="" hide="true" priv="false" iconv7="icon_business.png" position="-16,-64" />
+      <panel id="0232" name="常用查询" height="230" url="/sys/portalinfo?flag=cond&amp;target=il_body&amp;id=0232" icon="" hide="false" priv="false" iconv7="icon_business.png" position="0,-80" />
+      <panel id="0233" name="登 记 表" height="230" url="/sys/portalinfo?flag=ykcard&amp;target=il_body&amp;id=0233" icon="" hide="false" priv="false" iconv7="icon_business.png" position="0,-64" />
+      <panel id="0234" name="我的任务" height="230" url="/sys/portalinfo?flag=matter&amp;target=il_body&amp;id=0234" icon="" hide="false" priv="false" iconv7="icon_business.png" position="-16,-16" />
+      <panel id="0235" name="学习评估" height="230" url="/sys/portalinfo?flag=train&amp;target=il_body&amp;id=0235" icon="" hide="true" priv="false" iconv7="icon4.png" />
+    </column>
+  </portal>
+  <portal id="03" name="网络学院" columns="2">
+    <column id="032" name="第一列" colwidth="0.3">
+      <panel id="03201" name="学员信息" height="180" url="/train/ilearning/ilearningstudent.jsp" icon="" hide="false" priv="false" />
+      <panel id="03202" name="学习概况" height="380" url="/train/ilearning/userlearningstatu.do?b_query=" icon="" hide="false" priv="false" />
+    </column>
+    <column id="031" name="第二列" colwidth="0.7">
+      <panel id="03101" name="通知公告" height="180" url="/sys/portalinfo?flag=boardcontent&amp;target=_blank&amp;id=0231" icon="" hide="false" priv="false" />
+      <panel id="03102" name="学院动态" height="180" url="/sys/portalinfo?flag=ilearningnews&amp;target=_blank&amp;id=0225" icon="" hide="false" priv="false" />
+      <panel id="03103" name="热门课程" height="180" url="/sys/portalinfo?flag=hotlesson&amp;target=_blank&amp;id=0235" icon="" hide="false" priv="false" />
+    </column>
+  </portal>
+  <!--  portal id="04" name="epm自助平台" columns="3" colwidth="1" flag="p">
+	    <column id="031" colwidth="0.15" name="一">
+	        <panel id="0311" name="我的信息" height="280" url="" mod_id="33" hide="false" priv="false">
+	            <menu id="03111" url="/templates/attestation/gw/showotheros.jsp?type=1&amp;checkType=0" icon="epm-sg_13-06.gif" func_id="" target="_self" name="基本情况"/>
+	            <menu id="03112" url="/performance/error.html"  icon="epm-sg_13-08.gif" func_id="" target="_self" name="岗位职责"/>
+	            <menu id="03113" url="/templates/attestation/gw/showotheros.jsp?type=2&amp;checkType=0"  icon="epm-sg_13-10.gif" func_id="" target="_self" name="工作流程"/>
+	            <menu id="03119" url="/performance/solarterms/solarterms.do?b_search=link&amp;frompage=0&amp;showType=0"  icon="epm-sg_13-36.gif" func_id="0AA06" target="_self" name="二十四节气表"/>
+	            <menu id="03114" url="/performance/nworkdiary/myworkdiary/deptperson.do?b_init=init&amp;fromFlag=3"  icon="epm-sg_13-13.gif" func_id="0AA04" target="_self" name="处室人员"/>
+	            <menu id="03115" url="/performance/nworkdiary/myworkdiary/deptperson.do?b_init=init&amp;fromFlag=1"  icon="epm-sg_13-15.gif" func_id="0AA05" target="_self" name="部门人员"/>
+	            <menu id="03116" url=""  icon="epm-sg_13-16.gif" func_id="" target="il_body" name=""/>
+	            <menu id="03117" url=""  icon="epm-sg_13-16.gif" func_id="" target="il_body" name=""/>
+	        </panel>
+	        <panel id="0312" name="工作计划与总结" height="185" mod_id="34" url="" hide="false" priv="false">
+	            <menu id="03121" url="/performance/nworkplan/week/searchWeekWorkplan.do?br_main=link"  icon="epm-sg_13-21.gif" func_id="0AB01" target="_self" name="周报"/>
+	            <menu id="03122" url="/performance/nworkplan/searchMonthWorkplan.do?br_main=link"  icon="epm-sg_13-27.gif" func_id="0AB02" target="_self" name="月报"/>
+	            <menu id="03123" url="/performance/nworkplan/searchquarters.do?b_sets=link&amp;isseason=1&amp;opt=1&amp;frompage=1"  icon="epm-sg_13-31.gif" func_id="0AB03" target="_self" name="季报"/>
+	            <menu id="03124" url="/performance/nworkplan/searchquarters.do?b_sets=link&amp;isseason=2&amp;opt=1&amp;frompage=1"  icon="epm-sg_13-33.gif" func_id="0AB04" target="_self" name="年报"/>
+	            <menu id="03125" url="/templates/welcome/welcome.html"  icon="epm-sg_13-35.gif" func_id="0AB05" target="_self" name="工作计划与总结查询"/>
+	        </panel>
+	    </column>
+	     <column id="032" colwidth="0.4" name="一">
+	     	<panel id="0321" name="公告" height="125" url="/sys/portalinfo?flag=boardcontent&amp;target=il_body&amp;id=0231" more="/selfservice/welcome/boardTheMore.do?b_more=link" hide="false" priv="false">
+	        </panel>
+	        <panel id="0322" name="待办" height="150" url="/sys/portalinfo?flag=matter&amp;target=i_body&amp;id=0234" mod_id="35" more="/general/template/matterList.do?b_query=link&amp;ver=5" hide="false" priv="false">
+	           
+	        </panel>
+	        
+	        <panel id="0323" name="我的日志" height="185" url="/performance/nworkdiary/homepage_diary.do?b_search=link&amp;type=0&amp;id=0231" mod_id="37" hide="false" priv="false">
+	            
+	        </panel>
+	    </column>
+	     <column id="033" colwidth="0.15" name="一">
+	        <panel id="0331" name="绩效考评" height="280" url="" mod_id="35"  hide="false" priv="false">
+	            <menu id="03311" url=""  icon="" func_id="0AC01" target="il_body" name="考评指标">
+	                <menu id="033111" url="/performance/objectiveManage/orgPerformance/org_performance_list.do?b_init=init&amp;opt=1&amp;returnflag=menu"  icon="" func_id="060701" target="_self" name="处室绩效"/>
+	                <menu id="033112" url="/performance/objectiveManage/myObjective/my_objective_list.do?b_init=init&amp;opt=1&amp;returnflag=menu"  icon="" func_id="060702" target="_self" name="我的目标"/>
+	                <menu id="033113" url="/performance/objectiveManage/setUnderlingObjective/underling_objective_tree.do?b_query=link&amp;entranceType=0&amp;returnflag=menu&amp;convertPageEntry=1"  icon="" func_id="060703" target="_self" name="员工目标"/>
+	            </menu>
+	            <menu id="03312" url=""  icon="" func_id="0AC02" target="il_body" name="考评打分">
+	                <menu id="033121" url="/kq/month_kq/searchkqinfo.do?b_org=link&amp;type=search"  icon="" func_id="0AC0201" target="_self" name="月度考核"/>
+	                <menu id="033122" url=""  icon="" func_id="0AC0202" target="il_body" name="季度考核">
+	                	<menu id="0331221" url="/selfservice/performance/batchGrade.do?b_tileFrame=link&amp;model=0&amp;linkType=1&amp;planContext=jdkh&amp;returnflag=menu"  icon="" func_id="0AC020201" target="_self" name="360评分"/>
+	                	<menu id="0331222" url="/performance/objectiveManage/objectiveEvaluate/objective_evaluate_list.do?b_init=init&amp;opt=1&amp;entranceType=0&amp;isSort=0&amp;returnflag=menu"  icon="" func_id="0AC020202" target="_self" name="目标评分"/>
+	                </menu>
+	                <menu id="033123" url=""  icon="" func_id="0AC0203" target="il_body" name="年度考核">
+	                	<menu id="0331231" url="/selfservice/performance/batchGrade.do?b_tileFrame=link&amp;model=0&amp;linkType=1&amp;planContext=ndkh&amp;returnflag=menu"  icon="" func_id="0AC020301" target="_self" name="360评分"/>
+	                	<menu id="0331232" url="/performance/objectiveManage/objectiveEvaluate/objective_evaluate_list.do?b_init=init&amp;opt=1&amp;entranceType=0&amp;isSort=0&amp;returnflag=menu"  icon="" func_id="0AC020302" target="_self" name="目标评分"/>
+	                </menu>
+	            </menu>
+	            
+	            <menu id="03313" url="/performance/interview/search_interview_list.do?b_init=init&amp;opt=1&amp;plan_id=-1&amp;type=0" icon="" func_id="060901" target="_self" name="考评沟通"/>
+	            
+	            <menu id="03314" url=""  icon="" func_id="0603" target="" name="考评反馈">
+	                <menu id="033141" url="/performance/kh_result/kh_plan_list.do?b_init=link&amp;model=0&amp;distinctionFlag=0&amp;opt=1"  icon="" func_id="060301" target="_self" name="本人考评结果"/>
+	                <menu id="033142" url="/performance/kh_result/kh_result_orgtree.do?b_init=init&amp;distinctionFlag=0&amp;model=1"  icon="" func_id="060302" target="_self" name="员工考评结果"/>
+	            </menu>
+	            <menu id="03315" url="/performance/interview/search_interview_list.do?br_ywsq=query"  icon="" func_id="060902" target="_self" name="考评申诉"/>
+	            <menu id="03316" url="/performance/perAnalyse.do?br_query=link&amp;busitype=0&amp;returnflag=menu"  icon="" func_id="32605" target="_self" name="绩效分析"/>
+	        </panel>
+	        <panel id="0332" name="自助测评" height="185" url="" mod_id="36"  hide="false" priv="false">
+	            <menu id="03321" url="/performance/error.html"  icon="epm-sg_13-19.gif" func_id="" target="_self" name="管理素质测评"/>
+	            <menu id="03322" url="/performance/error.html"  icon="epm-sg_13-20.gif" func_id="" target="_self" name="管理技能测评"/>
+	            <menu id="03323" url="/performance/error.html"  icon="epm-sg_13-23.gif" func_id="" target="_self" name="管理风格测评"/>
+	            <menu id="03323" url="/performance/error.html"  icon="epm-sg_13-28.gif" func_id="" target="_self" name="职业锚测评"/>
+	            <menu id="03323" url="/performance/error.html"  icon="epm-sg_13-14.gif" func_id="" target="_self" name="职业规划测评"/>
+	        </panel>
+	    </column>
+	    
+	</portal-->
+</portals>
+

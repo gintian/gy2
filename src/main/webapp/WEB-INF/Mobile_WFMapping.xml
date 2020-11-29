@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="9102001001">
+		<transaction-name>移动app登录</transaction-name>
+		<transaction-desc>移动app登录</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.GetUserView" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="9102002101">
+		<transaction-name>移动app考勤</transaction-name>
+		<transaction-desc>移动app考勤</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.kq.MobileCheckingAttendanceTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="9102003001">
+		<transaction-name>员工查询</transaction-name>
+		<transaction-desc>员工查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.emp.EmpSearchTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="9102005001">
+		<transaction-name>设置模块</transaction-name>
+		<transaction-desc>设置模块</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.setting.SettingTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="9102006001">
+		<transaction-name>统计分析模块</transaction-name>
+		<transaction-desc>统计分析模块</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+				mainClass="com.hjsj.hrms.transaction.mobileapp.statis.StatisAnalysisTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="9102007001">
+		<transaction-name>通讯录模块</transaction-name>
+		<transaction-desc>通讯录模块</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+				mainClass="com.hjsj.hrms.transaction.mobileapp.contacts.ContactsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="9102008001">
+		<transaction-name>我的团队模块</transaction-name>
+		<transaction-desc>我的团队模块</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.myteam.MyTeamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="9102009001">
+		<transaction-name>业务协同模块</transaction-name>
+		<transaction-desc>业务协同模块</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.template.TemplateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="9102010001">
+		<transaction-name>我的薪酬</transaction-name>
+		<transaction-desc>我的薪酬</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.salary.SalaryTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- 公共类 begin -->
+	<wfi-mapping funcid="9102004001">
+		<transaction-name>代码项查询</transaction-name>
+		<transaction-desc>代码项查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.utils.SearchCodeItemList" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="9102004002">
+		<transaction-name>快速查询</transaction-name>
+		<transaction-desc>快速查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.utils.GetQuickQueryFieldListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="9102004003">
+		<transaction-name>选择用户</transaction-name>
+		<transaction-desc>从业务用户或自助用户中选择用户</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.utils.selectusers.SelectUsersTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- 公共类 end -->
+	<wfi-mapping funcid="9102011001">
+		<transaction-name>登录绑定</transaction-name>
+		<transaction-desc>登录绑定认证</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.binding.BindingTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="9102011002">
+		<transaction-name>融云IM</transaction-name>
+		<transaction-desc>融云IM</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.rongcloud.RCServerTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+<!-- 分割线>>>>>>>>>>>>>>>>>>>>>以上是ehr APP 交易类，以下是w_selfservice交易类 -->
+	<wfi-mapping funcid="Mob22222222">
+        <transaction-name>Hession交易</transaction-name>
+        <transaction-desc>Hession交易</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.codeselector.transaction.GetCodeTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+
+    <wfi-mapping funcid="0000000000">
+        <transaction-name>Hession交易</transaction-name>
+        <transaction-desc>Hession交易</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.transaction.general.sys.HessianExecutorTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="0000000001">
+        <transaction-name>DelphiClient交易</transaction-name>
+        <transaction-desc>DelphiClient交易</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.transaction.general.sys.XmlHttpExecutorTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="1000000001">
+        <transaction-name>微信接口协议测试</transaction-name>
+        <transaction-desc>微信接口协议测试</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.examples.TestWeixinProtolTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="1000000000">
+        <transaction-name>登录身份认证</transaction-name>
+        <transaction-desc>登录身份认证</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.system.LoginTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="1000000002">
+        <transaction-name>创建微信平台菜单</transaction-name>
+        <transaction-desc>创建微信平台菜单</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.system.CreateWeiXinMenuTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="1000000003">
+        <transaction-name>给订阅用户发送消息</transaction-name>
+        <transaction-desc>给订阅用户发送消息</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.system.SendMessageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="07020100005">
+        <transaction-name>登记表PDF</transaction-name>
+        <transaction-desc>登记表PDF</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.transaction.general.card.CreateYkcardPDFTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="WX00000001">
+        <transaction-name></transaction-name>
+        <transaction-desc>知识中心</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.module.selfservice.knowledge.SearchLawbaseTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00010001">
+        <transaction-name></transaction-name>
+        <transaction-desc>待办</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.module.selfservice.workflow.WorkFlowTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00010002">
+        <transaction-name></transaction-name>
+        <transaction-desc>pdf生成</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.module.selfservice.workflow.TemplateTransferPdfTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00011001">
+        <transaction-name></transaction-name>
+        <transaction-desc>工时填报</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.module.selfservice.projectmanage.ProjectManageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+
+	<wfi-mapping funcid="Mob00000009">
+        <transaction-name>移动考勤功能权限</transaction-name>
+        <transaction-desc>移动考勤功能权限</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.module.selfservice.kqmanager.SearchFuncPrivTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00000001">
+        <transaction-name>我的假期查询</transaction-name>
+        <transaction-desc>我的假期查询</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqself.kqempcal.transaction.KqEmpCalTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00000003">
+        <transaction-name>我的考勤查询</transaction-name>
+        <transaction-desc>我的考勤查询</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.kq.kqself.kqempcal.transaction.KqEmpCalTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="Mob00000004">
+        <transaction-name>我的考勤查询</transaction-name>
+        <transaction-desc>我的考勤查询</transaction-desc>
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.module.selfservice.kqmanager.selfkq.trans.SearchSelfKqTempTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00000006">
+        <transaction-name></transaction-name>
+        <transaction-desc>部门考勤-初始化数据</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.module.selfservice.kqmanager.deptkq.SearchTopManagerOrgTrans"/>
+                 <wfi-class mainClass="com.hjsj.hrms.module.kq.kqself.kqempcal.transaction.KqEmpCalTrans"/>
+                 <wfi-class mainClass="com.hjsj.hrms.module.kq.org.transaction.SearchDeptKqAnalyseDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00000007">
+        <transaction-name></transaction-name>
+        <transaction-desc>部门考勤-获取分析数据</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+                 <wfi-class mainClass="com.hjsj.hrms.module.kq.org.transaction.SearchDeptKqAnalyseDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00000008">
+        <transaction-name>部门考勤-获取人员考勤数据</transaction-name>
+        <transaction-desc>部门考勤-获取人员考勤数据</transaction-desc>
+        <lock-attribute>0</lock-attribute>
+        <run-attribute>0</run-attribute>
+        <transaction-type>0</transaction-type>
+        <transaction_runner>0</transaction_runner>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+              <wfi-class mainClass="com.hjsj.hrms.module.kq.org.transaction.SearchDeptPersonKqDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+
+    <wfi-mapping funcid="Mob000000010">
+    		<transaction-name>微信端代码选择控件</transaction-name>
+        <transaction-desc>微信端代码选择控件</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.utils.components.codeselector.transaction.GetCodeTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="Mob000000011">
+    		<transaction-name>由下向上级联</transaction-name>
+        <transaction-desc>由下向上级联</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.SearchParentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00000101">
+    		<transaction-name>我的团队获取人员加载类别</transaction-name>
+        <transaction-desc>我的团队获取人员加载类别</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.employeemanager.myteam.SearchLoadTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+	<wfi-mapping funcid="Mob00000102">
+    		<transaction-name>我的团队加载人员</transaction-name>
+        <transaction-desc>我的团队加载人员</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.employeemanager.myteam.SearchTeamEmpTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+	<wfi-mapping funcid="Mob00000103">
+    		<transaction-name>我的团队-获取员工信息数据</transaction-name>
+        <transaction-desc>我的团队-获取员工信息数据</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.emp.EmpSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+
+    <wfi-mapping funcid="Mob00000121">
+    		<transaction-name>门户获取信息</transaction-name>
+        <transaction-desc>门户获取信息</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.home.HomeDataTrans"/>
+        	<wfi-class mainClass="com.hjsj.hrms.transaction.mobileapp.emp.EmpSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00000122">
+    		<transaction-name>门户功能保存</transaction-name>
+        <transaction-desc>门户功能保存</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.home.SaveHomeFuncTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00016001">
+    		<transaction-name>党费收缴情况</transaction-name>
+        <transaction-desc>党费收缴情况</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.partyfees.feesmanager.PartyFeesDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="Mob00016002">
+    		<transaction-name>党费收缴明细</transaction-name>
+        <transaction-desc>党费收缴明细</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.partyfees.feesmanager.PartyFeesInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00016003">
+    		<transaction-name>发送党费缴纳消息</transaction-name>
+        <transaction-desc>发送党费缴纳消息</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.partyfees.feesmanager.SendPartyFeesMessageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00017001">
+    		<transaction-name>我的党费缴费明细</transaction-name>
+        <transaction-desc>我的党费缴费明细</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.partyfees.myfees.MyFeesDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00017002">
+    		<transaction-name>具体某年缴费明细</transaction-name>
+        <transaction-desc>具体某年缴费明细</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.partyfees.myfees.SearchMyFeesMonthInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="Mob00017003">
+    		<transaction-name>我要缴费</transaction-name>
+        <transaction-desc>我要缴费</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.partyfees.myfees.SearchMyFeesPayInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00023001">
+    		<transaction-name>统计分析首页数据初始化</transaction-name>
+        <transaction-desc>统计分析首页数据初始化</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.statistical.transaction.SearchStatisticalTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00023002">
+        <transaction-name>一维统计图</transaction-name>
+        <transaction-desc>一维统计图</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.statistical.transaction.ShowStatisticalChartTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00023003">
+        <transaction-name>二维统计图</transaction-name>
+        <transaction-desc>二维统计图</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.statistical.transaction.ShowStatisticalDoubleChartTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00023004">
+        <transaction-name>多维统计图</transaction-name>
+        <transaction-desc>多维统计图</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.statistical.transaction.ShowStatisticalMoreChartTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="Mob00023005">
+    		<transaction-name>穿透显示（人员、单位、岗位）列表</transaction-name>
+        <transaction-desc>穿透显示（人员、单位、岗位）列表</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.statistical.transaction.ShowChartDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <!-- 微信支付 交易类         1.发起支付交易类      2.支付结果处理交易类 -->
+    <wfi-mapping funcid="wxpay000001">
+    		<transaction-name>调用微信支付接口交易类</transaction-name>
+        <transaction-desc>调用微信支付接口交易类</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.weixin.utils.wxpay.WXPayTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="wxpay170001">
+    		<transaction-name>我的党费缴纳微信支付结果处理交易类</transaction-name>
+        <transaction-desc>我的党费缴纳微信支付结果处理交易类</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.module.selfservice.partyfees.myfees.MyFeesPayResultDealTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000029">
+        <transaction-name>员工档案列表数据交易类</transaction-name>
+        <transaction-desc>员工档案列表数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.EmployeeListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000030">
+    		<transaction-name>获取可查看指标集列表数据交易类</transaction-name>
+        <transaction-desc>获取可查看指标集列表数据交易类</transaction-desc>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.SearchViewFieldSetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000031">
+        <transaction-name>查询人员单个指标集的数据信息</transaction-name>
+        <transaction-desc>查询人员单个指标集的数据信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.SearchMainSetFieldValueTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000032">
+        <transaction-name>查询人员子集的数据信息</transaction-name>
+        <transaction-desc>查询人员子集的数据信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.employeemanager.transction.ViewEmployeeYKcardTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000006">
+        <transaction-name>待办列表数据获取交易类</transaction-name>
+        <transaction-desc>待办列表数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.TaskListDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000007">
+        <transaction-name>已办列表数据获取交易类</transaction-name>
+        <transaction-desc>已办列表数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.ApprovedListDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000019">
+        <transaction-name>待办快速处理交易类</transaction-name>
+        <transaction-desc>待办快速处理交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.QuikDealWorkFlowTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000021">
+        <transaction-name>报备任务列表数据获取交易类</transaction-name>
+        <transaction-desc>报备任务列表数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.ReportingTaskListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000022">
+        <transaction-name>我的申请数据获取交易类</transaction-name>
+        <transaction-desc>我的申请数据获取交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.taskcenter.transction.MyApplyDataList"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000016">
+        <transaction-name>模板表单数据获取</transaction-name>
+        <transaction-desc>模板表单数据获取</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.ApplyWorkFlowTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000045">
+        <transaction-name>模板表单获取代码类数据</transaction-name>
+        <transaction-desc>模板表单获取代码类数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class
+                    mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.GetCodeTreeTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000046">
+        <transaction-name>模板表单保存附件</transaction-name>
+        <transaction-desc>模板表单保存附件</transaction-desc>
+        <wf-sequence>
+            <wfi-class
+                    mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.saveAttachTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZZ00000017">
+        <transaction-name>保存模板数据交易类</transaction-name>
+        <transaction-desc>保存模板数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class
+                    mainClass="com.hjsj.hrms.module.selfservice.workflow.transction.SaveWorkFlowTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

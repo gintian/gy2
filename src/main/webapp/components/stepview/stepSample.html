@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/module/utils/js/template.js"> </script>
+<script type="text/javascript" src="StepView.js"> </script>
+<script>
+
+Ext.onReady(function(){
+	Ext.widget("component",{
+		html:'1、怎么把大象放进冰箱?(严格模式)'
+	}).render(document.body);
+	
+	
+	var stepList = [{
+			name:'第一步',desc:'打开冰箱门'
+		},{
+			name:'第二步',desc:'把大象塞进冰箱'
+		},{
+			name:'第三步',desc:'关上冰箱门'
+		},{
+			name:'第四步',desc:'打开控制台，查看输出信息'
+		}];
+	
+	var stepview = Ext.widget("stepview",{
+		listeners:{
+			stepchange:function(stepview,step){
+				console.log(step);
+			}	
+		},
+		renderTo:document.body,
+		//currentIndex:1,
+		//freeModel:true,
+		stepData:stepList
+	});
+	
+	Ext.widget("button",{
+		text:'上一步',
+		handler:function(){
+			stepview.previousStep();
+		}
+	}).render(document.body);
+	Ext.widget("button",{
+		text:'下一步',
+		handler:function(){
+			stepview.nextStep();
+		}
+	}).render(document.body);
+	
+	Ext.widget("component",{
+		html:'2、怎么把大象放进冰箱?(自由模式)'
+	}).render(document.body);
+	Ext.widget("stepview",{
+		listeners:{
+			stepchange:function(stepview,step){
+				console.log(step);
+			}	
+		},
+		renderTo:document.body,
+		currentIndex:1,
+		freeModel:true,
+		stepData:stepList
+	});
+});
+
+</script>
+</head>
+
+</html>

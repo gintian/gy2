@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>问卷预览</title>
+		
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="this is my page">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+		
+	</head>
+	<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+	<script language='JavaScript' src='../../../../module/system/questionnaire/questionnaire_resource_zh_CN.js'></script>
+	<link rel="stylesheet" href="../../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+	<script type="text/javascript" src='../../../../ext/ext6/charts.js'></script>
+	<script>
+	Ext.Loader.setConfig({
+	enabled: true,
+	paths: {
+		'QuestionnairePlan': rootPath+'/module/system/questionnaire/plan',
+		'QuestionnaireTemplate': rootPath+'/module/system/questionnaire/template',
+		'QuestionnaireRecovery': rootPath+'/module/system/questionnaire/recovery',
+		'QuestionnaireAnalysis': rootPath+'/module/system/questionnaire/analysis',
+		'EHR.extWidget.field': rootPath+'/components/extWidget/field'
+	}
+});
+function getQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+var qnId = getQueryString("qnId");
+Ext.onReady(function(){
+	
+	Ext.require("QuestionnaireTemplate.PreviewTemplate",function(){
+		  var re = Ext.create("QuestionnaireTemplate.PreviewTemplate",{qnId:qnId});
+		 var s = Ext.widget('viewport',{
+		     layout:'fit',
+		        items:{
+		           xtype:'container',
+		           autoScroll:true,
+		           //margin:'5 0 5 0',
+		           bodyStyle:"border-top:none;",
+		           border:1,
+		           layout: {
+			        type: 'vbox',
+			        align: 'center'
+	                },
+	                items:re
+		        }
+		  });
+	});
+	
+	
+});
+</script>
+	<body>
+	</body>
+</html>

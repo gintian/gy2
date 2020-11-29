@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+<!-- 
+	********************人事异动模板使用交易号声明*******************
+	1、模板主界面MB00001001至MB00001999
+	2、模板功能按钮界面MB00002001至MB00003999
+	3、模板列表界面MB00003001至MB00003999
+	4、模板卡片界面MB00004001至MB00004999
+	5、
+	6、模板卡片界面MB00006001至MB00006999 zhaoxg add 2016-3-7
+ -->
+    <wfi-mapping funcid="MB00001001">
+    	<transaction-name>显示模板主界面</transaction-name>
+        <transaction-desc>显示模板主界面</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatemain.transaction.TemplateMainTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00001002">
+    	<transaction-name>解析加密url</transaction-name>
+        <transaction-desc>解析加密url</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatemain.transaction.TemplateParseUrlTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="MB00001003">
+    	<transaction-name>自动按检索条件增加人员</transaction-name>
+        <transaction-desc>自动按检索条件增加人员</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatemain.transaction.ImportMenByConditionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>  
+    <wfi-mapping funcid="MB00001004">
+    	<transaction-name>预警引入人员</transaction-name>
+        <transaction-desc>预警引入人员</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.importmen.transaction.SyncTemplateStrutTrans"/>
+			<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.importmen.transaction.TemplateImprotmenTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00001005">
+    	<transaction-name>循环调用后台修改locked_time字段</transaction-name>
+        <transaction-desc>循环调用后台修改locked_time字段</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatemain.transaction.SetEmployTimeTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+<!-- 
+	********************功能按钮开始*******************
+ -->	
+ 
+     <wfi-mapping funcid="MB00002001">
+    	<transaction-name>职称评审上会</transaction-name>
+        <transaction-desc>职称评审上会</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.jobtitle.SubMeetingTrans"/>
+        </wf-sequence>
+    </wfi-mapping>  
+    <wfi-mapping funcid="MB00002002">
+    	<transaction-name>加载上会评审会议列表</transaction-name>
+        <transaction-desc>加载上会评审会议列表</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.jobtitle.InitReViewListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>  
+    <wfi-mapping funcid="MB00002003">
+    	<transaction-name>批量修改多指标</transaction-name>
+        <transaction-desc>批量修改多指标</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.batch.transaction.UpdateMultiFieldItemTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+     <wfi-mapping funcid="MB00002004">
+    	<transaction-name>批量修改单指标</transaction-name>
+        <transaction-desc>批量修改单指标</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.batch.transaction.UpdateSingleFieldItemTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="MB00002005">
+    	<transaction-name>手工选择</transaction-name>
+        <transaction-desc>手工选择</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.importmen.transaction.TemplateImprotmenTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="MB00002006">
+     <transaction-name>设置业务日期</transaction-name>
+     <transaction-desc>设置业务日期</transaction-desc> 
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.SetAppDate.SetAppDateTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="MB00002007">
+     <transaction-name>设置计算公式</transaction-name>
+     <transaction-desc>设置计算公式</transaction-desc> 
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.setup.transaction.TemplateSetupFormulaTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="MB00002008">
+     <transaction-name>下载模版</transaction-name>
+     <transaction-desc>下载模版</transaction-desc> 
+     <log-attribute>1</log-attribute>
+     <wf-sequence>
+     		<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.updown.TemplatedownLoadTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="MB00002009">
+     <transaction-name>上传数据</transaction-name>
+     <transaction-desc>上传数据</transaction-desc> 
+     <log-attribute>1</log-attribute>
+     <wf-sequence>
+     		<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.updown.TemplateUpLoadTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="MB000020011">
+        <transaction-name>批量计算</transaction-name>
+        <transaction-desc>批量计算</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.batch.transaction.TemplateBatchCalcTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB000020012">
+        <transaction-name>打印前校验准备</transaction-name>
+        <transaction-desc>打印前校验准备</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.printout.transaction.PrintPrepareTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB000020013">
+        <transaction-name>简单/通用查询</transaction-name>
+        <transaction-desc>简单/通用查询</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.selectfield.TemplateSelectFieldTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+        
+    <wfi-mapping funcid="MB000020014">
+        <transaction-name>导出PDF</transaction-name>
+        <transaction-desc>导出PDF</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.printout.transaction.OutPdfTrans"/>
+        </wf-sequence>
+    </wfi-mapping>  
+    <wfi-mapping funcid="MB000020015">
+        <transaction-name>快速插入</transaction-name>
+        <transaction-desc>快速插入</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.quickselect.TemplateQuickSelectTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB000020016">
+        <transaction-name>删除计算公式组</transaction-name>
+        <transaction-desc>删除计算公式组</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.setup.transaction.TemplateDelFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002017">
+    	<transaction-name>职称评审上会前的校验</transaction-name>
+        <transaction-desc>职称评审上会前的校验</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.jobtitle.SubMeetingCheckTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="MB00002018">
+    	<transaction-name>发表意见</transaction-name>
+        <transaction-desc>发表意见</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.expressopinion.ExpressOpinionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002019">
+    	<transaction-name>显示发表意见</transaction-name>
+        <transaction-desc>显示发表意见</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.expressopinion.ShowOpinionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002020">
+    	<transaction-name>校验单位模板是否能撤销、划转</transaction-name>
+        <transaction-desc>校验单位模板是否能撤销、划转</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.org.ValidateOrgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002021">
+    	<transaction-name>初始化合并机构</transaction-name>
+        <transaction-desc>初始化合并机构</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.org.InitCombineTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002022">
+    	<transaction-name>保存合并机构</transaction-name>
+        <transaction-desc>保存合并机构</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.org.CombineOrgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002023">
+    	<transaction-name>划转机构初始化</transaction-name>
+        <transaction-desc>划转机构</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.org.InitTransferTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002024">
+    	<transaction-name>划转机构保存</transaction-name>
+        <transaction-desc>划转机构保存</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.org.TransferOrgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002025">
+    	<transaction-name>模版导出pdf</transaction-name>
+        <transaction-desc>模版导出pdf</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.printout.transaction.OutPdfDjbTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002026">
+    	<transaction-name>模版打印</transaction-name>
+        <transaction-desc>模版打印</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.printout.transaction.GetObjectSubmitFlagTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002027">
+    	<transaction-name>生成序号</transaction-name>
+        <transaction-desc>生成序号</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.batch.transaction.FilloutSequenceTempletTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002028">
+    	<transaction-name>自定义审批流程</transaction-name>
+        <transaction-desc>自定义审批流程</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.selfdefineflow.transaction.SelfDefineFlowTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002029">
+    	<transaction-name>导出word模版</transaction-name>
+        <transaction-desc>导出word模版</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.printout.transaction.OutPutPdfModelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00002030">
+    	<transaction-name>根据用户名和唯一性指标值获取用户usr+a0100</transaction-name>
+        <transaction-desc>根据用户名和唯一性指标值获取用户usr+a0100</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.utils.QueryPersonInfoByOnlyKey"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+ <!-- 
+	********************功能按钮结束*******************
+ -->
+<!-- 
+	********************列表开始*******************
+ -->	
+   <wfi-mapping funcid="MB00003001">
+    	<transaction-name>显示列表主界面</transaction-name>
+        <transaction-desc>显示列表主界面</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatelist.transaction.TemplateListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+   <wfi-mapping funcid="MB00003002">
+    	<transaction-name>新增记录</transaction-name>
+        <transaction-desc>新增记录</transaction-desc> 
+         <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.transaction.TemplateAddTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+ 
+   <wfi-mapping funcid="MB00003003">
+    	<transaction-name>列表子集显示</transaction-name>
+        <transaction-desc>列表子集显示</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatesubset.transaction.TemplateSubsetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00003004">
+    	<transaction-name>撤销单据数据</transaction-name>
+        <transaction-desc>撤销单据数据</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.transaction.TemplateDelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00003005">
+    	<transaction-name>列表选中按钮</transaction-name>
+        <transaction-desc>列表选中按钮</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatelist.transaction.TemplateSubmitFlagTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00003006">
+    	<transaction-name>列表保存按钮</transaction-name>
+        <transaction-desc>列表保存按钮</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.transaction.TemplateSaveTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00003007">
+    	<transaction-name>列表子集保存</transaction-name>
+        <transaction-desc>列表子集保存</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatesubset.transaction.TemplateSaveSubsetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+ 
+    <wfi-mapping funcid="MB00003008">
+    	<transaction-name>列表快速查询</transaction-name>
+        <transaction-desc>列表快速查询</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.transaction.TemplateSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00003009">
+        <transaction-name>列表表格过滤选中设置</transaction-name>
+        <transaction-desc>列表表格过滤选中设置</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatelist.transaction.TemplateFilterFlagTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+ <!-- 
+	********************列表结束*******************
+ -->
+<!-- 
+	********************卡片开始*******************
+ -->	
+	   
+    <wfi-mapping funcid="MB00004001">
+    	<transaction-name>卡片主界面</transaction-name>
+        <transaction-desc>卡片主界面</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.TemplateCardTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00004002">
+    	<transaction-name>卡片页签主界面</transaction-name>
+        <transaction-desc>卡片页签主界面</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.TemplatePageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00004003">
+    	<transaction-name>保存照片</transaction-name>
+        <transaction-desc>保存照片</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.SavePhotoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00004004">
+    	<transaction-name>由下向上级联</transaction-name>
+        <transaction-desc>由下向上级联</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.SearchParentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00004005">
+    	<transaction-name>子集列表刷新</transaction-name>
+        <transaction-desc>子集列表刷新</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatesubset.transaction.UpdateSubsetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00004006">
+    	<transaction-name>电子签章保存（BJCA）</transaction-name>
+        <transaction-desc>电子签章保存（BJCA）</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.SaveSignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="MB00004007">
+    	<transaction-name>导入模板子集记录</transaction-name>
+        <transaction-desc>导入模板子集记录</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.SubSetExcelOut"/>
+        </wf-sequence>
+    </wfi-mapping>
+<!-- 
+	********************卡片结束*******************
+ -->	
+ <!-- 
+	********************报批开始*******************
+ -->	
+      <wfi-mapping funcid="MB00005001">
+        <transaction-name>报批前校验</transaction-name>
+        <transaction-desc>报批前校验</transaction-desc> 
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.TemplateApplyPrepareTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="MB00005002">
+        <transaction-name>判断特殊角色成员</transaction-name>
+        <transaction-desc>判断特殊角色成员</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.TemplateGetNextNodeTrans"/> 
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="MB00005003">
+        <transaction-name>报批界面初始化</transaction-name>
+        <transaction-desc>报批界面初始化</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.SelectApplyObjectTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00005004">
+        <transaction-name>报批、批准任务</transaction-name>
+        <transaction-desc>报批、批准任务</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.TemplateApplyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00005005">
+        <transaction-name>提交任务</transaction-name>
+        <transaction-desc>提交任务</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.TemplateSubmitTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00005008">
+        <transaction-name>查看审批过程</transaction-name>
+        <transaction-desc>查看审批过程</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+        	<!--  <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>-->
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.viewprocess.TemplateViewProcessTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00005009">
+        <transaction-name>审批过程导出Excel</transaction-name>
+        <transaction-desc>审批过程导出Excel</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.viewprocess.DownLoadProcessExcelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00005010">
+        <transaction-name>抄送角色选择</transaction-name>
+        <transaction-desc>抄送角色选择</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.GetPerRoleListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00005011">
+        <transaction-name>提交前查询信息</transaction-name>
+        <transaction-desc>提交前查询信息</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.TemplateInitMessageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00005012">
+        <transaction-name>邮件模板内容</transaction-name>
+        <transaction-desc>邮件模板内容</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.GetMailTempletInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+ <!-- 
+	********************报批结束*******************
+ -->
+  <!-- 
+	********************模板导航入口 start zhaoxg 2016-3-7*******************
+ -->
+    <wfi-mapping funcid="MB00006001">
+        <transaction-name>获取模板树列表</transaction-name>
+        <transaction-desc>获取模板树列表</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.SearchTemplateTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="MB00006002">
+        <transaction-name>查询待办任务</transaction-name>
+        <transaction-desc>查询待办任务</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+         <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.GetDbTaskTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="MB00006003">
+        <transaction-name>查询已办任务</transaction-name>
+        <transaction-desc>查询已办任务</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.GetYbTaskTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="MB00006004">
+        <transaction-name>查询任务监控 </transaction-name>
+        <transaction-desc>查询任务监控</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.GetCtrlTaskTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="MB00006005">
+        <transaction-name>查询业务申请</transaction-name>
+        <transaction-desc>查询业务申请</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.GetBusinessApplyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006006">
+        <transaction-name>获取表单详细数据</transaction-name>
+        <transaction-desc>获取表单详细数据</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.SearchModuleTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006007">
+        <transaction-name>保存业务说明</transaction-name>
+        <transaction-desc>保存业务说明</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.SaveExplainTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006008">
+        <transaction-name>删除任务</transaction-name>
+        <transaction-desc>删除任务</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.DeleteTaskListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006009">
+        <transaction-name>批量审批</transaction-name>
+        <transaction-desc>批量审批</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.BatchApproveTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006010">
+        <transaction-name>任务监控导出excel</transaction-name>
+        <transaction-desc>任务监控导出excel</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.ExportExcelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006011">
+        <transaction-name>重新分派</transaction-name>
+        <transaction-desc>重新分派</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.ReAssignTaskTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006012">
+        <transaction-name>流程终止</transaction-name>
+        <transaction-desc>流程终止</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.ProcessEndTaskListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006013">
+        <transaction-name>查看角色人员</transaction-name>
+        <transaction-desc>查看角色人员</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.SearchRoleActorTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+        <wfi-mapping funcid="MB00006018">
+        <transaction-name>撤回申请</transaction-name>
+        <transaction-desc>撤回申请</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.RecallTaskTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+  <!-- 
+	********************模板导航入口 end*******************
+ -->
+ 
+<!-- ********************附件  start******************* -->
+    <wfi-mapping funcid="MB00006014">
+        <transaction-name>显示附件</transaction-name>
+        <transaction-desc>显示附件</transaction-desc> 
+        <lock-attribute>0</lock-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.AttachmentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006015">
+        <transaction-name>操作附件</transaction-name>
+        <transaction-desc>删除、下载附件</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.AttachmentOptTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006016">
+        <transaction-name>保存附件</transaction-name>
+        <transaction-desc>保存附件</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.SaveAttachmentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00006017">
+         <transaction-name>链接跳转人事异动(查询待办)</transaction-name>
+        <transaction-desc>链接跳转人事异动(查询待办)</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.SearchTemplateFormTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+      <wfi-mapping funcid="MB00006020">
+        <transaction-name>变动日志查询</transaction-name>
+        <transaction-desc>变动日志查询</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatenavigation.transaction.GetTemplateChangeLog"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="MB00006021">
+        <transaction-name>刷新附件</transaction-name>
+        <transaction-desc>刷新附件</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+        	<wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.apply.transaction.CheckSplitByOthersTrans"/>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.RefrefAttachmentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="MB00006022">
+        <transaction-name>流程归档</transaction-name>
+        <transaction-desc>流程归档</transaction-desc> 
+        <lock-attribute>1</lock-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.historydata.transaction.TemplateProcessArchivingTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+<!-- ********************附件  end******************* -->
+	<wfi-mapping funcid="MB00007001">
+         <transaction-name>印章列表</transaction-name>
+        <transaction-desc>印章列表</transaction-desc> 
+        <priv-funcid>30048</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.SearchSignatureListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00007002">
+         <transaction-name>添加印章</transaction-name>
+        <transaction-desc>添加印章</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.AddSignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00007003">
+         <transaction-name>删除印章</transaction-name>
+        <transaction-desc>删除印章</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.DelSignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00007004">
+         <transaction-name>复杂查询印章</transaction-name>
+        <transaction-desc>复杂查询印章</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.QuerySignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00007005">
+         <transaction-name>批量签章</transaction-name>
+        <transaction-desc>批量签章</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.BatchSignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00007006">
+         <transaction-name>印章有关加密解密</transaction-name>
+        <transaction-desc>印章有关加密解密</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.EnOrDeSignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00007007">
+         <transaction-name>存储签章数据</transaction-name>
+        <transaction-desc>存储签章数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.SaveToHtmlSignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00007008">
+         <transaction-name>撤销签章数据</transaction-name>
+        <transaction-desc>撤销签章数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.signature.transaction.RevokeSignatureTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="MB00007010">
+    	<transaction-name>自动引入模板数据</transaction-name>
+        <transaction-desc>自动引入模板数据</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.templatemain.transaction.TemplateImportDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<!--  历史数据相关 -->
+    <wfi-mapping funcid="MB00008001">
+        <transaction-name>历史数据</transaction-name>
+        <transaction-desc>历史数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.historydata.transaction.GetHistoryDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00008002">
+        <transaction-name>显示模板主界面</transaction-name>
+        <transaction-desc>显示模板主界面</transaction-desc> 
+        <wf-sequence>
+           	<wfi-class mainClass="com.hjsj.hrms.module.template.historydata.formcorrelation.templatemain.transaction.TemplateMainTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00008003">
+        <transaction-name>显示模板卡片界面</transaction-name>
+        <transaction-desc>显示模板卡片界面</transaction-desc> 
+        <wf-sequence>
+           	<wfi-class mainClass="com.hjsj.hrms.module.template.historydata.formcorrelation.templatecard.transaction.TemplateCardTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00008004">
+        <transaction-name>显示模板卡片界面数据</transaction-name>
+        <transaction-desc>显示模板卡片界面数据</transaction-desc> 
+        <wf-sequence>
+           	<wfi-class mainClass="com.hjsj.hrms.module.template.historydata.formcorrelation.templatecard.transaction.TemplatePageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00008005">
+        <transaction-name>导出PDF</transaction-name>
+        <transaction-desc>导出PDF</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.historydata.formcorrelation.templatetoolbar.printout.transaction.OutPdfTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="MB00008006">
+        <transaction-name>显示附件</transaction-name>
+        <transaction-desc>显示附件</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.historydata.formcorrelation.templatecard.transaction.AttachmentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00008007">
+        <transaction-name>操作附件</transaction-name>
+        <transaction-desc>操作附件</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.historydata.formcorrelation.templatecard.transaction.AttachmentOptTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00008008">
+        <transaction-name>子集显示</transaction-name>
+        <transaction-desc>子集显示</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.template.historydata.formcorrelation.templatesubset.transaction.TemplateSubsetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- HTML模板设置 开始  -->
+    <wfi-mapping funcid="MB00008009">
+         <transaction-name>Excel布局上传</transaction-name>
+        <transaction-desc>Excel布局上传</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.htmlmodule.transaction.ExcelLayoutUpLoadTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="MB00008010">
+         <transaction-name>Excel布局模板下载</transaction-name>
+        <transaction-desc>Excel布局模板下载</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.template.templatetoolbar.htmlmodule.transaction.ExcelLayoutdownLoadTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- HTML模板设置 结束 -->
+</wf-mappings>

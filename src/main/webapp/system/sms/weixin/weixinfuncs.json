@@ -1,0 +1,35 @@
+{
+	WXFunction:[{
+		name:'我的薪酬',menuid:'1'
+	},{
+		name:'知识中心',menuid:'9'
+	},{
+		name:'业务办理',menuid:'10'
+	},{
+		name:'项目工时',menuid:'11'
+	},{
+		name:'移动考勤',menuid:'13'
+	},{
+		name:'员工档案',menuid:'14'
+	},{
+		name:'本人档案',menuid:'15'
+	},{
+		name:'党费管理',menuid:'16'
+	},{
+		name:'我的党费',menuid:'17'
+	},{
+		name:'我的待办',menuid:'18'
+	},{
+		name:'我的已办',menuid:'19'
+	},{
+		name:'专项申报',menuid:'21'
+	},{
+		name:'我的个税',menuid:'22'
+	},{
+		name:'人力分析',menuid:'23'
+	},{
+		name:'内部竞聘',menuid:'24'
+	},{
+		name:'移动门户',menuid:'home'
+	}]
+}

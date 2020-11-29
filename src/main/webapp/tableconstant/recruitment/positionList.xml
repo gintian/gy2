@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <!-- <tools>         
+	    <menubar privid="3110101" type="button" id="" text="输出"  icon="">
+            <menuitem  functype="export" id="" privid="311010101" text="导出Excel" icon="/images/export.gif" />
+        </menubar>
+        <toolbar type='querybox' text="请输入单位、部门、职位、工作地点..." functionid="0000002081" />
+    </tools> -->
+<table selectable="true" editable="false" sortable="true" lockable="true" />
+</tableconstant>

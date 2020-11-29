@@ -1,0 +1,188 @@
+/*新版评审会议样式*/
+*{
+	font-family:"微软雅黑";
+}
+
+.x-grid-item-selected{color: rgb(0, 0, 0) !important;background-color: rgb(255, 248, 210) !important;}
+
+.meeting_item_cls{
+	width:100%;
+	height:160px;
+	margin-top:10px;
+}
+.meeting_div_left{
+			background-image:url('/module/jobtitle/images/reviewmeeting/left.png');
+			width:5px;
+			float:left;
+			height:100%;
+		}
+.meeting_div_right{
+	background-image:url('/module/jobtitle/images/reviewmeeting/right.png');
+	width:5px;
+	float:right;
+	height:100%;
+}
+.meeting_div_center{
+	background-image:url('/module/jobtitle/images/reviewmeeting/center.png');
+	height:100%;
+	margin:0 5px;
+	padding: 9px 0 0 10px;
+	position:relative;
+}
+
+.meeting_title_div{
+	font-size: 14px;
+	color:#007BFC;
+}
+.meeting_name{
+	font-weight: bold;
+	cursor:pointer;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	display:inline-block;
+}
+.meeting_status{
+	width:50px;
+	display:inline-block;
+	position:absolute;
+	top:9px;
+}
+.meeting_timerange{
+	color:#676767;
+	font-size: 14px;
+	text-align:center;
+	position:absolute;
+	top:8px;
+}
+/*评审环节*/
+.segments_table_td{
+	width:33.3%;
+}
+.segments_table{
+	width:100%;
+	height:120px;
+}
+/*评审环节序号*/
+.seqment_seq{
+	color:#FFFFFF;
+	font-size:20px;
+	font-weight:500;
+	position:absolute;
+	top:11px;
+	left:19px;
+}
+
+.meeting_icon_xuhao{
+	width:60px !important;
+}
+.meeting_icon_xuhao div{
+    position: relative;
+    width:100%;
+    height:75px;
+}
+.meeting_icon_jiantou{
+	text-align:center;
+}
+
+.meeting_running_href{
+	height:100%;
+}
+.meeting_running_href tr td span{
+	font-size:13px;
+	color:#007BFC;
+	cursor:pointer;
+	
+}
+/* 创建会议主题页面 */
+
+.titleTags_item{
+	line-height:24px;
+	width:100%;
+	height:100%;
+}
+/* 特殊   选中效果  有箭头的背景 */
+.title_bg_checked{
+	cursor: pointer;
+	text-align:center;
+	background-image: url("/module/jobtitle/images/reviewmeeting/checked.png");
+	background-repeat: no-repeat;
+	border:1px solid #C5C5C5;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}
+/*  特殊   选中title 如果是最后一个  是没有箭头的背景*/
+.title_bg_checked_end{
+	background-color:#F7F7F7;
+	cursor: pointer;
+	border:1px solid #C5C5C5;
+	border-left: none;
+	border-bottom: none;
+	text-align:center;
+}
+/* 特殊   选中title的下一个title 的样式 */
+.title_bg_unchecked{
+	cursor: pointer;
+	border:1px solid #C5C5C5;
+	border-left: none;
+	border-bottom: none;
+	text-align:center;
+	padding-left:2px;
+}
+/*非特殊*/
+.title_bg{
+	cursor: pointer;
+	border:1px solid #C5C5C5;
+	border-left: none;
+	text-align:center;
+	border-bottom: none;
+}
+/* 特殊   第一个title 的左边框*/
+.title_bg_start{
+	border-left: 1px solid #C5C5C5;
+}
+
+.subjectNameText{
+	color:#0A5AFF;
+	
+}
+/* 申报人分组页面 */
+#jobtitle_reviewfile_console_1_tablePanel .x-grid-cell-inner{max-height:3000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			}
+			#jobtitle_reviewfile_console_2_tablePanel .x-grid-cell-inner{max-height:3000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			}
+			#jobtitle_reviewfile_console_3_tablePanel .x-grid-cell-inner{max-height:3000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			}
+			#jobtitle_reviewfile_console_4_tablePanel .x-grid-cell-inner{max-height:3000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			}
+/* 申报人分组页面 */
+

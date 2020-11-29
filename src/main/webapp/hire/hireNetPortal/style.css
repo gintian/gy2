@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+body{color:#4C4C4C;font-size:12px;font-family:"宋体";width:98%; background:#fff;}
+ul,ol{list-style-type:none;}
+select,input,img{vertical-align:middle;}
+a{text-decoration:none;color:#606060;}
+.clearit{clear:both; font-size:0;height:0;width:0;padding:0;margin:0;border:0;}
+.bh-clear{clear:both;}
+.bh-space{height:10px;clear:both;}
+
+/*====================================信息公示首页======================================*/
+.bh-wzm-index-all{ text-align:left;}
+.bh-wzm-index-title{ font-family:"微软雅黑"; font-size:14px; font-weight:bold;text-align:left;border-bottom:1px solid #cccccc;height:30px;position:relative;}
+.hj-wzm-din{ font-family:"微软雅黑"; font-size:12px; font-weight:600; float:right; position:absolute;right:25px;}
+.hj-wzm-table{margin-top:20px;}
+.hj-wzm-table table th{ background:#f5f5f5;height:42px; line-height:42px;font-family:"微软雅黑"; font-size:14px;color:#666;}
+.hj-wzm-table table td{ text-align:center; height:42px; line-height:42px; border-bottom:1px solid #e5e6e8;}
+
+.hj-xxgs ul li a:link{height:24px; line-height:24px;font-family:"微软雅黑";font-size:14px;color: #655656 !important;}
+.hj-xxgs ul li a:hover {color: #FF9900 !important;	text-decoration: none;}
+.hj-xxgs ul li a:visited {color: #655656 !important;	text-decoration: none;}
+.hj-xxgs ul li {padding-top: 6px;border-bottom: 1px dashed #ccc;padding-bottom: 4px;}
+.hj-xxgs ul li div{color:#948d8d}
+.hj-xxgs-div{width:94%;margin-top:20px;margin-left:auto;margin-right:auto}
+.hj-xxgs-div1{float:left;display: block;}

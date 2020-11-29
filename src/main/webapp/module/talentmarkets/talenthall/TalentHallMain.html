@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>人才展厅</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7">
+    <script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+    <link rel="stylesheet" href="../../../ext/ext6/resources/ext-theme.css" type="text/css"/>
+    <script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+    <script language="JavaScript" src="../../../module/template/utils/template_util.js"></script><!-- 调用人事异动模块 -->
+    <script language="JavaScript" src="/module/template/template_resource_zh_CN.js"></script><!-- 人事异动用资源文件 -->
+
+</head>
+<style>
+    .mySelected {
+        background-color: rgb(255, 255, 235);
+    }
+
+    .cardTable {
+        border: #c5c5c5 1px solid;
+        width: 100%;
+        height: 240px;
+        margin-top: 5px;
+        position: relative;
+        top: -12px;
+        font-size: 12px !important;
+        table-layout: fixed;
+    }
+
+    .resumeCard {
+        float: left;
+        width: 330px;
+        margin: 5px 0px 0px 10px;
+    }
+</style>
+<body>
+<script>
+    Ext.Loader.setConfig({
+        scriptCharset: 'UTF-8',
+        paths: {
+            "EHR": rootPath + "/components",
+            "Talentmarkets": rootPath + "/module/talentmarkets",
+        }
+    });
+    Ext.onReady(function () {
+        Ext.require('Talentmarkets.talenthall.TalentHallMain', function () {
+            Ext.widget('viewport', {
+                layout: 'fit',
+                items: Ext.create("Talentmarkets.talenthall.TalentHallMain")
+            });
+        })
+    });
+</script>
+</body>
+</html>

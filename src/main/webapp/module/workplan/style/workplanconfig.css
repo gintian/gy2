@@ -1,0 +1,46 @@
+/**区间设置css */
+.tab {	
+	color:#333333;
+	border-collapse: collapse;
+	margin:5px auto 10px auto;
+	text-align: center;
+	width:700px;
+}
+.tab tr td{
+	border: 1px solid #666666;
+}
+.wp_head{
+	padding:10px 0px 10px 0px;
+	font:600 13px 微软雅黑 宋体, tahoma, arial, verdana, sans-serif;
+	height:35px;
+	color: #FFFFFF;
+}
+.wp_data{
+	font:12px 微软雅黑, 宋体, tahoma, arial, verdana, sans-serif;
+	height: 35px;
+}
+.wp_data td input[type='text']{
+	width:24px;
+	height:17px;
+	margin:0px 5px 0px 5px;
+}
+
+.tab tr td input[type='checkbox']{
+	cursor:pointer;
+}
+
+#helfyear{
+	width:130px;
+	margin-left: 45px;
+}
+#jidu{
+	width:130px;
+	margin-left: 45px;
+}
+#yuedu{
+	width:180px;
+	margin:10px 21px 10px 21px
+}
+.cheackb input,.cheackb label{
+	vertical-align: middle;
+}

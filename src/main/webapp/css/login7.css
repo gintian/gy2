@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+.hj-ui-menutools {
+	border-bottom:#bbb solid 1px;
+	height:32px;
+	line-height:32px;
+	overflow:hidden;
+    text-align:left; 	
+	position:relative;
+	background:#fff url(../images/login7/base-bg.png) bottom repeat-x;
+	-moz-box-shadow: 0px 2px 3px #d5d5d5; /* FF3.5+ */
+	-webkit-box-shadow: 0px 2px 3px #d5d5d5; /* Saf3.0+, Chrome */
+	box-shadow: 0px 2px 3px #d5d5d5; /* Opera 10.5, IE9, Chrome 10+ */
+}
+
+#hj-ui-top {
+ top:0;
+ left:0; 
+ height:100px;
+ background:#0066CC url(../images/login7/header_Bg.gif) repeat-x left top;
+ z-index: 6;
+}
+
+.hj-ui-top-menutools {
+	border-bottom:#bbb solid 1px;
+	height:32px;
+	float:right;
+	line-height:32px;
+	overflow:hidden;
+	position:relative;
+	background-color:transparent;
+	-moz-box-shadow: 0px 2px 3px #d5d5d5; /* FF3.5+ */
+	-webkit-box-shadow: 0px 2px 3px #d5d5d5; /* Saf3.0+, Chrome */
+	box-shadow: 0px 2px 3px #d5d5d5; /* Opera 10.5, IE9, Chrome 10+ */
+}
+
+.menu-text a{
+ text-decoration:none;
+ color:#333;
+}
+.menu-text a:hover{
+ color:#FF6600;
+}
+
+.inner_top_right {
+	float:right;
+	overflow:hidden;
+	height:27px;
+	background-color:transparent;
+}
+/**宸ュ叿鏉¤彍鍗曢摼鎺ユ牱寮�*/
+.hj-ui-menutools a,.hj-ui-menutools a:visited{color:#000; text-decoration:none;}
+.hj-ui-menutools a:hover,.hj-ui-menutools a:active{color:#000; text-decoration:none;}
+.hj-ui-top-menutools a,.hj-ui-top-menutools a:visited{color:#000; text-decoration:none;}
+.hj-ui-top-menutools a:hover,.hj-ui-top-menutools a:active{color:#000; text-decoration:none;}
+
+#tabs-title a,#tabs-title a:visited{color:#000; text-decoration:none;}
+#tabs-title a:hover,#tabs-title a:active{color:#000; text-decoration:underline;}
+

@@ -1,0 +1,138 @@
+.RecordRow_self_l{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 1px solid;	
+}
+.RecordRow_self_r {
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 0pt none; 
+	BORDER-TOP: #BDBDBD 1px solid;	
+}
+.RecordRow_self_t {
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+.RecordRow_self_b {
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT: #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 1px solid;	
+}
+.RecordRow_self_lr{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 0pt none; 
+	BORDER-TOP: #BDBDBD 1px solid;	
+}
+.RecordRow_self_lt{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+.RecordRow_self_lb{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 1px solid;	
+}
+.RecordRow_self_lrt{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 0pt none; 
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+.RecordRow_self_lrb{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 0pt none; 
+	BORDER-TOP: #BDBDBD 1px solid;	
+}
+.RecordRow_self_ltb{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+.RecordRow_self_lrtb{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 0pt none; 
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+.RecordRow_self_rt{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 0pt none; 
+	BORDER-TOP: #BDBDBD 1px none;	
+}
+.RecordRow_self_rb{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT: #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 0pt none; 
+	BORDER-TOP: #BDBDBD 1px solid;	
+}.RecordRow_self_rtb{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT:  #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 0pt none;
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+.RecordRow_self_tb{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 0pt none; 
+	BORDER-LEFT: #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+
+.RecordRow_ltbr {
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 1px solid; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 1px solid;
+}
+.RecordRow_self_lttype{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #BDBDBD 1px solid; 
+	BORDER-LEFT: #BDBDBD 0pt none; 
+	BORDER-RIGHT: #BDBDBD 1px solid; 
+	BORDER-TOP: #BDBDBD 0pt none;	
+}
+
+
+ .outer-container {
+ border: 0;
+ position: relative;
+ overflow: hidden;
+}
+ 
+.inner-container {
+ position: absolute;
+ left: 0;
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+ 
+.inner-container::-webkit-scrollbar {
+ display: none;
+}
+ 

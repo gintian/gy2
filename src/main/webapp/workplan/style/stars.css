@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+.starleft {
+margin-left: -4px;
+display: inline-block;
+zoom: 1;
+width: 10px;
+height: 19px;
+background: url(/workplan/image/stars.png) no-repeat;
+vertical-align: -4px;
+cursor: pointer;
+background-position: -37px 0;
+}
+.starright {
+margin-left: -4px;
+display: inline-block;
+zoom: 1;
+width: 10px;
+height: 19px;
+background: url(/workplan/image/stars.png) no-repeat;
+vertical-align: -4px;
+cursor: pointer;
+background-position: -29px 0;
+}
+.restar {
+margin-left: 10px;
+display: inline-block;
+zoom: 1;
+width: 15px;
+height: 15px;
+background: url(/workplan/image/rescore.png) no-repeat;
+vertical-align: -4px;
+cursor: pointer;
+}
+
+.starlefton {
+background-position: -19px 0;
+}
+.starrighton {
+background-position: -10px 0;
+}

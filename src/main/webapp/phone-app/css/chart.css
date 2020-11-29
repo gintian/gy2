@@ -1,0 +1,124 @@
+ .ui-header
+   {
+      position: relative;      
+      padding-top:27px;  
+      opacity: 0.9;
+      border: 0px;
+      top: 0px;    
+      overflow: hidden;
+      width: 100%;
+      display: block;
+      background: #111 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3C3C3C), to(#111));
+      color: white;
+      font-weight: bold;
+      text-shadow: black 0px -1px 1px;
+      font-variant: normal;
+   }
+   
+   .ui-top
+   {
+      position: absolute;
+      top: 0px; 
+      left: 0px;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+   }
+   .btu
+   {
+      display: inline-block;
+      font-size: 13px;
+      margin: 0px;
+      border-bottom-left-radius: 1em 1em;
+      border-bottom-right-radius: 1em 1em;
+      border-top-left-radius: 1em 1em;
+      border-top-right-radius: 1em 1em;
+      background: #333 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#333));
+      border: 1px solid #222;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: black 0px -1px 1px;
+      z-index:10;
+   }
+   .btn-left {
+     left: 10px;
+     position: absolute;
+     top: 0.4em;
+   }
+   .btn-right {
+      right: 10px;
+      position: absolute;
+      top: 0.4em;
+   }
+   .btn-inner
+   {
+      display: block;
+      height: 100%;
+      overflow: hidden;      
+      position: relative;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      padding: 0.4em 8px 0.5em;
+      border-bottom-left-radius: 1em 1em;
+      border-bottom-right-radius: 1em 1em;
+      border-top-left-radius: 1em 1em;
+      border-top-right-radius: 1em 1em;
+      border-color: rgba(255, 255, 255, 0.292969);
+      border-top: 1px solid rgba(255, 255, 255, 0.292969);
+      font-size: 13px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      text-shadow: black 0px -1px 1px;
+      padding-left: 27px;
+      
+   }
+   .icon
+   {
+      left: 4px;
+      margin-top: -9px;
+      font-size: 13px;
+      position: absolute;
+      top: 50%;
+      height: 18px;
+      width: 18px;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.398438) 0px 1px 0px;
+      background-position: -468px 0px;
+      background-color: rgba(0, 0, 0, 0.398438);
+      background-repeat: no-repeat;
+      border-bottom-left-radius: 9px 9px;
+      border-bottom-right-radius: 9px 9px;
+      border-top-left-radius: 9px 9px;
+      border-top-right-radius: 9px 9px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      text-shadow: black 0px -1px 1px;
+   }
+   .icon-forward
+  {
+     
+     background-image: url(/phone-app/jquery/css/images/icons-18-white.png);
+    
+  }
+   .icon-start
+  {
+     background-image: url(/phone-app/jquery/css/images/icons-18-white.png);
+  }
+  .ui-title
+  {
+     display: block;
+     font-size: 16px;
+     text-align: center;
+     overflow: hidden;
+     color: white;
+     font-weight: bold;    
+     position: relative;
+     top:-17px; 
+     align:center;     
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+	<head>
+		<title>职称评审专家评价系统</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
+	</head>
+
+	<link href='../../../../module/jobtitle/logon/index/jobtitle.css' rel='stylesheet' type='text/css'><link>
+	<script src="../../../../jquery/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script language="JavaScript" src="../../../../jquery/JQuery.md5.js"></script>
+	<script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+<script>
+	Ext.Loader.setConfig({
+		enabled: true,
+		paths: {
+			'JobtitleLogon': '.'
+		}
+	});
+	Ext.onReady(function(){
+		Ext.require('JobtitleLogon.Logon', function(){
+			jobtitlelogon = Ext.create("JobtitleLogon.Logon", {});//创建职称评审对象
+			
+			//添加键盘按下事件 haosl20161101
+			document.onkeydown = function enterHandler(event){
+				var inputs = document.querySelectorAll("input[TABINDEX]"); //可自行添加其它过滤条件 
+				var Code = '' ;
+				if(window.event) // IE 
+					Code = window.event.keyCode ;
+				else if(event.which) // 火狐
+					Code =event.which;
+				if (Code == 13){ //ENTER
+					for(var i=0;i<inputs.length;i++){
+						if(inputs[i].name == document.activeElement.name){ 
+							var index = inputs[i].getAttribute("TABINDEX");
+							if(i<inputs.length-1)
+								inputs[i+1].focus();
+							break;
+						}
+					}
+					if(document.activeElement.id=="logon"){
+						var logonBtn = document.getElementById("logon");
+						var username = document.getElementById("username").value;
+						var password = document.getElementById("password").value;
+						var vc = document.getElementById("vc").value;
+						// 和hcm登录一致
+						jobtitlelogon.logInCheck(username, "MD5`"+$.md5(password), vc);//调用专家投票界面的方法校验用户名和密码
+						logonBtn.blur();
+			    	}
+				}
+			};
+		});
+	});
+</script>
+<body style="overflow-y: hidden;overflow-x: hidden;">
+<form>
+	<div id="name_hint" style="display:none;z-index:111;position:absolute;overflow:hidden;color:#a1acb8;font-size:15px;letter-spacing:2px;" onclick="this.style.display='none';document.getElementById('username').focus();">用户名</div>
+	<div id="pwd_hint" style="display:none;z-index:111;position:absolute;overflow:hidden;color:#a1acb8;font-size:15px;letter-spacing:16px;" onclick="this.style.display='none';document.getElementById('password').focus();">密码</div>
+	<div id="vc_hint" style="display:none;z-index:111;position:absolute;overflow:hidden;color:#a1acb8;font-size:15px;letter-spacing:2px;" onclick="this.style.display='none';document.getElementById('vc').focus();">验证码</div>
+		<div id="bh-wzm-login-all">
+	    	<div class="hj-wzm-lg-one">
+	        	<div class="hj-wzm-one-left"><a onclick="window.open('http://www.hjsoft.com.cn');"><img style="position:relative;height:36px;top:22px;" src="/images/new_module/logo_hjsoft.png"/></a></div>
+	            <div class="hj-wzm-one-right">
+	            	<h2>职称评审专家评价系统</h2>
+	                <h4>Professional Title Evaluation Expert Evaluation System by HJSOFT </h4>
+	            </div>
+	        </div>
+	        
+	        <div class="bh-clear"></div>
+	        
+	        <div class="hj-wzm-lg-two" id="logonPanel">
+		        <div class="hj-wzm-lg-two-dinwei">
+		        	<div class="hj-lg-login"></div>
+		        	<div class="hj-wzm-lg-yonhum">
+		        		<input id="username" name="username" TABINDEX="1" type="text" class="hj-lg-yonh" value="" maxlength="25" onfocus="document.getElementById('name_hint').style.display='none';" onclick="document.getElementById('name_hint').style.display='none';" onblur="if (this.value=='') document.getElementById('name_hint').style.display='block';" oninput="if(this.value!='')document.getElementById('name_hint').style.display='none'"/>
+		        	</div>
+		            <div class="hj-wzm-lg-mima">
+		            	  <input id="password" type="password" text="password" TABINDEX="2" value="" name="password" class="hj-lg-mima" onfocus="document.getElementById('pwd_hint').style.display='none';" onblur="if (this.value=='') document.getElementById('pwd_hint').style.display='block';"/>
+		            </div>
+		            <div id="hjValidateCode" style="display:none;" class="hj-wzm-lg-yzm">
+		            	<div class="hj-wzm-lg-yzm-left">
+		            		<input id="vc" type="text" name=validatecode TABINDEX="3" class="hj-lg-yzm" value="" maxlength="10" onfocus="document.getElementById('vc_hint').style.display='none';" onclick="document.getElementById('vc_hint').style.display='none';" onblur="if (this.value=='') document.getElementById('vc_hint').style.display='block';" oninput="if(this.value!='')document.getElementById('vc_hint').style.display='none'"/>
+		            	</div>
+		            	<div class="hj-wzm-lg-yzm-center">
+		            		<img align="absMiddle" style="margin-top: 4px;" src="/servlet/vaildataCode?channel=1&codelen=4" id="vaildataCode">
+		            	</div>
+		                <div class="hj-wzm-lg-yzm-right" style="cursor:pointer;"><a onclick="var url = document.getElementById('vaildataCode').src;document.getElementById('vaildataCode').src = url+'&id=' + Math.random(); ">换一张</a></div> 
+		            </div>
+		            <div id="hjLogin" class="hj-wzm-lg-login"><input id="logon" type="button"  TABINDEX="4" value="" class="hj-lg-login-buttom" style="cursor:pointer;"/></div>
+		            
+		        </div>
+	        </div>
+	        
+	        <div class="bh-clear"></div>
+	        
+	        <div class="hj-wzm-lg-three">
+	        	<p>Copyright@2014-2017世纪软件版权所有</p>
+	        </div>
+		</div>
+</form>
+</body>
+</html>

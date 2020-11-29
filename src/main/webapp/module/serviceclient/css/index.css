@@ -1,0 +1,94 @@
+
+body{
+	 overflow-x:hidden;
+	 width:100%;
+	  
+}
+ul{
+    margin:0px;
+    padding:0px;
+}
+.x-mask {
+	width:100%;
+	height:100%
+}
+
+/**xuchangshun 此样式影响日期控件的使用,暂时先注释掉,不知道原来影响到哪里了
+.x-border-box{
+	width:100%;
+    height:100%
+}
+**/
+ul, li {
+    list-style-type: none;
+}
+#softkey {
+  position: absolute;
+  left: calc(50% - 430.5px);
+  bottom: 1px;
+  z-index:20000;
+}
+#softkey *{
+	box-sizing:content-box;
+}
+.banner {
+	overflow-x:hidden;
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    position: absolute;
+    z-index: -1;
+}
+
+.tab01 {
+    width:110px;
+    position: relative; 
+    overflow: hidden;
+    margin:0px auto;
+}
+
+.tab01 li {
+    float: left;
+}
+
+.tab01 li a {
+    display: block;
+    background: url(/module/serviceclient/images/index/white.png)
+        no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-left: 15px;
+}
+
+.tab01 li a:hover, .tab01 li a.current {
+    background: url(/module/serviceclient/images/index/yellow.png)
+        no-repeat;
+}
+.logon{
+    position: relative;
+    float:left;
+    left:50%;
+    top:120px;
+}
+.centerdiv{
+    position:relative;
+    left: -50%;
+    float:right;
+    width:auto;
+}
+.noVisible{
+    display:none;
+
+}
+.cardStyle{
+    float:left; width:280px; height:90px;  border:0; margin-left:20px;margin-bottom:10px;
+}
+#serviceButton span.x-btn-inner-default-small,#sendButton span.x-btn-inner-default-small,#closeBUtton span.x-btn-inner-default-small{
+    background-position: 0 center;/*默认*/
+    background-repeat: no-repeat;/*默认*/
+    height:20px;/*默认*/
+    color:#fff;
+    font-size:18px;/*字体大小设置*/
+}

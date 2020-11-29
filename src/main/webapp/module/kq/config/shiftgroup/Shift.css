@@ -1,0 +1,114 @@
+.x-column-header-inner {
+	padding: 3px 0px 4px 0px;
+}
+
+.selectedCls {
+	cursor: pointer;
+	border: 1px solid #FF9292;
+	position: relative;
+	height: 35px;
+	width: 65px;
+}
+
+.selectedCls span {
+	width: 0px;
+	height: 0px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border-bottom: 15px solid #ff6c6c;
+	border-left: 15px solid transparent;
+}
+
+.selectedCls div {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	width: 60px;
+	height: 35px;
+	line-height: 35px;
+}
+
+.unselectedCls {
+	cursor: pointer;
+	border: 1px solid #c5c5c5;
+	position: relative;
+	height: 35px;
+	width: 65px;
+}
+
+.unselectedCls span {
+	display: hidden
+}
+
+.unselectedCls div {
+	width: 60px;
+	height: 35px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	line-height: 35px;
+}
+
+.x-grid-row .x-grid-cell-selected {
+	background-color: #ffefbb;
+}
+
+.x-ssm-extender-drag-handle {
+	height: 8px !important;
+	width: 8px !important;
+	background-color: #edaf00 !important;
+}
+
+.x-ssm-extender-mask {
+	border: 1px dashed #edaf00;
+}
+
+.shiftInfoCls {
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	text-align: left;
+	vertical-align: middle;
+	max-width: 80px;
+	line-height: 16px;
+}
+
+.deleteButtonCls {
+	float: right;
+	display: block;
+	border: 1px solid #c5c5c5;
+	height: 15px;
+	width: 15px;
+	text-align: center;
+	cursor: pointer;
+	background-color: red;
+	line-height: 13px;
+	color: #FFFFFF;
+}
+
+ul {
+	padding: 0px;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.item_xuhao {
+	width: 16px;
+	height: 16px;
+	background-image: url(/module/kq/images/sort_yuan.png);
+	position: absolute;
+	top: -20px;
+	left: 55px;
+	color: white;
+	line-height: 16px;
+	text-align: center;
+	display: none;
+}

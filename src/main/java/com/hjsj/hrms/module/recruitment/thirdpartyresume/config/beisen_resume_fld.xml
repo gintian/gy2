@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheme>
+ <sets>
+  <set setname="基本信息" setid ="Profile">
+    <menus>  
+     <menu itemid="R_InitializeApplyDate" itemname="最新投递时间" commonvalue="" />
+     <menu itemid="Constellation" itemname="星座" commonvalue="" />
+     <menu itemid="GRE" itemname="GRE分数" commonvalue="" />
+     <menu itemid="BloodType" itemname="血型" commonvalue="" />
+     <menu itemid="polity" itemname="政治面貌" commonvalue="" />
+     <menu itemid="Address" itemname="通讯地址" commonvalue="" />
+     <menu itemid="CertificateType" itemname="证件类型" commonvalue="" />
+     <menu itemid="R_LastWorkEndDate" itemname="最近工作结束时间" commonvalue="" />
+     <menu itemid="ExpectSalary" itemname="期望月薪(税前)" commonvalue="" />
+     <menu itemid="R_LastRelationStoreDB" itemname="人才库" commonvalue="" />
+     <menu itemid="HasChild" itemname="有无子女" commonvalue="" />
+     <menu itemid="IsAbroad" itemname="有无留学经历" commonvalue="" />
+     <menu itemid="IDPhoto" itemname="证件照" commonvalue="" />
+     <menu itemid="WorkStartTime" itemname="参加工作时间" commonvalue="" />
+     <menu itemid="R_LastDiscipline" itemname="专业名称" commonvalue="" />
+     <menu itemid="PersonnelFilePlace" itemname="人事档案所在单位" commonvalue="" />
+     <menu itemid="WedState" itemname="婚姻状况" commonvalue="" />
+     <menu itemid="EntrantDate" itemname="到岗时间" commonvalue="" />
+     <menu itemid="HomePage" itemname="个人主页" commonvalue="" />
+     <menu itemid="CadidateId" itemname="CadidateId" commonvalue="" />
+     <menu itemid="R_RelationJobCount" itemname="有无多次申请" commonvalue="" />
+     <menu itemid="JapaneseLevel" itemname="日语等级" commonvalue="" />
+     <menu itemid="InsurancePayPlace" itemname="社会保险缴付地" commonvalue="" />
+     <menu itemid="Score" itemname="英语等级成绩" commonvalue="" />
+     <menu itemid="R_EngagedIndustry" itemname="现从事行业" commonvalue="" />
+     <menu itemid="ExpectAnnualSalary" itemname="期望年薪(税前)" commonvalue="" />
+     <menu itemid="IsFreshGraduated" itemname="应届/往届" commonvalue="" />
+     <menu itemid="R_LastDisciplineKind" itemname="专业类别" commonvalue="" />
+     <menu itemid="EducationLevel" itemname="最高学历" commonvalue="" />
+     <menu itemid="R_lastEducationLevel" itemname="最近学历" commonvalue="" />
+     <menu itemid="Nationality" itemname="国籍" commonvalue="" />
+     <menu itemid="R_LastPhaseId" itemname="最新阶段ID" commonvalue="" />
+     <menu itemid="CertificateNumber" itemname="证件号码" commonvalue="" />
+     <menu itemid="R_LastCompany" itemname="最近工作单位" commonvalue="" />
+     <menu itemid="ThesisTitle" itemname="毕业论文题目" commonvalue="" />
+     <menu itemid="CollegeContact" itemname="院系联系人" commonvalue="" />
+     <menu itemid="R_LastLockUser" itemname="锁定人" commonvalue="" />
+     <menu itemid="WorkState" itemname="求职状态" commonvalue="" />
+     <menu itemid="R_LastStateId" itemname="最新状态ID" commonvalue="" />
+     <menu itemid="GMAT" itemname="GMAT分数" commonvalue="" />
+     <menu itemid="ZipCode" itemname="邮政编码" commonvalue="" />
+     <menu itemid="ApplyDate" itemname="提交报名日期" commonvalue="" />
+     <menu itemid="R_LastIndustry" itemname="最新所属行业" commonvalue="" />
+     <menu itemid="HighestDegree" itemname="最高学位" commonvalue="" />
+     <menu itemid="ResidenceState" itemname="现居住地" commonvalue="" />
+     <menu itemid="Mobile" itemname="手机号" commonvalue="" />
+     <menu itemid="IELTS" itemname="IELTS分数" commonvalue="" />
+     <menu itemid="UpdateTime" itemname="更新时间" commonvalue="" />
+     <menu itemid="gender" itemname="性别" commonvalue="男,男性,女,女性" />
+     <menu itemid="R_SchoolIs985" itemname="是否985" commonvalue="" />
+     <menu itemid="DegreeType" itemname="学位类型" commonvalue="" />
+     <menu itemid="QQ" itemname="QQ" commonvalue="" />
+     <menu itemid="WrittenTestLocal" itemname="笔试地点" commonvalue="" />
+     <menu itemid="R_LastWorkJobDuty" itemname="最近工作职责" commonvalue="" />
+     <menu itemid="R_ApplicantId" itemname="应聘者ID" commonvalue="" />
+     <menu itemid="Religious" itemname="宗教信仰" commonvalue="" />
+     <menu itemid="YearsOfWork" itemname="工作年限" commonvalue="" />
+     <menu itemid="Nation" itemname="民族" commonvalue="" />
+     <menu itemid="CurrSalary" itemname="现月薪(税前)" commonvalue="" />
+     <menu itemid="HasEquity" itemname="是否有产权" commonvalue="" />
+     <menu itemid="EmergencyContact" itemname="紧急联系人" commonvalue="" />
+     <menu itemid="MSN" itemname="MSN" commonvalue="" />
+     <menu itemid="R_InitializeMediumId" itemname="最初媒介" commonvalue="" />
+     <menu itemid="R_CurrWorkCity" itemname="现工作城市" commonvalue="" />
+     <menu itemid="R_LastSource" itemname="最近申请渠道" commonvalue="" />
+     <menu itemid="ExptectedArrivalTime" itemname="预计报到时间" commonvalue="" />
+     <menu itemid="R_LastProcessId" itemname="最新关联流程" commonvalue="" />
+     <menu itemid="LeftEye" itemname="裸眼视力（左）" commonvalue="" />
+     <menu itemid="R_CertNames" itemname="证书名称" commonvalue="" />
+     <menu itemid="R_LastSchool" itemname="毕业学校" commonvalue="" />
+     <menu itemid="StudentFrom" itemname="生源地" commonvalue="" />
+     <menu itemid="TechnicalTitle" itemname="专业技术职称" commonvalue="" />
+     <menu itemid="R_LastMediumId" itemname="最新媒介" commonvalue="" />
+     <menu itemid="CreateTime" itemname="创建时间" commonvalue="" />
+     <menu itemid="Weight" itemname="体重" commonvalue="" />
+     <menu itemid="RightEye" itemname="裸眼视力（右）" commonvalue="" />
+     <menu itemid="R_LastSchoolType" itemname="学校类型" commonvalue="" />
+     <menu itemid="R_LastWorkStartDate" itemname="最近工作开始时间" commonvalue="" />
+     <menu itemid="R_CurrJobCategory" itemname="现从事职业" commonvalue="" />
+     <menu itemid="CollegeContactTel" itemname="院系联系人电话" commonvalue="" />
+     <menu itemid="R_LastJobCategory" itemname="职业类别" commonvalue="" />
+     <menu itemid="evaluation" itemname="自我评价" commonvalue="" />
+     <menu itemid="R_LastEduStartDate" itemname="最近教育开始时间" commonvalue="" />
+     <menu itemid="R_SchoolIs211" itemname="是否211" commonvalue="" />
+     <menu itemid="telephone" itemname="固定电话" commonvalue="" />
+     <menu itemid="CareerGoals" itemname="职业目标" commonvalue="" />
+     <menu itemid="CVId" itemname="简历标识" commonvalue="" />
+     <menu itemid="R_LastApplyDate" itemname="更新时间" commonvalue="" />
+     <menu itemid="InterviewLocation" itemname="面试地点" commonvalue="" />
+     <menu itemid="TOEFL" itemname="TOEFL分数" commonvalue="" />
+     <menu itemid="R_LastRelationJob" itemname="最近应聘职位" commonvalue="" />
+     <menu itemid="R_InitializeSource" itemname="最初申请渠道" commonvalue="" />
+     <menu itemid="ApplyJobCode" itemname="应聘职位代码" commonvalue="" />
+     <menu itemid="Name" itemname="姓名" commonvalue="" />
+     <menu itemid="TOEIC" itemname="TOEIC分数" commonvalue="" />
+     <menu itemid="NativePlace" itemname="籍贯" commonvalue="" />
+     <menu itemid="ExamCategory" itemname="英语等级" commonvalue="" />
+     <menu itemid="R_Height" itemname="身高" commonvalue="" />
+     <menu itemid="GraduationDate" itemname="毕业时间" commonvalue="" />
+     <menu itemid="R_LastEduEndDate" itemname="最近教育结束时间" commonvalue="" />
+     <menu itemid="EducationStudyMode" itemname="学习形式" commonvalue="" />
+     <menu itemid="R_ExpectJobCategory" itemname="期望从事职业" commonvalue="" />
+     <menu itemid="Birthday" itemname="出生日期" commonvalue="" />
+     <menu itemid="NameEn" itemname="英文名" commonvalue="" />
+     <menu itemid="RPR" itemname="户口所在地" commonvalue="" />
+     <menu itemid="R_ApplyCount" itemname="投递次数" commonvalue="" />
+     <menu itemid="R_ExpectWorkCity" itemname="期望工作城市" commonvalue="" />
+     <menu itemid="R_CreateDate" itemname="创建时间" commonvalue="" />
+     <menu itemid="R_ExpectIndustry" itemname="期望从事行业" commonvalue="" />
+     <menu itemid="R_UpdateDate" itemname="简历更新时间" commonvalue="" />
+     <menu itemid="email" itemname="邮箱" commonvalue="" />
+     <menu itemid="Height" itemname="身高" commonvalue="" />
+     <menu itemid="R_ExpectWorkKind" itemname="期望工作性质" commonvalue="" />
+     <menu itemid="PresentAnnualSalary" itemname="目前年薪(税前)" commonvalue="" />
+     <menu itemid="EmergencyPhone" itemname="紧急联系电话" commonvalue="" />
+     <menu itemid="AZGZQCXZG" itemname="中国证券从业资格" commonvalue="" />
+     <menu itemid="ZGJJCYZG" itemname="中国基金从业资格" commonvalue="" />
+     <menu itemid="ZGQHCYZG" itemname="中国期货从业资格" commonvalue="" />
+     <menu itemid="ZGZCKJS" itemname="中国注册会计师（CPA）" commonvalue="" />
+     <menu itemid="ZGGJSFKS" itemname="中国国家司法考试" commonvalue="" />
+     <menu itemid="ATXJRFXS" itemname="特许金融分析师（CFA）" commonvalue="" />
+     <menu itemid="ZCGJTZFXS" itemname="注册国际投资分析师（CIIA）" commonvalue="" />
+     <menu itemid="AXGZQCYKS" itemname="香港证券从业考试" commonvalue="" />
+     <menu itemid="JRFXGLS" itemname="金融风险管理师（FRM）" commonvalue="" />
+     <menu itemid="SFCZZQHTJRQX" itemname="是否存在证券行业禁入情形" commonvalue="" />
+     <menu itemid="ZQHYJRSM" itemname="证券行业禁入说明" commonvalue="" />
+     <menu itemid="shifouyou" itemname="是否有家属或亲戚在本公司任职" commonvalue="" />
+     <menu itemid="JSZBGSRZSM" itemname="家属或亲属在本公司任职说明" commonvalue="" />
+     <menu itemid="CertificateNumber" itemname="证件号码" commonvalue="" />
+     <menu itemid="R_LastSource" itemname="申请渠道"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="项目经验" setid ="ProjectExperience">
+    <menus> 
+     <menu itemid="StartTime" itemname="开始时间"  commonvalue="" />
+     <menu itemid="EndTime" itemname="结束时间"  commonvalue="" />
+     <menu itemid="ProjectName" itemname="项目名称"  commonvalue="" />
+     <menu itemid="Job" itemname="职务"  commonvalue="" />
+     <menu itemid="OtherInfo" itemname="项目描述"  commonvalue="" />
+     <menu itemid="duty" itemname="项目中职责"  commonvalue="" />
+     <menu itemid="performance" itemname="项目绩效"  commonvalue="" />
+     <menu itemid="ProjectNumber" itemname="项目人数"  commonvalue="" />
+     <menu itemid="ProjectSoftwareEnvironment" itemname="软件环境"  commonvalue="" />
+     <menu itemid="HardwareEnvironment" itemname="硬件环境"  commonvalue="" />
+     <menu itemid="ProjectDevelopmentTools" itemname="开发工具"  commonvalue="" />
+     <menu itemid="ProjectAchievement" itemname="项目成果"  commonvalue="" />
+    </menus>    
+  </set> 
+  <set setname="工作经验" setid ="WorkExperience">
+    <menus> 
+     <menu itemid="StartTime" itemname="开始时间"  commonvalue="" />
+     <menu itemid="EndTime" itemname="结束时间"  commonvalue="" />
+     <menu itemid="CompanyName" itemname="公司名称"  commonvalue="" />
+     <menu itemid="JobTitle" itemname="职位名称"  commonvalue="" />
+     <menu itemid="CompanyIndustry" itemname="公司所属行业"  commonvalue="" />
+     <menu itemid="Department" itemname="公司部门"  commonvalue="" />
+     <menu itemid="CompanyType" itemname="公司性质"  commonvalue="" />
+     <menu itemid="JobAddress" itemname="公司地址"  commonvalue="" />
+     <menu itemid="JobDuty" itemname="工作职责"  commonvalue="" />
+     <menu itemid="Salary" itemname="薪酬"  commonvalue="" />
+     <menu itemid="ReferenceName" itemname="证明人姓名"  commonvalue="" />
+     <menu itemid="CompanyInfo" itemname="单位介绍"  commonvalue="" />
+     <menu itemid="ReferencePosition" itemname="证明人职位"  commonvalue="" />
+     <menu itemid="ReferenceRelation" itemname="与证明人关系"  commonvalue="" />
+     <menu itemid="ReferenceLinkInfo" itemname="证明人联系方式"  commonvalue="" />
+     <menu itemid="JobCategory" itemname="职业类别"  commonvalue="" />
+     <menu itemid="JobLevel" itemname="职位级别"  commonvalue="" />
+     <menu itemid="JobProperty" itemname="工作性质"  commonvalue="" />
+     <menu itemid="IsAbroad" itemname="有无留学经验"  commonvalue="" />
+     <menu itemid="ReasonOfLeaving" itemname="离职原因"  commonvalue="" />
+     <menu itemid="CompanyScale" itemname="企业规模"  commonvalue="" />
+     <menu itemid="ReportTo" itemname="汇报对象"  commonvalue="" />
+     <menu itemid="UnderlingNumber" itemname="下属人数"  commonvalue="" />
+    </menus>    
+  </set> 
+  <set setname="培训经历" setid ="Train">
+    <menus> 
+     <menu itemid="StartTime" itemname="开始时间"  commonvalue="" />
+     <menu itemid="EndTime" itemname="结束时间"  commonvalue="" />
+     <menu itemid="CourseName" itemname="课程名称"  commonvalue="" />
+     <menu itemid="TrainDescription" itemname="培训描述"  commonvalue="" />
+     <menu itemid="Certificate" itemname="获得证书"  commonvalue="" />
+     <menu itemid="TrainCity" itemname="培训地点"  commonvalue="" />
+     <menu itemid="OrgName" itemname="培训机构"  commonvalue="" />
+     <menu itemid="TotalHour" itemname="培训课时总计"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="实习经验" setid ="PracticeExperience">
+    <menus> 
+     <menu itemid="StartTime" itemname="开始时间"  commonvalue="" />
+     <menu itemid="EndTime" itemname="结束时间"  commonvalue="" />
+     <menu itemid="PracticeCompanyName" itemname="单位名称"  commonvalue="" />
+     <menu itemid="PracticeContent" itemname="实习内容"  commonvalue="" />
+     <menu itemid="PracticeReferencesName" itemname="证明人"  commonvalue="" />
+     <menu itemid="PracticeCompanyDescription" itemname="单位介绍"  commonvalue="" />
+     <menu itemid="PracticeAddress" itemname="实习地点"  commonvalue="" />
+     <menu itemid="PracticeReferencesRelation" itemname="证明人关系"  commonvalue="" />
+     <menu itemid="PracticeReferencesPosition" itemname="证明人职务"  commonvalue="" />
+     <menu itemid="PracticeReferencesContact" itemname="证明人联系方式"  commonvalue="" />
+    </menus>    
+  </set> 
+  <set setname="在校实践" setid ="SchoolPractice">
+    <menus> 
+     <menu itemid="StartTime" itemname="开始时间"  commonvalue="" />
+     <menu itemid="EndTime" itemname="结束时间"  commonvalue="" />
+     <menu itemid="PracticeName" itemname="实践名称"  commonvalue="" />
+     <menu itemid="PracticeDescription" itemname="实践描述"  commonvalue="" />
+    </menus>    
+  </set> 
+  <set setname="教育背景" setid ="EducationExperience">
+    <menus> 
+     <menu itemid="StartTime" itemname="开始时间"  commonvalue="" />
+     <menu itemid="EndTime" itemname="结束时间"  commonvalue="" />
+     <menu itemid="SchoolName" itemname="毕业学校"  commonvalue="" />
+     <menu itemid="MajorName" itemname="专业名称"  commonvalue="" />
+     <menu itemid="EducationLevel" itemname="受教育程度"  commonvalue="" />
+     <menu itemid="Degree" itemname="学位"  commonvalue="" />
+     <menu itemid="MajorCategory" itemname="专业类别"  commonvalue="" />
+     <menu itemid="MajorCourses" itemname="专业课程"  commonvalue="" />
+     <menu itemid="FormsOfLearning" itemname="学习形式"  commonvalue="" />
+     <menu itemid="City" itemname="城市"  commonvalue="" />
+     <menu itemid="CollegeName" itemname="学院名称"  commonvalue="" />
+     <menu itemid="TrainingMode" itemname="培养方式"  commonvalue="" />
+     <menu itemid="IsAbroad" itemname="是否为海外留学"  commonvalue="" />
+     <menu itemid="MajorDescription" itemname="专业描述"  commonvalue="" />
+     <menu itemid="SubjectResearch" itemname="课题研究"  commonvalue="" />
+     <menu itemid="GraduationThesis" itemname="毕业论文/设计/作品"  commonvalue="" />
+     <menu itemid="TutorName" itemname="导师"  commonvalue="" />
+     <menu itemid="TutorPostion" itemname="导师职务"  commonvalue="" />
+     <menu itemid="TutorContact" itemname="导师联系方式"  commonvalue="" />
+     <menu itemid="SchoolReferenceName" itemname="证明人"  commonvalue="" />
+     <menu itemid="SchoolReferenceRelation" itemname="证明人关系"  commonvalue="" />
+     <menu itemid="SchoolReferencePosition" itemname="证明人职务"  commonvalue="" />
+     <menu itemid="SchoolReferenceContact" itemname="证明人联系方式"  commonvalue="" />
+     <menu itemid="ClassCount" itemname="班级人数"  commonvalue="" />
+     <menu itemid="GPA" itemname="成绩"  commonvalue="" />
+     <menu itemid="PlaceInClass" itemname="班级排名"  commonvalue="" />
+     <menu itemid="MajorOrder" itemname="专业排名"  commonvalue="" />
+     <menu itemid="Description" itemname="描述及课程"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="面试信息" setid ="InterviewInfoSummaries">
+    <menus> 
+     <menu itemid="InterviewId" itemname="面试ID"  commonvalue="" />
+     <menu itemid="InterviewTime" itemname="面试时间"  commonvalue="" />
+     <menu itemid="InterviewTitle" itemname="面试主题"  commonvalue="" />
+     <menu itemid="Officers" itemname="面试官"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="面试评价信息" setid ="InterviewSummaries">
+    <menus> 
+     <menu itemid="JobId" itemname="职位ID"  commonvalue="" />
+     <menu itemid="InterviewId" itemname="面试Id"  commonvalue="" />
+     <menu itemid="InterviewResultId" itemname="面试结果ID"  commonvalue="" />
+     <menu itemid="Location" itemname="面试地点"  commonvalue="" />
+     <menu itemid="Officer" itemname="面试官"  commonvalue="" />
+     <menu itemid="Score" itemname="面试分数"  commonvalue="" />
+     <menu itemid="Conclusion" itemname="面试结果"  commonvalue="" />
+     <menu itemid="Evaluate" itemname="面试评价"  commonvalue="" />
+     <menu itemid="InterviewTime" itemname="面试时间"  commonvalue="" />
+     <menu itemid="EvaluateTime" itemname="面试评价时间"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="职位信息" setid ="JobSummary">
+    <menus> 
+     <menu itemid="JobId" itemname="职位ID"  commonvalue="" />
+     <menu itemid="JobCode" itemname="职位代码"  commonvalue="" />
+     <menu itemid="JobTitle" itemname="职位名称"  commonvalue="" />
+     <menu itemid="RecruitCategory" itemname="招聘类型"  commonvalue="" />
+     <menu itemid="Organization" itemname="组织机构"  commonvalue="" />
+     <menu itemid="SyncId" itemname="调用CreateJob时，返回的Id值"  commonvalue="" />
+     <!--<menu itemid="JobCustomFields" itemname="职位上的自定义字段"  commonvalue="" />-->
+     <menu itemid="WorkLocation" itemname="工作地点"  commonvalue="" />
+     <menu itemid="DutyUserEmail" itemname="职位负责人邮箱"  commonvalue="" />
+     <menu itemid="ApplyInfo" itemname="应聘者在职位上的申请信息"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="测评结果信息" setid ="TestResult">
+    <menus> 
+     <menu itemid="MatchDegree" itemname="匹配度"  commonvalue="" />
+     <menu itemid="MatchDegreeReports" itemname="匹配度报告"  commonvalue="" />
+     <menu itemid="AbilityScore" itemname="能力得分"  commonvalue="" />
+     <menu itemid="AbilityScoreReports" itemname="能力得分报告"  commonvalue="" />
+     <menu itemid="ExamScore" itemname="考试得分"  commonvalue="" />
+     <menu itemid="ExamScoreReports" itemname="考试报告"  commonvalue="" />
+     <menu itemid="PsychologyHealthyLevel" itemname="心理健康等级"  commonvalue="" />
+     <menu itemid="PsychologyHealthyLevelReports" itemname="心理健康报告"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="测评报告信息" setid ="Report">
+    <menus> 
+     <menu itemid="Name" itemname="报告名称"  commonvalue="" />
+     <menu itemid="Url" itemname="报告Url"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="用户信息" setid ="User">
+    <menus> 
+     <menu itemid="Organization" itemname="所属组织机构"  commonvalue="" />
+     <menu itemid="Name" itemname="姓名"  commonvalue="" />
+     <menu itemid="JobNumber" itemname="工号"  commonvalue="" />
+     <menu itemid="Email" itemname="邮箱"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="家庭成员" setid ="FamilyList">
+    <menus> 
+     <menu itemid="Email" itemname="邮箱"  commonvalue="" />
+     <menu itemid="FamilyLocaltion" itemname="家庭住址"  commonvalue="" />
+     <menu itemid="Name" itemname="姓名"  commonvalue="" />
+     <menu itemid="Relation" itemname="关系"  commonvalue="" />
+     <menu itemid="Telephone" itemname="联系电话"  commonvalue="" />
+     <menu itemid="Age" itemname="年龄"  commonvalue="" />
+     <menu itemid="PoliticalStatus" itemname="政治面貌"  commonvalue="" />
+     <menu itemid="JobTitle" itemname="职务"  commonvalue="" />
+     <menu itemid="FamilyLocaltion" itemname="家庭地址"  commonvalue="" />
+     <menu itemid="CompanyName" itemname="工作单位"  commonvalue="" />
+     <menu itemid="WorkPlace" itemname="工作所在地"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="证书" setid ="Certificate">
+    <menus> 
+     <menu itemid="CertificateName" itemname="证书名称"  commonvalue="" />
+     <menu itemid="AwardOrg" itemname="证书颁发机构"  commonvalue="" />
+     <menu itemid="CertificateNo" itemname="证书编号"  commonvalue="" />
+     <menu itemid="StartTime" itemname="有效期"  commonvalue="" />
+     <menu itemid="EndTime" itemname="有效期"  commonvalue="" />
+     <menu itemid="CertificateCategory" itemname="证书种类"  commonvalue="" />
+     <menu itemid="ObtainDate" itemname="获得时间"  commonvalue="" />
+     <menu itemid="CertificateDescription" itemname="证书描述"  commonvalue="" />
+     <menu itemid="Score" itemname="成绩"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="语言能力" setid ="LanguageAbility">
+    <menus> 
+     <menu itemid="LanguageType" itemname="语言类型"  commonvalue="" />
+     <menu itemid="LanguageLevel" itemname="掌握程度"  commonvalue="" />
+     <menu itemid="ListeningSpeakingAbility" itemname="听说"  commonvalue="" />
+     <menu itemid="ReadingWritingAbility" itemname="读写"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="其他信息" setid ="OtherInfo">
+    <menus> 
+     <menu itemid="CustomFields" itemname="其他信息上的自定义字段"  commonvalue="" />
+     <menu itemid="Religious" itemname="宗教信仰"  commonvalue="" />
+     <menu itemid="Interest" itemname="兴趣爱好"  commonvalue="" />
+     <menu itemid="glory" itemname="获得荣誉"  commonvalue="" />
+     <menu itemid="organization" itemname="专业组织"  commonvalue="" />
+     <menu itemid="writings" itemname="学术专著"  commonvalue="" />
+     <menu itemid="Specialty" itemname="特长"  commonvalue="" />
+     <menu itemid="AdditionalContent" itemname="内容"  commonvalue="" />
+     <menu itemid="Specialskills" itemname="专利成果"  commonvalue="" />
+     <menu itemid="Socialactivities" itemname="社会活动"  commonvalue="" />
+     <menu itemid="Honor" itemname="荣誉"  commonvalue="" />
+     <menu itemid="Recommendation" itemname="推荐信"  commonvalue="" />
+     <menu itemid="Others" itemname="其他"  commonvalue="" />
+     <menu itemid="AdditionalTitle" itemname="标题"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="求职意向" setid ="Objectiveitem">
+    <menus> 
+     <menu itemid="Description" itemname="描述"  commonvalue="" />
+     <menu itemid="PresentAnnualSalary" itemname="目前年薪(税前)"  commonvalue="" />
+     <menu itemid="ExpectAnnualSalary" itemname="期望年薪(税前)"  commonvalue="" />
+     <menu itemid="EngagedIndustry" itemname="现从事行业"  commonvalue="" />
+     <menu itemid="CurrJobCategory" itemname="现从事职业"  commonvalue="" />
+     <menu itemid="CurrWorkCity" itemname="现工作城市"  commonvalue="" />
+     <menu itemid="CurrSalary" itemname="现月薪(税前)"  commonvalue="" />
+     <menu itemid="ExpectIndustry" itemname="期望从事行业"  commonvalue="" />
+     <menu itemid="ExpectJobCategory" itemname="期望从事职业"  commonvalue="" />
+     <menu itemid="ExpectWorkCity" itemname="期望工作城市"  commonvalue="" />
+     <menu itemid="ExpectSalary" itemname="期望月薪(税前)"  commonvalue="" />
+     <menu itemid="EntrantDate" itemname="到岗时间"  commonvalue="" />
+     <menu itemid="WorkState" itemname="求职状态"  commonvalue="" />
+     <menu itemid="ExpectWorkKind" itemname="期望工作性质"  commonvalue="" />
+     <menu itemid="ExptectedArrivalTime" itemname="预计报到时间"  commonvalue="" />
+     <menu itemid="IsAbroad" itemname="海外经历"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="应聘者附件" setid ="Attachment">
+    <menus> 
+     <menu itemid="AttachmentName" itemname="附件名称"  commonvalue="" />
+     <menu itemid="AttachmentUrl" itemname="附件查看链接"  commonvalue="" />
+     <menu itemid="AttachmentDownloadUrl" itemname="附件下载链接"  commonvalue="" />
+     <menu itemid="AttachmentType" itemname="附件类型：1:简历,2:简历附件，3:证件照，4:普通附件"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="获奖情况" setid ="AwardsWon">
+    <menus> 
+     <menu itemid="AwardName" itemname="奖项"  commonvalue="" />
+     <menu itemid="AwardLevel" itemname="获奖级别"  commonvalue="" />
+     <menu itemid="AwardDescription" itemname="获奖描述"  commonvalue="" />
+     <menu itemid="AwardTime" itemname="获奖时间"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="论文专著" setid ="Published">
+    <menus> 
+     <menu itemid="WritingsTitle" itemname="名称"  commonvalue="" />
+     <menu itemid="WritingsPublishDate" itemname="发布时间"  commonvalue="" />
+     <menu itemid="WritingsOnPeriodical" itemname="所属期刊"  commonvalue="" />
+     <menu itemid="WritingsAuthorOrder" itemname="作者顺序"  commonvalue="" />
+     <menu itemid="WritingsOnPeriodicalNumber" itemname="年度/期次"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="在校职务" setid ="SchoolOffice">
+    <menus> 
+     <menu itemid="CadreStartDateTime" itemname="开始时间"  commonvalue="" />
+     <menu itemid="CadreEndDateTime" itemname="结束时间"  commonvalue="" />
+     <menu itemid="CadreDescription" itemname="在校职务描述"  commonvalue="" />
+     <menu itemid="CadreName" itemname="职务名称"  commonvalue="" />
+    </menus>    
+  </set>
+  <set setname="技能" setid ="Skill">
+    <menus> 
+     <menu itemid="SkillName" itemname="技能名称"  commonvalue="" />
+     <menu itemid="UseTime" itemname="使用时间"  commonvalue="" />
+     <menu itemid="SkillLevel" itemname="掌握程度"  commonvalue="" />
+     <menu itemid="SkillDescription" itemname="技能描述"  commonvalue="" />
+    </menus>    
+  </set>
+ 
+  <set setname="项目管理经验" setid ="TeamManager">
+    <menus> 
+     <menu itemid="CompanyName" itemname="单位名称"  commonvalue="" />
+     <menu itemid="DirectUnderlingCount" itemname="下属人数"  commonvalue="" />
+     <menu itemid="achievement" itemname="业绩描述"  commonvalue="" />
+     <menu itemid="ReportToCN" itemname="汇报对象"  commonvalue="" />
+     <menu itemid="YearlyIncome" itemname="年收入"  commonvalue="" />
+     <menu itemid="ReasonOfLeaving" itemname="离职转岗原因"  commonvalue="" />
+    </menus>    
+  </set> 
+ </sets>
+</scheme> 

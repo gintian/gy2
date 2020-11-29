@@ -1,0 +1,43 @@
+.ListTable
+{
+
+    BORDER-BOTTOM: medium none; 
+    BORDER-COLLAPSE: collapse; 
+    BORDER-LEFT: medium none; 
+    BORDER-RIGHT: medium none; 
+    BORDER-TOP: medium none; 
+}
+
+.TableRow {
+	background-position : center left;
+	font-size: 16px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+}
+
+.RecordRow {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	font-size: 16px;
+	border-collapse:collapse; 
+	height:22;
+}
+
+/**涓昏彍鍗曞浘鏍�*/
+.myicon {background: url(/phone-app/images/3.png) center top no-repeat !important;}
+.myicon1 {background: url(/phone-app/images/2.png) center top no-repeat !important;}
+.myicon2 {background: url(/phone-app/images/4.png) center top no-repeat !important;}
+.myicon3 {background: url(/phone-app/images/5.png) center top no-repeat !important;}
+.myicon4 {background: url(/phone-app/images/6.png) center top no-repeat !important;}
+.myicon5 {background: url(/phone-app/images/hroster.png) center top no-repeat !important;}
+.myicon6 {background: url(/phone-app/images/signin.png) center top no-repeat !important;}
+.myicon7 {background: url(/phone-app/images/signout.png) center top no-repeat !important;}

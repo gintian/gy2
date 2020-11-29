@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	********************声明*******************
+	
+
+ -->
+<wf-mappings>
+    
+    <wfi-mapping funcid="ORG0000001">
+         <transaction-name>初始化数据</transaction-name>
+         <transaction-desc>初始化数据</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.GetVirturalMemberTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+		<wfi-mapping funcid="ORG0000002">
+         <transaction-name>保存虚拟机构</transaction-name>
+         <transaction-desc>保存虚拟机构</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.SaveMemberTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+        <wfi-mapping funcid="ORG0000007">
+         <transaction-name>初始化数据</transaction-name>
+         <transaction-desc>初始化数据</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.NewVirturalMemberTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+        
+        <wfi-mapping funcid="ORG0000003">
+         <transaction-name>撤销虚拟机构</transaction-name>
+         <transaction-desc>撤销虚拟机构</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.DeleteMemberTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+        <wfi-mapping funcid="ORG0000005">
+         <transaction-name>初始化虚拟角色</transaction-name>
+         <transaction-desc>初始化虚拟角色</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.GetVirturalRoleTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ORG0000006">
+         <transaction-name>角色维护（增、删）</transaction-name>
+         <transaction-desc>角色维护（增、删）</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.EditRoleTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ORG0000015">
+         <transaction-name>搜索数据</transaction-name>
+         <transaction-desc>搜索数据</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.SearchVirtualMemberTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="ORG0000016">
+         <transaction-name>查询虚拟机构</transaction-name>
+         <transaction-desc>查询虚拟机构</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.GetSeachVirturalMemberTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ORG0000017">
+         <transaction-name>c搜索数据</transaction-name>
+         <transaction-desc>c搜索数据</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.org.virtualorg.trans.SearchViewerVirtualMemberTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

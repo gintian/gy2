@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+	<head>
+		<title>考勤方案</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7"> 
+<meta name="format-detection" content="telephone=no">
+	</head>
+	<body Style="width:100%">
+	</body>
+	<script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+	<script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>
+	<script type="text/javascript" src="../../../../components/personPicker/PersonPicker.js"></script>
+	<script language="JavaScript" src="../../../../components/stepview/StepView.js"></script>
+	<script type="text/javascript">
+		
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'KqSchemeURL': '/module/kq/config/scheme'
+			}
+		});
+		
+		var url = window.location.search;
+		Ext.onReady(function(){
+			Ext.require('KqSchemeURL.SchemeList', function(){
+				Ext.create("KqSchemeURL.SchemeList", {url : url});
+			});
+		});
+ 	</script>
+</html>

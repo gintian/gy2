@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheme>
+  <sets ><!--子集 setid:才智字段 为空值表示从主类中取-->
+    <set setname="基本信息" setid ="">
+       <menus>  <!--指标 itemid:才智字段 itemname:ehr简历指标 commonvalue 此指标常用值-->
+         <menu itemid="Name" itemname="姓名" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Sex" itemname="性别" itemtype="A" itemlength="30" itemformat=""  
+           commonvalue="男,女,男性,女性"/>
+         <menu itemid ="National" itemname="民族" itemtype="A" itemlength="30" itemformat="" 
+            commonvalue="汉,汉族"/>
+         <menu itemid ="Married" itemname="婚姻状况" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Brith" itemname="出生日期" itemtype="D" itemlength="30" itemformat="yyyy年mm月dd" />
+         <menu itemid ="Jiguan" itemname="籍贯" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Address" itemname="通讯地址" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="PostCode" itemname="邮编" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Political" itemname="政治面貌" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="IDNO" itemname="身份证号" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Phone" itemname="座机" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Mobile" itemname="移动电话" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Email" itemname="电子信箱" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid ="Personal" itemname="自我评价" itemtype="M" itemlength="30" itemformat="" />
+         <menu itemid ="QQ" itemname="QQ" itemtype="A" itemlength="30" itemformat="" />         
+      </menus>        
+    </set>
+
+    <set setname="求职意向"  setid ="">
+       <menus>  
+         <menu itemid="Title2" itemname="应聘岗位" itemtype="A" itemlength="100" itemformat="" />
+         <menu itemid="AimInstitution" itemname="应聘机构" itemtype="A" itemlength="100" itemformat="" />
+         <menu itemid="Title" itemname="求职意向" itemtype="A" itemlength="100" itemformat="" />
+         <menu itemid="ForwardVocation" itemname="期望从事行业" itemtype="A" itemlength="100" itemformat="" />
+         <menu itemid="Forwardlocation" itemname="期望工作地区" itemtype="A" itemlength="100" itemformat="" />
+         <menu itemid="AimSalary" itemname="期望薪水" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Salary" itemname="目前薪水" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Vocation" itemname="现从事行业" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="NowLocation" itemname="现工作地址" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Name" itemname="工作经验" itemtype="M" itemlength="100" itemformat="" />
+       </menus>        
+    </set>    
+    <set setname="教育信息"  setid ="EducationInfo">
+       <menus>  
+         <menu itemid="StartDate" itemname="开始时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="EndDate" itemname="结束时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="School" itemname="学校名称" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Name" itemname="专业" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Name" itemname="学历" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Name" itemname="详细描述" itemtype="M" itemlength="30" itemformat="" />
+         <menu itemid="Name" itemname="留学经历" itemtype="M" itemlength="30" itemformat="" />
+       </menus>        
+    </set>    
+    <set setname="工作经历" setid ="ExperienceInfo">
+       <menus>  
+         <menu itemid="StartDate" itemname="开始时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="EndDate" itemname="结束时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="Company" itemname="公司名称" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Location" itemname="工作地点" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Vocation" itemname="从事行业" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Size" itemname="企业规模" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Type" itemname="企业性质" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Department" itemname="所在部门" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Title" itemname="职务" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Summary" itemname="详细介绍" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Leader" itemname="领导" itemtype="A" itemlength="30" itemformat="" />        
+       </menus>        
+    </set> 
+    <set setname="项目经验"  setid ="ProjectInfo">
+       <menus>  
+         <menu itemid="StartDate" itemname="开始时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="EndDate" itemname="结束时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="ProjectName" itemname="项目名称" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="ProjectDescription" itemname="项目描述" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Responsibilities" itemname="项目职责" itemtype="A" itemlength="30" itemformat="" />
+       </menus>        
+    </set>  
+    <set setname="培训经历" setid ="TrainingInfo">
+       <menus>  
+         <menu itemid="StartDate" itemname="开始时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="EndDate" itemname="结束时间" itemtype="D" itemlength="30" itemformat="" />
+         <menu itemid="TrainingInstitution" itemname="培训机构" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="TrainingLocation" itemname="培训地点" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="TrainingCourse" itemname="培训课程" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Certificate" itemname="所获证书" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="DescriptionInDetails" itemname="培训详情" itemtype="M" itemlength="30" itemformat="" />
+       </menus>        
+    </set> 
+    <set setname="IT技能" setid ="ITSkills">
+       <menus>  
+         <menu itemid="SkillType" itemname="技能名称" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="TimeOfUse" itemname="使用时间" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="CompetencyLevel" itemname="掌握程度" itemtype="A" itemlength="30" itemformat="" />
+       </menus>        
+    </set> 
+    <set setname="语言能力" setid ="LanguagesSkills">
+       <menus>  
+         <menu itemid="Languages" itemname="语种" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="ListeningSpeakingSkills" itemname="听说能力" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="ReadingWritingSkills" itemname="读写能力" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Score" itemname="分数" itemtype="A" itemlength="30" itemformat="" />
+         <menu itemid="Skills" itemname="程度" itemtype="A" itemlength="30" itemformat="" />
+       </menus>        
+    </set> 
+  </sets>
+</scheme> 

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>职称评审专家评价系统</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7"/>
+    <script language="JavaScript" src="/module/utils/js/template.js"></script>
+    <style type="text/css">
+        #bh-wzm-index-all {
+            width: 100%;
+            margin: 0 auto;
+            background: #f7f7f7;
+        }
+
+        .hj-wzm-in-one {
+            height: 80px;
+            margin: 0 auto;
+            padding: 0 0 0 50px;
+        }
+
+        .hj-wzm-in-left {
+            float: left;
+        }
+
+        .hj-wzm-in-right {
+            float: left;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .hj-wzm-in-right h2 {
+            color: #7f7f7f;
+            font-family: '微软雅黑';
+            font-size: 16px;
+            margin-top: -2px;
+            margin-bottom: 2px
+        }
+
+        .hj-wzm-in-right h4 {
+            color: #b2b2b2;
+            width: 260px;
+            line-height: 12px;
+            margin-top: 2px;
+            font-size: 10px;
+            font-family: 'Arial, Helvetica, sans-serif';
+        }
+    </style>
+</head>
+<body>
+<div id="bh-wzm-index-all">
+    <div class="hj-wzm-in-one">
+        <div class="hj-wzm-in-left"><a onclick="window.open('http://www.hjsoft.com.cn');"><img
+                style="position:relative;height:36px;top:22px;" src="/images/new_module/logo_hjsoft.png"/></a></div>
+        <div class="hj-wzm-in-right">
+            <h2>职称评审专家评价系统</h2>
+            <h4>Professional Title Evaluation Expert Evaluation System by HJSOFT </h4>
+        </div>
+    </div>
+
+    <div class="bh-clear"></div>
+</div>
+<Iframe id="khframe" src="" width="100%" height="100%" scrolling="no"
+        frameborder="0"></iframe>
+<script>
+    window.onload = function () {
+        Ext.getDom('khframe').src = './CardView.html';
+        Ext.getDom('khframe').height = document.documentElement.clientHeight - 80;
+    }
+</script>
+</body>
+</html>

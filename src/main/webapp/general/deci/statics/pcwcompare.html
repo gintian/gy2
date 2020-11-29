@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<script type="text/javascript" src="/ext/adapter/ext/ext-base.js"></script>
+		<script type="text/javascript" src="/ext/ext-all.js"></script>
+		<script type="text/javascript" src="/ext/ext-lang-zh_CN.js"></script>
+		<script type="text/javascript" src="/ext/rpc_command.js"></script>
+		<script type='text/javascript' src='/ajax/basic.js'></script>
+		<script type='text/javascript' src='/js/validate.js'></script>
+		<script type='text/javascript' src='/module/utils/js/hrLayout.js'></script>
+		<link rel="stylesheet" type="text/css"
+			href="/ext/resources/css/ext-all.css" />
+		<link rel="stylesheet" href="/css/hrLayout.css" type="text/css"></link>
+	</head>
+	<body>
+		<div id="panel"></div>
+	</body>
+	<script type="text/javascript">
+	Ext.onReady(function() {
+		HrLayout.mainPanel = new Ext.Panel( {
+			xtype : 'panel',
+			id : 'center',
+			title : '<div id="divid" style="height:25px;">'
+				   +'<div id="div1" style="float:left;"></div>'
+			       +'<div id="div2" style="float:left;"></div>'
+			       +'<div id="div3" style="float:left;"></div>'
+			       +'</div>',
+			layout : 'border',
+			border : false
+		});
+
+		new Ext.Viewport( {
+			layout : "fit",
+			items : HrLayout.mainPanel
+		});
+		HrLayout.addTitle();
+	});
+
+	HrLayout.addTitle = function (){
+		var url = window.location.search;
+		var map = new HashMap();
+		map.put("urlpath", url);
+
+		Rpc( {
+			functionId : '1010010102',
+			success : HrLayout.sformulaListSucc
+		}, map);
+	};
+	
+	HrLayout.sformulaListSucc = function (response){
+		var map = Ext.decode(response.responseText);
+		var store = Ext.decode(map.sformula);
+		var yearlist = Ext.decode(map.yearlist);
+		var year = map.year;
+		var showsformula = map.showsformula;
+		HrLayout.pageid = map.pageid;
+		HrLayout.parms = map.parms;
+		HrLayout.page = map.page;
+		
+		var states = Ext.create('Ext.data.Store', {
+		    fields: ['value', 'name'],
+		    data : store
+		});
+		
+		var fieldLabel = '用工形式';
+		if("rate" == HrLayout.page)
+			fieldLabel = '回报率';
+		else if("pcle" == HrLayout.page)
+			fieldLabel = '指标选择';
+			
+		//生成统计方式下拉列表
+		Ext.create('Ext.form.ComboBox', {
+			id:'sformulaid',
+		    fieldLabel: fieldLabel,
+		    labelAlign: 'right',
+		    labelWidth: 60,
+		    store: states,
+		    queryMode: 'local',
+		    displayField: 'name',
+		    valueField: 'value',
+		    renderTo: 'div1',
+		    listeners:{
+				select:function(combo,record,opts) {
+					HrLayout.sformula = record[0].get("value");
+					HrLayout.insertHtml();
+			}
+		} 
+		});
+		Ext.getCmp('sformulaid').setValue(states.getAt('0').get("value"));
+
+		var yearStore = Ext.create('Ext.data.Store', {
+		    fields: ['value', 'name'],
+		    data : yearlist
+		});
+		//生成统计方式下拉列表
+		Ext.create('Ext.form.ComboBox', {
+			id:'yearid',
+		    fieldLabel: '年度',
+		    labelAlign:'right',
+		    labelWidth: 60,
+		    store: yearStore,
+		    queryMode: 'local',
+		    displayField: 'name',
+		    valueField: 'value',
+		    renderTo: 'div2',
+		    listeners:{
+				select:function(combo,record,opts) {
+					HrLayout.year = record[0].get("value");
+					HrLayout.insertHtml();
+			}
+		} 
+		});
+
+		var year = yearStore.getAt('0').get("value");
+		Ext.getCmp('yearid').setValue(year);
+ 
+		var statimgtypeStore = Ext.create('Ext.data.Store', {
+		    fields: ['value', 'name'],
+		    data : [
+		    	{value:'1',name:'柱状图'},
+		    	{value:'2',name:'折线图'}
+		    ]
+		});
+		//生成统计方式下拉列表
+		Ext.create('Ext.form.ComboBox', {
+			id:'statimgtype',
+		    fieldLabel: '图形类型',
+		    labelAlign:'right',
+		    labelWidth: 60,
+		    store: statimgtypeStore,
+		    queryMode: 'local',
+		    displayField: 'name',
+		    valueField: 'value',
+		    renderTo: 'div3',
+		    listeners:{
+				select:function(combo,record,opts) {
+					HrLayout.statimgtype = record[0].get("value");
+					HrLayout.insertHtml();
+			}
+		} 
+		});
+		
+		var year = yearStore.getAt('0').get("value");
+		Ext.getCmp('statimgtype').setValue('1');
+		if(!HrLayout.statimgtype)
+			HrLayout.statimgtype = '1';
+		
+		
+		HrLayout.sformula = Ext.getCmp('sformulaid').getValue();
+		HrLayout.year = Ext.getCmp('yearid').getValue();
+		HrLayout.insertHtml();
+	}
+
+	HrLayout.insertHtml= function(){
+		var html = "<iframe src='/templates/index/bi_portal.html?pageid="+HrLayout.pageid + HrLayout.parms+"&sformula="+HrLayout.sformula+"&year="+HrLayout.year+"&statimgtype="+HrLayout.statimgtype+"' frameborder='0' marginwidth='0' marginheight='0' width='100%' height='100%'></iframe>";
+		Ext.getCmp('center').getTargetEl().setHTML(html);
+	}
+</script>
+</html>

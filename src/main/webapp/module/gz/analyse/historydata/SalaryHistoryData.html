@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh">
+<head>
+    <title>薪资历史数据</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7">
+
+    <style type="text/css">
+        .spSelectedCls {
+            background-color: #CBE4FD;
+            /*font-weight: bold;*/
+        }
+
+        .spOverCls {
+            background-color: #CBE4FD;
+        }
+        .checkNoUnderline {margin-left:10px;margin-right:10px;}
+        .checkUnderline {margin-left:10px;margin-right:10px;color:#F4F4F4;}
+        #countHtml ul{
+            padding:0px 0px 0px 0px;
+            list-style-type:none;
+            margin-top: 0px;
+        }
+        #countHtml ul li {
+            display: block;
+            color: #9A9A9A;
+            height: 23px;
+            line-height: 23px;
+            text-align: center;
+        }
+
+        #countHtml ul li:hover {
+            color: #549FE3;;
+            background: #EEEEEE;
+        }
+
+        #countHtml ul li a {
+            display: block;
+            text-align: left;
+            padding-left: 21px;
+        }
+        /*薪资报表按钮下拉展示样式*/
+        .commonReportComboSelectedCls {
+            background-color: #FFF8D2;
+        }
+        .commonReportComboOverCls {
+            background-color: #FFF8D2;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+    <script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+    <script language="JavaScript" src="../../../../echarts/echarts.min.js"  charset="UTF-8"></script>
+    <script language="JavaScript" src="../../../../echarts/shine.js" charset="UTF-8"></script>
+    <script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>
+    <script language='JavaScript' src='../../../../components/attendanceMonth/AttendanceMonthComp.js'></script>
+    <script language='JavaScript' src='../../gz_resource_zh_CN.js'></script>
+</head>
+<script type="text/javascript">
+    Ext.Loader.setConfig({
+        enabled: true,
+        paths: {
+            'GzAnalyse.historydata': '../../analyse/historydata',
+            'SalaryReport':'../../salaryreport'
+        }
+    });
+    Ext.onReady(function(){
+        Ext.require("GzAnalyse.historydata.SalaryHistoryData",function(){
+            Ext.widget('viewport',{
+                layout:'fit',
+                items: Ext.create("GzAnalyse.historydata.SalaryHistoryData")
+            });
+        });
+    });
+</script>
+<body>
+</body>
+</html>

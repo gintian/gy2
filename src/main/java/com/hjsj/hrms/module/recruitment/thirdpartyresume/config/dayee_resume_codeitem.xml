@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeitems>
+ 	<codeset codesetid="0/1587977606" codesetdesc="教育程度">
+        <codeitem codeitemid="0/1587977606/1587961898" codeitemdesc="研究生及以上" />
+        <codeitem codeitemid="0/1587977606/1587961946" codeitemdesc="大专/大学" />
+        <codeitem codeitemid="0/1587977606/1587961950" codeitemdesc="高中/中专/技校" />
+        <codeitem codeitemid="0/1587977606/1587962136" codeitemdesc="其他专业培训" />
+    </codeset>
+    <codeset codesetid="0/1588075406" codesetdesc="语言">
+        <codeitem codeitemid="0/1588075406/1588075927" codeitemdesc="粤语" />
+        <codeitem codeitemid="0/1588075406/1588075954" codeitemdesc="普通话" />
+        <codeitem codeitemid="0/1588075406/1588076091" codeitemdesc="英语" />
+    </codeset>
+    <codeset codesetid="0/1588076401" codesetdesc="掌握程度">
+        <codeitem codeitemid="0/1588076401/1588076506" codeitemdesc="熟练" />
+        <codeitem codeitemid="0/1588076401/1588076588" codeitemdesc="一般" />
+        <codeitem codeitemid="0/1588076401/1588076727" codeitemdesc="不懂" />
+    </codeset>
+    <codeset codesetid="0/1588078904" codesetdesc="电脑">
+        <codeitem codeitemid="0/1588078904/1588078954" codeitemdesc="软件使用" />
+        <codeitem codeitemid="0/1588078904/1588078975" codeitemdesc="打字" />
+    </codeset>
+    <codeset codesetid="0/1593702592" codesetdesc="本人承诺">
+        <codeitem codeitemid="0/1593702592/1593703958" codeitemdesc="同意" />
+        <codeitem codeitemid="0/1593702592/1593703960" codeitemdesc="不同意" />
+    </codeset>
+    <codeset codesetid="0/194" codesetdesc="政治面貌">
+        <codeitem codeitemid="0/194/195" codeitemdesc="中国共产党党员" />
+        <codeitem codeitemid="0/194/196" codeitemdesc="其它党派" />
+        <codeitem codeitemid="0/194/197" codeitemdesc="无党派民主人士" />
+        <codeitem codeitemid="0/194/198" codeitemdesc="群众" />
+    </codeset>
+    <codeset codesetid="0/209" codesetdesc="婚姻状况">
+        <codeitem codeitemid="0/209/211" codeitemdesc="未婚" />
+        <codeitem codeitemid="0/209/212" codeitemdesc="已婚" />
+        <codeitem codeitemid="0/209/52113757" codeitemdesc="保密" />
+    </codeset>
+    <codeset codesetid="0/373" codesetdesc="公司性质">
+        <codeitem codeitemid="0/373/375" codeitemdesc="外资(欧美)" />
+        <codeitem codeitemid="0/373/377" codeitemdesc="外资(非欧美)" />
+        <codeitem codeitemid="0/373/379" codeitemdesc="合资(欧美)" />
+        <codeitem codeitemid="0/373/380" codeitemdesc="合资(非欧美)" />
+        <codeitem codeitemid="0/373/382" codeitemdesc="国企/上市公司" />
+        <codeitem codeitemid="0/373/384" codeitemdesc="民营/私营公司" />
+        <codeitem codeitemid="0/373/385" codeitemdesc="外企代表" />
+        <codeitem codeitemid="0/373/387" codeitemdesc="其它性质" />
+    </codeset>
+    <codeset codesetid="0/389" codesetdesc="行业">
+        <codeitem codeitemid="0/389/3100" codeitemdesc="专业服务（咨询/财会/人力资源/法律等）" />
+        <codeitem codeitemid="0/389/3101" codeitemdesc="中介服务" />
+        <codeitem codeitemid="0/389/3102" codeitemdesc="制药与生物工程" />
+        <codeitem codeitemid="0/389/3103" codeitemdesc="医疗与保健" />
+        <codeitem codeitemid="0/389/3104" codeitemdesc="医疗设备与器械" />
+        <codeitem codeitemid="0/389/3105" codeitemdesc="办公设备及用品" />
+        <codeitem codeitemid="0/389/3106" codeitemdesc="快速消费品" />
+        <codeitem codeitemid="0/389/3107" codeitemdesc="耐用消费品" />
+        <codeitem codeitemid="0/389/3108" codeitemdesc="玩具/礼品/工艺品/收藏品" />
+        <codeitem codeitemid="0/389/3109" codeitemdesc="农/林/牧/渔" />
+        <codeitem codeitemid="0/389/3110" codeitemdesc="贸易与进出口" />
+        <codeitem codeitemid="0/389/3111" codeitemdesc="保险" />
+        <codeitem codeitemid="0/389/3112" codeitemdesc="投资/证券/基金/期货/金融其他" />
+        <codeitem codeitemid="0/389/3113" codeitemdesc="银行" />
+        <codeitem codeitemid="0/389/3114" codeitemdesc="交通/运输/物流" />
+        <codeitem codeitemid="0/389/3115" codeitemdesc="广告与公关" />
+        <codeitem codeitemid="0/389/3116" codeitemdesc="娱乐/休闲/体育" />
+        <codeitem codeitemid="0/389/3117" codeitemdesc="文字媒体/出版/影视/媒体/艺术" />
+        <codeitem codeitemid="0/389/3118" codeitemdesc="电子技术/半导体/集成电路" />
+        <codeitem codeitemid="0/389/3119" codeitemdesc="仪器仪表及工业自动化" />
+        <codeitem codeitemid="0/389/3120" codeitemdesc="环保" />
+        <codeitem codeitemid="0/389/3121" codeitemdesc="航空航天" />
+        <codeitem codeitemid="0/389/3122" codeitemdesc="石油/石化/化工" />
+        <codeitem codeitemid="0/389/3123" codeitemdesc="采掘与冶炼" />
+        <codeitem codeitemid="0/389/3124" codeitemdesc="电力与水利" />
+        <codeitem codeitemid="0/389/3125" codeitemdesc="汽车及零配件" />
+        <codeitem codeitemid="0/389/3126" codeitemdesc="机械/设备/重工" />
+        <codeitem codeitemid="0/389/3127" codeitemdesc="原材料及加工" />
+        <codeitem codeitemid="0/389/3128" codeitemdesc="计算机软件" />
+        <codeitem codeitemid="0/389/3129" codeitemdesc="计算机硬件及网络设备" />
+        <codeitem codeitemid="0/389/3130" codeitemdesc="IT服务/系统集成" />
+        <codeitem codeitemid="0/389/3131" codeitemdesc="通信设备与运营" />
+        <codeitem codeitemid="0/389/3132" codeitemdesc="互联网/电子商务" />
+        <codeitem codeitemid="0/389/3133" codeitemdesc="网络游戏" />
+        <codeitem codeitemid="0/389/3134" codeitemdesc="房地产开发" />
+        <codeitem codeitemid="0/389/3135" codeitemdesc="物业管理/商业管理" />
+        <codeitem codeitemid="0/389/3136" codeitemdesc="家居/室内设计/装潢" />
+        <codeitem codeitemid="0/389/3137" codeitemdesc="教育/学术/科研/培训" />
+        <codeitem codeitemid="0/389/3138" codeitemdesc="检验/检测/认证" />
+        <codeitem codeitemid="0/389/3139" codeitemdesc="政府与非营利机构" />
+        <codeitem codeitemid="0/389/3140" codeitemdesc="酒店/旅游/餐饮" />
+        <codeitem codeitemid="0/389/3141" codeitemdesc="批发/零售" />
+        <codeitem codeitemid="0/389/3142" codeitemdesc="印刷/包装/造纸" />
+        <codeitem codeitemid="0/389/3143" codeitemdesc="其他" />
+        <codeitem codeitemid="0/389/3200" codeitemdesc="多元化业务集团公司" />
+        <codeitem codeitemid="0/389/3201" codeitemdesc="生活服务" />
+        <codeitem codeitemid="0/389/3202" codeitemdesc="外包服务" />
+    </codeset>
+    <codeset codesetid="0/4" codesetdesc="工作地点/目前所在城市/期望工作地点">
+        <codeitem codeitemid="0/4/10" codeitemdesc="上海市">
+            <codeitem codeitemid="0/4/10/11" codeitemdesc="上海市市辖区">
+                <codeitem codeitemid="0/4/10/11/50225" codeitemdesc="黄浦区" />
+                <codeitem codeitemid="0/4/10/11/50226" codeitemdesc="徐汇区" />
+                <codeitem codeitemid="0/4/10/11/50227" codeitemdesc="长宁区" />
+                <codeitem codeitemid="0/4/10/11/50228" codeitemdesc="静安区" />
+                <codeitem codeitemid="0/4/10/11/50229" codeitemdesc="普陀区" />
+                <codeitem codeitemid="0/4/10/11/50230" codeitemdesc="闸北区" />
+                <codeitem codeitemid="0/4/10/11/50231" codeitemdesc="虹口区" />
+                <codeitem codeitemid="0/4/10/11/50232" codeitemdesc="杨浦区" />
+                <codeitem codeitemid="0/4/10/11/50233" codeitemdesc="闵行区" />
+                <codeitem codeitemid="0/4/10/11/50234" codeitemdesc="宝山区" />
+                <codeitem codeitemid="0/4/10/11/50235" codeitemdesc="嘉定区" />
+                <codeitem codeitemid="0/4/10/11/50236" codeitemdesc="浦东新区" />
+                <codeitem codeitemid="0/4/10/11/50237" codeitemdesc="金山区" />
+                <codeitem codeitemid="0/4/10/11/50238" codeitemdesc="松江区" />
+                <codeitem codeitemid="0/4/10/11/50239" codeitemdesc="青浦区" />
+                <codeitem codeitemid="0/4/10/11/50240" codeitemdesc="奉贤区" />
+                <codeitem codeitemid="0/4/10/11/50241" codeitemdesc="崇明县" />
+            </codeitem>
+        </codeitem>
+        <codeitem codeitemid="0/4/100" codeitemdesc="吉林省">
+            <codeitem codeitemid="0/4/100/102" codeitemdesc="长春市">
+                <codeitem codeitemid="0/4/100/102/50417" codeitemdesc="南关区" />
+                <codeitem codeitemid="0/4/100/102/50418" codeitemdesc="宽城区" />
+                <codeitem codeitemid="0/4/100/102/50419" codeitemdesc="朝阳区" />
+                <codeitem codeitemid="0/4/100/102/50420" codeitemdesc="二道区" />
+                <codeitem codeitemid="0/4/100/102/50421" codeitemdesc="绿园区" />
+                <codeitem codeitemid="0/4/100/102/50422" codeitemdesc="高新开发区" />
+                <codeitem codeitemid="0/4/100/102/50423" codeitemdesc="经济开发区" />
+                <codeitem codeitemid="0/4/100/102/50424" codeitemdesc="汽车产业开发区" />
+                <codeitem codeitemid="0/4/100/102/50425" codeitemdesc="双阳区" />
+                <codeitem codeitemid="0/4/100/102/50426" codeitemdesc="榆树市" />
+                <codeitem codeitemid="0/4/100/102/50427" codeitemdesc="九台市" />
+                <codeitem codeitemid="0/4/100/102/50428" codeitemdesc="德惠市" />
+                <codeitem codeitemid="0/4/100/102/50429" codeitemdesc="农安县" />
+            </codeitem>
+            <codeitem codeitemid="0/4/100/104" codeitemdesc="吉林市" />
+            <codeitem codeitemid="0/4/100/106" codeitemdesc="辽源市" />
+            <codeitem codeitemid="0/4/100/109" codeitemdesc="通化市" />
+            <codeitem codeitemid="0/4/100/111" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/100/52113884" codeitemdesc="四平市" />
+            <codeitem codeitemid="0/4/100/52113885" codeitemdesc="松原市" />
+            <codeitem codeitemid="0/4/100/52113887" codeitemdesc="延吉市" />
+            <codeitem codeitemid="0/4/100/52113889" codeitemdesc="白山市" />
+            <codeitem codeitemid="0/4/100/52113890" codeitemdesc="白城市" />
+            <codeitem codeitemid="0/4/100/52113894" codeitemdesc="延边市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/115" codeitemdesc="黑龙江省">
+            <codeitem codeitemid="0/4/115/117" codeitemdesc="哈尔滨市">
+                <codeitem codeitemid="0/4/115/117/50006" codeitemdesc="南岗区" />
+                <codeitem codeitemid="0/4/115/117/50007" codeitemdesc="道里区" />
+                <codeitem codeitemid="0/4/115/117/50008" codeitemdesc="道外区" />
+                <codeitem codeitemid="0/4/115/117/50009" codeitemdesc="香坊区" />
+                <codeitem codeitemid="0/4/115/117/50010" codeitemdesc="松北区" />
+                <codeitem codeitemid="0/4/115/117/50011" codeitemdesc="平房区" />
+                <codeitem codeitemid="0/4/115/117/50012" codeitemdesc="呼兰区" />
+                <codeitem codeitemid="0/4/115/117/50013" codeitemdesc="阿城区" />
+                <codeitem codeitemid="0/4/115/117/50014" codeitemdesc="五常市" />
+                <codeitem codeitemid="0/4/115/117/50015" codeitemdesc="方正县" />
+                <codeitem codeitemid="0/4/115/117/50016" codeitemdesc="依兰县" />
+                <codeitem codeitemid="0/4/115/117/50017" codeitemdesc="宾　县" />
+                <codeitem codeitemid="0/4/115/117/50018" codeitemdesc="巴彦县" />
+                <codeitem codeitemid="0/4/115/117/50019" codeitemdesc="木兰县" />
+                <codeitem codeitemid="0/4/115/117/50020" codeitemdesc="通河县" />
+                <codeitem codeitemid="0/4/115/117/50021" codeitemdesc="延寿县" />
+            </codeitem>
+            <codeitem codeitemid="0/4/115/119" codeitemdesc="齐齐哈尔市" />
+            <codeitem codeitemid="0/4/115/122" codeitemdesc="大庆市" />
+            <codeitem codeitemid="0/4/115/125" codeitemdesc="伊春市" />
+            <codeitem codeitemid="0/4/115/128" codeitemdesc="佳木斯市" />
+            <codeitem codeitemid="0/4/115/130" codeitemdesc="牡丹江市" />
+            <codeitem codeitemid="0/4/115/131" codeitemdesc="绥化市" />
+            <codeitem codeitemid="0/4/115/133" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/115/52113907" codeitemdesc="鸡西市" />
+            <codeitem codeitemid="0/4/115/52113910" codeitemdesc="鹤岗市" />
+            <codeitem codeitemid="0/4/115/52113911" codeitemdesc="双鸭山市" />
+            <codeitem codeitemid="0/4/115/52113916" codeitemdesc="黑河市" />
+            <codeitem codeitemid="0/4/115/52113920" codeitemdesc="七台河市" />
+            <codeitem codeitemid="0/4/115/52113926" codeitemdesc="大兴安岭市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/12" codeitemdesc="天津市">
+            <codeitem codeitemid="0/4/12/13" codeitemdesc="天津市市辖区">
+                <codeitem codeitemid="0/4/12/13/50295" codeitemdesc="和平区" />
+                <codeitem codeitemid="0/4/12/13/50296" codeitemdesc="河东区" />
+                <codeitem codeitemid="0/4/12/13/50297" codeitemdesc="河西区" />
+                <codeitem codeitemid="0/4/12/13/50298" codeitemdesc="南开区" />
+                <codeitem codeitemid="0/4/12/13/50299" codeitemdesc="河北区" />
+                <codeitem codeitemid="0/4/12/13/50300" codeitemdesc="红桥区" />
+                <codeitem codeitemid="0/4/12/13/50301" codeitemdesc="滨海新区" />
+                <codeitem codeitemid="0/4/12/13/50302" codeitemdesc="东丽区" />
+                <codeitem codeitemid="0/4/12/13/50303" codeitemdesc="西青区" />
+                <codeitem codeitemid="0/4/12/13/50304" codeitemdesc="津南区" />
+                <codeitem codeitemid="0/4/12/13/50305" codeitemdesc="北辰区" />
+                <codeitem codeitemid="0/4/12/13/50306" codeitemdesc="武清区" />
+                <codeitem codeitemid="0/4/12/13/50307" codeitemdesc="宝坻区" />
+                <codeitem codeitemid="0/4/12/13/50308" codeitemdesc="静海县" />
+                <codeitem codeitemid="0/4/12/13/50309" codeitemdesc="宁河县" />
+                <codeitem codeitemid="0/4/12/13/50310" codeitemdesc="蓟县" />
+            </codeitem>
+        </codeitem>
+        <codeitem codeitemid="0/4/135" codeitemdesc="江苏省">
+            <codeitem codeitemid="0/4/135/138" codeitemdesc="南京市">
+                <codeitem codeitemid="0/4/135/138/50040" codeitemdesc="玄武区" />
+                <codeitem codeitemid="0/4/135/138/50041" codeitemdesc="秦淮区" />
+                <codeitem codeitemid="0/4/135/138/50042" codeitemdesc="建邺区" />
+                <codeitem codeitemid="0/4/135/138/50043" codeitemdesc="鼓楼区" />
+                <codeitem codeitemid="0/4/135/138/50044" codeitemdesc="浦口区" />
+                <codeitem codeitemid="0/4/135/138/50045" codeitemdesc="六合区" />
+                <codeitem codeitemid="0/4/135/138/50046" codeitemdesc="栖霞区" />
+                <codeitem codeitemid="0/4/135/138/50047" codeitemdesc="雨花台区" />
+                <codeitem codeitemid="0/4/135/138/50048" codeitemdesc="江宁区" />
+                <codeitem codeitemid="0/4/135/138/50049" codeitemdesc="溧水县" />
+                <codeitem codeitemid="0/4/135/138/50050" codeitemdesc="高淳县" />
+            </codeitem>
+            <codeitem codeitemid="0/4/135/139" codeitemdesc="无锡市">
+                <codeitem codeitemid="0/4/135/139/50051" codeitemdesc="江阴市" />
+                <codeitem codeitemid="0/4/135/139/50052" codeitemdesc="宜兴市" />
+                <codeitem codeitemid="0/4/135/139/50053" codeitemdesc="崇安区" />
+                <codeitem codeitemid="0/4/135/139/50054" codeitemdesc="南长区" />
+                <codeitem codeitemid="0/4/135/139/50055" codeitemdesc="北塘区" />
+                <codeitem codeitemid="0/4/135/139/50056" codeitemdesc="滨湖区" />
+                <codeitem codeitemid="0/4/135/139/50057" codeitemdesc="无锡新区" />
+                <codeitem codeitemid="0/4/135/139/50058" codeitemdesc="惠山区" />
+                <codeitem codeitemid="0/4/135/139/50059" codeitemdesc="锡山区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/135/141" codeitemdesc="江阴市" />
+            <codeitem codeitemid="0/4/135/144" codeitemdesc="宜兴市" />
+            <codeitem codeitemid="0/4/135/146" codeitemdesc="徐州市" />
+            <codeitem codeitemid="0/4/135/148" codeitemdesc="常州市" />
+            <codeitem codeitemid="0/4/135/151" codeitemdesc="溧阳市" />
+            <codeitem codeitemid="0/4/135/153" codeitemdesc="苏州市">
+                <codeitem codeitemid="0/4/135/153/50060" codeitemdesc="虎丘区" />
+                <codeitem codeitemid="0/4/135/153/50061" codeitemdesc="吴中区" />
+                <codeitem codeitemid="0/4/135/153/50062" codeitemdesc="相城区" />
+                <codeitem codeitemid="0/4/135/153/50063" codeitemdesc="工业园区" />
+                <codeitem codeitemid="0/4/135/153/50064" codeitemdesc="高新区" />
+                <codeitem codeitemid="0/4/135/153/50065" codeitemdesc="姑苏区" />
+                <codeitem codeitemid="0/4/135/153/50066" codeitemdesc="吴江区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/135/156" codeitemdesc="常熟市" />
+            <codeitem codeitemid="0/4/135/159" codeitemdesc="张家港市" />
+            <codeitem codeitemid="0/4/135/162" codeitemdesc="昆山市" />
+            <codeitem codeitemid="0/4/135/164" codeitemdesc="南通市" />
+            <codeitem codeitemid="0/4/135/173" codeitemdesc="连云港市" />
+            <codeitem codeitemid="0/4/135/174" codeitemdesc="淮安市" />
+            <codeitem codeitemid="0/4/135/180" codeitemdesc="盐城市" />
+            <codeitem codeitemid="0/4/135/182" codeitemdesc="太仓市" />
+            <codeitem codeitemid="0/4/135/185" codeitemdesc="扬州市" />
+            <codeitem codeitemid="0/4/135/189" codeitemdesc="泰州市" />
+            <codeitem codeitemid="0/4/135/192" codeitemdesc="镇江市" />
+            <codeitem codeitemid="0/4/135/193" codeitemdesc="丹阳市" />
+            <codeitem codeitemid="0/4/135/200" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/135/52130057" codeitemdesc="吴江市" />
+            <codeitem codeitemid="0/4/135/52140083" codeitemdesc="泰兴市" />
+            <codeitem codeitemid="0/4/135/52140125" codeitemdesc="靖江市" />
+            <codeitem codeitemid="0/4/135/52140129" codeitemdesc="宿迁市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/14" codeitemdesc="重庆市">
+            <codeitem codeitemid="0/4/14/15" codeitemdesc="重庆市市辖区">
+                <codeitem codeitemid="0/4/14/15/50311" codeitemdesc="渝中区" />
+                <codeitem codeitemid="0/4/14/15/50312" codeitemdesc="江北区" />
+                <codeitem codeitemid="0/4/14/15/50313" codeitemdesc="南岸区" />
+                <codeitem codeitemid="0/4/14/15/50314" codeitemdesc="沙坪坝区" />
+                <codeitem codeitemid="0/4/14/15/50315" codeitemdesc="九龙坡区" />
+                <codeitem codeitemid="0/4/14/15/50316" codeitemdesc="大渡口区" />
+                <codeitem codeitemid="0/4/14/15/50317" codeitemdesc="渝北区" />
+                <codeitem codeitemid="0/4/14/15/50318" codeitemdesc="巴南区" />
+                <codeitem codeitemid="0/4/14/15/50319" codeitemdesc="北碚区" />
+                <codeitem codeitemid="0/4/14/15/50320" codeitemdesc="万州区" />
+                <codeitem codeitemid="0/4/14/15/50321" codeitemdesc="黔江区" />
+                <codeitem codeitemid="0/4/14/15/50322" codeitemdesc="永川区" />
+                <codeitem codeitemid="0/4/14/15/50323" codeitemdesc="涪陵区" />
+                <codeitem codeitemid="0/4/14/15/50324" codeitemdesc="长寿区" />
+                <codeitem codeitemid="0/4/14/15/50325" codeitemdesc="江津区" />
+                <codeitem codeitemid="0/4/14/15/50326" codeitemdesc="合川区" />
+                <codeitem codeitemid="0/4/14/15/50327" codeitemdesc="双桥区" />
+                <codeitem codeitemid="0/4/14/15/50328" codeitemdesc="万盛区" />
+                <codeitem codeitemid="0/4/14/15/50329" codeitemdesc="南川区" />
+                <codeitem codeitemid="0/4/14/15/50330" codeitemdesc="荣昌县" />
+                <codeitem codeitemid="0/4/14/15/50331" codeitemdesc="大足县" />
+                <codeitem codeitemid="0/4/14/15/50332" codeitemdesc="壁山县" />
+                <codeitem codeitemid="0/4/14/15/50333" codeitemdesc="铜梁县" />
+                <codeitem codeitemid="0/4/14/15/50334" codeitemdesc="潼南县" />
+                <codeitem codeitemid="0/4/14/15/50335" codeitemdesc="綦江县" />
+                <codeitem codeitemid="0/4/14/15/50336" codeitemdesc="忠县" />
+                <codeitem codeitemid="0/4/14/15/50337" codeitemdesc="开县" />
+                <codeitem codeitemid="0/4/14/15/50338" codeitemdesc="云阳县" />
+                <codeitem codeitemid="0/4/14/15/50339" codeitemdesc="梁平县" />
+                <codeitem codeitemid="0/4/14/15/50340" codeitemdesc="垫江县" />
+                <codeitem codeitemid="0/4/14/15/50341" codeitemdesc="丰都县" />
+                <codeitem codeitemid="0/4/14/15/50342" codeitemdesc="奉节县" />
+                <codeitem codeitemid="0/4/14/15/50343" codeitemdesc="巫山县" />
+                <codeitem codeitemid="0/4/14/15/50344" codeitemdesc="巫溪县" />
+                <codeitem codeitemid="0/4/14/15/50345" codeitemdesc="城口县" />
+                <codeitem codeitemid="0/4/14/15/50346" codeitemdesc="武隆县" />
+                <codeitem codeitemid="0/4/14/15/50347" codeitemdesc="石柱县" />
+                <codeitem codeitemid="0/4/14/15/50348" codeitemdesc="秀山县" />
+                <codeitem codeitemid="0/4/14/15/50349" codeitemdesc="酉阳县" />
+                <codeitem codeitemid="0/4/14/15/50350" codeitemdesc="彭水县" />
+                <codeitem codeitemid="0/4/14/15/50351" codeitemdesc="北部新区" />
+                <codeitem codeitemid="0/4/14/15/50352" codeitemdesc="石柱土家族自治县" />
+                <codeitem codeitemid="0/4/14/15/50353" codeitemdesc="秀山土家族苗族自治县" />
+                <codeitem codeitemid="0/4/14/15/50354" codeitemdesc="酉阳土家族苗族自治县" />
+                <codeitem codeitemid="0/4/14/15/50355" codeitemdesc="彭水苗族土家族自治县" />
+            </codeitem>
+        </codeitem>
+        <codeitem codeitemid="0/4/17" codeitemdesc="河北省">
+            <codeitem codeitemid="0/4/17/19" codeitemdesc="石家庄市">
+                <codeitem codeitemid="0/4/17/19/50356" codeitemdesc="长安区" />
+                <codeitem codeitemid="0/4/17/19/50357" codeitemdesc="桥东区" />
+                <codeitem codeitemid="0/4/17/19/50358" codeitemdesc="桥西区" />
+                <codeitem codeitemid="0/4/17/19/50359" codeitemdesc="新华区" />
+                <codeitem codeitemid="0/4/17/19/50360" codeitemdesc="裕华区" />
+                <codeitem codeitemid="0/4/17/19/50361" codeitemdesc="东开发区" />
+                <codeitem codeitemid="0/4/17/19/50362" codeitemdesc="井陉矿区" />
+                <codeitem codeitemid="0/4/17/19/50363" codeitemdesc="辛集市" />
+                <codeitem codeitemid="0/4/17/19/50364" codeitemdesc="藁城市" />
+                <codeitem codeitemid="0/4/17/19/50365" codeitemdesc="晋州市" />
+                <codeitem codeitemid="0/4/17/19/50366" codeitemdesc="新乐市" />
+                <codeitem codeitemid="0/4/17/19/50367" codeitemdesc="鹿泉市" />
+                <codeitem codeitemid="0/4/17/19/50368" codeitemdesc="正定县" />
+                <codeitem codeitemid="0/4/17/19/50369" codeitemdesc="平山县" />
+                <codeitem codeitemid="0/4/17/19/50370" codeitemdesc="元氏县" />
+                <codeitem codeitemid="0/4/17/19/50371" codeitemdesc="栾城县" />
+                <codeitem codeitemid="0/4/17/19/50372" codeitemdesc="行唐县" />
+                <codeitem codeitemid="0/4/17/19/50373" codeitemdesc="灵寿县" />
+                <codeitem codeitemid="0/4/17/19/50374" codeitemdesc="深泽县" />
+                <codeitem codeitemid="0/4/17/19/50375" codeitemdesc="无极县" />
+                <codeitem codeitemid="0/4/17/19/50376" codeitemdesc="赵县" />
+                <codeitem codeitemid="0/4/17/19/50377" codeitemdesc="高邑县" />
+                <codeitem codeitemid="0/4/17/19/50378" codeitemdesc="赞皇县" />
+                <codeitem codeitemid="0/4/17/19/50379" codeitemdesc="井陉县" />
+            </codeitem>
+            <codeitem codeitemid="0/4/17/20" codeitemdesc="唐山市" />
+            <codeitem codeitemid="0/4/17/22" codeitemdesc="秦皇岛市" />
+            <codeitem codeitemid="0/4/17/24" codeitemdesc="廊坊市" />
+            <codeitem codeitemid="0/4/17/26" codeitemdesc="保定市" />
+            <codeitem codeitemid="0/4/17/29" codeitemdesc="邯郸市" />
+            <codeitem codeitemid="0/4/17/33" codeitemdesc="邢台市" />
+            <codeitem codeitemid="0/4/17/36" codeitemdesc="张家口市" />
+            <codeitem codeitemid="0/4/17/38" codeitemdesc="承德市" />
+            <codeitem codeitemid="0/4/17/40" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/17/52113682" codeitemdesc="衡水市" />
+            <codeitem codeitemid="0/4/17/52113683" codeitemdesc="沧州市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/204" codeitemdesc="浙江省">
+            <codeitem codeitemid="0/4/204/207" codeitemdesc="杭州市">
+                <codeitem codeitemid="0/4/204/207/50067" codeitemdesc="上城区" />
+                <codeitem codeitemid="0/4/204/207/50068" codeitemdesc="下城区" />
+                <codeitem codeitemid="0/4/204/207/50069" codeitemdesc="江干区" />
+                <codeitem codeitemid="0/4/204/207/50070" codeitemdesc="拱墅区" />
+                <codeitem codeitemid="0/4/204/207/50071" codeitemdesc="西湖区" />
+                <codeitem codeitemid="0/4/204/207/50072" codeitemdesc="滨江区" />
+                <codeitem codeitemid="0/4/204/207/50073" codeitemdesc="萧山区" />
+                <codeitem codeitemid="0/4/204/207/50074" codeitemdesc="余杭区" />
+                <codeitem codeitemid="0/4/204/207/50075" codeitemdesc="桐庐县" />
+                <codeitem codeitemid="0/4/204/207/50076" codeitemdesc="淳安县" />
+                <codeitem codeitemid="0/4/204/207/50077" codeitemdesc="建德市" />
+                <codeitem codeitemid="0/4/204/207/50078" codeitemdesc="下沙" />
+                <codeitem codeitemid="0/4/204/207/50079" codeitemdesc="临安市" />
+                <codeitem codeitemid="0/4/204/207/50080" codeitemdesc="富阳市" />
+            </codeitem>
+            <codeitem codeitemid="0/4/204/208" codeitemdesc="萧山市" />
+            <codeitem codeitemid="0/4/204/210" codeitemdesc="宁波市" />
+            <codeitem codeitemid="0/4/204/213" codeitemdesc="温州市" />
+            <codeitem codeitemid="0/4/204/215" codeitemdesc="嘉兴市" />
+            <codeitem codeitemid="0/4/204/218" codeitemdesc="湖州市" />
+            <codeitem codeitemid="0/4/204/220" codeitemdesc="绍兴市" />
+            <codeitem codeitemid="0/4/204/222" codeitemdesc="金华市" />
+            <codeitem codeitemid="0/4/204/224" codeitemdesc="衢州市" />
+            <codeitem codeitemid="0/4/204/225" codeitemdesc="舟山市" />
+            <codeitem codeitemid="0/4/204/226" codeitemdesc="丽水市" />
+            <codeitem codeitemid="0/4/204/227" codeitemdesc="台州市" />
+            <codeitem codeitemid="0/4/204/228" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/204/52140157" codeitemdesc="义乌市" />
+            <codeitem codeitemid="0/4/204/52140158" codeitemdesc="慈溪市" />
+            <codeitem codeitemid="0/4/204/52140159" codeitemdesc="海宁市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/229" codeitemdesc="安徽省">
+            <codeitem codeitemid="0/4/229/230" codeitemdesc="合肥市">
+                <codeitem codeitemid="0/4/229/230/50081" codeitemdesc="庐阳区" />
+                <codeitem codeitemid="0/4/229/230/50082" codeitemdesc="瑶海区" />
+                <codeitem codeitemid="0/4/229/230/50083" codeitemdesc="蜀山区" />
+                <codeitem codeitemid="0/4/229/230/50084" codeitemdesc="包河区" />
+                <codeitem codeitemid="0/4/229/230/50085" codeitemdesc="经济技术开发区" />
+                <codeitem codeitemid="0/4/229/230/50086" codeitemdesc="滨湖新区" />
+                <codeitem codeitemid="0/4/229/230/50087" codeitemdesc="新站综合开发试验区" />
+                <codeitem codeitemid="0/4/229/230/50088" codeitemdesc="高新区" />
+                <codeitem codeitemid="0/4/229/230/50089" codeitemdesc="政务文化新区" />
+                <codeitem codeitemid="0/4/229/230/50090" codeitemdesc="北城新区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/229/231" codeitemdesc="芜湖市" />
+            <codeitem codeitemid="0/4/229/232" codeitemdesc="蚌埠市" />
+            <codeitem codeitemid="0/4/229/234" codeitemdesc="淮南市" />
+            <codeitem codeitemid="0/4/229/236" codeitemdesc="马鞍山市" />
+            <codeitem codeitemid="0/4/229/237" codeitemdesc="淮北市" />
+            <codeitem codeitemid="0/4/229/238" codeitemdesc="铜陵市" />
+            <codeitem codeitemid="0/4/229/239" codeitemdesc="安庆市" />
+            <codeitem codeitemid="0/4/229/240" codeitemdesc="黄山市" />
+            <codeitem codeitemid="0/4/229/241" codeitemdesc="阜阳市" />
+            <codeitem codeitemid="0/4/229/243" codeitemdesc="滁州市" />
+            <codeitem codeitemid="0/4/229/244" codeitemdesc="六安市" />
+            <codeitem codeitemid="0/4/229/246" codeitemdesc="巢湖市" />
+            <codeitem codeitemid="0/4/229/247" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/229/52140213" codeitemdesc="宣城市" />
+            <codeitem codeitemid="0/4/229/52140253" codeitemdesc="池州市" />
+            <codeitem codeitemid="0/4/229/52140254" codeitemdesc="宿州市" />
+            <codeitem codeitemid="0/4/229/52140255" codeitemdesc="亳州市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/23000" codeitemdesc="海外">
+            <codeitem codeitemid="0/4/23000/23001" codeitemdesc="海外" />
+        </codeitem>
+        <codeitem codeitemid="0/4/248" codeitemdesc="福建省">
+            <codeitem codeitemid="0/4/248/249" codeitemdesc="福州市">
+                <codeitem codeitemid="0/4/248/249/50091" codeitemdesc="鼓楼区" />
+                <codeitem codeitemid="0/4/248/249/50092" codeitemdesc="台江区" />
+                <codeitem codeitemid="0/4/248/249/50093" codeitemdesc="仓山区" />
+                <codeitem codeitemid="0/4/248/249/50094" codeitemdesc="马尾区" />
+                <codeitem codeitemid="0/4/248/249/50095" codeitemdesc="晋安区" />
+                <codeitem codeitemid="0/4/248/249/50096" codeitemdesc="闽侯县" />
+                <codeitem codeitemid="0/4/248/249/50097" codeitemdesc="罗源县" />
+                <codeitem codeitemid="0/4/248/249/50098" codeitemdesc="连江县" />
+                <codeitem codeitemid="0/4/248/249/50099" codeitemdesc="永泰县" />
+                <codeitem codeitemid="0/4/248/249/50100" codeitemdesc="闽清县" />
+                <codeitem codeitemid="0/4/248/249/50101" codeitemdesc="平潭县" />
+                <codeitem codeitemid="0/4/248/249/50102" codeitemdesc="长乐" />
+                <codeitem codeitemid="0/4/248/249/50103" codeitemdesc="福清" />
+            </codeitem>
+            <codeitem codeitemid="0/4/248/250" codeitemdesc="厦门市">
+                <codeitem codeitemid="0/4/248/250/50104" codeitemdesc="思明区" />
+                <codeitem codeitemid="0/4/248/250/50105" codeitemdesc="湖里区" />
+                <codeitem codeitemid="0/4/248/250/50106" codeitemdesc="集美区" />
+                <codeitem codeitemid="0/4/248/250/50107" codeitemdesc="海沧区" />
+                <codeitem codeitemid="0/4/248/250/50108" codeitemdesc="同安区" />
+                <codeitem codeitemid="0/4/248/250/50109" codeitemdesc="翔安区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/248/251" codeitemdesc="莆田市" />
+            <codeitem codeitemid="0/4/248/252" codeitemdesc="三明市" />
+            <codeitem codeitemid="0/4/248/253" codeitemdesc="泉州市" />
+            <codeitem codeitemid="0/4/248/260" codeitemdesc="漳州市" />
+            <codeitem codeitemid="0/4/248/261" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/248/52140290" codeitemdesc="南平市" />
+            <codeitem codeitemid="0/4/248/52140291" codeitemdesc="宁德市" />
+            <codeitem codeitemid="0/4/248/52140292" codeitemdesc="龙岩市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/298" codeitemdesc="江西省">
+            <codeitem codeitemid="0/4/298/299" codeitemdesc="南昌市">
+                <codeitem codeitemid="0/4/298/299/50110" codeitemdesc="东湖区" />
+                <codeitem codeitemid="0/4/298/299/50111" codeitemdesc="西湖区" />
+                <codeitem codeitemid="0/4/298/299/50112" codeitemdesc="青云谱区" />
+                <codeitem codeitemid="0/4/298/299/50113" codeitemdesc="青山湖区" />
+                <codeitem codeitemid="0/4/298/299/50114" codeitemdesc="湾里区" />
+                <codeitem codeitemid="0/4/298/299/50115" codeitemdesc="南昌县" />
+                <codeitem codeitemid="0/4/298/299/50116" codeitemdesc="新建县" />
+                <codeitem codeitemid="0/4/298/299/50117" codeitemdesc="进贤县" />
+                <codeitem codeitemid="0/4/298/299/50118" codeitemdesc="安义县" />
+            </codeitem>
+            <codeitem codeitemid="0/4/298/300" codeitemdesc="九江市" />
+            <codeitem codeitemid="0/4/298/301" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/298/52140296" codeitemdesc="景德镇市" />
+            <codeitem codeitemid="0/4/298/52140307" codeitemdesc="萍乡市" />
+            <codeitem codeitemid="0/4/298/52140319" codeitemdesc="新余市" />
+            <codeitem codeitemid="0/4/298/52140325" codeitemdesc="鹰潭市" />
+            <codeitem codeitemid="0/4/298/52140326" codeitemdesc="赣州市" />
+            <codeitem codeitemid="0/4/298/52140333" codeitemdesc="吉安市" />
+            <codeitem codeitemid="0/4/298/52140339" codeitemdesc="宜春市" />
+            <codeitem codeitemid="0/4/298/52140346" codeitemdesc="抚顺市" />
+            <codeitem codeitemid="0/4/298/52140347" codeitemdesc="上饶市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/302" codeitemdesc="山东省">
+            <codeitem codeitemid="0/4/302/303" codeitemdesc="济南市">
+                <codeitem codeitemid="0/4/302/303/50119" codeitemdesc="市中区" />
+                <codeitem codeitemid="0/4/302/303/50120" codeitemdesc="历下区" />
+                <codeitem codeitemid="0/4/302/303/50121" codeitemdesc="天桥区" />
+                <codeitem codeitemid="0/4/302/303/50122" codeitemdesc="槐荫区" />
+                <codeitem codeitemid="0/4/302/303/50123" codeitemdesc="历城区" />
+                <codeitem codeitemid="0/4/302/303/50124" codeitemdesc="长清区" />
+                <codeitem codeitemid="0/4/302/303/50125" codeitemdesc="平阴县" />
+                <codeitem codeitemid="0/4/302/303/50126" codeitemdesc="济阳县" />
+                <codeitem codeitemid="0/4/302/303/50127" codeitemdesc="商河县" />
+                <codeitem codeitemid="0/4/302/303/50128" codeitemdesc="高新区" />
+                <codeitem codeitemid="0/4/302/303/50129" codeitemdesc="章丘市" />
+            </codeitem>
+            <codeitem codeitemid="0/4/302/304" codeitemdesc="青岛市">
+                <codeitem codeitemid="0/4/302/304/50130" codeitemdesc="市南区" />
+                <codeitem codeitemid="0/4/302/304/50131" codeitemdesc="市北区（新行政区）" />
+                <codeitem codeitemid="0/4/302/304/50132" codeitemdesc="李沧区" />
+                <codeitem codeitemid="0/4/302/304/50133" codeitemdesc="黄岛区（新行政区）" />
+                <codeitem codeitemid="0/4/302/304/50134" codeitemdesc="崂山区" />
+                <codeitem codeitemid="0/4/302/304/50135" codeitemdesc="城阳区" />
+                <codeitem codeitemid="0/4/302/304/50136" codeitemdesc="胶州市" />
+                <codeitem codeitemid="0/4/302/304/50137" codeitemdesc="即墨市" />
+                <codeitem codeitemid="0/4/302/304/50138" codeitemdesc="平度市" />
+                <codeitem codeitemid="0/4/302/304/50139" codeitemdesc="莱西市" />
+                <codeitem codeitemid="0/4/302/304/50140" codeitemdesc="保税区" />
+                <codeitem codeitemid="0/4/302/304/50141" codeitemdesc="青岛经济技术开发区" />
+                <codeitem codeitemid="0/4/302/304/50142" codeitemdesc="青岛高新技术产业开发区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/302/305" codeitemdesc="淄博市" />
+            <codeitem codeitemid="0/4/302/306" codeitemdesc="枣庄市" />
+            <codeitem codeitemid="0/4/302/307" codeitemdesc="东营市" />
+            <codeitem codeitemid="0/4/302/308" codeitemdesc="烟台市">
+                <codeitem codeitemid="0/4/302/308/50143" codeitemdesc="芝罘区" />
+                <codeitem codeitemid="0/4/302/308/50144" codeitemdesc="福山区" />
+                <codeitem codeitemid="0/4/302/308/50145" codeitemdesc="牟平区" />
+                <codeitem codeitemid="0/4/302/308/50146" codeitemdesc="莱山区" />
+                <codeitem codeitemid="0/4/302/308/50147" codeitemdesc="长岛县" />
+                <codeitem codeitemid="0/4/302/308/50148" codeitemdesc="龙口市" />
+                <codeitem codeitemid="0/4/302/308/50149" codeitemdesc="莱阳市" />
+                <codeitem codeitemid="0/4/302/308/50150" codeitemdesc="莱州市" />
+                <codeitem codeitemid="0/4/302/308/50151" codeitemdesc="蓬莱市" />
+                <codeitem codeitemid="0/4/302/308/50152" codeitemdesc="招远市" />
+                <codeitem codeitemid="0/4/302/308/50153" codeitemdesc="栖霞市" />
+                <codeitem codeitemid="0/4/302/308/50154" codeitemdesc="海阳市" />
+                <codeitem codeitemid="0/4/302/308/50155" codeitemdesc="高新区" />
+                <codeitem codeitemid="0/4/302/308/50156" codeitemdesc="开发区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/302/309" codeitemdesc="潍坊市" />
+            <codeitem codeitemid="0/4/302/310" codeitemdesc="济宁市" />
+            <codeitem codeitemid="0/4/302/311" codeitemdesc="泰安市" />
+            <codeitem codeitemid="0/4/302/312" codeitemdesc="威海市" />
+            <codeitem codeitemid="0/4/302/314" codeitemdesc="日照市" />
+            <codeitem codeitemid="0/4/302/315" codeitemdesc="聊城市" />
+            <codeitem codeitemid="0/4/302/316" codeitemdesc="临沂市" />
+            <codeitem codeitemid="0/4/302/317" codeitemdesc="菏泽市" />
+            <codeitem codeitemid="0/4/302/318" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/302/52140365" codeitemdesc="德州市" />
+            <codeitem codeitemid="0/4/302/52140366" codeitemdesc="滨州市" />
+            <codeitem codeitemid="0/4/302/52140368" codeitemdesc="莱芜市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/331" codeitemdesc="河南省">
+            <codeitem codeitemid="0/4/331/333" codeitemdesc="郑州市">
+                <codeitem codeitemid="0/4/331/333/50157" codeitemdesc="中原区" />
+                <codeitem codeitemid="0/4/331/333/50158" codeitemdesc="二七区" />
+                <codeitem codeitemid="0/4/331/333/50159" codeitemdesc="管城区" />
+                <codeitem codeitemid="0/4/331/333/50160" codeitemdesc="金水区" />
+                <codeitem codeitemid="0/4/331/333/50161" codeitemdesc="惠济区" />
+                <codeitem codeitemid="0/4/331/333/50162" codeitemdesc="郑东新区" />
+                <codeitem codeitemid="0/4/331/333/50163" codeitemdesc="经开区" />
+                <codeitem codeitemid="0/4/331/333/50164" codeitemdesc="高新区" />
+                <codeitem codeitemid="0/4/331/333/50165" codeitemdesc="上街区" />
+                <codeitem codeitemid="0/4/331/333/50166" codeitemdesc="新郑市" />
+                <codeitem codeitemid="0/4/331/333/50167" codeitemdesc="登封市" />
+                <codeitem codeitemid="0/4/331/333/50168" codeitemdesc="新密市" />
+                <codeitem codeitemid="0/4/331/333/50169" codeitemdesc="荥阳市" />
+                <codeitem codeitemid="0/4/331/333/50170" codeitemdesc="中牟县" />
+                <codeitem codeitemid="0/4/331/333/50171" codeitemdesc="巩义市" />
+                <codeitem codeitemid="0/4/331/333/50172" codeitemdesc="航空港区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/331/335" codeitemdesc="开封市" />
+            <codeitem codeitemid="0/4/331/338" codeitemdesc="洛阳市" />
+            <codeitem codeitemid="0/4/331/340" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/331/52140470" codeitemdesc="焦作市" />
+            <codeitem codeitemid="0/4/331/52140471" codeitemdesc="南阳市" />
+            <codeitem codeitemid="0/4/331/52140490" codeitemdesc="新乡市" />
+            <codeitem codeitemid="0/4/331/52140503" codeitemdesc="周口市" />
+            <codeitem codeitemid="0/4/331/52140506" codeitemdesc="安阳市" />
+            <codeitem codeitemid="0/4/331/52140532" codeitemdesc="平顶山市" />
+            <codeitem codeitemid="0/4/331/52140533" codeitemdesc="许昌市" />
+            <codeitem codeitemid="0/4/331/52140546" codeitemdesc="信阳市" />
+            <codeitem codeitemid="0/4/331/52140547" codeitemdesc="商丘市" />
+            <codeitem codeitemid="0/4/331/52140549" codeitemdesc="驻马店市" />
+            <codeitem codeitemid="0/4/331/52140552" codeitemdesc="漯河市" />
+            <codeitem codeitemid="0/4/331/52140561" codeitemdesc="濮阳市" />
+            <codeitem codeitemid="0/4/331/52140562" codeitemdesc="鹤壁市" />
+            <codeitem codeitemid="0/4/331/52140578" codeitemdesc="三门峡市" />
+            <codeitem codeitemid="0/4/331/52140580" codeitemdesc="济源市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/343" codeitemdesc="湖北省">
+            <codeitem codeitemid="0/4/343/346" codeitemdesc="武汉市">
+                <codeitem codeitemid="0/4/343/346/50173" codeitemdesc="江岸区" />
+                <codeitem codeitemid="0/4/343/346/50174" codeitemdesc="江汉区" />
+                <codeitem codeitemid="0/4/343/346/50175" codeitemdesc="硚口区" />
+                <codeitem codeitemid="0/4/343/346/50176" codeitemdesc="汉阳区" />
+                <codeitem codeitemid="0/4/343/346/50177" codeitemdesc="武昌区" />
+                <codeitem codeitemid="0/4/343/346/50178" codeitemdesc="青山区" />
+                <codeitem codeitemid="0/4/343/346/50179" codeitemdesc="洪山区" />
+                <codeitem codeitemid="0/4/343/346/50180" codeitemdesc="蔡甸区" />
+                <codeitem codeitemid="0/4/343/346/50181" codeitemdesc="东西湖区" />
+                <codeitem codeitemid="0/4/343/346/50182" codeitemdesc="汉南区" />
+                <codeitem codeitemid="0/4/343/346/50183" codeitemdesc="江夏区" />
+                <codeitem codeitemid="0/4/343/346/50184" codeitemdesc="黄陂区" />
+                <codeitem codeitemid="0/4/343/346/50185" codeitemdesc="新洲区" />
+                <codeitem codeitemid="0/4/343/346/50186" codeitemdesc="武汉经济技术开发区" />
+                <codeitem codeitemid="0/4/343/346/50187" codeitemdesc="东湖新技术开发区" />
+                <codeitem codeitemid="0/4/343/346/50188" codeitemdesc="武汉吴家山经济技术开发区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/343/348" codeitemdesc="黄石市" />
+            <codeitem codeitemid="0/4/343/351" codeitemdesc="十堰市" />
+            <codeitem codeitemid="0/4/343/353" codeitemdesc="荆州市" />
+            <codeitem codeitemid="0/4/343/355" codeitemdesc="宜昌市" />
+            <codeitem codeitemid="0/4/343/357" codeitemdesc="襄阳市" />
+            <codeitem codeitemid="0/4/343/359" codeitemdesc="鄂州市" />
+            <codeitem codeitemid="0/4/343/361" codeitemdesc="荆门市" />
+            <codeitem codeitemid="0/4/343/364" codeitemdesc="黄冈市" />
+            <codeitem codeitemid="0/4/343/367" codeitemdesc="孝感市" />
+            <codeitem codeitemid="0/4/343/369" codeitemdesc="咸宁市" />
+            <codeitem codeitemid="0/4/343/371" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/343/52140601" codeitemdesc="恩施市" />
+            <codeitem codeitemid="0/4/343/52140602" codeitemdesc="随州市" />
+            <codeitem codeitemid="0/4/343/52140603" codeitemdesc="仙桃市" />
+            <codeitem codeitemid="0/4/343/52140604" codeitemdesc="潜江市" />
+            <codeitem codeitemid="0/4/343/52140605" codeitemdesc="天门市" />
+            <codeitem codeitemid="0/4/343/52140606" codeitemdesc="神农架" />
+        </codeitem>
+        <codeitem codeitemid="0/4/372" codeitemdesc="湖南省">
+            <codeitem codeitemid="0/4/372/374" codeitemdesc="长沙市">
+                <codeitem codeitemid="0/4/372/374/50189" codeitemdesc="芙蓉区" />
+                <codeitem codeitemid="0/4/372/374/50190" codeitemdesc="天心区" />
+                <codeitem codeitemid="0/4/372/374/50191" codeitemdesc="岳麓区" />
+                <codeitem codeitemid="0/4/372/374/50192" codeitemdesc="开福区" />
+                <codeitem codeitemid="0/4/372/374/50193" codeitemdesc="雨花区" />
+                <codeitem codeitemid="0/4/372/374/50194" codeitemdesc="望城区" />
+                <codeitem codeitemid="0/4/372/374/50195" codeitemdesc="长沙县" />
+                <codeitem codeitemid="0/4/372/374/50196" codeitemdesc="宁乡县" />
+                <codeitem codeitemid="0/4/372/374/50197" codeitemdesc="浏阳市" />
+            </codeitem>
+            <codeitem codeitemid="0/4/372/376" codeitemdesc="株洲市" />
+            <codeitem codeitemid="0/4/372/378" codeitemdesc="湘潭市" />
+            <codeitem codeitemid="0/4/372/381" codeitemdesc="衡阳市" />
+            <codeitem codeitemid="0/4/372/383" codeitemdesc="邵阳市" />
+            <codeitem codeitemid="0/4/372/386" codeitemdesc="岳阳市" />
+            <codeitem codeitemid="0/4/372/388" codeitemdesc="常德市" />
+            <codeitem codeitemid="0/4/372/390" codeitemdesc="郴州市" />
+            <codeitem codeitemid="0/4/372/392" codeitemdesc="怀化市" />
+            <codeitem codeitemid="0/4/372/395" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/372/52140618" codeitemdesc="益阳市" />
+            <codeitem codeitemid="0/4/372/52140619" codeitemdesc="娄底市" />
+            <codeitem codeitemid="0/4/372/52140620" codeitemdesc="永州市" />
+            <codeitem codeitemid="0/4/372/52140626" codeitemdesc="张家界市" />
+            <codeitem codeitemid="0/4/372/52140627" codeitemdesc="湘西市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/396" codeitemdesc="广东省">
+            <codeitem codeitemid="0/4/396/397" codeitemdesc="广州市">
+                <codeitem codeitemid="0/4/396/397/50198" codeitemdesc="越秀区" />
+                <codeitem codeitemid="0/4/396/397/50199" codeitemdesc="海珠区" />
+                <codeitem codeitemid="0/4/396/397/50200" codeitemdesc="荔湾区" />
+                <codeitem codeitemid="0/4/396/397/50201" codeitemdesc="天河区" />
+                <codeitem codeitemid="0/4/396/397/50202" codeitemdesc="白云区" />
+                <codeitem codeitemid="0/4/396/397/50203" codeitemdesc="黄埔区" />
+                <codeitem codeitemid="0/4/396/397/50204" codeitemdesc="番禺区" />
+                <codeitem codeitemid="0/4/396/397/50205" codeitemdesc="花都区" />
+                <codeitem codeitemid="0/4/396/397/50206" codeitemdesc="萝岗区" />
+                <codeitem codeitemid="0/4/396/397/50207" codeitemdesc="南沙区" />
+                <codeitem codeitemid="0/4/396/397/50208" codeitemdesc="增城" />
+                <codeitem codeitemid="0/4/396/397/50209" codeitemdesc="从化" />
+            </codeitem>
+            <codeitem codeitemid="0/4/396/398" codeitemdesc="韶关市" />
+            <codeitem codeitemid="0/4/396/399" codeitemdesc="深圳市">
+                <codeitem codeitemid="0/4/396/399/50210" codeitemdesc="福田区" />
+                <codeitem codeitemid="0/4/396/399/50211" codeitemdesc="罗湖区" />
+                <codeitem codeitemid="0/4/396/399/50212" codeitemdesc="南山区" />
+                <codeitem codeitemid="0/4/396/399/50213" codeitemdesc="盐田区" />
+                <codeitem codeitemid="0/4/396/399/50214" codeitemdesc="宝安区" />
+                <codeitem codeitemid="0/4/396/399/50215" codeitemdesc="龙岗区" />
+                <codeitem codeitemid="0/4/396/399/50216" codeitemdesc="坪山新区" />
+                <codeitem codeitemid="0/4/396/399/50217" codeitemdesc="光明新区" />
+                <codeitem codeitemid="0/4/396/399/50218" codeitemdesc="龙华新区" />
+                <codeitem codeitemid="0/4/396/399/50219" codeitemdesc="大鹏新区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/396/401" codeitemdesc="珠海市" />
+            <codeitem codeitemid="0/4/396/403" codeitemdesc="汕头市" />
+            <codeitem codeitemid="0/4/396/406" codeitemdesc="潮州市" />
+            <codeitem codeitemid="0/4/396/411" codeitemdesc="中山市" />
+            <codeitem codeitemid="0/4/396/412" codeitemdesc="江门市" />
+            <codeitem codeitemid="0/4/396/415" codeitemdesc="湛江市" />
+            <codeitem codeitemid="0/4/396/417" codeitemdesc="茂名市" />
+            <codeitem codeitemid="0/4/396/419" codeitemdesc="肇庆市" />
+            <codeitem codeitemid="0/4/396/423" codeitemdesc="惠州市">
+                <codeitem codeitemid="0/4/396/423/50242" codeitemdesc="惠城区" />
+                <codeitem codeitemid="0/4/396/423/50243" codeitemdesc="惠阳区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/396/429" codeitemdesc="汕尾市" />
+            <codeitem codeitemid="0/4/396/430" codeitemdesc="河源市" />
+            <codeitem codeitemid="0/4/396/431" codeitemdesc="清远市" />
+            <codeitem codeitemid="0/4/396/432" codeitemdesc="东莞市" />
+            <codeitem codeitemid="0/4/396/434" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/396/52140684" codeitemdesc="佛山市">
+                <codeitem codeitemid="0/4/396/52140684/50220" codeitemdesc="禅城区" />
+                <codeitem codeitemid="0/4/396/52140684/50221" codeitemdesc="三水区" />
+                <codeitem codeitemid="0/4/396/52140684/50222" codeitemdesc="高明区" />
+                <codeitem codeitemid="0/4/396/52140684/50223" codeitemdesc="南海区" />
+                <codeitem codeitemid="0/4/396/52140684/50224" codeitemdesc="顺德区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/396/52140706" codeitemdesc="揭阳市" />
+            <codeitem codeitemid="0/4/396/52140710" codeitemdesc="顺德市" />
+            <codeitem codeitemid="0/4/396/52140711" codeitemdesc="梅州市" />
+            <codeitem codeitemid="0/4/396/52140712" codeitemdesc="开平市" />
+            <codeitem codeitemid="0/4/396/52140713" codeitemdesc="阳江市" />
+            <codeitem codeitemid="0/4/396/52140714" codeitemdesc="云浮市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/43" codeitemdesc="山西省">
+            <codeitem codeitemid="0/4/43/46" codeitemdesc="太原市">
+                <codeitem codeitemid="0/4/43/46/50380" codeitemdesc="小店区" />
+                <codeitem codeitemid="0/4/43/46/50381" codeitemdesc="迎泽区" />
+                <codeitem codeitemid="0/4/43/46/50382" codeitemdesc="杏花岭区" />
+                <codeitem codeitemid="0/4/43/46/50383" codeitemdesc="尖草坪区" />
+                <codeitem codeitemid="0/4/43/46/50384" codeitemdesc="万柏林区" />
+                <codeitem codeitemid="0/4/43/46/50385" codeitemdesc="晋源区" />
+                <codeitem codeitemid="0/4/43/46/50386" codeitemdesc="清徐县" />
+                <codeitem codeitemid="0/4/43/46/50387" codeitemdesc="阳曲县" />
+                <codeitem codeitemid="0/4/43/46/50388" codeitemdesc="娄烦县" />
+                <codeitem codeitemid="0/4/43/46/50389" codeitemdesc="古交市" />
+            </codeitem>
+            <codeitem codeitemid="0/4/43/48" codeitemdesc="大同市" />
+            <codeitem codeitemid="0/4/43/49" codeitemdesc="临汾市" />
+            <codeitem codeitemid="0/4/43/52" codeitemdesc="运城市" />
+            <codeitem codeitemid="0/4/43/52113718" codeitemdesc="长治市" />
+            <codeitem codeitemid="0/4/43/52113719" codeitemdesc="晋城市" />
+            <codeitem codeitemid="0/4/43/52113720" codeitemdesc="阳泉市" />
+            <codeitem codeitemid="0/4/43/52113721" codeitemdesc="朔州市" />
+            <codeitem codeitemid="0/4/43/52113722" codeitemdesc="晋中市" />
+            <codeitem codeitemid="0/4/43/52113723" codeitemdesc="忻州市" />
+            <codeitem codeitemid="0/4/43/52113734" codeitemdesc="吕梁市" />
+            <codeitem codeitemid="0/4/43/53" codeitemdesc="其它" />
+        </codeitem>
+        <codeitem codeitemid="0/4/439" codeitemdesc="广西壮族自治区">
+            <codeitem codeitemid="0/4/439/440" codeitemdesc="南宁市" />
+            <codeitem codeitemid="0/4/439/441" codeitemdesc="柳州市" />
+            <codeitem codeitemid="0/4/439/442" codeitemdesc="桂林市" />
+            <codeitem codeitemid="0/4/439/443" codeitemdesc="北海市" />
+            <codeitem codeitemid="0/4/439/444" codeitemdesc="玉林市" />
+            <codeitem codeitemid="0/4/439/447" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/439/52140715" codeitemdesc="梧州市" />
+            <codeitem codeitemid="0/4/439/52140716" codeitemdesc="防城港市" />
+            <codeitem codeitemid="0/4/439/52140717" codeitemdesc="钦州市" />
+            <codeitem codeitemid="0/4/439/52140718" codeitemdesc="贵港市" />
+            <codeitem codeitemid="0/4/439/52140719" codeitemdesc="百色市" />
+            <codeitem codeitemid="0/4/439/52140721" codeitemdesc="河池市" />
+            <codeitem codeitemid="0/4/439/52140722" codeitemdesc="来宾市" />
+            <codeitem codeitemid="0/4/439/52140724" codeitemdesc="崇左市" />
+            <codeitem codeitemid="0/4/439/52140725" codeitemdesc="贺州市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/450" codeitemdesc="海南省">
+            <codeitem codeitemid="0/4/450/452" codeitemdesc="海口市" />
+            <codeitem codeitemid="0/4/450/453" codeitemdesc="三亚市" />
+            <codeitem codeitemid="0/4/450/52140955" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/4/455" codeitemdesc="四川省">
+            <codeitem codeitemid="0/4/455/456" codeitemdesc="成都市">
+                <codeitem codeitemid="0/4/455/456/50244" codeitemdesc="青羊区" />
+                <codeitem codeitemid="0/4/455/456/50245" codeitemdesc="锦江区" />
+                <codeitem codeitemid="0/4/455/456/50246" codeitemdesc="金牛区" />
+                <codeitem codeitemid="0/4/455/456/50247" codeitemdesc="武侯区" />
+                <codeitem codeitemid="0/4/455/456/50248" codeitemdesc="成华区" />
+                <codeitem codeitemid="0/4/455/456/50249" codeitemdesc="龙泉驿区" />
+                <codeitem codeitemid="0/4/455/456/50250" codeitemdesc="青白江区" />
+                <codeitem codeitemid="0/4/455/456/50251" codeitemdesc="新都区" />
+                <codeitem codeitemid="0/4/455/456/50252" codeitemdesc="温江区" />
+                <codeitem codeitemid="0/4/455/456/50253" codeitemdesc="双流县" />
+                <codeitem codeitemid="0/4/455/456/50254" codeitemdesc="郫县" />
+                <codeitem codeitemid="0/4/455/456/50255" codeitemdesc="金堂县" />
+                <codeitem codeitemid="0/4/455/456/50256" codeitemdesc="大邑县" />
+                <codeitem codeitemid="0/4/455/456/50257" codeitemdesc="蒲江县" />
+                <codeitem codeitemid="0/4/455/456/50258" codeitemdesc="新津县" />
+                <codeitem codeitemid="0/4/455/456/50259" codeitemdesc="邛崃市" />
+                <codeitem codeitemid="0/4/455/456/50260" codeitemdesc="崇州市" />
+                <codeitem codeitemid="0/4/455/456/50261" codeitemdesc="彭州市" />
+                <codeitem codeitemid="0/4/455/456/50262" codeitemdesc="都江堰市" />
+                <codeitem codeitemid="0/4/455/456/50263" codeitemdesc="高新区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/455/459" codeitemdesc="自贡市" />
+            <codeitem codeitemid="0/4/455/460" codeitemdesc="攀枝花市" />
+            <codeitem codeitemid="0/4/455/462" codeitemdesc="泸州市" />
+            <codeitem codeitemid="0/4/455/463" codeitemdesc="德阳市" />
+            <codeitem codeitemid="0/4/455/464" codeitemdesc="绵阳市" />
+            <codeitem codeitemid="0/4/455/465" codeitemdesc="内江市" />
+            <codeitem codeitemid="0/4/455/466" codeitemdesc="乐山市" />
+            <codeitem codeitemid="0/4/455/467" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/455/52140989" codeitemdesc="宜宾市" />
+            <codeitem codeitemid="0/4/455/52140990" codeitemdesc="南充市" />
+            <codeitem codeitemid="0/4/455/52140991" codeitemdesc="眉山市" />
+            <codeitem codeitemid="0/4/455/52141006" codeitemdesc="广安市" />
+            <codeitem codeitemid="0/4/455/52141036" codeitemdesc="资阳市" />
+            <codeitem codeitemid="0/4/455/52141037" codeitemdesc="遂宁市" />
+            <codeitem codeitemid="0/4/455/52141038" codeitemdesc="广元市" />
+            <codeitem codeitemid="0/4/455/52141039" codeitemdesc="达州市" />
+            <codeitem codeitemid="0/4/455/52141040" codeitemdesc="雅安市" />
+            <codeitem codeitemid="0/4/455/52141051" codeitemdesc="西昌市" />
+            <codeitem codeitemid="0/4/455/52141058" codeitemdesc="巴中市" />
+            <codeitem codeitemid="0/4/455/52141059" codeitemdesc="甘孜市" />
+            <codeitem codeitemid="0/4/455/52141060" codeitemdesc="阿坝市" />
+            <codeitem codeitemid="0/4/455/52141061" codeitemdesc="凉山市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/468" codeitemdesc="贵州省">
+            <codeitem codeitemid="0/4/468/469" codeitemdesc="贵阳市">
+                <codeitem codeitemid="0/4/468/469/50264" codeitemdesc="云岩区" />
+                <codeitem codeitemid="0/4/468/469/50265" codeitemdesc="南明区" />
+                <codeitem codeitemid="0/4/468/469/50266" codeitemdesc="花溪区" />
+                <codeitem codeitemid="0/4/468/469/50267" codeitemdesc="观山湖区（金阳新区）" />
+                <codeitem codeitemid="0/4/468/469/50268" codeitemdesc="白云区" />
+                <codeitem codeitemid="0/4/468/469/50269" codeitemdesc="乌当区" />
+                <codeitem codeitemid="0/4/468/469/50270" codeitemdesc="清镇市" />
+                <codeitem codeitemid="0/4/468/469/50271" codeitemdesc="修文县" />
+                <codeitem codeitemid="0/4/468/469/50272" codeitemdesc="息烽县" />
+                <codeitem codeitemid="0/4/468/469/50273" codeitemdesc="开阳县" />
+            </codeitem>
+            <codeitem codeitemid="0/4/468/470" codeitemdesc="遵义市" />
+            <codeitem codeitemid="0/4/468/471" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/468/52141062" codeitemdesc="六盘水市" />
+            <codeitem codeitemid="0/4/468/52141063" codeitemdesc="安顺市" />
+            <codeitem codeitemid="0/4/468/52141064" codeitemdesc="铜仁市" />
+            <codeitem codeitemid="0/4/468/52141065" codeitemdesc="毕节市" />
+            <codeitem codeitemid="0/4/468/52141066" codeitemdesc="黔西南市" />
+            <codeitem codeitemid="0/4/468/52141067" codeitemdesc="黔东南市" />
+            <codeitem codeitemid="0/4/468/52141068" codeitemdesc="黔南市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/473" codeitemdesc="云南省">
+            <codeitem codeitemid="0/4/473/475" codeitemdesc="昆明市" />
+            <codeitem codeitemid="0/4/473/476" codeitemdesc="玉溪市" />
+            <codeitem codeitemid="0/4/473/478" codeitemdesc="大理市" />
+            <codeitem codeitemid="0/4/473/480" codeitemdesc="丽江市" />
+            <codeitem codeitemid="0/4/473/481" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/473/52141076" codeitemdesc="曲靖市" />
+            <codeitem codeitemid="0/4/473/52141093" codeitemdesc="红河州市" />
+            <codeitem codeitemid="0/4/473/52141098" codeitemdesc="普洱市" />
+            <codeitem codeitemid="0/4/473/52141099" codeitemdesc="保山市" />
+            <codeitem codeitemid="0/4/473/52141146" codeitemdesc="昭通市" />
+            <codeitem codeitemid="0/4/473/52141147" codeitemdesc="文山市" />
+            <codeitem codeitemid="0/4/473/52141180" codeitemdesc="西双版纳市" />
+            <codeitem codeitemid="0/4/473/52141181" codeitemdesc="德宏市" />
+            <codeitem codeitemid="0/4/473/52141183" codeitemdesc="楚雄市" />
+            <codeitem codeitemid="0/4/473/52141184" codeitemdesc="临沧市" />
+            <codeitem codeitemid="0/4/473/52141185" codeitemdesc="怒江市" />
+            <codeitem codeitemid="0/4/473/52141186" codeitemdesc="迪庆市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/482" codeitemdesc="西藏藏族自治区">
+            <codeitem codeitemid="0/4/482/483" codeitemdesc="拉萨市" />
+            <codeitem codeitemid="0/4/482/484" codeitemdesc="日喀则市" />
+            <codeitem codeitemid="0/4/482/488" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/482/52141188" codeitemdesc="林芝市" />
+            <codeitem codeitemid="0/4/482/52141199" codeitemdesc="山南市" />
+            <codeitem codeitemid="0/4/482/52141200" codeitemdesc="昌都市" />
+            <codeitem codeitemid="0/4/482/52141201" codeitemdesc="那曲市" />
+            <codeitem codeitemid="0/4/482/52141440" codeitemdesc="阿里市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/489" codeitemdesc="陕西省">
+            <codeitem codeitemid="0/4/489/491" codeitemdesc="西安市">
+                <codeitem codeitemid="0/4/489/491/50274" codeitemdesc="新城区" />
+                <codeitem codeitemid="0/4/489/491/50275" codeitemdesc="碑林区" />
+                <codeitem codeitemid="0/4/489/491/50276" codeitemdesc="莲湖区" />
+                <codeitem codeitemid="0/4/489/491/50277" codeitemdesc="雁塔区" />
+                <codeitem codeitemid="0/4/489/491/50278" codeitemdesc="未央区" />
+                <codeitem codeitemid="0/4/489/491/50279" codeitemdesc="灞桥区" />
+                <codeitem codeitemid="0/4/489/491/50280" codeitemdesc="长安区" />
+                <codeitem codeitemid="0/4/489/491/50281" codeitemdesc="阎良区" />
+                <codeitem codeitemid="0/4/489/491/50282" codeitemdesc="临潼区" />
+                <codeitem codeitemid="0/4/489/491/50283" codeitemdesc="蓝田县" />
+                <codeitem codeitemid="0/4/489/491/50284" codeitemdesc="周至县" />
+                <codeitem codeitemid="0/4/489/491/50285" codeitemdesc="户县" />
+                <codeitem codeitemid="0/4/489/491/50286" codeitemdesc="高陵县" />
+                <codeitem codeitemid="0/4/489/491/50287" codeitemdesc="沣渭新区" />
+                <codeitem codeitemid="0/4/489/491/50288" codeitemdesc="高新技术产业开发区" />
+                <codeitem codeitemid="0/4/489/491/50289" codeitemdesc="经济技术开发区" />
+                <codeitem codeitemid="0/4/489/491/50290" codeitemdesc="曲江新区" />
+                <codeitem codeitemid="0/4/489/491/50291" codeitemdesc="浐灞生态区" />
+                <codeitem codeitemid="0/4/489/491/50292" codeitemdesc="阎良国家航空高新技术产业基地" />
+                <codeitem codeitemid="0/4/489/491/50293" codeitemdesc="西安国家民用航天产业基地" />
+                <codeitem codeitemid="0/4/489/491/50294" codeitemdesc="国际港务区" />
+            </codeitem>
+            <codeitem codeitemid="0/4/489/494" codeitemdesc="铜川市" />
+            <codeitem codeitemid="0/4/489/497" codeitemdesc="宝鸡市" />
+            <codeitem codeitemid="0/4/489/510" codeitemdesc="咸阳市" />
+            <codeitem codeitemid="0/4/489/511" codeitemdesc="延安市" />
+            <codeitem codeitemid="0/4/489/512" codeitemdesc="其它" />
+            <codeitem codeitemid="0/4/489/52141447" codeitemdesc="渭南市" />
+            <codeitem codeitemid="0/4/489/52141449" codeitemdesc="榆林市" />
+            <codeitem codeitemid="0/4/489/52141450" codeitemdesc="汉中市" />
+            <codeitem codeitemid="0/4/489/52141452" codeitemdesc="安康市" />
+            <codeitem codeitemid="0/4/489/52141453" codeitemdesc="商洛市" />
+            <codeitem codeitemid="0/4/489/52141454" codeitemdesc="杨凌市" />
+        </codeitem>
+        <codeitem codeitemid="0/4/513" codeitemdesc="甘肃省">
+            <codeitem codeitemid="0/4/513/514" codeitemdesc="兰州市" />
+            <codeitem codeitemid="0/4/513/515" codeitemdesc="嘉峪关市" />
+            <codeitem codeitemid="0/4/513/516" codeitemdesc="酒泉市" />
+            <codeitem codeitemid="0/4/513/52141466" codeitemdesc="天水市" />
+            <codeitem codeitemid="0/4/513/52141468" codeitemdesc="武威市" />
+            <codeitem codeitemid="0/4/513/52141469" codeitemdesc="白银市" />
+            <codeitem codeitemid="0/4/513/52141482" codeitemdesc="张掖市" />
+            <codeitem codeitemid="0/4/513/52141484" codeitemdesc="平凉市" />
+            <codeitem codeitemid="0/4/513/52141485" codeitemdesc="定西市" />
+            <codeitem codeitemid="0/4/513/52141486" codeitemdesc="陇南市" />
+            <codeitem codeitemid="0/4/513/52141487" codeitemdesc="庆阳市" />
+            <codeitem codeitemid="0/4/513/52141488" codeitemdesc="临夏市" />
+            <codeitem codeitemid="0/4/513/52141489" codeitemdesc="甘南市" />
+            <codeitem codeitemid="0/4/513/548" codeitemdesc="金昌市" />
+            <codeitem codeitemid="0/4/513/549" codeitemdesc="其它" />
+        </codeitem>
+        <codeitem codeitemid="0/4/538261911" codeitemdesc="其它" />
+        <codeitem codeitemid="0/4/553" codeitemdesc="青海省">
+            <codeitem codeitemid="0/4/553/52141578" codeitemdesc="海东地区" />
+            <codeitem codeitemid="0/4/553/52141580" codeitemdesc="海西蒙古族藏族自治州" />
+            <codeitem codeitemid="0/4/553/52141617" codeitemdesc="海南藏族自治州" />
+            <codeitem codeitemid="0/4/553/52141630" codeitemdesc="海北藏族自治州" />
+            <codeitem codeitemid="0/4/553/52141631" codeitemdesc="果洛藏族自治州" />
+            <codeitem codeitemid="0/4/553/52141632" codeitemdesc="黄南藏族自治州" />
+            <codeitem codeitemid="0/4/553/52141634" codeitemdesc="玉树藏族自治州" />
+            <codeitem codeitemid="0/4/553/554" codeitemdesc="西宁市" />
+            <codeitem codeitemid="0/4/553/556" codeitemdesc="其它" />
+        </codeitem>
+        <codeitem codeitemid="0/4/560" codeitemdesc="宁夏回族自治区">
+            <codeitem codeitemid="0/4/560/52141647" codeitemdesc="吴忠市" />
+            <codeitem codeitemid="0/4/560/52141658" codeitemdesc="中卫市" />
+            <codeitem codeitemid="0/4/560/52141660" codeitemdesc="石嘴山市" />
+            <codeitem codeitemid="0/4/560/52141661" codeitemdesc="固原市" />
+            <codeitem codeitemid="0/4/560/561" codeitemdesc="银川市" />
+            <codeitem codeitemid="0/4/560/562" codeitemdesc="其它" />
+        </codeitem>
+        <codeitem codeitemid="0/4/57" codeitemdesc="内蒙古自治区">
+            <codeitem codeitemid="0/4/57/52113740" codeitemdesc="通辽市" />
+            <codeitem codeitemid="0/4/57/52113741" codeitemdesc="鄂尔多斯市" />
+            <codeitem codeitemid="0/4/57/52113744" codeitemdesc="巴彦淖尔市" />
+            <codeitem codeitemid="0/4/57/52113795" codeitemdesc="乌海市" />
+            <codeitem codeitemid="0/4/57/52113798" codeitemdesc="呼伦贝尔市" />
+            <codeitem codeitemid="0/4/57/52113802" codeitemdesc="乌兰察布市" />
+            <codeitem codeitemid="0/4/57/52113817" codeitemdesc="兴安盟市" />
+            <codeitem codeitemid="0/4/57/52113855" codeitemdesc="锡林郭勒盟市" />
+            <codeitem codeitemid="0/4/57/52113858" codeitemdesc="阿拉善盟市" />
+            <codeitem codeitemid="0/4/57/67" codeitemdesc="呼和浩特市" />
+            <codeitem codeitemid="0/4/57/73" codeitemdesc="包头市" />
+            <codeitem codeitemid="0/4/57/75" codeitemdesc="赤峰市" />
+            <codeitem codeitemid="0/4/57/76" codeitemdesc="其它" />
+        </codeitem>
+        <codeitem codeitemid="0/4/574" codeitemdesc="新疆维吾尔自治区">
+            <codeitem codeitemid="0/4/574/52147095" codeitemdesc="阿克苏市" />
+            <codeitem codeitemid="0/4/574/52147096" codeitemdesc="哈密市" />
+            <codeitem codeitemid="0/4/574/52147097" codeitemdesc="阿拉尔市" />
+            <codeitem codeitemid="0/4/574/52147098" codeitemdesc="五家渠市" />
+            <codeitem codeitemid="0/4/574/52147099" codeitemdesc="土木舒尔市" />
+            <codeitem codeitemid="0/4/574/52147100" codeitemdesc="昌吉市" />
+            <codeitem codeitemid="0/4/574/52147101" codeitemdesc="阿勒泰市" />
+            <codeitem codeitemid="0/4/574/52147102" codeitemdesc="吐鲁番市" />
+            <codeitem codeitemid="0/4/574/52147103" codeitemdesc="塔城市" />
+            <codeitem codeitemid="0/4/574/52147104" codeitemdesc="和田市" />
+            <codeitem codeitemid="0/4/574/52147105" codeitemdesc="克孜勒苏柯尔克孜市" />
+            <codeitem codeitemid="0/4/574/52147106" codeitemdesc="巴音郭楞市" />
+            <codeitem codeitemid="0/4/574/52147107" codeitemdesc="博尔塔拉市" />
+            <codeitem codeitemid="0/4/574/575" codeitemdesc="乌鲁木齐市" />
+            <codeitem codeitemid="0/4/574/576" codeitemdesc="克拉玛依市" />
+            <codeitem codeitemid="0/4/574/577" codeitemdesc="喀什市" />
+            <codeitem codeitemid="0/4/574/581" codeitemdesc="伊犁市" />
+            <codeitem codeitemid="0/4/574/582" codeitemdesc="石河子市" />
+            <codeitem codeitemid="0/4/574/594" codeitemdesc="其它" />
+        </codeitem>
+        <codeitem codeitemid="0/4/595" codeitemdesc="香港">
+            <codeitem codeitemid="0/4/595/538135297" codeitemdesc="香港" />
+        </codeitem>
+        <codeitem codeitemid="0/4/596" codeitemdesc="澳门">
+            <codeitem codeitemid="0/4/596/538137608" codeitemdesc="澳门" />
+        </codeitem>
+        <codeitem codeitemid="0/4/597" codeitemdesc="台湾">
+            <codeitem codeitemid="0/4/597/538139726" codeitemdesc="台湾" />
+        </codeitem>
+        <codeitem codeitemid="0/4/598" codeitemdesc="其它" />
+        <codeitem codeitemid="0/4/7" codeitemdesc="北京市">
+            <codeitem codeitemid="0/4/7/9" codeitemdesc="北京市市辖区">
+                <codeitem codeitemid="0/4/7/9/50022" codeitemdesc="东城区" />
+                <codeitem codeitemid="0/4/7/9/50023" codeitemdesc="西城区" />
+                <codeitem codeitemid="0/4/7/9/50024" codeitemdesc="崇文区" />
+                <codeitem codeitemid="0/4/7/9/50025" codeitemdesc="宣武区" />
+                <codeitem codeitemid="0/4/7/9/50026" codeitemdesc="海淀区" />
+                <codeitem codeitemid="0/4/7/9/50027" codeitemdesc="朝阳区" />
+                <codeitem codeitemid="0/4/7/9/50028" codeitemdesc="丰台区" />
+                <codeitem codeitemid="0/4/7/9/50029" codeitemdesc="石景山区" />
+                <codeitem codeitemid="0/4/7/9/50030" codeitemdesc="通州区" />
+                <codeitem codeitemid="0/4/7/9/50031" codeitemdesc="顺义区" />
+                <codeitem codeitemid="0/4/7/9/50032" codeitemdesc="房山区" />
+                <codeitem codeitemid="0/4/7/9/50033" codeitemdesc="大兴区" />
+                <codeitem codeitemid="0/4/7/9/50034" codeitemdesc="昌平区" />
+                <codeitem codeitemid="0/4/7/9/50035" codeitemdesc="怀柔区" />
+                <codeitem codeitemid="0/4/7/9/50036" codeitemdesc="平谷区" />
+                <codeitem codeitemid="0/4/7/9/50037" codeitemdesc="门头沟区" />
+                <codeitem codeitemid="0/4/7/9/50038" codeitemdesc="密云县" />
+                <codeitem codeitemid="0/4/7/9/50039" codeitemdesc="延庆县" />
+            </codeitem>
+        </codeitem>
+        <codeitem codeitemid="0/4/77" codeitemdesc="辽宁省">
+            <codeitem codeitemid="0/4/77/52113878" codeitemdesc="葫芦岛市" />
+            <codeitem codeitemid="0/4/77/52113879" codeitemdesc="盘锦市" />
+            <codeitem codeitemid="0/4/77/52113881" codeitemdesc="朝阳市" />
+            <codeitem codeitemid="0/4/77/52113882" codeitemdesc="阜新市" />
+            <codeitem codeitemid="0/4/77/78" codeitemdesc="沈阳市">
+                <codeitem codeitemid="0/4/77/78/50390" codeitemdesc="和平区" />
+                <codeitem codeitemid="0/4/77/78/50391" codeitemdesc="沈河区" />
+                <codeitem codeitemid="0/4/77/78/50392" codeitemdesc="皇姑区" />
+                <codeitem codeitemid="0/4/77/78/50393" codeitemdesc="大东区" />
+                <codeitem codeitemid="0/4/77/78/50394" codeitemdesc="铁西区" />
+                <codeitem codeitemid="0/4/77/78/50395" codeitemdesc="东陵区（浑南新区）" />
+                <codeitem codeitemid="0/4/77/78/50396" codeitemdesc="于洪区" />
+                <codeitem codeitemid="0/4/77/78/50397" codeitemdesc="沈北新区" />
+                <codeitem codeitemid="0/4/77/78/50398" codeitemdesc="苏家屯区" />
+                <codeitem codeitemid="0/4/77/78/50399" codeitemdesc="棋盘山开发区" />
+                <codeitem codeitemid="0/4/77/78/50400" codeitemdesc="新民市" />
+                <codeitem codeitemid="0/4/77/78/50401" codeitemdesc="辽中县" />
+                <codeitem codeitemid="0/4/77/78/50402" codeitemdesc="康平县" />
+                <codeitem codeitemid="0/4/77/78/50403" codeitemdesc="法库县" />
+            </codeitem>
+            <codeitem codeitemid="0/4/77/79" codeitemdesc="大连市">
+                <codeitem codeitemid="0/4/77/79/50404" codeitemdesc="西岗区" />
+                <codeitem codeitemid="0/4/77/79/50405" codeitemdesc="中山区" />
+                <codeitem codeitemid="0/4/77/79/50406" codeitemdesc="沙河口区" />
+                <codeitem codeitemid="0/4/77/79/50407" codeitemdesc="甘井子区" />
+                <codeitem codeitemid="0/4/77/79/50408" codeitemdesc="高新园区" />
+                <codeitem codeitemid="0/4/77/79/50409" codeitemdesc="开发区" />
+                <codeitem codeitemid="0/4/77/79/50410" codeitemdesc="旅顺口区" />
+                <codeitem codeitemid="0/4/77/79/50411" codeitemdesc="金州区" />
+                <codeitem codeitemid="0/4/77/79/50412" codeitemdesc="普兰店市" />
+                <codeitem codeitemid="0/4/77/79/50413" codeitemdesc="瓦房店市" />
+                <codeitem codeitemid="0/4/77/79/50414" codeitemdesc="庄河市" />
+                <codeitem codeitemid="0/4/77/79/50415" codeitemdesc="长海县" />
+                <codeitem codeitemid="0/4/77/79/50416" codeitemdesc="长兴岛" />
+            </codeitem>
+            <codeitem codeitemid="0/4/77/81" codeitemdesc="鞍山市" />
+            <codeitem codeitemid="0/4/77/82" codeitemdesc="抚顺市" />
+            <codeitem codeitemid="0/4/77/83" codeitemdesc="本溪市" />
+            <codeitem codeitemid="0/4/77/86" codeitemdesc="丹东市" />
+            <codeitem codeitemid="0/4/77/88" codeitemdesc="锦州市" />
+            <codeitem codeitemid="0/4/77/90" codeitemdesc="营口市" />
+            <codeitem codeitemid="0/4/77/93" codeitemdesc="辽阳市" />
+            <codeitem codeitemid="0/4/77/95" codeitemdesc="铁岭市" />
+            <codeitem codeitemid="0/4/77/98" codeitemdesc="其它" />
+        </codeitem>
+    </codeset>
+    <codeset codesetid="0/435" codesetdesc="学位">
+        <codeitem codeitemid="0/435/477" codeitemdesc="无" />
+        <codeitem codeitemid="0/435/479" codeitemdesc="学士" />
+        <codeitem codeitemid="0/435/485" codeitemdesc="双学士" />
+        <codeitem codeitemid="0/435/486" codeitemdesc="硕士" />
+        <codeitem codeitemid="0/435/487" codeitemdesc="博士" />
+        <codeitem codeitemid="0/435/52113850" codeitemdesc="MBA" />
+    </codeset>
+    <codeset codesetid="0/461" codesetdesc="工作类型">
+        <codeitem codeitemid="0/461/578" codeitemdesc="全职" />
+        <codeitem codeitemid="0/461/579" codeitemdesc="兼职" />
+        <codeitem codeitemid="0/461/580" codeitemdesc="实习" />
+        <codeitem codeitemid="0/461/583" codeitemdesc="合同工" />
+    </codeset>
+    <codeset codesetid="0/472" codesetdesc="与本人关系">
+        <codeitem codeitemid="0/472/584" codeitemdesc="父亲" />
+        <codeitem codeitemid="0/472/585" codeitemdesc="母亲" />
+        <codeitem codeitemid="0/472/586" codeitemdesc="兄妹" />
+        <codeitem codeitemid="0/472/587" codeitemdesc="姐妹" />
+        <codeitem codeitemid="0/472/588" codeitemdesc="姐弟" />
+        <codeitem codeitemid="0/472/589" codeitemdesc="丈夫" />
+        <codeitem codeitemid="0/472/590" codeitemdesc="妻子" />
+        <codeitem codeitemid="0/472/591" codeitemdesc="儿子" />
+        <codeitem codeitemid="0/472/592" codeitemdesc="女儿" />
+        <codeitem codeitemid="0/472/593" codeitemdesc="其它" />
+    </codeset>
+    <codeset codesetid="0/599" codesetdesc="性别">
+        <codeitem codeitemid="0/599/604" codeitemdesc="男" />
+        <codeitem codeitemid="0/599/605" codeitemdesc="女" />
+    </codeset>
+    <codeset codesetid="0/606" codesetdesc="学历">
+        <codeitem codeitemid="0/606/607" codeitemdesc="初中及以下" />
+        <codeitem codeitemid="0/606/608" codeitemdesc="高中" />
+        <codeitem codeitemid="0/606/609" codeitemdesc="技校/职高" />
+        <codeitem codeitemid="0/606/610" codeitemdesc="中专" />
+        <codeitem codeitemid="0/606/611" codeitemdesc="大专" />
+        <codeitem codeitemid="0/606/612" codeitemdesc="本科" />
+        <codeitem codeitemid="0/606/615" codeitemdesc="硕士研究生" />
+        <codeitem codeitemid="0/606/616" codeitemdesc="MBA" />
+        <codeitem codeitemid="0/606/617" codeitemdesc="EMBA" />
+        <codeitem codeitemid="0/606/618" codeitemdesc="MPA" />
+        <codeitem codeitemid="0/606/621" codeitemdesc="博士研究生" />
+        <codeitem codeitemid="0/606/622" codeitemdesc="其它" />
+    </codeset>
+    <codeset codesetid="0/660" codesetdesc="招聘专业/专业">
+        <codeitem codeitemid="0/660/61000" codeitemdesc="电子信息科学类">
+            <codeitem codeitemid="0/660/61000/61039" codeitemdesc="科技防卫" />
+            <codeitem codeitemid="0/660/61000/61040" codeitemdesc="信息安全" />
+            <codeitem codeitemid="0/660/61000/61041" codeitemdesc="信息科学技术" />
+            <codeitem codeitemid="0/660/61000/61042" codeitemdesc="光电子技术科学" />
+            <codeitem codeitemid="0/660/61000/61043" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61000/61455" codeitemdesc="电子信息科学与技术" />
+            <codeitem codeitemid="0/660/61000/61456" codeitemdesc="微电子学" />
+            <codeitem codeitemid="0/660/61000/61457" codeitemdesc="光信息科学与技术" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61001" codeitemdesc="能源动力学">
+            <codeitem codeitemid="0/660/61001/61069" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61001/61441" codeitemdesc="热能与动力工程" />
+            <codeitem codeitemid="0/660/61001/61442" codeitemdesc="核工程与核技术" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61002" codeitemdesc="地球物理学类">
+            <codeitem codeitemid="0/660/61002/61141" codeitemdesc="地球与空间科学" />
+            <codeitem codeitemid="0/660/61002/61142" codeitemdesc="空间科学与技术" />
+            <codeitem codeitemid="0/660/61002/61143" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61002/61444" codeitemdesc="地球物理学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61003" codeitemdesc="基础医学类">
+            <codeitem codeitemid="0/660/61003/61208" codeitemdesc="组织胚胎学" />
+            <codeitem codeitemid="0/660/61003/61209" codeitemdesc="病理学系" />
+            <codeitem codeitemid="0/660/61003/61210" codeitemdesc="生理学" />
+            <codeitem codeitemid="0/660/61003/61211" codeitemdesc="病理生理学" />
+            <codeitem codeitemid="0/660/61003/61212" codeitemdesc="药理学系" />
+            <codeitem codeitemid="0/660/61003/61213" codeitemdesc="生物化学" />
+            <codeitem codeitemid="0/660/61003/61214" codeitemdesc="细胞与遗传医学系" />
+            <codeitem codeitemid="0/660/61003/61215" codeitemdesc="免疫学系" />
+            <codeitem codeitemid="0/660/61003/61216" codeitemdesc="病原生物学系" />
+            <codeitem codeitemid="0/660/61003/61217" codeitemdesc="神经生物学系" />
+            <codeitem codeitemid="0/660/61003/61218" codeitemdesc="法医学系" />
+            <codeitem codeitemid="0/660/61003/61219" codeitemdesc="生物医学外语" />
+            <codeitem codeitemid="0/660/61003/61220" codeitemdesc="生物物理学系" />
+            <codeitem codeitemid="0/660/61003/61221" codeitemdesc="医学信息学系" />
+            <codeitem codeitemid="0/660/61003/61222" codeitemdesc="解剖学" />
+            <codeitem codeitemid="0/660/61003/61223" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61004" codeitemdesc="临床医学">
+            <codeitem codeitemid="0/660/61004/61224" codeitemdesc="耳鼻喉" />
+            <codeitem codeitemid="0/660/61004/61225" codeitemdesc="临床诊断" />
+            <codeitem codeitemid="0/660/61004/61226" codeitemdesc="精神卫生" />
+            <codeitem codeitemid="0/660/61004/61227" codeitemdesc="皮肤病与性病" />
+            <codeitem codeitemid="0/660/61004/61228" codeitemdesc="康复与运动医学" />
+            <codeitem codeitemid="0/660/61004/61229" codeitemdesc="影像医学" />
+            <codeitem codeitemid="0/660/61004/61230" codeitemdesc="麻醉学" />
+            <codeitem codeitemid="0/660/61004/61231" codeitemdesc="全科医学" />
+            <codeitem codeitemid="0/660/61004/61232" codeitemdesc="肿瘤学" />
+            <codeitem codeitemid="0/660/61004/61233" codeitemdesc="中西医结合" />
+            <codeitem codeitemid="0/660/61004/61234" codeitemdesc="眼科" />
+            <codeitem codeitemid="0/660/61004/61235" codeitemdesc="内科" />
+            <codeitem codeitemid="0/660/61004/61236" codeitemdesc="外科" />
+            <codeitem codeitemid="0/660/61004/61237" codeitemdesc="儿科" />
+            <codeitem codeitemid="0/660/61004/61238" codeitemdesc="妇产" />
+            <codeitem codeitemid="0/660/61004/61239" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61004/61459" codeitemdesc="口腔医学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61005" codeitemdesc="中医学类">
+            <codeitem codeitemid="0/660/61005/61240" codeitemdesc="针灸推拿学" />
+            <codeitem codeitemid="0/660/61005/61241" codeitemdesc="蒙医学" />
+            <codeitem codeitemid="0/660/61005/61242" codeitemdesc="藏医学" />
+            <codeitem codeitemid="0/660/61005/61243" codeitemdesc="中西医临床医学" />
+            <codeitem codeitemid="0/660/61005/61244" codeitemdesc="维医学" />
+            <codeitem codeitemid="0/660/61005/61245" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61005/61427" codeitemdesc="中医学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61006" codeitemdesc="法医学类">
+            <codeitem codeitemid="0/660/61006/61246" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61006/61423" codeitemdesc="法医学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61007" codeitemdesc="动物医学类">
+            <codeitem codeitemid="0/660/61007/61293" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61007/61453" codeitemdesc="动物医学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61008" codeitemdesc="海洋工程类">
+            <codeitem codeitemid="0/660/61008/61314" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61008/61424" codeitemdesc="船舶与海洋工程" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61009" codeitemdesc="农业经济管理类">
+            <codeitem codeitemid="0/660/61009/61316" codeitemdesc="农林经济管理" />
+            <codeitem codeitemid="0/660/61009/61317" codeitemdesc="农村区域发展" />
+            <codeitem codeitemid="0/660/61009/61318" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61010" codeitemdesc="生命科学">
+            <codeitem codeitemid="0/660/61010/61347" codeitemdesc="生态与进化生物学系" />
+            <codeitem codeitemid="0/660/61010/61348" codeitemdesc="微生物学与微生物工程系" />
+            <codeitem codeitemid="0/660/61010/61349" codeitemdesc="生理学与生物物理学" />
+            <codeitem codeitemid="0/660/61010/61350" codeitemdesc="遗传学和遗传工程系" />
+            <codeitem codeitemid="0/660/61010/61351" codeitemdesc="生物化学系" />
+            <codeitem codeitemid="0/660/61010/61352" codeitemdesc="生物科学与技术系" />
+            <codeitem codeitemid="0/660/61010/61353" codeitemdesc="生物工程系" />
+            <codeitem codeitemid="0/660/61010/61354" codeitemdesc="生物医学工程系" />
+            <codeitem codeitemid="0/660/61010/61355" codeitemdesc="生物信息学与生物统计学" />
+            <codeitem codeitemid="0/660/61010/61356" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61011" codeitemdesc="公共卫生学">
+            <codeitem codeitemid="0/660/61011/61357" codeitemdesc="流行病学" />
+            <codeitem codeitemid="0/660/61011/61358" codeitemdesc="劳动卫生与职业病学" />
+            <codeitem codeitemid="0/660/61011/61359" codeitemdesc="环境卫生学" />
+            <codeitem codeitemid="0/660/61011/61360" codeitemdesc="营养与食品卫生学" />
+            <codeitem codeitemid="0/660/61011/61361" codeitemdesc="少儿卫生学" />
+            <codeitem codeitemid="0/660/61011/61362" codeitemdesc="卫生统计与社会医学" />
+            <codeitem codeitemid="0/660/61011/61363" codeitemdesc="卫生微生物学" />
+            <codeitem codeitemid="0/660/61011/61364" codeitemdesc="医院管理学" />
+            <codeitem codeitemid="0/660/61011/61365" codeitemdesc="卫生化学" />
+            <codeitem codeitemid="0/660/61011/61366" codeitemdesc="卫生法与卫生监督学" />
+            <codeitem codeitemid="0/660/61011/61367" codeitemdesc="健康教育学" />
+            <codeitem codeitemid="0/660/61011/61368" codeitemdesc="卫生政策与管理学系" />
+            <codeitem codeitemid="0/660/61011/61369" codeitemdesc="卫生事业管理学" />
+            <codeitem codeitemid="0/660/61011/61370" codeitemdesc="社会医学" />
+            <codeitem codeitemid="0/660/61011/61371" codeitemdesc="卫生经济学" />
+            <codeitem codeitemid="0/660/61011/61372" codeitemdesc="病理学与营养学系" />
+            <codeitem codeitemid="0/660/61011/61373" codeitemdesc="环境医学系" />
+            <codeitem codeitemid="0/660/61011/61374" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/61011/61400" codeitemdesc="预防医学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61012" codeitemdesc="马克思主义理论类">
+            <codeitem codeitemid="0/660/61012/61381" codeitemdesc="中国革命史与中国共产党党史" />
+            <codeitem codeitemid="0/660/61012/61382" codeitemdesc="科学社会主义与国际共产主义运动" />
+            <codeitem codeitemid="0/660/61012/61383" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/61013" codeitemdesc="其他">
+            <codeitem codeitemid="0/660/61013/61395" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/661" codeitemdesc="哲学类">
+            <codeitem codeitemid="0/660/661/61201" codeitemdesc="哲学" />
+            <codeitem codeitemid="0/660/661/61202" codeitemdesc="伦理学" />
+            <codeitem codeitemid="0/660/661/61203" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/661/905" codeitemdesc="逻辑学" />
+            <codeitem codeitemid="0/660/661/906" codeitemdesc="宗教学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/662" codeitemdesc="经济学类">
+            <codeitem codeitemid="0/660/662/61057" codeitemdesc="国民经济管理" />
+            <codeitem codeitemid="0/660/662/61058" codeitemdesc="贸易经济" />
+            <codeitem codeitemid="0/660/662/61059" codeitemdesc="保险" />
+            <codeitem codeitemid="0/660/662/61060" codeitemdesc="金融工程" />
+            <codeitem codeitemid="0/660/662/61061" codeitemdesc="税务" />
+            <codeitem codeitemid="0/660/662/61062" codeitemdesc="信用管理" />
+            <codeitem codeitemid="0/660/662/61063" codeitemdesc="网络经济学" />
+            <codeitem codeitemid="0/660/662/61064" codeitemdesc="体育经济" />
+            <codeitem codeitemid="0/660/662/61065" codeitemdesc="投资学" />
+            <codeitem codeitemid="0/660/662/61066" codeitemdesc="环境资源与发展经济学" />
+            <codeitem codeitemid="0/660/662/61067" codeitemdesc="海洋经济学" />
+            <codeitem codeitemid="0/660/662/61068" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/662/907" codeitemdesc="经济学" />
+            <codeitem codeitemid="0/660/662/910" codeitemdesc="国际经济与贸易" />
+            <codeitem codeitemid="0/660/662/913" codeitemdesc="财政学" />
+            <codeitem codeitemid="0/660/662/916" codeitemdesc="金融学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/663" codeitemdesc="法学类">
+            <codeitem codeitemid="0/660/663/61162" codeitemdesc="知识产权" />
+            <codeitem codeitemid="0/660/663/61163" codeitemdesc="监狱学" />
+            <codeitem codeitemid="0/660/663/61164" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/663/918" codeitemdesc="法学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/664" codeitemdesc="社会学类">
+            <codeitem codeitemid="0/660/664/61384" codeitemdesc="社会工作" />
+            <codeitem codeitemid="0/660/664/61385" codeitemdesc="家政学" />
+            <codeitem codeitemid="0/660/664/61386" codeitemdesc="人类学" />
+            <codeitem codeitemid="0/660/664/61387" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/664/61440" codeitemdesc="社会学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/665" codeitemdesc="政治学类">
+            <codeitem codeitemid="0/660/665/61375" codeitemdesc="国际文化交流" />
+            <codeitem codeitemid="0/660/665/61376" codeitemdesc="国际政治经济学" />
+            <codeitem codeitemid="0/660/665/61377" codeitemdesc="国际事务" />
+            <codeitem codeitemid="0/660/665/61378" codeitemdesc="国际事务与国际关系" />
+            <codeitem codeitemid="0/660/665/61379" codeitemdesc="国际事务与欧洲关系" />
+            <codeitem codeitemid="0/660/665/61380" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/665/61414" codeitemdesc="政治学与行政学" />
+            <codeitem codeitemid="0/660/665/61415" codeitemdesc="国际政治" />
+            <codeitem codeitemid="0/660/665/61416" codeitemdesc="外交学" />
+            <codeitem codeitemid="0/660/665/61417" codeitemdesc="思想政治教育" />
+        </codeitem>
+        <codeitem codeitemid="0/660/666" codeitemdesc="公安学类">
+            <codeitem codeitemid="0/660/666/61329" codeitemdesc="治安学" />
+            <codeitem codeitemid="0/660/666/61330" codeitemdesc="侦查学" />
+            <codeitem codeitemid="0/660/666/61331" codeitemdesc="边防管理" />
+            <codeitem codeitemid="0/660/666/61332" codeitemdesc="火灾勘察" />
+            <codeitem codeitemid="0/660/666/61333" codeitemdesc="禁毒学" />
+            <codeitem codeitemid="0/660/666/61334" codeitemdesc="警犬技术" />
+            <codeitem codeitemid="0/660/666/61335" codeitemdesc="经济犯罪侦查" />
+            <codeitem codeitemid="0/660/666/61336" codeitemdesc="边防指挥" />
+            <codeitem codeitemid="0/660/666/61337" codeitemdesc="消防指挥" />
+            <codeitem codeitemid="0/660/666/61338" codeitemdesc="警卫学" />
+            <codeitem codeitemid="0/660/666/61339" codeitemdesc="公安情报学" />
+            <codeitem codeitemid="0/660/666/61340" codeitemdesc="犯罪学" />
+            <codeitem codeitemid="0/660/666/61341" codeitemdesc="公安管理学" />
+            <codeitem codeitemid="0/660/666/61342" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/667" codeitemdesc="教育学类">
+            <codeitem codeitemid="0/660/667/61070" codeitemdesc="特殊教育" />
+            <codeitem codeitemid="0/660/667/61071" codeitemdesc="教育技术学" />
+            <codeitem codeitemid="0/660/667/61072" codeitemdesc="小学教育" />
+            <codeitem codeitemid="0/660/667/61073" codeitemdesc="艺术教育" />
+            <codeitem codeitemid="0/660/667/61074" codeitemdesc="人文教育" />
+            <codeitem codeitemid="0/660/667/61075" codeitemdesc="科学教育" />
+            <codeitem codeitemid="0/660/667/61076" codeitemdesc="言语听觉科学" />
+            <codeitem codeitemid="0/660/667/61077" codeitemdesc="华文教育" />
+            <codeitem codeitemid="0/660/667/61078" codeitemdesc="医学人文学系" />
+            <codeitem codeitemid="0/660/667/61079" codeitemdesc="医用理学系" />
+            <codeitem codeitemid="0/660/667/61080" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/667/929" codeitemdesc="教育学" />
+            <codeitem codeitemid="0/660/667/931" codeitemdesc="学前教育" />
+        </codeitem>
+        <codeitem codeitemid="0/660/668" codeitemdesc="体育学类">
+            <codeitem codeitemid="0/660/668/61388" codeitemdesc="体育教育" />
+            <codeitem codeitemid="0/660/668/61389" codeitemdesc="运动训练" />
+            <codeitem codeitemid="0/660/668/61390" codeitemdesc="社会体育" />
+            <codeitem codeitemid="0/660/668/61391" codeitemdesc="运动人体科学" />
+            <codeitem codeitemid="0/660/668/61392" codeitemdesc="民族传统体育" />
+            <codeitem codeitemid="0/660/668/61393" codeitemdesc="运用康复与健康" />
+            <codeitem codeitemid="0/660/668/61394" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/669" codeitemdesc="中国语言文学类">
+            <codeitem codeitemid="0/660/669/61097" codeitemdesc="汉语言文学" />
+            <codeitem codeitemid="0/660/669/61098" codeitemdesc="汉语言" />
+            <codeitem codeitemid="0/660/669/61099" codeitemdesc="对外汉语" />
+            <codeitem codeitemid="0/660/669/61100" codeitemdesc="中国少数民族语言文学" />
+            <codeitem codeitemid="0/660/669/61101" codeitemdesc="古典文献" />
+            <codeitem codeitemid="0/660/669/61102" codeitemdesc="中国语言文化" />
+            <codeitem codeitemid="0/660/669/61103" codeitemdesc="应用语言学" />
+            <codeitem codeitemid="0/660/669/61104" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/670" codeitemdesc="外国语言文学类">
+            <codeitem codeitemid="0/660/670/61105" codeitemdesc="波斯语" />
+            <codeitem codeitemid="0/660/670/61106" codeitemdesc="菲律宾语" />
+            <codeitem codeitemid="0/660/670/61107" codeitemdesc="梵语巴利语" />
+            <codeitem codeitemid="0/660/670/61108" codeitemdesc="印度尼西亚语" />
+            <codeitem codeitemid="0/660/670/61109" codeitemdesc="印地语" />
+            <codeitem codeitemid="0/660/670/61110" codeitemdesc="柬埔寨语" />
+            <codeitem codeitemid="0/660/670/61111" codeitemdesc="老挝语" />
+            <codeitem codeitemid="0/660/670/61112" codeitemdesc="缅甸语" />
+            <codeitem codeitemid="0/660/670/61113" codeitemdesc="马来语" />
+            <codeitem codeitemid="0/660/670/61114" codeitemdesc="蒙古语" />
+            <codeitem codeitemid="0/660/670/61115" codeitemdesc="僧伽罗语" />
+            <codeitem codeitemid="0/660/670/61116" codeitemdesc="泰语" />
+            <codeitem codeitemid="0/660/670/61117" codeitemdesc="乌尔都语" />
+            <codeitem codeitemid="0/660/670/61118" codeitemdesc="希伯来语" />
+            <codeitem codeitemid="0/660/670/61119" codeitemdesc="越南语" />
+            <codeitem codeitemid="0/660/670/61120" codeitemdesc="豪萨语" />
+            <codeitem codeitemid="0/660/670/61121" codeitemdesc="斯瓦希里语" />
+            <codeitem codeitemid="0/660/670/61122" codeitemdesc="阿尔巴尼亚语" />
+            <codeitem codeitemid="0/660/670/61123" codeitemdesc="保加利亚语" />
+            <codeitem codeitemid="0/660/670/61124" codeitemdesc="波兰语" />
+            <codeitem codeitemid="0/660/670/61125" codeitemdesc="捷克语" />
+            <codeitem codeitemid="0/660/670/61126" codeitemdesc="罗马尼亚语" />
+            <codeitem codeitemid="0/660/670/61127" codeitemdesc="葡萄牙语" />
+            <codeitem codeitemid="0/660/670/61128" codeitemdesc="瑞典语" />
+            <codeitem codeitemid="0/660/670/61129" codeitemdesc="土耳其语" />
+            <codeitem codeitemid="0/660/670/61130" codeitemdesc="希腊语" />
+            <codeitem codeitemid="0/660/670/61131" codeitemdesc="匈牙利语" />
+            <codeitem codeitemid="0/660/670/61132" codeitemdesc="意大利语" />
+            <codeitem codeitemid="0/660/670/61133" codeitemdesc="塞尔维亚-克罗地亚语" />
+            <codeitem codeitemid="0/660/670/61134" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/670/61402" codeitemdesc="英语" />
+            <codeitem codeitemid="0/660/670/61403" codeitemdesc="俄语" />
+            <codeitem codeitemid="0/660/670/61404" codeitemdesc="德语" />
+            <codeitem codeitemid="0/660/670/61405" codeitemdesc="法语" />
+            <codeitem codeitemid="0/660/670/61406" codeitemdesc="西班牙语" />
+            <codeitem codeitemid="0/660/670/61407" codeitemdesc="阿拉伯语" />
+            <codeitem codeitemid="0/660/670/61408" codeitemdesc="日语" />
+            <codeitem codeitemid="0/660/670/61409" codeitemdesc="朝鲜语" />
+        </codeitem>
+        <codeitem codeitemid="0/660/671" codeitemdesc="新闻传播学类">
+            <codeitem codeitemid="0/660/671/61153" codeitemdesc="广播电视新闻学" />
+            <codeitem codeitemid="0/660/671/61154" codeitemdesc="传播学" />
+            <codeitem codeitemid="0/660/671/61155" codeitemdesc="媒体创意" />
+            <codeitem codeitemid="0/660/671/61156" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/671/61411" codeitemdesc="新闻学" />
+            <codeitem codeitemid="0/660/671/61412" codeitemdesc="广告学" />
+            <codeitem codeitemid="0/660/671/61413" codeitemdesc="编辑出版学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/672" codeitemdesc="艺术类">
+            <codeitem codeitemid="0/660/672/61171" codeitemdesc="音乐学" />
+            <codeitem codeitemid="0/660/672/61172" codeitemdesc="作曲与作曲技术理论" />
+            <codeitem codeitemid="0/660/672/61173" codeitemdesc="音乐表演" />
+            <codeitem codeitemid="0/660/672/61174" codeitemdesc="绘画" />
+            <codeitem codeitemid="0/660/672/61175" codeitemdesc="雕塑" />
+            <codeitem codeitemid="0/660/672/61176" codeitemdesc="美术学" />
+            <codeitem codeitemid="0/660/672/61177" codeitemdesc="艺术设计学" />
+            <codeitem codeitemid="0/660/672/61178" codeitemdesc="艺术设计" />
+            <codeitem codeitemid="0/660/672/61179" codeitemdesc="舞蹈学" />
+            <codeitem codeitemid="0/660/672/61180" codeitemdesc="舞蹈编导" />
+            <codeitem codeitemid="0/660/672/61181" codeitemdesc="戏剧学" />
+            <codeitem codeitemid="0/660/672/61182" codeitemdesc="表演" />
+            <codeitem codeitemid="0/660/672/61183" codeitemdesc="导演" />
+            <codeitem codeitemid="0/660/672/61184" codeitemdesc="摄影" />
+            <codeitem codeitemid="0/660/672/61185" codeitemdesc="录音艺术" />
+            <codeitem codeitemid="0/660/672/61186" codeitemdesc="动画" />
+            <codeitem codeitemid="0/660/672/61187" codeitemdesc="播音与主持艺术" />
+            <codeitem codeitemid="0/660/672/61188" codeitemdesc="广播电视编导" />
+            <codeitem codeitemid="0/660/672/61189" codeitemdesc="艺术学" />
+            <codeitem codeitemid="0/660/672/61190" codeitemdesc="影视学" />
+            <codeitem codeitemid="0/660/672/61191" codeitemdesc="广播影视编导" />
+            <codeitem codeitemid="0/660/672/61192" codeitemdesc="书法学" />
+            <codeitem codeitemid="0/660/672/61193" codeitemdesc="照明技术" />
+            <codeitem codeitemid="0/660/672/61194" codeitemdesc="会展艺术与技术" />
+            <codeitem codeitemid="0/660/672/61195" codeitemdesc="音乐科技与艺术" />
+            <codeitem codeitemid="0/660/672/61196" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/672/949" codeitemdesc="戏剧影视文学" />
+            <codeitem codeitemid="0/660/672/952" codeitemdesc="戏剧影视美术设计" />
+        </codeitem>
+        <codeitem codeitemid="0/660/673" codeitemdesc="历史学类">
+            <codeitem codeitemid="0/660/673/61197" codeitemdesc="世界历史" />
+            <codeitem codeitemid="0/660/673/61198" codeitemdesc="民族学" />
+            <codeitem codeitemid="0/660/673/61199" codeitemdesc="文物保护技术" />
+            <codeitem codeitemid="0/660/673/61200" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/673/957" codeitemdesc="历史学" />
+            <codeitem codeitemid="0/660/673/958" codeitemdesc="考古学" />
+            <codeitem codeitemid="0/660/673/959" codeitemdesc="博物馆学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/674" codeitemdesc="数学类">
+            <codeitem codeitemid="0/660/674/61090" codeitemdesc="数理基础科学" />
+            <codeitem codeitemid="0/660/674/61091" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/674/960" codeitemdesc="数学与应用数学" />
+            <codeitem codeitemid="0/660/674/961" codeitemdesc="信息与计算科学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/675" codeitemdesc="物理学类">
+            <codeitem codeitemid="0/660/675/61092" codeitemdesc="声学" />
+            <codeitem codeitemid="0/660/675/61093" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/675/962" codeitemdesc="物理学" />
+            <codeitem codeitemid="0/660/675/963" codeitemdesc="应用物理学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/676" codeitemdesc="化学类">
+            <codeitem codeitemid="0/660/676/61094" codeitemdesc="化学生物学" />
+            <codeitem codeitemid="0/660/676/61095" codeitemdesc="分子科学与工程" />
+            <codeitem codeitemid="0/660/676/61096" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/676/964" codeitemdesc="化学" />
+            <codeitem codeitemid="0/660/676/965" codeitemdesc="应用化学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/677" codeitemdesc="生物科学类">
+            <codeitem codeitemid="0/660/677/61252" codeitemdesc="生物科学" />
+            <codeitem codeitemid="0/660/677/61253" codeitemdesc="生物技术" />
+            <codeitem codeitemid="0/660/677/61254" codeitemdesc="生物信息学" />
+            <codeitem codeitemid="0/660/677/61255" codeitemdesc="生物信息技术" />
+            <codeitem codeitemid="0/660/677/61256" codeitemdesc="生物科学与生物技术" />
+            <codeitem codeitemid="0/660/677/61257" codeitemdesc="动植物检疫" />
+            <codeitem codeitemid="0/660/677/61258" codeitemdesc="生物化学与分子生物学" />
+            <codeitem codeitemid="0/660/677/61259" codeitemdesc="医学信息学" />
+            <codeitem codeitemid="0/660/677/61260" codeitemdesc="植物生物技术" />
+            <codeitem codeitemid="0/660/677/61261" codeitemdesc="动物生物技术" />
+            <codeitem codeitemid="0/660/677/61262" codeitemdesc="动物资源科学" />
+            <codeitem codeitemid="0/660/677/61263" codeitemdesc="生物安全" />
+            <codeitem codeitemid="0/660/677/61264" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/678" codeitemdesc="天文学类">
+            <codeitem codeitemid="0/660/678/61170" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/678/972" codeitemdesc="天文学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/679" codeitemdesc="地质学类">
+            <codeitem codeitemid="0/660/679/61135" codeitemdesc="地球化学" />
+            <codeitem codeitemid="0/660/679/61136" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/679/61426" codeitemdesc="地质学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/680" codeitemdesc="地理科学类">
+            <codeitem codeitemid="0/660/680/61137" codeitemdesc="资源环境与城乡规划管理" />
+            <codeitem codeitemid="0/660/680/61138" codeitemdesc="地理信息系统" />
+            <codeitem codeitemid="0/660/680/61139" codeitemdesc="地球信息科学与技术" />
+            <codeitem codeitemid="0/660/680/61140" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/680/61425" codeitemdesc="地理科学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/685" codeitemdesc="大气科学类">
+            <codeitem codeitemid="0/660/685/61144" codeitemdesc="应用气象学" />
+            <codeitem codeitemid="0/660/685/61145" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/685/61443" codeitemdesc="大气科学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/686" codeitemdesc="海洋科学类">
+            <codeitem codeitemid="0/660/686/61146" codeitemdesc="海洋技术" />
+            <codeitem codeitemid="0/660/686/61147" codeitemdesc="海洋管理" />
+            <codeitem codeitemid="0/660/686/61148" codeitemdesc="军事海洋学" />
+            <codeitem codeitemid="0/660/686/61149" codeitemdesc="海洋生物资源与环境" />
+            <codeitem codeitemid="0/660/686/61150" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/686/61448" codeitemdesc="海洋科学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/687" codeitemdesc="力学类">
+            <codeitem codeitemid="0/660/687/61151" codeitemdesc="理论与应用力学" />
+            <codeitem codeitemid="0/660/687/61152" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/689" codeitemdesc="材料科学类">
+            <codeitem codeitemid="0/660/689/1002" codeitemdesc="材料物理" />
+            <codeitem codeitemid="0/660/689/1003" codeitemdesc="材料化学" />
+            <codeitem codeitemid="0/660/689/61157" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/690" codeitemdesc="环境科学类">
+            <codeitem codeitemid="0/660/690/1005" codeitemdesc="环境科学" />
+            <codeitem codeitemid="0/660/690/1008" codeitemdesc="生态学" />
+            <codeitem codeitemid="0/660/690/61158" codeitemdesc="资源环境科学" />
+            <codeitem codeitemid="0/660/690/61159" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/691" codeitemdesc="心理学类">
+            <codeitem codeitemid="0/660/691/61160" codeitemdesc="应用心理学" />
+            <codeitem codeitemid="0/660/691/61161" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/691/61451" codeitemdesc="心理学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/692" codeitemdesc="统计学类">
+            <codeitem codeitemid="0/660/692/61084" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/692/61452" codeitemdesc="统计学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/693" codeitemdesc="地矿类">
+            <codeitem codeitemid="0/660/693/61165" codeitemdesc="采矿工程" />
+            <codeitem codeitemid="0/660/693/61166" codeitemdesc="矿物加工工程" />
+            <codeitem codeitemid="0/660/693/61167" codeitemdesc="勘查技术与工程" />
+            <codeitem codeitemid="0/660/693/61168" codeitemdesc="资源勘查工程" />
+            <codeitem codeitemid="0/660/693/61169" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/693/61410" codeitemdesc="石油工程" />
+        </codeitem>
+        <codeitem codeitemid="0/660/694" codeitemdesc="材料类">
+            <codeitem codeitemid="0/660/694/61087" codeitemdesc="无机非金属材料工程" />
+            <codeitem codeitemid="0/660/694/61088" codeitemdesc="高分子材料工程" />
+            <codeitem codeitemid="0/660/694/61089" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/694/61449" codeitemdesc="冶金工程" />
+            <codeitem codeitemid="0/660/694/61450" codeitemdesc="金属材料工程" />
+        </codeitem>
+        <codeitem codeitemid="0/660/695" codeitemdesc="机械类">
+            <codeitem codeitemid="0/660/695/1009" codeitemdesc="机械设计制造及其自动化" />
+            <codeitem codeitemid="0/660/695/1010" codeitemdesc="材料成型及控制工程" />
+            <codeitem codeitemid="0/660/695/1011" codeitemdesc="工业设计" />
+            <codeitem codeitemid="0/660/695/1012" codeitemdesc="过程装备与控制工程" />
+            <codeitem codeitemid="0/660/695/61083" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/696" codeitemdesc="仪器仪表类">
+            <codeitem codeitemid="0/660/696/1016" codeitemdesc="测控技术与仪器" />
+            <codeitem codeitemid="0/660/696/61044" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/733" codeitemdesc="电气信息类">
+            <codeitem codeitemid="0/660/733/61014" codeitemdesc="电子工程与自动化" />
+            <codeitem codeitemid="0/660/733/61015" codeitemdesc="信息工程" />
+            <codeitem codeitemid="0/660/733/61016" codeitemdesc="软件工程" />
+            <codeitem codeitemid="0/660/733/61017" codeitemdesc="影视艺术技术" />
+            <codeitem codeitemid="0/660/733/61018" codeitemdesc="网络工程" />
+            <codeitem codeitemid="0/660/733/61019" codeitemdesc="信息显示与光电技术" />
+            <codeitem codeitemid="0/660/733/61020" codeitemdesc="集成电路设计与集成系统" />
+            <codeitem codeitemid="0/660/733/61021" codeitemdesc="光电信息工程" />
+            <codeitem codeitemid="0/660/733/61022" codeitemdesc="广播电视工程" />
+            <codeitem codeitemid="0/660/733/61024" codeitemdesc="计算机软件" />
+            <codeitem codeitemid="0/660/733/61025" codeitemdesc="电子工程与管理" />
+            <codeitem codeitemid="0/660/733/61026" codeitemdesc="微电子制造工程" />
+            <codeitem codeitemid="0/660/733/61027" codeitemdesc="假肢矫形工程" />
+            <codeitem codeitemid="0/660/733/61028" codeitemdesc="数字媒体艺术" />
+            <codeitem codeitemid="0/660/733/61029" codeitemdesc="医学信息工程" />
+            <codeitem codeitemid="0/660/733/61030" codeitemdesc="信息物理工程" />
+            <codeitem codeitemid="0/660/733/61031" codeitemdesc="医疗器械工程" />
+            <codeitem codeitemid="0/660/733/61032" codeitemdesc="智能科学与技术" />
+            <codeitem codeitemid="0/660/733/61033" codeitemdesc="数字媒体技术" />
+            <codeitem codeitemid="0/660/733/61034" codeitemdesc="医学影像工程" />
+            <codeitem codeitemid="0/660/733/61035" codeitemdesc="真空电子技术" />
+            <codeitem codeitemid="0/660/733/61036" codeitemdesc="电磁场与无线技术" />
+            <codeitem codeitemid="0/660/733/61037" codeitemdesc="电信工程及管理" />
+            <codeitem codeitemid="0/660/733/61038" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/733/61396" codeitemdesc="电子科学与技术" />
+            <codeitem codeitemid="0/660/733/61397" codeitemdesc="电子信息工程" />
+            <codeitem codeitemid="0/660/733/61432" codeitemdesc="电气工程及其自动化" />
+            <codeitem codeitemid="0/660/733/61433" codeitemdesc="电气信息工程" />
+            <codeitem codeitemid="0/660/733/61434" codeitemdesc="计算机科学与技术" />
+            <codeitem codeitemid="0/660/733/61435" codeitemdesc="生物医学工程" />
+            <codeitem codeitemid="0/660/733/61436" codeitemdesc="通信工程" />
+            <codeitem codeitemid="0/660/733/61437" codeitemdesc="自动化" />
+        </codeitem>
+        <codeitem codeitemid="0/660/754" codeitemdesc="土建类">
+            <codeitem codeitemid="0/660/754/1021" codeitemdesc="建筑学" />
+            <codeitem codeitemid="0/660/754/1022" codeitemdesc="给水排水工程" />
+            <codeitem codeitemid="0/660/754/1024" codeitemdesc="城市规划" />
+            <codeitem codeitemid="0/660/754/1027" codeitemdesc="土木工程" />
+            <codeitem codeitemid="0/660/754/61204" codeitemdesc="建筑环境与设备工程" />
+            <codeitem codeitemid="0/660/754/61205" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/755" codeitemdesc="水利类">
+            <codeitem codeitemid="0/660/755/1033" codeitemdesc="水利水电工程" />
+            <codeitem codeitemid="0/660/755/1034" codeitemdesc="水文与水资源工程" />
+            <codeitem codeitemid="0/660/755/1035" codeitemdesc="港口航道与海岸工程" />
+            <codeitem codeitemid="0/660/755/61206" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/756" codeitemdesc="测绘类">
+            <codeitem codeitemid="0/660/756/1036" codeitemdesc="测绘工程" />
+            <codeitem codeitemid="0/660/756/61207" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/757" codeitemdesc="环境与安全类">
+            <codeitem codeitemid="0/660/757/1038" codeitemdesc="环境工程" />
+            <codeitem codeitemid="0/660/757/1039" codeitemdesc="安全工程" />
+            <codeitem codeitemid="0/660/757/61297" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/758" codeitemdesc="化工与制药类">
+            <codeitem codeitemid="0/660/758/1041" codeitemdesc="制药工程" />
+            <codeitem codeitemid="0/660/758/61266" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/758/61454" codeitemdesc="化学工程与工艺" />
+        </codeitem>
+        <codeitem codeitemid="0/660/759" codeitemdesc="交通运输类">
+            <codeitem codeitemid="0/660/759/1042" codeitemdesc="交通运输" />
+            <codeitem codeitemid="0/660/759/1043" codeitemdesc="交通工程" />
+            <codeitem codeitemid="0/660/759/1044" codeitemdesc="油气储运工程" />
+            <codeitem codeitemid="0/660/759/1045" codeitemdesc="飞行技术" />
+            <codeitem codeitemid="0/660/759/1046" codeitemdesc="航海技术" />
+            <codeitem codeitemid="0/660/759/1047" codeitemdesc="轮机工程" />
+            <codeitem codeitemid="0/660/759/61081" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/761" codeitemdesc="轻工纺织食品类">
+            <codeitem codeitemid="0/660/761/1049" codeitemdesc="食品科学与工程" />
+            <codeitem codeitemid="0/660/761/1050" codeitemdesc="轻化工程" />
+            <codeitem codeitemid="0/660/761/1051" codeitemdesc="包装工程" />
+            <codeitem codeitemid="0/660/761/1052" codeitemdesc="印刷工程" />
+            <codeitem codeitemid="0/660/761/1053" codeitemdesc="纺织工程" />
+            <codeitem codeitemid="0/660/761/1054" codeitemdesc="服装设计与工程" />
+            <codeitem codeitemid="0/660/761/61315" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/762" codeitemdesc="航空航天类">
+            <codeitem codeitemid="0/660/762/1055" codeitemdesc="飞行器设计与工程" />
+            <codeitem codeitemid="0/660/762/1056" codeitemdesc="飞行器动力工程" />
+            <codeitem codeitemid="0/660/762/1057" codeitemdesc="飞行器制造工程" />
+            <codeitem codeitemid="0/660/762/1058" codeitemdesc="飞行器环境与生命保障工程" />
+            <codeitem codeitemid="0/660/762/61082" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/763" codeitemdesc="武器类">
+            <codeitem codeitemid="0/660/763/1059" codeitemdesc="武器系统与发射工程" />
+            <codeitem codeitemid="0/660/763/1060" codeitemdesc="探测制导与控制技术" />
+            <codeitem codeitemid="0/660/763/1061" codeitemdesc="弹药工程与爆炸技术" />
+            <codeitem codeitemid="0/660/763/1062" codeitemdesc="特种能源工程与烟火技术" />
+            <codeitem codeitemid="0/660/763/1063" codeitemdesc="地面武器机动工程" />
+            <codeitem codeitemid="0/660/763/1064" codeitemdesc="信息对抗技术" />
+            <codeitem codeitemid="0/660/763/61251" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/764" codeitemdesc="工程力学类">
+            <codeitem codeitemid="0/660/764/61085" codeitemdesc="工程力学" />
+            <codeitem codeitemid="0/660/764/61086" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/765" codeitemdesc="生物工程类">
+            <codeitem codeitemid="0/660/765/1065" codeitemdesc="生物工程" />
+            <codeitem codeitemid="0/660/765/61267" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/766" codeitemdesc="农业工程类">
+            <codeitem codeitemid="0/660/766/61268" codeitemdesc="农业机械化及其自动化" />
+            <codeitem codeitemid="0/660/766/61269" codeitemdesc="农业电气化与自动化" />
+            <codeitem codeitemid="0/660/766/61270" codeitemdesc="农业建筑环境与能源工程" />
+            <codeitem codeitemid="0/660/766/61271" codeitemdesc="农业水利工程" />
+            <codeitem codeitemid="0/660/766/61272" codeitemdesc="森林工程" />
+            <codeitem codeitemid="0/660/766/61273" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/767" codeitemdesc="林业工程类">
+            <codeitem codeitemid="0/660/767/61274" codeitemdesc="木材科学与工程" />
+            <codeitem codeitemid="0/660/767/61275" codeitemdesc="林产化工" />
+            <codeitem codeitemid="0/660/767/61276" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/768" codeitemdesc="公安技术类">
+            <codeitem codeitemid="0/660/768/61277" codeitemdesc="刑事科学技术" />
+            <codeitem codeitemid="0/660/768/61278" codeitemdesc="消防工程" />
+            <codeitem codeitemid="0/660/768/61279" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/769" codeitemdesc="植物生产类">
+            <codeitem codeitemid="0/660/769/61280" codeitemdesc="植物保护" />
+            <codeitem codeitemid="0/660/769/61281" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/769/61428" codeitemdesc="农学" />
+            <codeitem codeitemid="0/660/769/61429" codeitemdesc="园艺" />
+            <codeitem codeitemid="0/660/769/61430" codeitemdesc="茶学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/770" codeitemdesc="草业科学类">
+            <codeitem codeitemid="0/660/770/61282" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/770/61458" codeitemdesc="草业科学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/771" codeitemdesc="森林资源类">
+            <codeitem codeitemid="0/660/771/61283" codeitemdesc="林学" />
+            <codeitem codeitemid="0/660/771/61284" codeitemdesc="森林资源保护与游憩" />
+            <codeitem codeitemid="0/660/771/61286" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/771/61438" codeitemdesc="野生动物与自然保护区管理" />
+        </codeitem>
+        <codeitem codeitemid="0/660/772" codeitemdesc="环境生态类">
+            <codeitem codeitemid="0/660/772/61287" codeitemdesc="水土保护与荒漠化防治" />
+            <codeitem codeitemid="0/660/772/61288" codeitemdesc="农业资源与环境" />
+            <codeitem codeitemid="0/660/772/61289" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/772/61439" codeitemdesc="园林" />
+        </codeitem>
+        <codeitem codeitemid="0/660/773" codeitemdesc="动物生产类">
+            <codeitem codeitemid="0/660/773/61290" codeitemdesc="动物科学" />
+            <codeitem codeitemid="0/660/773/61291" codeitemdesc="蚕学" />
+            <codeitem codeitemid="0/660/773/61292" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/775" codeitemdesc="水产类">
+            <codeitem codeitemid="0/660/775/61445" codeitemdesc="水产养殖学" />
+            <codeitem codeitemid="0/660/775/61446" codeitemdesc="海洋渔业科学与技术" />
+            <codeitem codeitemid="0/660/775/61447" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/776" codeitemdesc="护理学类">
+            <codeitem codeitemid="0/660/776/61247" codeitemdesc="内外科护理学" />
+            <codeitem codeitemid="0/660/776/61248" codeitemdesc="妇科护理学" />
+            <codeitem codeitemid="0/660/776/61249" codeitemdesc="人文护理学" />
+            <codeitem codeitemid="0/660/776/61250" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/776/61401" codeitemdesc="护理学" />
+        </codeitem>
+        <codeitem codeitemid="0/660/777" codeitemdesc="药学类">
+            <codeitem codeitemid="0/660/777/1093" codeitemdesc="制药工程" />
+            <codeitem codeitemid="0/660/777/61298" codeitemdesc="生物合成药物化学" />
+            <codeitem codeitemid="0/660/777/61299" codeitemdesc="天然药物化学和生药学" />
+            <codeitem codeitemid="0/660/777/61300" codeitemdesc="药事管理与临床药学" />
+            <codeitem codeitemid="0/660/777/61301" codeitemdesc="药剂学" />
+            <codeitem codeitemid="0/660/777/61302" codeitemdesc="物理化学" />
+            <codeitem codeitemid="0/660/777/61303" codeitemdesc="放射药学" />
+            <codeitem codeitemid="0/660/777/61304" codeitemdesc="药物分析" />
+            <codeitem codeitemid="0/660/777/61305" codeitemdesc="医院药学" />
+            <codeitem codeitemid="0/660/777/61306" codeitemdesc="分子与细胞药理学" />
+            <codeitem codeitemid="0/660/777/61307" codeitemdesc="基础药理学" />
+            <codeitem codeitemid="0/660/777/61308" codeitemdesc="临床药理学" />
+            <codeitem codeitemid="0/660/777/61309" codeitemdesc="天然药理学" />
+            <codeitem codeitemid="0/660/777/61310" codeitemdesc="毒理学系" />
+            <codeitem codeitemid="0/660/777/61311" codeitemdesc="合成药物化学" />
+            <codeitem codeitemid="0/660/777/61312" codeitemdesc="中药学" />
+            <codeitem codeitemid="0/660/777/61313" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/778" codeitemdesc="管理科学与工程类">
+            <codeitem codeitemid="0/660/778/1094" codeitemdesc="管理科学" />
+            <codeitem codeitemid="0/660/778/1096" codeitemdesc="工业工程" />
+            <codeitem codeitemid="0/660/778/1097" codeitemdesc="工程管理" />
+            <codeitem codeitemid="0/660/778/61051" codeitemdesc="信息管理与信息系统" />
+            <codeitem codeitemid="0/660/778/61052" codeitemdesc="工程造价" />
+            <codeitem codeitemid="0/660/778/61053" codeitemdesc="产品质量工程" />
+            <codeitem codeitemid="0/660/778/61054" codeitemdesc="项目管理" />
+            <codeitem codeitemid="0/660/778/61055" codeitemdesc="管理科学与工程" />
+            <codeitem codeitemid="0/660/778/61056" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/778/61431" codeitemdesc="房地产经营管理" />
+        </codeitem>
+        <codeitem codeitemid="0/660/779" codeitemdesc="工商管理类">
+            <codeitem codeitemid="0/660/779/1099" codeitemdesc="工商管理" />
+            <codeitem codeitemid="0/660/779/1101" codeitemdesc="物流管理" />
+            <codeitem codeitemid="0/660/779/1102" codeitemdesc="市场营销" />
+            <codeitem codeitemid="0/660/779/1105" codeitemdesc="会计学" />
+            <codeitem codeitemid="0/660/779/1108" codeitemdesc="财务管理" />
+            <codeitem codeitemid="0/660/779/1109" codeitemdesc="国际商务" />
+            <codeitem codeitemid="0/660/779/61045" codeitemdesc="商品学" />
+            <codeitem codeitemid="0/660/779/61046" codeitemdesc="特许经营管理" />
+            <codeitem codeitemid="0/660/779/61047" codeitemdesc="连锁经营管理" />
+            <codeitem codeitemid="0/660/779/61048" codeitemdesc="资产评估" />
+            <codeitem codeitemid="0/660/779/61049" codeitemdesc="电子商务及法律" />
+            <codeitem codeitemid="0/660/779/61050" codeitemdesc="其他" />
+            <codeitem codeitemid="0/660/779/61418" codeitemdesc="人力资源管理" />
+            <codeitem codeitemid="0/660/779/61419" codeitemdesc="旅游管理" />
+            <codeitem codeitemid="0/660/779/61420" codeitemdesc="审计学" />
+            <codeitem codeitemid="0/660/779/61421" codeitemdesc="电子商务" />
+            <codeitem codeitemid="0/660/779/61422" codeitemdesc="物业管理" />
+        </codeitem>
+        <codeitem codeitemid="0/660/780" codeitemdesc="公共管理类">
+            <codeitem codeitemid="0/660/780/1111" codeitemdesc="行政管理" />
+            <codeitem codeitemid="0/660/780/1114" codeitemdesc="公共事业管理" />
+            <codeitem codeitemid="0/660/780/1117" codeitemdesc="劳动与社会保障" />
+            <codeitem codeitemid="0/660/780/1119" codeitemdesc="土地资源管理" />
+            <codeitem codeitemid="0/660/780/1120" codeitemdesc="公共关系学" />
+            <codeitem codeitemid="0/660/780/61319" codeitemdesc="公共政策学" />
+            <codeitem codeitemid="0/660/780/61320" codeitemdesc="城市管理" />
+            <codeitem codeitemid="0/660/780/61321" codeitemdesc="公共管理" />
+            <codeitem codeitemid="0/660/780/61322" codeitemdesc="文化产业管理" />
+            <codeitem codeitemid="0/660/780/61323" codeitemdesc="会展经济与管理" />
+            <codeitem codeitemid="0/660/780/61324" codeitemdesc="国防教育与管理" />
+            <codeitem codeitemid="0/660/780/61325" codeitemdesc="航运管理" />
+            <codeitem codeitemid="0/660/780/61326" codeitemdesc="劳动管理" />
+            <codeitem codeitemid="0/660/780/61327" codeitemdesc="公共安全管理" />
+            <codeitem codeitemid="0/660/780/61328" codeitemdesc="其他" />
+        </codeitem>
+        <codeitem codeitemid="0/660/782" codeitemdesc="图书档案学类">
+            <codeitem codeitemid="0/660/782/61343" codeitemdesc="图书馆学" />
+            <codeitem codeitemid="0/660/782/61344" codeitemdesc="档案学" />
+            <codeitem codeitemid="0/660/782/61345" codeitemdesc="信息资源管理" />
+            <codeitem codeitemid="0/660/782/61346" codeitemdesc="其他" />
+        </codeitem>
+    </codeset>
+    <codeset codesetid="0/72" codesetdesc="民族">
+        <codeitem codeitemid="0/72/101" codeitemdesc="哈尼族" />
+        <codeitem codeitemid="0/72/103" codeitemdesc="哈萨克族" />
+        <codeitem codeitemid="0/72/105" codeitemdesc="赫哲族" />
+        <codeitem codeitemid="0/72/107" codeitemdesc="回族" />
+        <codeitem codeitemid="0/72/108" codeitemdesc="基诺族" />
+        <codeitem codeitemid="0/72/110" codeitemdesc="京族" />
+        <codeitem codeitemid="0/72/112" codeitemdesc="景颇族" />
+        <codeitem codeitemid="0/72/113" codeitemdesc="柯尔克孜族" />
+        <codeitem codeitemid="0/72/114" codeitemdesc="拉祜族" />
+        <codeitem codeitemid="0/72/116" codeitemdesc="黎族" />
+        <codeitem codeitemid="0/72/118" codeitemdesc="阿昌族" />
+        <codeitem codeitemid="0/72/120" codeitemdesc="傈僳族" />
+        <codeitem codeitemid="0/72/121" codeitemdesc="珞巴族" />
+        <codeitem codeitemid="0/72/123" codeitemdesc="满族" />
+        <codeitem codeitemid="0/72/124" codeitemdesc="毛南族" />
+        <codeitem codeitemid="0/72/126" codeitemdesc="门巴族" />
+        <codeitem codeitemid="0/72/127" codeitemdesc="蒙古族" />
+        <codeitem codeitemid="0/72/129" codeitemdesc="苗族" />
+        <codeitem codeitemid="0/72/132" codeitemdesc="仫佬族" />
+        <codeitem codeitemid="0/72/134" codeitemdesc="纳西族" />
+        <codeitem codeitemid="0/72/136" codeitemdesc="怒族" />
+        <codeitem codeitemid="0/72/137" codeitemdesc="白族" />
+        <codeitem codeitemid="0/72/140" codeitemdesc="普米族" />
+        <codeitem codeitemid="0/72/142" codeitemdesc="羌族" />
+        <codeitem codeitemid="0/72/143" codeitemdesc="撒拉族" />
+        <codeitem codeitemid="0/72/145" codeitemdesc="畲族" />
+        <codeitem codeitemid="0/72/147" codeitemdesc="水族" />
+        <codeitem codeitemid="0/72/149" codeitemdesc="塔吉克族" />
+        <codeitem codeitemid="0/72/150" codeitemdesc="塔塔尔族" />
+        <codeitem codeitemid="0/72/152" codeitemdesc="土族" />
+        <codeitem codeitemid="0/72/154" codeitemdesc="土家族" />
+        <codeitem codeitemid="0/72/155" codeitemdesc="佤族" />
+        <codeitem codeitemid="0/72/157" codeitemdesc="保安族" />
+        <codeitem codeitemid="0/72/158" codeitemdesc="维吾尔族" />
+        <codeitem codeitemid="0/72/160" codeitemdesc="乌兹别克族" />
+        <codeitem codeitemid="0/72/161" codeitemdesc="锡伯族" />
+        <codeitem codeitemid="0/72/163" codeitemdesc="瑶族" />
+        <codeitem codeitemid="0/72/165" codeitemdesc="彝族" />
+        <codeitem codeitemid="0/72/166" codeitemdesc="裕固族" />
+        <codeitem codeitemid="0/72/167" codeitemdesc="藏族" />
+        <codeitem codeitemid="0/72/168" codeitemdesc="壮族" />
+        <codeitem codeitemid="0/72/169" codeitemdesc="布朗族" />
+        <codeitem codeitemid="0/72/170" codeitemdesc="布依族" />
+        <codeitem codeitemid="0/72/171" codeitemdesc="达斡尔族" />
+        <codeitem codeitemid="0/72/74" codeitemdesc="汉族" />
+        <codeitem codeitemid="0/72/80" codeitemdesc="傣族" />
+        <codeitem codeitemid="0/72/84" codeitemdesc="德昂族" />
+        <codeitem codeitemid="0/72/85" codeitemdesc="侗族" />
+        <codeitem codeitemid="0/72/87" codeitemdesc="东乡族" />
+        <codeitem codeitemid="0/72/89" codeitemdesc="独龙族" />
+        <codeitem codeitemid="0/72/91" codeitemdesc="鄂伦春族" />
+        <codeitem codeitemid="0/72/92" codeitemdesc="俄罗斯族" />
+        <codeitem codeitemid="0/72/94" codeitemdesc="鄂温克族" />
+        <codeitem codeitemid="0/72/96" codeitemdesc="高山族" />
+        <codeitem codeitemid="0/72/97" codeitemdesc="仡佬族" />
+        <codeitem codeitemid="0/72/99" codeitemdesc="朝鲜族" />
+    </codeset>
+</codeitems>

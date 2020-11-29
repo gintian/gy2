@@ -1,0 +1,68 @@
+/* GraphCanvas */
+.yfiles .yFilesGraphCanvas {
+}
+
+.yfiles .yFilesGraphCanvasOverlay {
+  background-color: gray;
+  border-style: none;
+}
+
+.yfiles .yFilesGraphCanvas .loading {
+  background-image: url(loading.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rubberband */
+.yfiles .yFilesRubberbandArea {
+  border: 1px solid black;
+  background: #99CCFF;
+}
+
+/* ViewPortMarker */
+.yfiles .yFilesViewPortMarker {
+  background-color: #99CCFF;
+  border: solid black 1px;
+}
+
+/* hot spots for the ResizeNodesMode */
+.yfiles .yFilesResize {
+  background-color: black;
+  border-style: none;
+}
+
+.yfiles .yFilesMove {
+  cursor: move;
+}
+
+.yfiles .yFilesResizeNW {
+  cursor: nw-resize;
+}
+
+.yfiles .yFilesResizeN {
+  cursor: n-resize;
+}
+
+.yfiles .yFilesResizeNE {
+  cursor: ne-resize;
+}
+
+.yfiles .yFilesResizeW {
+  cursor: w-resize;
+}
+
+.yfiles .yFilesResizeE {
+  cursor: e-resize;
+}
+
+.yfiles .yFilesResizeSW {
+  cursor: sw-resize;
+}
+
+.yfiles .yFilesResizeS {
+  cursor: s-resize;
+}
+
+.yfiles .yFilesResizeSE {
+  cursor: se-resize;
+}

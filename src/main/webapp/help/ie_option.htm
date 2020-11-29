@@ -1,0 +1,146 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>注意事项</title>
+   <link href="../css/css1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body topmargin="0">
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0"> 
+  <tr>
+    <td height="57" align="center" bgcolor="#6B82EF">世纪eHR4客户端注意事项</td>
+  </tr>
+  <tr>
+    <td height="1500" align="center" valign="top" bgcolor="#DAE4FE">
+    <table width="760" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top"><br>          
+            1. 对客户端系统的要求<br>
+            1.1 操作系统的版本要求
+            <p>需要Windows9x/NT4.0SP6/XP/2000，任选；建议安装所有最新的更新及安全补丁。</p>            
+            1.2 IE的版本要求
+            <p>需要IE6.0版本及以上，并升级至SP1，建议安装所有最新的更新及安全补丁。</p>            
+            2.客户端IE的设置<br>
+            <br>
+            2.2 将WEB服务器地址加入安全站点：
+            <p>由于eHR4中使用了AcitveX控件(客户端打开EXCEL、WORD文档等)，而IE浏览器一般情况下会对AcitveX控件进行拦截，造成无法正常使用eHR4系统。为了解决这个问题，可以将WEB服务器的域名或地址（例如 http://192.192.100.102:8080）加入到IE浏览器所信任的站点。</p>            
+            2.2.1 设置安全站点：
+            <p>打开位置：打开IE工具Internet选项“安全”标签页受信任的站点站点</p>
+         </td>
+      </tr>
+      
+      <tr>
+        <td align="center" valign="top"><img src="./images/security_1.png" ></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" >打开：设置安全站点</td>
+      </tr>
+      <tr>
+        <td valign="top" >将“对该区域中的所有站点要求服务器验证(https:)”复选框的勾去掉。在输入框中输入：eHR4的WEB服务器的域名ttp://192.192.100.102:8080后，点击“添加”按钮。</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><img src="images/security_2.png" ></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" >设置安全站点</td>
+      </tr>
+      <tr>
+        <td valign="top">2.2.2 启用ActiveX控件：
+          <p class="hei">打开位置：打开IE工具Internet选项“安全”标签页受信任的站点“自定义级别”</p></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><img src="images/security_3.png" ></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" >打开：设置“自定义级别”</td>
+      </tr>
+	  
+      <tr>
+        <td align="center" valign="top"><img src="images/security_4.png"></td>
+      </tr>
+	        <tr>
+        <td align="center" valign="top"><img src="images/security_11.png"></td>
+      </tr>
+      <tr>
+          <td align="center" valign="top">选择启用“ActiveX控件、Javas和插件、脚本</td>
+      </tr>
+      <tr>
+        <td height="25" valign="top">3.客户端IE相关工具（或插件）的设置
+          卸载IE相关插件（如：上网助手等,在已启用的列表选中这些扩展，然后再按禁用即可），或设置不拦截弹出窗口</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><img src="images/security_8.png"></td>
+      </tr>
+      <tr>
+        <td valign="top"><p align="center">设置不拦截弹出窗口</p></td>
+      </tr>
+      <tr>
+        <td valign="top">4.Windows XP   SP2和相关IE插件的设置</span></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><img src="images/security_5.png" ></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><img src="images/security_7.png" ></td>
+      </tr>	  
+      <tr>
+        <td align="center" valign="top" >输入eHR4的WEB服务器的域名或IP地址，设置可以弹出窗口</td>
+      </tr>
+      <tr>
+        <td valign="top" >5.其它工具栏：</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><img src="images/security_6.png" ></td>
+      </tr>
+      <tr>
+          <td valign="top" >6.检查所存网页较新版本设置,打开位置：打开IE工具Internet选项“常规”,点击设置按钮</td>
+      </tr>
+	  
+      <tr>
+        <td align="center" valign="top"><img src="images/security_9.png" ></td>
+      </tr>	  
+      <tr>
+        <td align="center" valign="top"><img src="images/security_10.png" ></td>
+      </tr>	  
+
+      <tr>
+          <td valign="top" >7.特别注意：如若是ie7.0的，在设置完上述后，还需做如下设置</td>
+      </tr>
+      <tr>
+          <td valign="top" >7.1 打开ie浏览器，选择“工具”菜单，然后选择“internet选项”设置，选择“安全”标签，如下图所示</td>
+      </tr>	  
+      <tr>
+        <td align="center" valign="top"><img src="images/security_12.png" ></td>
+      </tr>	  
+
+      <tr>
+          <td valign="top" >7.2 在上图中选择“本地internet”，然后选择“站点”，如下图所示</td>
+      </tr>	  
+      
+      <tr>
+        <td align="center" valign="top"><img src="images/security_13.png" ></td>
+      </tr>	 
+      	  
+      <tr>
+          <td valign="top" >7.3 将上图中“自动检测internet网络”的对钩去掉，不要自动检测，然后选择“高级”按钮，如下图所示，将要登陆的业务平台地址添加上</td>
+      </tr>	  
+      
+      <tr>
+        <td align="center" valign="top"><img src="images/security_14.png" ></td>
+      </tr>	
+            	  
+      <tr>
+          <td valign="top">
+           8.后台业务下载 
+            <p>对于eHR4业务平台，需要设置Windows XP SP2和其它IE插件允许从Web服务器下载后台业务。当提示是否安装后台业务时，选择‘是’即可。</p>
+          </td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><input type="button" name="aa" value="关闭" class="mybutton" onclick="window.close();"></td>
+      </tr>	      
+    </table>
+   </td>
+  </tr>
+</table>
+</body>
+</html>

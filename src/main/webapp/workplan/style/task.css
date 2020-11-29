@@ -1,0 +1,334 @@
+.director {
+	text-align: left;
+	margin: -1px 8px -1px 5px;
+	height: 22px;
+	line-height: 20px;
+	font-size: 13px;
+	min-width: 10px;
+	display: inline;
+}
+
+.director-name {
+	cursor: text;
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+}
+
+.director-del {
+	position: absolute;
+	text-align: center;
+	width: 20px;
+	height: 26px;
+	line-height: 20px;
+	font-color: #999;
+	padding: 0px;
+	display: none;
+	background-color: #ACF7F6;
+	font-size:18px;
+}
+
+.director-del:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+[prompt][edit=other] {
+	cursor: pointer;
+}
+
+[id|=placeholder] {
+	font-family: SimSun;
+	margin: 0px;
+	color: #888;
+	font-size: 13px;
+	cursor: text;
+	display: none;
+}
+
+input[type=text][fieldType=N] {
+	height: 15px;
+	line-height: 15px;
+	text-align: right;
+}
+
+/* 让低版本浏览器支持placeHolder属性 */
+.place-holder-compat {
+/* 	font-family: SimSun; */
+/* 	margin: 0px; */
+	color: #888;
+}
+
+[id|=content] {
+	margin: 0px;
+}
+
+.prompt-box-div {
+	padding: 0px;
+	line-height: 30px;
+	margin: auto 2px;
+	min-height: 30px;
+	vertical-align: middle;
+	min-width: 300px;
+	margin-top: -2px;
+	white-space: normal;
+}
+
+.prompt-box-div[edit=always],.prompt-box-div-edit {
+	background-color: #FFF;
+	border: 1px solid #D5D5D5;
+	border-width: 1px;
+	cursor: pointer;
+}
+
+.prompt-box-edit-always {
+	vertical-align: middle;
+	background-color: #FFF;
+	cursor: pointer;
+	width: 90%;
+	height: 24px;
+	line-height: 24px;
+	padding: 1px;
+	margin: 0px;
+}
+
+.promptBox-placeHolder {
+	white-space: nowrap;
+	display: inline;
+	margin-left: 4px;
+}
+
+.add-sub-task1 {
+	width:97%;
+	padding-left: 5px;
+	height: 24px;
+	border: none;
+	line-height: 24px;
+}
+
+.add-sub-task2 {
+	width:70%;
+	padding-left: 5px;
+	height: 24px;
+	border: none;
+	line-height: 24px;
+}
+
+.add-sub-task3 {
+	width:70%;
+	padding-left: 5px;
+	height: 24px;
+	border: none;
+	line-height: 24px;
+}
+
+[id|=edit][type=text] {
+	height: 24px;
+	width: 80px;
+	border: 1px #d5d5d5 solid;
+	font-family: "宋体";
+	font-size: 13px;
+	color: #747474;
+	line-height: 24px;
+}
+
+[id|=edit] {
+	display: none;
+	vertical-align: middle;
+}
+
+#subtask tr {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	border: 1px #D5D5D5 solid;
+}
+
+#subtask td {
+	border-left: 1px #D5D5D5 dashed;
+	border-right: 1px #D5D5D5 dashed;
+	padding-left: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: clip;
+}
+
+#subtask tr:hover {
+	cursor: pointer;
+	background-color: #DFE8F6;
+}
+
+/* 任务编辑文本域,文本框 */
+textarea,text[type=text] {
+	padding-left: 5px;
+	/* white-space: normal; */
+}
+
+/* 任务明细 */
+.hj-zm-rwbj-three>table>tbody>tr {
+	height: 30px;
+	line-height: 30px;
+}
+
+.hj-zm-rwbj-three>table>tbody>tr>td {
+	font-size: 13px;
+	white-space: nowrap;
+	padding-left: 10px;
+	font-family: "微软雅黑";
+	border-bottom: 0px #D5D5D5 dashed;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/* 文本域的标签向上对齐 */
+.labelForTextarea {
+	vertical-align: top;
+	line-height: 15px;
+}
+
+/* 权重 */
+.rankContainer-table {
+/* 	padding-left: 15px; */
+	width: 100%;
+}
+
+.rankContainer-table td {
+	/* 	border: none; */
+	padding-left: 28px;
+}
+
+/* staff */
+.staff a {
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 18px;
+}
+
+.staffDisplay {
+	float: left;
+	min-width: 20px;
+}
+
+.staff dl {
+	line-height: 0px;
+	float: left;
+	margin: 10px 20px 10px 0;
+	float: left;
+}
+
+.staff dl div {
+	z-index: 666;
+	position: absolute;
+	margin-top: -40px;
+	width: 20px;
+	display: none;
+	height: 20px;
+	margin-left: 26px;
+	cursor: pointer;
+}
+
+.staff dl dt>img {
+	width: 32px;
+	height: 32px;
+}
+
+.staff dl dd {
+	text-align: center;
+	margin-top: 8px;
+	font-size: 11px;
+	color: #555;
+}
+
+/* ######################## 任务评价 ####################### */
+.tAlignR {text-align: right;}
+.vAlignT {vertical-align: top;}
+.h30 {height: 30px;}
+.f11 {font-size:11px;}
+.f12 {font-size:12px;}
+.f13 {font-size:13px;}
+.f14 {font-size:14px;}
+.fb {font-weight: bold;}
+
+/* 上级对我的评价，如果分值有效，则在页面的右上方显示 */
+.evaluationScore {
+	float: right;
+	padding: 0px;
+	margin: 3px 3px 0px 0px;
+	width: 100px;
+	height: 17px;
+}
+
+.evaluation {
+	width: 100%;
+	margin-left: 10px;
+	font-size: 10px;
+}
+
+.doEvaluate {
+	display: none;
+	width: 100%;
+}
+
+.evaluation label {
+	color: #999;
+	font-family: 微软雅黑;
+	font-size: 14px;
+}
+
+.evaluation-description {
+	width: 100%;
+	height: 72px;
+	border: #D5D5D5 1px solid;
+	color: #747474;
+	line-height: 18px;
+}
+
+.evaluation-publish {
+	width: 50px;
+	height: 28px;
+	color: #FFF;
+	border: none;
+	background: #549FE3;
+}
+
+/* 所有有记录的评价 */
+.evaluations {
+	width: 100%;
+	color: #747474;
+}
+
+.evaluations table tr {
+	height: 30px;
+	line-height: 30px;
+}
+
+.evaluation [id|=eva] {
+	display: none;
+}
+
+/* 任务相关的明显的按钮 */
+.obviousBtn {
+	position: absolute;
+	top: 35px;
+	right: 20%;
+	z-index: 100;
+}
+
+.obviousBtn a {
+	margin-right: 5px;
+	padding: 0px;
+	display: none;
+}
+
+.obviousBtn img {
+/* 	width: 54px; */
+	height: 22px;
+}
+
+/* 灰色 */
+.grey {
+	color: #E5E5E5;
+}
+
+

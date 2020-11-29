@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7;IE=8;IE=9;IE=edge;">
+    <title>假期日历</title>
+    <link rel="stylesheet" type="text/css" href="calendar/resources/css/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="calendar/resources/css/examples.css" />
+    <script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+    <script type="text/javascript">
+        Ext.Loader.setConfig({
+            enabled: true,
+            paths: {
+                'Ext.calendar': rootPath+"/module/kq/kqleavecal/calendar/src",
+                'EHR.kq': rootPath+"/module/kq/kqleavecal"
+            }
+        });
+        Ext.require([
+            //'Ext.diag.layout.Context',
+            //'Ext.diag.layout.ContextItem',
+            'EHR.kq.KqLeaveCal'
+        ]);
+        Ext.onReady(function(){
+            // launch the app:
+            Ext.create('EHR.kq.KqLeaveCal');
+            
+            // update the header logo date:
+            //document.getElementById('logo-body').innerHTML = new Date().getDate();
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

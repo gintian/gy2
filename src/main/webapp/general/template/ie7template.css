@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+
+.fixedtab 
+{ 
+	overflow:auto; 
+	height:expression(document.body.clientHeight-40);
+	width:expression(document.body.clientWidth-10);
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+    BORDER-LEFT: #94B6E6 1pt solid; 
+    BORDER-RIGHT: #94B6E6 1pt solid; 
+    BORDER-TOP: #94B6E6 1pt solid ; 	
+}
+
+ 
+
+.TableRow_lock3 {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}
+
+.TableRow_lock2 {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}
+.TableRow_lock3_BOTTOM {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM:#C4D8EE 1pt solid;
+	BORDER-LEFT: #C4D8EE 0pt solid;
+	BORDER-RIGHT: #C4D8EE 1pt solid;
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}
+
+.TableRow_lock2_BOTTOM {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM:#C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}
+
+.TableRow_lock {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}

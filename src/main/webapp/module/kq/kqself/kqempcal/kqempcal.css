@@ -1,0 +1,126 @@
+锘緻charset "utf-8";
+/* CSS Document
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,span{margin:0;padding:0; border:none;} */
+.content{
+        width: 100px;
+        height: 100%;
+        float: left;
+        font-size: 10px;
+        text-align: center;
+        position: relative;
+        background: #fff;
+        
+    }
+    .time{
+        text-align: right;
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        /*border-right: solid 1px #35baf6;*/
+        border:0;
+        left: 0;
+        font-size: 13px;
+        color: #979797;
+        z-index: 1;
+       
+    }
+    .timeline{
+        /*cursor:pointer;*/
+        position: absolute;
+        width: 0px;
+        height: 100%;
+        border: solid 0.5px #35baf6;
+        left: 0;
+        font-size: 10px;
+        margin:0 0 0 200px;
+        z-index: 2;
+    }
+    .info{
+        border-radius:5px;
+        min-height:30px;
+        width:220px;
+        margin:-6px 0 0 220px;
+        text-align: left;
+        font-size: 14px;
+        color: #3E3E3E;
+        line-height:30px; 
+        position:relative;
+        border: none;
+        background:url("../../../kq/images/bubble.png")  no-repeat left top;
+    }
+    .msg{
+        position:relative;
+        margin-left: 9px;
+        padding-left:2px;
+        min-height:30px;
+        line-height:30px; 
+        width:210px;
+        border: 1px #b0b0b0 solid;
+        border-left:none;
+        /*white-space:normal;
+        word-break:break-all;*/
+    }
+    .class_time{
+       position: absolute;
+       margin:0 0 0 195px;
+       z-index: 5;
+    }
+    .card_time{
+       position: absolute;
+       margin:0 0 0 198px;
+       z-index: 5;
+    }
+.m_input {
+    width: 14px;
+    height: 12px;
+    border: 0px solid black;
+    font-family: "Tahoma";
+    font-size: 9px;
+    text-align: right;
+}
+.m_arrow {
+    float: left;
+    margin-top: 1px;
+    width: 16px;
+    height: 8px;
+    font-family: "Webdings";
+    font-size: 7px;
+    line-height: 2px;
+    padding-left: 2px;
+    cursor: default;
+}
+.m_frameborder {
+    border-left: 1px inset #D4D0C8;
+    border-top: 1px inset #D4D0C8;
+    border-right: 1px inset #D4D0C8;
+    border-bottom: 1px inset #D4D0C8;
+    width: 50px;
+    height: 22px;
+    background-color: transparent;
+    overflow: hidden;
+    text-align: right;
+    font-family: "Tahoma";
+    font-size: 12px;
+    
+}
+input_text {
+    border: inset 1px #000000;
+    BORDER-BOTTOM: #FFFFFF 0pt dotted;
+    BORDER-LEFT: #FFFFFF 0pt dotted;
+    BORDER-RIGHT: #FFFFFF 0pt dotted;
+    BORDER-TOP: #FFFFFF 0pt dotted;
+}
+.complex_border_color{
+    border: 1pt solid #C4D8EE;
+}
+.border_bottom{
+	border-bottom-color: #78C5FF !important;
+	/*border-bottom:solid 2px #78C5FF;*/
+	}
+.TableRow{
+    width:90px;
+    height:38px;
+    font-size: 22px;
+}
+.hj-zm-cj-xqbm{width:300px;height:22px; line-height:18px; border:1px #c5c5c5 solid; color:#333; background:#FFF;}
+.img-middle{vertical-align:middle;}

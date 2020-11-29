@@ -1,0 +1,38 @@
+锘緻charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,span{margin:0;padding:0; border:none;}
+body{color:#4C4C4C;font-size:12px;font-family:"瀹嬩綋";width:100%; background:#f5f5f5;}
+ul,ol{list-style-type:none;}
+select,input,img{vertical-align:middle;}
+a{text-decoration:none;color:#606060;}
+.clearit{clear:both; font-size:0;height:0;width:0;padding:0;margin:0;border:0;}
+.bh-clear{clear:both;}
+.bh-space{height:10px;clear:both;}
+
+/*====================================棣栭〉======================================*/
+.bh-wzm-index-all{width:100%;}
+.bh-wzm-all{width:100%;height:100px; background:#01afd4;}
+.bh-wzm-logo{padding-left:30px;padding-top:26px;font-size:35px;font-family:寰蒋闆呴粦;font-weight:bold;color:#ffffff}
+.button-text{line-height:54PX;font-size: 24PX;color:#FFF;font-weight:bolder;}
+.submit-icon{width:140px !important;height:54px !important;margin:-2px !important;background-image:url(../../module/hire/images/submit.png);}
+.gomail-icon{width:140px !important;height:54px !important;margin:-2px !important;background-image:url(../../module/hire/images/gomail.png);}
+.button{width:140px;height:54px; border:none; background:#01afd4;margin:40px 0 0 225px;}
+.email-code-font{font-size:16px; font-family:寰蒋闆呴粦;color:#4c4c4c;line-height: 40px;height:52px;}
+.select{text-align:center;line-height: 41px;height:41px;color:#FFF;}
+.unselect{text-align:center;line-height: 41px;height:41px;color:#7ec2ed;}
+.select-background{background:url(../../module/hire/images/pic2.png) no-repeat;}
+.unselect-background{background:url(../../module/hire/images/pic3.png) no-repeat;}
+.info{cursor:pointer;color:#7ec2ed;}
+.email-input{margin:60px 0 0 140px;}
+.code-input{margin:30px 0 0 140px;}
+.bh-div{background:#FFF;padding:90px 0 0 70px;}
+.goemail{margin:60px 0 0 0;}
+.goButton{margin:0 0 0 0;}
+.bh-wzm-yzlj{ font-size:22px; font-family:"寰蒋闆呴粦";line-height:120px;padding-left:20px;}
+.finish-text{font-size:21px;font-family:寰蒋闆呴粦;color:#14b5d5;margin-left:1px}
+.finish-info{font-size:15px; font-family:寰蒋闆呴粦;color:#c8c8c8;margin-left:1px}
+.finish-secs{font-size:17px; font-family:寰蒋闆呴粦;color:#fa0000;}
+.finish-retu{font-size:15px; font-family:寰蒋闆呴粦;color:#14b5d5;}
+.myField{font-size:12px; font-family:寰蒋闆呴粦;color:#4c4c4c;margin:8px 0 0 5px;}
+input {line-height: 30px!important;vertical-align: middle;}
+p {font-size:18px; font-family:"寰蒋闆呴粦";}

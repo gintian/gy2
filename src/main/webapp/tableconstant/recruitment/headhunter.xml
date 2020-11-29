@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <tools>
+         <toolbar type='button' privid="3110406" icon="" text='button.insert' handler='inserthunter'/>
+         <toolbar type='button' privid="3110408" functype="delete" functionid="ZP0000002182" text="删除"/>
+         <toolbar type='button' text='button.return' handler='toprepage'/>
+    </tools>
+    <table selectable="true" sortable="true" lockable="true" editable="false" rowdbclick="actionRow"/>
+</tableconstant>

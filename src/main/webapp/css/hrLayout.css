@@ -1,0 +1,13 @@
+
+.x-nlg .x-panel-header-default-top{
+	background-image: none;
+}
+
+.x-panel-header-default, .x-panel-body-default{
+	border: none;
+}
+//标题文字样式
+.x-panel-header-text-container-default{
+	font-size: 12px;
+	vertical-align: middle;
+}

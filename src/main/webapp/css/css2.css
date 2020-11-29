@@ -1,0 +1,214 @@
+/* CSS Document */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	;
+	
+}
+td {
+	font-size: 9pt;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+.style8 {color: #003300}
+.topbackground {
+	background-image: url(/images/top3.jpg);
+	background-repeat: no-repeat;
+}
+a.a1:active {
+	color: #000033;
+	text-decoration: none;
+}
+a.a1:hover {
+	color: #00FF00;
+	text-decoration: none;
+}
+a.a1:visited {
+	color: #000033;
+	text-decoration: none;
+}
+a.a1:link {
+	color: #000033;
+	text-decoration: none;
+}
+.a1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+.layerbackborder {
+	margin: 1px;
+	padding: 1px;
+}
+.overbackground {
+	background-color: #87B8D8;
+	color: #FFFFFF;
+	cursor: default;
+} 
+.outbackground {
+	background-color: #efefef;
+	color: #000000;
+	cursor: default;
+}
+.mainbackground {
+	background-color: #FFFFFF;
+}
+.f14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: 3px;
+	color: #FFFFFF;
+}
+.td {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.list2 {
+	background-color: #4E87D8;
+}
+.list5 {
+	background-color: #FFAA2D;
+}
+
+.f10{
+	FILTER: dropshadow(color=#000000, offx=1, offy=1, positive=1);
+	FONT-FAMILY: "??ì?";
+	FONT-SIZE: 9pt;
+	width:100%;
+	font-weight: bold;
+}
+.list1 {
+	font-size: 11pt;
+	font-weight: bolder;
+	color: #000000;	
+	background-image: url(/images/zhongtiao.jpg);
+	background-repeat: repeat-x;
+	text-align: left;
+
+	}
+.list4 {
+	font-size: 11pt;
+	font-weight: bolder;
+	color: #000000;
+	line-height: 25px;
+	background-image: url(/images/zhongtiao2.jpg);
+	background-repeat: repeat-x;
+	text-align: center;
+
+
+}
+.list3 {
+	background-color: #CDDEF3;
+	color: #003399;
+	text-align: left;
+}
+.list6 {
+	background-color: #F5F5E9;
+	color: #D20000;
+	text-align: left;
+}
+.left1 {
+	font-size: 14px;
+	background-color: #1556AD;
+	font-weight: bold;
+}
+.text1 {
+	font-size: 9pt;
+	border-top: 1px inset #006600;
+	border-right: 1px inset #003300;
+	border-bottom: 1px inset #003300;
+	border-left: 1px inset #006600;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	height: 20px;
+}
+.text2 {
+	font-size: 9pt;
+	border-top: 1px inset #006600;
+	border-right: 1px inset #003300;
+	border-bottom: 1px inset #003300;
+	border-left: 1px inset #006600;
+	color: #0033CC;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	height: 15px;
+	background-color: #FFFFFF;
+}
+.nobordtext {
+	border: thin none;
+	background-color : transparent;
+}	
+.buttomleft1 {
+	background-image: url(/images/e.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.buttommiddle1 {
+	background-image: url(/images/f1.gif);
+	background-repeat: repeat-x;
+}
+.buttomright1 {
+	background-image: url(/images/d.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.fasong {	
+	background-repeat: no-repeat;
+	width: 55px;
+	height: 20px;
+	font-size: 9pt;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.success {
+	font-family: "黑体";
+	font-size: 14pt;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+}
+.visite {
+	font-family: "宋体";
+	font-size: 11pt;
+	color: #419DD1;
+		font-weight: bold;
+	text-decoration: none;
+}
+a.a2:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.a2:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.a2:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.a2:link {
+		color: #ffffff;;
+	text-decoration: none;
+}
+.a2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+		color: #ffffff;
+}
+.leftBanner {
+	 BACKGROUND-IMAGE: url(/images/w_left.jpg); BACKGROUND-REPEAT: no-repeat;WIDTH: 283; BACKGROUND-REPEAT: no-repeat; HEIGHT: 102;
+; background-attachment: fixed; background-position: left bottom
+}
+.mBanner {
+	 BACKGROUND-IMAGE: url(/images/w_bg.jpg); BACKGROUND-REPEAT: repeat-x; HEIGHT: 102;
+; background-attachment: fixed; background-position: left bottom
+}
+.rightBanner {
+	 BACKGROUND-IMAGE: url(/images/w_right.jpg); BACKGROUND-REPEAT: no-repeat;WIDTH: 478; BACKGROUND-REPEAT: no-repeat; HEIGHT: 102;
+; background-attachment: fixed; background-position: left bottom
+}
+.mBanner1 {
+	 BACKGROUND-IMAGE: url(/images/w_blue_bg.jpg); BACKGROUND-REPEAT: repeat-x; HEIGHT: 35;
+; background-attachment: fixed; background-position: left bottom
+}
+.leftBanner1 {
+	 BACKGROUND-IMAGE: url(/images/w_blue.jpg); BACKGROUND-REPEAT: no-repeat;WIDTH: 227; BACKGROUND-REPEAT: no-repeat; HEIGHT: 35;
+; background-attachment: fixed; background-position: left bottom
+}

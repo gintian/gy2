@@ -1,0 +1,2039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		********************声明*******************
+		1、招聘需求编号ZP0000002001-ZP0000002050 
+		2、创建新职位编号ZP0000002051-ZP0000002070
+		3、招聘职位管理编号ZP0000002071-ZP0000002100 
+		4、简历中心编号ZP0000002101-ZP0000002130
+		5、候选人管理编号ZP0000002131-ZP0000002150 
+		5、猎头登记编号ZP0000002151-ZP0000002180
+		6、猎头账号分配、授权 、招聘效果分析编号ZP0000002181-ZP0000002200
+		7、猎头招聘(招聘外网)编号ZP0000002351-ZP0000002400
+		8、人才库编号ZP0000002201-ZP0000002230 
+		9、招聘分析编号ZP0000002231-ZP0000002300
+		10、招聘设置编号ZP0000002301-ZP0000002350
+		11、第三方简历导入编号ZP0000002601-ZP0000002650
+		12、招聘外网编号ZP0000002651-ZP0000002750
+		13、招聘外网API编号ZP1000000001-ZP1000001001
+	-->
+<wf-mappings>
+	<wfi-mapping funcid="ZP0000002000">
+		<transaction-name>发送邮件面板</transaction-name>
+		<transaction-desc>发送邮件面板</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+				mainClass="com.hjsj.hrms.module.recruitment.util.transaction.SearchEmailTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002001">
+		<transaction-name>发送邮件操作</transaction-name>
+		<transaction-desc>发送邮件操作</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.util.transaction.SendEmailTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002003">
+		<transaction-name>查询反馈信息</transaction-name>
+		<transaction-desc>查询反馈信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.util.transaction.SearchFeedBackTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002004">
+		<transaction-name>招聘日志</transaction-name>
+		<transaction-desc>招聘简历操作日志</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.util.transaction.OperationLogTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002151">
+		<transaction-name>招聘猎头管理-查询</transaction-name>
+		<transaction-desc>招聘猎头管理-查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.headhuntermanage.transaction.SearchHunterGroupTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002152">
+		<transaction-name>招聘猎头管理-删除</transaction-name>
+		<transaction-desc>招聘猎头管理-删除</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.headhuntermanage.transaction.DeleteHunterGroupTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002153">
+		<transaction-name>招聘猎头管理-编辑</transaction-name>
+		<transaction-desc>招聘猎头管理-编辑</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.headhuntermanage.transaction.EditHunterGroupTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002181">
+		<transaction-name>招聘猎头账号管理-查询</transaction-name>
+		<transaction-desc>招聘猎头账号管理-查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.headhuntermanage.transaction.SearchHunterUserTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002182">
+		<transaction-name>招聘猎头账号管理-删除</transaction-name>
+		<transaction-desc>招聘猎头账号管理-删除</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.headhuntermanage.transaction.DeleteHunterUserTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002183">
+		<transaction-name>招聘猎头账号管理-新增检查</transaction-name>
+		<transaction-desc>招聘猎头账号管理-新增检查</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.headhuntermanage.transaction.CheckHunterUserNameTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002184">
+		<transaction-name>招聘猎头账号管理-新增、修改</transaction-name>
+		<transaction-desc>招聘猎头账号管理-新增、修改</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.headhuntermanage.transaction.UpdateHunterUserTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- newRecruitment  start -->
+	<wfi-mapping funcid="ZP0000002072">
+		<transaction-name>新招聘-职位信息</transaction-name>
+		<transaction-desc>新招聘-职位信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchPositionHead" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002301">
+		<transaction-name>新招聘-流程列表</transaction-name>
+		<transaction-desc>新招聘-流程列表</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.RecruitprocessTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002302">
+		<transaction-name>新招聘-流程操作</transaction-name>
+		<transaction-desc>新招聘-流程操作</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.UpdateRecruitTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002303">
+		<transaction-name>新招聘-流程操作-offer</transaction-name>
+		<transaction-desc>新招聘-流程操作-offer</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.EmailInfoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002304">
+		<transaction-name>新招聘-流程操作-发送</transaction-name>
+		<transaction-desc>新招聘-流程操作-发送</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.SendEmailTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002305">
+		<transaction-name>新招聘-面试安排</transaction-name>
+		<transaction-desc>新招聘-面试安排</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.ArrangementInfoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002306">
+		<transaction-name>新招聘-保存面试安排</transaction-name>
+		<transaction-desc>新招聘-保存面试安排</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.ArrangementTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002307">
+		<transaction-name>新招聘-入职登记-查询</transaction-name>
+		<transaction-desc>新招聘-入职登记-查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.RzRegisterTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002308">
+		<transaction-name>新招聘-入职登记-保存</transaction-name>
+		<transaction-desc>新招聘-入职登记-保存</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.SaveRzgisterTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002309">
+		<transaction-name>新招聘-入职登记-动态填充机构</transaction-name>
+		<transaction-desc>新招聘-入职登记-动态填充机构</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.SearchCodeitemTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002300">
+		<transaction-name>招聘流程中人员列表-查询分析</transaction-name>
+		<transaction-desc>招聘流程中人员列表-查询分析</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.RecruitProcessQueryPlanTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002400">
+		<transaction-name>邀请评价生成人员表格</transaction-name>
+		<transaction-desc>邀请人界面信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.SearchEvaluationListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002401">
+		<transaction-name>发送邀请邮件</transaction-name>
+		<transaction-desc>发送邀请邮件</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.SendInvitationEmailTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002402">
+		<transaction-name>转发简历邮件</transaction-name>
+		<transaction-desc>转发简历邮件</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.ForwardResumeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002450">
+		<transaction-name>添加人员评价</transaction-name>
+		<transaction-desc>添加人员评价</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.AddEvaluationTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002451">
+		<transaction-name>从邮件登录查看简历进行评价</transaction-name>
+		<transaction-desc>从邮件登录查看简历进行评价</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.EvaluationResumeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002452">
+		<transaction-name>给未及时评价的人发送提醒</transaction-name>
+		<transaction-desc>给未及时评价的人发送提醒</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.RemindEvaluationTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002071">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>招聘职位列表</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchPositionListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002073">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>招聘职位列表删除功能</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.DeletePositionListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002074">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>招聘职位列表发布暂停结束功能</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.PublishPositionListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002075">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>招聘职位列表跳转新增职位列表页面</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.ToPositionPageTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002076">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>保存职位</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SavePositionTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002077">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>删除成员</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.DeletePositionPersonTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002078">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>更新或插入成员</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.UpdaOrSavPositionPersonTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002079">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>推荐职位</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.RecommendPositionTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002080">
+		<transaction-name>招聘职位列表</transaction-name>
+		<transaction-desc>校验推荐职位</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.JudgePositionToRecommend" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002081">
+		<transaction-name>招聘职位查询分析</transaction-name>
+		<transaction-desc>招聘职位查询分析</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.PositionQueryPlanTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002082">
+		<transaction-name>推荐职位校验</transaction-name>
+		<transaction-desc>校验推荐职位</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.ResumeStatusCheckTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002083">
+		<transaction-name>新建职位</transaction-name>
+		<transaction-desc>选择批次填充招聘职位部分信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchBatchInfoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002084">
+		<transaction-name>删除职位</transaction-name>
+		<transaction-desc>删除职位查询职位下考生</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchExamineeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002085">
+		<transaction-name>招聘职位栏目设置指标</transaction-name>
+		<transaction-desc>招聘职位栏目设置指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchPositionFieldTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002086">
+		<transaction-name>职位候选人栏目设置指标</transaction-name>
+		<transaction-desc>职位候选人栏目设置指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.RecruitprocessFieldTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002089">
+		<transaction-name>人岗匹配</transaction-name>
+		<transaction-desc>人岗匹配</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.MatchPersonnelTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+		<wfi-mapping funcid="ZP0000002090">
+		<transaction-name>二次推荐方案查询</transaction-name>
+		<transaction-desc>二次推荐方案查询</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.CandidateQueryPlanTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002091">
+		<transaction-name>创建职位新轮招聘</transaction-name>
+		<transaction-desc>创建职位新轮招聘</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.CopyNewPositionTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002092">
+		<transaction-name>人岗匹配栏目获取指标</transaction-name>
+		<transaction-desc>人岗匹配栏目获取指标</transaction-desc>	
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.MatchPersonGetFieldTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002113">
+		<transaction-name>招聘公示信息</transaction-name>
+		<transaction-desc>招聘公示信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.AboutNoticeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002087">
+		<transaction-name>导入数据</transaction-name>
+		<transaction-desc>导入招聘职位模板</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.ImportPositionTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002088">
+		<transaction-name>导入数据</transaction-name>
+		<transaction-desc>下载招聘职位数据</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.DownloadPositionTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	
+	
+	<wfi-mapping funcid="ZP0000002130">
+		<transaction-name>简历中心获取指标</transaction-name>
+		<transaction-desc>简历中心获取指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.GetFieldSetTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002101">
+		<transaction-name>招聘简历中心-查询</transaction-name>
+		<transaction-desc>招聘简历中心-查询</transaction-desc>
+		<priv-funcid>31102,31103</priv-funcid>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.SearchResumeCenterTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002102">
+		<transaction-name>招聘简历中心-操作职位申请</transaction-name>
+		<transaction-desc>招聘简历中心-操作职位申请</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.OperatePositionApplyTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002103">
+		<transaction-name>招聘简历中心-删除职位申请</transaction-name>
+		<transaction-desc>招聘简历中心-删除职位申请</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.DeletePositionApplyTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002104">
+		<transaction-name>招聘简历中心-转人才库</transaction-name>
+		<transaction-desc>招聘简历中心-转人才库</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.TurnTalentsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002105">
+		<transaction-name>招聘简历中心-导出简历</transaction-name>
+		<transaction-desc>招聘简历中心-导出简历</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.ResumeExportZipDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002106">
+		<transaction-name>招聘简历中心-导入简历</transaction-name>
+		<transaction-desc>招聘简历中心-导入简历</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.ResumeImportZipDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002107">
+		<transaction-name>招聘简历中心-导出简历PDF</transaction-name>
+		<transaction-desc>招聘简历中心-导出简历PDF</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.PrintResumeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002108">
+		<transaction-name>招聘简历中心-打印简历</transaction-name>
+		<transaction-desc>招聘简历中心-打印简历</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.PrintAXTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002109">
+		<transaction-name>招聘简历中心-导出excel</transaction-name>
+		<transaction-desc>招聘简历中心-导出excel</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.ResumeExportExcelTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002111">
+		<transaction-name>招聘简历-查询</transaction-name>
+		<transaction-desc>招聘简历-查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.SearchResumeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002112">
+		<transaction-name>简历中心、人才库查询分析</transaction-name>
+		<transaction-desc>简历中心、人才库查询分析</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.ResumeQueryPlanTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002120">
+		<transaction-name>简历详情</transaction-name>
+		<transaction-desc>简历中心、人才库、职位候选人-简历详情</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.SearchResumeInfoTopTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002121">
+		<transaction-name>简历详情</transaction-name>
+		<transaction-desc>简历中心、人才库、职位候选人-简历详情</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.SearchResumeOperateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002310">
+		<transaction-name>招聘流程定义</transaction-name>
+		<transaction-desc>招聘流程定义</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<priv-funcid>3110602</priv-funcid>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.RecruitmentProcessSearchTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002311">
+		<transaction-name>招聘流程工作职责保存</transaction-name>
+		<transaction-desc>招聘流程工作职责保存</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SaveRecruitFlowTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002312">
+		<transaction-name>招聘流程的环节</transaction-name>
+		<transaction-desc>招聘流程的环节</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SearchRecruitLinksTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002313">
+		<transaction-name>新建招聘流程</transaction-name>
+		<transaction-desc>新建招聘流程</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.GetNewFlowIdTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002314">
+		<transaction-name>保存招聘流程</transaction-name>
+		<transaction-desc>保存招聘流程</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.AddRecruitFlowTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002315">
+		<transaction-name>更改招聘流程状态</transaction-name>
+		<transaction-desc>更改招聘流程状态</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.UpdateFlowStateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002316">
+		<transaction-name>删除招聘流程</transaction-name>
+		<transaction-desc>删除招聘流程</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.DelFlowTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002317">
+		<transaction-name>更新招聘流程环节</transaction-name>
+		<transaction-desc>更新招聘流程环节</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.UpdateFlowLinkTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002318">
+		<transaction-name>删除招聘流程环节</transaction-name>
+		<transaction-desc>删除招聘流程环节</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.DelFlowLinkTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002319">
+		<transaction-name>插入招聘流程环节</transaction-name>
+		<transaction-desc>插入招聘流程环节</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.InsertRecruitFlowLinksTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002320">
+		<transaction-name>查询招聘流程环节状态信息</transaction-name>
+		<transaction-desc>查询招聘流程环节状态信息</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SearchFlowLinkTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002321">
+		<transaction-name>查询招聘流程环节信息</transaction-name>
+		<transaction-desc>查询招聘流程环节信息</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SearchLinkInfoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002322">
+		<transaction-name>更新招聘流程环节用户自定义名称</transaction-name>
+		<transaction-desc>更新招聘流程环节用户自定义名称</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.UpdateLinkUnameTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002323">
+		<transaction-name>更新招聘流程环节状态用户自定义名称</transaction-name>
+		<transaction-desc>更新招聘流程环节状态用户自定义名称</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.UpdateLinkStatusTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002324">
+		<transaction-name>查询招聘流程环节功能名称</transaction-name>
+		<transaction-desc>查询招聘流程环节功能名称</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SearchFlowLinkFunctionsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002325">
+		<transaction-name>更新招聘流程环节功能用户自定义名称</transaction-name>
+		<transaction-desc>更新招聘流程环节功能用户自定义名称</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.UpdateLinkFuncTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002326">
+		<transaction-name>调整招聘流程环节顺序</transaction-name>
+		<transaction-desc>调整招聘流程环节顺序</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SortRecruitFlowLinksTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002327">
+		<transaction-name>调整招聘流程环节顺序</transaction-name>
+		<transaction-desc>调整招聘流程环节顺序</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.MoveRecruitFlowLinksTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002328">
+		<transaction-name>判断是否有招聘过程数据</transaction-name>
+		<transaction-desc>判断是否有招聘过程数据</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.IsFlowUsedTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002329">
+		<transaction-name>招聘流程</transaction-name>
+		<transaction-desc>设置不同环节的权限</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.AddAuthorityTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002330">
+		<transaction-name>招聘流程</transaction-name>
+		<transaction-desc>设置不同环节的权限</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SearchAuthorityTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002351">
+		<transaction-name>调整环节操作顺序</transaction-name>
+		<transaction-desc>调整环节操作顺序</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.SortLinksFuncTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002360">
+		<transaction-name>删除流程环节可用操作</transaction-name>
+		<transaction-desc>删除流程环节可用操作</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.DelLinkFuncsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002361">
+		<transaction-name>判断流程名称是否已使用</transaction-name>
+		<transaction-desc>判断流程名称是否已使用</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitflow.transaction.JudgeNameTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002362">
+		<transaction-name>删除简历附件</transaction-name>
+		<transaction-desc>删除简历附件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.DeleteResumeFilesTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002363">
+		<transaction-name>上传简历附件</transaction-name>
+		<transaction-desc>上传简历附件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.UploadResumeFilesTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002364">
+		<transaction-name>查询简历附件</transaction-name>
+		<transaction-desc>查询简历附件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.SearchCurrentUserFilesTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- newRecruitment  end -->
+
+	<!--通知模板-->
+	<wfi-mapping funcid="ZP0000002338">
+		<transaction-name>查找机构名称</transaction-name>
+		<transaction-desc>查找机构名称</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.SearchCodeItemTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002339">
+		<transaction-name>查找机构名称</transaction-name>
+		<transaction-desc>查找机构名称</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.SearchCodeItemDescTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002340">
+		<transaction-name>检验公式</transaction-name>
+		<transaction-desc>检验公式</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.CheckFormulaTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002341">
+		<transaction-name>查询通知摸板</transaction-name>
+		<transaction-desc>查询通知摸板</transaction-desc>
+		<priv-funcid>3110603,3260609</priv-funcid>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.QueryTemplateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002342">
+		<transaction-name>新增通知摸板</transaction-name>
+		<transaction-desc>新增通知摸板</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.SelectProcessTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002343">
+		<transaction-name>保存通知摸板</transaction-name>
+		<transaction-desc>保存通知摸板</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.AddTemplateTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.QueryTemplateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002344">
+		<transaction-name>修改通知摸板</transaction-name>
+		<transaction-desc>修改通知摸板</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.EditTemplateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002345">
+		<transaction-name>删除通知摸板</transaction-name>
+		<transaction-desc>删除通知摸板</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.DeleteTemplateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002346">
+		<transaction-name>修改公式</transaction-name>
+		<transaction-desc>修改公式</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.EditFormulaListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002347">
+		<transaction-name>插入指标</transaction-name>
+		<transaction-desc>插入指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.SearchFieldListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002348">
+		<transaction-name>插入附件</transaction-name>
+		<transaction-desc>插入附件</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.SaveEmailAttachTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002349">
+		<transaction-name>展示附件</transaction-name>
+		<transaction-desc>展示附件</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.InitTakeBoatAttachTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002350">
+		<transaction-name>删除附件</transaction-name>
+		<transaction-desc>删除附件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.DeleteEmailAttachTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.utils.components.emailtemplate.transaction.InitTakeBoatAttachTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<!--通知模板 结束-->
+	<!--参数设置应用人员库设置-->
+	<wfi-mapping funcid="ZP0000002352">
+		<transaction-name>查询资源</transaction-name>
+		<transaction-desc>查询资源</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<priv-funcid>31051,3110601,311060101,311060102</priv-funcid>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.baseoptions.transaction.SearchResourceTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002353">
+		<transaction-name>保存资源</transaction-name>
+		<transaction-desc>保存资源</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.baseoptions.transaction.SaveResourceTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002354">
+		<transaction-name>初始化配置参数</transaction-name>
+		<transaction-desc>初始化配置参数</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<priv-funcid>31053,311060103,311060104</priv-funcid>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.InitParameterSetTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002355">
+		<transaction-name>初始化配置参数</transaction-name>
+		<transaction-desc>初始化配置参数</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<priv-funcid>31053,311060103,311060104</priv-funcid>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SaveParameterSetTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.InitParameterSetTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002356">
+		<transaction-name>初始化招聘数据</transaction-name>
+		<transaction-desc>初始化招聘数据</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<priv-funcid>3105,31057,311060105</priv-funcid>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SearchDataTableTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002373">
+		<transaction-name>通用排序</transaction-name>
+		<transaction-desc>通用排序</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SortTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002370">
+		<transaction-name>选择指标集</transaction-name>
+		<transaction-desc>选择指标集</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.selectFieldSetTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002371">
+		<transaction-name>选择指标</transaction-name>
+		<transaction-desc>选择指标</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SelectFieldItemTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002372">
+		<transaction-name>单位简介列表</transaction-name>
+		<transaction-desc>单位简介列表</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.InitOrgBriefTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002374">
+		<transaction-name>保存单位介绍指标参数具体内容</transaction-name>
+		<transaction-desc>保存单位介绍指标参数具体内容</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SaveOrgBriefFieldsTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.InitOrgBriefTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002375">
+		<transaction-name>备份单位介绍文件</transaction-name>
+		<transaction-desc>备份单位介绍文件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.BackupFileTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002376">
+		<transaction-name>还原单位介绍文件</transaction-name>
+		<transaction-desc>还原单位介绍文件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.ReductionFileTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002377">
+		<transaction-name>修改单位或部门定义参数内容</transaction-name>
+		<transaction-desc>修改单位或部门定义参数内容</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.EditOrgBriefTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002378">
+		<transaction-name>取许可协议参数</transaction-name>
+		<transaction-desc>取许可协议参数</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.GetLicenseAgreementTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002379">
+		<transaction-name>保存许可协议参数</transaction-name>
+		<transaction-desc>保存许可协议参数</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SaveLicenseAgreementTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.GetLicenseAgreementTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002380">
+		<transaction-name>查询操作日志</transaction-name>
+		<transaction-desc>查询操作日志</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.SearchResumeLogsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002369">
+		<transaction-name>初始化招聘数据</transaction-name>
+		<transaction-desc>初始化招聘数据</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.InitializationHireDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002357">
+		<transaction-name>单位简介列表</transaction-name>
+		<transaction-desc>单位简介列表</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.InitOrgBriefTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002358">
+		<transaction-name>显示新的指标列表</transaction-name>
+		<transaction-desc>显示新的指标列表</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SearchSelectedZpCondFieldTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002359">
+		<transaction-name>保存简历筛选条件指标</transaction-name>
+		<transaction-desc>保存简历筛选条件指标</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SaveZpCondTemplateFieldsTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SearchSelectedZpCondFieldTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002365">
+		<transaction-name>查询简历筛选条件指标</transaction-name>
+		<transaction-desc>查询简历筛选条件指标</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.GetZpCondFieldsListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002366">
+		<transaction-name>保存复杂查询条件</transaction-name>
+		<transaction-desc>保存复杂查询条件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SaveComplexTemaplteTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SearchSelectedZpCondFieldTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002367">
+		<transaction-name>删除复杂查询条件</transaction-name>
+		<transaction-desc>删除复杂查询条件</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.DeleteComplexTemplateTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.SearchSelectedZpCondFieldTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002368">
+		<transaction-name>查询简历筛选条件指标</transaction-name>
+		<transaction-desc>查询简历筛选条件指标</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.parameter.transaction.ShowZpCondFieldsListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002551">
+		<transaction-name>考生管理</transaction-name>
+		<transaction-desc>考生管理</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.SearchExamineeListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002552">
+		<transaction-name>删除考生</transaction-name>
+		<transaction-desc>删除考生</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.DeleteExamineesTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002553">
+		<transaction-name>验证批次中是否存在已生成准考证的考生</transaction-name>
+		<transaction-desc>验证批次中是否存在已生成准考证的考生</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.IsExitExamNoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002554">
+		<transaction-name>批量按批次生成准考证号</transaction-name>
+		<transaction-desc>批量按批次生成准考证号</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.CreateExamNoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002566">
+		<transaction-name>保存</transaction-name>
+		<transaction-desc>保存</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.SaveExamineesTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002555">
+		<transaction-name>清除考场分派记录</transaction-name>
+		<transaction-desc>清除考场分派记录</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.ClearHallRecordsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002556">
+		<transaction-name>清除考场分派记录</transaction-name>
+		<transaction-desc>清除考场分派记录</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.ExamineeQueryPlanTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002557">
+		<transaction-name>外网登记表PDF</transaction-name>
+		<transaction-desc>外网登记表PDF</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.transaction.general.card.CreateYkcardPDFTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002558">
+		<transaction-name>批量修改</transaction-name>
+		<transaction-desc>批量修改</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.UpdateExamTimeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002559">
+		<transaction-name>批量打印准考证号</transaction-name>
+		<transaction-desc>批量打印准考证号</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.PrintExamNosTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002560">
+		<transaction-name>时分下拉框</transaction-name>
+		<transaction-desc>时分下拉框</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.SearchTimeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002562">
+		<transaction-name>简历筛选</transaction-name>
+		<transaction-desc>简历筛选</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchFilterListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002563">
+		<transaction-name>简历筛选维护</transaction-name>
+		<transaction-desc>简历筛选维护</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.UpdateFilterTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002564">
+		<transaction-name>设置简历筛选指标</transaction-name>
+		<transaction-desc>设置简历筛选指标</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.AddFilterItemsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002565">
+		<transaction-name>批量修改查询代码指标</transaction-name>
+		<transaction-desc>批量修改查询代码指标</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchCodeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002561">
+		<transaction-name>加载多选指标组件下拉框</transaction-name>
+		<transaction-desc>加载多选指标组件下拉框</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.position.transaction.SearchFieldItemTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002601">
+		<transaction-name>第三方简历导入-参数配置页面</transaction-name>
+		<transaction-desc>第三方简历导入-参数配置页面</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.ShowThirdpartResumeParmTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002602">
+		<transaction-name>第三方简历导入-参数查询</transaction-name>
+		<transaction-desc>第三方简历导入-参数查询</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.SearchThirdpartResumeParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002603">
+		<transaction-name>第三方简历导入-参数保存</transaction-name>
+		<transaction-desc>第三方简历导入-参数保存</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.SaveThirdpartResumeParmTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002604">
+		<transaction-name>第三方简历导入-定义方案</transaction-name>
+		<transaction-desc>第三方简历导入-定义方案</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.DefineResumeImportSchemeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002605">
+		<transaction-name>第三方简历导入-指标对应</transaction-name>
+		<transaction-desc>第三方简历导入-指标对应</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.ItemCorrespondTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002606">
+		<transaction-name>第三方简历导入-代码对应</transaction-name>
+		<transaction-desc>第三方简历导入-代码对应</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.CodeCorrespondTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002607">
+		<transaction-name>第三方简历导入-保存指标对应</transaction-name>
+		<transaction-desc>第三方简历导入-保存指标对应</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.SavevalidTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002608">
+		<transaction-name>第三方简历导入-保存简历信息</transaction-name>
+		<transaction-desc>第三方简历导入-保存简历信息</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.SaveResumeImportSchemeTrans" />
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.DefineResumeImportSchemeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002609">
+		<transaction-name>第三方简历导入-保存代码对应</transaction-name>
+		<transaction-desc>第三方简历导入-保存代码对应</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.SetResumeItemTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002610">
+		<transaction-name>第三方简历导入-自动对应</transaction-name>
+		<transaction-desc>第三方简历导入-自动对应</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.AutoCorrespondTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002611">
+		<transaction-name>第三方简历导入-简历导入</transaction-name>
+		<transaction-desc>第三方简历导入-简历导入</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.ImportResumeSchemeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002612">
+		<transaction-name>第三方简历导入-防止页面链接无效</transaction-name>
+		<transaction-desc>第三方简历导入-防止页面链接无效</transaction-desc>
+		<lock-attribute>0</lock-attribute>
+		<run-attribute>0</run-attribute>
+		<transaction-type>0</transaction-type>
+		<transaction_runner>0</transaction_runner>
+		<log-attribute>0</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.thirdpartyresume.transaction.PreventInvalidTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002531">
+		<transaction-name>招聘批次</transaction-name>
+		<transaction-desc>招聘批次</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.InitRecruitBatchTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002532">
+		<transaction-name>新建招聘批次</transaction-name>
+		<transaction-desc>新建招聘批次</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.AddRecruitBatchTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002533">
+		<transaction-name>加载招聘渠道、招聘流程下拉框</transaction-name>
+		<transaction-desc>加载招聘渠道、招聘流程下拉框</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.AddRecruitBatchListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002534">
+		<transaction-name>保存招聘批次</transaction-name>
+		<transaction-desc>保存招聘批次</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.SaveRecruitBatchTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002535">
+		<transaction-name>删除招聘批次</transaction-name>
+		<transaction-desc>删除招聘批次</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.DeleteRecruitBatchTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002536">
+		<transaction-name>发布、结束招聘批次</transaction-name>
+		<transaction-desc>发布、结束招聘批次</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.PublishOrCloseRecruitBatchTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002537">
+		<transaction-name>招聘批次查询</transaction-name>
+		<transaction-desc>招聘批次查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.RecruitBatchQueryPlanTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002538">
+		<transaction-name>导出成绩</transaction-name>
+		<transaction-desc>导出成绩</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.ExportScoreTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002539">
+		<transaction-name>导入成绩</transaction-name>
+		<transaction-desc>导入成绩</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examinee.transaction.ImportScoreTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002549">
+		<transaction-name>查询招聘计划通知内容</transaction-name>
+		<transaction-desc>查询招聘计划通知内容</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitbatch.transaction.SendBatchNoticeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002501">
+		<transaction-name>考场设置</transaction-name>
+		<transaction-desc>考场设置</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.SearchExamHallTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002502">
+		<transaction-name>考场设置-导出excel</transaction-name>
+		<transaction-desc>考场设置-导出excel</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.ExportDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002541">
+		<transaction-name>考场设置-加载考生名单</transaction-name>
+		<transaction-desc>考场设置-加载考生名单</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.InitExamineeNameListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002542">
+		<transaction-name>考场设置-移除考生</transaction-name>
+		<transaction-desc>考场设置-移除考生</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.RemoveExamineeNameListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002543">
+		<transaction-name>考场分派</transaction-name>
+		<transaction-desc>考场分派</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.AutoComputeExamineeTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002544">
+		<transaction-name>考场分派</transaction-name>
+		<transaction-desc>考场分派</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.DispatchHallTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002545">
+		<transaction-name>加载考场分派</transaction-name>
+		<transaction-desc>加载考场分派</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.InitAssignHallTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002546">
+		<transaction-name>考场分派--添加考场</transaction-name>
+		<transaction-desc>考场分派--添加考场 </transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.AddExamHallTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002547">
+		<transaction-name>考场分派--添加考场</transaction-name>
+		<transaction-desc>考场分派--添加考场 </transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.AddExamHallListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002503">
+		<transaction-name>考场设置-删除</transaction-name>
+		<transaction-desc>考场设置-删除</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.ExamHallDeleTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002504">
+		<transaction-name>考场添加/修改</transaction-name>
+		<transaction-desc>考场添加/修改</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.exammanage.examhall.transaction.ExamHallTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="ZP0000002110">
+		<transaction-name>简历中心备选指标</transaction-name>
+		<transaction-desc>简历中心备选指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.resumecenter.transaction.OptionalQueryTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002540">
+		<transaction-name>简历中心备选指标</transaction-name>
+		<transaction-desc>简历中心备选指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.recruitment.util.transaction.PreventInvalidTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002651">
+		<transaction-name>找回注册帐号</transaction-name>
+		<transaction-desc>找回注册帐号</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.hire.transaction.ShowZpAccountsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002652">
+		<transaction-name>找回注册帐号</transaction-name>
+		<transaction-desc>找回注册帐号</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.hire.transaction.GetZpAccountsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+ 	<wfi-mapping funcid="ZP0000002653">
+     <transaction-name>招聘外网忘记密码</transaction-name>
+     <transaction-desc>招聘外网忘记密码发送重置密码请求</transaction-desc> 
+     <wf-sequence>
+         <wfi-class mainClass="com.hjsj.hrms.module.hire.transaction.SendResetPasswordMailTrans"/>
+     </wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="ZP0000002654">
+     <transaction-name>招聘外网忘记密码</transaction-name>
+     <transaction-desc>招聘外网忘记密码</transaction-desc> 
+     <wf-sequence>
+         <wfi-class mainClass="com.hjsj.hrms.module.hire.transaction.ResetPasswordTrans"/>           
+     </wf-sequence>
+  </wfi-mapping>
+	
+	<wfi-mapping funcid="ZP0000002655">
+	    <transaction-name>招聘外网忘记密码</transaction-name>
+	    <transaction-desc>招聘外网忘记密码</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.transaction.CheckLinksTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002656">
+	    <transaction-name>北理工招聘门户集成</transaction-name>
+	    <transaction-desc>北理工招聘门户集成</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.transaction.GetThirdPartyInfoTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002131">
+	    <transaction-name>职位候选人推荐排名保存</transaction-name>
+	    <transaction-desc>职位候选人推荐排名保存</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.SaveRankNumTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002132">
+	    <transaction-name>职位候选人接受或拒绝邀请</transaction-name>
+	    <transaction-desc>职位候选人接受或拒绝邀请</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.ConfirmInvitationTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002133">
+	    <transaction-name>转新阶段获取默认接收人</transaction-name>
+	    <transaction-desc>转新阶段获取默认接收人</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.recruitment.recruitprocess.transaction.SearchRecruitMemberTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP0000002657">
+	    <transaction-name>招聘外网公告分页</transaction-name>
+	    <transaction-desc>招聘外网公告分页</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.transaction.hire.employNetPortal.SearchBoardListTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<!-- 招聘API接口 -->
+	<wfi-mapping funcid="ZP1000000001">
+	    <transaction-name>招聘外网获取职位相关信息</transaction-name>
+	    <transaction-desc>招聘外网获取职位相关信息</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.GetPositionTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000002">
+	    <transaction-name>招聘外网获取公告相关信息</transaction-name>
+	    <transaction-desc>招聘外网获取公告相关信息</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.GetBoardTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000003">
+	    <transaction-name>招聘外网注册账号</transaction-name>
+	    <transaction-desc>招聘外网注册账号</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.RegisterInfoTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000004">
+	    <transaction-name>招聘外网获取简历子集和简历指标</transaction-name>
+	    <transaction-desc>招聘外网获取简历子集和简历指标</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.GetResumeTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000005">
+	    <transaction-name>招聘外网保存简历</transaction-name>
+	    <transaction-desc>招聘外网保存简历</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.SaveResumeTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000006">
+	    <transaction-name>招聘外网获取已应聘职位</transaction-name>
+	    <transaction-desc>招聘外网获取已应聘职位</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.ApplyedPositionTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000007">
+	    <transaction-name>招聘外网收藏职位</transaction-name>
+	    <transaction-desc>招聘外网收藏职位</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.CollectionPositionTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000008">
+	    <transaction-name>招聘外网处理简历子集附件信息</transaction-name>
+	    <transaction-desc>招聘外网处理简历子集附件信息</transaction-desc> 
+	    <wf-sequence>
+	        <wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.ResumeFileTrans"/>           
+	    </wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000009">
+		<transaction-name>招聘外网指标参数</transaction-name>
+		<transaction-desc>招聘外网指标参数</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.GetZpParamsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000010">
+		<transaction-name>获取招聘频道列表及内容</transaction-name>
+		<transaction-desc>获取招聘频道列表及内容</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.GetChannelTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000011">
+		<transaction-name>密码管理接口（密码修改、找回密码、找回账号）</transaction-name>
+		<transaction-desc>密码管理接口（密码修改、找回密码、找回账号）</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.HireAccountTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="ZP1000000012">
+		<transaction-name>招聘外网获取PDF登记表打印数据</transaction-name>
+		<transaction-desc>招聘外网获取PDF登记表打印数据</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.hire.api.v1.LoadPrintDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+</wf-mappings>

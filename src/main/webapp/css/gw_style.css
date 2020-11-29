@@ -1,0 +1,43 @@
+锘緻charset "utf-8";
+/* CSS Document */
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,span{margin:0;padding:0; border:none;}
+body{color:#747474;font-size:12px;font-family:"瀹嬩綋";background:#FAFAFA;}
+ul,ol{list-style-type:none;}
+select,input,img{vertical-align:middle;}
+a{text-decoration:none;color:#606060;}
+.clearit{clear:both; font-size:0;height:0;width:0;padding:0;margin:0;border:0;}
+.bh-clear{clear:both;}
+.bh-space{height:10px;clear:both;}
+
+/*====================================棣栭〉======================================*/
+.epm-top{background:#00706a;width:100%;}
+.epm-bottom{margin:0 auto;background:url(../images/gw/all-bg.jpg) repeat-x #00706A; vertical-align:bottom;padding-bottom:0px;width:100%;}
+.epm-body{margin:0 auto;height:auto; overflow:hidden;}
+.epm-index-all{width:1024px;margin:0 auto; position:relative;}
+.epm-index-all-top{width:1024px;height:205px;}
+.epm-index-top-left{width:355px;height:205px;float:left; background:url(../images/gw/top-left.jpg) no-repeat;}
+.epm-index-top-center{width:355px;height:205px;float:left; background:url(../images/gw/top-center.jpg) no-repeat;}
+.epm-index-top-right{width:314px;height:205px;float:left; background:url(../images/gw/top-right.jpg) no-repeat;}
+
+.epm-index-all-modder{width:1024px;height:241px;}
+.epm-modder-left{width:296px;height:241px; background:url(../images/gw/modder-left.jpg) no-repeat;float:left;}
+.epm-modder-center{width:480px;height:241px;float:left; background:url(../images/gw/modder-center.jpg) no-repeat;}
+.epm-modder-all{width:270px;height:170px;margin-left:148px;}
+/*.epm-form{width:168px;height:26px; border:none; line-height:26px; background:url(../images/gw/biaodan.jpg) no-repeat;}*/
+.epm-form{width:168px;height:20px; border:none; line-height:20px;}
+.epm-modder-center tr{height:45px;}
+.epm-modder-center tr .epm-title{color:#FFF; font-size:16px; font-weight:bolder;width:70px;}
+.epm-dlu{width:61px;height:26px; border:none; background:url(../images/gw/botton.jpg) no-repeat; color:#FFF;}
+.epm-modder-right{width:248px;height:241px; background:url(../images/gw/modder-right.jpg) no-repeat;float:right;}
+.epm-index-all-bottom{width:1024px;height:206px;}
+.epm-bottom-left{width:297px;height:206px; background:url(../images/gw/bottom-left.jpg) no-repeat;float:left;}
+.epm-bottom-center{width:504px;height:206px; background:url(../images/gw/bottom-center.jpg) no-repeat;float:left;}
+.epm-bottom-right{width:223px;height:206px; background:url(../images/gw/bottom-right.jpg) no-repeat;float:right;}
+
+
+.epm-dingwei{width:830px;height:400px;}
+.epm-content{width:754px;height:312px;background:#CCC;margin:30px 0 0 80px; background:url(../images/gw/dinwei-bg.png) no-repeat;}
+.epm-modder-cen{width:299px;height:150px;float:left;padding-top:91px;padding-left:122px;}
+.epm-modder-cen tr{height:35px;}
+.epm-modder-cen tr .epm-title{color:#FFF; font-size:16px; font-weight:bolder;width:70px;}

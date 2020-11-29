@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<versions version_id="V6.X" name="V6.X移动服务版本控制">
+    <!--注意：当移动端的功能需要和服务器通信时，必须配置该功能的相关参数 -->
+    <!--样板：<func id="功能号" name="说明" control="B/S是否控制，true控制/false不控制" ctrl_ver="发行版本控制"
+        hide="是否隐藏，true隐藏/false显示" date="功能完成时间"> -->
+    <!--发行版本控制
+          61:HJ-eHR6.1
+          62:HJ-eHR6.2
+          63:HJ-eHR6.x
+          70:HJ-HCM7.0
+          71:HJ-HCM7.x
+          ctrl_ver 控制版本标识,用逗号分隔开,比如ctrl_ver="62,63"
+                   程序根据此标识进行控制,只有版本号在ctrl_ver定义了,此功能模块显示，否则不显示.-->
+    <func id="0K00" name="首页" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02">
+        <func id="0K01" name="通 讯 录" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02">
+            <func id="0K0101" name="保存联系方式" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0102" name="转发联系方式" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0103" name="即时通讯" control="true" ctrl_ver="62,63,70,71,75,76" date="" hide="true"/>
+        </func>
+        <func id="0K02" name="统计分析" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+        <func id="0K03" name="我的团队" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" >
+            <func id="0K0301" name="员工薪酬" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2016-07-05" />
+        </func>
+        <func id="0K04" name="员工查询" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+        <func id="0K05" name="我的薪酬" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02">
+            <func id="0K0501" name="下载" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0502" name="页签" control="false" ctrl_ver="61,62,63,70,71,75,76" date="2014-09-25" />
+        </func>
+        <func id="0K0D" name="移动考勤" control="true"  ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02">
+            <func id="0K0D01" name="签到" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0D02" name="我的轨迹" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0D03" name="员工轨迹" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+        </func>
+        <func id="0K0E" name="假期" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+        <func id="0K0F" name="请假申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+        <func id="0K0G" name="加班申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+        <func id="0K0H" name="公出申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+        <func id="0K0I" name="业务协同" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02">
+            <func id="0K0I1" name="待办任务" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0I2" name="已办任务" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0I3" name="我的申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0I4" name="业务申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+        </func>
+        <func id="0K0N" name="扫一扫" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2016-07-05" />
+        <func id="0K0J" name="本人资料" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+        <func id="0K0K" name="异动申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02">
+            <func id="0K0K1" name="待办任务" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0K2" name="已办任务" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0K3" name="我的申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+            <func id="0K0K4" name="业务申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+        </func>
+        <func id="0K0L" name="考勤申请" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+    </func>
+
+    <!-- 导航栏 -->
+    <func id="0K06" name="员工名册" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+    <func id="0K07" name="签    到" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+    <func id="0K08" name="签    退" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+    <func id="0K0A" name="我的待办" control="true" ctrl_ver="62,63,70,71,75,76" date="2014-07-02" />
+    <func id="0K0C" name="我的打卡" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+    <func id="0K0M" name="我的假期" control="true" ctrl_ver="61,62,63,70,71,75,76" date="2014-07-02" />
+
+</versions>

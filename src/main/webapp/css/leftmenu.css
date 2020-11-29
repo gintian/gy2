@@ -1,0 +1,111 @@
+.sec_menu  { 
+   /*
+   border-left:1px solid #336699; 
+   border-right:1px solid #336699; 
+   border-bottom:1px solid #336699; 
+   */
+   width:200;
+   height:0;
+   /*filter:alpha(Opacity=100);*/
+   display:none;
+   overflow-y:auto; 
+}
+
+.sec_menu_dc  { 
+   /*
+   border-left:1px solid #336699; 
+   border-right:1px solid #336699; 
+   border-bottom:1px solid #336699; 
+   */
+   height:0;
+   /*filter:alpha(Opacity=100);*/
+   display:none;
+   overflow-y:hidden; 
+}
+
+.menu_table{
+	/*
+   background-color:#DEEAF5;
+   */
+   BORDER-RIGHT: #C4D8EE 1pt solid;      
+}
+
+.menuBodySet{
+	/*
+	background-color:#DEEAF5;
+	*/
+    margin:0 4 0 0 ; 
+}
+.menu_title{
+   background-image:url(/images/shu_bg_bg.gif); 
+   background-position : left;
+   background-repeat:repeat;
+   color:#000000;
+   cursor:hand; 
+   height:24px;
+	border: inset 0px #2E5B89;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #2E5B89 0pt solid; 
+	BORDER-RIGHT: #2E5B89 0pt solid; 
+	BORDER-TOP: #024FC1 0pt solid;
+	font-size:12px;
+	font-weight:bold;
+}
+
+body.bodyRight {
+	/*
+	background-color: #f4f7f7;
+	*/
+	/*background-repeat: repeat;*/ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #336699;
+	margin:0 0 0 0;
+}
+.menu_title3{
+   background-image:url(/images/title_bg.jpg); 
+   background-position : left;
+   background-repeat:repeat;
+   color:#000000;
+   cursor:hand; 
+   height:20px;
+	border: inset 0px #2E5B89;
+	BORDER-BOTTOM: #2E5B89 0pt solid; 
+	BORDER-LEFT: #2E5B89 0pt solid; 
+	BORDER-RIGHT: #2E5B89 0pt solid; 
+	BORDER-TOP: #024FC1 0pt solid;
+}
+.menu_title2{
+   background-image:url(/images/title_bg.gif); 
+   background-position : left;
+   background-repeat:repeat;
+   color:#000000;   
+   background-color: #2E5B89; 
+	border: inset 0px #2E5B89;
+	BORDER-BOTTOM: #2E5B89 0pt solid; 
+	BORDER-LEFT: #2E5B89 0pt solid; 
+	BORDER-RIGHT: #2E5B89 0pt solid; 
+	BORDER-TOP: #2E5B89 0pt solid;
+
+}
+.menu_title span{
+   color:#000000;  
+}
+.menu_title2 span{
+   color:#000000; 
+}
+.showtitle{position:relative;top:-2px;left:-6px;border:1pt solid #C3D4E7;z-index:0;height:26;background-color: #EBF1F9;padding-top:5;padding-left:5}
+.alp{FILTER: alpha(opacity=0,finishopacity=100,style=2,startx=0,starty=5,finishx=250,finishy=85}
+}
+
+
+
+.menu_a{ 
+	color:#ffffff;
+	font-size:12px;
+	cursor: hand ;
+}
+
+
+

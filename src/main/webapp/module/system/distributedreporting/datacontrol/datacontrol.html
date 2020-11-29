@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>数据接收日志</title>
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7"> 
+  </head>
+  	<script language="JavaScript" src="/module/utils/js/template.js"></script>
+  	<script language="JavaScript" src="/module/system/distributedreporting/distributedreporting_resource_zh_CN.js"></script>
+	<script src="/components/querybox/QueryBox.js" ></script>
+	<script language='JavaScript' src='/components/tableFactory/tableFactory.js'></script>
+	<link href='/ext/ext6/resources/ext-theme.css' rel='stylesheet' type='text/css'><link>
+	<script type="text/javascript" src="/components/personPicker/PersonPicker.js"></script>
+	<link href="/module/recruitment/css/style.css" rel="stylesheet" />
+	<script language="JavaScript" src="/components/codeSelector/codeSelector.js"></script>
+	<script language="JavaScript" src="/components/extWidget/field/CodeTreeCombox.js"></script>
+	<script type="text/javascript" src="/components/codeSelector/deepCodeSelector.js"></script>
+	<style type="text/css">
+	.inwidth{width:267px}
+	.codewidth{width:251px}
+	.timewidth{width:133px}
+	</style>
+	<script type="text/javascript">
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'DatacontrolUL': '/module/system/distributedreporting/datacontrol',
+				'SYSP':'/components/sysExtPlugins'
+			}
+		});
+ 		var tableObj;
+		Ext.onReady(function(){
+			Ext.require('DatacontrolUL.Datacontrol', function(){
+				DatacontrolGlobal = Ext.create("DatacontrolUL.Datacontrol", {});
+			});
+		});
+ 	</script>
+ </html>

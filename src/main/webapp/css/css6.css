@@ -1,0 +1,33 @@
+body {  
+	/*background-color:#E1F1FB;*/
+	background-color:#ffffff;
+	font-size: 12px;
+	margin:4 0 0 4;
+}
+.ListTable {
+	border:1px solid #8EC2E6;
+	border-collapse:collapse; 
+	BORDER-BOTTOM: medium none; 
+    BORDER-LEFT: medium none; 
+    BORDER-RIGHT: medium none; 
+    BORDER-TOP: medium none; 
+    margin-top:5px;
+}
+.RecordRowPo {	
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22;
+	/*color: #666666;*/
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none;font-size: 12px	
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none;font-size: 12px
+}
+A:active {
+	COLOR: #000000;TEXT-DECORATION: none;font-size: 12px
+}
+A:hover {
+	COLOR: #E39E19; TEXT-DECORATION:none;font-size: 12px
+}

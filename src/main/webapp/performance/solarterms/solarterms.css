@@ -1,0 +1,79 @@
+
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,span{margin:0;padding:0; border:none;}
+body{color:#747474;font-size:12px;font-family:"瀹嬩綋";background:#fff;}
+ul,ol{list-style-type:none;}
+select,input,img{vertical-align:middle;}
+a{text-decoration:none;color:#606060;}
+.clearit{clear:both; font-size:0;height:0;width:0;padding:0;margin:0;border:0;}
+.bh-clear{clear:both;}
+.bh-space{height:10px;clear:both;}
+
+/*====================================浠诲姟缁村害 涓婚〉======================================*/
+.epm-li-yue-all{width:98%;margin:0 auto;}
+.epm-li-yue-top{width:100%;height:44px; background:url(/images/top-one-bg.jpg) repeat-y center center;}
+.epm-li-yue-top h2{color:#5C8C8E; text-align:center; line-height:44px; font-size:24px;}
+.epm-li-yue-bottom{width:100%;min-height:410px; background:url(/images/bottom-one-bg.jpg) repeat-x;margin-top:8px;padding-top:5px;}
+.epm-li-bottom-logo{min-height:400px;width:99%;margin:0 auto;background:url(/images/biaozhi-two.png) no-repeat center center;}
+.epm-li-bottom-logo tr td{ text-align:center; border-bottom:2px #CED8D7 solid;border-left:2px #CED8D7 solid;height:50px;}
+.epm-li-bottom-logo tr .epm-li-td-yi{ border-left:none;}
+.epm-li-bottom-logo .epm-li-tr td{ vertical-align:text-top;}
+.epm-li-bottom-logo tr .epm-li-td-er{ border-bottom:none;}
+.epm-li-bottom-logo tr .epm-li-td-san{ border-bottom:none;border-left:none;}
+.epm-li-bottom-logo .epm-li-tr td a{font-size:14px; font-weight:bolder;width:165px; display:inline-block; line-height:20px; text-align:center;color:#666;}
+.epm-li-bottom-logo tr td a{font-size:14px; font-weight:bolder;width:165px; display:inline-block;line-height:20px; text-align:center;color:#666;padding-bottom:3px;}
+.epm-li-bottom-logo tr td a:hover{font-size:14px; font-weight:bolder;width:165px; display:inline-block;line-height:20px; text-align:center;color:#5db77f;padding-bottom:3px;}
+.epm-li-bottom-logo tr td a:active{font-size:14px; font-weight:bolder;width:165px; display:inline-block;line-height:20px; text-align:center;color:#369;padding-bottom:3px;}
+.epm-li-bottom-logo tr td p{font-size:14px; font-weight:bolder;width:165px; display:inline-block;line-height:20px; text-align:center;color:#666;padding-bottom:3px;}
+.epm-li-gong{width:164px;height:39px; text-align:center; background:url(/images/one-anniu-yi.jpg) no-repeat; border:none;color:#37726C; font-size:20px; font-weight:bolder; line-height:39px;margin-bottom:10px;}
+/*====================================浠诲姟缁村害 鍏蜂綋浠诲姟======================================*/
+.epm-li-two-bottom{width:100%;height:400px; background:url(/images/top-two-bg.jpg) repeat-x center center;margin-top:8px;padding-top:5px;}
+.epm-li-two-bottom-logo{height:280px;margin:0 auto;background:url(/images/biaozhi-one.png) no-repeat center center;padding-top:120px;}
+.epm-li-two-bottom-logo tr td{ text-align:center; border-bottom:2px #CED8D7 solid;border-left:2px #CED8D7 solid;height:40px;}
+.epm-li-two-bottom-logo tr td p{font-size:14px; font-weight:bolder;width:120px;display:inline-block; line-height:20px; text-align:center;color:#666;padding-bottom:10px;}
+/*褰撳墠鏈堝瓧浣撲负钃濊壊*/
+.epm-li-two-bottom-logo tr td .currentmonth{font-size:14px; font-weight:bolder;width:120px; display:inline-block; line-height:20px; text-align:center;color:#36f;padding-bottom:10px;}
+.epm-li-two-bottom-logo tr .epm-li-two-td-yi{ border-left:none;}
+.epm-li-two-bottom-logo .epm-li-two-tr td{ vertical-align:text-top;}
+.epm-li-two-gong{width:83px;height:37px;text-align:center; background:url(/images/two-anniu-yi.jpg) no-repeat; border:none;color:#37726C; font-size:16px; font-weight:bolder; line-height:37px;margin-bottom:10px;}
+/*杈撳叆妗嗙殑鏍峰紡*/
+.epm-li-two-gong-two{width:83px;height:37px;text-align:center; background:url(/images/two-anniu-yi.jpg) no-repeat; border:none;color:#36f; font-size:16px; font-weight:bolder; line-height:37px;margin-bottom:10px;}
+
+.epm-li-two-liang{width:83px;height:37px;text-align:center;background:url(/images/two-anniu-yi.jpg) no-repeat;border:none;color:#37726C;font-size:16px;font-weight:bolder;line-height:37px;margin-bottom:10px;margin-left:10px;}
+.epm-li-two-bottom-logo .epm-li-two-tr td a{font-size:14px; font-weight:bolder;width:83px; display:inline-block; line-height:20px; text-align:center;color:#666;padding-bottom:10px;}
+.epm-li-two-bottom-logo .epm-li-two-tr td p{font-size:14px; font-weight:bolder;width:83px; display:inline-block; line-height:20px; text-align:center;color:#666;padding-bottom:10px;}
+
+.epm-li-two-bottom-logo .epm-li-two-tr td .epm-li-tr-p{font-size:14px; font-weight:bolder;width:176px; display:inline-block; line-height:20px; text-align:center;color:#666;padding-bottom:10px;}
+/*====================================鏃堕棿缁村害 涓婚〉======================================*/
+.epm-li-yue-three-bottom{width:100%;min-height:410px;background:url(/images/bottom-one-bg.jpg) repeat-x;margin-top:8px;}
+.epm-li-three-bottom-logo{min-height:400px;width:99%;margin:0 auto;background:url(/images/biaozhi-one.png) no-repeat center center;}
+.epm-li-three-bottom-logo tr{height:118px;line-height:118px;}
+.epm-li-three-bottom-logo tr td{text-align:center;border-bottom:2px #CED8D7 solid;border-left:2px #CED8D7 solid;height:150px;}
+.epm-li-three-bottom-logo tr .epm-li-td-yi{border-left:none;position:relative;}
+.epm-li-three-bottom-logo tr .epm-li-td-yi-dinwei{position:relative;}
+.epm-li-three-bottom-logo tr .epm-li-td-er{border-bottom:none;}
+.epm-li-three-bottom-logo tr .epm-li-td-san{border-bottom:none;border-left:none;}
+.epm-li-three-bottom-logo tr td a{font-size:40px;font-weight:bolder;display:inline-block;line-height:40px;text-align:left;color:#127467;padding-bottom:3px;}
+.epm-li-three-bottom-logo tr td a:hover{font-size:40px;font-weight:bolder;display:inline-block;line-height:40px;text-align:center;color:#789;padding-bottom:3px;}
+.epm-li-three-bottom-logo tr td a:active{font-size:40px; font-weight:bolder;display:inline-block;line-height:40px; text-align:center;color:#369;padding-bottom:3px;}
+.epm-li-three-bottom-logo tr td .monthspan{width:20px;height:20px;line-height:24px;position:absolute;top:5px;right:5px;font-size:14px;text-align:right;}
+
+.epm-li-three-bottom-logo tr .epm-li-td-yi .epm-li-san-dinwei-a{width:20px;height:20px;line-height:24px;display:inline-block;background:#e5faff; position:absolute;top:5px;right:5px;font-size:20px;text-align:center;}
+.epm-li-three-bottom-logo tr .epm-li-td-yi-dinwei .epm-li-san-dinwei-a{width:20px;height:20px;line-height:24px;display:inline-block;background:#e5faff;position:absolute;top:5px;right:5px;font-size:20px;text-align:center;}
+.t_feng_cell_locked2 {
+	border: inset 1px #94B6E6;
+	BACKGROUND-COLOR: #ffffff;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 0pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22;
+	
+	background-position : center left;
+	left: expression(document.getElementById("tbl-container").scrollLeft); /*IE5+ only*/
+	position: relative;
+	z-index: 10;
+}

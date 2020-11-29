@@ -1,0 +1,24 @@
+Ext.define("EHR.funcmenu.FuncMenuTree",{
+	extend:'Ext.tree.Panel',
+	requires:['EHR.extWidget.proxy.TransactionProxy'],
+	xtype:'funcmenutree',
+	bodyStyle:'border-top:none;',
+	rootVisible:false,
+	header:false,
+	style:'border-top:none;',
+	store:{
+	    fields:['menuid','funcid','name','desc','qicon','url','target','bevalidate','validatetype'],
+	    proxy:{
+	       url:'/components/funcmenu/SearchMenuServlet',
+	       type:'ajax',
+	       reader:{
+	          type:'json'
+	       }
+	    }
+	},
+	displayField:'name',
+	initComponent:function(){
+		this.store.proxy.extraParams={ isCheckPriv:this.isCheckPriv};
+		this.callParent();
+	}
+});

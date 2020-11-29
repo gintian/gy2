@@ -1,0 +1,36 @@
+<!-- 测试子集组件 用到的页面 -->
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;">
+</head>
+<body>
+<script language="JavaScript" src="/module/utils/js/template.js"></script>
+	
+	<script type="text/javascript">
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'subsetURL': '../subsetview',
+			}
+		});	
+		
+		Ext.onReady(function(){
+			Ext.require('EHR.subsetview.SubSetView', function(){
+				var SubSetViewGloble=Ext.create("EHR.subsetview.SubSetView",{
+					setName:'A04',
+					nbase:'Usr',
+					subModuleId:'subSetView_001',
+					privType:'manage'
+				});
+				var viewport=Ext.create("Ext.container.Viewport",{
+					renderTo:Ext.getBody(),
+					items:SubSetViewGloble
+				});
+			})
+		});
+		
+ 	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+	<script language="JavaScript" src="../../module/utils/js/template.js"></script>
+	<script language="JavaScript" src="DataView.js"></script>
+	
+	<script>
+	var btnscope = {
+			message:'你点击了自定义按钮！',
+			btnClick:function(){
+				alert(this.message);
+			},
+			empidrender:function(value){
+				
+				console.log(arguments);
+				return "new id";
+			}
+		};
+		Ext.onReady(function(){
+			var btnscope = {
+				message:'你点击了自定义按钮！',
+				btnClick:function(){
+					alert(this.message);
+				},
+				empidrender:function(value){
+					
+					console.log(arguments);
+					return "new id";
+				}
+			};
+			
+			var dataView = Ext.create("EHR.dataview.DataView",{
+				subModuleId:'dataview_component_sample',
+				setname:'t_hr_view',
+				title:'示例',
+				queryfield:'a0101',
+				handlerScope:btnscope,
+				beforeBuildComp:function(gridConfig){
+					//如何添加自定义按钮或菜单
+					gridConfig.toolConfig.items.push({
+						xtype:'button',text:'自定义按钮',handler:btnscope.btnClick,scope:btnscope
+					});
+				}
+			});
+			
+			//获取tablebuilder对象
+			var tablebuilder = dataView.tableBuilder;
+			
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+锘緻charset "utf-8";
+/* CSS Document
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,span{margin:0;padding:0; border:none;} */
+.ListTable_self {
+    BACKGROUND-COLOR: #E8E8E8;
+    /* BORDER-BOTTOM: medium none; #F7FAFF  medium none  #E4E4E4*/ 
+    BORDER-COLLAPSE: collapse; 
+    BORDER-LEFT: 0; 
+    BORDER-RIGHT: #E0DEDE 1pt solid; 
+    BORDER-TOP: 0;
+}
+.RecordRow {
+	border: inset 1px #E0DEDE;
+	BORDER-BOTTOM: #E0DEDE 1pt solid; 
+	BORDER-LEFT: #E0DEDE 1pt solid; 
+	BORDER-RIGHT: #E0DEDE 1pt solid; 
+	BORDER-TOP: #E0DEDE 1pt solid;
+	font-size: 14px;
+	border-collapse:collapse; 
+	height:50px;
+	padding:0 5px 0 5px;
+}
+.trDeep_self {  
+	border: inset 1px #E0DEDE;
+	BORDER-BOTTOM: #E0DEDE 1pt solid; 
+	BORDER-LEFT: #E0DEDE 1pt solid; 
+	BORDER-RIGHT: #E0DEDE 1pt solid; 
+	BORDER-TOP: #E0DEDE 1pt solid;
+	font-size: 14px;
+	background-color: #E8E8E8; 
+	}
+.TableRow_2rows {
+	font-size: 14px;  
+	BORDER-BOTTOM: #E0DEDE 1pt solid; 
+	BORDER-LEFT: #E0DEDE 1pt solid; 
+	BORDER-RIGHT: #E0DEDE 1pt solid; 
+	BORDER-TOP: #E0DEDE 1pt solid;
+	height:50px;
+	background-color:#E8E8E8;	
+	font-weight: bold;	
+	valign:middle;
+	padding:0 5px 0 5px;
+}

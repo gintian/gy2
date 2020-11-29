@@ -1,0 +1,439 @@
+body
+{
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+table
+{
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+
+a
+{
+	color: blue;
+}
+
+table.datatable
+{
+	cursor: default;
+	border-collapse: collapse;
+	border:1px solid #8EC2E6;
+	margin-top:0px;
+	/*margin-bottom:30px;*/
+	margin-bottom:5px;
+	text-align:left;
+}
+
+table.datatable thead
+{
+	background-color: white;
+	font-weight: normal;
+	line-height:21px;
+	background-color:#f4f7f7;	
+}
+
+table.datatable td
+{
+	border: inset 1px #94B6E6;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	font-size: 12px;
+}
+
+table.datatable tbody
+{
+	background-color: white;
+}
+
+table.datatable tfoot
+{
+	background-color: white;
+
+}
+td.column_locked {
+	left: expression(document.getElementById("setpnl").scrollLeft); /*IE5+ only*/
+	position: relative;
+	z-index: 10;
+}
+
+table.datatable tr.row_odd
+{
+	/*
+	background-color: #F3F5FC; 
+	*/
+}
+
+table.datatable tr.row_even
+{
+	/*
+	background-color: #E4F2FC; 
+	*/
+}
+
+table.datatable tr.row_selected
+{
+	background-color: #FFF8D2;
+}
+
+table.datatable tr.row_active
+{
+	background-color: #FFF8D2;
+
+}
+
+table.datatable td.indicate
+{
+
+}
+
+.autoform 
+{
+}
+
+.autoform .autoform_groupbevel
+{
+	margin: 3px;
+	padding-top: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+}
+
+.autoform .autoform_groupnobevel
+{
+	margin: 3px;
+	padding-top: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+	border-width: 0;
+}
+
+.autoform .autoform_grouptitle
+{
+	left-padding: 6px;
+	left-righting: 6px;
+}
+
+.autoform .autoform_grouptable
+{
+	margin-top: 8px;
+}
+
+table.dropdowntable
+{
+	border: gray 1px solid;
+	cursor: default;
+	border-collapse: collapse
+}
+
+table.dropdowntable thead
+{
+	font-size: 12px;
+	text-align: center
+}
+
+table.dropdowntable tbody
+{
+	font-size: 12px;
+	background-color: whitesmoke;
+}
+
+table.dropdowntable tfoot
+{
+	font-size: 12px;
+	background-color: #f0f0f0;
+}
+
+table.dropdowntable tr.row_odd
+{
+
+}
+
+table.dropdowntable tr.row_even
+{
+
+}
+
+table.dropdowntable tr.row_selected
+{
+	background-color: #00a3e4;
+	color: white;
+}
+
+.editor
+{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	border: darkgray 1px solid;
+
+}
+
+.editor_active
+{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	border: #98C2E8 1px solid;
+
+	background-color: window;
+}
+
+.button
+{
+	font-family: "微软雅黑";
+	border: #549CDA 1px solid;
+	font-size: 12px;
+	cursor: hand;
+	height: 22px;
+	background-color: white;
+	background-image: url("/ajax/images/button.gif");
+}
+
+.button_down
+{
+	font-family: "微软雅黑";
+	border: dimgray 1px solid;
+	font-size: 12px;
+	cursor: hand;
+	height: 22px;
+	background-color: white;
+	background-image: url("/ajax/images/button.gif");
+}
+
+table.datapilot
+{
+	cursor: default;
+	border-width: 1px;
+}
+
+table.tree
+{
+	cursor: default;
+	border-collapse: collapse
+}
+
+table.tree tr.row_odd
+{
+ 
+}
+
+table.tree tr.row_even
+{
+
+}
+
+table.tree tr.row_selected
+{
+	background-color: #00a3e4;
+	color: white;
+}
+
+table.tree tr.row_rightclick
+{
+	background-color: #e0e0e0;
+	color: black;
+}
+
+table.tree .expandbutton
+{
+	cursor: hand;
+	margin-top: 3px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+table.tree .icon
+{
+	margin-right: 4px
+}
+
+.fieldlabel
+{
+	size:9pt;
+}
+
+.datalabel
+{
+	size:9pt;
+}
+
+.tabset
+{
+	font-size:12px;
+	cursor: default;
+}
+
+.tab
+{
+	text-align: center;
+	font-size: 12px;
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	cursor: hand;
+}
+
+.menuframe
+{
+	border-style: outset;
+	border-width: 2px;
+	filter: blendtrans(duration=0.5);
+}
+
+table.menu
+{
+	border: solid 1 silver;
+	border-collapse: collapse;
+	font-size: 12px;
+	background-color: whitesmoke;
+	cursor:hand;
+}
+
+table.menu tr
+{
+
+}
+
+table.menu tr.row_selected
+{
+	background-color: #FFF8D2;
+	BORDER-BOTTOM: #91B6CE 1pt solid; 
+	BORDER-LEFT: #91B6CE 1pt solid; 
+	BORDER-RIGHT: #91B6CE 1pt solid; 
+	BORDER-TOP: #91B6CE 1pt solid;	
+}
+
+table.menu tr.row_disabled
+{
+	color: gray;
+}
+
+table.menubar
+{
+	cursor: hand;
+	border: solid 1px #c5c5c5/*#549CDA*/;
+	border-collapse: collapse;
+	font-size: 12px;
+	background-color: white;
+}
+
+table.menubar .button
+{
+	font-family: "微软雅黑";
+	border-width: 0px;
+	font-size: 12px;
+	cursor: hand;
+	height: 21px;
+	background-color: #f9f9f9;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+table.menubar .button_active
+{
+	font-family: "微软雅黑";
+	border-width: 0px;
+	font-size: 12px;
+	cursor: hand;
+	height: 21px;
+	background-color: #00a3e4;
+	color: whitesmoke;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-image: url();
+}
+
+table.menubar .button_hot
+{
+	font-family: "微软雅黑";
+	border-width: 0px;
+	font-size: 12px;
+	cursor: hand;
+	height: 21px;
+	background-color: white;
+	color: black;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-image: url();
+}
+
+.dropdown_frame
+{
+	border-style: outset;
+	border-width: 0px;
+	background-color: white;
+	padding: 0px;
+	filter: blendtrans(duration=0.3);
+}
+
+.dropdown_frame iframe
+{
+	filter: blendtrans(duration=0.3);
+}
+
+.dropdown_button
+{
+	border: whitesmoke 1px solid;
+	font-family: marlett;
+	font-size: 10px;
+	cursor: hand;
+	
+}
+
+.calendar
+{
+	border-collapse: collapse;
+	border: gray 1px solid;
+	font-size: 9pt;
+	cursor: default
+}
+
+.calendar .title
+{
+	background-color: #e4e4e4;
+}
+
+.calendar .footer
+{
+	background-color: #e4e4e4;
+}
+
+.calendar .cell_day
+{
+	height: 18px;
+	color: black;
+	background-color: #ffffcc;
+}
+
+
+.calendar .cell_selected
+{
+	height: 18px;
+	color: white;
+	background-color: #00a3e4;
+}
+
+.calendar .cell_trailing
+{
+	height: 18px;
+	color: gray;
+	background-color: white;
+}
+
+
+.fixedHeaderTr 
+{ 
+	position:relative; 
+	top:expression(this.offsetParent.scrollTop); 
+}
+
+.fixedDiv 
+{ 
+	overflow:auto; 
+	height:expression((document.body.clientHeight-this.offsetTop-20>this.children[0].offsetHeight)?(this.children[0].offsetHeight+20) : (document.body.clientHeight-this.offsetTop-20)); 
+	width:expression(document.body.clientWidth-20); 
+}
+

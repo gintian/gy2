@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ehr-version custom="true" buildver="[V7.X  内测版 Build at 2018]" current="true" version="71">
+    <versions>
+    <!--开发中、专版或未纳入通用版中功能 
+          valid=false,在所有版本中不显示
+          valid=true, 在所有版本中显示
+        -->
+        <version name="developing" valid="true">
+           <!-- 员工管理 -->
+           <func_id id="272" desc="考勤管理_*"  valid="true" ctrlpriv="true"/> 
+           <func_id id="26064" valid="false" desc="纯BS列表录入（人员）" ctrlpriv="true"/>   
+           <func_id id="23065" valid="false" desc="纯BS列表录入（单位）" ctrlpriv="true"/>           
+   
+           <func_id id="25065" valid="false" desc="纯BS列表录入（岗位）" ctrlpriv="true"/>       
+           <func_id id="3003412" valid="false" desc="档案分类授权" ctrlpriv="false"/>
+           <func_id id="081012" valid="false" desc="档案分类授权" ctrlpriv="false"/>  
+           <func_id id="0101010" valid="false" desc="我的电子档案" ctrlpriv="false"/>               
+           <func_id id="0301010" valid="false" desc="员工电子档案" ctrlpriv="false"/> 
+
+           <func_id id="240" valid="false" desc="招聘管理一" ctrlpriv="true"/>   
+           <func_id id="26060A"  valid="false" desc="随机账号口令" ctrlpriv="false" />          
+         
+           <!-- 薪资管理 -->
+           <func_id id="3240214" valid="false" desc="单项奖金管理" ctrlpriv="true"/> 
+           <func_id id="324021501" valid="false" desc="月奖金管理" ctrlpriv="true"/> 
+           <func_id id="324021502" valid="false" desc="月奖金参数设置" ctrlpriv="true"/>         
+           <func_id id="3001520" valid="false" desc="取数和显示方式(凤凰集团)" ctrlpriv="true" />
+           
+            <!-- 薪资平台(北京移动) -->         
+           <func_id  id="32416"  valid="false"  desc="薪资汇总审批(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="32516"  valid="false"  desc="保险汇总审批(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3240320"  valid="false"  desc="薪资审批审批状态(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3240321"  valid="false"  desc="薪资审批审批过程(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3250320"  valid="false"  desc="保险审批审批状态(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3250321"  valid="false"  desc="保险审批审批过程(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3240220"  valid="false"  desc="薪资发放审批状态(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3240221"  valid="false"  desc="薪资发放审批过程(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3250220"  valid="false"  desc="保险发放审批状态(北京移动)"  ctrlpriv="true"/>
+           <func_id  id="3250221"  valid="false"  desc="保险发放审批过程(北京移动)"  ctrlpriv="true"/>
+            
+           <!-- 党团工会 -->
+           <func_id id="350" valid="false" desc="党团管理" ctrlpriv="true"/>
+           <func_id id="30036" valid="false" desc="党组织管理范围" ctrlpriv="true"/>
+           <func_id id="30037" valid="false" desc="团组织管理范围" ctrlpriv="true"/>               
+           <func_id id="30015F" valid="false" desc="党组织列表指标设置" ctrlpriv="true"/>        
+           <func_id id="30015G" valid="false" desc="团组织列表指标设置" ctrlpriv="true"/>        
+           <func_id id="300632" valid="false" desc="短信网关" ctrlpriv="true"/>
+           <func_id id="3015" valid="false" desc="业务平台手机短信" ctrlpriv="true"/>             
+ 
+           <func_id id="3014" valid="false" desc="业务平台消息" ctrlpriv="true"/> 
+           <!-- 报表管理 -->
+           <func_id id="2906" valid="false"   desc="精算报表(中建总)" ctrlpriv="false"  />
+           <func_id id="290207" valid="false"  desc="编辑报表统计口径(首钢)" ctrlpriv="false" />
+           <!--组织机构 -->
+            
+           <!-- 招聘管理 -->
+           <func_id id="31015" valid="false" desc="招聘订单" ctrlpriv="true"/>
+           <func_id id="0A08" valid="false" desc="招聘订单" ctrlpriv="true"/>   
+           <func_id id="310234" valid="false" desc="应聘简历导出" ctrlpriv="false"/>
+           <func_id id="310235" valid="false" desc="应聘简历导入" ctrlpriv="false"/> 
+           
+           <!-- 系统管理 -->
+           <func_id id="080806" valid="false" desc="数据导出(建投)" ctrlpriv="true"/>
+           <func_id id="30046" valid="false" desc="数据变动" ctrlpriv="true"/>
+
+            <!-- 自助平台 -->
+           <func_id id="1114" valid="false" desc="公告浏览记录查看" ctrlpriv="true"/>
+           <func_id id="1115" valid="false" desc="公告通知回复" ctrlpriv="true"/>
+           <func_id id="1112" valid="false" desc="看板管理" ctrlpriv="true"/>
+
+           <func_id id="0109" valid="false" desc="我的团队" ctrlpriv="true"/>
+
+
+           <func_id id="000104" valid="false" desc="自助平台消息" ctrlpriv="true"/>   
+           <func_id id="000105" valid="false" desc="自助平台手机短信" ctrlpriv="true"/> 
+          <!-- 4.x版本 -->           
+           <func_id id="071101" valid="false" desc="知识维护" ctrlpriv="false"/>
+           <func_id id="1111" valid="false" desc="知识中心" ctrlpriv="false"/>  
+           <func_id id="081013" valid="false" desc="知识分类授权" ctrlpriv="false"/>    
+
+           <func_id id="0D" valid="false" desc="干部考察(山东高压)" ctrlpriv="false"/>   
+           <func_id id="0E" valid="false" desc="在线学习" ctrlpriv="false"/>    
+           <func_id id="0F" valid="false" desc="竞聘上岗(引滦入津)" ctrlpriv="false"/>
+           <func_id id="0G" valid="false" desc="绩效考核(引滦入津)" ctrlpriv="false"/>             
+           <func_id id="060302" valid="false" desc="考评打分查询[建银投资]" ctrlpriv="true"/>
+           <!-- 职业信用平台(北京政法口) -->                   
+           <func_id id="5" valid="false" desc="职业信用平台(一中院)" ctrlpriv="false"/> 
+           <func_id id="0" valid="true" desc="自助服务平台" ctrlpriv="true"/>          
+           <func_id id="2" valid="true" desc="业务服务平台" ctrlpriv="false"/>    
+           <!--清园监狱  -->
+           <func_id id="57" valid="false" desc="工作信息" ctrlpriv="false"/>        
+           <func_id id="58" valid="false" desc="绩效考评" ctrlpriv="false"/>    
+           <func_id id="5502" valid="false" desc="周期设置" ctrlpriv="false"/>  
+           <func_id id="5503" valid="false" desc="流程文件" ctrlpriv="false"/> 
+           <!-- 
+           <func_id id="010201" valid="true" desc="我的薪酬" ctrlpriv="false"/>     
+           <func_id id="030201" valid="true" desc="员工薪酬" ctrlpriv="false"/>     
+            -->                                        
+           <!--一中院  -->
+           <func_id id="53" valid="false" desc="绩效考评" ctrlpriv="false"/>    
+           <func_id id="5202" valid="false" desc="全员工作任务书" ctrlpriv="false"/>   
+           <func_id id="5203" valid="false" desc="个人工作任务书" ctrlpriv="false"/>       
+           <func_id id="070501" valid="true" desc="公告栏" ctrlpriv="true"/> 
+           <!--农业部-->              
+           <func_id id="321" valid="true" desc="出国政审" ctrlpriv="true"/>    
+           <func_id id="040102" valid="false" desc="历史数据" ctrlpriv="true"/>
+           <!-- 预警刷新 -->
+           <func_id id="301201" valid="true" desc="预警刷新" ctrlpriv="true"/>
+           <!-- 绩效管理 -->
+          <func_id id="060806" valid="false" desc="数据采集" ctrlpriv="true" />
+          <func_id id="3260416" valid="true" desc="查看得分明细" ctrlpriv="true" />
+ 
+
+          <func_id id="3105301" valid="true"  desc="高级测评方式" ctrlpriv="false" /> 
+
+           <!-- 专家抽选（北三院） zhanghao -->
+           <func_id  id="33101027"  valid="true"  desc="纪委专家抽选"  ctrlpriv="true"/>
+
+
+           <!-- 首钢履责 年计划为个性化功能 -->
+           <func_id id="0KR0100" valid="false" desc="年计划" ctrlpriv="true"/>
+           <!--OKR-我的协作任务 -->
+           <func_id id="0KR020303" valid="false" desc="我的协作任务" ctrlpriv="true"/>
+            <!-- 职称评审 上会材料 导出外审材料 -->
+           <func_id id="380050620" valid="true" desc="导出外审材料" ctrlpriv="true"/>
+           
+            <!-- 项目工时 放开 guodd 2020-04-24 -->
+           <func_id id="390" valid="true"  desc="项目工时" ctrlpriv="false" />
+        </version>
+        <!-- 
+             发行版本控制
+            42:HJ-eHR4.2//模块授权,不发行
+            43:HJ-eHR4.3//模块授权
+            50:HJ-eHR5.0//分组并发授权
+            ctrl_ver 控制版本标识,用逗号分隔开,比如ctrl_ver="42,43"
+            程序根据此标识进行控制,只有版本号在ctrl_ver定义了,此功能模块显示，否则不显示.
+        -->
+        <version name="release" valid="true">
+           <!-- 人员管理 -->
+           <func_id id="2601004" desc="复杂查询" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="26012" desc="人员历史时点" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="03040110"   desc="子集附件管理" ctrlpriv="true" ctrl_ver="60,70"/>            
+           <func_id id="26025" desc="多维统计" ctrlpriv="true" ctrl_ver="70"/>            
+           <!-- 常用统计统计方式设置 -->
+           <func_id id="231707"  desc="单位常用统计统计方式设置" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="2602308" desc="人员管理常用统计统计方式设置" ctrlpriv="true" ctrl_ver="50,60,70"/>       
+           <func_id id="2311037" desc="岗位常用统计统计方式设置" ctrlpriv="true" ctrl_ver="50,60,70"/>     
+       
+           <!--人事异动 -->
+           <func_id id="3206"  desc="电子签章" ctrlpriv="true" ctrl_ver="50,60,70"/>
+                           
+           <!-- 组织机构 -->  
+           <func_id id="23064" desc="编制管理" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="25050"  desc="职务体系设置" ctrlpriv="true" ctrl_ver="50,60,70"/>           
+           <func_id id="23056"  desc="职务级别设置" ctrlpriv="true" ctrl_ver="50,60,70"/>        
+           <func_id id="23057"  desc="岗位体系设置" ctrlpriv="true" ctrl_ver="50,60,70"/>        
+           <func_id id="23058"  desc="岗位级别设置" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="25063"  desc="班子参数设置" ctrlpriv="true" ctrl_ver="50,60,70"/>    
+           <func_id id="2315"   desc="领导班子" ctrlpriv="true" ctrl_ver="50,60,70"/>  
+           <func_id id="23067"  desc="机构调整" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="231102" desc="岗位调整" ctrlpriv="true" ctrl_ver="60,70"/>    
+
+           <func_id id="25012"  desc="基准岗位" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="30015H"  desc="基准岗位列表指标设置" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="23110110"  desc="引用基准岗位" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="9907307"  desc="基准岗位业务" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="9907221"  desc="基准岗位花名册" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="9907108"  desc="基准岗位说明书" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="30015A"  desc="基准岗位说明书设置" ctrlpriv="true" ctrl_ver="60,70"/>           
+               
+           
+           
+           <!-- HJ-eHR4.2版 机构管理和职位管理,功能号进行了调整 -->
+           <func_id id="230"  desc="机构管理" ctrlpriv="true" ctrl_ver="40,42"/>
+           <func_id id="250"  desc="职位管理" ctrlpriv="true" ctrl_ver="40,42"/>
+           <func_id id="231"  desc="组织机构" ctrlpriv="true" ctrl_ver="43,50,60,70"/>
+           <func_id id="23060"  desc="单位信息维护" ctrlpriv="true" ctrl_ver="40,42,43"/>
+           <func_id id="25060"  desc="岗位信息维护" ctrlpriv="true" ctrl_ver="40,42,43"/>
+           <func_id id="230600"  desc="单位信息维护" ctrlpriv="true" ctrl_ver="50,60,70"/>          
+           <func_id id="231101"  desc="岗位设置" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="230500"  desc="历史时点初始化" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="230501"  desc="历史时点查询" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <!-- 招聘管理  -->
+          <func_id id="31025"  desc="简历导入" ctrlpriv="true" ctrl_ver="60,70" />  
+          
+          <!-- 问卷调查  -->
+           <func_id id="40"  desc="问卷调查" ctrlpriv="true" ctrl_ver="60,70"/>
+           <!-- 职称评审-->
+  		   <func_id id="380"  desc="职称评审" ctrlpriv="true" ctrl_ver="70"/>
+          
+           <!-- 新版招聘管理公开招聘-->
+           <func_id id="311"  desc="招聘管理" ctrlpriv="true" ctrl_ver="60,70"/> 
+           <!-- 系统管理-->
+           <func_id id="30066"  desc="微信接口参数" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="30045" desc="登录认证规则" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="1302C" desc="盒式报表" ctrlpriv="true" ctrl_ver="60,70"/>           
+                        		            
+           <!-- 薪资管理 -->                     
+           <func_id id="324"     desc="薪资管理" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="324074"  desc="薪资历史数据" ctrlpriv="true" ctrl_ver="50,60,70"/>         
+
+                 
+           <func_id id="3250402" desc="保险历史数据" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="3240315" desc="薪资汇总" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="3250313" desc="缴费汇总" ctrlpriv="true" ctrl_ver="50,60,70"/>
+                           
+           <func_id id="32417" desc="财务凭证" ctrlpriv="true" ctrl_ver="60,70"/>
+           <func_id id="32414"  desc="财务凭证定义" ctrlpriv="true" ctrl_ver="60,70" />    
+           
+           <func_id id="324080802" desc="提成工资" ctrlpriv="true" ctrl_ver="60,70"/>               
+                               
+           <func_id id="324072"  desc="工资分析图" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="3003408" desc="工资变动模板(资源授权)" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="3003420" desc="工资分析图(资源授权)" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           
+           <func_id id="32421"   desc="计件薪资" ctrlpriv="true" ctrl_ver="60"/>  
+           <func_id id="3242112" desc="引入计件薪资" ctrlpriv="true" ctrl_ver="60"/>  
+           <func_id id="32420"   desc="薪资预算" ctrlpriv="true" ctrl_ver="60,70"/> 
+           <!-- 保险管理 -->    
+           <func_id id="325" desc="保险管理" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="3003415" desc="福利变动模板(资源授权)" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="327" desc="薪资福利" ctrlpriv="true" ctrl_ver="40,42,43"/>  
+           <!-- 考勤休假 -->
+           <func_id id="27082" desc="发卡" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="0B11" desc="我的休假计划（自助）" ctrlpriv="true" ctrl_ver="50,60,70"/>  
+           <func_id id="0B26" desc="计划申请（自助）" ctrlpriv="true" ctrl_ver="50,60,70"/>           
+           <func_id id="0C36" desc="我的休假计划（部门考勤）" ctrlpriv="true" ctrl_ver="50,60,70"/>    
+           <func_id id="27044" desc="休假计划制订（考勤休假）" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="0C39"  desc="统计分析（部门考勤）" ctrlpriv="true" ctrl_ver="50,60,70"/>        
+           <func_id id="27052" desc="统计分析（考勤休假）" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="27030c" desc="考勤数据同步配置" ctrlpriv="true" ctrl_ver="50,60,70"/>  
+           <func_id id="27050" desc="员工历史数据" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="27051" desc="部门历史数据" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="27053" desc="申请单历史数据" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="27054" desc="刷卡历史数据" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="2703503" desc="数据归档" ctrlpriv="true" ctrl_ver="50,60,70"/>        
+           <func_id id="2703504" desc="清理冗余数据" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+
+           <func_id id="0B4" desc="网上签到（考勤自助）" ctrlpriv="true" ctrl_ver="50,60,70"/>      
+           <func_id id="0C346" desc="网上签到(部门考勤)" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="27030a" desc="网上签到（参数设置）" ctrlpriv="true" ctrl_ver="50,60,70"/>    
+           
+           <func_id id="0C348"  desc="部门考勤业务办理" ctrlpriv="true" ctrl_ver="60,70"/>  
+           <func_id id="27015"  desc="考勤业务办理" ctrlpriv="true" ctrl_ver="60,70"/> 
+           <!-- 我的考勤日历 -->
+           <func_id  id="0B05"  desc="我的考勤日历" ctrlpriv="true" ctrl_ver="70"/>
+             
+            <!-- 绩效管理 -->
+           <func_id id="326" desc="绩效管理" ctrlpriv="true" ctrl_ver="50,60,70"/>  
+           <func_id id="326010101"  desc="组织机构考核指标" ctrlpriv="true"  ctrl_ver="50,60,70"/> 
+           <func_id id="060605"    desc="评分调整" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="060803" desc="KPI原始数据录入" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="0KR" desc="关键目标" ctrlpriv="true" ctrl_ver="60,70"/>   
+           <func_id id="0KR020503" desc="工作日志" ctrlpriv="true" ctrl_ver="70"/>
+           <func_id id="0KR020203" desc="员工日志" ctrlpriv="true" ctrl_ver="70"/>      
+                  
+           <func_id id="06030301"  desc="团队总分" ctrlpriv="true" ctrl_ver="50,60,70" />
+           <func_id id="06030302"  desc="团队详细" ctrlpriv="true" ctrl_ver="50,60,70" />
+           <func_id id="06030101"  desc="本人总分" ctrlpriv="true" ctrl_ver="50,60,70" />
+           <func_id id="06030102"  desc="本人详细" ctrlpriv="true" ctrl_ver="50,60,70" />
+           <func_id id="06040101"  desc="员工总分" ctrlpriv="true" ctrl_ver="50,60,70" />
+           <func_id id="06040102"  desc="员工详细" ctrlpriv="true" ctrl_ver="50,60,70" />       
+                      
+                  
+                      
+           <func_id id="331" desc="资格评审" ctrlpriv="true" ctrl_ver="50,60"/>
+           <func_id id="330" desc="劳动合同" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="323" desc="培训管理" ctrlpriv="true" ctrl_ver="50,60,70"/>  
+           
+           <!-- 统计分析  信息集 设置-->
+           <func_id id="231706"   desc="信息集设置" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="2602306"  desc="信息集设置" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="04010106" desc="信息集设置" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="2311036"  desc="信息集设置" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="3221002"  desc="统计数据归档" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="2602307"  desc="统计数据归档" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="04010107" desc="统计数据归档" ctrlpriv="true" ctrl_ver="50,60,70"/>        
+      
+            <!-- 领导决策 -->
+           <func_id id="32203" desc="综合信息" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="30017" desc="单指标分析设置" ctrlpriv="true" ctrl_ver="50,60"/>
+           <func_id id="30019" desc="多指标分析设置" ctrlpriv="true" ctrl_ver="50,60"/>
+           
+              
+           <!-- 培训管理 -->    
+           <func_id id="3239"  desc="积分管理" ctrlpriv="true" ctrl_ver="60,70"/> 
+           <func_id id="0913"  desc="上传课件" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="0911"  desc="我的积分" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="0912"  desc="培训场所申请" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="3238" desc="培训考试" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+                 
+           <!-- 员工自助 -->     
+           <func_id id="030701" desc="综合信息(员工信息)" ctrlpriv="true" ctrl_ver="50,60,70"/>          
+           <func_id id="0312" desc="员工名册(员工信息)" ctrlpriv="true" ctrl_ver="50,60,70"/>                
+           <func_id id="0314"  desc="数据上报" ctrlpriv="true" ctrl_ver="721,50,60,70"/>   
+           <func_id id="080808"  desc="数据视图" ctrlpriv="true" ctrl_ver="50,60,70"/> 
+           <func_id id="080809"  desc="通讯录设置" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="1113"    desc="通讯录" ctrlpriv="true" ctrl_ver="50,60,70"/>  
+           <func_id id="0105"  desc="我的日志" ctrlpriv="true" ctrl_ver="50,60"/>   
+           <func_id id="0306"  desc="员工日志" ctrlpriv="true" ctrl_ver="50,60"/>
+           <func_id id="0108"  desc="我的重要信息报告" ctrlpriv="true" ctrl_ver="50,60"/>   
+           <func_id id="0313"  desc="员工重要信息报表" ctrlpriv="true" ctrl_ver="50,60"/>
+                                              
+           <!-- 
+           北京烟草仅要制度政策,不要文档管理
+            -->
+           <func_id id="990"   desc="后台业务" ctrlpriv="true" ctrl_ver="40,42,43,50,60,70"/>          
+           <!-- 系统管理 -->
+           
+           <!-- 
+              70有新版问卷了，旧问卷不显示
+           -->
+           <func_id id="070601"  desc="问卷调查表定义" ctrlpriv="true" ctrl_ver="50,60"/>
+           <func_id id="30023"   desc="问卷调查表定义" ctrlpriv="true" ctrl_ver="50,60"/>
+               
+           <func_id id="3001D"   desc="数据视图" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="3001F"   desc="平台数据接口设置" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="3001E"   desc="通讯录设置" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="9A0"    desc="工具箱" ctrlpriv="true" ctrl_ver="50,60,70"/>   
+           <func_id id="3007"  desc="库结构" ctrlpriv="true" ctrl_ver="50,60,70"/>                   
+           <func_id id="26060A" desc="随机账号口令" ctrlpriv="false"  ctrl_ver="50,60,70"/>   
+           <func_id id="3001G" desc="报表关联" ctrlpriv="true" ctrl_ver="50,60,70"/>
+           <func_id id="3003427" desc="关键事件分类(资源分配)" ctrlpriv="true" ctrl_ver="50,60,70"/>  
+           <func_id id="30015K"  desc="帐号规则" ctrlpriv="true" ctrl_ver="60,70"/>            
+        </version>
+    </versions>
+</ehr-version>

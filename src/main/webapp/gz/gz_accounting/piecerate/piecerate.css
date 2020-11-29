@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+.NoNewline{
+  word-break: keep-all;/*蹇呴』*/
+ }
+.a{ 
+  text-align:center;/*灞呬腑*/
+  white-space:nowrap;/*寮哄埗涓嶆崲琛�*/
+ }
+.btn {
+ BORDER-RIGHT: #C0C0C0 1px solid;
+ BORDER-TOP: #C0C0C0 1px solid; 
+ PADDING-LEFT: 1px;
+ PADDING-RIGHT: 1px;
+ 	background-repeat:repeat-x;
+	background-position:right;
+ font-size:12px;
+ line-height:18px;
+ BORDER-LEFT: #C0C0C0 1px solid; 
+ COLOR: #808080; 
+ BORDER-BOTTOM: #C0C0C0 1px solid
+}
+.btn1 {
+ BORDER-RIGHT: #7b9ebd 1px solid;
+ PADDING-RIGHT: 0px;
+ BORDER-TOP: #7b9ebd 1px solid; 
+ PADDING-LEFT: 0px; FONT-SIZE: 12px; 
+ BORDER-LEFT: #7b9ebd 1px solid; 
+ CURSOR: hand; 
+ COLOR: black; 
+ PADDING-TOP: 1px; 
+ PADDING-BOTTOM: 0px;
+ BORDER-BOTTOM: #7b9ebd 1px solid;
+ border:#0042A0 1px solid;
+ background-image:url(/images/button.jpg);	
+}
+.btn2 {
+ BORDER-RIGHT: #7b9ebd 1px solid;
+ PADDING-RIGHT: 3px; 
+ BORDER-TOP: #7b9ebd 1px solid; 
+ PADDING-LEFT: 3px; FONT-SIZE: 12px; 
+ BORDER-LEFT: #7b9ebd 1px solid; 
+ CURSOR: hand; 
+ COLOR: black; 
+ PADDING-TOP: 1px; 
+ PADDING-BOTTOM: 0px;
+ BORDER-BOTTOM: #7b9ebd 1px solid;
+ border:#0042A0 1px solid;
+ background-image:url(/images/button.jpg);	
+}
+.btn3 {
+BORDER-RIGHT: #7b9ebd 1px solid;
+ PADDING-RIGHT: 2px;
+ BORDER-TOP: #7b9ebd 1px solid; 
+ PADDING-LEFT: 2px; FONT-SIZE: 12px; 
+ BORDER-LEFT: #7b9ebd 1px solid; 
+ CURSOR: hand; 
+ COLOR: black; 
+ PADDING-TOP: 1px; 
+ PADDING-BOTTOM: 0px;
+ BORDER-BOTTOM: #7b9ebd 1px solid;
+ border:#0042A0 1px solid;
+ background-image:url(/images/button.jpg);	
+}
+#scroll_box {
+    border: 1px solid #eee;
+    height: 200px;    
+    width: 100%;            
+    overflow: auto;            
+    margin: 0;
+}
+#divbottom {
+    border: 1px solid #eee;
+    height: 35px;    
+    width: 100%;            
+    overflow: auto;            
+    margin: 0;
+}
+#scroll_box2 {
+    border: 1px solid transparent;
+    height: 220px;    
+    width: 100%;            
+    overflow: auto;            
+    margin: 0;
+}
+#order_div {
+    border: 1px solid transparent;
+    height: 250px;    
+    width: 100%;            
+    overflow: auto;            
+    margin: 0;
+}
+.ListTable5 {
+	border:1px solid #8EC2E6;
+	border-collapse:collapse; 
+	BORDER-BOTTOM: medium none; 
+    BORDER-LEFT: medium none; 
+    BORDER-TOP: medium none; 
+    margin-top:1px;
+}
+.columndiv {
+    border: 1px solid #eee;
+    height: 360px;    
+    width: 100%;            
+    overflow: auto;            
+    margin: 0;
+}
+.rightdiv {
+    border: 0px solid #eee;
+    height: 444px;    
+    width: 100%;            
+    overflow: auto;            
+    margin: 0;
+}
+.tbokdiv {
+    border: 0px solid #eee;
+    height: 30px;    
+    width: 100%;            
+    overflow: auto;            
+    margin: 0;
+}

@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>middle</title>
+<STYLE>
+.navPoint 
+{
+  FONT-SIZE: 9pt; CURSOR: hand; COLOR: #0000FF; FONT-FAMILY: Webdings
+}
+</STYLE>
+<script language="javascript">
+function turn()
+{
+	if(parent.myBody.cols != '0,10,*')
+	{
+		parent.myBody.cols = '0,10,*';
+		change.innerText=8
+	}
+	else
+	{
+		change.innerText=7
+		parent.myBody.cols = '170,10,*';
+	}
+}
+</script>
+   <link href="/css/css1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0">
+<table border="0" cellspacing="0" cellpadding="0" height="100%" width="10">
+  <tr> 
+     <TD style="HEIGHT: 50" onclick=turn() valign="middle">
+    	<SPAN class="navPoint" id=change title=关闭/打开左栏>7</SPAN>
+    </td>
+    </td>
+  </tr>
+</table>
+</body>
+
+</html>

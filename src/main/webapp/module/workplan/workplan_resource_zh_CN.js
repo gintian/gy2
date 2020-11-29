@@ -1,0 +1,23 @@
+var wp = {};
+wp.param={};
+wp.param.otherconf='其它参数';
+wp.param.periodrange='填报期间范围';
+wp.param.fillperson='填报人员';
+wp.yearplan={};
+wp.yearplan.trace={};
+wp.yearplan.trace.title='任务跟踪';
+wp.yearplan.trace.savebtn ='保存';
+wp.yearplan.trace.toApprovalbtn ='报批';
+wp.yearplan.trace.approvalbtn ='批准';
+wp.yearplan.trace.rejectbtn ='退回';
+wp.yearplan.trace.revocationbtn ='撤回';
+wp.yearplan.trace.deploye='发布';
+
+wp.hr={};
+wp.hr.searchScheme="查询方案";
+wp.hr.yingbao="应报";
+wp.hr.weibao="未报";
+wp.hr.yibao="已报";
+wp.hr.weipi="未批";
+wp.hr.yipi="已批";
+wp.hr.yibiangeng="已变更";

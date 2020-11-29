@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>微信参数设置</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;">
+  </head>
+  <script language="JavaScript" src="/module/utils/js/template.js"></script>
+  <style>
+  	.field-input .x-form-text-field-body .x-form-trigger-wrap .x-form-text-wrap {
+  		border-top:none;
+  		border-left:none;
+  		border-right:none;
+  	}
+  	/*下拉按钮左侧感觉被截断了，添加左border*/
+  	.x-form-trigger{
+  		border-left:1px solid rgb(166,169,188) !important;
+  		width:18px;
+  	}
+  	/*.x-panel-body-default{
+  		border-bottom:none;
+  		border-left:none;
+  		border-right:none;
+  	}*/
+  </style>
+  <script type="text/javascript">
+  	Ext.onReady(function(){
+  		
+  		var model = Ext.create('Ext.data.Model',{
+  			fields:['corpid','corpsecret','url','token','encodingaeskey','agentid','ddtalk_corpid','ddtalk_corpsecret','ddtalk_agentid','ddtalk_userid','clientid','clientsecret']
+  		});
+  		/**
+		 * xus 17/04/14
+		 * 钉钉参数userid下拉选项查询
+		 */
+  		var states = Ext.create('Ext.data.Store', {
+  		    data : []
+  		});
+  		vo = new HashMap()
+  		vo.put("transType", "useridlist");
+		Rpc({functionId:'1010020225',async:false,success:function(res){
+			var resultObj = Ext.decode(res.responseText);
+			useridListObjs=resultObj.useridList;
+			states.setData(useridListObjs);
+		}}, vo);
+  		//**************查询结束
+  		Ext.create('Ext.tab.Panel',{
+  			bodyStyle:"border-top:none;",
+  			//height:250,
+  			defaults:{
+  				xtype:'form',
+  				padding:'5 0 0 0',
+  				modal:true,
+  				layout:{
+  					type:'vbox',
+  					align:'center'
+  				},
+  				defaults:{
+  					xtype:'textfield',
+  					width:'70%',
+  					labelAlign:'left',
+  					cls:'field-input',
+  					margin:5
+  				},
+  				buttons:[{
+  					text:'保存',
+  					handler:function(){
+  						var form = this.up('form'),
+  							value = form.getValues(),
+  							id = form.getItemId(),
+  							vo = new HashMap(),
+  							type;
+  						if(id=='weixin'){
+  							type = 'saveWeixin';
+  							var set = Ext.getCmp('func_set');
+  	  					    var funcs = set.query('textfield[menuid]');
+  	  					    var func_secret = [];
+  	  					    for(var i=0;i<funcs.length;i++){
+  	  					    		func_secret.push({menuid:funcs[i].menuid,secret:funcs[i].value,desc:funcs[i].fieldLabel});
+  	  					    }
+  	  					    value.func_secret = func_secret;
+  						} else if(id=='ddtalk'){
+  							type = 'saveDdtalk';
+  							var msg_set = Ext.getCmp('dd_message_set');
+  							var msg_containers = msg_set.query('textfield[menuid]');
+  							value.ddtalk_agentid = msg_containers[0].value;
+  							value.msg_AppKey = msg_containers[1].value;
+  							value.msg_AppSecret = msg_containers[2].value;
+  							
+  							var set = Ext.getCmp('dd_func_set');
+  							var containers = set.query('container[menuid]');
+  							var appid='';
+  							var appSecret='';
+   	  					    var func_secret = [];
+  							for(var i=0;i<containers.length;i++){
+	  							var textfi = containers[i].query('textfield[menuid]');
+	  							appKey = textfi[0].value; 
+	  							appSecret = textfi[1].value;
+	  							func_secret.push({menuid:containers[i].menuid,appKey:appKey,appSecret:appSecret,desc:containers[i].menudesc});
+  							}
+  							value.func_secret = func_secret;
+  						} else {
+  							type = 'saveMail';
+  						}
+  						
+  						vo.put("transType", type);
+  						vo.put("param", value);
+  						Rpc({functionId:'1010020225',success:function(res){
+  							var resultObj = Ext.decode(res.responseText),
+  								flag = resultObj.flag;
+  							if(flag){
+  								Ext.Msg.alert('提示信息', '保存成功！');
+  							} else {
+  								Ext.Msg.alert('提示信息', resultObj.message);
+  							}
+  						}}, vo);
+  					}
+  				}],
+  				buttonAlign:'center'
+  			},
+  			items:[{
+  				title:'钉钉接口参数',
+  				itemId:'ddtalk',
+  				items:[{
+  					fieldLabel:'CorpID',
+  					name:'ddtalk_corpid'
+  				},{
+  					fieldLabel:'CorpSecret',
+  					name:'ddtalk_corpsecret'
+  				},{
+  					//xus 17/04/14 配置ddid在系统中对应的主集id字段
+		            xtype: 'combo',
+		            fieldLabel: '人员ID',
+		            name: 'ddtalk_userid',
+		            store: states,
+		            editable:false,
+		            queryMode: 'local',
+		            displayField: 'itemdesc',
+		            valueField: 'itemid'
+  			    },{
+  					xtype:'fieldset',
+  					id:'dd_message_set',
+  					title: '钉钉发送消息&同步配置',
+  					layout:{
+  						xtype:'vbox',
+  						align:'stretch'
+  					},
+  					defaults:{margin:'5 0 5 0'},
+  					items:[{
+  						xtype:'container',layout:'vbox',margin:'10 0 10 0',
+  						//xtype:'form',layout:'vbox',margin:'10 0 10 0',border:0,
+  						width:'100%',
+  						items:[
+  							{xtype:'textfield',width:'90%',margin:'0 0 0 40',menuid:"ddtalk_agentid",flex:.8,fieldLabel:"AgentID",isFormField:false},
+  							{xtype:'textfield',width:'90%',margin:'0 0 0 40',menuid:"msg_AppKey",flex:.8,fieldLabel:"AppKey",isFormField:false},
+  							{xtype:'textfield',width:'90%',margin:'0 0 0 40',menuid:"msg_AppSecret",flex:.8,fieldLabel:"AppSecret",isFormField:false},
+  							{
+  			  			    	xtype:'container',
+  			  			    	items:{
+  			  			    		margin:'0 0 0 40',
+  			  			    		xtype:'button',
+  			  			    		text:'发送测试消息',
+  			  			    		listeners:{
+  			  			    			click:function(me){
+  			  			    				var form = me.up('form'),
+  			  	  							value = form.getValues();
+  			  			    				var msg_set = Ext.getCmp('dd_message_set');
+  			  			    				var agentid = msg_set.query('textfield[menuid=ddtalk_agentid]')[0].getValue();
+  			  	  							var msg_containers = msg_set.query('textfield[menuid]');
+  			  	  							var msg_AppKey = msg_containers[1].value;
+  			  	  							var msg_AppSecret = msg_containers[2].value;
+  			  			    				var window = Ext.create('Ext.window.Window', {
+  			  			    				    title: '测试发送消息',
+  			  			    				    height: 140,
+  			  			    				    width: 400,
+  			  			    				    layout: 'fit',
+  			  			    				  	modal:true,
+  			  			    				    items: {  // Let's put an empty grid in just to illustrate fit layout
+  			  			    				        xtype: 'form',
+  			  			    				        border: false,
+  				  			    				    defaultType: 'textfield',
+  				  			    				    items: [{
+  				  			    				        fieldLabel: '接收人userid',
+  				  			    				        name: 'userid',
+  				  			    				        allowBlank: false
+  				  			    				    },{
+  				  			    				    	xtype:'container',
+  				  			    				    	style:'text-align:center',
+  				  			    				    	margin:30,
+  				  			    				    	items:{
+  				  			    				    		xtype:'button',
+  				  			    				    		text:'发送',
+  				  			    				    		listeners:{
+  				  			    				    			click:function(){
+  				  			    				    				var form = this.up('form');
+  				  			    				    				var userid = form.getValues().userid;
+  				  			    	  			    				var vo = new HashMap();
+  				  			    	  			    				vo.put('userid',userid);
+  				  			    	  			    				vo.put('agentid',agentid);
+  				  			    	  			    				vo.put('appKey',msg_AppKey);
+  				  			    	  			    				vo.put('appSecret',msg_AppSecret);
+  				  			    	  			    				vo.put('transType','TestSendDdtalkMsg');
+  				  			    	  			    				Rpc({functionId:'1010020225',async:false,success:function(res){
+  				  			    	  			    					var resultObj = Ext.decode(res.responseText);
+  				  			    	  			    					if(resultObj.errorMsg || resultObj.errorMsg != ''){
+  				  			    	  			    						Ext.MessageBox.alert("提示",resultObj.errorMsg);
+  				  			    	  			    					}
+  				  			    	  			    				}}, vo);
+  				  			    				    			}
+  				  			    				    		}
+  				  			    				    	}
+  				  			    				    }]
+  			  			    				    }
+  			  			    				}).show();
+  			  			    			}
+  			  			    		}
+  			  			    	}
+  			  			    }
+  							]
+  					}]
+  				},{
+  					xtype:'fieldset',id:'dd_func_set',title: '钉钉功能appid配置',layout:{xtype:'vbox',align:'stretch'},defaults:{margin:'5 0 5 0'},
+  					items:[{
+  						xtype:'container',layout:'hbox',margin:'10 0 10 0',
+  						items:[{
+  							xtype:'combo',
+  							fieldLabel:'选择功能',
+  							displayField:'name',
+  							valueField:'value',
+  							isFormField:false,
+  							editable:false,
+  							store:{
+  								fields:['name','menuid','url'],
+  								autoLoad: true,
+  								proxy:{
+  									type: 'ajax',
+  							        url: './weixinfuncs.json',
+  							        reader: {
+  							            type: 'json',
+  							            rootProperty: 'WXFunction'
+  							        }
+  								}
+  							}
+  						},{
+  							xtype:'button',
+  							text:'添加',margin:'0 0 0 10',
+  							handler:function(){
+  								var text = this.ownerCt.items.items[0].getRawValue();
+  								if(text==null||text==""){
+  									alert("功能不能为空！");
+			  						return;			
+  								}
+  								var itemList=this.ownerCt.ownerCt.items.items;
+  								var fieldLabel = '';
+  								for(var i = 1;i<itemList.length;i++){
+  									fieldLabel = itemList[i].menudesc;
+	  								if(text == fieldLabel.substring(0,text.length)){
+	  									alert("该功能已经存在！");
+	  									return;
+	  								}
+  								}
+  								var jsonlist=this.ownerCt.items.items[0].store.data.items;
+  								var menuid ="";
+  					  			for(var i=0;i<jsonlist.length;i++){
+  					  				if(text==jsonlist[i].data.name){
+  					  					menuid=jsonlist[i].data.menuid;
+  					  				}
+  					  			}
+  					  			addMenuList(menuid,'','',text);
+  								
+  							}
+  						}]
+  					}]
+  				}]
+  			},{
+  				title:'腾讯企业邮箱接口参数',
+  				itemId:'enterprisemail',
+  				items:[{
+  					fieldLabel:'ClientId',
+  					name:'clientid'
+  				},{
+  					fieldLabel:'ClientSecret',
+  					name:'clientsecret'
+  				}]
+  			}],
+  			listeners:{
+  				tabchange:function(panel, tab){
+  					var id = tab.getItemId(),
+  						vo = new HashMap(),
+  						type;
+  					if(id=='weixin'){
+  						type = 'searchWeixin';
+  					} else if(id=='ddtalk'){
+						type = 'searchDdtalk';
+					}else {
+  						type = 'searchMail';
+  					}
+  					vo.put("transType", type);
+  					Rpc({functionId:'1010020225',success:function(res){
+  						var resultObj = Ext.decode(res.responseText),
+  							flag = resultObj.flag;
+  						if(flag){
+  							model.set(resultObj.param);
+  							tab.loadRecord(model);
+  						} else {
+  							Ext.Msg.alert('提示信息', resultObj.message);
+  						}
+  					}}, vo);
+  				},
+  				render:function(panel){
+  					var vo = new HashMap();
+  					//vo.put("transType", "searchWeixin");
+  					vo.put("transType", "searchDdtalk");
+  					Rpc({functionId:'1010020225',success:function(res){
+  						var resultObj = Ext.decode(res.responseText);
+  							flag = resultObj.flag;
+  						if(flag){
+  							model.set(resultObj.param);
+  							
+  							panel.getActiveTab().loadRecord(model);
+							setMsgValue(resultObj.param);
+  							for(var p in resultObj.param){
+	  							if(p.substr(0,3)=='dd_' &&resultObj.param['appKey_'+p] != '' && resultObj.param['appSecret_'+p] != '')
+	  								addMenuList(p.substr(3),resultObj.param['appKey_'+p],resultObj.param['appSecret_'+p],resultObj.param[p]);
+  							}
+  						} else {
+  							Ext.Msg.alert('提示信息', resultObj.message);
+  						}
+  					}}, vo);
+  				}
+  			},
+  			renderTo:'main'
+  		});
+  		function getMenuUrl(me,menuid){
+  			var datalist=me.component.ownerCt.ownerCt.items.items[0].items.items[0].store.data.items;
+  			var param= me.component.ownerCt.ownerCt.ownerCt.items.items;
+  			var focusName=me.dom.parentNode.textContent;
+  			var corpid = param[0].value;
+  			var domain = param[7].value;
+  			if(corpid.length==0||corpid.indexOf("w")!=0){
+  				alert("请填正确填写企业号CorpId");
+  				return;
+  			}
+  			if(domain.length==0){
+  				alert("请填正确填写企业号可信域名，如:http://www.hjsoft.com.cn:8089");
+  				return;
+  			}
+  			var menuurl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=";
+  			menuurl+=corpid+"&redirect_uri=";
+  			//http://www.hjsoft.com.cn:8089/w_selfservice/oauthservlet?dest=http://www.hjsoft.com.cn:8089/w_selfservice/module/selfservice/index.jsp
+  			if(menuid=='home'){
+  				var redirect_uri=encodeURIComponent(domain+"/w_selfservice/oauthservlet?dest="+domain+"/w_selfservice/module/selfservice/home.jsp");
+  				var state=getEncodeStr("menuid=home&etoken=ETOKEN");
+  				menuurl+=redirect_uri+"&response_type=code&scope=snsapi_base&state="+state+"#wechat_redirect";
+  			}else{
+	  			var redirect_uri=encodeURIComponent(domain+"/w_selfservice/oauthservlet?dest="+domain+"/w_selfservice/module/selfservice/index.jsp");
+	  			var state=getEncodeStr("menuid="+menuid+"&etoken=ETOKEN");
+  				menuurl+=redirect_uri+"&response_type=code&scope=snsapi_base&state="+state+"#wechat_redirect";
+  			}
+  			//me.component.ownerCt.items.items[0].setValue(menuurl);
+  			var window = Ext.create('Ext.window.Window', {
+			    title: '功能链接地址如下',
+			    height: 200,
+			    width: 400,
+			    layout: 'fit',
+			    y:100,
+			    items:{
+			    	xtype:'textarea',
+			    	value: menuurl,
+			    	readOnly :true
+			    }
+			}).show();
+  			//alert(menuurl);
+  		};
+  		function getEncodeStr(str) {
+  			return encode(getValidStr(str));
+  		};
+  		function encode(strIn)
+  		{
+  			var intLen=strIn.length;
+  			var strOut="";
+  			var strTemp;
+
+  			for(var i=0; i<intLen; i++)
+  			{
+  				strTemp=strIn.charCodeAt(i);
+  				if (strTemp>255)
+  				{
+  					tmp = strTemp.toString(16);
+  					for(var j=tmp.length; j<4; j++) tmp = "0"+tmp;
+  					strOut = strOut+"^"+tmp;
+  				}
+  				else
+  				{	
+  					if (strTemp < 48 || (strTemp > 47 && strTemp < 65) || (strTemp > 90 && strTemp < 97) || strTemp > 122)
+  					{
+  						tmp = strTemp.toString(16);
+  						for(var j=tmp.length; j<2; j++) tmp = "0"+tmp;
+  						strOut = strOut+"~"+tmp;
+  					}
+  					else
+  					{
+  						strOut=strOut+strIn.charAt(i);
+  					}
+  				}
+  			}
+  			return (strOut);
+  		}
+  		//添加功能菜单
+  		function addMenuList(menuid,appKey,appSecret,text){
+  			var set = Ext.getCmp('dd_func_set');
+  			set.add({
+					xtype:'container',
+					layout:'vbox',
+					style:'background-color:transparent;',
+					menuid:'dd_'+menuid,
+					menudesc:text,
+					items:[{
+						xtype:'container',
+						layout:'hbox',
+						width:'80%',
+						items:[
+							{
+								xtype:'container',
+								width:'90%',
+					   			html:text
+							},{
+								xtype:'container',
+								width:'10%',
+								margin:'0 5 0 0',
+								style:'text-align:right;cursor:pointer;',
+								hidden:true,
+					   			html:'<span style="color:#15428b;font-size:12px;">删除</span>',
+					   			listeners:{
+					   				'afterrender':function(conta){
+										conta.el.on('click', function(){
+											conta.ownerCt.ownerCt.ownerCt.remove(conta.ownerCt.ownerCt);
+										});
+									}
+					   			}
+							}]
+					},{
+						xtype:'container',layout:'hbox',width:'90%',
+						items:[{xtype:'textfield',margin:'0 0 0 40',menuid:menuid+"AppKey",flex:.8,fieldLabel:"AppKey",isFormField:false,value:appKey}]
+					},{
+						xtype:'container',layout:'hbox',width:'90%',
+						items:[{xtype:'textfield',margin:'0 0 0 40',menuid:menuid+"AppSecret",flex:.8,fieldLabel:"AppSecret",isFormField:false,value:appSecret}]
+					}
+					],
+					listeners:{
+						'afterrender':function(conta){
+							conta.el.on('mouseover', function(){
+								conta.setStyle('background-color', 'rgb(255,248,210)');
+								conta.items.items[0].items.items[1].setHidden(false);
+								conta.items.items[1].items.items[0].setFieldStyle('background-color:rgb(255,248,210);');
+								conta.items.items[2].items.items[0].setFieldStyle('background-color:rgb(255,248,210);');
+							});
+							conta.el.on('mouseout', function(){
+								conta.setStyle('background-color', 'transparent');
+								conta.items.items[0].items.items[1].setHidden(true);
+								conta.items.items[1].items.items[0].setFieldStyle('background-color:transparent;');
+								conta.items.items[2].items.items[0].setFieldStyle('background-color:transparent;');
+							});
+						},
+					}
+					});
+  		};
+  		function setMsgValue(param){
+  			var msg_set = Ext.getCmp('dd_message_set');
+			var msg_containers = msg_set.query('textfield[menuid]');
+			msg_containers[0].setValue(param.ddtalk_agentid);
+			msg_containers[1].setValue(param.ddtalk_msg_AppKey);
+			msg_containers[2].setValue(param.ddtalk_msg_AppSecret);
+  		}
+  	});
+  </script>
+  <body>
+  <div id="main" style="width:800px;margin:10px auto;">
+  </div>
+  </body>
+</html>

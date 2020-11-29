@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="textml; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;">
+		<script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+		<script type="text/javascript" src="../qrcard_resource_zh_CN.js"></script>
+		<script type="text/javascript" src="../../../../components/codeSelector/codeSelector.js"></script>
+		<script type="text/javascript" src="../../../../components/extWidget/proxy/TransactionProxy.js"></script>
+	</head>
+		<script>
+		Ext.Loader.setPath("QRCard","..");
+ 		Ext.onReady(function(){
+ 			var thisURL = decodeURI(document.URL);
+ 	        var qrid= thisURL.split("=")[1];
+ 			var qrCardData = "";
+ 			var vo = new HashMap();
+ 			vo.put("qrid",qrid);
+ 			Rpc({
+ 						functionId : 'SYS00001001',
+ 						async : false,
+ 						success : function(form, action) {
+ 	 						qrCardData = Ext.decode(form.responseText).qrCardData;
+ 	 						var hrp_logon_url =Ext.decode(form.responseText).hrp_logon_url;
+ 	 						if(hrp_logon_url && hrp_logon_url.indexOf('http')>-1){
+ 	 							qrCardData.hrp_logon_url=hrp_logon_url;
+ 	 						}else{
+	 	 						var index = document.location.href.indexOf("/module/system/qrcard/setting");
+ 		 						var url = document.location.href.substring(0, index);
+ 	 							qrCardData.hrp_logon_url=url;
+ 	 						}
+ 						},
+ 						scope :this
+ 					}, vo);
+			Ext.require("QRCard.setting.qrcardSetting",function(){
+				 Ext.widget("viewport",{
+					 layout:"fit",
+					 items:Ext.create("QRCard.setting.qrcardSetting",{qrCardData:qrCardData})
+				 });
+		 }) 
+	 }) 
+	</script>
+	<body>
+	</body>
+</html>

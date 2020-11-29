@@ -1,0 +1,181 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="/tags/struts-bean" prefix="bean"%>
+<%@ taglib uri="/tags/struts-html" prefix="html"%>
+<%@ taglib uri="/tags/struts-logic" prefix="logic"%>
+<%@ taglib uri="/WEB-INF/tlds/taglib.tld" prefix="hrms"%>
+<script language="javascript">
+  function savefield()
+  {  	  
+     var hashvo=new ParameterSet();          
+     var vos= document.getElementById("right");
+     if(vos.length==0)
+     {
+       	alert("已选指标项不能为空！");
+       return false;
+     }else
+     {
+        var code_fields=new Array();        
+        for(var i=0;i<vos.length;i++)
+        {
+          var valueS=vos.options[i].value;          
+          code_fields[i]=valueS;
+          for(var j=i+1;j<vos.length;j++)
+          {
+          	if(valueS.toUpperCase()==vos.options[j].value.toUpperCase())
+          	{
+          			alert("有相同指标存在，请重新选择");
+          		return false;
+          	}
+          }
+        }       
+     }
+    var code_fields=new Array();        
+    for(var i=0;i<vos.length;i++)
+    {
+      var valueS=vos.options[i].value;          
+      code_fields[i]=valueS;
+    }       
+     hashvo.setValue("subclass_value",code_fields); 
+    hashvo.setValue("tag",'${targetsortForm.targetsortid}');
+     //hashvo.setValue("tagname",'${sysinfosortForm.tagname}');
+     var request=new Request({method:'post',onSuccess:showSelect,functionId:'03060000404'},hashvo);
+   }	
+   function showSelect(outparamters)
+   { 
+        var mess=outparamters.getValue("mess");        
+        var thevo=new Object();
+	thevo.mess=mess;
+	window.returnValue=thevo;
+	window.close(); 
+   }  
+</script>
+<hrms:themes />
+<html:form action="/report/actuarial_report/validate_rule/target_sort">
+	<table width="95%" border="0" cellspacing="0" align="center"
+		cellpadding="0" class="ListTable1">
+		<thead>
+			<tr>
+				<td align="center" class="TableRow" nowrap colspan="3">
+					<bean:message key="static.select" />
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+		</thead>
+		<tr>
+			<td width="100%" align="center" class="RecordRow_left" nowrap>
+				<table>
+					<tr>
+						<td align="center" width="46%">
+							<table align="center" width="100%">
+								<tr>
+									<td align="left">
+										<bean:message key="static.target" />
+										&nbsp;&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<hrms:optioncollection name="targetsortForm"
+											property="subclasslist" collection="list" />
+										<html:select property="left_fields" size="10" multiple="true"
+											style="height:230px;width:100%;font-size:9pt"
+											ondblclick="additem('left_fields','right_fields');">
+											<html:options collection="list" property="dataValue"
+												labelProperty="dataName" />
+										</html:select>
+									</td>
+
+								</tr>
+
+							</table>
+						</td>
+
+						<td width="48px" align="center">
+							<table border="0" cellspacing="0" align="center"
+			cellpadding="0">
+								<tr align="right">
+									<td>
+										<html:button styleClass="mybutton" property="b_addfield"
+											onclick="additem('left_fields','right_fields');">
+											<bean:message key="button.setfield.addfield" />
+										</html:button>
+									</td>
+								</tr>
+								<tr>
+									<td height="30px">
+									</td>
+								</tr>
+								<tr align="right">
+									<td>
+										<html:button styleClass="mybutton" property="b_delfield"
+											onclick="removeitem('right_fields');">
+											<bean:message key="button.setfield.delfield" />
+										</html:button>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="46%" align="center">
+							<table width="100%">
+								<tr>
+									<td width="100%" align="left">
+										<bean:message key="static.ytarget" />
+										&nbsp;&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="100%" align="left">
+										<hrms:optioncollection name="targetsortForm"
+											property="selectsubclass" collection="selectedlist" />
+										<html:select property="right_fields" size="10" multiple="true"
+											style="height:230px;width:100%;font-size:9pt" styleId="right"
+											ondblclick="removeitem('right_fields');">
+											<html:options collection="selectedlist" property="dataValue"
+												labelProperty="dataName" />
+										</html:select>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="48px" align="center" class="ListTable">
+							<table border="0" cellspacing="0" align="center"
+		cellpadding="0">
+								<tr>
+									<td>
+										<html:button styleClass="mybutton" property="b_up"
+											onclick="upItem($('right_fields'));">
+											<bean:message key="button.previous" />
+										</html:button>
+									</td>
+								</tr>
+								<tr>
+									<td height="30px">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<html:button styleClass="mybutton" property="b_down"
+											onclick="downItem($('right_fields'));">
+											<bean:message key="button.next" />
+										</html:button>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="RecordRow" nowrap colspan="3"
+				style="height: 35px;">
+				<input type="button" name="btnreturn"
+					value='<bean:message key="button.ok"/>' class="mybutton"
+					onclick=" savefield();">
+				<input type="button" name="btnreturn"
+					value='<bean:message key="button.close"/>' class="mybutton"
+					onclick=" window.close();">
+			</td>
+		</tr>
+	</table>
+</html:form>

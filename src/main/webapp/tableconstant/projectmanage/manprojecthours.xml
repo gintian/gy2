@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tableconstant>
+<!-- tools 节点配置工具栏功能 -->
+	<tools>
+		 <menubar privid="3900401" type="button" id="" text="输出"  icon="">
+		 <menuitem type="button" text="导出员工月工时表"  functype="export" privid="3900401" functionid="" icon="/images/export.gif"/>
+		 </menubar>
+	</tools>
+<table sortable="true" />
+</tableconstant>
+

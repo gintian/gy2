@@ -1,0 +1,68 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	background-color:#FFFFFF;
+	margin:0px;
+	padding:0px;
+	font-family: "微软雅黑",Arial, Helvetica, sans-serif;
+	text-align:center;	
+	height:100%;
+	background: ../images/login/background.gif;
+	}
+	
+#box {
+
+	/*background-color: #99CC99;*/
+	position: relative;
+	height:100%;
+	width: 100%;
+	margin:auto;
+
+	}
+#logo {
+	width:100%;
+	height:30%;
+	background-image:url(../images/login/hj_01.gif);
+	background-repeat:no-repeat;
+	background-position: center bottom;
+	}
+#content {
+
+	width:100%;
+	height:105;
+	background-image:url(../images/login/hj_02.gif);
+	background-repeat:no-repeat;
+	text-align:center;
+	background-position: center top;	
+}
+#copyright {
+	width:100%;
+	background-image:url(../images/login/hj_03.gif);	
+	background-repeat:no-repeat;
+	background-position: center top;		
+	text-align:center;
+	height:40%;	
+}
+
+.labbox {
+	width:140px;
+	height:22px;
+	margin-top:0px;
+	padding-top:2px;
+	margin-bottom:5px;
+	background-color:#FFFFFF;
+	BORDER-RIGHT: 1px solid #1f54bc; BORDER-TOP: 1px solid #1f54bc; BORDER-LEFT: 1px solid #1f54bc; BORDER-BOTTOM: 1px solid #1f54bc;
+}
+
+.text
+{
+    color:#fff;
+	font-size:13px;
+	font-weight:bold;
+	line-height:16px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+	

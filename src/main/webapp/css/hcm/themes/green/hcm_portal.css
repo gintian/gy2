@@ -1,0 +1,138 @@
+.x-panel-tl{
+	border-bottom: 1px solid #D1D1D1;
+}
+.x-panel {
+    border-color: #D1D1D1;
+}
+.x-tool-right {
+    background-position: 0 0px;
+    background: url("/images/hcm/themes/green/icon/icon55.png") no-repeat scroll 0 3px transparent;
+}
+<!--zhaoxg start extjs4.2 -->
+.x-panel-header{
+	border-color: #D1D1D1 !important; 
+}
+.x-panel-header-default{
+	border-color: #D1D1D1 !important;
+	border-width: 0px !important; 
+}
+.x-panel-body-default{
+	border-color: #D1D1D1 !important;
+	border-left:0px !important;
+	border-right:0px !important;
+	border-bottom:0px !important;
+}
+.x-tool-img{
+    background-position: 0 0px;
+    background: url("/images/hcm/themes/green/icon/icon55.png") no-repeat scroll 0 3px transparent;
+}
+.x-panel-header-text-default{
+	color:#464646 !important;
+	font-family:"微软雅黑" !important;
+	font-weight:normal !important;
+}
+
+.x-tool-close{
+    background: url("/ext/ext6/resources/images/tools/tool-sprites.gif") ;
+    width:15px !important;
+    height:15px !important;
+    margin-left:35px;
+}
+
+.x-tool-after-title {
+    width: 55px !important;
+    left: auto !important;
+    right: 1px !important;
+}
+
+.x-panel-header-text-default{
+	color:#464646 !important;
+	font-family:"微软雅黑" !important;
+	font-weight:normal !important;
+}
+.x-panel-body-servicehall{
+	border-color: rgb(203,228,253) !important;
+	border-left:0px !important;
+	border-right:0px !important;
+	border-bottom:0px !important;
+	border-top:0px !important;
+}
+
+.x-viewport,.x-viewport body {
+    margin: 0 0 0 -1;
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    height: 100%;
+    position: static;
+}
+
+.x-commponent-ul-servicehall{
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+.x-message-box .x-window-body {
+    background-color: white;
+    border-width: 0;
+}
+
+
+.x-commponent-li-servicehall{
+	display:inline;
+}
+
+.x-toolbar-default {
+    padding: 0px 0 5px 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c5c5c5/*#99b||ce8*/;
+    background-image: none;
+    background-color: white;
+}
+
+.x-commponent-a-servicehall{
+	float:left;
+	width:7em;
+	text-decoration:none;
+	color:white;
+	background-color:purple;
+	padding:0.2em 0.6em;
+	border-right:1px solid white;
+}
+
+.x-commponent-a-servicehall:hover{
+	background-color:#ff3300
+}
+
+.x-servicehall-rejectnum{
+	font: -1px/12px Arial,Helvetica,clean,sans-serif;
+	float:right;
+	color:#ffffff;
+	text-align:center;
+	width:30px;height:15px;
+	vertical-align:top;
+	background:url("/components/homewidget/images/serviceicon/wodedaiban.png") no-repeat;
+}
+.x-btn-default-small {/*add by xiegh 首页处理水晶按钮  */
+	border-radius:0px !important;
+    padding: 2px 2px 2px 2px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: none;
+    background-color: white;
+}
+.x-btn-default-small-over {
+    background: #f9f9f9;
+    border-color:#d1d1d1;
+}
+.x-btn-default-small-focus {
+    border-color:#d1d1d1;
+}
+.x-btn-default-small-pressed {
+    background: #c5c5c5;
+    border-color:#d1d1d1;
+}

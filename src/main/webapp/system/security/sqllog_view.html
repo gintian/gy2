@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>我的问卷</title>
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="this is my page">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+	</head>
+	
+	<script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+	<script language="JavaScript" src="../../../components/extWidget/proxy/TransactionProxy.js"></script>
+	<link rel="stylesheet" href="../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+	
+	
+	<script>
+	    Ext.onReady(function(){
+	    
+	    		Ext.widget('viewport',{
+		    	    layout:{
+		    	    	    type:'vbox',
+		    	    	    align:'center'
+		    	    },
+		    	    items:{
+		    	    	   xtype:'gridpanel',
+		    	    	   margin:'100 0 0 0',
+		    	    	   forceFit:true,
+		    	    	   columnLines:true,
+		    	    	   width:600,
+		    	    	   height:500,
+		    	    	   sortableColumns:false,
+		    	    	   title:'日志浏览',
+		    	    	   columns:[{
+		    	    		   dataIndex:'logname',text:'日志',menuDisabled:true
+		    	    	   },{
+		    	    		   dataIndex:'createtime',text:'创建时间',menuDisabled:true,align:'center'
+		    	    	   },{
+		    	    		   dataIndex:'filepath',text:'下载',menuDisabled:true,
+		    	    		   width:20,align:'center',
+		    	    		   renderer:function(value){
+		    	    			   return '<a href="/servlet/DisplayOleContent?filePath='+value+'" target="_blank"><img src="/images/download.png" /></a>';
+		    	    		   }
+		    	    	   }],
+		    	    	   store:{
+		    	    		   fields:['logname','createtime','filepath'],
+		    	    		   autoLoad:true,
+		    	    		   proxy:{
+		    	    			   type:'transaction',
+		    	    			   functionId:'11111111112',
+		    	    			   reader:{
+		    	    				   type:'json',
+		    	    				   rootProperty:'logData'
+		    	    			   }
+		    	    		   }
+		    	    	   }
+		    	    }
+		    });
+	    	
+	    });
+	    
+	
+	</script>
+	
+	<body></body>
+</html>

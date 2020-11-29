@@ -1,0 +1,170 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HRPWEB3</title>
+<script language="JavaScript" src="../../js/validate.js"></script>
+<script language="JavaScript">
+<!--
+function pf_ChangeFocus() 
+{
+   key = window.event.keyCode;
+   if ( key==0xD && event.srcElement.tagName!='TEXTAREA') /*0xD*/
+   {
+   	window.event.keyCode=9;
+   }
+   //按F5刷新问题,重复提交问题,右键菜单也设法去掉
+   if ( key==116)
+   {
+   	window.event.keyCode=0;	
+	window.event.returnValue=false;
+   }   
+   if ((window.event.ctrlKey)&&(key==82))//屏蔽 Ctrl+R  
+   {    
+        window.event.keyCode=0;	
+	window.event.returnValue=false;
+   } 
+}
+
+//屏蔽右键,实在没有办法的采用此办法,解决重复提交问题
+/*
+function document.oncontextmenu() 
+{ 
+  	return false; 
+} 
+*/
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+   <link href="../../css/css1.css" rel="stylesheet" type="text/css">
+
+</head>
+<body onKeyDown="return pf_ChangeFocus();">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr>  
+    <td valign="top">
+       
+
+
+
+
+
+
+<style id=iframeCss>
+div{
+	cursor:hand;font-size:12px;
+   }
+a{
+text-decoration:none;color:black;font-size:12px;
+}
+
+a.a1:active {
+	color: #003100;
+	text-decoration: none;
+}
+a.a1:hover {
+	color: #FFCC00;
+	text-decoration: none;
+}
+a.a1:visited {	
+	text-decoration: none;
+}
+a.a1:link {
+	color: #003100;
+	text-decoration: none;
+}
+</style>
+
+<form name="ipaddrForm" method="post" action="/system/security/ip_addr_manager.do">
+<br>
+
+<table width="60%" border="0" cellspacing="1"  align="center" cellpadding="1" class="ListTable">
+
+   	  <thead>
+	     <tr>
+		      <td colspan="4" class="TableRow">报表分类：
+                <select name="menu1" >
+                  <option selected>全部报表</option>
+                  <option>移动报表</option>
+                  <option>工资报表</option>
+                  <option>人事报表</option>
+                </select></td>
+		 </tr>
+           <tr>
+            <td align="center" class="TableRow" nowrap width="10%">
+		选择&nbsp;
+	    </td>         
+            <td align="center" class="TableRow" nowrap width="20%">
+		表号&nbsp;
+	    </td>
+            <td align="center" class="TableRow" nowrap width="60%">
+		报表名称&nbsp;
+	    </td>
+            <td align="center" class="TableRow" nowrap width="60%">
+		查阅&nbsp;
+	    </td>                		        	        	        
+           </tr>
+   	  </thead>
+          
+          
+          <tr class="trShallow">
+            
+            <td align="center" class="RecordRow" nowrap>
+   		<input type="checkbox" name="iplistform.select[0]" value="true">&nbsp;
+	    </td>            
+            <td align="left" class="RecordRow" nowrap>
+                   qq&nbsp;
+	    </td>
+         
+            <td align="left" class="RecordRow" wrap>
+                    111&nbsp;
+            </td>
+            <td align="center" class="RecordRow" nowrap> <a href="../edit_report/sample2.htm"><img src="../../images/edit.gif" border=0></a> 
+            </td>
+	                
+          </tr>
+        
+          
+          <tr class="trDeep">
+            
+            <td align="center" class="RecordRow" nowrap>
+   		<input type="checkbox" name="iplistform.select[1]" value="true">&nbsp;
+	    </td>            
+            <td align="left" class="RecordRow" nowrap>
+                   111&nbsp;
+	    </td>
+         
+            <td align="left" class="RecordRow" wrap>
+                    2222&nbsp;
+            </td>
+            <td align="center" class="RecordRow" nowrap> <a href="../edit_report/sample2.htm"><img src="../../images/edit.gif" border=0></a> 
+            </td>
+	                
+          </tr>
+        
+        
+</table>
+
+<table  width="50%" align="center">
+          <tr>
+            <td align="center">
+         	<input type="button" name="b_add" value="批量取数" class="mybutton">
+         	<input type="button" name="b_add" value="表达式分析" class="mybutton" onClick="window.open('expr_result.htm','il_body');">
+         	<input type="button" name="b_add" value="指标分析" class="mybutton" onClick="window.open('field_result.htm','il_body');">
+         	<input type="button" name="b_add" value="表内校验" class="mybutton" onClick="window.open('check_result.htm','il_body');">
+         	<input type="button" name="b_add" value="表间校验" class="mybutton" onClick="window.open('check_result.htm','il_body');">									
+            </td>
+          </tr>          
+</table>
+
+</form>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="GZ00000001">
+        <transaction-name>进入薪资发放</transaction-name>
+        <transaction-desc>进入薪资发放</transaction-desc> 
+		<priv-funcid>32402,32502,0314</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.GetSalaryAccountingTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+	<wfi-mapping funcid="GZ00000011">
+        <transaction-name>查询业务日期</transaction-name>
+        <transaction-desc>查询业务日期</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.SearchGzDateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000012">
+        <transaction-name>新建工资</transaction-name>
+        <transaction-desc>新建工资</transaction-desc> 
+		<priv-funcid>324020301,325020301</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.CreateNewSalaryTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000013">
+        <transaction-name>计算公式初始化</transaction-name>
+        <transaction-desc>计算公式初始化</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.compute.transaction.InitCondFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>  
+	<wfi-mapping funcid="GZ00000014">
+        <transaction-name>批量计算</transaction-name>
+        <transaction-desc>批量计算</transaction-desc> 
+        <log-attribute>1</log-attribute>
+		<priv-funcid>324020403,325020403,3240308,3250308,031402</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.compute.transaction.BatchComputeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000015">
+        <transaction-name>设置公式状态</transaction-name>
+        <transaction-desc>设置公式状态</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.compute.transaction.SetFormulaValidTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000016">
+        <transaction-name>审核校验</transaction-name>
+        <transaction-desc>审核校验</transaction-desc>
+        <priv-funcid>031406,3240213,3250210</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.VerifyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000017">
+        <transaction-name>报审和驳回</transaction-name>
+        <transaction-desc>报审和驳回</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.GzReportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000018">
+        <transaction-name>总额校验</transaction-name>
+        <transaction-desc>总额校验</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.TotalControlTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000019">
+        <transaction-name>薪资发放报批</transaction-name>
+        <transaction-desc>薪资发放报批</transaction-desc> 
+		<priv-funcid>3240208,3250208</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.GzAppealTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000020">
+        <transaction-name>打开提交窗口</transaction-name>
+        <transaction-desc>打开提交窗口</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.SearchGzDataSubmitTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000021">
+        <transaction-name>打开提交高级按钮窗口</transaction-name>
+        <transaction-desc>打开提交高级按钮窗口</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.GetUpdateGzItemFashionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000022">
+        <transaction-name>提交</transaction-name>
+        <transaction-desc>提交</transaction-desc> 
+		<priv-funcid>324020504,325020504</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.SubmitGzDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000025">
+        <transaction-name>保存薪资表</transaction-name>
+        <transaction-desc>保存薪资表</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<priv-funcid>3240202,3250202,0314</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.SaveSalaryTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000026">
+        <transaction-name>删除薪资数据</transaction-name>
+        <transaction-desc>删除薪资数据</transaction-desc>
+		<priv-funcid>3240207,3250207</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.DelSalaryTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000031">
+        <transaction-name>手工选人</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.importmen.transaction.HandImportMenTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000032">
+        <transaction-name>人员引入</transaction-name>
+        <transaction-desc></transaction-desc>
+        <priv-funcid>3240212,3250212</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.ImportMenTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000033">
+        <transaction-name>是否设置参数</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.importmen.transaction.ParamIsSetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000034">
+        <transaction-name>变动人员信息</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.importmen.transaction.SearchPersonnelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+<!--薪资发放 设置菜单内交易类 start GZ00000151- GZ00000180-->
+
+	<!--发送通知 begin-->
+	<wfi-mapping funcid="GZ00000141">
+        <transaction-name>发送通知主页面</transaction-name>
+        <transaction-desc></transaction-desc>
+		<priv-funcid>324020505</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.sendmsg.transaction.InitSendMsgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000142">
+        <transaction-name>取得模板</transaction-name>
+        <transaction-desc></transaction-desc>
+        <wf-sequence>
+			    <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.sendmsg.transaction.InitTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000143">
+        <transaction-name>生成通知</transaction-name>
+        <transaction-desc></transaction-desc>
+        <wf-sequence>
+			    <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.sendmsg.transaction.InitMsgDtlTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000144">
+        <transaction-name>预览通知</transaction-name>
+        <transaction-desc></transaction-desc>
+        <wf-sequence>
+			    <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.sendmsg.transaction.ShowMsgDtlTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000145">
+        <transaction-name>发送通知</transaction-name>
+        <transaction-desc></transaction-desc>
+        <wf-sequence>
+			    <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.sendmsg.transaction.SendMsgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000146">
+        <transaction-name>删除记录</transaction-name>
+        <transaction-desc></transaction-desc>
+        <wf-sequence>
+			    <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.sendmsg.transaction.DeleteMsgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<!--发送通知 end-->
+
+    <!-- 发放类别列表 start-->
+    <wfi-mapping funcid="GZ00000201">
+        <transaction-name>薪资发放</transaction-name>
+        <transaction-desc>薪资发放</transaction-desc> 
+		<priv-funcid>32402,32403,32502,32503,0314</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytemplate.transaction.SalaryTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <wfi-mapping funcid="GZ00000236">
+        <transaction-name>薪资发放历史数据</transaction-name>
+        <transaction-desc>薪资发放历史数据</transaction-desc>
+        <!--<priv-funcid>32402,32403,32502,32503,0314</priv-funcid>-->
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytemplate.transaction.ApprovalSituationTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+
+    <!-- 发放类别列表 end-->
+    <!-- 薪资类别 start-->
+    <wfi-mapping funcid="GZ00000202">
+        <transaction-name>薪资类型</transaction-name>
+        <transaction-desc>薪资类型</transaction-desc> 
+		<priv-funcid>32408,32505</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.SalaryTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000203">
+        <transaction-name>变动比对</transaction-name>
+        <transaction-desc>变动比对</transaction-desc> 
+		<priv-funcid>3250201,3240201</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.ChangeCompareTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000204">
+        <transaction-name>变动比对_新增人员</transaction-name>
+        <transaction-desc>变动比对_新增人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.AddPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000205">
+        <transaction-name>变动比对_减少人员</transaction-name>
+        <transaction-desc>变动比对_减少人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.ReducePersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000206">
+        <transaction-name>变动比对_信息变动人员</transaction-name>
+        <transaction-desc>变动比对_信息变动人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.ChangeInfoPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000207">
+        <transaction-name>变动比对_停发人员</transaction-name>
+        <transaction-desc>变动比对_停发人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.StopPersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000208">
+        <transaction-name>变动比对_更新选中状态</transaction-name>
+        <transaction-desc>变动比对_更新选中状态</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.UpdateStateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000209">
+        <transaction-name>变动比对_导出按钮</transaction-name>
+        <transaction-desc>变动比对_导出按钮</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.ExportDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000210">
+        <transaction-name>变动比对_确定按钮</transaction-name>
+        <transaction-desc>变动比对_确定按钮</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changecompare.transaction.SetValidTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 薪资项目 start -->
+    <wfi-mapping funcid="GZ00000211">
+        <transaction-name>薪资项目</transaction-name>
+        <transaction-desc>薪资项目</transaction-desc> 
+		<priv-funcid>32408,32505</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryitem.SearchSalarySetListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000212">
+        <transaction-name>薪资项目操作</transaction-name>
+        <transaction-desc>薪资项目操作</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryitem.FieldItemOptTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000213">
+        <transaction-name>保存归属单位</transaction-name>
+        <transaction-desc>保存归属单位</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.SaveSubordinateUnitsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000214">
+        <transaction-name>项目数据处理方式</transaction-name>
+        <transaction-desc>项目数据处理方式</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryitem.ChangeSalarySetFlagTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <!-- 薪资项目 end -->
+    <wfi-mapping funcid="GZ00000215">
+        <transaction-name>维护薪资类别</transaction-name>
+        <transaction-desc>维护薪资类别</transaction-desc> 
+		<priv-funcid>3250504,3250501,3240801,3240804</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.AddOrEditSalaryTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000216">
+        <transaction-name>删除薪资类别</transaction-name>
+        <transaction-desc>删除薪资类别</transaction-desc> 
+		<priv-funcid>3240802,3250502</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.DelSalaryTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000217">
+        <transaction-name>上下移动薪资类别</transaction-name>
+        <transaction-desc>上下移动薪资类别</transaction-desc> 
+		<priv-funcid>3250513,3240813</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.DropSalaryTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000218">
+        <transaction-name>判断薪资类别名称重复</transaction-name>
+        <transaction-desc>判断薪资类别名称重复</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.IsHaveNameTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000219">
+        <transaction-name>另存薪资类别</transaction-name>
+        <transaction-desc>另存薪资类别</transaction-desc> 
+		<log-attribute>1</log-attribute>
+		<priv-funcid>3240803,3250503</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.SaveAsSalaryTypeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000220">
+        <transaction-name>薪资类别导出</transaction-name>
+        <transaction-desc>薪资类别导出</transaction-desc> 
+		<priv-funcid>3250505,3240805</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.OutPutStandardTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000221">
+        <transaction-name>初始化薪资类别导入数据</transaction-name>
+        <transaction-desc>初始化薪资类别导入数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.ValidateImportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000222">
+        <transaction-name>薪资类别导入数据</transaction-name>
+        <transaction-desc>薪资类别导入数据</transaction-desc> 
+		<priv-funcid>3250505,3240805</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.ImportZipTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <!-- 币种维护 start-->
+    <wfi-mapping funcid="GZ00000223">
+        <transaction-name>币种维护初始化数据</transaction-name>
+        <transaction-desc>币种维护初始化数据</transaction-desc> 
+		<priv-funcid>3240806</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.moneystyle.InitMoneyStyleTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000224">
+        <transaction-name>币种维护初始化数据</transaction-name>
+        <transaction-desc>币种维护初始化数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.moneystyle.SaveMoneyStyleTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000225">
+        <transaction-name>删除币种维护</transaction-name>
+        <transaction-desc>删除币种维护</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.moneystyle.DeleteMoneyStyleTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000226">
+        <transaction-name>币种明细</transaction-name>
+        <transaction-desc>币种明细</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.moneystyle.InitMoneyStyleDetailTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000227">
+        <transaction-name>新增或编辑货币详细</transaction-name>
+        <transaction-desc>新增或编辑货币详细</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.moneystyle.SaveMoneyStyleDetailTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000228">
+        <transaction-name>删除货币详细</transaction-name>
+        <transaction-desc>删除货币详细</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.moneystyle.DeleteMoneyStyleDetailTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 币种维护 end-->
+     
+    <wfi-mapping funcid="GZ00000229">
+        <transaction-name>同步薪资结构</transaction-name>
+        <transaction-desc>同步薪资结构</transaction-desc> 
+		<priv-funcid>3250514,3240814</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.SynchronizeTableStructTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000230">
+        <transaction-name>历史数据初始化</transaction-name>
+        <transaction-desc>历史数据初始化</transaction-desc> 
+		<priv-funcid>3240807,3250507</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.InitSalaryTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000231">
+        <transaction-name>获取薪资属性</transaction-name>
+        <transaction-desc>获取薪资属性</transaction-desc> 
+		<priv-funcid>3240808,3250508</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryproperty.GetSalaryTypePropertyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000232">
+        <transaction-name>获取变动对比指标</transaction-name>
+        <transaction-desc>获取变动对比指标</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryproperty.SetChangeSpTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000233">
+        <transaction-name>获取提成薪资指标列表</transaction-name>
+        <transaction-desc>获取提成薪资指标列表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryproperty.GetFieldListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000234">
+        <transaction-name>清除人员检索条件</transaction-name>
+        <transaction-desc>清除人员检索条件</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryproperty.ClearConditionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000235">
+        <transaction-name>保存薪资类别属性</transaction-name>
+        <transaction-desc>保存薪资类别属性</transaction-desc> 
+		<log-attribute>1</log-attribute>
+		<priv-funcid>3240808,3250508</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.salaryproperty.SaveSalaryTypePropertyTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="GZ00000237">
+        <transaction-name>查询薪资审批流程</transaction-name>
+        <transaction-desc>查询薪资审批流程</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytemplate.transaction.ProcessMonitorTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="GZ00000241">
+        <transaction-name>审批流程发送通知</transaction-name>
+        <transaction-desc>审批流程发送通知</transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytemplate.transaction.SendMonitorTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <!-- 应用机构 start-->
+    <wfi-mapping funcid="GZ00000238">
+        <transaction-name>应用机构查询</transaction-name>
+        <transaction-desc>应用机构查询</transaction-desc> 
+		<priv-funcid>32408,32505</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.applicationorganization.InitApplicationOrgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="GZ00000239">
+        <transaction-name>应用机构保存下发</transaction-name>
+        <transaction-desc>应用机构保存下发</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salarytype.transaction.applicationorganization.SaveApplicationOrgTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <!-- 应用机构 end-->
+    
+    <!-- 薪资类别 end-->
+    
+   <wfi-mapping funcid="GZ00000041">
+       <transaction-name>取得导出薪资项目</transaction-name>
+       <transaction-desc></transaction-desc> 
+       <wf-sequence>
+               <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.SetExpTypeTrans"/>
+       </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000042">
+       <transaction-name>薪资导出</transaction-name>
+       <transaction-desc></transaction-desc> 
+	   <priv-funcid>324020303,325020303,3250315,3240318</priv-funcid>
+       <wf-sequence>
+               <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.ExpDataTrans"/>
+       </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000043">
+       <transaction-name>取得薪资发放导入指标</transaction-name>
+       <transaction-desc></transaction-desc> 
+       <wf-sequence>
+               <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.GetImpDataTrans"/>
+       </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000044">
+       <transaction-name>未对应数据</transaction-name>
+       <transaction-desc>显示Excel中有，但是薪资表中无此人</transaction-desc> 
+       <wf-sequence>
+               <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.ShowNoRelationData"/>
+       </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000045">
+       <transaction-name>重复数据</transaction-name>
+       <transaction-desc>显示Excel中重复的数据</transaction-desc> 
+       <wf-sequence>
+               <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.ShowRepeatData"/>
+       </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000046">
+       <transaction-name>读取对应方案</transaction-name>
+       <transaction-desc>读取对应方案</transaction-desc> 
+       <wf-sequence>
+               <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.GetRelationSchemeListTrans"/>
+       </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000047">
+       <transaction-name>保存修改方案名称</transaction-name>
+       <transaction-desc>保存修改方案名称</transaction-desc> 
+       <wf-sequence>
+               <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.EditRelationSchemeTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000048">
+     <transaction-name>导入上传文件</transaction-name>
+     <transaction-desc>导入上传文件</transaction-desc> 
+	 <priv-funcid>325020302,324020302</priv-funcid>
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.ImportDataTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+    <wfi-mapping funcid="GZ00000050">
+     <transaction-name>导出文件检查结果</transaction-name>
+     <transaction-desc>导出文件检查结果</transaction-desc> 
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.importDataExportTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+     <!-- 批量引入 begin -->
+    <wfi-mapping funcid="GZ00000091">
+     <transaction-name>批量引入</transaction-name>
+     <transaction-desc>批量引入</transaction-desc> 
+	 <priv-funcid>3240224,3250224</priv-funcid>
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.batch.transaction.SetBatchImportTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+    <wfi-mapping funcid="GZ00000092">
+     <transaction-name>批量引入确定</transaction-name>
+     <transaction-desc>批量引入确定</transaction-desc> 
+	 <priv-funcid>3240224,3250224</priv-funcid>
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.batch.transaction.BatchImportItemTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <!-- 批量引入 end -->
+   <!-- 批量修改 begin -->
+    <wfi-mapping funcid="GZ00000101">
+     <transaction-name>批量修改计算公式设置</transaction-name>
+     <transaction-desc>批量修改计算公式设置</transaction-desc> 
+	 <priv-funcid>324020402,325020402</priv-funcid>
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.batch.transaction.SetBatchUpdateTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+     <wfi-mapping funcid="GZ00000102">
+     <transaction-name>批量修改确定</transaction-name>
+     <transaction-desc>批量修改确定</transaction-desc> 
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.batch.transaction.BatchUpdateTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <!-- 批量修改 end -->
+   <wfi-mapping funcid="GZ00000049">
+     <transaction-name>下载模板</transaction-name>
+     <transaction-desc>下载模板</transaction-desc>
+	 <priv-funcid>325020305,324020305,3250319,3240314,031405</priv-funcid>
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.ExpTemplateTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+  <wfi-mapping funcid="GZ00000052">
+    <transaction-name>导入模板数据</transaction-name>
+    <transaction-desc>导入模板数据</transaction-desc> 
+	<priv-funcid>325020305,324020305,3250319,3240314,031405</priv-funcid>
+    <wf-sequence>
+           <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.inout.transaction.GetTemplDataTrans"/>
+  </wf-sequence>
+  </wfi-mapping>
+   <wfi-mapping funcid="GZ00000150">
+     <transaction-name>设置业务日期</transaction-name>
+     <transaction-desc>设置业务日期</transaction-desc> 
+	 <priv-funcid>324020607,325020607</priv-funcid>
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.SetAppDateTrans"/>
+   </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000151">
+     <transaction-name>重置业务日期</transaction-name>
+     <transaction-desc>重置业务日期</transaction-desc> 
+	 <priv-funcid>324020601,325020601</priv-funcid>
+	 <log-attribute>1</log-attribute>
+     <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.ReSetGzDateTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+  <wfi-mapping funcid="GZ000000152">
+   <transaction-name>是否允许重发</transaction-name>
+   <transaction-desc>是否允许重发</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.IsReGzTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+  <wfi-mapping funcid="GZ000000153">
+    <transaction-name>薪资重发初始化</transaction-name>
+    <transaction-desc>薪资重发初始化</transaction-desc> 
+    <wf-sequence>
+           <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.InitReFfGzTrans"/>
+  </wf-sequence>
+  </wfi-mapping>
+  <wfi-mapping funcid="GZ000000154">
+   <transaction-name>薪资重发</transaction-name>
+   <transaction-desc>薪资重发</transaction-desc> 
+   <priv-funcid>324020602,325020602</priv-funcid>
+	<log-attribute>1</log-attribute>
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.ReExtendLastGzTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+  
+  <wfi-mapping funcid="GZ00000061">
+   <transaction-name>同步人员顺序</transaction-name>
+   <transaction-desc>编辑/同步人员顺序</transaction-desc> 
+   <priv-funcid>3250216,3240216</priv-funcid>
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.SyncGzEmpTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+  <wfi-mapping funcid="GZ00000062">
+   <transaction-name>引入计件薪资</transaction-name>
+   <transaction-desc>编辑/引入计件薪资</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.salarypaying.transaction.ImportPieceRateDataTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+  <!-- 银行报盘 begin -->
+   <wfi-mapping funcid="GZ00000121">
+   <transaction-name>加载银行报盘页面</transaction-name>
+   <transaction-desc>加载银行报盘页面</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.updisk.transaction.InitBankDiskTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+   <wfi-mapping funcid="GZ00000122">
+   <transaction-name>编辑银行报盘模板</transaction-name>
+   <transaction-desc>编辑银行报盘模板</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.updisk.transaction.EditBankTemplateTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+   <wfi-mapping funcid="GZ00000123">
+   <transaction-name>保存银行报盘模板</transaction-name>
+   <transaction-desc>保存银行报盘模板</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.updisk.transaction.SaveBankTemplateTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+   <wfi-mapping funcid="GZ00000124">
+   <transaction-name>报盘</transaction-name>
+   <transaction-desc>报盘</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.updisk.transaction.BankDiskExportFileTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+   <wfi-mapping funcid="GZ00000125">
+   <transaction-name>删除银行报盘模板</transaction-name>
+   <transaction-desc>删除银行报盘模板</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.updisk.transaction.DeleteBankTemplateTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+  <!-- 银行报盘 end -->
+  <!-- 数据比对 start -->
+    <wfi-mapping funcid="GZ00000071">
+   <transaction-name>加载数据比对数据</transaction-name>
+   <transaction-desc>加载数据比对数据</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changesmore.transaction.DataChangeCompareTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+    <wfi-mapping funcid="GZ00000072">
+   <transaction-name>新增、减少人员导出</transaction-name>
+   <transaction-desc>新增、减少人员导出</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changesmore.transaction.ExportDataTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+
+    <wfi-mapping funcid="GZ00000073">
+   <transaction-name>加载组织机构树</transaction-name>
+   <transaction-desc>加载组织机构树</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changesmore.transaction.InitDataChangeTreeTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+    <wfi-mapping funcid="GZ00000074">
+   <transaction-name>加载数据比对明细表</transaction-name>
+   <transaction-desc>加载数据比对明细表</transaction-desc> 
+   <wf-sequence>
+          <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryaccounting.changesmore.transaction.DataChangeDetailsTrans"/>
+   </wf-sequence>
+  </wfi-mapping>
+  <!-- 数据比对 end -->
+<!-- 薪资审批汇总页面 start zhaoxg add 2015-12-9 -->
+	<wfi-mapping funcid="GZ00000431">
+        <transaction-name>进入薪资审批</transaction-name>
+        <transaction-desc>进入薪资审批</transaction-desc> 
+		<priv-funcid>32403,32503</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.InitGzSpCollectTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000432">
+        <transaction-name>薪资汇总审批</transaction-name>
+        <transaction-desc>薪资汇总审批</transaction-desc> 
+		<priv-funcid>32403,32503</priv-funcid> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.InitGzSpCollectTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000433">
+        <transaction-name>发放日期和次数联动</transaction-name>
+        <transaction-desc>发放日期和次数联动</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.DateCountLinkage"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000434">
+        <transaction-name>薪资审批明细页面</transaction-name>
+        <transaction-desc>薪资审批明细页面</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.SalarySpDetail"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000435">
+        <transaction-name>薪资审批汇总报批</transaction-name>
+        <transaction-desc>薪资审批汇总报批</transaction-desc> 
+		<priv-funcid>3240311,3240312,3240303,3250311,3250312,3250303</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.GzSpCollectAppralTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000436">
+        <transaction-name>薪资审批汇总保存</transaction-name>
+        <transaction-desc>薪资审批汇总保存</transaction-desc> 
+		<priv-funcid>3250304,3240304</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.SaveSalarySpTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000437">
+        <transaction-name>薪资审批汇总删除</transaction-name>
+        <transaction-desc>薪资审批汇总删除</transaction-desc> 
+		<priv-funcid>3250306,3240306</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.DelSalarySpTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000438">
+        <transaction-name>审批汇总个别驳回</transaction-name>
+        <transaction-desc>审批汇总个别驳回</transaction-desc>
+		<priv-funcid>3250303,3240303</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.GzSpCollectDetailReject"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000439">
+        <transaction-name>审批汇总个别提交</transaction-name>
+        <transaction-desc>审批汇总个别提交</transaction-desc> 
+		<priv-funcid>3250305,3240305</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.SubmitSpGzDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000440">
+        <transaction-name>审批汇总审批确认</transaction-name>
+        <transaction-desc>审批汇总审批确认</transaction-desc> 
+		<priv-funcid>325031003,324031003</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.gzspcollect.transaction.ApprovalConfirmTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+<!-- 薪资审批汇总页面 end -->
+	<wfi-mapping funcid="GZ00000501">
+        <transaction-name>初始化薪资报表</transaction-name>
+        <transaction-desc>初始化薪资报表</transaction-desc> 
+		<priv-funcid>324020503,325020503,031403,324031002</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.InitSalaryReportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000502">
+        <transaction-name>获取薪资报表树结构</transaction-name>
+        <transaction-desc>获取薪资报表树结构</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.GetSalaryReportTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000503">
+        <transaction-name>获取薪资报表分组</transaction-name>
+        <transaction-desc>获取薪资报表分组</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.GetSalaryReportGroupTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000504">
+        <transaction-name>删除薪资报表</transaction-name>
+        <transaction-desc>删除薪资报表</transaction-desc> 
+		<priv-funcid>32402050303,32502050303,32403100103</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.DelSalaryReportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000505">
+        <transaction-name>新建修改薪资报表</transaction-name>
+        <transaction-desc>新建修改薪资报表</transaction-desc> 
+		<priv-funcid>32402050302,32402050301,32403100101,32403100102,32502050302,32502050301,32503100201,32503100202</priv-funcid>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.DefineSalaryReport"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000506">
+        <transaction-name>保存薪资报表定义</transaction-name>
+        <transaction-desc>保存薪资报表定义</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.SaveReportDefineTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000507">
+        <transaction-name>薪资报表取数据类</transaction-name>
+        <transaction-desc>薪资报表取数据类</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.SalaryReportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000508">
+        <transaction-name>薪资报表导出excel</transaction-name>
+        <transaction-desc>薪资报表导出excel</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.ExportDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000704">
+        <transaction-name>薪资报表打印PDF初始化数据</transaction-name>
+        <transaction-desc>薪资报表打印PDF初始化数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.SalaryReportPrintDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000509">
+        <transaction-name>薪资报表打印PDF</transaction-name>
+        <transaction-desc>薪资报表打印PDF</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryreport.transaction.SalaryReportPrintTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000510">
+        <transaction-name>查询薪资所得税</transaction-name>
+        <transaction-desc>查询薪资所得税</transaction-desc> 
+		<priv-funcid>32404</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.tax.transaction.SearchTaxMxTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+	<wfi-mapping funcid="GZ00000511">
+        <transaction-name>删除所得税</transaction-name>
+        <transaction-desc>删除所得税</transaction-desc> 
+		<priv-funcid>3240408</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.tax.transaction.DeleteTaxMxTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000513">
+        <transaction-name>所得税表结构维护</transaction-name>
+        <transaction-desc>所得税表结构维护</transaction-desc> 
+		<priv-funcid>3240404</priv-funcid>
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.tax.transaction.AddItemsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000514">
+        <transaction-name>所得税管理导入</transaction-name>
+        <transaction-desc>所得税管理导入</transaction-desc>
+        <log-attribute>1</log-attribute> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.tax.transaction.ImportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000515">
+        <transaction-name>修改所得税记录</transaction-name>
+        <transaction-desc>修改所得税记录</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.tax.transaction.TaxUpdateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000601">
+        <transaction-name>薪资标准导入</transaction-name>
+        <transaction-desc>薪资标准导入</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.salaryStandard.transaction.ImporStandardItemTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000701">
+        <transaction-name>个税专项申报审批</transaction-name>
+        <transaction-desc>个税专项申报审批</transaction-desc>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.zxdeclare.transaction.DeclareListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000702">
+        <transaction-name>个税专项申报审批查询方案设置</transaction-name>
+        <transaction-desc>个税专项申报审批查询方案设置</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.zxdeclare.transaction.DeclareQueryTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000703">
+        <transaction-name>个税专项查看</transaction-name>
+        <transaction-desc>个税专项查看</transaction-desc>
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.zxdeclare.transaction.ZXDeclareDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000705">
+        <transaction-name>个税专项附加申报模板数据导入</transaction-name>
+        <transaction-desc>个税专项附加申报模板数据导入</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.zxdeclare.transaction.ZXDeclareImportDataTrans"/>
+        </wf-sequence>
+   </wfi-mapping>
+    <wfi-mapping funcid="GZ00000801">
+        <transaction-name>查询全薪资方案</transaction-name>
+        <transaction-desc>查询全薪资方案</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.mysalary.transaction.SearchSelfSalaryTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000802">
+        <transaction-name>检查视图表是否重名</transaction-name>
+        <transaction-desc>检查视图表是否重名</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.mysalary.transaction.SearchSalaryFeildSetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000804">
+        <transaction-name>新建视图表</transaction-name>
+        <transaction-desc>新建视图表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.mysalary.transaction.MySalaryViewTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="GZ00000805">
+        <transaction-name>薪酬方案</transaction-name>
+        <transaction-desc>薪酬方案</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.gz.mysalary.transaction.MySalarySchemeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="GZ00000808">
+    	<transaction-name>获取我的薪酬信息</transaction-name>
+        <transaction-desc>获取我的薪酬信息</transaction-desc>
+        <wf-sequence>
+        		<wfi-class mainClass="com.hjsj.hrms.module.gz.mysalary.transaction.MySalaryInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ000000810">
+        <transaction-name>我的薪酬主页界面获取信息</transaction-name>
+        <transaction-desc>我的薪酬主页界面获取信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.mysalary.transaction.ShowMySalaryMainTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000901">
+        <transaction-name>我的个税配置界面</transaction-name>
+        <transaction-desc>我的个税配置界面</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.mytax.transaction.MyTaxParameterTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000902">
+        <transaction-name>我的个税主界面获取信息</transaction-name>
+        <transaction-desc>我的个税主界面获取信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.mytax.transaction.MyTaxMainTrans"/>
+
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 人员工资保险台账 -->
+    <wfi-mapping funcid="GZ00000706">
+        <transaction-name>人员工资保险台账</transaction-name>
+        <transaction-desc>人员工资保险台账</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysisdata.transaction.GetEmployeePayMusterTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000708">
+        <transaction-name>项目分类统计台帐</transaction-name>
+        <transaction-desc>项目分类统计台帐</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysisdata.transaction.GetItemGroupMusterTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000709">
+        <transaction-name>人员工资(保险)项目统计表</transaction-name>
+        <transaction-desc>人员工资(保险)项目统计表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysisdata.transaction.GetEmployeePayStatMusterTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000710">
+        <transaction-name>人员工资(保险)汇总表交易</transaction-name>
+        <transaction-desc>人员工资(保险)汇总表交易</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysisdata.transaction.GetSummaryTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00000711">
+        <transaction-name>各月工资构成分析表</transaction-name>
+        <transaction-desc>各月工资构成分析表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysisdata.transaction.GetGzStructureTableTrans"/>
+        </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000712">
+        <transaction-name>工资总额构成分析表</transaction-name>
+        <transaction-desc>工资总额构成分析表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysisdata.transaction.GetGzAmountStructureTableTrans"/>
+        </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000713">
+        <transaction-name>单位部门工资项目统计表</transaction-name>
+        <transaction-desc>单位部门工资项目统计表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysisdata.transaction.GetGzItemSummaryTableTrans"/>
+        </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000714">
+       <transaction-name>薪资分析表</transaction-name>
+       <transaction-desc>薪资分析表</transaction-desc>
+       <log-attribute>1</log-attribute>
+       <wf-sequence>
+           <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysistable.transaction.SearchAnalysisTablesTrans"/>
+       </wf-sequence>
+   </wfi-mapping>
+   <wfi-mapping funcid="GZ00000715">
+       <transaction-name>薪资分析表页面操作</transaction-name>
+       <transaction-desc>薪资分析表页面操作</transaction-desc>
+       <log-attribute>1</log-attribute>
+       <wf-sequence>
+           <wfi-class mainClass="com.hjsj.hrms.module.gz.analysistables.analysistable.transaction.OptAnalyseTableTrans"/>
+       </wf-sequence>
+   </wfi-mapping>
+
+    <wfi-mapping funcid="GZ00001001">
+        <transaction-name>初始化税率表数据交易类</transaction-name>
+        <transaction-desc>初始化税率表数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.InitTaxTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001002">
+        <transaction-name>保存税率表方案交易类</transaction-name>
+        <transaction-desc>保存税率表方案交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.SaveTaxTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001003">
+        <transaction-name>删除税率表方案交易类</transaction-name>
+        <transaction-desc>删除税率表方案交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.DeleteTaxTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001004">
+        <transaction-name>导出税率表方案交易类</transaction-name>
+        <transaction-desc>导出税率表方案交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.ExportTaxTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001005">
+        <transaction-name>导入税率表方案交易类</transaction-name>
+        <transaction-desc>导入税率表方案交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.ImportTaxTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001006">
+        <transaction-name>保存税率明细表交易类</transaction-name>
+        <transaction-desc>保存税率明细表交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.SaveTaxTableDetailTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001007">
+        <transaction-name>删除税率表明细数据交易类</transaction-name>
+        <transaction-desc>删除税率表明细数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.DeleteTaxTableDetailTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001008">
+        <transaction-name>初始化税率表明细数据交易类</transaction-name>
+        <transaction-desc>初始化税率表明细数据交易类</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.templateset.taxtable.transaction.InitTaxTableDetailTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <!--薪资标准表begin-->
+    <wfi-mapping funcid="GZ00001201">
+        <transaction-name>历史沿革列表初始化</transaction-name>
+        <transaction-desc>历史沿革列表初始化</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.InitStandPackageListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001202">
+        <transaction-name>单个历史沿革初始化</transaction-name>
+        <transaction-desc>单个历史沿革初始化</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.InitStandPackTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001203">
+        <transaction-name>保存历史沿革数据</transaction-name>
+        <transaction-desc>保存历史沿革数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.SaveStandPackTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001204">
+        <transaction-name>批量保存历史沿革数据修改</transaction-name>
+        <transaction-desc>批量保存历史沿革数据修改</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.BatchSavePackTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001205">
+        <transaction-name>获取历史沿革引用的标准表</transaction-name>
+        <transaction-desc>获取历史沿革引用的标准表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.GetPackStandListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001206">
+        <transaction-name>导出历史沿革</transaction-name>
+        <transaction-desc>导出历史沿革</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.ExportPackageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001207">
+        <transaction-name>删除历史沿革</transaction-name>
+        <transaction-desc>删除历史沿革</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.DeletePackageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001208">
+        <transaction-name>导入历史沿革</transaction-name>
+        <transaction-desc>导入历史沿革</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.ImportPackageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001209">
+        <transaction-name>启用历史沿革</transaction-name>
+        <transaction-desc>启用历史沿革</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.EnablePackageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001210">
+        <transaction-name>标准表列表初始化</transaction-name>
+        <transaction-desc>标准表列表初始化</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.InitStandTableListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001211">
+        <transaction-name>标准表结构初始化</transaction-name>
+        <transaction-desc>标准表结构初始化</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.InitStandStructTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001212">
+        <transaction-name>二级指标表达式初始化</transaction-name>
+        <transaction-desc>二级指标表达式初始化</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.InitItemLexprTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001213">
+        <transaction-name>二级指标表达式保存</transaction-name>
+        <transaction-desc>二级指标表达式保存</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.SaveItemLexprTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001214">
+        <transaction-name>标准表数据编辑界面数据初始化</transaction-name>
+        <transaction-desc>标准表数据编辑界面数据初始化</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.InitStandDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001215">
+        <transaction-name>标准表数据保存</transaction-name>
+        <transaction-desc>标准表数据保存</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.SaveStandDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001216">
+        <transaction-name>导出标准表数据</transaction-name>
+        <transaction-desc>导出标准表数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.ExportStandDataExcelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001217">
+        <transaction-name>导入标准表数据</transaction-name>
+        <transaction-desc>导入标准表数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.ImportStandDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001218">
+        <transaction-name>删除标准表</transaction-name>
+        <transaction-desc>删除标准表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.DeleteStandTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001219">
+        <transaction-name>获取组织描述</transaction-name>
+        <transaction-desc>获取组织描述</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standardpackage.transaction.GetOrgDescTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001220">
+        <transaction-name>保存标准表属性</transaction-name>
+        <transaction-desc>保存标准表属性</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.SaveStandPropertiesTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001221">
+        <transaction-name>删除二级指标表达式</transaction-name>
+        <transaction-desc>删除二级指标表达式</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.DeleteItemLexprTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001222">
+        <transaction-name>初始化指标项</transaction-name>
+        <transaction-desc>初始化指标项</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.standard.standard.transaction.LoadFieldDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!--薪资标准表end-->
+
+    <!-- 薪资历史数据交易类begin -->
+    <wfi-mapping funcid="GZ00001301">
+        <transaction-name>初始化薪资历史数据</transaction-name>
+        <transaction-desc>初始化薪资历史数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analyse.historydata.transaction.InitSalaryHistoryDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001305">
+        <transaction-name>历史数据归档</transaction-name>
+        <transaction-desc>历史数据归档</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analyse.historydata.transaction.ArchiveSalaryHistoryDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001306">
+        <transaction-name>历史数据还原</transaction-name>
+        <transaction-desc>历史数据还原</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analyse.historydata.transaction.RevertSalaryHistoryDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001307">
+        <transaction-name>删除历史数据</transaction-name>
+        <transaction-desc>删除历史数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analyse.historydata.transaction.DeleteSalaryHistoryDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001308">
+        <transaction-name>获取薪资类别列表</transaction-name>
+        <transaction-desc>获取薪资类别列表</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analyse.historydata.transaction.SearchSalaryTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="GZ00001309">
+        <transaction-name>切换薪资类别</transaction-name>
+        <transaction-desc>切换薪资类别</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.gz.analyse.historydata.transaction.SearchSalarySortHistoryDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 薪资历史数据交易类end -->
+</wf-mappings>

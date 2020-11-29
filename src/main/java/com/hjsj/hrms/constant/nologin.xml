@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ext_nologin_function>
+   <function id="xx" name="问卷参数查询"/>
+   <function id="yy" name="问卷保存"/>
+   <function id="QN70000001" name="代码型控件codeselect"/>
+   <function id="QN70000002" name="问卷保存"/>
+   <function id="QN40000002" name="web问卷保存"/>
+   <function id="ZP1000000001" name="招聘外网获取职位相关信息"/>
+   <function id="ZP1000000002" name="招聘外网获取公告相关信息"/>
+   <function id="ZP1000000003" name="招聘外网注册帐号信息"/>
+   <function id="ZP1000000009" name="招聘外网指标参数"/>
+   <function id="ZJ100000131" name="代码型指标下拉控件（用于问卷）"/>
+   <function id="ZP0000002655" name="忘记密码邮件链接"/>
+   <function id="ZP0000002654" name="忘记密码设置新密码"/>
+   <function id="ZP0000002653" name="招聘外网忘记密码发送重置密码请求"/>
+   <function id="ZP0000002113" name="招聘公示"/>
+   <function id="ZP1000000010" name="获取招聘频道列表及内容"/>
+   <function id="ZP1000000011" name="密码管理接口"/>
+   <function id="CARD0000001" name="登记表菜单查询"/>
+   <function id="CARD0000004" name="登记表展现"/>
+   <function id="PF000000008" name="获取账号规则"/>
+</ext_nologin_function>

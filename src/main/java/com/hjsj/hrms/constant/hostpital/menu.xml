@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hrp_menu>
+  <menu id="02" name="组织机构" url="/general/tipwizard/tipwizard.do?br_orginfo=link" func_id="231" mod_id="11" icon="img_a.gif" target="il_body" iconv7="nav.png" position="0,0">
+    <menu id="0201" url="" param="" icon="" func_id="2310" target="il_body" name="单位管理">
+      <menu id="02010" url="/general/inform/org/searchorgbrowse.do?b_query=link&amp;returnvalue=&amp;droit=&amp;busiPriv=1" param="" icon="" func_id="23011" target="il_body" name="信息浏览" hide="true" />
+      <menu id="02011" url="/workbench/orginfo/searchorginfo.do?b_search=link&amp;returnvalue1=&amp;backdate=&amp;action=searchorginfodata.do&amp;treetype=vorg&amp;kind=2&amp;loadtype=1&amp;target=nil_body&amp;leader=org&amp;busiPriv=1" hide="true" icon="" func_id="230600" target="il_body" name="信息维护" />
+      <menu id="02016" url="/general/template/search_bs_tree.do?b_query=link&amp;type=10&amp;res_flag=31&amp;module=11" param="" icon="" func_id="23067" target="il_body" name="机构调整" hide="true" />
+      <menu id="02018" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=7" param="" icon="" func_id="23067" target="il_body" name="机构调整" menuhide="true" />
+      <menu id="02015" url="/org/orgdata/org_tree.do?b_org=link&amp;infor=2" hide="true" icon="" func_id="23065" target="il_body" name="表格录入" />
+      　　　　　
+      <menu id="02012" url="/general/inform/org/map/searchOrgTree.do?b_search=link&amp;backdate=&amp;returnvalue=&amp;busiPriv=1" param="" icon="" func_id="23051" target="il_body" name="机构图" hide="true" />
+      <menu id="02013" url="/general/inform/org/map/searchhistoryOrgTree.do?b_search=link&amp;busiPriv=1" param="" icon="" func_id="23052" target="il_body" name="历史机构" hide="true" />
+      <!-- <menu id="02014" url="/general/sprelationmap/select_tree.do?b_init=link&amp;relationType=1" param="" icon="" func_id="230521" target="il_body" name="汇报关系图" hide="true"/>	-->
+      <menu id="02014" url="/general/sprelationmap/select_report_tree.do?b_init=link&amp;relationType=1" param="" icon="" func_id="230521" target="il_body" name="汇报关系图" hide="true" />
+    </menu>
+    <menu id="0202" url="" param="" icon="" func_id="2311" target="" name="岗位管理">
+      <menu id="02025" url="/dtgh/party/searchpartybusinesstree.do?b_query=link&amp;param=H&amp;backdate=" param="" icon="" func_id="25012" target="il_body" name="基准岗位" hide="true" />
+      <menu id="02020" url="/general/inform/pos/searchorgbrowse.do?b_query=link&amp;returnvalue=&amp;droit=&amp;busiPriv=1" param="" icon="" func_id="25011" target="il_body" name="信息浏览" hide="true" />
+      <menu id="02021" url="/workbench/dutyinfo/searchdutyinfo.do?b_search=link&amp;returnvalue1=&amp;backdate=&amp;action=searchdutyinfodata.do&amp;treetype=vorg&amp;kind=2&amp;target=nil_body&amp;loadtype=1&amp;busiPriv=1" hide="true" icon="" func_id="231101" target="il_body" name="岗位设置" />
+      <menu id="02024" url="/general/template/search_bs_tree.do?b_query=link&amp;type=11&amp;res_flag=32&amp;module=11" param="" icon="" func_id="231102" target="il_body" name="岗位调整" hide="true" />
+      <menu id="02026" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=8" param="" icon="" func_id="231102" target="il_body" name="岗位调整" menuhide="true" />
+      <menu id="02023" url="/org/orgdata/org_tree.do?b_org=link&amp;infor=3" hide="true" icon="" func_id="25065" target="il_body" name="表格录入" />
+      <menu id="02022" url="/module/card/cardCommonSearch.jsp?inforkind=4" param="" icon="" func_id="2504" target="il_body" name="岗位说明书" hide="true" qicon="gangweishuomingshu.png"/>
+    </menu>
+    <menu id="0203" url="" param="" icon="" func_id="23064,23061" target="" name="编制管理">
+      <menu id="02031" url="/org/autostatic/confset/datasynchro.do?b_init=link&amp;returnvalue=" param="" icon="" func_id="23061" target="il_body" name="数据联动" />
+      <menu id="02032" url="/org/orgpre/get_org_tree.do?b_query=link&amp;infor=2&amp;unit_type=3&amp;returnvalue=" param="" icon="" func_id="23064" target="il_body" name="编制管理" hide="true" />
+    </menu>
+    <menu id="0204" url="" param="" icon="" func_id="2313" target="" name="基础设置">
+      <menu id="02040" url="/org/orginfo/searchorgtree.do?b_query=link&amp;code=&amp;backdate=&amp;returnvalue=&amp;query=&amp;idordesc=" param="" icon="" func_id="23050" target="il_body" name="机构编码" hide="false" />
+      <menu id="02041" url="/pos/posbusiness/searchposbusinesstree.do?b_query=link&amp;first=4&amp;param=PS_CODE&amp;returnvalue=" param="" icon="" func_id="23057" target="il_body" name="职务体系设置" hide="false" />
+      <menu id="02042" url="/pos/posbusiness/searchposbusinesstree.do?b_query=link&amp;first=4&amp;param=PS_LEVEL_CODE&amp;returnvalue=" param="" icon="" func_id="23056" target="il_body" name="职务级别设置" hide="false" />
+      <menu id="02043" url="/pos/posbusiness/searchposbusinesstree.do?b_query=link&amp;first=4&amp;param=PS_C_CODE&amp;returnvalue=" param="" icon="" func_id="25059" target="il_body" name="岗位体系设置" hide="false" />
+      <menu id="02044" url="/pos/posbusiness/searchposbusinesstree.do?b_query=link&amp;first=4&amp;param=PS_C_LEVEL_CODE&amp;returnvalue=" param="" icon="" func_id="23058" target="il_body" name="岗位级别设置" hide="false" />
+    </menu>
+    <menu id="0205" url="" param="" icon="" func_id="2314" target="" name="参数设置">
+      <menu id="02050" url="/pos/posparameter/ps_parameter.do?b_search_unit=link&amp;returnvalue=" param="" icon="" func_id="23062" target="il_body" name="编制参数设置" />
+      <menu id="02051" url="/pos/posparameter/ps_parameter.do?b_search=link&amp;flag=pos" param="" icon="" func_id="25062" target="il_body" name="岗位参数设置" />
+      <menu id="02052" url="/workbench/orginfo/searchorginfo.do?b_parameter=link" param="" icon="" func_id="25066" target="il_body" name="班子参数设置" hide="false" iconv7="" menuhide="false" validate="false" />
+    </menu>
+  </menu>
+  <menu id="03" name="人员管理" url="/general/tipwizard/tipwizard.do?br_employee=link" target="il_body" func_id="260" mod_id="11" icon="img_b1.gif" iconv7="nav.png" position="0,-32" menuhide="true" validate="false">
+    <menu id="0301" url="" param="" icon="" func_id="2601" target="" name="查询浏览">
+      <menu id="03010" url="/workbench/browse/showinfo.do?b_search=link&amp;action=showinfodata.do&amp;target=nil_body&amp;userbase=&amp;flag=noself&amp;isUserEmploy=1&amp;returnvalue=&amp;isphotoview=&amp;busiPriv=1" icon="" func_id="26011" target="il_body" name="信息浏览" hide="true" />
+      <menu id="03011" url="/workbench/query/query_interface.do?b_query=link&amp;a_inforkind=1&amp;home=10&amp;returnvalue=" icon="" func_id="26010" target="il_body" name="快速查询" />
+      <menu id="03014" url="/workbench/query/query_interface.do?b_gquery=link&amp;type=1&amp;home=3&amp;returnvalue=" icon="" func_id="26010" target="il_body" name="常用查询" />
+      　　　　　　　
+      <menu id="03012" url="/workbench/query/hquery_interface.do?a_query=1&amp;b_query=link&amp;a_inforkind=1&amp;home=1&amp;returnvalue=" icon="" func_id="2601002" target="il_body" name="简单查询" />
+      <menu id="03013" url="/workbench/query/hquery_interface.do?a_query=2&amp;b_query=link&amp;a_inforkind=1&amp;home=1&amp;returnvalue=&amp;categories=" icon="" func_id="2601003" target="il_body" name="通用查询" />
+      <menu id="03015" url="/workbench/query/complex_interface.do?b_gquery=link&amp;returnvalue=" icon="" func_id="2601004" target="il_body" name="复杂查询" />
+      <menu id="03016" url="/workbench/browse/history/showinfo.do?b_search=link&amp;action=showinfodata.do&amp;target=nil_body&amp;userbase=&amp;strQuery=&amp;returnvalue=&amp;backdate=&amp;busiPriv=1" icon="" func_id="26012" target="il_body" name="历史时点" hide="true" />
+    </menu>
+    <menu id="0302" url="" param="" icon="" func_id="2602" target="" name="统计分析">
+      <menu id="03024" url="/general/static/commonstatic/statshow.do?b_ini=link&amp;infokind=1&amp;home=0&amp;returnvalue=" icon="" func_id="26023" target="il_body" name="常用统计" hide="true" />
+      <menu id="03021" url="/general/static/select_field.do?b_query=link&amp;a_inforkind=1&amp;returnvalue=" icon="" func_id="26020" target="il_body" name="简单统计" />
+      　　　　　
+      <menu id="03022" url="/general/static/select_static_fields.do?b_query=link&amp;a_inforkind=1&amp;returnvalue=" icon="" func_id="26021" target="il_body" name="通用统计" />
+      <menu id="03023" url="/general/static/two_dim_static.do?b_query=link&amp;a_inforkind=1&amp;returnvalue=" icon="" func_id="26022" target="il_body" name="二维统计" />
+      <menu id="03026" url="/general/deci/statics/crosstab.do?b_show=link&amp;type=1&amp;showdbname=1&amp;dbname=&amp;showcond=1&amp;cond=" icon="" func_id="26025" target="il_body" name="多维统计" />
+      <menu id="03025" url="/general/static/singlestatic/single_static.do?b_query=link&amp;a_inforkind=1&amp;returnvalue=" icon="" func_id="26024" target="il_body" name="单项统计" />
+    </menu>
+    <menu id="0303" url="" param="" icon="" func_id="2603" target="" name="花 名 册">
+      　　<menu id="03031" url="/module/muster/mustermanage/MusterManage.html" param="" icon="" func_id="26031" target="il_body" name="常用花名册" qicon="huamingce.png" />
+     <menu id="03033" url="/general/muster/hmuster/searchHroster.do?b_search=link&amp;nFlag=3&amp;a_inforkind=1&amp;result=0&amp;returnvalue=&amp;returnflag=menu" icon="" func_id="26032" target="il_body" name="高级花名册" hide="true" />
+    </menu>
+    <menu id="0304" url="/module/card/cardCommonSearch.jsp?inforkind=1" icon="" func_id="2604" target="il_body" name="登 记 表" hide="true" qicon="dengjibiao.png"/>
+    <menu id="0306" url="" param="" icon="" func_id="2605" target="" name="干部管理" menuhide="false">
+			<menu id="03061" url="/module/officermanage/officermanage.jsp" icon="" func_id="260501" target="il_body"  	name="干部信息"/>
+			<menu id="03063" url="/module/officermanage/officercard.html" icon="" func_id="260502" target="il_body"  	name="干部信息维护"/>
+			<menu id="03062" url="/module/officermanage/setting.jsp" icon="" func_id="260503" target="il_body"  name="参数设置"/>		
+    </menu> 
+    
+    
+    <menu id="0305" url="" param="" icon="" func_id="2606,26000" target="" name="信息维护">
+      <menu id="03051" url="/workbench/info/addinfo/add.do?b_add=add&amp;a0100=A0100&amp;i9999=I9999&amp;actiontype=new&amp;setname=A01&amp;tolastpageflag=yes&amp;flag=notself&amp;returnvalue=" icon="" func_id="26000" target="il_body" name="快速录入" hide="true" />
+      <!-- insert=0&amp; -->
+      　　
+      <menu id="03052" url="/workbench/info/showinfo.do?b_searchsort=link&amp;action=showinfodata.do&amp;isUserEmploy=1&amp;target=nil_body&amp;flag=noself&amp;returnvalue=&amp;returnvalue1=&amp;nmodule=4" icon="" func_id="26060" target="il_body" name="记录录入" hide="true" />
+      <menu id="03055" url="/templates/menu/busi_m_menu.do?b_query2=link&amp;module=11&amp;cs_module=10&amp;returnvalue=" icon="" func_id="26062" target="il_body" name="表格录入" hide="false" />
+      <menu id="03054" url="/general/inform/org_tree.do?b_query=link&amp;inforflag=1&amp;returnvalue=" icon="" func_id="26064" target="il_body" name="表格录入" hide="true" />
+      <menu id="03053" url="/general/approve/personinfo/sum.do?b_query=link&amp;returnvalue=&amp;nmodule=4&amp;task=0" icon="" func_id="26063" target="il_body" name="信息审核" />
+    </menu>
+  </menu>
+  <menu id="18" name="招聘管理" url="/general/tipwizard/tipwizard.do?br_blank=link" target="il_body" func_id="311" mod_id="7" icon="img_c.gif" iconv7="nav.png" position="0,-64">
+    <menu id="1800" url="/module/recruitment/recruitbatch/recruitbatch.html" icon="" func_id="31100" target="il_body" name="招聘批次" />
+    <menu id="1801" url="/recruitment/position/position.do?b_query=link&amp;pageNum=1&amp;flag=1&amp;pagesize=20&amp;positionType=2" icon="" func_id="31101" target="il_body" name="招聘职位" hide="true" />
+    <menu id="1802" url="/recruitment/resumecenter/searchresumecenter.do?b_search=link&amp;current=1&amp;pagesize=20&amp;from=resumeCenter" icon="" func_id="31102" target="il_body" name="简历中心" hide="true" />
+    <menu id="1803" url="/recruitment/resumecenter/searchresumecenter.do?b_search=link&amp;current=1&amp;pagesize=20&amp;from=talents" icon="" func_id="31103" target="il_body" name="人才库" hide="true" />
+	<!--
+    <menu id="1804" url="/recruitment/headhuntermanage/searchheadhuntergroup.do?b_search=link&amp;init=1" icon="" func_id="31104" target="il_body" name="猎头管理" hide="true" />
+	-->
+    <menu id="03056" url="/module/recruitment/thirdpartyresume/ShowThirdPartyRensumeParm.html" icon="" func_id="26067" target="il_body" name="第三方简历导入" />
+    <!-- 下一版 
+    	<menu id="1805" url=""  icon="" func_id="31105" target="il_body" name="招聘分析" hide="true" />  
+    	 -->
+    <menu id="1808" icon="" func_id="31108" target="il_body" name="考务管理">
+      <menu id="180803" url="/pos/posbusiness/searchposbusinesstree.do?b_all=link&amp;codesetid=79" icon="" func_id="3110803" target="il_body" name="考试科目" />
+      <menu id="180805" url="/module/recruitment/exammanage/examhall/showExamHall.html" icon="" func_id="3110805" target="il_body" name="考场设置" hide="true" />
+      <menu id="180807" url="/module/recruitment/exammanage/showExamineeList.html" icon="" func_id="3110807" target="il_body" name="考生管理" hide="true" />
+    </menu>
+    <menu id="1806" url="" icon="" func_id="31106" target="" name="招聘设置">
+      <menu id="180600" url="/recruitment/parameter/menu.do?br_menu=link&amp;returnflag=menu" icon="" func_id="3110601" target="il_body" name="参数设置">
+        <menu id="18060002" url="/module/recruitment/parameter/setNbase.html?b_query=link&amp;a_tab=tablepriv"  iconv7="" func_id="311060101" target="mil_body" name="应聘简历子集"/>
+        <menu id="18060003" url="/module/recruitment/parameter/setIndex.html"  iconv7="" func_id="311060102" target="mil_body" name="应聘简历指标"/>             
+        <menu id="18060004" url="/recruitment/parameter/configureParameter.do?b_newInit=query&amp;flag=1&amp;returnflag=menu" iconv7="" func_id="311060103" target="mil_body" name="后台参数" />
+        <menu id="18060005" url="/recruitment/parameter/configureParameter.do?b_newInit=query&amp;flag=0&amp;returnflag=menu" iconv7="" func_id="311060104" target="mil_body" name="前台参数" />
+        <menu id="18060006" url="/recruitment/parameter/init_table_data.do?b_newInit=query&amp;returnflag=menu" iconv7="" func_id="311060105" target="mil_body" name="数据初始化" />
+      </menu>
+      <menu id="180601" url="/recruitment/recruitmentProcess/searchProcess.do?b_query=link" icon="" func_id="3110602" target="il_body" name="招聘流程" />
+      <menu id="180604" url="/recruitment/emailtemplate/emailTemplateList.do?b_query=link&amp;opt=7&amp;isShowModuleType=0" iconv7="" func_id="3110603" target="il_body" menuhide="true" name="通知模板"></menu>
+      <menu id="180605" url="/sys/cms/channelTree.do?b_search=link&amp;returnflag=menu" icon="" func_id="3110604" target="il_body" name="外网内容管理" />
+      <!-- 
+   	       <menu id="180606" url="/recruitment/parameter/zpCondTemplate.do?b_query=query&amp;returnflag=menu"  icon="" func_id="3110605" target="il_body" name="简历筛选模板"/>
+   	        -->
+    </menu>
+  </menu>
+  <menu id="05" name="人员调配" func_id="320" mod_id="20" target="il_body" icon="img_d.gif" url="/general/tipwizard/tipwizard.do?br_blank=link" iconv7="nav.png" position="-32,-64" menuhide="true" validate="false">
+    <menu id="0501" url="/general/template/search_bs_tree.do?b_query=link&amp;type=1&amp;res_flag=7&amp;module=20" param="" icon="" func_id="320" target="il_body" name="业务办理" hide="true" />
+    <menu id="0503" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=1" param="" icon="" func_id="320" target="il_body" name="业务办理" menuhide="true" />
+    <menu id="0502" url="/module/template/historydata/TemplateHistoryData.html?b_query=link&amp;module_id=1" param="" icon="" func_id="32026" target="il_body" name="历史数据" hide="true" />
+  </menu>
+  <menu id="33" name="合同管理" func_id="330" mod_id="15" target="il_body" icon="img_ld.gif" url="/general/tipwizard/tipwizard.do?br_blank=link" iconv7="nav.png" position="-0,-160">
+    <menu id="3301" url="/general/template/search_bs_tree.do?b_query=link&amp;type=21&amp;res_flag=7&amp;module=15" param="" icon="" func_id="33001" target="il_body" name="合同办理" hide="true" />
+    <menu id="3305" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=3" param="" icon="" func_id="33001" target="il_body" name="合同办理" menuhide="true" />
+    <menu id="3302" url="/ht/inform/data_table.do?b_tree=link&amp;returnvalue=" param="" icon="" func_id="33002" target="il_body" name="合同台帐" hide="true" />
+    <menu id="3303" url="/ht/ctstatic/ctanalysis.do?b_tree=link&amp;returnvalue=" param="" icon="" func_id="33003" target="il_body" name="统计分析" hide="false" />
+    <menu id="3304" url="" param="" icon="" func_id="33004" target="il_body" name="参数设置">
+      <menu id="33041" url="/ht/param/ht_param_menu.do?br_query=link&amp;returnvalue=" param="" icon="" func_id="330041" target="il_body" name="基础参数" hide="false" />
+    </menu>
+  </menu>
+  <!-- 过渡性方案，从761起去掉，如仍需使用，可放开此处
+  <menu id="61" name="考勤管理" func_id="271" mod_id="6" target="il_body" url="/general/tipwizard/tipwizard.do?br_blank=link" icon="img_e.gif" iconv7="nav_kq.png" menuhide="false">
+	  <menu id="611" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=10" param="" icon="" func_id="27015" target="il_body" name="业务办理" menuhide="true" qicon="yewubanli.png"/>
+    <menu id="452" name="数据上报" url="/module/gz/salaryaccounting/SalaryAccounting.html?b_query=link&amp;salaryid=~33n~40~32HJB~40ey~38mvP~37o~40~33HJD~40&amp;imodule=0&amp;viewtype=0&amp;returnflag=noreturn" iconv7="" func_id="32402" target="il_body" menuhide="true" validate="false" />
+    <menu id="453" name="数据审批" url="/module/gz/salaryspcollect/SalarySpCollect.html?b_query=link&amp;salaryid=~33n~40~32HJB~40ey~38mvP~37o~40~33HJD~40&amp;returnflag=noreturn" iconv7="" func_id="32403" target="il_body" menuhide="true" validate="false" />
+	  <menu id="614" name="假期管理" url="/module/kq/holiday/Holiday.html" icon="" func_id="2713" target="il_body"  hide="true" qicon="jiaqiguanli.png"/>
+	  <menu id="615" url="" param="" icon="" func_id="27032,27034,27036" target="" name="参数设置"> 
+	      <menu id="61501" url="/kq/options/search_feast.do?b_query=link&amp;returnvalue=" icon="" func_id="27032" target="il_body" name="节假日维护" qicon="jiejiariweihu.png"/>
+	      <menu id="61502" url="/kq/options/kq_rest.do?b_query=link&amp;returnvalue=" icon="" func_id="27034" target="il_body" name="公休日维护" qicon="gongxiuriweihu.png"/>
+	      <menu id="61503" url="/kq/options/search_rest.do?b_query=link&amp;mege=4&amp;returnvalue=" icon="" func_id="27036" target="il_body" name="公休日倒休" qicon="gongxiuridaoxiu.png"/>
+	  </menu>
+	</menu>	
+	-->
+    <menu id="63" name="考勤管理" func_id="272" mod_id="22" target="il_body" url="/general/tipwizard/tipwizard.do?br_blank=link" icon="img_e.gif" iconv7="nav.png" position="-32,-160" menuhide="true">
+	  <menu id="631" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=10" param="" icon="" func_id="27201" target="il_body" name="考勤申请" menuhide="true" qicon="yewubanli.png"/>
+	  <menu id="636" url="/module/kq/card/KqCardData.html" param="" icon="" func_id="27206" target="il_body" name="打卡数据" hide="false"/>
+	  <menu id="632" url="" param="" icon="" func_id="27202" target="il_body" name="排班管理" hide="false">
+	 	<menu id="63201" url="/module/kq/config/shifts/Shifts.html" param="" icon="" func_id="2720201" target="il_body" name="班次管理" hide="false"/>
+	 	<menu id="63202" url="/module/kq/config/shiftgroup/ShiftGroup.html" param="" icon="" func_id="2720202" target="il_body" name="班组管理" hide="false"/>
+	 	<menu id="63203" url="/module/kq/shiftcheck/ShiftCheck.html" param="" icon="" func_id="2720203" target="il_body" name="排班审查" hide="false"/>
+	  </menu>
+	   <menu id="633" url="" param="" icon="" func_id="27203" target="il_body" name="考勤数据" hide="false">
+	 	<menu id="63301" url="/module/kq/kqdata/KqDataAppeal.html" param="" icon="" func_id="2720301" target="il_body" name="数据上报" hide="false"/>
+	 	<menu id="63302" url="/module/kq/kqdata/KqDataSp.html" param="" icon="" func_id="2720302" target="il_body" name="数据审批" hide="false"/>
+	  </menu>
+      <menu id="63401" url="/module/kq/holiday/Holiday.html" icon="" func_id="27204" target="il_body" name="假期管理" hide="true" qicon="jiaqiguanli.png"/>
+	  <menu id="635" url="" param="" icon="" func_id="27205" target="il_body" name="业务配置" hide="false">
+	  	<menu id="63507" url="/module/kq/config/parameter/Parameter.html" param="" icon="" func_id="2720507" target="il_body" name="考勤参数" hide="false"/>
+	 	<menu id="63501" url="/module/kq/config/item/item.html" param="" icon="" func_id="2720503" target="il_body" name="考勤项目" hide="false"/>
+	 	<menu id="63502" url="/module/kq/config/scheme/Scheme.html" param="" icon="" func_id="2720501" target="il_body" name="考勤方案" hide="false"/>
+	 	<menu id="63503" url="/module/kq/config/period/Period.html" param="" icon="" func_id="2720502" target="il_body" name="考勤期间" hide="false"/>
+	 	<!-- <menu id="63504" url="/kq/options/search_feast.do?b_query=link&amp;returnvalue=" param="" icon="" func_id="27032" target="il_body" name="节假日维护" hide="false"/>
+	 	<menu id="63505" url="/kq/options/kq_rest.do?b_query=link&amp;returnvalue=" param="" icon="" func_id="27034" target="il_body" name="公休日维护" hide="false"/>
+	 	<menu id="63506" url="/kq/options/search_rest.do?b_query=link&amp;mege=4&amp;returnvalue=" param="" icon="" func_id="27036" target="il_body" name="公休日倒休" hide="false"/> -->
+	 	<menu id="63504" url="/module/kq/config/calendar/Calendar.html" param="" icon="" func_id="27032" target="il_body" name="工作日历" qicon="jiejiariweihu.png"/>
+	  </menu>
+	</menu>
+   <menu id="08" name="薪资管理" url="/general/tipwizard/tipwizard.do?br_compensation=link" target="il_body" func_id="324" mod_id="8" icon="img_g.gif" iconv7="nav.png" position="-32,-224">
+    <menu id="0801" url="" param="" icon="" func_id="32401" target="" name="薪资变动">
+      <menu id="08010" url="/general/template/search_bs_tree.do?b_query=link&amp;type=2&amp;res_flag=8&amp;module=8" icon="" func_id="32401" target="il_body" name="薪资变动" hide="true" />
+      <menu id="08013" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=2" icon="" func_id="32401" target="il_body" name="薪资变动" menuhide="true" />
+      <menu id="08012" url="/module/template/historydata/TemplateHistoryData.html?b_query=link&amp;module_id=2" param="" icon="" func_id="324010123" target="il_body" name="历史数据" hide="true" />
+    </menu>
+    <menu id="0802" url="" param="" icon="" func_id="32402,32403,32404,324021501,3240214,32416,32415,32417,32421" target="" name="薪资发放">
+      <menu id="080201" url="/module/gz/salarytemplate/SalaryTemplate.html?b_query=link&amp;viewtype=0&amp;imodule=0" icon="" func_id="32402" target="il_body" name="薪资发放" hide="false" />
+      <menu id="080202" url="/module/gz/salarytemplate/SalaryTemplate.html?b_query=link&amp;viewtype=1&amp;imodule=0" icon="" func_id="32403" target="il_body" name="薪资审批" hide="false" />
+      <menu id="08026" url="/gz/gz_accounting/gz_sp_setcollectlist.do?b_querycollect=link&amp;flow_flag=1&amp;gz_module=0&amp;returnvalue=menu" icon="" func_id="32416" target="il_body" name="薪资汇总审批" hide="false" />
+      <menu id="08023" url="/gz/premium/premium_allocate/monthPremiumList.do?b_query=link" icon="" func_id="324021501" target="il_body" name="月奖金管理" hide="true" />
+      <menu id="08024" url="/gz/bonus/inform.do?br_orgtree=link&amp;flow_flag=1&amp;gz_module=0" icon="" func_id="3240214" target="il_body" name="单项奖金管理" hide="true" />
+      <menu id="08029" url="/module/gz/tax/SearchTax.html" icon="" func_id="32404" target="il_body" name="所得税管理" />
+      <menu id="08025" url="/gz/gz_accounting/sp_flow/init_sp_flow.do?b_init=link&amp;gz_module=0&amp;init=first&amp;binit=first&amp;cinit=first" icon="" func_id="32415" target="il_body" name="审批流程" hide="false" />
+			<menu id="08030" url="/module/gz/monitor/ProcessMonitor.html?b_query=link&amp;viewtype=0&amp;imodule=0" icon="" func_id="32415" target="il_body" name="审批流程" hide="false" qicon="shenpiliucheng.png"/>	
+      <menu id="08028" url="/gz/gz_accounting/voucher/financial_voucher.do?br_query=link" icon="" func_id="32417" target="il_body" name="财务凭证" hide="false" />
+			<menu id="08031" url="/module/gz/zxdeclare/DeclareList.html" icon="" func_id="3240233" target="il_body" name="个税专项附加申报"/>
+    </menu>
+    <menu id="0803" url="" param="" icon="" func_id="32405" target="" name="薪资总额">
+      <menu id="08030" url="/gz/gz_amount/gz_gross_tree.do?b_query=link&amp;returnflag=menu" icon="" func_id="32405" target="il_body" name="薪资总额" hide="true" />
+    </menu>
+    <menu id="0804" url="" param="" icon="" func_id="32407" target="" name="薪资分析">
+      <menu id="08040" url="/module/gz/analysistables/analysistable/AnalysisTables.html?imodule=0" icon="" func_id="324071" target="il_body" name="分析报表" hide="false" qicon="xinzifenxibiao.png"/>
+      <!-- <menu id="08040" url="/gz/gz_analyse/gzAnalyseList.do?b_query=link&amp;gz_module=0&amp;returnflag=menu" icon="" func_id="324071" target="il_body" name="薪资分析表" hide="false" qicon="xinzifenxibiao.png"/> -->
+  	  <menu id="08041" url="/gz/gz_analyse/gzAnalyseChart.do?br_query=link" icon="" func_id="324072" target="il_body" name="薪资分析图" hide="true" qicon="xinzifenxitu.png"/>
+      <menu id="08042" url="/gz/gz_analyse/gz_fare/fare_analyse_orgtree.do?b_query=query&amp;opt=init&amp;type=0" icon="" func_id="324073" target="il_body" name="发放进展表" hide="true" />
+		    <menu id="08043" url="/module/gz/analyse/historydata/SalaryHistoryData.html?b_query=link" icon="" func_id="324074" target="il_body" name="薪资数据" hide="false" qicon="xinzilishishuju.png"/>
+    </menu>
+    <menu id="0805" url="" param="" icon="" func_id="32408,32409,32410,32411,32412,32413,32414,324021502,3240214,32418" target="" name="参数设置">
+      <menu id="08050" url="/org/gzdatamaint/gzdatamaint.do?b_addsubclass=link&amp;tagname=1&amp;infor=2&amp;gzflag=2&amp;returnflag=menu" icon="" func_id="32412" target="il_body" name="相关子集设置" />
+      <menu id="08051" url="/org/gzdatamaint/gz_org_tree.do?b_query=link&amp;infor=2&amp;gzflag=2&amp;returnflag=menu" icon="" func_id="32413" target="il_body" name="基础数据维护" hide="true" />
+      <menu id="08059" url="/module/gz/salarytype/SalaryType.html?b_query=link&amp;imodule=0&amp;returnvalue=1" icon="" func_id="32408" target="il_body" name="薪资类别" />
+			<!--<menu id="08053" url="/gz/templateset/tax_table/initTaxTable.do?b_init=init&amp;returnflag=menu" icon="" func_id="32409" target="il_body" name="税率表" qicon="shuilvbiao.png"/>-->
+			<menu id="08053" url="/module/gz/templateset/taxtable/TaxTableSet.html?b_query=link" icon="" func_id="32409" target="il_body" name="税率表" qicon="shuilvbiao.png"/>
+<!--			<menu id="08054" url="/gz/templateset/standard/standardPackage.do?b_query=init&amp;returnflag=menu" icon="" func_id="32410" target="il_body" name="薪资标准" qicon="xinzibiaozhun.png"/>-->
+			<menu id="08054" url="/module/gz/templateset/standard/Standard.html" icon="" func_id="32410" target="il_body" name="薪资标准" qicon="xinzibiaozhun.png"/>
+      <menu id="08055" url="/gz/gz_amount/init_parameter_config.do?b_query=link&amp;opt=init&amp;returnflag=menu" icon="" func_id="32411" target="il_body" name="薪资总额参数" />
+      <menu id="08058" url="/gz/voucher/financial_voucher.do?b_query=link&amp;opt=init&amp;returnflag=menu&amp;showflag=1" icon="" func_id="32414" target="il_body" name="财务凭证定义" />
+      <menu id="08056" url="/gz/premium/param.do?b_query=link" icon="" func_id="324021502" target="il_body" name="月奖金参数设置" />
+      <menu id="08057" url="/gz/bonus/param.do?br_menu=link" icon="" func_id="3240214" target="il_body" name="单项奖金参数设置" />
+	  <menu id="080510" url="/gz/parameter/menu.do?br_menu=link&amp;returnflag=menu" icon="" func_id="32418" target="il_body" name="应用配置">
+		<menu id="08051001" url="/dtgh/party/person/partyfees_parameter.html" icon="" func_id="3241801" target="mil_body" name="党费收缴"/>
+		<menu id="08051002" url="/module/gz/mysalary/MySalaryParameter.html" icon="" func_id="3241802" target="mil_body" name="我的薪酬"/>
+		<menu id="08051003" url="/module/gz/mytax/MyTaxParameter.html" icon="" func_id="3241803" target="mil_body" name="我的个税"/>
+	  </menu>	
+    </menu>
+  </menu>
+  <menu id="09" name="保险管理" url="/general/tipwizard/tipwizard.do?br_Insurance=link" target="il_body" func_id="325" mod_id="14" icon="img_k.gif" iconv7="nav.png" position="0,-256">
+    <menu id="0901" url="" param="" icon="" func_id="32501" target="" name="保险核定">
+      <menu id="09010" url="/general/template/search_bs_tree.do?b_query=link&amp;type=8&amp;res_flag=17&amp;module=14" icon="" func_id="32501" target="il_body" name="保险核定" hide="true" />
+      <menu id="09013" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=4" icon="" func_id="32501" target="il_body" name="保险核定" menuhide="true" />
+      <menu id="09012" url="/module/template/historydata/TemplateHistoryData.html?b_query=link&amp;module_id=4" param="" icon="" func_id="325010123" target="il_body" name="历史数据" hide="true" />
+    </menu>
+    <menu id="0902" url="" param="" icon="" func_id="32502,32503,32516,32508" target="" name="缴费核算">
+      <menu id="09024" url="/module/gz/salarytemplate/SalaryTemplate.html?b_query=link&amp;viewtype=0&amp;imodule=1" icon="" func_id="32502" target="il_body" name="缴费核算" hide="false" />
+      <menu id="09025" url="/module/gz/salarytemplate/SalaryTemplate.html?b_query=link&amp;viewtype=1&amp;imodule=1" icon="" func_id="32503" target="il_body" name="缴费审批" hide="false" />
+      <menu id="09023" url="/gz/gz_accounting/gz_sp_setcollectlist.do?b_querycollect=link&amp;flow_flag=1&amp;gz_module=1&amp;returnvalue=menu" icon="" func_id="32516" target="il_body" name="缴费汇总审批" hide="false" />
+      <menu id="09022" url="/gz/gz_accounting/sp_flow/init_sp_flow.do?b_init=link&amp;gz_module=1&amp;init=first&amp;binit=first&amp;cinit=first" icon="" func_id="32508" target="il_body" name="审批流程" hide="false" />
+		  <menu id="09026" url="/module/gz/monitor/ProcessMonitor.html?b_query=link&amp;viewtype=0&amp;imodule=1" icon="" func_id="32508" target="il_body" name="审批流程" hide="false"/>
+    </menu>
+    <menu id="0903" url="" param="" icon="" func_id="32504" target="" name="保险分析">
+      <menu id="09030" url="/module/gz/analysistables/analysistable/AnalysisTables.html?imodule=1" icon="" func_id="3250401" target="il_body" name="分析报表" hide="false" qicon="baoxianfenxi.png"/>
+      <!-- <menu id="09030" url="/gz/gz_analyse/gzAnalyseList.do?b_query=link&amp;gz_module=1&amp;returnflag=menu" icon="" func_id="3250401" target="il_body" name="保险分析" hide="false" /> -->
+		    <menu id="09031" url="/gz/gz_analyse/historydata/salary_set_list.do?b_query=query&amp;gz_module=1" icon="" func_id="3250402" target="il_body" name="保险数据" hide="false" qicon="baoxianlishishuju.png"/>
+    </menu>
+    <menu id="0904" url="" param="" icon="" func_id="32505,32506,32507" target="" name="参数设置">
+      <menu id="09040" url="/org/gzdatamaint/gzdatamaint.do?b_addsubclass=link&amp;tagname=1&amp;infor=2&amp;gzflag=3&amp;returnflag=menu" icon="" func_id="32506" target="il_body" name="相关子集设置" />
+      <menu id="09041" url="/org/gzdatamaint/gz_org_tree.do?b_query=link&amp;infor=2&amp;gzflag=3&amp;returnflag=menu" icon="" func_id="32507" target="il_body" name="基础数据维护" hide="true" />
+      <menu id="09043" url="/module/gz/salarytype/SalaryType.html?b_query=link&amp;imodule=1&amp;returnvalue=1" icon="" func_id="32505" target="il_body" name="险种类别" />
+    </menu>
+  </menu>
+  <menu id="56" name="职称评审" func_id="380" mod_id="45" target="il_body" icon="img_l.gif" url="/module/jobtitle/reviewmeeting/ReviewMeetingPortal.html" iconv7="nav.png" position="-32,-128">
+    <menu id="561" url="/module/qualifications/Qualifications.html?b_query=link&amp;module_type=1" param="" icon="" func_id="38001" target="il_body" name="评审条件" hide="false" />
+    <menu id="562" url="" param="" icon="" func_id="38002" target="il_body" name="评委会管理" hide="true">
+      <menu id="56201" url="/module/jobtitle/experts/ExpertDatabase.html?b_query=link" param="" icon="" func_id="3800201" target="il_body" name="专家库" hide="false" />
+      <menu id="56202" url="/module/jobtitle/committee/Committee.html?b_query=link" param="" icon="" func_id="3800202" target="il_body" name="聘委会成员" hide="false" />
+      <menu id="56203" url="/module/jobtitle/subjects/Subjects.html?b_query=link" param="" icon="" func_id="3800203" target="il_body" name="学科组成员" hide="false" />
+    </menu>
+    <!--
+	   <menu id="563" url="" param="" icon="" func_id="38003" target="il_body" name="职称认定" hide="false"/>
+	   <menu id="564" url="" param="" icon="" func_id="38004" target="il_body" name="考试认定" hide="false"/> -->
+    <menu id="565" url="" param="" icon="" func_id="38005" target="il_body" name="职称评审" hide="false">
+      <!--<menu id="56501" url="" param="" icon="" func_id="3800501" target="il_body" name="外语免考备案" hide="false"/>
+	   		<menu id="56502" url="" param="" icon="" func_id="3800502" target="il_body" name="破格申请审批" hide="false"/>
+	   		<menu id="56503" url="" param="" icon="" func_id="3800503" target="il_body" name="论文送审" hide="false"/>
+	   		<menu id="56504" url="" param="" icon="" func_id="3800504" target="il_body" name="材料审查" hide="false"/> -->
+      <menu id="56505" url="/module/jobtitle/reviewmeeting/ReviewMeetingPortal.html" param="" icon="" func_id="3800505" target="il_body" name="评审会议" hide="false" />
+      <menu id="56506" url="/module/jobtitle/reviewfile/ReviewFile.html?b_query=link" param="" icon="" func_id="3800506" target="il_body" name="上会材料" hide="false" />
+      <!--<menu id="56507" url="" param="" icon="" func_id="3800507" target="il_body" name="投票表决结果" hide="false"/>
+	   		<menu id="56508" url="" param="" icon="" func_id="3800508" target="il_body" name="结果公示" hide="false"/>
+	   		<menu id="56509" url="" param="" icon="" func_id="3800509" target="il_body" name="聘任审批" hide="false"/>
+	   		<menu id="56510" url="" param="" icon="" func_id="3800510" target="il_body" name="证书管理" hide="false"/>  -->
+    </menu>
+    <menu id="566" url="/module/jobtitle/configfile/ConfigFile.html?b_query=link" param="" icon="" func_id="38006" target="il_body" name="配置" hide="false" />
+  </menu>
+  <menu id="40" name="出国管理" func_id="321" mod_id="18" target="il_body" icon="img_l.gif" url="/general/tipwizard/tipwizard.do?br_blank=link" iconv7="nav.png" position="-32,-96">
+    <menu id="401" url="/general/template/search_bs_tree.do?b_query=link&amp;type=12&amp;res_flag=7&amp;module=18" param="" icon="" func_id="3210" target="il_body" name="出国办理" hide="true" />
+    <menu id="402" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=5" param="" icon="" func_id="3210" target="il_body" name="出国办理" menuhide="true" />
+    <menu id="405" url="/general/template/goabroad/collect/searchstat.do?b_query=link&amp;action=searchstatdata.do&amp;target=mil_body&amp;tempflag=" param="" icon="" func_id="3212" target="il_body" name="汇总统计" hide="true" />
+  </menu>
+  <menu id="19" url="/module/system/questionnaire/MyQuestionnaire.html" param="" iconv7="nav.png" position="-32,-352" func_id="40" mod_id="46" icon="img_l.gif" subsys="" target="il_body" name="问卷调查" be_link="true" />
+  <menu id="15" name="培训管理" url="/general/tipwizard/tipwizard.do?br_blank=link" target="il_body" func_id="323" mod_id="10" icon="img_px.png" iconv7="nav.png" position="-32,-256" menuhide="true" validate="false">
+    <menu id="1501" name="培训进修" url="" iconv7="" func_id="32301" target="il_body" menuhide="true" validate="false">
+      <menu id="150101" name="计划申报" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=255" iconv7="" func_id="3230101" target="il_body" menuhide="true" validate="false" />
+      <menu id="150102" name="进修申请" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=256" iconv7="" func_id="3230102" target="il_body" menuhide="true" validate="false" />
+      <menu id="150103" name="进修结果登记" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=258" iconv7="" func_id="3230103" target="il_body" menuhide="true" validate="false" />
+      <menu id="150104" name="国内访学申请" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=257" iconv7="" func_id="3230104" target="il_body" menuhide="true" validate="false" />
+      <menu id="150105" name="国内访学结果登记" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=259" iconv7="" func_id="3230105" target="il_body" menuhide="true" validate="false" />
+      <menu id="150106" name="其他培训信息登记" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=260" iconv7="" func_id="3230106" target="il_body" menuhide="true" validate="false" />
+      <menu id="1505" name="职业资格" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=247" iconv7="" func_id="3230107" target="il_body" menuhide="true" validate="false" />
+    </menu>
+    <menu id="1504" name="博士后管理" url="" iconv7="" func_id="32304" target="il_body" menuhide="true" validate="false">
+      <menu id="150402" name="进站管理" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=262" iconv7="" func_id="3230402" target="il_body" menuhide="true" validate="false" />
+      <menu id="150403" name="中期考核" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=263" iconv7="" func_id="3230403" target="il_body" menuhide="true" validate="false" />
+      <menu id="150404" name="出站管理" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=264" iconv7="" func_id="3230404" target="il_body" menuhide="true" validate="false" />
+      <menu id="150405" name="退站管理" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=265" iconv7="" func_id="3230405" target="il_body" menuhide="true" validate="false" />
+    </menu>    
+  </menu>
+  <menu id="07" name="360评估" url="/general/tipwizard/tipwizard.do?br_performance=link" target="il_body" func_id="326" mod_id="9" icon="img_f.gif" iconv7="nav.png" position="-32,-480" menuhide="true" validate="false">
+    <menu id="0701" url="" param="" icon="" func_id="32601" target="" name="考核体系">
+      <menu id="07010" url="/performance/kh_system/kh_field/kh_field_tree.do?b_query=link&amp;subsys_id=33&amp;returnflag=menu" icon="" func_id="3260101" target="il_body" name="考核指标" hide="true" />
+      <menu id="07011" url="/performance/kh_system/kh_template/kh_template_tree.do?b_query=link&amp;subsys_id=33&amp;isVisible=1&amp;method=0&amp;templateId=-1&amp;returnflag=menu" icon="" func_id="3260102" target="il_body" name="考核模板" hide="true" />
+    </menu>
+    <menu id="0702" url="" param="" icon="" func_id="32602" target="" name="考核计划">
+      <menu id="07020" url="/performance/kh_plan/khplanorgtree.do?b_query=link&amp;busitype=0&amp;flow_flag=0&amp;gz_module=0&amp;returnflag=menu" icon="" func_id="32602" target="il_body" name="考核计划" hide="true" />
+    </menu>
+    <menu id="0703" url="" param="" icon="" func_id="32603" target="" name="考核实施">
+      <menu id="07030" url="/performance/kh_plan/performPlanList.do?b_query=link&amp;busitype=0&amp;jxmodul=1&amp;returnflag=menu" icon="" func_id="3260301" target="il_body" name="考核实施" hide="true" />
+      <menu id="07031" url="/performance/kh_plan/performPlanList.do?b_query=link&amp;busitype=0&amp;jxmodul=3&amp;returnflag=menu" icon="" func_id="3260302" target="il_body" name="数据采集" hide="true" />
+    </menu>
+    <menu id="0704" url="" param="" icon="" func_id="32604" target="" name="绩效评估">
+      <menu id="07040" url="/performance/kh_plan/performPlanList.do?b_query=link&amp;busitype=0&amp;jxmodul=2&amp;returnflag=menu" icon="" func_id="32604" target="il_body" name="绩效评估" hide="true" />
+    </menu>
+    <menu id="0705" url="" param="" icon="" func_id="32605" target="" name="绩效分析">
+      <menu id="07050" url="/performance/perAnalyse.do?br_query=link&amp;busitype=0&amp;returnflag=menu" icon="" func_id="32605" target="il_body" name="绩效分析" hide="true" />
+    </menu>
+    <menu id="0706" url="" param="" icon="" func_id="32606" target="" name="参数设置">
+      <menu id="07060" url="/performance/options/checkBodyObjectList.do?b_query=link&amp;bodyType=0&amp;returnflag=menu" icon="" func_id="3260601" target="il_body" name="主体类别" />
+      <menu id="07061" url="/performance/options/checkBodyObjectList.do?b_query=link&amp;bodyType=1&amp;returnflag=menu" icon="" func_id="3260602" target="il_body" name="对象类别" />
+      <menu id="07062" url="/performance/options/perKnowList.do?b_query=link&amp;returnflag=menu" icon="" func_id="3260603" target="il_body" name="了解程度" />
+      <menu id="07063" url="/performance/options/perDegreeList.do?b_query=link&amp;busitype=0&amp;returnflag=menu" icon="" func_id="3260604" target="il_body" name="等级分类" />
+      <menu id="07064" url="/performance/options/perParamList.do?b_query=link&amp;returnflag=menu" icon="" func_id="3260605" target="il_body" name="评语模板" />
+      <menu id="07066" url="/performance/per_initData.do?b_query=link&amp;busitype=0&amp;returnflag=menu" icon="" func_id="3260606" target="il_body" name="数据初始化" />
+      <menu id="07067" url="/performance/options/kh_relation.do?br_int=link&amp;returnflag=menu" icon="" func_id="3260607" target="il_body" name="考核关系" />
+      <menu id="07065" url="/performance/options/configParameter.do?b_query=link&amp;busitype=0&amp;returnflag=menu" icon="" func_id="3260608" target="il_body" name="配置参数" />
+	  <menu id="07068" url="/recruitment/emailtemplate/emailTemplateList.do?b_query=link&amp;opt=9&amp;isShowModuleType=1&amp;isShowInsertFormula=1&amp;isShowModifyFormula=1" icon="" func_id="3260609" target="il_body" name="通知模板"/>
+    </menu>
+  </menu>
+  <menu id="36" name="绩效考核" url="/general/tipwizard/tipwizard.do?br_blank=link" func_id="391" mod_id="9" icon="img_wd.png" target="il_body" iconv7="nav.png" position="-32,-192" menuhide="true" validate="false">
+    <menu id="3601" name="聘期考核" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=243" iconv7="" func_id="39101" target="il_body" menuhide="true" validate="false" />
+    <menu id="3602" name="卫技岗位年度考核" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=240" iconv7="" func_id="39102" target="il_body" menuhide="true" validate="false" />
+    <menu id="3603" name="非卫技岗位年度考核" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=241" iconv7="" func_id="39103" target="il_body" menuhide="true" validate="false" />
+    <menu id="3604" name="未参加考核登记" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=1&amp;return_flag=14&amp;tab_id=242" iconv7="" func_id="39104" target="il_body" menuhide="true" validate="false" />
+  </menu>
+  <menu id="10" name="文档管理" func_id="340,280" mod_id="12" target="il_body" icon="img_wd.png" url="/selfservice/lawbase/lawtext/law_maintenance0.do?b_init=link&amp;basetype=5&amp;returnvalue=" iconv7="nav.png" position="0,-288">
+    <menu id="101" url="" icon="" func_id="340" target="" name="发文管理">
+      <menu id="1010" url="/selfservice/lawbase/lawtext/law_maintenance0.do?b_init=link&amp;basetype=5&amp;returnvalue=" icon="" func_id="3401" target="il_body" name="文档浏览" hide="true" />
+      <menu id="1011" url="/selfservice/lawbase/law_maintenance0.do?b_init=link&amp;basetype=5&amp;returnvalue=" icon="" func_id="3402" target="il_body" name="文档维护" hide="true" />
+    </menu>
+    <menu id="102" url="" icon="" func_id="280" target="" name="制度政策">
+      <menu id="1020" url="/selfservice/lawbase/lawtext/law_maintenance0.do?b_init=link&amp;basetype=1&amp;returnvalue=" icon="" func_id="2801" target="il_body" name="制度浏览" hide="true" />
+      <menu id="1021" url="/selfservice/lawbase/law_maintenance0.do?b_init=link&amp;basetype=1&amp;returnvalue=" icon="" func_id="2802" target="il_body" name="制度维护" hide="true" />
+    </menu>
+  </menu>
+  <menu id="21" name="领导桌面" url="/module/bi_toolbox/index.html" icon="img_m.gif" func_id="AK" mod_id="34" be_link="true"  target="il_body" menuhide="" iconv7="nav.png" position="-32,-288">
+    <menu id="2110" name="综合看板" url="/report/ReportServlet?reportName=HRBI/BIHome_GQ.frm" iconv7="" func_id="AK0" target="i_body" menuhide="true" validate="false" />
+    <menu id="2111" name="人力资本构成" url="" iconv7="" func_id="AK1" target="i_body" menuhide="true" validate="false">
+      <menu id="21110" name="全员分析" url="/report/ReportServlet?reportName=HRBI/HCC/HCC_EntireStaff.frm" iconv7="" func_id="AK11" target="i_body" menuhide="true" validate="false" />
+      <menu id="21111" name="领导人员" url="/report/ReportServlet?reportName=HRBI/HCC/HCC_Leader.frm" iconv7="" func_id="AK12" target="i_body" menuhide="true" validate="false" />
+      <menu id="21112" name="专业人才" url="/report/ReportServlet?reportName=HRBI/HCC/HCC_Expert.frm" iconv7="" func_id="AK13" target="i_body" menuhide="true" validate="false" />
+      <menu id="21113" name="人员流动" url="/report/ReportServlet?reportName=HRBI/HCC/HCC_StaffTurnover.frm" iconv7="" func_id="AK14" target="i_body" menuhide="true" validate="false" />
+    </menu>
+    <menu id="2112" name="人力资本运作" url="/report/ReportServlet?reportName=HRBI/HCO/HCO_SalaryMain.frm" iconv7="" func_id="AK2" target="i_body" menuhide="true" validate="false" />
+    <menu id="2113" name="人力资本效能" url="/report/ReportServlet?reportName=HRBI/HCE/HCE_Main.frm" iconv7="" func_id="AK3" target="i_body" menuhide="true" validate="false" />
+  </menu>
+  <menu id="12" name="报表管理" url="/general/tipwizard/tipwizard.do?br_report=link" target="il_body" func_id="290" mod_id="13" icon="img_q.gif" iconv7="nav.png" position="0,-320">
+    <menu id="1201" url="" icon="" func_id="2901" target="" name="自动生成">
+      <menu id="12010" url="/report/auto_fill_report/reportlist.do?b_query=link&amp;sortId=-1&amp;print=5&amp;checkFlag=0&amp;obj1=2&amp;returnvalue=" icon="" func_id="29010" target="il_body" name="提取数据" />
+      <menu id="12011" url="/report/auto_fill_report/options.do?b_query=link&amp;returnvalue=" icon="" func_id="29011" target="il_body" name="取数范围" />
+    </menu>
+    <menu id="1202" url="" icon="" func_id="2902" target="" name="编辑报表">
+      <menu id="12020" url="/report/edit_report/reportSettree.do?&amp;returnvalue=" icon="" func_id="" target="il_body" name="编辑报表" hide="true" />
+      <menu id="12021" url="/report/edit_report/receive_report/receive_report.jsp?editflag=1" icon="" func_id="29024" target="il_body" name="接收报盘" />
+    </menu>
+    <menu id="1203" url="" icon="" func_id="2903" target="" name="报表汇总">
+      <menu id="12030" url="/report/edit_report/receive_report/receive_report.jsp" icon="" func_id="29030" target="il_body" name="接收报盘" />
+      <menu id="12031" url="/report/edit_report/sendReceiveView.do?b_query=b_query" icon="" func_id="29033" target="il_body" name="表式收发" />
+      <menu id="12032" url="/report/edit_collect/reportCollect.do?b_initCollect=link&amp;sortid=@&amp;returnvalue=" icon="" func_id="29031" target="il_body" name="报表汇总" />
+      <menu id="12033" url="/report/report_collect/reportOrgCollecttree.do?b_init=int&amp;returnvalue=" icon="" func_id="29032" target="il_body" name="编辑报表" hide="true" />
+      <menu id="12034" url="/report/report_pigeonhole/reportBatchPigeonhole.do?b_int=int&amp;returnvalue=" icon="" func_id="29034" target="il_body" name="报表归档" />
+    </menu>
+    <menu id="1204" url="" icon="" func_id="2904" target="" name="报表分析">
+      <menu id="12040" url="/report/report_analyse/reportunittree.do?returnvalue=" icon="" func_id="29040" target="il_body" name="报表浏览" hide="true" />
+    </menu>
+    <menu id="1206" url="" icon="" func_id="2906" target="" name="精算报表">
+      <menu id="12061" url="/report/actuarial_report/fill_cycle.do?b_query=query" icon="" func_id="290601" target="il_body" name="填报周期" hide="true" />
+      <menu id="12062" url="/report/actuarial_report/edit_report/editreportlist.do?b_query=lisk" icon="" func_id="290602" target="il_body" name="编辑报表" hide="true" />
+      <menu id="12063" url="/report/actuarial_report/report_collect.do?b_query0=query" icon="" func_id="290603" target="il_body" name="报表汇总" hide="true" />
+      <menu id="12064" url="/report/actuarial_report/validate_rule.do?br_query=query" icon="" func_id="290604" target="il_body" name="校验规则" hide="true" />
+    </menu>
+    <menu id="1205" url="" icon="" func_id="2905" target="" name="填报单位">
+      <menu id="12050" url="/report/org_maintenance/reportunittree.do?returnvalue=&amp;backdate=" icon="" func_id="29050" target="il_body" name="填报单位维护" hide="true" />
+      <menu id="12051" url="/report/report_state/reportunittree.do?b_init=init&amp;returnvalue=" icon="" func_id="29052" target="il_body" name="按组织机构查阅报表状态" hide="true" />
+      <menu id="12052" url="/report/report_status.do?b_query=query&amp;opt=init&amp;returnvalue=" icon="" func_id="29053" target="il_body" name="按报表分类查阅报表状态" hide="true" />
+    </menu>
+  </menu>
+  <menu id="20" name="自助服务" url="/general/tipwizard/tipwizard.do?br_blank=link" param="" icon="img_b.gif" func_id="0,11,01,03,05,04,09,06,0A,0B,0C,0F,0D" mod_id="0,1,2,3,4,5,22,29,32" target="il_body" iconv7="nav.png" position="-32,-320">
+    <menu id="2001" name="HR服务台" url="" icon="" func_id="11" target="il_body" mod_id="0">
+      <menu id="200102" url="/selfservice/lawbase/lawtext/law_maintenance0.do?b_init=link&amp;basetype=1" icon="" mod_id="12" func_id="1107" target="il_body" name="规章制度" />
+      <menu id="200103" url="/selfservice/downfile/downfilelist.do?b_query=link&amp;fileflag=2" icon="" func_id="1108" target="il_body" name="办事流程" />
+      <menu id="200104" url="/selfservice/downfile/downfilelist.do?b_query=link&amp;fileflag=1" icon="" func_id="1109" target="il_body" name="人事表格" />
+      <menu id="200105" url="/selfservice/propose/searchpropose.do?b_query=link" icon="" func_id="1105" target="il_body" name="意见箱" />
+      <menu id="200106" url="/selfservice/propose/searchconsulant.do?b_query=link" icon="" func_id="1106" target="il_body" name="咨询台" />
+      <menu id="200107" url="/general/kanban/kanban.do?b_query=link&amp;clearwhere=1" icon="" func_id="1112" target="il_body" name="看板管理" />
+      <menu id="200108" url="/selfservice/addressbook/initqueryaddressbook.do?b_init=link&amp;query=1&amp;action=queryaddressbook.do&amp;target=mil_body" icon="" func_id="1113" target="il_body" name="通讯录" />
+      <!--<menu id="200104" url="" icon="" func_id="" target="il_body" name="..."/>-->
+    </menu>
+    <menu id="2002" name="我的信息" url="" icon="" func_id="01" mod_id="0" target="il_body">
+      <menu id="200201" url="/workbench/browse/showselfinfo.do?b_search=link&amp;a0100=A0100&amp;flag=infoself" icon="" func_id="010101" target="il_body" name="信息浏览" />
+      <menu id="200202" url="/module/gz/mysalary/MySalaryMain.html?b_query=link" icon="" func_id="010201" target="il_body" name="我的薪酬" validate="true"/>
+      <menu id="200204" url="/module/gz/mytax/MyTaxMain.html?b_query=link" icon="" func_id="0106" target="il_body" name="我的个税" validate="true"/>	
+      <menu id="200203" url="/general/template/myapply/busidesktop.do?br_query=link" icon="" func_id="0107" target="il_body" name="业务申请" />
+      <menu id="200213" url="/module/template/templatenavigation/TemplateNavigation.html?b_query=link&amp;sys_type=1&amp;module_id=9" param="" icon="" func_id="0107" target="il_body" name="业务申请" menuhide="true" />
+      <menu id="200205" url="/selfservice/selfinfo/addselfinfo.do?b_add=add&amp;a0100=A0100&amp;i9999=I9999&amp;actiontype=update&amp;setname=A01&amp;flag=infoself" icon="" func_id="010301" target="il_body" name="信息维护" />
+      <menu id="200206" url="/selfservice/propose/searchpropose.do?b_add=link&amp;ctrl_return=0" icon="" func_id="010401" target="il_body" name="发表意见" />
+      <menu id="200208" url="/selfservice/selfinfo/inforchange.do?b_query=link" icon="" func_id="01030106" target="il_body" name="我的变动信息明细" />
+      <menu id="200210" url="" icon="" func_id="0109" mod_id="" target="il_body" name="我的团队" menuhide="">
+        <menu id="20021001" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/workbench/browse/showselfinfo.do?b_search=link`flag=notself`returnvalue=relation&amp;target=nil_body&amp;dbnamekey=userbase&amp;a0100key=a0100" icon="" func_id="010901" target="il_body" name="基本信息" />
+        <menu id="20021002" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/system/options/cardsalaryshow.do?b_cardshow=link`flag=noself`payment=payment&amp;target=nil_body&amp;dbnamekey=pre&amp;a0100key=a0100&amp;b0110key=b0110" icon="" func_id="010902" target="il_body" name="员工薪酬" menuhide="" />
+        <menu id="20021003" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/gz/gz_self/tax/selftaxshow.do?b_query=link`flag=noself&amp;target=nil_body&amp;dbnamekey=userbase&amp;a0100key=a0100" icon="" func_id="010903" target="il_body" name="个人所得税" menuhide="" />
+        <menu id="20021004" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/kq/kqself/card/carddata.do?b_query=link&amp;target=nil_body&amp;dbnamekey=userbase&amp;a0100key=a0100" icon="" func_id="010904" target="il_body" name="刷卡数据" menuhide="false" />
+        <menu id="20021005" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/kq/kqself/details/month_details.do?b_query=link`dtable=Q03&amp;target=nil_body&amp;dbnamekey=userbase&amp;a0100key=a0100" icon="" func_id="010905" target="il_body" name="考勤明细" menuhide="false" />
+        <menu id="20021006" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/kq/kqself/details/kq_details.do?b_query=link`table=Q03&amp;target=nil_body&amp;dbnamekey=userbase&amp;a0100key=a0100" icon="" func_id="010906" target="il_body" name="考勤月汇总" menuhide="false" />
+        <menu id="20021007" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/kq/kqself/class/kq_class.do?b_query=link&amp;target=nil_body&amp;dbnamekey=userbase&amp;a0100key=a0100" icon="" func_id="010907" target="il_body" name="排班信息" menuhide="false" />
+        <!--将action换成新的  action=/general/sprelationmap/relation_map_drawable.do?b_init=init  -->
+        <menu id="20021008" url="/selfservice/selfinfo/relation.do?b_init=link&amp;action=/general/sprelationmap/show_report_map.do?b_search=link`relationType=1&amp;target=nil_body&amp;paramkey=a_code" icon="" func_id="010908" target="il_body" name="汇报关系图" menuhide="true" />
+      </menu>
+    </menu>
+    <menu id="2003" url="" icon="" func_id="03" mod_id="1" target="il_body" name="人员信息" iconv7="" menuhide="true" validate="false">
+      <menu id="200301" url="" icon="" func_id="" target="il_body" name="查询浏览" iconv7="" menuhide="true" validate="false">
+        <menu id="20030101" url="" icon="" func_id="030101" target="il_body" name="信息浏览" />
+        <menu id="20030103" url="/general/inform/synthesisbrowse.do?b_dbname=link" icon="" func_id="030701" target="il_body" name="综合信息" />
+        <menu id="20030104" url="/workbench/query/query_interface.do?b_query=link&amp;a_inforkind=1&amp;home=0" icon="" func_id="030301" target="il_body" name="信息查询" />
+        <menu id="20030105" url="/workbench/info/showinfo.do?b_search=link&amp;action=showinfodata.do&amp;target=nil_body&amp;flag=noself&amp;userbase=" icon="" func_id="030401" target="il_body" name="信息维护" hide="true" />
+        <menu id="20030106" url="/general/approve/personinfo/sum.do?b_query=link&amp;task=0" icon="" func_id="0308" target="il_body" name="信息审核" />
+        <menu id="20030107" url="/workbench/ykcard/showinfo.do?b_search=link&amp;action=showinfodata.do&amp;target=mil_body&amp;flag=noself&amp;userbase=" icon="" func_id="030201" target="il_body" name="人员薪酬" iconv7="" menuhide="true" validate="false" />
+        <menu id="20030108" url="/workbench/media/showinfo.do?b_search=link&amp;isUserEmploy=1&amp;action=showinfodata.do&amp;target=mil_body&amp;userbase=" icon="" func_id="030501" target="il_body" name="多媒体" />
+      </menu>
+      <menu id="200302" url="" icon="" func_id="26031,0309,26032,0311" target="il_body" name="员工名册">
+        <menu id="20030201" url="/module/muster/mustermanage/MusterManage.html" icon="" func_id="26031,0309" target="il_body" name="花名册"/>
+        <menu id="20030202" url="/general/muster/hmuster/searchHroster.do?b_search=link&amp;nFlag=3&amp;a_inforkind=1&amp;result=0&amp;returnflag=menu" icon="" func_id="26032,0311" target="il_body" name="高级花名册" />
+      </menu>
+      <menu id="200303" url="/module/gz/salarytemplate/SalaryTemplate.html?b_query=link&amp;viewtype=2&amp;imodule=0" icon="" func_id="0314" target="il_body" name="数据上报" iconv7="" menuhide="true" validate="false" />
+      <menu id="200304" name="统计分析" url="/general/static/commonstatic/statshow.do?b_ini=link&amp;infokind=1&amp;home=0&amp;returnvalue=" iconv7="" func_id="0315" target="il_body" menuhide="true" validate="false" />
+    </menu>
+    <menu id="2004" url="" icon="" func_id="05" mod_id="1" target="il_body" name="机构信息">
+      <!-- 
+	       <menu id="200401" url="/general/inform/org/searchorgbrowse.do?b_query=link&amp;droit=0&amp;returnvalue=&amp;busiPriv=1" icon="" func_id="050101" target="il_body" name="信息浏览"/>
+	        -->
+      <menu id="200401" url="/general/inform/pos/searchorgbrowse.do?b_query=link&amp;droit=0&amp;returnvalue=&amp;busiPriv=1" icon="" func_id="050101" target="il_body" name="信息浏览" />
+      <menu id="200402" url="/workbench/orginfo/editorginfo.do?b_search=link&amp;action=editorginfodata.do&amp;edittype=new&amp;treetype=org&amp;kind=2&amp;target=mil_body&amp;returnvalue=&amp;busiPriv=1&amp;leader=org" icon="" func_id="050104" target="il_body" name="信息维护" />
+      <menu id="200403" url="/general/inform/org/map/searchOrgTree.do?b_search=link&amp;backdate=&amp;returnvalue=" icon="" func_id="050102" target="il_body" name="机构图" />
+      <menu id="200404" url="/general/inform/org/map/searchhistoryOrgTree.do?b_search=link&amp;backdate=&amp;returnvalue=" icon="" func_id="050103" target="il_body" name="历史机构" />
+    </menu>
+    <menu id="2010" url="" icon="" func_id="09" mod_id="2" target="il_body" name="培训自助">
+      <menu id="201A00" name="计划申报" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=255&amp;card_view_type=1" iconv7="" func_id="09A1" target="il_body" menuhide="true" validate="false" />
+      <menu id="201A01" name="进修申报" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=256&amp;card_view_type=1" iconv7="" func_id="09A2" target="il_body" menuhide="true" validate="false" />
+      <menu id="201A02" name="进修信息登记" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=258&amp;card_view_type=1" iconv7="" func_id="09A3" target="il_body" menuhide="true" validate="false" />
+      <menu id="201A03" name="国内访学申请" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=257&amp;card_view_type=1" iconv7="" func_id="09A4" target="il_body" menuhide="true" validate="false" />
+      <menu id="201A04" name="国内访学信息登记" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=259&amp;card_view_type=1" iconv7="" func_id="09A5" target="il_body" menuhide="true" validate="false" />
+      <menu id="201A05" name="国内访学信息登记" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=260&amp;card_view_type=1" iconv7="" func_id="09A6" target="il_body" menuhide="true" validate="false" />
+    </menu>
+    <menu id="2011" url="" icon="" mod_id="3,29" func_id="06" target="il_body" name="360评估" iconv7="" menuhide="true" validate="false">
+      <!-- wangjl 全总  start
+	    <menu id="201109" url="" icon="" func_id="060701" target="il_body" name="年度工作计划及总结" >
+				  <menu id="20110901" url="/performance/workplan/workplanview/workplan_view_list.do?b_query=link&amp;workType=1&amp;state=4&amp;init=init" icon="" func_id="06070101" target="il_body" name="我的年度工作计划及总结" />
+				  <menu id="20110902" url="/performance/workplan/workplanteam/team_org_tree.do?br_query=link&amp;init=init&amp;state=4&amp;workType=2" icon="" func_id="06070102" target="il_body" name="团队年度工作计划及总结" />
+			  </menu>			
+			  <menu id="201110" url="" icon="" func_id="060703" target="il_body" name="季度工作总结" >
+				  <menu id="20111001" url="/performance/workplan/workplanview/workplan_view_list.do?b_query=link&amp;workType=3&amp;state=3&amp;init=init" icon="" func_id="06070301" target="il_body" name="我的季度工作总结" />
+				  <menu id="20111002" url="/performance/workplan/workplanteam/team_org_tree.do?br_query=link&amp;init=init&amp;state=3&amp;workType=4" icon="" func_id="06070302" target="il_body" name="团队季度工作总结" />
+			  </menu> 
+			  <menu id="201111" url="" icon="" func_id="060702" target="il_body" name="月工作纪实" >
+				  <menu id="20111101" url="/performance/workplan/workplanview/workplan_view_list.do?b_query=link&amp;workType=5&amp;state=2&amp;init=init" icon="" func_id="06070201" target="il_body" name="我的工作纪实" />
+				  <menu id="20111102" url="/performance/workplan/workplanteam/team_org_tree.do?br_query=link&amp;init=init&amp;state=2&amp;workType=6" icon="" func_id="06070202" target="il_body" name="团队工作纪实"  />
+			  </menu>
+			  <menu id="201115" url="" icon="" func_id="060702" target="il_body" name="周工作纪实" >
+				  <menu id="20111501" url="/performance/workplan/workplanview/workplan_view_list.do?b_query=link&amp;workType=9&amp;state=1&amp;init=init" icon="" func_id="06070201" target="il_body" name="我的周工作纪实" />
+				  <menu id="20111502" url="/performance/workplan/workplanteam/team_org_tree.do?br_query=link&amp;init=init&amp;state=1&amp;workType=10" icon="" func_id="06070202" target="il_body" name="团队周工作纪实"  />
+			  </menu>
+			  <menu id="201112" url="" icon="" func_id="060704" mod_id="3" target="il_body" name="评价打分" >
+					 <menu id="20111201" url="" icon="" func_id="060601" target="il_body" name="领导考核评鉴" />
+					 <menu id="20111202" url="/performance/kh_result/kh_plan_list.do?b_init=link&amp;model=0&amp;distinctionFlag=0&amp;opt=1" icon="" func_id="060301" target="il_body" name="本人考核结果" />
+					 <menu id="20111203" url="/performance/kh_result/kh_result_orgtree.do?b_init=init&amp;distinctionFlag=0&amp;model=1" icon="" func_id="060401" target="il_body" name="员工考核结果" />
+					 <menu id="20111204" url="/selfservice/performance/singleGrade.do?b_query=link&amp;model=1&amp;fromModel=menu&amp;optObject=2" icon="" func_id="0D22" target="il_body" name="群众测评"  />				 
+				   <menu id="20111206" url="/performance/markStatus/markStatusList.do?b_search=link&amp;busitype=-1&amp;model=0&amp;consoleType=2" icon="" func_id="060604" target="il_body" name="打分状态" />
+			  </menu> 
+			  <menu id="201113" url="/performance/workplan/workplanstatus.do?b_query=link&amp;codeid=init&amp;opt=1&amp;returnflag=menu" icon="" func_id="06070401" mod_id="32" target="il_body" name="填报统计" />
+			  <menu id="201114" url="/performance/workplan/configParameter.do?b_query=link&amp;returnflag=menu" icon="" func_id="060705" mod_id="32" target="il_body" name="工作纪实设置" />
+			  全总 end -->
+      <menu id="201101" url="" icon="" func_id="0605" mod_id="3" target="il_body" name="考核实施">
+        <menu id="20110101" url="/selfservice/performance/performanceImplement0.do" icon="" func_id="060501" target="il_body" name="考核表分发" />
+      </menu>
+      <menu id="201104" url="" icon="" func_id="0606" mod_id="3" target="il_body" name="考评打分">
+        <menu id="20110401" url="/selfservice/performance/selfGrade.do?b_query=link&amp;bint=int&amp;model=0" icon="" func_id="060602" target="il_body" name="自我评价" />
+        <menu id="20110402" url="/performance/singleGrade/selectSingleGrade.jsp" icon="" func_id="060603" target="il_body" name="单人考评" />
+        <menu id="20110403" url="" icon="" func_id="060601" target="il_body" name="多人考评" />
+        <menu id="20110405" url="/selfservice/performance/scoreAjust.do?b_query=link" icon="" func_id="060605" target="il_body" name="评分调整" />
+        <menu id="20110404" url="/performance/markStatus/markStatusList.do?b_search=link&amp;busitype=-1&amp;model=0&amp;consoleType=2" icon="" func_id="060604" target="il_body" name="打分状态" />
+      </menu>
+      <menu id="201106" url="" icon="" func_id="0603" mod_id="3" target="il_body" name="考评反馈">
+        <menu id="20110601" url="/performance/kh_result/kh_plan_list.do?b_init=link&amp;model=0&amp;distinctionFlag=0&amp;opt=1" icon="" func_id="060301" target="il_body" name="本人考核结果" />
+        <menu id="20110602" url="/performance/kh_result/kh_result_orgtree.do?b_init=init&amp;distinctionFlag=0&amp;model=1" icon="" func_id="060401" target="il_body" name="员工考核结果" />
+        <menu id="20110603" url="/performance/kh_result/org_kh_plan.do?b_init=init&amp;distinctionFlag=0&amp;model=3&amp;modelType=UU" icon="" func_id="060303" target="il_body" name="团队考核结果" />
+        <menu id="20110604" url="/performance/showkhresult/show_kh.do?b_query=link&amp;modelType=ALL&amp;opertor=1" icon="" func_id="060302" target="il_body" name="考评分数查询" />
+      </menu>
+    </menu>
+    <menu id="2008" icon="" func_id="0B" mod_id="5" target="il_body" url="" name="考勤自助" iconv7="" menuhide="true" validate="false">
+      <menu id="200805" name="请假申请" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=217&amp;card_view_type=1" iconv7="" func_id="0B5" target="il_body" menuhide="true" validate="false" />
+      <menu id="200806" name="公出申请" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=218&amp;card_view_type=1" iconv7="" func_id="0B6" target="il_body" menuhide="true" validate="false" />
+      <menu id="200803" url="/kq/kqself/annual/my_rest.do?b_query=link " icon="" func_id="0B1" target="il_body" name="我的假期" iconv7="" menuhide="true" validate="false" />
+    </menu>
+    <menu id="2009" url="/general/tipwizard/tipwizard.do?br_blank=link" icon="" func_id="0F" target="il_body" name="竞聘上岗">
+      <menu id="200901" url="/hire/jp_contest/search_jp_pos.do?b_query=link" icon="" func_id="0F1" target="il_body" name="拟竞聘岗位" />
+      <menu id="200902" url="/hire/jp_contest/apply/apply_jp_pos.do?b_search=link" icon="" func_id="0F2" target="il_body" name="申请竞聘岗位" />
+      <menu id="200903" url="/hire/jp_contest/personinfo/showinfodata.do?b_search=link&amp;flag=infoself" icon="" func_id="0F3" target="il_body" name="竞聘名单" />
+      <menu id="200904" url="/hire/jp_contest/param/engageparam.do?b_query=link" icon="" func_id="0F4" target="il_body" name="参数设置" />
+    </menu>
+    <menu id="2006" url="" icon="" func_id="0D" mod_id="3" target="il_body" name="干部考察">
+      <menu id="200601" url="" icon="" func_id="0D1" target="il_body" name="述职述廉">
+        <menu id="20060101" url="/selfservice/performance/selfGrade.do?b_init=init&amp;model=1" icon="" func_id="0D12" target="il_body" name="提交述职报告" />
+        <menu id="20060102" url="/performance/reportwork/searchReportWork.do?b_search=search&amp;opt=1" icon="" func_id="0D11" target="il_body" name="查阅述职报告" />
+      </menu>
+      <menu id="200602" url="" icon="" func_id="0D2" target="il_body" name="民主评议">
+        <menu id="20060201" url="/selfservice/performance/singleGrade.do?b_query=link&amp;model=1&amp;fromModel=menu&amp;optObject=1" icon="" func_id="0D21" target="il_body" name="领导班子测评" />
+        <menu id="20060202" url="/selfservice/performance/singleGrade.do?b_query=link&amp;model=1&amp;fromModel=menu&amp;optObject=2" icon="" func_id="0D22" target="il_body" name="班子成员测评" />
+        <menu id="20060203" url="/selfservice/performance/selfGrade.do?b_query=link&amp;bint=int&amp;model=1" icon="" func_id="0D23" target="il_body" name="自我评价" />
+        <menu id="20060204" url="/performance/markStatus/markStatusList.do?b_search=link&amp;model=1" icon="" func_id="0D24" target="il_body" name="打分状态" />
+      </menu>
+      <menu id="200603" url="" icon="" func_id="0D4" target="il_body" name="后备推荐">
+        <menu id="20060301" url="/performance/commend/insupportcommend/initInSupportCommend.do?b_init=init" icon="" func_id="0D41" target="il_body" name="候选人提名" />
+        <menu id="20060302" url="/performance/commend/choosecandidate/initChooseCandidateList.do?b_init=init" icon="" func_id="0D42" target="il_body" name="民主推荐" />
+        <menu id="20060303" url="/performance/options/checkBodyObjectList.do?b_query=link&amp;bodyType=0&amp;noself=1" icon="" func_id="0D4" target="il_body" name="投票人类别" />
+      </menu>
+      <menu id="200604" url="" icon="" func_id="0D3" target="il_body" name="结果分析">
+        <menu id="20060401" url="/performance/kh_result/kh_plan_list.do?b_init=link&amp;opt=1&amp;model=0&amp;distinctionFlag=1" icon="" func_id="0D31" target="il_body" name="本人测评结果" />
+        <menu id="20060402" url="/performance/kh_result/kh_result_orgtree.do?b_init=init&amp;distinctionFlag=1&amp;model=1" icon="" func_id="0D32" target="il_body" name="成员测评结果" />
+        <menu id="20060403" url="/performance/commend/insupportcommend/everyYearAnalyseVote.do?b_init=init&amp;type=1" icon="" func_id="0D33" target="il_body" name="后备推荐结果分析" />
+        <menu id="20060404" url="/performance/commend/insupportcommend/voteStatusAnalyse.do?b_init=init&amp;opt=1" icon="" func_id="0D34" target="il_body" name="投票状况分析" />
+      </menu>
+    </menu>
+    <menu id="20A1" name="绩效考核" url="" iconv7="" func_id="0Z" target="il_body" menuhide="true" validate="false">
+      <menu id="20A11" name="聘期考核" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=243&amp;card_view_type=1" iconv7="" func_id="0Z1" target="il_body" menuhide="true" validate="false" />
+      <menu id="20A12" name="卫技岗位年度考核" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=240&amp;card_view_type=1" iconv7="" func_id="0Z2" target="il_body" menuhide="true" validate="false" />
+      <menu id="20A13" name="非卫技岗位年度考核" url="/module/template/templatemain/templatemain.html?b_query=link&amp;approve_flag=1&amp;module_id=9&amp;return_flag=14&amp;tab_id=241&amp;card_view_type=1" iconv7="" func_id="0Z3" target="il_body" menuhide="true" validate="false" />
+    </menu>
+  </menu>
+  <menu id="50" name="移动服务" func_id="0K" mod_id="35">
+    <menu id="5001" name="通 讯 录" icon="myicon" func_id="0K01" url="/phone-app/app/contacts.do?b_query=link" target=""/> 
+    <menu id="5002" name="统计分析" icon="myicon1" func_id="0K02" url="/phone-app/app/statlist.do?b_int=link&amp;statid=&amp;showstyle=" target=""/>    
+    <menu id="5003" name="我的团队" icon="myicon2" func_id="0K03" url="/phone-app/app/myteam.do?b_init=link&amp;a_code=" target=""/>  
+    <menu id="5004" name="常用查询" icon="myicon3" func_id="0K04" url="/phone-app/app/generalquery.do?b_init=link&amp;a_code=&amp;dbpre=" target="" />
+    <menu id="5005" name="我的薪酬" icon="myicon4" func_id="0K05" url="/phone-app/app/emolument.do?b_init=link&amp;flag=infoself" target=""/>   
+    <menu id="5006" name="员工名册" icon="myicon5" func_id="0K06" url="/phone-app/app/hroster.do?b_init=hroster&amp;a_code=&amp;dbpre=&amp;sortid=&amp;flag=2&amp;cardid=-1" target="" />
+  </menu>   
+  <menu id="14" name="工  具  箱" func_id="9A0" icon="img_o.gif" url="/general/tipwizard/tipwizard.do?br_blank=link" target="il_body" iconv7="nav.png" position="0,-384">
+    <menu id="1401" url="/templates/menu/busi_m_menu.do?b_repDesign=link&amp;module=16&amp;cs_module=5" icon="" func_id="9907" target="il_body" name="表格工具" />
+    <menu id="1402" url="/templates/menu/busi_m_menu.do?b_query2=link&amp;module=11&amp;cs_module=11" icon="" func_id="9A2" target="il_body" name="实施工具" />
+    <menu id="1405" url="" icon="" func_id="9A5" target="il_body" name="流程管理">
+      <menu id="140501" url="/general/relation/relationmaintence.do?b_query=link" icon="" func_id="9A51" target="il_body" name="审批关系" />
+      <menu id="140502" url="/general/operation/operationmaintence.do?b_query=link" icon="" func_id="9A52" target="il_body" name="流程定义" />
+    </menu>
+    <menu id="1403" url="" icon="" func_id="9A4" target="il_body" name="平台接口">
+      <menu id="14030" url="/system/bos/func/functionMain.do?b_init=int" icon="" func_id="9A41" target="il_body" name="功能注册" />
+      <menu id="14031" url="/system/bos/menu/menuMain.do?b_init=int" icon="" func_id="9A42" target="il_body" name="菜单定制" />
+      <menu id="14032" url="/system/bos/portal/portalMain.do?b_init=int" icon="" func_id="9A43" target="il_body" name="门户定制" />
+	  <menu id="14033" name="自助终端配置" icon="" 	func_id="9A44" target="il_body" url="/module/serviceclient/serviceSetting/setting.html"/> 
+    </menu>
+  </menu>
+  <menu id="13" name="系统管理" func_id="300" mod_id="" icon="img_y.gif" url="/general/tipwizard/tipwizard.do?br_blank=link" target="il_body" iconv7="nav.png" position="-32,-384">
+    <menu id="1301" url="" param="" icon="" func_id="3002" target="" name="内容维护">
+      <menu id="13010" url="/selfservice/propose/upfilelist.do?b_query=link&amp;fileflag=2" icon="" func_id="070301,30020" target="il_body" name="流程上传" />
+      <menu id="13011" url="/selfservice/propose/upfilelist.do?b_query=link&amp;fileflag=1" icon="" func_id="070401,30021" target="il_body" name="表格上传" />
+      　　　　　　　
+      <menu id="13012" url="/selfservice/infomanager/board/searchboard.do?b_query=link&amp;opt=1&amp;announce=1" icon="" func_id="070501,30022" target="il_body" name="公告栏维护" />
+      <menu id="13013" url="/selfservice/infomanager/askinv/searchtopic.do?b_query=link" icon="" func_id="070601,30023" target="il_body" name="问卷调查表定义" />
+      <menu id="13014" url="/selfservice/param/friend.do?b_query=link" icon="" func_id="070902,30024" target="il_body" name="友情链接" menuhide="false" />
+      <!-- 6.0平台以上就不需要此功能啦，也没有地方显示 xuj 2014-02-27 -->
+    </menu>
+    <menu id="1302" url="" param="" icon="" func_id="3001" target="" name="应用设置">
+      <menu id="13020" url="/system/options/query_template.do?b_query=link" icon="" func_id="070101,300150" target="il_body" name="查询设置" />
+      <!-- <menu id="13021" url="/system/options/cardconstantset.do?b_cardset=set" icon="" func_id="070201,300152" target="il_body" name="薪酬表设置" /> -->
+      　　　　
+      <menu id="13022" url="" icon="" func_id="080802,300151,300153,30015C,300156,30015B" target="" name="参数设置">
+        <menu id="130220" url="/system/warn/config_manager.do?b_query=link" icon="" func_id="080802,300151" target="il_body" name="预警设置" />
+        <menu id="130221" url="/system/options/org_param.do?b_search=link&amp;edition=&amp;tableset=" icon="" func_id="30015D" target="il_body" name="单位列表指标设置" />
+        <menu id="13022A" url="/system/options/standardduty_param.do?b_search=link&amp;edition=&amp;tableset=" icon="" func_id="30015H" target="il_body" name="基准岗位列表指标设置" />
+        <menu id="130222" url="/system/options/duty_param.do?b_search=link&amp;edition=&amp;tableset=" icon="" func_id="30015E" target="il_body" name="岗位列表指标设置" />
+        <menu id="130223" url="/system/options/info_param.do" icon="" func_id="30015C" target="il_body" name="人员列表指标设置" />
+        <menu id="130224" url="/hire/zp_options/pos_template.do?b_search=link" icon="" func_id="300153" target="il_body" name="岗位说明书设置" />
+        <menu id="13022B" url="/hire/zp_options/job_template.do?b_search=link" icon="" func_id="30015A" target="il_body" name="基准岗位说明书设置" />
+        <menu id="130225" mod_id="31" url="/system/options/party_param.do?edition=&amp;tableset=Y01" icon="" func_id="30015F" target="il_body" name="党组织列表指标设置" />
+        <menu id="130226" mod_id="31" url="/system/options/corps_param.do?edition=&amp;tableset=V01" icon="" func_id="30015G" target="il_body" name="团组织列表指标设置" />
+        <menu id="130228" url="/system/id_factory/seq_show.do?b_query=link" icon="" func_id="300156" target="il_body" name="序号维护" />
+        <menu id="130229" url="/system/options/param/sys_param.do?b_query=link" icon="" func_id="30015B" target="il_body" name="系统参数" />
+        <menu id="130230" url="/module/system/sdparameter/SDParameter.html?b_query=link" icon="" func_id="30015I" target="il_body" name="二开参数设置"/>
+      </menu>
+      <menu id="13023" url="/general/deci/definition/search_definition.do?b_query=link&amp;a_inforkind=1" icon="" func_id="30017" target="il_body" name="单指标分析" />
+      <menu id="13026" url="/general/deci/definition/statCutline/searchStatCutline.do?b_query=link" icon="" func_id="30019" target="il_body" name="多指标分析" />
+      <menu id="13024" url="/system/options/message/sys_manager.do?b_query=link" icon="" func_id="3001A,080805" target="il_body" name="系统公告维护" />
+      <menu id="13025" url="/system/export/searchclass_info.do?b_query=link" icon="" func_id="3001B,080807" target="il_body" name="后台作业" />
+      <menu id="1302B" url="/general/email_template/addEmailTemplate.do?b_tree=link" icon="" func_id="3001C" target="il_body" name="邮件模板" />
+      <menu id="13027" url="/selfservice/addressbook/addressbookset.do?b_search=link" icon="" func_id="080809,3001E" target="il_body" name="通讯录设置" />
+      <menu id="13028" url="" icon="" func_id="3001D" target="il_body" name="数据交换">
+        <menu id="1302801" url="/sys/export/hr_org_tree.do?b_query=link" icon="" func_id="3001D01" target="il_body" name="数据视图" />
+        <menu id="1302802" url="/sys/import/dataimport.do?b_query=link" icon="" func_id="3001D02" target="il_body" name="数据导入" />
+        <menu id="1302803" url="/module/system/hrcloud/SyncMapSetting.html"  icon="" func_id="3001D03" target="il_body" name="云集成"/>
+      </menu>
+      <menu id="13029" url="/system/options/interfaces/setInterfaces.do?b_query=link" icon="" func_id="3001F" target="il_body" name="平台数据接口设置" />
+      <menu id="1303A" url="/system/options/customreport.do?b_search=link&amp;toFirst=yes" icon="" func_id="3001G" target="il_body" name="报表关联" />
+      <menu id="1302C" url="/module/system/personalsoduku/boxreport/BoxReport.html" icon="" func_id="3001H" target="il_body" name="盒式报表" />
+			<menu id="1302D" url="/module/system/worktablesetting/setting.html" icon="" func_id="3001J" target="il_body" 	name="工作桌面"/>
+      <menu id="1302E" url="/module/system/servicehallsetting/setting.html" icon="" func_id="3001L" target="il_body"  name="服务大厅"/>
+    	<menu id="1302F" url="/module/system/qrcard/setting/searchqrcard.html" target="il_body" icon="" func_id="3001K"  name="入职登记二维码制作"/>
+    </menu>
+    <menu id="1307" url="" param="" icon="" func_id="3007" target="" name="库结构">
+      <menu id="13070" url="/system/dbinit/fieldset_tree.do?b_query=link" icon="" func_id="30071" target="il_body" name="指标体系" />
+      <menu id="13071" url="/system/codemaintence/codetree.do?b_query=link" icon="" func_id="30072" target="il_body" name="代码体系" />
+      <menu id="13072" url="/system/busimaintence/busimaintence.do?b_query=link" icon="" func_id="30073" target="il_body" name="业务字典" />
+    </menu>
+    <menu id="1303" url="" param="" icon="" func_id="3003" target="" name="权限管理">
+      <menu id="13030" url="/system/security/rolesearch.do?b_query=link&amp;oqname=&amp;oqroleproperty=" icon="" func_id="080101,30030" target="il_body" name="角色管理" />
+      <menu id="13031" url="/system/logonuser/search_user_tree.do?b_query=link" icon="" func_id="30031" target="il_body" name="用户管理" hide="true" />
+      　　　　　　　
+      <menu id="13032" url="/system/security/assign_login0.do" icon="" func_id="080301,30032" target="il_body" name="帐号分配" hide="true" />
+      <menu id="13033" url="/system/security/assign_login1.do" icon="" func_id="080701,30033" target="il_body" name="角色快速分配" hide="true" />
+    </menu>
+    <menu id="1304" url="" param="" icon="" func_id="3004" target="" name="安全策略">
+      <menu id="13040" url="/system/security/online_user.do?b_query=link" icon="" func_id="" target="il_body" name="在线用户" />
+      <menu id="13041" url="/system/security/query_log.do?b_query=link" icon="" func_id="080801,30043" target="il_body" name="操作日志" />
+      <menu id="13047" url="/system/security/sqllog_view.html" icon="" func_id="30046" target="il_body" name="数据变动" />
+      <menu id="13042" url="/system/security/ip_addr_manager.do?b_query=link" icon="" func_id="080401,30040" target="il_body" name="IP地址管理" />
+      <menu id="13046" url="/module/system/security/mobile_identification.do?b_query=link" icon="" func_id="30045" target="il_body" name="登录认证规则" />
+      <menu id="13043" url="/system/security/login_base_options.do?b_query=link" icon="" func_id="080601,30041" target="il_body" name="认证应用库" />
+      <menu id="13044" url="/system/security/login_username_options.do?b_query=link" icon="" func_id="080701,30042" target="il_body" name="认证用户名" />
+      <menu id="13045" url="/system/options/ad_authenticateset.do?b_search=link" icon="" func_id="30044,080804" target="il_body" name="LDAP目录认证配置" />
+  		<menu id="13048" url="/module/system/regothersys/SysRegList.html" icon="" func_id="30047" target="il_body" name="集成服务注册"/>
+			<menu id="13049" url="/module/template/signature/SignatureList.html" icon="" func_id="30049" target="il_body" name="印章及U盾管理"  />
+    </menu>
+    <menu id="1305" url="" param="" icon="" func_id="3006" target="" name="通讯平台">
+      <menu id="13050" url="/system/sms/sms_list_options.do?br_query=link" icon="" func_id="30064" target="il_body" name="短信信箱" />
+      <menu id="13051" url="/system/sms/send_sms.do" icon="" func_id="30065" target="il_body" name="发送短信" />
+      <menu id="13052" url="/selfservice/param/phoneparam.do?b_phone=link" icon="" func_id="070301,30061" target="il_body" name="电话邮箱设置" />
+      <menu id="13053" url="/system/options/stmp_options.do?b_query=link" icon="" func_id="30062" target="il_body" name="邮件服务器" />
+      <menu id="13054" url="/system/sms/sms_options.do?br_query=link" icon="" func_id="30063" target="il_body" name="短信接口参数" />
+      <menu id="13055" url="/system/sms/weixin/WeixinParam.html" icon="" func_id="30066" target="il_body" name="第三方平台参数" />
+      <menu id="13056" url="/system/sms/weixin/WeixinSetting.html"  icon="" func_id="30067" target="il_body" name="微信配置"/>
+    </menu>
+    <!--  
+		<menu id="1306" url="" param="" icon="" func_id="3005" target="" name="资源下载" menuhide="false">
+			<menu id="13065" url="/general/sys/axplugin.jsp" icon="" func_id="" target="il_body" name="应用组件"/> 
+			<menu id="13061" url="/thirdparty/jre-1_5_0_06-windows-i586-p.exe" icon="" func_id="30050" target="il_body" name="jdk1.5"/>
+	　　　　<menu id="13062" url="/thirdparty/SVGView.exe"  icon="" func_id="30051" target="il_body" name="SVG View"/>
+			<menu id="13064" url="/thirdparty/AdbeRdr70_chs_full.exe"  icon="" func_id="30053" target="il_body" name="PDF阅读器"/>	
+		</menu>	
+		-->
+  </menu>
+  <menu id="90" name="工具条按钮" func_id="" mod_id="" url="" target="" menuhide="false">
+    <menu id="9001" name="主页" func_id="" mod_id="" url="/templates/index/hcm_portal.do?b_query=link" target="il_body" iconv7="little_nav.png" position="0,0" />
+    <menu id="9002" name="皮肤" func_id="" mod_id="" url="javascript:showthemes(this);" target="" iconv7="little_nav.png" position="-18,0" />
+    <menu id="9003" name="个人设置" func_id="000101,3010,000106,3016,3012,000107,3017,3018" mod_id="" url="/system/toolbar/selfset.do?br_query=link" target="il_body" iconv7="little_nav.png" position="0,-18">
+      <menu id="900302" name="密码设置" func_id="000101,3010" mod_id="" url="/system/security/resetup_password.do?returnvalue=menuitem" target="mil_body" iconv7="littlenav3.png" />
+      <menu id="900301" name="头像设置" func_id="3018" mod_id="" url="/workbench/info/upphotoinfo.do?b_photosearch=link" target="mil_body" iconv7="" />
+      <menu id="900303" name="代理设置" func_id="000106,3016" mod_id="" url="/selfservice/selfinfo/agent/agentinfo.do?b_search=link" target="mil_body" iconv7="littlenav2.png" />
+      <menu id="900304" name="邮件通知" func_id="" mod_id="" url="" target="" iconv7="" menuhide="false" />
+      <menu id="900305" name="桌面设置" func_id="3012" mod_id="" url="/system/options/portaltailor.do?b_search=link&amp;portalid=02" target="mil_body" iconv7="littlenav10.png" />
+      <!-- <menu id="900306"  name="信任站点" func_id="000107,3017" mod_id="" url="javascript:SetIEOpt();" target="" iconv7="littlenav5.png"/> -->
+    </menu>
+    <menu id="9004" name="签到" func_id="0B401" mod_id="5" url="javascript:netsingin('0')" target="" iconv7="little_nav.png" position="-18,-18" menuhide="false" validate="false" />
+    <menu id="9005" name="签退" func_id="0B405" mod_id="5" url="javascript:netsingin('1')" target="" iconv7="little_nav.png" position="0,-36" menuhide="false" validate="false" />
+    <menu id="9008"  name="全屏" func_id="" mod_id="" url="javascript:fullScreen(this);" target="" iconv7="little_nav.png" position="-18,-72"/>
+    <menu id="9006" name="退出" func_id="" mod_id="" url="javascript:logout();" target="" iconv7="little_nav.png" position="-18,-36" />
+    <menu id="9007" name="版本" func_id="3011,000102" mod_id="" url="/system/security/about_hrp.do?b_query=link&amp;status=1" target="il_body" iconv7="little_nav.png" position="0,-54" />
+  </menu>
+  <menu id="17" name="党团管理" url="/general/tipwizard/tipwizard.do?br_dtgh=link" icon="img_wd.png" func_id="350" mod_id="31" target="il_body" iconv7="nav.png" position="-32,-32">
+    <menu id="1701" name="党务管理" url="" icon="" func_id="3501" target="">
+      <menu id="17010" name="党组织机构" url="/dtgh/party/searchpartybusinesstree.do?b_query=link&amp;param=Y&amp;backdate=&amp;returnvalue=" icon="" func_id="35011" target="il_body" />
+      <menu id="17011" name="党组织内人员" url="/dtgh/party/person/searchbusinesstree.do?b_query=link&amp;param=Y&amp;backdate=&amp;politics=&amp;tabIndex=0&amp;returnvalue=" icon="" func_id="35012" target="il_body" />
+    </menu>
+    <menu id="1702" name="团务管理" url="" icon="" func_id="3502" target="">
+      <menu id="17020" name="团组织机构" url="/dtgh/party/searchpartybusinesstree.do?b_query=link&amp;param=V&amp;backdate=&amp;returnvalue=" icon="" func_id="35021" target="il_body" />
+      <menu id="17021" name="团组织内人员" url="/dtgh/party/person/searchbusinesstree.do?b_query=link&amp;param=V&amp;backdate=&amp;politics=&amp;tabIndex=0&amp;returnvalue=" icon="" func_id="35022" target="il_body" />
+    </menu>
+    <menu id="1703" name="参数设置" url="" icon="" func_id="3504" target="">
+      <menu id="17030" name="参数设置" url="/dtgh/party/person/party_parameter.do?b_query=link&amp;returnvalue=" icon="" func_id="35041" target="il_body" />
+    </menu>
+  </menu>
+  <!-- 移动服务 功能菜单 -->
+  <menu id="60" name="H5移动服务" menuhide="false">
+		<menu id="60101" menuid="101" name="我的任务" func_id="0L101" icon="mytask.png"/>
+		<menu id="6001" menuid="1"  name="我的薪酬" func_id="0L01" icon="salary.png" validate="true"/>
+		<menu id="6009" menuid="22" name="我的个税" func_id="0L22" icon="mytax.png" validate="true"/>
+		<menu id="6023" menuid="23" name="人力分析" func_id="0L23" icon="statistial.png"/>
+		<menu id="6002" menuid="10" name="业务办理" func_id="0L02" icon="workflow.png"/>
+		<menu id="6003" menuid="11" name="项目工时" func_id="0L03" icon="project.png"/>	
+		<menu id="6004" menuid="13" name="移动考勤" func_id="0L04" icon="attendance.png"/>		
+		<menu id="6005" menuid="14" name="职工档案" func_id="0L05" icon="teaminfo.png"/>	
+		<menu id="6006" menuid="15" name="本人档案" func_id="0L06" icon="selfinfo.png"/>
+		<menu id="6007" menuid="9" name="知识中心" func_id="0L07" icon="konwledge.png"/>
+		<menu id="6008" menuid="16" name="党费管理" func_id="0L08" icon="partyfees.png"/>
+		<menu id="6009" menuid="17" name="我的党费" func_id="0L09" icon="myfees.png"/>
+		<menu id="6021" menuid="21" name="个税附加申报" func_id="0L21" icon="zxdeclare.png"/>
+		<menu id="6023" menuid="24" name="内部竞聘" func_id="0L24" icon="competition.png"/>
+  </menu> 
+  <menu id="04" name="云"
+  		url="/module/system/hrcloud/HrCloudIntroduce.html"
+  		be_link="true" func_id="410" mod_id="" icon="img_a.gif"
+  		target="il_body"  iconv7="nav.png" position="0,-416">
+  </menu>
+</hrp_menu>
+

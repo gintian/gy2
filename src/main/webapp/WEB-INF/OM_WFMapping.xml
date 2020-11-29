@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="OM000000001">
+         <transaction-name>干部信息</transaction-name>
+         <transaction-desc>保存设置</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.officermanage.SaveOfficerSettingTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="OM000000002">
+         <transaction-name>干部信息</transaction-name>
+         <transaction-desc>导出文件</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.officermanage.ExportOfficerDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="OM000000003">
+         <transaction-name>干部信息</transaction-name>
+         <transaction-desc>加载信息</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.officermanage.SyncOfficerDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="OM000000004">
+         <transaction-name>干部信息</transaction-name>
+         <transaction-desc>干部信息列表</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.officermanage.LoadOfficerManageViewTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="OM000000005">
+         <transaction-name>干部信息</transaction-name>
+         <transaction-desc>查询组件</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.officermanage.SetQueryConditionsTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="OM000000006">
+         <transaction-name>干部信息</transaction-name>
+         <transaction-desc>查询保存干部信息</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.officermanage.SearchAndSaveTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="OM000000008">
+         <transaction-name>干部信息</transaction-name>
+         <transaction-desc>人员查询</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.officermanage.SearchOfficerTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

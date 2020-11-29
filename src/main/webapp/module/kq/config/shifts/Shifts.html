@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>班次管理</title>
+<meta http-equiv="content-type"content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+<style type="text/css">
+.row-gray{
+	background-color: #F5F5F5 !important;//修改背景颜色
+}
+.row-white{
+	background-color: #FFFFFF !important;//修改背景颜色
+}
+</style>
+<script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+<script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>
+<script type="text/javascript">
+	Ext.Loader.setConfig({
+		enabled: true,
+		paths: {
+			'ConfigShiftsURL': '../../../../module/kq/config/shifts'//班次管理
+			
+		}
+	});
+	Ext.onReady(function(){
+		Ext.require('ConfigShiftsURL.Shifts', function(){
+			Ext.create("ConfigShiftsURL.Shifts",{});
+		});
+	});
+</script>
+
+</head>
+</html>

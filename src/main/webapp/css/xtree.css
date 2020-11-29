@@ -1,0 +1,64 @@
+.treeItem
+{
+	white-space:nowrap;
+}
+.treeItem span
+{
+	font-size:12px;
+	font-family:"微软雅黑";
+	cursor:default;
+	margin-left:3px;
+	/*height:17px;*/
+	height:22px;
+	line-height:22px;
+	width:1px;
+}
+.treeItem span a
+{
+	padding:1 4;
+	width:100%;
+	height:100%;
+}
+.treeItem span a:link
+{
+	COLOR: black; 	
+}
+.treeItem span A:visited
+{
+	COLOR: black; 	
+}
+.treeItem-unselect
+{
+	color:windowText;
+	
+}
+.treeItem-selected
+{
+	color:red;	
+	background-color: #FFF8D2;
+}
+.treeItem-unselect a
+{
+	text-decoration:none;
+}
+.treeItem-unselect a:hover
+{
+	color:black;
+	text-decoration:underline;
+}
+.treeItem-selected a
+{
+	text-decoration:underline;	
+	width:100%;
+	height:100%;
+}
+.treeItem-selected a:hover
+{
+	text-decoration:underline;
+	color:black;
+}
+div.view
+{
+	border:inset 2px;
+	overflow-y:auto;
+}

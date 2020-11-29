@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>职称评审_委员会管理_学科组</title>
+
+		<meta http-equiv="content-type"content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+		
+
+		<script language="JavaScript" src="../../utils/js/template.js"></script>
+		<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+		<script type="text/javascript">
+			Ext.Loader.setConfig({
+				enabled: true,
+				paths: {
+					'JobtitleSubjects': '.',//主界面
+					'ExpertPicker': '../expertpicker'//选专家控件
+				}
+			});
+			
+			Ext.onReady(function(){
+				Ext.require('JobtitleSubjects.SubjectsList', function(){
+					JobtitleSubjectsGlobal = Ext.create("JobtitleSubjects.SubjectsList", {});
+				});
+			});
+	 	</script>
+	</head>
+
+ 	
+	<body>
+	</body>
+</html>

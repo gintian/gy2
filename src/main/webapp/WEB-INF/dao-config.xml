@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<daoModels>
+  <model name="SB_SBXX">
+  	<table>SB_SBXX</table>
+  	<fields>
+  		<field type="0" name="XH_SB" tabField="XH_SB"/>
+  		<field type="0" name="WJBM" tabField="WJBM"/>
+  		<field type="0" name="JC_NSR" tabField="JC_NSR"/>
+  	    <field type="0" name="DM_YSKM" tabField="DM_YSKM"/>
+  		<field type="0" name="DM_GMJJHY" tabField="DM_GMJJHY"/>
+  		<field type="0" name="DM_GJ" tabField="DM_GJ"/>
+  		<field type="0" name="DM_SWDJZL" tabField="DM_SWDJZL"/>
+  		<field type="1" name="KSCJ" tabField="PW_ZXX.KSCJ AS KSCJ"/>
+  		<field type="1" name="BH_ZKS" tabField="JP_ZXX.BH_ZKS AS BH_ZKS"/>			
+  	</fields>
+  	<relations>
+  		<relation tabName="PW_ZXX" join="SB_SBXX.XH_WS=PW_ZXX.XH_WS"/>
+  		<relation tabName="JP_ZXX" join="SB_SBXX.XH_WS_QC=JP_ZXX.XH_WS"/>		
+   	</relations>
+  	<primaryKeys>
+  		<primaryKey tabField="XH_SB"/>
+  	</primaryKeys>
+  	<querys>
+  		<query methodName="findByName" where="WHERE PW_SPLC_JBXX.MC_SPLC=?"/>
+  	</querys>
+  	<uniques>
+  		<unique tabField="XH_SB"/>		
+   	</uniques>
+   	<sync tabField="XH_SB" dataType="timestamp"/>
+  </model>
+  <model name="FR_TXLOCK">
+		<table>FR_TXLOCK</table>
+		<fields>
+			<field type="0" name="ISLOCK" tabField="ISLOCK"/>
+			<field type="0" name="ID" tabField="ID"/>
+		</fields>
+		<relations>
+    </relations>
+		<primaryKeys>
+			<primaryKey tabField="ID"/>
+		</primaryKeys>
+		<uniques>
+    </uniques>
+  </model>
+  <!-- 测试-->
+  <model name="T_TEST">
+  	<table>T_TEST</table>
+  	<fields>
+  		<field type="0" name="NAME" tabField="NAME"/>
+  		<field type="0" name="SEX" tabField="SEX"/>
+  		<field type="0" name="EMAIL" tabField="EMAIL"/>
+  	</fields>
+  	<relations>
+   	</relations>
+  	<primaryKeys>
+  		<primaryKey tabField="NAME"/>
+  	</primaryKeys>
+  	<querys>
+  	</querys>
+  	<uniques>
+   	</uniques>
+  </model>    
+  <model name="T_SYS_TABLE">
+  	<table>T_SYS_TABLE</table>
+  	<fields>
+  		<field type="0" name="VCTABLEID" tabField="VCTABLEID"/>
+  		<field type="0" name="ISORTID" tabField="ISORTID"/>
+  		<field type="0" name="VCTABLEDESC" tabField="VCTABLEDESC"/>
+  	    <field type="0" name="VCCUSTOMDESC" tabField="VCCUSTOMDESC"/>
+  	</fields>
+  	<relations>
+   	</relations>
+  	<primaryKeys>
+  		<primaryKey tabField="VCTABLEID"/>
+  	</primaryKeys>
+  	<querys>
+  	</querys>
+  	<uniques>
+   	</uniques>
+  </model>  
+</daoModels>

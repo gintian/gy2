@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>职称评审_上会材料</title>
+
+		<meta http-equiv="content-type"content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+		
+		
+		<script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+		<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+		<script language="JavaScript" src="../../../module/system/questionnaire/questionnaire_resource_zh_CN.js"></script><!-- 问卷分析用资源文件 -->
+		<script type="text/javascript" src='../../../ext/ext6/charts.js'></script><!-- 问卷分析用Ext图表文件 -->
+		<script language="JavaScript" src="../../../module/template/template_resource_zh_CN.js"></script><!-- 人事异动用资源文件 -->
+		<script language="JavaScript" src="../../../module/template/utils/template_util.js"></script><!-- 调用人事异动模块 -->
+		<style>
+			#jobtitle_reviewfile_diff_1_tablePanel .x-grid-cell-inner{max-height:1000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			}
+			#jobtitle_reviewfile_diff_2_tablePanel .x-grid-cell-inner{max-height:1000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			}
+			#jobtitle_reviewfile_diff_3_tablePanel .x-grid-cell-inner{max-height:1000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			}
+			#jobtitle_reviewfile_diff_4_tablePanel .x-grid-cell-inner{max-height:1000px;}
+			.clearfix:after{ 
+			    visibility: hidden; 
+			    display: block; 
+			    font-size: 0; 
+			    content: "."; 
+			    clear: both; 
+			    height: 0; 
+			} 
+			* html .clearfix{zoom: 1;} 
+			*:first-child + html .clearfix{zoom: 1;} 
+		</style>
+		<script type="text/javascript">
+			Ext.Loader.setConfig({
+				enabled: true,
+				paths: {
+					'ReviewFileURL': '../../jobtitle/reviewfile',//主界面
+					'GenerateAcPwURL': '../../jobtitle/reviewfile',//随机生成账号密码
+					'OutProficientURL': '../../jobtitle/reviewfile',//鉴定专家
+					'StartReviewURL': '../../jobtitle/reviewfile',//启动评审
+					'ExpertPicker': '../../jobtitle/expertpicker',//选专家控件
+					'QuestionnaireTemplate': '../../../module/system/questionnaire/template',//问卷分析
+					'SYSF':'../../../components/fileupload',//问卷分析
+					'QuestionnaireAnalysis': '../../../module/system/questionnaire/analysis',//问卷分析（图表分析）
+					'NoticePath': '../../../module/system/viewboard'
+				}
+			});
+			Ext.onReady(function(){
+				var w0301 = '';
+				var schemestate = '';
+				var url = window.location.search;
+				if(url.indexOf('id')>-1 && url.indexOf('st')>-1){
+					w0301 = url.split('?')[1].split('&')[0].split('=')[1];
+					schemestate = url.split('?')[1].split('&')[1].split('=')[1];
+				}
+				Ext.require('ReviewFileURL.ReviewFile', function(){
+					JobTitleReviewFile = Ext.create("ReviewFileURL.ReviewFile",{w0301:w0301, schemestate:schemestate});
+				});
+			});
+	 	</script>
+	</head>
+
+	<body>
+	</body>
+</html>

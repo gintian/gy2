@@ -1,0 +1,50 @@
+<%@ page contentType="text/html; charset=UTF-8" language="java"%>
+<%@ taglib uri="/tags/struts-bean" prefix="bean"%>
+<%@ taglib uri="/tags/struts-html" prefix="html"%>
+<%@ taglib uri="/tags/struts-logic" prefix="logic"%>
+<%@ taglib uri="/WEB-INF/tlds/taglib.tld" prefix="hrms"%>
+<%@ page import="com.hrms.struts.valueobject.UserView"%>
+<%@ page import="com.hrms.struts.constant.WebConstant"%>
+<link rel="stylesheet" href="/css/css1.css" type="text/css">
+<script language="JavaScript" src="/js/validate.js"></script>
+<script language="JavaScript" src="/js/function.js"></script>
+
+<script type="text/javascript" language="javascript">
+
+<!--
+ function onsearch(){
+   var codesetid=codeMaintenceForm.seltree.value;
+   var ret=new Object();
+   ret.codesetid=codesetid;
+   window.returnValue=ret;
+   window.close();
+ }
+//-->
+</script>
+<div id='wait' style='position:absolute;top:150;left:10;display=block;'>
+		<table border="1" width="37%" cellspacing="0" cellpadding="4" style="border-collapse: collapse" bgcolor="#F7FAFF" height="87" align="center">
+			<tr>
+				<td bgcolor="#057AFC" style="font-size:12px;color:#ffffff" height=24>
+					正在提取数据，请稍等......
+				</td>
+			</tr>
+			<tr>
+				<td style="font-size:12px;line-height:200%" align=center>
+					<marquee style="border:1px solid #000000" direction="right" width="250" scrollamount="5" scrolldelay="10" bgcolor="#ECF2FF">
+						<table cellspacing="1" cellpadding="0">
+							<tr height=8>
+								<td bgcolor=#3399FF width=8></td>
+								<td></td>
+								<td bgcolor=#3399FF width=8></td>
+								<td></td>
+								<td bgcolor=#3399FF width=8></td>
+								<td></td>
+								<td bgcolor=#3399FF width=8></td>
+								<td></td>
+							</tr>
+						</table>
+					</marquee>
+				</td>
+			</tr>
+		</table>
+	</div>

@@ -1,0 +1,80 @@
+/*此样式必须有，否则就没有滚动条了*/
+.fixedtab 
+{ 
+	overflow:auto; 
+	height:expression(document.body.clientHeight-40);
+	width:expression(document.body.clientWidth-10);
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+    BORDER-LEFT: #94B6E6 1pt solid; 
+    BORDER-RIGHT: #94B6E6 1pt solid; 
+    BORDER-TOP: #94B6E6 1pt solid ; 	
+}
+
+/*锁定查找列*/
+.find_head_lock {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}
+/*锁定标题列 左边单元格*/
+.title_head_lock_left{
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}
+/*锁定标题列 右边单元格*/
+.title_head_lock_right{
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;
+	valign:middle;
+	position:relative;
+    top:expression(this.offsetParent.scrollTop);
+}
+/*数据 左单元格*/
+.data_td_left{
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	font-size: 12px;
+	height:22px;
+}
+/*数据 右单元格*/
+.data_td_right{
+	BORDER-BOTTOM: #C4D8EE 1pt solid;
+	BORDER-LEFT: #C4D8EE 0pt solid;
+	BORDER-RIGHT: #C4D8EE 1pt solid;
+	BORDER-TOP: #C4D8EE 0pt solid;
+	font-size: 12px;
+	height:22px;
+}
+
+
+
+
+

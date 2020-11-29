@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>公告查看</title>
+
+		<meta http-equiv="content-type"content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+		
+		
+		<script language="JavaScript" src="/module/utils/js/template.js"></script>
+		<script language='JavaScript' src='/components/tableFactory/tableFactory.js'></script>
+		<script language="JavaScript" src="/module/template/template_resource_zh_CN.js"></script><!-- 人事异动用资源文件 -->
+		<script language="JavaScript" src="/module/template/utils/template_util.js"></script><!-- 调用人事异动模块 -->
+		<script type="text/javascript">
+			
+			
+			Ext.onReady(function(){
+
+				var path = '';
+				var nbasea0100 = '';
+				var url = window.location.search;
+				if(url.indexOf('path')>-1 && url.indexOf('user')>-1){
+					path = url.split('?')[1].split('&')[0].split('=')[1];
+					path = decodeURIComponent(path);
+					nbasea0100 = url.split('?')[1].split('&')[1].split('=')[1];
+				}
+
+				if(url.indexOf('isword')>-1){ // 支持word模板方式
+					var servletpath = '/servlet/DisplayOleContent?filePath='+path+'&bencrypt=true'+'&openflag=true';
+					
+					var height = window.parent.window.document.getElementById('center_iframe').offsetHeight;
+					var width = window.parent.window.document.getElementById('center_iframe').offsetWidth;
+					Ext.create('Ext.window.Window',{
+				  		title:'申报材料',
+				       	layout:'fit',
+				        modal: true,
+				        resizable: false,  
+				        height:height,
+				        width:width,
+				        border:false,
+				  		closeToolText : '',
+				       	items:[{
+				            xtype: 'panel',
+				            border:false,
+				           	html:'<iframe src="'+servletpath+'" width="'+(width-10)+'" height="'+(height-40)+'"></iframe>'
+				        }],
+				        listeners:{
+				        	close:function(){
+				        		window.history.go(-1);
+				        	}
+				        }
+					}).show();
+					
+				} else {
+					
+					/** 解析path中的参数 */
+					var tabid = "";
+					var taskid = "";
+					var taskid_validate = "";
+					var index = path.indexOf("?");
+					var paramStr =  path;
+					if(index > -1){
+						paramStr = path.substring(index+1);
+					}
+					var paramArray = new Array();
+					paramArray = paramStr.split('&');
+					for(var i=0; i<paramArray.length; i++){
+						var param = paramArray[i];
+						var key = param.split('=')[0];
+						if(key == 'tabid'){
+							tabid = param.split('=')[1];
+						} else if(key == 'taskid'){
+							taskid = param.split('=')[1];
+						} else if(key == 'taskid_validate'){
+							taskid_validate = param.split('=')[1];
+						}
+					}
+					if(Ext.isEmpty(taskid_validate)){// 获取taskid的校验code
+						var map = new HashMap();
+						map.put("type", '2');
+						map.put("taskid", taskid);
+						Rpc({functionId:'ZC00003022',async:false,success:function(res){
+							var result = Ext.decode(res.responseText);
+							taskid_validate = result.taskid_validate;
+						
+						}},map);
+					}
+					// 配置参数 
+					var obj={};
+					obj.sys_type = '1';
+					obj.module_id="11";////调用模块标记：职称模块
+					obj.return_flag="14";//返回模块标记：不需要返回关闭按钮
+					obj.tab_id=tabid;//模板号
+					obj.task_id=taskid;//任务号 除0以外需加密
+					obj.approve_flag="0";//不启用审批
+					obj.view_type="card";//卡片模式
+					obj.card_view_type="1";//卡片模式下不要显示左边导航树
+					obj.other_param="visible_title=0`visible_toolbar=0`object_id="+nbasea0100+"`taskid_validate="+taskid_validate;//visible_title=0:不需要标题； visible_toolbar=0：不要按钮；object_id：对象nbase+a0100
+					obj.callBack_init="jobtitle_viewtemplate_showView";
+					//obj.callBack_close="JobTitleRevewFile.closeView";
+					
+					//获取业务模板名称
+					var map = new HashMap();
+					map.put("tabId", tabid);
+					map.put("getconfig", true);//获取材料公示配置信息
+					map.put("type", '0');//公示配置信息
+				    Rpc({functionId:'ZC00003018',async:false,success:function(){
+				    	var result = Ext.decode(arguments[0].responseText);
+				    	jobtitle_viewtemplate_tabName = result.tabName;
+				    	var configStr = result.configStr;
+				    	if(!Ext.isEmpty(configStr)){
+				    		obj.other_param += ('`noshow_pageno='+configStr)
+					    }
+						// 调用人事异动模板 
+						createTemplateForm(obj);
+				    },scope:this},map);
+				}
+			});
+
+			// 显示模板
+			function jobtitle_viewtemplate_showView(){
+		        var panel =  Ext.widget("panel",{
+					title : jobtitle_viewtemplate_tabName,
+					border : false,
+					scrollable : 'y',
+					width:1000,
+				    height:500,
+				    layout:{
+						type:'fit'
+					},
+					items: [templateMain_me.mainPanel],
+					tools: [{
+						/* xtype:'button',
+						text:'返回', */
+						xtype:'tool',
+						type:'close',
+						handler:function(){
+							window.history.go(-1);
+						}
+					}]
+				});	
+				
+		        Ext.widget('viewport', {
+		    		border:false,
+		    		layout: {
+						type: 'fit'
+		    		},
+		    		items: [panel]
+				});
+			}
+	 	</script>
+	</head>
+
+	<body>
+	</body>
+</html>

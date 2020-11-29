@@ -1,0 +1,11 @@
+document.writeln(" <OBJECT id=\"CardPreview1\"");
+document.writeln(" classid=\"clsid:657DF951-2DED-4E5D-868A-66F6FA92BB92\"");
+document.writeln(" codebase=\"/cs_deploy/hrmsAXProj.cab#version=2,1,17,1\"");
+document.writeln(" width=\"0\"");
+document.writeln(" height=\"0\"");
+document.writeln(" hspace=\"0\"");  
+document.writeln(" vspace=\"0\">");
+document.writeln(" <PARAM NAME='PkgName' VALUE='hjdesignerpkg.msi'/>");
+document.writeln(" <PARAM NAME='SrvVersion' VALUE='7.0.9'/>");
+document.writeln(" <PARAM NAME='LowestVersion' VALUE='65535'/>");
+document.writeln("</OBJECT>"); 

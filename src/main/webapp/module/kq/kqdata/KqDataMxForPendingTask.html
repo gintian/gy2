@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+<head>
+    <title>考勤审批代办专用页面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body Style="width:100%">
+</body>
+<script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+
+<script type="text/javascript">
+    /**
+     * 解析url中带的参数 返回Object
+     */
+    function getRequest(url) {
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for(var i = 0; i < strs.length; i ++) {
+                var param = strs[i];
+                var params=param.split("=");
+                /** start liubaoqi  针对url中参数含有等于号=的情况   param=pra=1`am=3*/
+                if(params.length>2){
+                    for(var p =2;p<params.length;p++){
+                        params[1] += ("="+params[p]);
+                    }
+                }
+                /** 2017-05-24 16:50:31 end*/
+                if (params.length>1){
+                    theRequest[params[0]]=params[1];
+                }else
+                    theRequest[params[0]]="";
+            }
+        }
+        return theRequest;
+    }
+	Ext.Loader.setConfig({
+		enabled: true,
+		paths:{
+			'KqDataURL': '/module/kq/kqdata',
+			'SYSF':'../../../components/fileupload'
+		}
+	});
+    /*【43524】 Ext对兼容模式支持不友好，使用Ext.grid.selection.SpreadsheetModel对象是选中下角标不跟着滚动条走。此处优化一下 guodd 2020-02-10*/
+    Ext.override(Ext.grid.selection.SelectionExtender,{
+        alignHandle:function(){
+            var b=this,a=b.lastPos&&b.lastPos.getCell();
+            var enabled = b.handle.isVisible();
+            if(a){
+                /*提前计算下位置*/
+                var realXY = b.handle.getAlignToXY(a,"c-br");
+                realXY = b.handle.translatePoints(realXY);
+                b.enable();
+                if(Ext.isIE && enabled){
+                    /*IE下拖动的时候，手动更新位置*/
+                    b.handle.dom.style.left=realXY.left+"px";
+                    b.handle.dom.style.top=realXY.top+"px";
+                }else{
+                    /*非IE操作 或者 IE初始化定位 走此处*/
+                    b.handle.alignTo(a,"c-br");
+                }
+            }else{
+                b.disable()
+            }
+        }
+    });
+	var url = window.location.search;
+	Ext.onReady(function(){
+		var config = getRequest(url);
+		Ext.require('KqDataURL.KqDataMx', function(){
+			Ext.create("KqDataURL.KqDataMx",config);
+		});
+	});
+
+</script>
+</html>

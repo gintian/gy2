@@ -1,0 +1,24 @@
+#header {
+	FONT-SIZE: 85%; BACKGROUND: url(/images/bg.gif) #369 repeat-x 50% bottom; FLOAT: left; WIDTH: 100%; LINE-HEIGHT: normal
+}
+#header UL {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 10px; LIST-STYLE-TYPE: none
+}
+#header LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; BACKGROUND: url(/images/right.gif) no-repeat right top; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#header A {
+	PADDING-RIGHT: 7px; DISPLAY: block; PADDING-LEFT: 20px; FONT-WEIGHT: bold; BACKGROUND: url(/images/left.gif) no-repeat left top; FLOAT: left; PADDING-BOTTOM: 4px; COLOR: #9cf; PADDING-TOP: 5px; TEXT-DECORATION: none
+}
+#header A {
+	FLOAT: none
+}
+#header A:hover {
+	COLOR: #fff
+}
+#header #current {
+	BACKGROUND-IMAGE: url(/images/right_on.gif)
+}
+#header #current A {
+	BACKGROUND-IMAGE: url(/images/left_on.gif); PADDING-BOTTOM: 5px; COLOR: #333
+}

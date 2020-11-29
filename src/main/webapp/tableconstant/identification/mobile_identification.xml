@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <tools>
+         <toolbar type='button' privid="" text="认证" handler="saveOauth"/>
+         <toolbar type='button' privid="" functype="delete" functionid="0000003057" text="删除"/>
+    </tools>
+    <table selectable="true" sortable="true" lockable="true" editable="false">
+    </table>
+</tableconstant>

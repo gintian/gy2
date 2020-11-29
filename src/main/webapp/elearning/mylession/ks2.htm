@@ -1,0 +1,710 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>在线考试</title>
+<style type="text/css">
+<!--
+.lian12hong {
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: 600;
+	font-variant: normal;
+	color: #FF9900;
+	text-decoration: none;
+}
+.pagebgk{
+	
+	border:2px solid #000000;
+	background-color: #FFFFFF;
+}
+.pagebgk2{
+	
+	border:0px solid #000000;	
+}
+.tiaodi {
+	background-color: #F3F3F3;
+}
+-->
+</style>
+</head>
+
+
+
+<link rel="stylesheet" href="../../css/css1.css" type="text/css">
+<SCRIPT language=JavaScript> 
+function put_result(obj,objInput)
+{
+	var temp = document.all(obj.name);
+	var text_input = document.all("userJudgeAnswer");
+	var arr = "";
+	for(i=0;i<temp.length;i++)
+	{
+		if(temp[i].checked)
+		{
+			arr = arr + temp[i].value;
+		}
+	}
+	objInput.value = arr;
+}
+
+function time_out(){
+	sub_add("userJudgeAnswer","answers",5+1);
+	document.form_exam_question_in_paper.lable.value = "timeOut";
+	document.form_exam_question_in_paper.action=document.form_exam_question_in_paper.action+"?timeout=true";
+	document.form_exam_question_in_paper.submit();
+} 
+function sub_form(){
+    document.form_exam_question_in_paper.lable.value = "currStep";
+	sub_add("userJudgeAnswer","answers",5+1);	
+	document.form_exam_question_in_paper.submit();
+}
+function sub_add(allItem,resultItem,allSize){
+  	var value = "";
+  	for(var i=1; i<allSize;i++){
+	  	var a = document.all(allItem+i);
+	  	if(a+"." != "null."){
+	  		if(a.value != ""){
+	    	 	value = value +  "$" + a.value.toUpperCase();
+	    	}else{
+	    		value = value +  "$#";
+	    	}
+	  	}
+  	}
+  	document.all(resultItem).value=value.toUpperCase();
+}
+function empty_answer(allItem,allSize){
+    var flag=true;
+	for(var i=1; i<allSize;i++){
+		var a = document.all(allItem+i);
+		if(a+"." != "null."){
+			if(a.value == ""){
+				flag= false;
+			}			
+		}
+	}
+	return flag;
+}
+function empty(allItem,allSize){
+    var flag=true;
+    var value = 0;
+	for(var i=1; i<allSize;i++){
+		var a = document.all(allItem+i);
+		if(a+"." != "null."){
+			if(a.value == ""){
+				flag= false;
+			}			
+		}
+		if(flag==false){
+			value = parseInt(i);
+			break;
+		}
+	}
+	return parseInt(value);
+}
+var timeoutflag=false;
+startday = new Date();
+clockStart = startday.getTime(); 
+var consumeSecond = 16;
+var timeLimit = 120;
+var popFlag = 1;
+function initStopwatch() {  
+	var myTime = new Date();  
+	return((myTime.getTime() - clockStart)/1000 + consumeSecond);  
+} 
+function getSecs() {
+	var tSecs = Math.round(initStopwatch()); 
+	var iSecs = tSecs % 60; 
+	var iMins = Math.round((tSecs-30)/60);
+	var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+	var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+	document.all("timespent").value = sMins+":" +sSecs; 
+	window.setTimeout('getSecs()',1000);  
+	if (popFlag == 1) {
+	    if (( timeLimit - sMins) <= 5) {
+	        popFlag = 0;
+	        alert(" 时间已不多，请注意提交试卷！");
+	    }
+	} 
+	if(timeLimit - sMins <=0){
+		window.setTimeout('void(0)',1);
+		if(!timeoutflag){
+			time_out();
+		}	
+		timeoutflag=true;
+	}  
+} 
+function go_once()
+{
+  window.location.href="mycourse.htm";
+}
+</SCRIPT>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload=" window.setTimeout('getSecs()',1)">
+
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30" valign="bottom"> 
+      <table border="0" align="center" cellpadding="0" cellspacing="0" class="pagebgk2">
+        <tr>
+          <td width="6%">&nbsp;</td>
+          
+            <TD vAlign=center width=446> <DIV align=center> 
+                <P align=left><SPAN 
+                  class=lian12hong>执行力的思维拓展-随机试卷</SPAN></P>
+              </DIV></TD>
+            <TD width=160> <DIV class=cn_12cu align=right><SPAN class=cn_12><IMG 
+                  height=16 src="../images/user.gif" width=16 
+                  align=absMiddle> 考试学员：***</SPAN><SPAN 
+                  class=cn_16biao></SPAN></DIV></TD>
+          
+          <td width="6%">&nbsp;</td>
+        </tr>
+      </table> 
+    </td>
+  </tr>
+  <tr>
+    <td> <table  border="0" align="center" cellpadding="0" cellspacing="0" class="pagebgk">
+        <tr> 
+          <td width="446" valign="middle"><div align="center"> 
+              <p align="left">&nbsp;</p>
+            </div></td>
+          <td width="160"><div align="right" class="cn_12cu"><span class="cn_16biao"></span></div></td>
+        </tr>
+        <tr> 
+          <td height="216" colspan="2" valign="top" class="biank"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr> 
+                <th colspan="3">&nbsp;</th>
+              </tr>
+              <tr> 
+                <td colspan="3" class="cn_12daohanghui"><div align="center">总分值<span class="hong_12">100</span>分，考试时间<span class="hong_12">120</span>分钟，已用时间：<span class="biaodan"> 
+                    <input size="5" name="timespent" class="cn_16biao">
+                    </span> </div></td>
+              </tr>
+              <tr> 
+                <td colspan="3">&nbsp;</td>
+              </tr>
+              <tr class="tiaodi"> 
+                <td width="12">&nbsp;</td>
+                <td width="576" class="cn_12"><span class="lian14"><strong class="en_12">�</strong>单选题(每小题4分,共40分.) 
+                  </span><span class="cn_12qian"></span></td>
+                <td width="13">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td colspan="3"><span class="cn_12"> </span><span class="cn_12"> 
+                  </span> <div align="center"> 
+                    <table width="96%"  border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td colspan="3">&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">1</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">管理是一种柔性的，一种软力量，是从_____上解决问题的一种能力。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C1" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer1)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">思想 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C1" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer1)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">心态 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C1" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer1)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">思维 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C1" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer1)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">根本 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId1" value="4932473">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">2</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">人性化的管理就是从________去想、思考、观察的一种行为。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C2" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer2)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">下级的角度 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C2" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer2)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">人的心里面 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C2" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer2)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">大众利益 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C2" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer2)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">领导角度 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId2" value="4932475">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">3</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">______就是真正站到对方的角度来看这个问题。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C3" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer3)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">同情心 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C3" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer3)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">同理心 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C3" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer3)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">人性化管理 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C3" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer3)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">领导力 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId3" value="4932478">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">4</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">撬动执行力要从___开始。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C4" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer4)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">自我 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C4" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer4)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">思想 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C4" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer4)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">利益 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C4" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer4)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">心 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId4" value="4932477">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">5</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">_____是影响行为的首要因素。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C5" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer5)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">心态 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C5" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer5)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">思想 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C5" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer5)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">思维 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C5" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer5)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">心情 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId5" value="4932470">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">6</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">一个人有多重要通常与他________成正比。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C6" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer6)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">创造能力 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C6" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer6)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">所付责任的多少 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C6" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer6)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">权利的大小 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C6" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer6)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">专业水平 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId6" value="4932474">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">7</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">_____是企业领导人的首要工作。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C7" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer7)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">管理 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C7" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer7)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">执行 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C7" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer7)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">协调 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C7" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer7)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">决策 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId7" value="4932469">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">8</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">工作中，执行力的启发也需考虑到观念的问题，这里观念指是？ 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C8" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer8)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">为什么而工作 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C8" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer8)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">为谁而工作 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C8" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer8)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">应该怎么做 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C8" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer8)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">该不该做 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId8" value="4932481">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">9</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">什么是企业的真正的核心竞争力？ 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C9" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer9)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">资产 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C9" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer9)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">经理 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C9" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer9)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">人 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C9" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer9)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">会计 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId9" value="4932476">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="tiaodi"><div align="center"><span class="cnhei_12"><span class="en_12hong">第</span></span><span class="hong_12">10</span><span class="cnhei_12"><span class="en_12hong">题. 
+                            </span> </span></div></td>
+                        <td colspan="2" class="tiaodi"><span class="cnhei_12">推动执行文化就要授权，授权包括____个阶段。 
+                          </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C10" value="A" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer10)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">A </span></td>
+                        <td width="85%"><span class="cnhei_12">3.0 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C10" value="B" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer10)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">B </span></td>
+                        <td width="85%"><span class="cnhei_12">4.0 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C10" value="C" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer10)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">C </span></td>
+                        <td width="85%"><span class="cnhei_12">5.0 </span></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top"><div align="right"><span class="cn_12"><span class="cnhei_12"> 
+                            <input  type="radio" name="C10" value="D" onClick="put_result(this,form_exam_question_in_paper.userSingleAnswer10)">
+                            </span> </span></div></td>
+                        <td valign="top" width="2%"><span class="cnhei_12">D </span></td>
+                        <td width="85%"><span class="cnhei_12">6.0 </span></td>
+                      </tr>
+                      <tr> 
+                        <td height="8" colspan="3">　</td>
+                      </tr>
+                      <tr> 
+                        <td> <table>
+                            <input type="hidden" name="singleQuestionId10" value="4932466">
+                            <input type="hidden" name="singleSize" value="10">
+                            <tr> 
+                              <td width="1"></td>
+                              <td class="test_keytext">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td colspan="2">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </div></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+                <td><div align="center"></div></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2" valign="top"><div align="center"></div>
+            <div align="center"><span class="cn_12cu"><img src="http://61.135.238.36:80/elms/images/blue/touming.gif" width="1" height="8"> 
+              </span></div></td>
+        </tr>
+        <tr> 
+          <td valign="top"><div align="center"><span class="cn_12cu"> </span><span class="cn_12cu"> 
+              <input name="Submit22262" type="button" class="mybutton" value="上一步" onClick="history.back();">
+              <input name="Submit22262" type="button" class="mybutton" value="下一步" onClick="go_once();">
+              <input name="Submit222522" type="button" class="mybutton" value="暂存" onClick="go_once();">
+              </span></div></td>
+        </tr>
+        <tr> 
+          <td colspan="2">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

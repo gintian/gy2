@@ -1,0 +1,473 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>在线考试</title>
+<style type="text/css">
+<!--
+.lian12hong {
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: 600;
+	font-variant: normal;
+	color: #FF9900;
+	text-decoration: none;
+}
+.pagebgk{
+	
+	border:2px solid #000000;
+	background-color: #FFFFFF;
+}
+.pagebgk2{
+	
+	border:0px solid #000000;	
+}
+.tiaodi {
+	background-color: #F3F3F3;
+}
+-->
+</style>
+</head>
+
+
+
+<link rel="stylesheet" href="../../css/css1.css" type="text/css">
+<SCRIPT language=JavaScript> 
+function put_result(obj,objInput)
+{
+	var temp = document.all(obj.name);
+	var text_input = document.all("userJudgeAnswer");
+	var arr = "";
+	for(i=0;i<temp.length;i++)
+	{
+		if(temp[i].checked)
+		{
+			arr = arr + temp[i].value;
+		}
+	}
+	objInput.value = arr;
+}
+
+function time_out(){
+	sub_add("userJudgeAnswer","answers",5+1);
+	document.form_exam_question_in_paper.lable.value = "timeOut";
+	document.form_exam_question_in_paper.action=document.form_exam_question_in_paper.action+"?timeout=true";
+	document.form_exam_question_in_paper.submit();
+} 
+function sub_form(){
+    document.form_exam_question_in_paper.lable.value = "currStep";
+	sub_add("userJudgeAnswer","answers",5+1);	
+	document.form_exam_question_in_paper.submit();
+}
+function sub_add(allItem,resultItem,allSize){
+  	var value = "";
+  	for(var i=1; i<allSize;i++){
+	  	var a = document.all(allItem+i);
+	  	if(a+"." != "null."){
+	  		if(a.value != ""){
+	    	 	value = value +  "$" + a.value.toUpperCase();
+	    	}else{
+	    		value = value +  "$#";
+	    	}
+	  	}
+  	}
+  	document.all(resultItem).value=value.toUpperCase();
+}
+function empty_answer(allItem,allSize){
+    var flag=true;
+	for(var i=1; i<allSize;i++){
+		var a = document.all(allItem+i);
+		if(a+"." != "null."){
+			if(a.value == ""){
+				flag= false;
+			}			
+		}
+	}
+	return flag;
+}
+function empty(allItem,allSize){
+    var flag=true;
+    var value = 0;
+	for(var i=1; i<allSize;i++){
+		var a = document.all(allItem+i);
+		if(a+"." != "null."){
+			if(a.value == ""){
+				flag= false;
+			}			
+		}
+		if(flag==false){
+			value = parseInt(i);
+			break;
+		}
+	}
+	return parseInt(value);
+}
+var timeoutflag=false;
+startday = new Date();
+clockStart = startday.getTime(); 
+var consumeSecond = 16;
+var timeLimit = 120;
+var popFlag = 1;
+function initStopwatch() {  
+	var myTime = new Date();  
+	return((myTime.getTime() - clockStart)/1000 + consumeSecond);  
+} 
+function getSecs() {
+	var tSecs = Math.round(initStopwatch()); 
+	var iSecs = tSecs % 60; 
+	var iMins = Math.round((tSecs-30)/60);
+	var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+	var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+	document.all("timespent").value = sMins+":" +sSecs; 
+	window.setTimeout('getSecs()',1000);  
+	if (popFlag == 1) {
+	    if (( timeLimit - sMins) <= 5) {
+	        popFlag = 0;
+	        alert(" 时间已不多，请注意提交试卷！");
+	    }
+	} 
+	if(timeLimit - sMins <=0){
+		window.setTimeout('void(0)',1);
+		if(!timeoutflag){
+			time_out();
+		}	
+		timeoutflag=true;
+	}  
+} 
+function go_once()
+{
+  window.location.href="ks2.htm";
+}
+</SCRIPT>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload=" window.setTimeout('getSecs()',1)">
+
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30" valign="bottom"> 
+      <table border="0" align="center" cellpadding="0" cellspacing="0" class="pagebgk2">
+        <tr>
+          <td width="6%">&nbsp;</td>
+          
+            <TD vAlign=center width=446> <DIV align=center> 
+                <P align=left><SPAN 
+                  class=lian12hong>执行力的思维拓展-随机试卷</SPAN></P>
+              </DIV></TD>
+            <TD width=160> <DIV class=cn_12cu align=right><SPAN class=cn_12><IMG 
+                  height=16 src="../images/user.gif" width=16 
+                  align=absMiddle> 考试学员：***</SPAN><SPAN 
+                  class=cn_16biao></SPAN></DIV></TD>
+          
+          <td width="6%">&nbsp;</td>
+        </tr>
+      </table> 
+    </td>
+  </tr>
+  <tr>
+    <td> 
+      <TABLE cellSpacing=0 cellPadding=0 align=center 
+              border=0 class="pagebgk">
+        <TBODY>          
+          <TR> 
+            <TD class=biank vAlign=top colSpan=2 height=216> <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center 
+                  border=0>
+                <TBODY>
+                  <TR> 
+                    <TH colSpan=3>&nbsp;</TH>
+                  </TR>
+                  <TR> 
+                    <TD class=cn_12daohanghui colSpan=3> <DIV align=center>总分值<SPAN 
+                        class=hong_12>100</SPAN>分，考试时间<SPAN 
+                        class=hong_12>120</SPAN>分钟, 已用时间：<SPAN 
+                        class=biaodan>
+                        <INPUT class=cn_16biao size=5 
+                        name=timespent>
+                        </SPAN> </DIV></TD>
+                  </TR>
+                  <TR> 
+                    <TD colSpan=3>&nbsp;</TD>
+                  </TR>
+                  <TR class=tiaodi> 
+                    <TD width=12>&nbsp;</TD>
+                    <TD class=cn_12 width=576><SPAN class=lian14><STRONG 
+                        class=en_12>�</STRONG>判断题(每小题2分,共10分) </SPAN><SPAN 
+                        class=cn_12qian></SPAN></TD>
+                    <TD width=13>&nbsp;</TD>
+                  </TR>
+                  <TR> 
+                    <TD colSpan=3><SPAN class=cn_12></SPAN><SPAN 
+                        class=cn_12></SPAN> <DIV align=center> 
+                        <TABLE cellSpacing=0 cellPadding=0 width="96%" 
+                          border=0>
+                          <TBODY>
+                            <TR> 
+                              <TD colSpan=3>&nbsp;</TD>
+                            </TR>
+                            <TR> 
+                              <TD class=tiaodi vAlign=top> <DIV align=center><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>第</SPAN></SPAN><SPAN 
+                              class=hong_12>1</SPAN><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>题. </SPAN></SPAN></DIV></TD>
+                              <TD class=tiaodi colSpan=2><SPAN 
+                              class=cnhei_12>管理者强调的是短期目标，领导者强调的是长远发展发向。 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT type=radio value=A name=C1>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>A 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>对 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT  type=radio value=B name=C1>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>B 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>错 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD colSpan=3 height=8>　</TD>
+                            </TR>
+                            <TR> 
+                              <TD> <TABLE>
+                                  <INPUT type=hidden value=5 
+                                name=judgeSize>
+                                  <INPUT type=hidden value=4932460 
+                                name=judgeQuestionId1>
+                                  <TBODY>
+                                    <TR> 
+                                      <TD width=1></TD>
+                                      <TD class=test_keytext>&nbsp;</TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE></TD>
+                            </TR>
+                            <TR> 
+                              <TD class=tiaodi vAlign=top> <DIV align=center><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>第</SPAN></SPAN><SPAN 
+                              class=hong_12>2</SPAN><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>题. </SPAN></SPAN></DIV></TD>
+                              <TD class=tiaodi colSpan=2><SPAN 
+                              class=cnhei_12>如果从管理这个大的战略角度来看，执行力就不是那么简单的按质按量按时完成任务的这么一件事了。 
+                                </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT type=radio value=A name=C2>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>A 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>对 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT type=radio value=B name=C2>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>B 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>错 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD colSpan=3 height=8>　</TD>
+                            </TR>
+                            <TR> 
+                              <TD> <TABLE>
+                                  <INPUT type=hidden value=5 
+                                name=judgeSize>
+                                  <INPUT type=hidden value=4932456 
+                                name=judgeQuestionId2>
+                                  <TBODY>
+                                    <TR> 
+                                      <TD width=1></TD>
+                                      <TD class=test_keytext>&nbsp; </TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE></TD>
+                            </TR>
+                            <TR> 
+                              <TD class=tiaodi vAlign=top> <DIV align=center><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>第</SPAN></SPAN><SPAN 
+                              class=hong_12>3</SPAN><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>题. </SPAN></SPAN></DIV></TD>
+                              <TD class=tiaodi colSpan=2><SPAN 
+                              class=cnhei_12>执行力，是完成和执行的这种手段和能力。 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT 
+                              
+                              type=radio value=A name=C3>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>A 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>对 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT                               
+                              type=radio value=B name=C3>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>B 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>错 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD colSpan=3 height=8>　</TD>
+                            </TR>
+                            <TR> 
+                              <TD> <TABLE>
+                                  <INPUT type=hidden value=5 
+                                name=judgeSize>
+                                  <INPUT type=hidden value=4932455 
+                                name=judgeQuestionId3>
+                                  <TBODY>
+                                    <TR> 
+                                      <TD width=1></TD>
+                                      <TD class=test_keytext>&nbsp; </TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE></TD>
+                            </TR>
+                            <TR> 
+                              <TD class=tiaodi vAlign=top> <DIV align=center><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>第</SPAN></SPAN><SPAN 
+                              class=hong_12>4</SPAN><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>题. </SPAN></SPAN></DIV></TD>
+                              <TD class=tiaodi colSpan=2><SPAN 
+                              class=cnhei_12>执行力最主要是领导人的工作，而不是下属的工作。 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT 
+                              type=radio value=A name=C4>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>A 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>对 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT                               
+                              type=radio value=B name=C4>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>B 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>错 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD colSpan=3 height=8>　</TD>
+                            </TR>
+                            <TR> 
+                              <TD> <TABLE>
+                                  <INPUT type=hidden value=5 
+                                name=judgeSize>
+                                  <INPUT type=hidden value=4932463 
+                                name=judgeQuestionId4>
+                                  <TBODY>
+                                    <TR> 
+                                      <TD width=1></TD>
+                                      <TD class=test_keytext>&nbsp; </TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE></TD>
+                            </TR>
+                            <TR> 
+                              <TD class=tiaodi vAlign=top> <DIV align=center><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>第</SPAN></SPAN><SPAN 
+                              class=hong_12>5</SPAN><SPAN class=cnhei_12><SPAN 
+                              class=en_12hong>题. </SPAN></SPAN></DIV></TD>
+                              <TD class=tiaodi colSpan=2><SPAN 
+                              class=cnhei_12>执行是企业领导人的首要工作，因为承担责任的是企业领导人。 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT 
+                              onclick=put_result(this,form_exam_question_in_paper.userJudgeAnswer5) 
+                              type=radio value=A name=C5>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>A 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>对 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top> <DIV align=right><SPAN class=cn_12><SPAN 
+                              class=cnhei_12>
+                                  <INPUT 
+                              onclick=put_result(this,form_exam_question_in_paper.userJudgeAnswer5) 
+                              type=radio value=B name=C5>
+                                  </SPAN></SPAN></DIV></TD>
+                              <TD vAlign=top width="2%"><SPAN class=cnhei_12>B 
+                                </SPAN></TD>
+                              <TD width="85%"><SPAN class=cnhei_12>错 </SPAN></TD>
+                            </TR>
+                            <TR> 
+                              <TD colSpan=3 height=8>　</TD>
+                            </TR>
+                            <TR> 
+                              <TD> <TABLE>
+                                  <INPUT type=hidden value=5 
+                                name=judgeSize>
+                                  <INPUT type=hidden value=4932457 
+                                name=judgeQuestionId5>
+                                  <TBODY>
+                                    <TR> 
+                                      <TD width=1></TD>
+                                      <TD class=test_keytext>&nbsp; </TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE></TD>
+                            </TR>
+                            <TR> 
+                              <TD>&nbsp;</TD>
+                              <TD 
+                    colSpan=2>&nbsp;</TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE>
+                      </DIV></TD>
+                  </TR>
+                  <TR> 
+                    <TD>&nbsp;</TD>
+                    <TD> <DIV align=center></DIV></TD>
+                    <TD>&nbsp;</TD>
+                  </TR>
+                </TBODY>
+              </TABLE></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=2>&nbsp;</TD>
+          </TR>
+          <TR> 
+            <TD vAlign=top colSpan=2> </TD>
+          </TR>
+          <TR> 
+            <TD vAlign=top> <DIV align=center><SPAN class=cn_12cu></SPAN><SPAN 
+                  class=cn_12cu>
+                <INPUT class="mybutton" onclick="go_once();" type="button" value="下一步" name="Submit22262">
+                <INPUT class="mybutton"  onclick="history.back();" type="button" value="暂存" name="Submit22262">
+                </SPAN></DIV></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=2>&nbsp;</TD>
+          </TR>
+        </TBODY>
+      </TABLE></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

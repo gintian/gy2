@@ -1,0 +1,548 @@
+/*html{
+    //scrollbar-3dlight-color : #F5FBFF; 
+    //scrollbar-highlight-color : #A4C6E5;
+    scrollbar-face-color : #A4C6E5; 
+    scrollbar-arrow-color : #A4C6E5; 
+    scrollbar-shadow-color : #A4C6E5; 
+    scrollbar-darkshadow-color : #F5FBFF; 
+    //scrollbar-base-color : #F5FBFF; 
+    scrollbar-track-color : #DDEEFE;
+}
+body{
+    //scrollbar-3dlight-color : #F5FBFF; 
+    //scrollbar-highlight-color : #A4C6E5;
+    scrollbar-face-color : #A4C6E5; 
+    scrollbar-arrow-color : #A4C6E5; 
+    scrollbar-shadow-color : #A4C6E5; 
+    scrollbar-darkshadow-color : #F5FBFF; 
+    //scrollbar-base-color : #F5FBFF;
+    scrollbar-track-color : #DDEEFE;
+}
+
+#treemenu{
+    //scrollbar-3dlight-color : #F5FBFF; 
+    //scrollbar-highlight-color : #A4C6E5; 
+    scrollbar-face-color : #A4C6E5; 
+    scrollbar-arrow-color : #A4C6E5; 
+    scrollbar-shadow-color : #A4C6E5; 
+    scrollbar-darkshadow-color : #F5FBFF; 
+    //scrollbar-base-color : #F5FBFF;
+    scrollbar-track-color : #DDEEFE;
+}
+ */
+/*区域分隔split背景 start*/
+.x-layout-split {
+    background: url(/images/hcm/themes/default/menu_split_bg.gif) repeat-y scroll 0px 0 rgb(255, 255, 255);
+}
+/**extjs4.2 start*/
+.x-splitter{
+    background: url(/images/hcm/themes/default/menu_split_bg.gif) repeat-y scroll 0px 0 rgb(255, 255, 255);
+    border-right:1px solid #d1d1d1;
+    z-index:999 !important;
+}
+.x-panel-default{
+    /*border-top:1px solid #d1d1d1;*/
+    border-color:#d1d1d1;
+}
+/**extjs4.2 end */
+.x-layout-cmini-west,.x-layout-cmini-east {
+    border-right: 1px solid #d1d1d1;
+}
+
+.x-layout-split-west .x-layout-mini {
+    background: url("/images/hcm/themes/default/content/mini-left.gif") no-repeat scroll 1px 0 transparent;
+}
+
+.x-layout-cmini-west .x-layout-mini {
+    background: url(/images/hcm/themes/default/content/mini-right.gif) no-repeat;
+}
+
+.x-layout-split-south .x-layout-mini {
+    background: url("/images/hcm/themes/default/content/mini-bottom.gif") no-repeat scroll 52% 0px rgb(255, 255, 255);
+    border-top: 1px solid #d1d1d1;
+    height: 6px;
+    *height: 8px;
+}
+
+.x-layout-cmini-south .x-layout-mini {
+    background: url("/images/hcm/themes/default/content/mini-top.gif") no-repeat scroll 0 0 transparent;
+    hight:8px;
+    left: 50%;
+    width: 35px;
+}
+/*区域分隔split背景 end*/
+
+.toolbar {
+    /*background: url("../images/hcm/themes/default/leftbar_line.png") repeat-y scroll right top #4b99e8;*/
+    background: none;
+    line-height: 43px;
+    height: 43px;
+    background-color: #deeaff;
+}
+
+.TableRow,.TableRow_lrt, .TableRow_rt, .TableRow_lr, .TableRow_r, .TableRow1, .TableRow_2rows, .TableRow_5rows, .TableRow_2rows_locked{
+    height:30px;
+    border-color:#d1d1d1;
+    background-color:#E2E2E2;
+}
+
+/*非IE浏览器 checkbox 显示不对，添加兼容样式*/
+.checkboxRecordRow{
+	line-height:0px !important;
+	vertical-align:middle;
+}
+
+.RecordRow,.RecordRowP, .RecordRow_Batch, .RecordRow_Know, .RecordRow_Score, .RecordRow_lrt, .RecordRow_lt, .RecordRow_lr, .RecordRow_l, .RecordRow_left, .RecordRow_right, .RecordRow_inside, .RecordRowHx, .RecordRowHr, .RecordRowNOH, .RecordRowinvestigate, .RecordRow1, .RecordRow2, .RecordRowLeftBottom0, .RecordRowLeft0, .RecordRowleftTop0, .RecordRowTop0, .RecordRowBottom0, .tableHeader2{
+    height:30px;
+    /* border-color:#d1d1d1; 此处的样式导致表格边框线的颜色有点深  暂时去掉  haosl 2017-9-19 */
+}
+ 
+
+.trShallow {
+    height:30px;
+    line-height:30px;
+}
+.trDeep{
+    height:30px;
+    line-height:30px;
+}
+
+.trShallow1 {
+    height:30px;
+    line-height:30px;
+}
+.trDeep1{
+    height:30px;
+    line-height:30px;
+}
+
+.tdFontcolor{
+    height:30px;
+    line-height:30px;
+}
+
+/*input输入框边框演示*/
+.textColorWrite,.textColorRead, .TEXT1, .TEXT_Code, .TEXT4, .TEXT6, .TEXT7, .TEXT8,.editor {
+    font-size: 12px;
+    font-family:微软雅黑;
+    height:22px;
+    line-height:22px;
+    border: 1pt solid #d1d1d1;
+    vertical-align:middle;
+    margin:0px; 
+    padding:0;
+    *padding:0 0 3px 1px;
+}
+.TEXT,.TEXT2{
+    border-color:#d1d1d1;
+    font-size: 12px;
+    font-family:微软雅黑;
+    height:22px;
+    line-height:22px;
+}
+.READTEXT{
+    font-size: 12px;
+    font-family:微软雅黑;
+    height:22px;
+    line-height:22px;
+}
+.textColorWrite{
+    width:200px;
+}
+
+.inputtext{
+    font-size: 12px;
+    font-family:微软雅黑;
+    height:22px;
+    line-height:22px;
+    border: 1pt solid #d1d1d1 !important;
+}
+
+/* div样式处理 add by xiaoyun 2014-9-10 start */
+div#tbl-container {
+    border-color:#d1d1d1;
+}
+div#treemenu {
+    border-color:#d1d1d1 !important;
+}
+div#scroll_box {
+    border-color:#d1d1d1 !important;
+}
+/* div样式处理 add by xiaoyun 2014-9-10 end */
+
+table.ftable td {height:30px;}
+table.ftable th {height:30px;}
+.mybutton{
+    border:1px solid #c5c5c5;
+    background:#f9f9f9;
+    height:23px;
+    line-height:20px;
+    color:#414141/*#36507E*/; 
+    padding:0 10px 0 10px;
+}
+.mybutton:hover{
+	background:#e2e1e1
+}
+.mybutton:active{
+	background:#c5c5c5
+}
+.mybutton:disabled{
+	background:#f7f1f166;
+	color:#4141417a
+}
+/*用户授权按钮样式  begin jingq add 2014.07.09*/
+.x-toolbar .x-btn-over .x-btn-left{background:url(/images/hcm/themes/default/content/mybutton_bg.gif) no-repeat 0 0;}
+.x-toolbar .x-btn-over .x-btn-right{background:url(/images/hcm/themes/default/content/mybutton_bg.gif) no-repeat 0 -21px;}
+.x-toolbar .x-btn-over .x-btn-center{background:url(/images/hcm/themes/default/content/mybutton_bg.gif) repeat-x 0 -42px;}
+.x-toolbar .x-btn-click .x-btn-left,.x-toolbar .x-btn-pressed .x-btn-left,.x-toolbar .x-btn-menu-active .x-btn-left{background:url(/images/hcm/themes/default/content/mybutton_bg.gif) no-repeat 0 -63px;}
+.x-toolbar .x-btn-click .x-btn-right,.x-toolbar .x-btn-pressed .x-btn-right,.x-toolbar .x-btn-menu-active .x-btn-right{background:url(/images/hcm/themes/default/content/mybutton_bg.gif) no-repeat 0 -84px;}
+.x-toolbar .x-btn-click .x-btn-center,.x-toolbar .x-btn-pressed .x-btn-center,.x-toolbar .x-btn-menu-active .x-btn-center{background:url(/images/hcm/themes/default/content/mybutton_bg.gif) repeat-x 0 -105px;}
+
+/*按钮默认样式*/
+.x-nbr .x-btn-default-toolbar-small {
+    padding: 0 !important;
+    border-width: 1 !important;
+    -webkit-border-radius: 0;/*border-radius:圆角 =100px时，按钮为圆形*/
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background-image: url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+
+.x-btn-default-toolbar-small-icon .x-btn-button,.x-btn-default-toolbar-small-noicon .x-btn-button
+    {
+    height: 21px;
+    line-height:18px;
+}
+
+.x-btn-default-toolbar-small .x-frame-tl,.x-btn-default-toolbar-small .x-frame-bl,.x-btn-default-toolbar-small .x-frame-tr,.x-btn-default-toolbar-small .x-frame-br,.x-btn-default-toolbar-small .x-frame-tc,.x-btn-default-toolbar-small .x-frame-bc
+    {
+    background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+
+/*鼠标划过按钮样式*/
+.x-btn-default-toolbar-small-over .x-frame-tl,.x-btn-default-toolbar-small-over .x-frame-bl,.x-btn-default-toolbar-small-over .x-frame-tr,.x-btn-default-toolbar-small-over .x-frame-br,.x-btn-default-toolbar-small-over .x-frame-tc,.x-btn-default-toolbar-small-over .x-frame-bc
+    {
+    background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+
+.x-btn-default-toolbar-small-over .x-frame-ml,.x-btn-default-toolbar-small-over .x-frame-mr
+    {
+    background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+
+.x-btn-default-toolbar-small-over .x-frame-mc {
+    background-color: #36507E; 
+    background-image: url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+
+/*按钮点击样式*/
+.x-btn-default-toolbar-small-focus .x-frame-tl,.x-btn-default-toolbar-small-focus .x-frame-bl,.x-btn-default-toolbar-small-focus .x-frame-tr,.x-btn-default-toolbar-small-focus .x-frame-br,.x-btn-default-toolbar-small-focus .x-frame-tc,.x-btn-default-toolbar-small-focus .x-frame-bc
+    {
+    background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+
+.x-btn-default-toolbar-small-focus .x-frame-ml,.x-btn-default-toolbar-small-focus .x-frame-mr
+    {
+    background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+
+.x-btn-default-toolbar-small-focus .x-frame-mc {
+    background-color: #36507E; 
+    background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);
+}
+/*调整按钮大小*/
+.x-btn-default-toolbar-small-bc {
+    height: 1px
+}
+.x-btn-default-toolbar-small-tc {
+    height: 1px
+}
+/*用户授权按钮样式 end*/
+
+/*权限管理，授权模块树 begin*/
+.x-tree-node-cb{
+    vertical-align:middle;
+}
+.x-tree-node-anchor{
+    margin-left:3px;
+}
+.x-tree-node-indent{
+    height:25px;
+    vertical-align: middle;
+}
+.x-tree-elbow-plus,.x-tree-elbow-line,.x-tree-elbow-minus,.x-tree-elbow,.x-tree-elbow-end,.x-tree-elbow-end-plus,.x-tree-elbow-end-minus{
+    height: 25px;
+    width: 19px;
+    align:absmiddle;
+}
+.x-tree-lines .x-tree-elbow-line {
+    background-image: url(/images/I.png);
+}
+.x-tree-lines .x-tree-elbow-plus {
+    background-image: url(/images/Tplus.png);
+}
+.x-tree-lines .x-tree-elbow-minus{
+    background-image: url(/images/Tminus.png);
+}
+.x-tree-lines .x-tree-elbow{
+    background-image: url(/images/T.png);
+}
+.x-tree-lines .x-tree-elbow-end{
+    background-image: url(/images/L.png);
+}
+.x-tree-lines .x-tree-elbow-end-plus{
+    background-image: url(/images/Lplus.png);
+}
+.x-tree-lines .x-tree-elbow-end-minus{
+    background-image: url(/images/Lminus.png);
+}
+.x-tree-node-collapsed .x-tree-node-icon,.x-tree-node-expanded .x-tree-node-icon,.x-tree-node-leaf .x-tree-node-icon{
+    vertical-align: middle;
+    align:absmiddle;
+    margin-right:3px;
+}
+/*权限管理，授权，功能树 end*/
+
+.smallbutton{
+    border:1px solid #c5c5c5;
+    background:#f9f9f9;
+    height:23px;
+    line-height:18px;
+    color:#414141/*#36507E*/; 
+    padding:0 5px 0 5px;
+}
+.smallbutton:hover{
+	background:#e2e1e1
+}
+.smallbutton:active{
+	background:#c5c5c5
+}
+.common_btn_bg{
+    background-image: url("/images/hcm/themes/gray/content/mybutton_bg.gif");
+    border:1px solid #84ADC9;
+}
+
+/*dataset标签中按钮样式 start*/
+.button
+{
+    background-image: none;
+    background-color:#f9f9f9;
+    border:1px solid #c5c5c5;
+    color:#414141/*#36507E*/; 
+}
+.button:hover{
+	background:#e2e1e1
+}
+.button:active{
+	background:#c5c5c5
+}
+table.menubar .button_active
+{
+    color:black;
+    /*background-image: url("/images/hcm/themes/default/content/mybutton_bg.gif");*/
+    background-color:#c5c5c5;
+}
+
+table.menubar .button_hot
+{
+   /* background-image: url("/images/hcm/themes/default/content/mybutton_bg.gif"); */
+    background-color:#e2e1e1;
+}
+
+/*dataset标签中按钮样式 end*/
+
+/*用管管理授权样式 start*/
+.x-panel-header{
+     background:none;
+     background-color:#CBE4FD;
+     border: 1px solid #d1d1d1;
+}
+.x-toolbar{
+    background:none;
+}
+
+/*ext4.2*/
+.x-panel-body-default{
+    border-color:#d1d1d1;
+}
+.x-nlg .x-panel-header-default-top{
+    background:#FFFFFF !important;
+	background-color:#FFFFFF;
+}
+.x-panel-header-text-container-default{
+    color:none !important;  
+}
+.x-nlg .x-toolbar-default{
+    background-image:none !important;
+}
+.x-toolbar-default{
+    border-color:#d1d1d1;
+}
+/*用管管理授权样式 end*/
+
+/*人事异动等类似菜单按钮头样式 start*/
+.menu_title {
+    background-image:none;
+    background-position:none;
+    background-repeat:none;
+    background: url("/images/hcm/themes/default/leftbar_line.png") repeat-y scroll right top #CBE4FD;
+    height: 37px;
+    line-height: 37px;
+}
+/*人事异动等类似菜单按钮头样式 end*/
+
+/**add chenxg 处理业务用户培训管理模块/自助用户培训自助样式  start*/
+.btn1 {
+ background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);  
+}
+.btn2 {
+ background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);  
+}
+.btn3 {
+ background-image:url(/images/hcm/themes/default/content/mybutton_bg.gif);  
+}
+/**add chenxg 处理业务用户培训管理模块/自助用户培训自助样式  end*/
+
+/* add xiaoyun 新版照片墙样式 2014-6-17 start */
+.photos {
+    margin-left: 5px;  
+    padding-left: 5px;
+    -webkit-padding-start: 0px;
+    -webkit-margin-after: -1px; 
+    -webkit-margin-before: -1px; 
+}
+.photos li{
+    text-align:left;
+    float:left;
+    background:url(/images/hcm/themes/default/content/photo_bg.png) no-repeat center;
+    width:218px;
+    height:106px;
+    margin:6px 10px 0 0px;
+    padding:14px 0 0 20px;
+    list-style-type:none;
+    vertical-align: middle;    
+}
+
+.image{
+    width:60px;
+    height:85px;
+    display:block;
+    margin:-7px -10px 0px;
+    float:left;
+}
+/* add xiaoyun 新版照片墙样式 2014-6-17 end */
+
+/* add guodd ext4.2 body直接的分割条样式 （Splitter） */
+   .mysplitter{
+/*       background: url(/images/hcm/themes/default/menu_split_bg.gif) repeat-y scroll 0px 10px rgb(255, 255, 255);*/
+       background: rgb(255, 255, 255);
+	   border-left: 1px solid #D1D1D1;
+   }
+   .x-layout-split-left{
+   background: url(/images/hcm/themes/default/content/mini-left.gif) no-repeat scroll 0px 0 rgb(255, 255, 255) !important;
+     width:5px !important;
+     height:35px !important;
+     margin-left:1px;
+   }
+   .x-splitter-collapsed .x-layout-split-left{
+   background: url(/images/hcm/themes/default/content/mini-right.gif) no-repeat scroll 0px 0 rgb(255, 255, 255) !important;
+     width:5px;
+     height:35px !important;
+  
+   }
+   
+   /* 上下分割条样式 */
+   .myUDsplitter{
+   /*height:9px !important;*/
+   z-index:999;
+     /*  background: url(/images/hcm/themes/default/content/split_down_bg.gif) repeat-x scroll 0px 0px rgb(255, 255, 255) !important;*/
+     background: rgb(255, 255, 255) !important;
+     border: 1px #d1d1d1 solid;
+   }
+   .myUpClicker{
+      cursor:pointer;
+      position:absolute;
+      left:45%;
+      width:36px;
+      height:8px;
+      background: url(/images/hcm/themes/default/content/mini-bottom.gif) no-repeat scroll !important;
+   }
+   .myDownClicker{
+       cursor:pointer;
+       position:absolute;
+       left:45%;
+       width:36px;
+       height:8px;
+       background: url(/images/hcm/themes/default/content/mini-top.gif) no-repeat scroll !important;
+   }
+/*  ext4.2 body直接的分割条样式 （Splitter）    */
+/* add jingq 个人设置按钮样式  2014.08.20 begin*/
+.hj-wzm-jtys-top-bctx {
+    background: #529FE5;
+    width: 80px;
+	height: 28px;
+	border: none;
+	line-height: 28px;
+	text-align: center;
+	color: #FFF;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.hj-wzm-jtys-top-sctx{
+	background: #529FE5;
+	width: 80px;
+	height: 28px;
+	border: none;
+	line-height: 28px;
+	text-align: center;
+	color: #FFF;
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
+}
+/* add jingq 头像设置按钮样式  2014.08.20 end*/
+/*  主页展示模块，明星员工照片背景色   jingq add 2014.10.17 begin*/
+	.starphoto{
+		width:218px;
+		height:106px;
+		background:url(/images/hcm/themes/default/content/photo_bg.png) no-repeat left;
+	}
+/*  主页展示模块，明星员工照片背景色   jingq  add  end*/
+
+fieldset,.complex_border_color{
+	border-color:#d1d1d1;
+	border-width:1px;
+}
+
+table.datatable td {
+	border: inset 1px #d1d1d1;
+	BORDER-BOTTOM: #d1d1d1 1pt solid;
+	BORDER-LEFT: #d1d1d1 1pt solid;
+	BORDER-RIGHT: #d1d1d1 1pt solid;
+	BORDER-TOP: #d1d1d1 1pt solid;
+	font-size: 12px;
+}
+
+table.datatable {
+	border: 1px solid #d1d1d1;
+}
+
+FIELDSET {
+	border-color: #d1d1d1;
+}
+
+.TableRow, .TableRow_top, .TableRow_lrt, .TableRow_rt, .TableRow_lr, .TableRow_r, .TableRow1, 
+.TableRow_2rows, .TableRow_5rows, .TableRow_2rows_locked, .TableRow_left, .TableRow_right,
+.common_background_color,.TableRow_self {
+	background-color: #F9F9F9;
+	background-color: #F9F9F9 !important;
+	border-color:#C5C5C5;
+	border-color:#C5C5C5 !important;
+	font-weight: normal;
+}
+.myfixedDiv {
+	border-color:#C5C5C5 !important;
+}

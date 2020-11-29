@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheme>
+    <sets ><!--子集 setid:才智字段 为空值表示从主类中取-->
+    	<set setname="个人基本信" setid ="PersonalInformation">
+       		<menus>  <!--指标 itemid:才智字段 itemname:ehr简历指标 commonvalue 此指标常用值-->
+         		<menu itemid="Apply" itemname="申请职位" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+		 		<menu itemid="Date" itemname="可到职日期" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Wage" itemname="薪酬底线（税前）" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Information" itemname="招聘信息来源" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Name" itemname="姓名" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Gender" itemname="性别" itemtype="A" itemlength="30" itemformat="" codesetid="0/599" />
+				<menu itemid="DateOfBirth" itemname="出生日期" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Nation" itemname="民族" itemtype="A" itemlength="30" itemformat="" codesetid="0/72" />
+				<menu itemid="Hometown" itemname="籍贯" itemtype="A" itemlength="30" itemformat="" codesetid="0/4" />
+				<menu itemid="MaritalStatus" itemname="婚姻状况" itemtype="A" itemlength="30" itemformat="" codesetid="0/209" />
+				<menu itemid="PoliticalStatus" itemname="政治面貌" itemtype="A" itemlength="30" itemformat="" codesetid="0/194" />
+				<menu itemid="Weight" itemname="体重" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="BloodType" itemname="血型" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Health" itemname="健康状况" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="MobilePhone" itemname="手机号码" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="HomeTel" itemname="家庭电话" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Email" itemname="E-mail" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="HUKOU" itemname="户口所在地" itemtype="A" itemlength="30" itemformat="" codesetid="0/4" />
+				<menu itemid="CurrentCity" itemname="现居住地" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="ZipCode" itemname="邮编" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Hobbies" itemname="爱好" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Expertise" itemname="专长" itemtype="A" itemlength="30" itemformat="" codesetid="" />         
+      		</menus>        
+    	</set>
+
+    	<set setname="教育经历"  setid ="Education">
+       		<menus>  
+         		<menu itemid="ZGXL" itemname="最高学历" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Related" itemname="相关职称" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Qualification" itemname="资质证书" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Education" itemname="教育程度" itemtype="A" itemlength="30" itemformat="" codesetid="0/1587977606" />
+				<menu itemid="StartDate" itemname="开始时间" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="EndDate" itemname="毕业时间" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="SchoolName" itemname="毕业院校" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Major" itemname="专业" itemtype="A" itemlength="30" itemformat="" codesetid="0/660" />
+				<menu itemid="Degree" itemname="学位" itemtype="A" itemlength="30" itemformat="" codesetid="0/435" />
+				<menu itemid="Diploma" itemname="学历" itemtype="A" itemlength="30" itemformat="" codesetid="0/606" />
+				<menu itemid="City" itemname="城市" itemtype="A" itemlength="30" itemformat="" codesetid="0/4" />
+				<menu itemid="Description" itemname="专业描述" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+       		</menus>        
+    	</set>    
+    	
+    	<set setname="工作经历"  setid ="WorkingExperience">
+       		<menus>  
+         		<menu itemid="WorkExperience" itemname="工作年限" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="StartDate" itemname="开始时间" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="EndDate" itemname="结束时间" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="JobTitle" itemname="职位名称" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="CompanyName" itemname="企业名称" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="WorkType" itemname="工作性质" itemtype="A" itemlength="30" itemformat="" codesetid="0/461" />
+				<menu itemid="TypeOfCompany" itemname="企业性质" itemtype="A" itemlength="30" itemformat="" codesetid="0/373" />
+				<menu itemid="Salary" itemname="薪酬（税前月薪）" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="CompanySize" itemname="企业规模" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Industry" itemname="行业类别" itemtype="A" itemlength="30" itemformat="" codesetid="0/389" />
+				<menu itemid="JobDescription" itemname="工作描述" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="ReasonForQuit" itemname="离职原因" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Department" itemname="所在部门" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Report" itemname="汇报对象" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Subordinates" itemname="下属人数" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Responsibilities" itemname="工作职责" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Performance" itemname="工作业绩" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Witness" itemname="证明人" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="ContactPerson" itemname="证明人联系方式" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+       		</menus>       
+    	</set>    
+    
+    	<set setname="语言能力" setid ="Language">
+       		<menus>  
+         		<menu itemid="Languages" itemname="语种" itemtype="A" itemlength="30" itemformat="" codesetid="0/1588075406" />
+				<menu itemid="Competency" itemname="掌握程度" itemtype="A" itemlength="30" itemformat="" codesetid="0/1588076401" />
+				<menu itemid="Level" itemname="级别" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Score" itemname="分数" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Supplementary" itemname="补充说明" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+       		</menus>       
+    	</set> 
+    
+    	<set setname="电脑"  setid ="ITSkills">
+       		<menus>  
+         		<menu itemid="Computer" itemname="电脑" itemtype="A" itemlength="30" itemformat="" codesetid="0/1588078904" />
+				<menu itemid="CompetencyLevel" itemname="掌握程度" itemtype="A" itemlength="30" itemformat="" codesetid="0/1588076401" />
+				<menu itemid="Level" itemname="级别" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Fraction" itemname="分数" itemtype="A" itemlength="30" itemformat="" />
+				<menu itemid="SupplementaryNote" itemname="补充说明" itemtype="A" itemlength="30" itemformat="" codesetid="" /> 
+       		</menus>       
+    	</set>  
+    	
+    	<set setname="驾驶技能" setid ="DrivingSkill">
+       		<menus>  
+         		<menu itemid="Driving" itemname="驾驶证类型" itemtype="A" itemlength="30" itemformat="" codesetid="0/1588076401" />
+				<menu itemid="Master" itemname="掌握程度" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Level" itemname="级别" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Fraction" itemname="分数" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Supplementary" itemname="补充说明" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+       		</menus>       
+    	</set> 
+    	
+    	<set setname="其他技能" setid ="OtherSkills">
+       		<menus>  
+         		<menu itemid="OtherSkills" itemname="其他技能" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+       		</menus>        
+    	</set> 
+    	
+    	<set setname="家庭成员及紧急联系人" setid ="FamilyRelationship">
+       		<menus>  
+         		<menu itemid="Name" itemname="姓名" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Relationship" itemname="关系" itemtype="A" itemlength="30" itemformat="" codesetid="0/472" />
+				<menu itemid="Company" itemname="工作单位" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="JobTitle" itemname="职位" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="ContactTelephone" itemname="联系电话" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+       		</menus>       
+    	</set> 
+    
+     	<set setname="是否有朋友或亲属在本公司工作" setid ="FriendWorking">
+     		<menus>
+				<menu itemid="Name" itemname="姓名" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Relationship" itemname="关系" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Department" itemname="部门" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+			</menus>	
+		</set>
+			
+		<set setname="附加信息" setid ="AdditioinalInfo">
+			<menus>
+				<menu itemid="Application" itemname="请描述您对本次所申请的职位的认识" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="FiveYears" itemname="请描述您未来五年内的事业发展规划，您打算怎样实现这一规划？" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Self" itemname="请您简述一下自己的人生观、职业观与自我评价。" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Evaluation" itemname="自我评价" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+			</menus>
+		</set>
+			
+		<set setname="本人承诺" setid ="IPromise">
+			<menus>
+				<menu itemid="Promise" itemname="本人承诺" itemtype="A" itemlength="30" itemformat="" codesetid="0/1593702592" />
+				<menu itemid="Signature" itemname="签名" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+				<menu itemid="Date" itemname="日期" itemtype="A" itemlength="30" itemformat="" codesetid="" />
+			</menus>	
+		</set>
+	</sets>
+</scheme> 

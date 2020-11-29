@@ -1,0 +1,168 @@
+/* GraphEditor */
+.yfiles .graphEditorOptions .dojoTabPane {
+  padding: 10px 10px 10px 10px;
+  overflow: auto;
+}
+
+.yfiles .graphEditorNodeType {
+  padding: 15px 5px;
+  background-color: white;
+}
+
+.yfiles .graphEditorNodeType.selected {
+  background-color: #EEEEEE;
+}
+
+.yfiles .graphEditorWindowMenu {
+  font-weight: normal;
+}
+
+.yfiles .graphEditorWindowMenu.selected {
+  font-weight: bold;
+}
+
+/* canvas button */
+.yfiles .canvasButton {
+    float: left;
+    background-color: #EEEEEE;
+    opacity: 0.8;
+    border: 1px solid #666666;
+    margin: 5px;
+}
+
+/* Request Indicator */
+
+.yfiles .requestIndicatorRoot {
+  position:fixed;
+  left:6px;
+  bottom:11px;
+  width:100px;
+  height:14pt;
+  padding:5pt;
+  text-align:center;
+  z-index:10;
+  background-color:#eeeeee;
+  border:1px dashed #333333;
+  font-style:italic;
+  font-size:13pt;
+  color:#999999;
+}
+
+.yfiles .requestIndicatorShow {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  overflow:hidden;
+
+}
+
+.yfiles .requestIndicatorHide {
+  opacity: 0.0;
+  filter: alpha(opacity=0);
+  overflow:hidden;
+}
+
+/* toolbar icons  */
+
+.yfiles .yFilesDemoIcon {
+  background-image: none;
+	background-repeat: no-repeat;
+  border: 1px solid #b1badf;
+  background-color:#f3f6ff;
+  width: 30px;
+	height: 22px;
+	text-align: center;
+  background-position:center;
+}
+
+.yfiles .yFilesContextMenuIcon {
+  background-image: none;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-position:center;
+}
+
+.yfiles .yFilesDemoIconNew { background-image: url( '../images/newfile.png' ); }
+.yfiles .yFilesDemoIconDownload { background-image: url( '../images/download.png' ); }
+.yfiles .yFilesDemoIconEdit { background-image: url( '../images/edit.png' ); }
+.yfiles .yFilesDemoIconDelete { background-image: url( '../images/delete.png' ); }
+.yfiles .yFilesDemoIconZoomArea { background-image: url( '../images/zoomArea.png' ); }
+.yfiles .yFilesDemoIconFitContent { background-image: url( '../images/zoomFit.png' ); }
+.yfiles .yFilesDemoIconHelp { background-image: url( '../images/help.png' ); }
+.yfiles .yFilesDemoIconOptions { background-image: url( '../images/preferences.png' ); }
+.yfiles .yFilesDemoIconUndo { background-image: url( '../images/undo.png' ); }
+.yfiles .yFilesDemoIconRedo { background-image: url( '../images/redo.png' ); }
+.yfiles .yFilesDemoIconStart { background-image: url( '../images/start.png' ); }
+.yfiles .yFilesDemoIconStop { background-image: url( '../images/stop.png' ); }
+.yfiles .yFilesDemoIconZoomIn { background-image: url( '../images/zoomIn.png' ); }
+.yfiles .yFilesDemoIconZoomOut { background-image: url( '../images/zoomOut.png' ); }
+.yfiles .yFilesDemoIconZoomOriginal { background-image: url( '../images/zoomOriginal.png' ); }
+
+
+/* GraphInfo */
+.yfiles .graphInfo {
+  width: 100%;
+  padding : 10px 10px 10px 10px;
+  overflow: auto;
+}
+
+.yfiles .graphInfo a {
+  color: #AA5522;
+  font-weight: bold;
+}
+
+.yfiles .graphInfo a:link,
+  a:visited {
+  text-decoration: none;
+}
+
+.yfiles .graphInfo a:active,
+.yfiles .graphInfo a:focus,
+.yfiles .graphInfo a:hover {
+  text-decoration: underline;
+}
+
+.yfiles .graphInfo .customHeading {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #4079EA;
+}
+
+.yfiles .graphInfo .infoHeading {
+  font-size: 12pt;
+  width: 100%;
+}
+
+.yfiles .graphInfo .infoTable {
+  width: 100%;
+}
+
+.yfiles .graphInfo .infoBody {
+  font-size: 10pt;
+  width: 100%;
+}
+
+.yfiles .infoBody .infoBodyRow.even {
+  background-color: #FAFAFA; 
+}
+
+.yfiles .infoBody .infoBodyRow.odd {
+  background-color: #E1EBFB;
+}
+
+.yfiles .infoBody .infoBodyRow td {
+  padding: 2px;
+}
+
+.yfiles .infoBodyRow .infoKey {
+  font-weight: bold;
+}
+
+.yfiles .tooltip {
+  width: 260px;
+}
+
+.yfiles .tooltip .infoTable {
+  width: 100%;
+}

@@ -1,0 +1,198 @@
+.bookstyle{
+	background-image:url(/images/notebookstyle.jpg);
+    background-repeat:repeat-y;
+    border: inset 0px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+}
+.RecordRow_1 {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22px;
+}
+.RecordRow_lead {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22px;
+}
+.RecordRow_l {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22px;
+}
+.TableRow_rnull {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	/*
+	color:#336699;
+	*/
+	valign:middle;
+}
+.TableRow_rbnull {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	/*
+	color:#336699;
+	*/
+	valign:middle;
+}
+.TableRow_lnull {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	/*
+	color:#336699;
+	*/
+	valign:middle;
+}
+.TableRow_lbnull {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	/*
+	color:#336699;
+	*/
+	valign:middle;
+}
+.TableRow_wsnull {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	/*
+	color:#336699;
+	*/
+	valign:middle;
+}
+.TableRow_ws {
+	background-position : center left;
+	font-size: 12px;  
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	height:22px;
+	font-weight: bold;
+	background-color:#f4f7f7;	
+	/*
+	color:#336699;
+	*/
+	valign:middle;
+}
+.RecordRow_cs {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:35px;
+}
+.RecordRow_big {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	font-size: 14px;
+	border-collapse:collapse; 
+	height:30px;
+}
+.TEXT_big {
+	BACKGROUND-COLOR:transparent;
+	font-size: 14px;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: medium none; 
+	BORDER-RIGHT: medium none; 
+	BORDER-TOP: medium none;
+}	
+.RecordRow_bnull {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22px;
+}
+.RecordRow_leftnull {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 0pt solid; 
+	BORDER-LEFT: #C4D8EE 0pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22px;
+}
+.RecordRow_rnull {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 0pt solid; 
+	BORDER-TOP: #C4D8EE 1pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22px;
+}
+.RecordRow_nopadding {
+    border: inset 1px #C4D8EE;
+    BORDER-BOTTOM: #C4D8EE 1pt solid;
+    BORDER-LEFT: #C4D8EE 1pt solid;
+    BORDER-RIGHT: #C4D8EE 1pt solid;
+    BORDER-TOP: #C4D8EE 1pt solid;
+    font-size: 12px;
+    border-collapse: collapse;
+    height: 22px;
+   
+}

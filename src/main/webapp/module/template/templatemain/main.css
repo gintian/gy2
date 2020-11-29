@@ -1,0 +1,30 @@
+/**
+人事异动需要另外添加的样式，放到css文件中，不在js文件中创建应用了
+*/
+
+@CHARSET "UTF-8";
+
+.x-grid-row-selected-white .x-grid-td{background-color: #FFFFFF !important}
+.x-grid-row-selected-grey .x-grid-td{background-color: #FAFAFA !important}
+/**子集记录只读颜色 */
+.x-grid-row-selected-gray .x-grid-td{background-color: #F3F3F3 !important}
+.x-grid-row-selected-mouseenter .x-grid-td{background-color: #FFF8D2}
+.x-grid-row-selected-itemclick .x-grid-td{background-color: #FFF8D2}
+.x-grid-item-selected{color:#000;background-color: #fff}
+.selected{color:#000;background-color: rgb(255, 248, 210);}/*bug 44342 选中的组织单元应该有反显*/
+/**子集序号样式*/
+.x-grid-cell-inner-row-numberer{background-color: inherit !important;background-image: none !important;}
+.x-form-text-field-body-default{min-width: 150px;max-width:700px}/**bug 38793 邮件内容宽度不对 */
+/**人事异动卡片状态页签过多的话竖向显示样式修改  start*/
+.x-tab-default-left {
+	border-radius: 0px 0px 0px 0px;
+	margin-top:-1px !important;
+	padding: 3px 9px 3px 9px;
+	border-width: 1px 0 1px 1px ;
+	border-style: solid;
+	background-image: none;
+	background-color: #f9f9f9;
+} 
+.x-tab-bar-default-left .x-box-scroller-top{background-image: url(../../../ext/ext6/resources/images/tab-bar/default-scroll-template-top-left.gif);}
+.x-tab-bar-default-left .x-box-scroller-bottom{background-image: url(../../../ext/ext6/resources/images/tab-bar/default-scroll-template-bottom-left.gif);}
+/**人事异动卡片状态页签过多的话竖向显示样式修改  end*/

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="SC000000001">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>加载服务设置</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceSetting.SearchServiceSettingTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="SC000000002">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>保存服务设置</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceSetting.SaveServiceSettingTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="SC000000003">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>服务分析</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceSetting.ServiceAnalyseTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="SC000000004">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>打印服务获取数据</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceHome.LoadPrintDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="SC000000005">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>打印服务获取数据</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceHome.SavePrintInfoTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="SC000000006">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>获取服务须知数据</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceHome.LoadNoticeAndInputDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="SC000000007">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>保存字段录入项数据</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceHome.SavaNoticeAndInputDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="SC000000008">
+         <transaction-name>自助终端设置</transaction-name>
+         <transaction-desc>获取指标项的长度</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.serviceclient.serviceHome.GetItemLengthTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

@@ -1,0 +1,323 @@
+/*二级菜单头部样式 start*/
+.x-panel-noborder .x-panel-header-noborder{
+    border-width:0;
+}
+.x-panel-header-default-top{
+    box-shadow:none !important;
+}
+.x-panel-header-default{
+    border-width:0 !important;  
+}
+.x-panel-header {
+    background: url("/images/hcm/themes/gray/leftbar_line.png") repeat-y scroll right top #BDBDBD;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 3px;
+    position: relative;
+    font:;
+    border-color:#BDBDBD;
+} 
+.x-tool {
+    background: url("/images/hcm/themes/gray/icon/icon8.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: right;
+    height: 16px !important;
+    margin-top: 10px;
+    margin-left: -2px !important;
+    overflow: hidden;
+    width: 16px !important;
+} 
+.x-tool-expand-west {
+    background: url("/images/hcm/themes/gray/icon/icon8_hover.png") no-repeat scroll 0 0 transparent;
+    margin-right:3px;
+}
+h1{
+    font-size: 1em;
+    font-weight: normal;
+    font-family: "微软雅黑";
+}
+/*二级菜单头部样式 end*/
+
+/*区域分隔split背景 start*/
+.x-layout-split {
+   background: url(/images/hcm/themes/gray/menu_split_bg.gif) repeat-y scroll 0px 0 rgb(255, 255, 255);
+}
+/*区域分隔split背景 end*/
+
+/*二级菜单树样式 start*/
+/*ext4.2 start*/
+.x-grid-body .x-grid-table-focused-first{
+    border-top:none;
+}
+.x-grid-row-focused .x-grid-td{
+    border-bottom:none;
+}
+.x-grid-row-before-focused .x-grid-td{
+    border-bottom:none;
+}
+/*ext4.2 end*/
+.x-tree-node {
+    border-bottom: 1px dashed rgb(222, 228, 235);
+    color: rgb(61, 85, 118);
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+.x-tree-node-el {
+    *padding-top:8px;
+    height:35px;
+    line-height: 35px;
+}
+.x-tree-node .x-tree-node-over{
+background: url("/images/hcm/themes/gray/leftbar_hover_bg.png") no-repeat scroll right center #E2E2E2;
+}
+.x-tree-node .x-tree-selected{
+background: url("/images/hcm/themes/gray/leftbar_hover_bg.png") no-repeat scroll right center #E2E2E2;
+}
+.x-tree-node-leaf .x-tree-node-icon{
+vertical-align: middle;
+background-image:url(/images/hcm/themes/gray/content/wjj_c.gif);
+}
+.x-tree-node-collapsed .x-tree-node-icon {
+   vertical-align: middle;
+}
+.x-tree-node-expanded{
+    border-bottom: 1px dashed rgb(222, 228, 235);
+}
+.x-tree-node-expanded .x-tree-node-icon {
+vertical-align: middle;
+}
+.x-tree-icon, .x-tree-ec-icon, .x-tree-elbow-line, .x-tree-elbow, .x-tree-elbow-end, .x-tree-elbow-plus, .x-tree-elbow-minus, .x-tree-elbow-end-plus, .x-tree-elbow-end-minus {
+	vertical-align: top !important;
+	height: 35px;
+	line-height: 35px;
+	margin-top:-3px !important;
+}
+
+/*二级菜单树样式 end*/
+/*二级菜单树收缩样式 start*/
+.x-layout-collapsed {
+background-color: #fff;
+border: none;
+/*border-right: 1px solid rgb(152, 192, 244);*/
+}
+.x-border-layout-ct {
+    background: url("/images/hcm/themes/gray/menu_close_bg.gif") no-repeat scroll -3px 1px transparent;
+}
+.x-layout-collapsed {
+    background: none;
+}
+/*二级菜单树收缩样式 end*/
+
+/*二级菜单树滚动条演示 start*/
+/*.x-panel-body {
+	//scrollbar-3dlight-color : #F5FBFF; 
+	//scrollbar-highlight-color : #A4C6E5;
+	scrollbar-face-color : #cae9a4; 
+    scrollbar-arrow-color : #cae9a4; 
+    scrollbar-shadow-color : #f2fce1; 
+    scrollbar-darkshadow-color : #F5FBFF; 
+    //scrollbar-base-color : #F5FBFF;
+    scrollbar-track-color : #f0ffdf;
+} */
+/*二级菜单树滚动条演示 end*/
+/*extjs 4.2 start */
+.x-panel-header-default-top:after{
+    display: none;
+    background: #eeeeee;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 12px;
+    position: relative;
+    vertical-align: middle;
+}
+.x-panel-header-default-top{
+
+    background: #eeeeee;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.x-tool-img{
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    background:none;
+    /*background-image:url(/images/hcm/gray/default/icon/icon888.png);*/
+    margin: 0px;
+}
+.x-tool-over .x-tool-expand-left, .x-tool-over .x-tool-collapse-left{
+    background-position: 0px -180px;
+}
+.x-grid-cell-inner{
+	vertical-align: middle; 
+	height: 35px;
+	line-height: 35px;
+}
+.x-grid-cell-inner-treecolumn{
+	vertical-align: middle; 
+	height: 35px;
+	line-height: 35px;
+	border-bottom:1px dashed rgb(222,228,235);
+}
+.x-tree-node-text {/*树内文字上下居中*/
+	vertical-align: top !important;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    height: 35px;
+    line-height: 30px;
+    padding-left: 3px;
+    text-decoration:none;
+    /*margin-top:-3px;*/
+    color:#000000 !important;
+}
+a:link{ color:#f000000 !important;/*颜色自定义*/} /* 未访问的链接 */ 
+a:visited{color:#f000000 !important;/*颜色自定义*/} /* 已访问的链接 */ 
+a:hover{ color:#f000000 !important;/*颜色自定义*/}/* 鼠标在链接上 */ 
+a:active{ color:#f000000 !important;/*颜色自定义*/}/* 点击激活链接 */ 
+.x-tree-icon-leaf{
+	margin-top:0px;
+	margin-bottom:0px;
+	height:35px !important;
+	line-height: 35px !important;
+	background-image:url(/images/tree_leaf.png)  !important; 
+	VERTICAL-ALIGN: top;
+}
+/*选择树菜单节点时渲染的背景色*/
+.x-grid-row-selected .x-grid-td{
+	background: #f3f3f3;
+    border-bottom:1px dashed rgb(222,228,235);
+}
+/*鼠标移动到树菜单节点时渲染的背景色*/
+.x-grid-row-over .x-grid-td{
+	background: #f3f3f3;
+    border-bottom:1px dashed rgb(222,228,235);
+}
+
+.x-grid-no-row-lines .x-grid-row-focused .x-grid-cell-inner{
+    padding-bottom:3px;
+    padding-top:3px;
+}
+.x-box-target{
+	height: 13px;
+} 
+.x-box-inner{
+	top:10px;
+	height: 18px;
+}
+.x-panel-header-body-top{
+	top:10px;
+}
+.x-tool-before-title{
+	background: url(/images/hcm/themes/gray/icon/icon8_hover.png) no-repeat 0px 0px !important;
+	margin-right:3px !important;
+}
+.x-box-layout-ct{
+	height: 30px;
+	border-width: 0px !important; 
+}
+.x-tree-panel{
+	top:20px;
+	padding-bottom:20px !important;
+}
+.x-layout-fit{
+	top:37px !important;
+	height:100% !important;
+	overflow:hidden;
+}
+.x-tool-after-title{
+	height: 18px !important;
+	width:20px !important;
+}
+/*
+.x-splitter-vertical{
+	background: url(/images/hcm/themes/gray/menu_split_bg.gif) repeat-y scroll 4px 0 rgb(255, 255, 255) !important;
+	border-width: 1px !important;
+	border-color: #C5C5C5 !important;
+}
+*/
+   .mysplitter{
+       background: url(/images/hcm/themes/gray/menu_split_bg.gif) repeat-y scroll -1px 10px rgb(255, 255, 255);
+   }
+.x-layout-split-left{
+	background-image:none  !important;
+}
+.x-tree-view{
+	border-color: #C5C5C5 !important;
+}
+.x-grid-body{
+	border: none !important;
+}
+/**非最后的树节点展开图片 */
+.x-tree-lines .x-grid-tree-node-expanded .x-tree-elbow-plus{
+	background:url("/images/elbow-minus-nl.gif") no-repeat 0px 8px !important;
+}
+/**非最后的树节点折叠图片 */
+.x-tree-lines .x-tree-elbow-plus{
+	background:url("/images/elbow-plus-nl.gif") no-repeat 0px 8px !important;
+}
+/**展开的子节点左侧图片 */
+.x-tree-lines .x-tree-elbow{
+	background:none !important;
+}
+/**展开的子节点左侧图片 */
+.x-tree-lines .x-tree-elbow-line{
+	background:none !important;
+}
+/**最后一个展开的子节点左侧图片 */
+.x-tree-lines .x-tree-elbow-end{
+	background:none !important;
+}
+/**最后的树节点折叠图片 */
+.x-tree-lines .x-tree-elbow-end-plus{
+	background:url("/images/elbow-plus-nl.gif") no-repeat 0px 8px !important;
+}
+/**最后的树节点展开图片 */
+.x-tree-lines .x-grid-tree-node-expanded .x-tree-elbow-end-plus{
+	background:url("/images/elbow-minus-nl.gif") no-repeat 0px 8px !important;
+}
+
+.x-grid-tree-node-expanded .x-tree-icon-parent{
+	background:url("/images/folder.png") no-repeat 0px 10px;
+}
+.x-tree-icon-parent{
+	background:url("/images/folder.png") no-repeat 0px 10px;
+}
+.x-panel-header-collapsed-left{
+
+	height:27px !important; 
+	background:none !important; 
+	border:0px !important; 
+}
+.x-panel-header-text-default{
+	font-size: 14px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    color:#333333;
+}
+/**.x-docked{position:relative !important;}*/
+
+/** 收缩菜单样式 */
+/* 背景图片*/
+.x-menu-placeholder{
+	background: url("/images/hcm/themes/gray/leftbar_line.png") repeat-y;
+}
+/* 按钮背景图片 */
+.x-menu-placeholder-bar{
+	background: url(/images/hcm/themes/gray/icon/icon8_hover.png) no-repeat 0px 0px !important;
+	margin:10px 1px 0px 1px;
+	cursor:pointer;
+}
+/** 收缩菜单样式 end*/
+
+.mysplitter2{
+	border-right:1px solid #dedede;
+}
+
+.x-nlg .x-panel-header-default-top {
+	background: #eeeeee;
+}

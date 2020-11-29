@@ -1,0 +1,73 @@
+
+.hj-wzm-clock {
+	width: 201px;
+	background: #FFF;
+	position: absolute;
+	top: 0px;
+	left: 116px;
+	z-index: 1000;
+	padding: 3px 0;
+}
+
+.dropdownlist {
+	width: 201px;
+	background: #FFF;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	z-index: 1000;
+	padding: 3px 0;
+}
+
+.hj-wzm-clock ul {
+	width: 200px;
+}
+
+.hj-wzm-clock ul li {
+	width: 50px;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	display: block;
+	color: #9A9A9A;
+}
+
+.hj-wzm-clock ul li:hover {
+	color: #549FE3;;
+	background: #EEEEEE;
+}
+
+.hj-wzm-clock ul li a {
+	display: block;
+	text-align: center;
+	color: #549FE3
+}
+
+.dropdownlist {
+	border: 0
+}
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,span,table,tr,td{margin:0;padding:0; border:none;}
+body{color:#747474;font-size:12px;font-family:"宋体";}
+input[type=text]{
+ margin: 0;
+ padding: 0; 
+}
+ul,ol{list-style-type:none;} 
+select,input{vertical-align:middle;}
+a{text-decoration:none;color:#549FE3;}
+.clearit{clear:both;font-size:0;height:0;width:0;padding:0;margin:0;border:0;}
+.bh-clear{clear:both;}
+.bh-space{height:10px;clear:both;}
+.deletePic{
+    position: absolute;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.img-circle{border-radius:50%}
+.img-middle{vertical-align:middle;}
+

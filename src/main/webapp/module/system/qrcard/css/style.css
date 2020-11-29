@@ -1,0 +1,122 @@
+.x-html {
+	padding:0 !important;
+}
+.x-html dd {
+    margin-left: 0!important;
+}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,span{margin:0;padding:0; border:none;}
+body{color:#4C4C4C;font-size:14px;font-family:"微软雅黑";widtd:100%;}
+ul,ol{list-style-type:none;}
+select,input,img{vertical-align:middle;}
+a{text-decoration:none !important;color:#606060;;font-size: 14px;}
+
+.template_toolbar {
+    /*border-bottom: none !important;*/
+}
+
+.bage{ 
+  display:block; 
+  background:#f00; 
+  border-radius:50%; 
+  width:20px; 
+  height:20px; 
+  top:-10px; 
+  right:-2px; 
+  position:absolute; 
+  color:white;
+}
+.x-msgbox .x-dock-body {
+	margin: 0 3px 3px 3px!important;
+}
+
+.x-toolbar .x-title { /*修改title样式*/
+	font-size: 18px!important;
+	font-weight:bold!important;
+	padding-top:0em!important;
+}
+.x-toolbar {
+	min-height: 45px!important;
+}
+.x-msgbox .x-msgbox-title{/*修改 alert弹窗  title样式高度*/
+	height:26px !important;
+}
+.x-list .x-list-disclosure::before {
+	top: 50%!important;
+}
+.x-form .x-scroll-container{
+	background:none;
+}
+
+.x-form-label span {
+	font-weight:bold!important;
+    font-size: 16px!important;
+    color:#4C4C4C;
+    font-family:"微软雅黑";
+    width:100%;
+}
+.x-form-label {
+    padding: .9em .6em .9em .5em;
+}
+.labelTextCls{
+    height:auto;
+}
+.x-form-label-nowrap .x-form-label{
+	text-align:right!important;
+	padding-right:20px;
+}
+.x-form-fieldset .x-field::before{
+	left:0 !important;
+}
+.x-item-selected .div-seleted{
+	background-color:#157EFB;
+}
+.x-form-fieldset .x-form-fieldset-inner {
+    border:  none !important;
+}
+.x-code-field-input{/*代码型指标 添加下边框 */
+	border-bottom:1px solid #ccc !important;
+}
+.x-field-input{/*覆盖 原样式 */
+	border:0px solid #ccc;
+	border-radius:0px;
+}
+.x-unsized{
+	padding-top:。9em !important;
+}
+
+.x-nocode-field-input{
+	 display:none!important;
+}
+
+
+.template_input{
+    /*font-size:14px;
+    height:50px;*/
+    line-height:28px;
+    font-size:16px;
+}
+.x-input-text{
+	line-height:28px;
+	/*height:50px;*/
+}
+.x-field-required .x-form-label:after {
+    content: "*";
+    font-size:16px;
+    display: inline;
+    color: red;
+    position:relative;
+    top:3px;
+}
+.required{
+	display: inline;
+    color: red;
+    position:relative;
+    top:3px;
+}
+.x-picker-bar{/*覆盖picker 中间选择的样式*/
+	background-color:#d9d9d9 !important;
+	opacity:0.5;
+	height:2.5em!important;
+	border-bottom:.12em solid #d9d9d9!important;
+	border-top:.12em solid #d9d9d9!important;
+}

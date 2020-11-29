@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+	<source>
+	  <name>BeiSen</name>
+	  <fullname>北森招聘</fullname>
+	  <valid>1</valid>
+	</source>
+	<source>
+	  <name>DaYee</name>
+	  <fullname>大易招聘</fullname>
+	  <valid>1</valid>
+	</source>
+</sources>

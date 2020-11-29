@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	********************声明*******************
+	1、表格控件编号ZJ100000000至ZJ100000050
+	2、查询方案组件编号ZJ100000051至ZJ100000055
+	3、文件上传组件编号ZJ100000056至ZJ100000060
+	4、计算公式组件编号ZJ100000061至ZJ100000090
+	5、条件定义组件编号ZJ100000091至ZJ100000100
+	5、函数向导组件编号ZJ100000101至ZJ100000110
+	7、盒式报表组件编号ZJ100000111至ZJ100000120
+	8、多选指标组件标号ZJ100000121至ZJ100000130
+	9、代码查询组件编号ZJ100000131至ZJ100000140
+	10、公共查询组件编号ZJ100000141至ZJ100000150
+	11、角色选择组件编号ZJ100000151至ZJ100000160
+	12、工作桌面组件编号ZJ100000161至ZJ100000165
+	13、服务大厅组件编号ZJ100000166至ZJ100000170
+	14、菜单树组件编号ZJ100000171至ZJ100000175
+	15、通用报表表格组件编号ZJ100000181-ZJ100000190
+	16、业务模板&登记表选择组件编号ZJ100000191-ZJ100000199
+	17、评审条件组件编号ZJ100000200-ZJ100000210
+	18、信息集维护组件编号ZJ100000250至ZJ100000300
+	19、子集指标选择组件编号ZJ100000301-ZJ100000310
+	20、申报信息与我的待办ZJ100001000
+	21、签章获取通用接口ZJ
+	22、职责&岗位说明配置编号ZJ100000401至ZJ100000402
+ -->
+<wf-mappings>
+    <!-- 表格控件 -->
+	<wfi-mapping funcid="ZJ100000000">
+         <transaction-name>表格控件数据加载</transaction-name>
+         <transaction-desc>表格控件数据加载</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.GetTableDataTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000001">
+         <transaction-name>栏目设置业务</transaction-name>
+         <transaction-desc>栏目设置业务</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.SchemeColumnTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000002">
+        <transaction-name>表格工具方案分析</transaction-name>
+        <transaction-desc>表格工具方案分析</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.PlanAnalyseTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000003">
+        <transaction-name>表格工具方案方案查询</transaction-name>
+        <transaction-desc>表格工具方案方案查询</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.SearchAnalysePlanTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000004">
+        <transaction-name>表格工具分析方案保存</transaction-name>
+        <transaction-desc>表格工具分析方案保存</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.SaveAnalysePlanTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000005">
+        <transaction-name>表格工具分析方案更新</transaction-name>
+        <transaction-desc>表格工具分析方案更新</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.UpdateAnalysePlanTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000006">
+        <transaction-name>表格工具分析统计结果导出</transaction-name>
+        <transaction-desc>表格工具分析统计结果导出</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.ExportPlanAnalyseExcel"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000007">
+        <transaction-name>表格工具分析统计结果导出</transaction-name>
+        <transaction-desc>表格工具分析统计结果导出</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.DeleteAnalysePlanTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000008">
+        <transaction-name>表格工具统计分析维度查询</transaction-name>
+        <transaction-desc>表格工具统计分析维度查询</transaction-desc> 
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.SearchAnalyseItemsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000009">
+        <transaction-name>表格工具获取导出页面设置</transaction-name>
+        <transaction-desc>表格工具获取导出页面设置</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.GetExportSettingsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000010">
+        <transaction-name>表格工具保存导出页面设置</transaction-name>
+        <transaction-desc>表格工具保存导出页面设置</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.tablefactory.transaction.SetExportSettingsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+	<wfi-mapping funcid="ZJ100000051">
+         <transaction-name>方案查询</transaction-name>
+         <transaction-desc>方案查询</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.querybox.transaction.QueryBoxTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000052">
+         <transaction-name>方案查询测试</transaction-name>
+         <transaction-desc>方案查询测试</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>0</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.querybox.transaction.QueryBoxTestTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+	<!-- 计算公式组件 begin zhaoxg add 2015-7-29 -->
+	<wfi-mapping funcid="ZJ100000061">
+        <transaction-name>计算公式初始化</transaction-name>
+        <transaction-desc>计算公式初始化</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.InitCondFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>  
+	<wfi-mapping funcid="ZJ100000062">
+        <transaction-name>新计算公式界面项目代码数据联动</transaction-name>
+        <transaction-desc></transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.ItemCodeLinkageTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000063">
+        <transaction-name>获取公式内容以及修改公式类型</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.GetFormulaValueTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000064">
+        <transaction-name>设置公式状态</transaction-name>
+        <transaction-desc>设置公式状态</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.SetFormulaValidTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000065">
+        <transaction-name>计算公式校验</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.CheckFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000066">
+        <transaction-name>保存计算公式</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.SaveFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000067">
+        <transaction-name>拖放计算公式</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.DragAndDropFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000068">
+        <transaction-name>删除计算公式</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.DelFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000069">
+        <transaction-name>新计算公式</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.AddComputeCondTrans"/>
+        </wf-sequence>
+    </wfi-mapping>  
+	<wfi-mapping funcid="ZJ100000070">
+        <transaction-name>新增计算公式</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.AddFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000071">
+        <transaction-name>获取计算条件</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.GetComputeCondTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000072">
+        <transaction-name>保存计算条件</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.SaveCalculaCondTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+        <wfi-mapping funcid="ZJ100000098">
+         <transaction-name>计算公式顺序调整</transaction-name>
+        <transaction-desc>计算公式顺序调整</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.SaveSortFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000097">
+        <transaction-name>校验所有计算条件</transaction-name>
+        <transaction-desc></transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.CheckAllFormulaCond"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <!-- 临时变量组件 start lis add 2015-10-21 -->
+    <wfi-mapping funcid="ZJ100000073">
+        <transaction-name>初始化临时变量</transaction-name>
+        <transaction-desc>初始化临时变量</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.InitDefineTempVar"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZJ100000074">
+        <transaction-name>保存临时变量</transaction-name>
+        <transaction-desc>保存临时变量</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.SaveTempVarTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000075">
+        <transaction-name>删除临时变量前校验</transaction-name>
+        <transaction-desc>删除临时变量前校验</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.CheckBeforeDelTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000076">
+        <transaction-name>删除临时变量</transaction-name>
+        <transaction-desc>删除临时变量</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.DelVariablesTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000077">
+        <transaction-name>保存公式校验</transaction-name>
+        <transaction-desc>保存临时变量公式前校验</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.CheckFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000078">
+        <transaction-name>保存公式</transaction-name>
+        <transaction-desc>保存临时变量计算公式</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.SaveFormulaTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000079">
+        <transaction-name>临时变量共享</transaction-name>
+        <transaction-desc>临时变量共享</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.AddShareTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000080">
+        <transaction-name>临时变量取消共享</transaction-name>
+        <transaction-desc>临时变量取消共享</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.RevokeShareTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="ZJ100000081">
+        <transaction-name>临时变量排序</transaction-name>
+        <transaction-desc>临时变量排序</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.SaveSortingTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="ZJ100000082">
+        <transaction-name>临时变量相关引用</transaction-name>
+        <transaction-desc>临时变量相关引用</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.RelateReferenceTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000090">
+        <transaction-name>临时变量调整顺序</transaction-name>
+        <transaction-desc>临时变量调整顺序</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.definetempvar.transaction.SaveSortTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <!-- 临时变量组件 end lis add 2015-10-21 -->
+    <wfi-mapping funcid="ZJ100000083">
+        <transaction-name>初始化税率表</transaction-name>
+        <transaction-desc>初始化税率表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.tax.InitTaxDetailTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+	<wfi-mapping funcid="ZJ100000084">
+        <transaction-name>获取税率表详细信息</transaction-name>
+        <transaction-desc>获取税率表详细信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.tax.GetTaxDetailTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+	<wfi-mapping funcid="ZJ100000085">
+        <transaction-name>新增和修改税率表</transaction-name>
+        <transaction-desc>新增和修改税率表</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.tax.NewAndUpdateTaxTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+	<wfi-mapping funcid="ZJ100000086">
+        <transaction-name>删除税率表</transaction-name>
+        <transaction-desc>删除税率表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.tax.DelTaxTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="ZJ100000087">
+        <transaction-name>显示标准表</transaction-name>
+        <transaction-desc>显示标准表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.standard.StandardTrans"/>
+        </wf-sequence>
+    </wfi-mapping> 
+    <wfi-mapping funcid="ZJ100000088">
+        <transaction-name>查询当前指标对应的标准表数据集合</transaction-name>
+        <transaction-desc>查询当前指标对应的标准表数据集合</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.standard.SelectStandardTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000089">
+        <transaction-name>保存标准表</transaction-name>
+        <transaction-desc>保存标准表</transaction-desc> 
+		<log-attribute>1</log-attribute>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.defineformula.transaction.standard.SaveStandardIDTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<!-- 计算公式组件 end zhaoxg add 2015-7-29 -->
+    <!-- 条件定义 begin -->
+	<wfi-mapping funcid="ZJ100000091">
+         <transaction-name>条件定义初始</transaction-name>
+         <transaction-desc>条件定义初始</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>1</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.defineCon.transaction.SetCondTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000092">
+         <transaction-name>条件保存</transaction-name>
+         <transaction-desc>条件保存</transaction-desc>
+		 <lock-attribute>0</lock-attribute>
+		 <run-attribute>0</run-attribute>
+         <transaction-type>0</transaction-type>
+         <transaction_runner>0</transaction_runner>  
+         <log-attribute>1</log-attribute>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.utils.components.defineCon.transaction.CheckProjectStrTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000093">
+        <transaction-name>复杂条件</transaction-name>
+        <transaction-desc>复杂条件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.complexcondition.transaction.GetInitDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000094">
+        <transaction-name>复杂条件列表</transaction-name>
+        <transaction-desc>复杂条件列表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.complexcondition.transaction.InitGeneralConditionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000095">
+        <transaction-name>删除常用条件</transaction-name>
+        <transaction-desc>删除常用条件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.complexcondition.transaction.SelectOrDelGeneralConditionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000096">
+        <transaction-name>保存常用条件</transaction-name>
+        <transaction-desc>保存常用条件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.complexcondition.transaction.SaveGeneralConditionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 条件定义 end -->
+	<!-- 函数向导组件 end zhaoxg add 2015-10-21 -->
+	<wfi-mapping funcid="ZJ100000101">
+        <transaction-name>函数向导树结构</transaction-name>
+        <transaction-desc>函数向导树结构</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.functionWizard.transaction.FunctionTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000102">
+        <transaction-name>函数向导下步逻辑</transaction-name>
+        <transaction-desc>函数向导下步逻辑</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.functionWizard.transaction.FunctionWizardTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000103">
+        <transaction-name>函数向导下步逻辑</transaction-name>
+        <transaction-desc>函数向导下步逻辑</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.functionWizard.transaction.FunctionWizardItemTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000104">
+        <transaction-name>代码联动</transaction-name>
+        <transaction-desc>代码联动</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.functionWizard.transaction.SearchCodeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="ZJ100000105">
+        <transaction-name>获取薪资标准表横纵指标</transaction-name>
+        <transaction-desc>获取薪资标准表横纵指标</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.functionWizard.transaction.SearchGzFactorItemTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<!-- 函数向导组件 end zhaoxg add 2015-10-21 -->
+	<!-- 盒式报表组件 start hej add 2015-12-9 -->
+	<wfi-mapping funcid="ZJ100000111">
+        <transaction-name>盒式报表表格显示</transaction-name>
+        <transaction-desc>盒式报表表格显示</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.personalsoduku.boxreport.transaction.GetBoxReportDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000112">
+        <transaction-name>横纵代码指标查询</transaction-name>
+        <transaction-desc>横纵代码指标查询</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.personalsoduku.boxreport.transaction.GetCodeIndexTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZJ100000113">
+        <transaction-name>保存盒式报表</transaction-name>
+        <transaction-desc>保存盒式报表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.personalsoduku.boxreport.transaction.SaveBoxReportDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZJ100000114">
+        <transaction-name>删除盒式报表</transaction-name>
+        <transaction-desc>删除盒式报表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.personalsoduku.boxreport.transaction.DelBoxReportDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZJ100000115">
+        <transaction-name>获得盒式报表编辑数据</transaction-name>
+        <transaction-desc>获得盒式报表编辑数据</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.personalsoduku.boxreport.transaction.GetEditBoxReportTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000116">
+        <transaction-name>保存九宫格每个格的标题描述</transaction-name>
+        <transaction-desc>保存九宫格每个格的标题描述</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.personalsoduku.boxreport.transaction.SaveBoxReportTitleTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000117">
+        <transaction-name>获取机构树</transaction-name>
+        <transaction-desc>获取机构树</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.personalsoduku.boxreport.transaction.GetOrgTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	
+	<!-- 盒式报表组件 end hej add 2015-12-9 -->
+	<!-- 多选指标组件 start sunm add 2015-12-29 -->
+    <wfi-mapping funcid="ZJ100000121">
+        <transaction-name>获取指标</transaction-name>
+        <transaction-desc>获取指标</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.fielditemmultiselector.transaction.GetFieldItemsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000122">
+        <transaction-name>获取指标</transaction-name>
+        <transaction-desc>获取指标</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.fielditemmultiselector.transaction.GetFieldSetTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<!-- 多选指标组件 end sunm add 2015-12-29 -->
+	<!-- 简单查询 start -->
+	<wfi-mapping funcid="ZJ100000124">
+        <transaction-name>备选指标和已选指标选初始化</transaction-name>
+        <transaction-desc>备选指标和已选指标选初始化</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.selectfield.transaction.FieldItemInitTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000125">
+        <transaction-name>查询条件列表</transaction-name>
+        <transaction-desc>查询条件列表</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.selectfield.transaction.SelectQueryFieldsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZJ100000126">
+        <transaction-name>查询结果-人员</transaction-name>
+        <transaction-desc>查询结果-人员</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.selectfield.transaction.ShowResultTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000123">
+        <transaction-name>常用查询条件检验</transaction-name>
+        <transaction-desc>常用查询条件检验</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.selectfield.transaction.CheckQueryCondTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 简单查询  end -->
+    
+    
+    <wfi-mapping funcid="ZJ100000131">
+        <transaction-name>代码查询</transaction-name>
+        <transaction-desc>代码查询</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.codeselector.transaction.GetCodeTreeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000132">
+        <transaction-name>三级代码查询</transaction-name>
+        <transaction-desc>三级代码查询</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.codeselector.transaction.GetDeepCodeDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    
+    <wfi-mapping funcid="ZJ100000141">
+        <transaction-name>公共查询组件</transaction-name>
+        <transaction-desc>公共查询组件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.commonquery.CommonQueryPlanSearchTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000142">
+        <transaction-name>公共查询组件保存查询指标</transaction-name>
+        <transaction-desc>公共查询组件保存查询指标</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.commonquery.CommonQueryPlanSaveTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+     <!-- 角色选择  start -->
+    <wfi-mapping funcid="ZJ100000151">
+        <transaction-name>角色选择</transaction-name>
+        <transaction-desc>角色选择</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.rolepicker.transaction.GetPerRoleListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000152">
+        <transaction-name>角色选择查询</transaction-name>
+        <transaction-desc>角色选择查询</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.rolepicker.transaction.SearchPerRoleListTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <!-- 角色选择  end -->
+
+	<!-- 工作桌面 begin-->
+	<wfi-mapping funcid="ZJ100000161">
+        <transaction-name>工作桌面交易类</transaction-name>
+        <transaction-desc>工作桌面交易类</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.homewidget.worktable.WorkTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	<!-- 工作桌面 end -->
+	<!-- 服务大厅 begin-->
+	<wfi-mapping funcid="ZJ100000166">
+        <transaction-name>查询模板信息</transaction-name>
+        <transaction-desc>查询模板信息</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.homewidget.servicehall.SearchTemplateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 服务大厅 end-->
+    <!-- 申报信息与我的待办 start-->
+    <wfi-mapping funcid="ZJ100001000">
+        <transaction-name>申报信息与我的待办</transaction-name>
+        <transaction-desc>申报信息与我的待办</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.homewidget.templatetable.SearchTemplateTableTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 申报信息与我的待办 end-->
+    
+    <wfi-mapping funcid="ZJ100000171">
+        <transaction-name>单点树组件</transaction-name>
+        <transaction-desc>单点树组件</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.funcmenu.SearchMenuTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+	
+	<wfi-mapping funcid="ZJ100000153">
+        <transaction-name>增加公告</transaction-name>
+        <transaction-desc>增加公告</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.system.viewboard.transaction.NoticeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000181">
+        <transaction-name>表格报表通用组件</transaction-name>
+        <transaction-desc>创建报表参数</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.dataview.CreateDataViewTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000182">
+        <transaction-name>表格报表通用组件</transaction-name>
+        <transaction-desc>报表查询功能实现</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.dataview.QueryHandlerTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000191">
+        <transaction-name>业务模板、登记表选择组件</transaction-name>
+        <transaction-desc>加载数据</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.templateselector.LoadTemplateDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 评审条件 begin-->
+    <wfi-mapping funcid="ZJ100000200">
+        <transaction-name>评审条件</transaction-name>
+        <transaction-desc>评审条件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.QualificationsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000201">
+        <transaction-name>新增评审条件</transaction-name>
+        <transaction-desc>新增评审条件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.AddConditionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+     <wfi-mapping funcid="ZJ100000202">
+        <transaction-name>附件转存</transaction-name>
+        <transaction-desc>附件转存</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.AttachmentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000203">
+        <transaction-name>删除评审条件</transaction-name>
+        <transaction-desc>删除评审条件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.DeleteConditionTrans"/>
+        </wf-sequence>
+   	</wfi-mapping>
+     <wfi-mapping funcid="ZJ100000204">
+        <transaction-name>删除附件</transaction-name>
+        <transaction-desc>删除附件</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.DeleteAttachmentTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000205">
+        <transaction-name>保存编辑内容</transaction-name>
+        <transaction-desc>保存编辑内容</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.SaveContentTextTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000206">
+        <transaction-name>编辑名称</transaction-name>
+        <transaction-desc>编辑名称</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.EditNameTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="ZJ100000207">
+        <transaction-name>评审条件-首页待办跳转</transaction-name>
+        <transaction-desc>评审条件-首页待办跳转</transaction-desc> 
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.module.qualifications.transaction.QualificationsForHomeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!-- 评审条件 end-->
+    <!-- 子集组件 begin-->
+    <wfi-mapping funcid="ZJ100000250">
+        <transaction-name>初始化子集组件</transaction-name>
+        <transaction-desc>初始化子集组件</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.subsetview.transaction.CreateSetConfigTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000251">
+        <transaction-name>加载子集指标</transaction-name>
+        <transaction-desc>加载子集指标</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.subsetview.transaction.LoadSetItemDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000252">
+        <transaction-name>收集表单数据、保存</transaction-name>
+        <transaction-desc>收集表单数据、保存</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.subsetview.transaction.SaveSetItemDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000253">
+        <transaction-name>获取人员列表</transaction-name>
+        <transaction-desc>获取人员列表</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.subsetview.transaction.LoadSetItemSelection"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000254">
+        <transaction-name>加载查询条件</transaction-name>
+        <transaction-desc>加载查询条件</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.subsetview.transaction.LoadTableSelectCond"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000255">
+        <transaction-name>批量修改</transaction-name>
+        <transaction-desc>批量修改</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.subsetview.transaction.BatchUpdateTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+   <wfi-mapping funcid="ZJ100000301">
+        <transaction-name>子集指标选择组件</transaction-name>
+        <transaction-desc>加载数据</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.fielditemselector.LoadFieldDataTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="ZJ100000302">
+        <transaction-name>子集指标选择组件</transaction-name>
+        <transaction-desc>加载数据</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.scheme.LoadSubSetFieldDataTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000311">
+        <transaction-name>LRpc接轮询组件</transaction-name>
+        <transaction-desc>LRpc接轮询组件</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.sys.PollingGetResultTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!--签章获取接口 start  -->
+     <wfi-mapping funcid="ZJ100000400">
+        <transaction-name>签章获取组件</transaction-name>
+        <transaction-desc>签章获取组件</transaction-desc>
+        <wf-sequence>
+                <wfi-class mainClass="com.hjsj.hrms.utils.components.signaturefile.transaction.SignatureFileTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!--签章获取接口 end  -->
+    <!--职责&岗位说明配置接口 start  -->
+    <wfi-mapping funcid="ZJ100000401">
+        <transaction-name>初始化职责&amp;岗位说明配置组件</transaction-name>
+        <transaction-desc>初始化职责&amp;岗位说明配置组件</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.system.instructions.transaction.InitInstructionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="ZJ100000402">
+        <transaction-name>保存职责&amp;岗位说明配置组件</transaction-name>
+        <transaction-desc>保存职责&amp;岗位说明配置组件</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.system.instructions.transaction.SaveInstructionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <!--职责&岗位说明配置接口 end  -->
+</wf-mappings>

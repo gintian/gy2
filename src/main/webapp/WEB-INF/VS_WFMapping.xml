@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+    <wfi-mapping funcid="PF000000108">
+        <transaction-name>获取菜单数据</transaction-name>
+        <transaction-desc>获取菜单数据</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.vuesupport.menumanager.transaction.GetMenuInfoTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="PF000000007">
+        <transaction-name>设置新密码</transaction-name>
+        <transaction-desc>设置新密码</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.vuesupport.user.transaction.HjadminSaveNewPasswordTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="PF000000008">
+        <transaction-name>获取账号规则</transaction-name>
+        <transaction-desc>获取账号规则</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.vuesupport.user.transaction.GetUserParamsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="PF000000009">
+        <transaction-name>获取账号规则</transaction-name>
+        <transaction-desc>获取账号规则</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.vuesupport.user.transaction.SearchOnlineUserTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+    <!-- ============================公共组件=================================-->
+    <wfi-mapping funcid="PF000002001">
+        <transaction-name>文件上传组件获取系统设置</transaction-name>
+        <transaction-desc>文件上传组件获取系统设置</transaction-desc>
+        <log-attribute>0</log-attribute>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.vuesupport.component.fileupload.GetFileSettingsTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+
+</wf-mappings>

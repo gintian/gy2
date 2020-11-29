@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;">
+    <title>我的个税</title>
+</head>
+<style type="text/css">
+    #yearHtml ul {
+        padding: 0px 0px 0px 0px;
+        list-style-type: none;
+        margin-top: 0px;
+    }
+
+    #yearHtml ul li {
+        display: block;
+        color: #9A9A9A;
+        height: 23px;
+        line-height: 23px;
+        text-align: center;
+    }
+
+    #yearHtml ul li:hover {
+        color: #549FE3;;
+        background: #EEEEEE;
+    }
+
+    #yearHtml ul li a {
+        display: block;
+        text-align: left;
+        padding-left: 21px;
+    }
+</style>
+<script language="JavaScript" src="/module/utils/js/template.js"></script>
+<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+<script type="text/javascript">
+    Ext.Loader.setPath("mytax", ".");
+    Ext.onReady(function () {
+        //加载功能组件
+        Ext.require("mytax.MyTaxMain", function () {
+            //创建功能组件
+            Ext.create('Ext.container.Viewport', {
+                layout: 'fit',
+                items: Ext.create("mytax.MyTaxMain")
+            });
+        });
+    });
+
+</script>
+<body>
+</body>
+</html>

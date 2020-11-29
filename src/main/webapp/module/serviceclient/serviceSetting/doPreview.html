@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>自助终端配置</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7">
+    </head>
+    
+    <script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+    <script language="JavaScript" src="../../../echarts/echarts.min.js"></script>
+    <script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+    
+    <link rel="stylesheet" href="/../../ext/ext6/resources/ext-theme.css" type="text/css" />
+
+    <script type="text/javascript">
+    Ext.Loader.setPath("ServiceClient",'..');
+    Ext.onReady(function(){
+        //加载功能组件
+        var vo = new HashMap();
+        vo.put("transType","serve");
+        vo.put("preview","preview");
+       // vo.put("transType",'setting');
+        Ext.require(['ServiceClient.serviceHome.ServiceHome','ServiceClient.serviceHome.ServicePlatform'],function(){
+            Rpc({functionId:'SC000000001',success:function(res){
+                var servicesData = Ext.decode(res.responseText).serviceData;
+                Ext.widget('viewport',{
+                layout:'fit',
+                items:Ext.create("ServiceClient.serviceHome.ServiceHome",{
+                    servicesData:servicesData,
+                    loadType:'preview'
+                })
+            });
+        }},vo); 
+    });
+    });
+    </script>
+    <body>
+    </body>
+</html>

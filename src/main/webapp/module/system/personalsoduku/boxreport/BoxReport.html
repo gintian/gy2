@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>盒式报表</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  
+  </head>
+  <link rel="stylesheet" type="text/css" href="../../../../workplan/style/workplan.css">
+<script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+	<script src="../../../../components/querybox/QueryBox.js" ></script>
+	<script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>
+	<script type="text/javascript" src="../../../../js/hjsjUrlEncode.js"></script>
+	<link rel="stylesheet" href="../../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+	<style>
+	.hj-wzm-clock{top:10px;left:10px;z-index:1000;padding:3px 0;}
+	.x-grid-cell-inner {
+	position: relative;
+	text-overflow: ellipsis;
+	padding: 0px 6px 1px 6px !important
+	}
+	</style>
+  	<script type="text/javascript">
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'BoxReportURL': rootPath+'/module/system/personalsoduku/boxreport',
+				'EHR.extWidget.picker': rootPath+'/components/extWidget/picker',
+				'EHR.extWidget.field': rootPath+'/components/extWidget/field',
+				'EHR.extWidget.proxy': rootPath+'/components/extWidget/proxy'
+			}
+		});
+		
+		Ext.onReady(function(){
+		Ext.require('BoxReportURL.BoxReport', function(){
+				boxreport_me = Ext.create("BoxReportURL.BoxReport");
+			});
+		});
+		
+ 	</script>
+  <body>
+  </body>
+</html>

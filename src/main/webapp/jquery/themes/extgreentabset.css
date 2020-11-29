@@ -1,0 +1,45 @@
+.tabs{
+		/*firefox 浏览器 需要添加 tabs类样式                              -moz-border-radius:0px !important; */
+	}
+	.tabs li{
+		 border-radius:0px !important;
+		 border-color:#56B127!important;
+	}
+	.tabs li a{
+		border-radius:0px !important;
+		border-color:#56B127!important;
+		background-image: url() !important;
+		background-color: #def1de!important;
+		color:#013f0b!important;
+		
+	}
+	.tabs li:hover{
+		border-top-color:#56B127 !important; 
+		border-left-color:#56B127 !important; 
+		border-right-color:#56B127 !important; 
+	}
+	.tabs li a:hover{
+		background-image: url() !important;
+		background-color: #bdeba5!important;
+	}
+	.tabs li.tabs-selected{
+		border-bottom-color:white !important;
+	}
+	.tabs li.tabs-selected a{
+		background-color:#FFFFFF !important;
+		font-weight:400 !important;
+		color:#000000 !important;
+		border-bottom-color:white !important;
+	}
+	.tabs li.tabs-selected a:hover{
+		border-color:#56B127 !important;
+		background-color:#FFFFFF !important;
+		border-bottom-color:white !important;
+		cursor:pointer !important;
+	}
+	.tabs li.tabs-selected:hover{
+		border-color:#56B127 !important;
+		background-color:#FFFFFF !important;
+		border-bottom-color:white !important;
+		cursor:pointer !important;
+	}

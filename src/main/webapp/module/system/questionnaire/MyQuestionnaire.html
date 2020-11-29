@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>我的问卷</title>
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="this is my page">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;">
+	</head>
+	
+	<script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+	<script language='JavaScript' src='../../../module/system/questionnaire/GlobalVariable.js'></script>
+	<script src="../../../components/querybox/QueryBox.js" ></script>
+	<script language='JavaScript' src='../../../ckeditor/ckeditor.js'></script>
+	<script type="text/javascript" src='../../../ext/ext6/charts.js'></script>
+	<script type="text/javascript" src="../../../js/hjsjUrlEncode.js"></script>
+	<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+	<link rel="stylesheet" href="../../../ext/ext6/resources/ext-theme.css" type="text/css" />
+	<style>
+	  .mySelected{
+	     background-color:rgb(255, 255, 235);
+	  }
+	  .questionnaireCard{
+	  	float:left;width:315px;margin:0 0 0 10px;
+	  }
+	  
+	 .cardTable{
+	 	border:#c5c5c5 1px solid;width:100%;height:120px;margin-top:10px;
+	 	position:relative;top:-20px;
+	 	font-size:12px !important;
+	 	table-layout:fixed;
+	 }
+	 .planTd{
+	    padding:10px;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    text-overflow:ellipsis;
+	 }
+	 .matrixTd{
+	 	white-space:nowrap;
+	 	border:1px solid #c5c5c5;
+	 	padding:0px 10px;
+	 	height:25px;
+	 	font-size:14px !important;
+	 }
+	 .font14{
+	 	font-size:14px !important;
+	 }
+	 .font15{
+	 	font-size:15px !important;
+	 }
+	 .itemCheck{
+	 	background-color:rgb(255, 255, 225) !important;
+	 }
+	 .questionCheck{
+	 	background:#FFFFFA url(/module/system/questionnaire/images/checkedIcon.png) no-repeat center;
+	 }
+	 /**为了使图片上下居中**/
+	 .questionnaire_img{
+	 	position:absolute;
+	 	top:45%;
+	 }
+	</style>
+	<script type="text/javascript">
+		ResourceLoader.load('/module/system/questionnaire');
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'QuestionnairePlan': rootPath+'/module/system/questionnaire/plan',
+				'QuestionnaireTemplate': rootPath+'/module/system/questionnaire/template',
+				'QuestionnaireRecovery': rootPath+'/module/system/questionnaire/recovery',
+				'QuestionnaireAnalysis': rootPath+'/module/system/questionnaire/analysis',
+				'SYSP':rootPath+'/components/sysExtPlugins',
+				'SYSF':rootPath+'/components/fileupload'
+			}
+		});
+		
+		Ext.onReady(function(){
+			
+			// 全局变量
+			QN_global = Ext.create("GlobalVariable");
+			QN_global.viewport = Ext.widget("viewport",{
+				autoScroll:false,
+				style:'backgroundColor:white',
+				layout:'fit'
+			});  
+			
+			Ext.require('QuestionnairePlan.MyQuestionnaire',function(){
+				QN_global.myQuestionnaire = Ext.create("QuestionnairePlan.MyQuestionnaire",{container:QN_global.viewport});
+			});
+		});
+	</script>
+	<body>
+	</body>
+</html>

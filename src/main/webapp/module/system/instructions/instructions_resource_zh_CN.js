@@ -1,0 +1,12 @@
+var instructions={};
+instructions.title="部门职责和岗位说明书配置";
+instructions.sava="保存";
+instructions.department="部门职责说明书：";
+instructions.position="岗位职责说明书：";
+instructions.standard="基准岗位说明书:";
+instructions.accessory="显示附件：";
+instructions.choose="请选择...";
+instructions.tip="提示";
+instructions.faildInit="初始化失败！";
+instructions.successSave="保存成功！";
+instructions.faildSave="保存失败！";

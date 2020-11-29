@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>评审会议</title>
+    <meta http-equiv="content-type"content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+	<link rel="stylesheet" type="text/css" href="../../../module/jobtitle/style/reviewmeeting.css"/>
+	<link rel="stylesheet" href="../../../module/jobtitle/style/configfile.css" type="text/css"/>
+  </head>
+  <body style="width:100%">
+	<input type='hidden' name='codeinput_value'/>
+	<input id='codeinput_view' type='hidden' name='codeinput_view'/>
+  </body>
+	<script language="JavaScript" src="../../../module/utils/js/template.js"></script>
+	<script language="JavaScript" src="../../../components/codeSelector/codeSelector.js"></script>
+	<script language='JavaScript' src="../../../components/personPicker/PersonPicker.js"></script>
+	<script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+  <script language="JavaScript" src="../../../module/template/template_resource_zh_CN.js"></script><!-- 人事异动用资源文件 -->
+  <script language="JavaScript" src="../../../module/template/utils/template_util.js"></script><!-- 调用人事异动模块 -->
+  	<script type="text/javascript">
+  	
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'ReviewMeetingURL': '../../../module/jobtitle/reviewmeeting',
+				 'ConfigFileURL':'../../../module/jobtitle/configfile',
+				 'JobtitleSubjects': '../../../module/jobtitle/subjects',
+				 'SendMessageURL': '../../../module/jobtitle/sendmessage',//通知提醒
+				 'ExpertPicker': '../../../module/jobtitle/expertpicker',//选择专家
+				 'NoticePath': '../../../module/system/viewboard'
+			}
+		});
+		Ext.onReady(function(){
+			Ext.require('ReviewMeetingURL.ReviewMeetingPortal', function(){
+				Ext.create("ReviewMeetingURL.ReviewMeetingPortal");
+			});
+		});
+ 	</script>
+</html>

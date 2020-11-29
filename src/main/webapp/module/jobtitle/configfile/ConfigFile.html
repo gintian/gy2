@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>配置信息</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;">
+	</head>
+	<link rel="stylesheet" href="../../../module/jobtitle/style/configfile.css" type="text/css"></link>
+	<script language="JavaScript" src="/module/utils/js/template.js"></script>
+	<script type="text/javascript" src="../../../components/stepview/StepView.js"> </script>
+	<script type="text/javascript" src="../../../components/templateSelector/TemplateSelector.js"> </script>
+	<script type="text/javascript" src="../../../components/extWidget/field/CodeTreeCombox.js"> </script>
+	<script type="text/javascript">
+	
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'ConfigFileURL': '../configfile'
+			}
+		});
+		
+		//var width=document.body.clientWidth;
+		var value_params = new HashMap();//将所有模板类对应值放在全局变量中，1.初始化业务模版  ，2.给某一个模板类赋值的时候不影响其他模版
+			value_params.put("1","");
+			value_params.put("2","");
+			value_params.put("3","");
+			value_params.put("4","");
+			value_params.put("5","");
+			value_params.put("6","");
+			value_params.put("7","");
+			value_params.put("8","");
+		Ext.onReady(function(){
+			Ext.require('ConfigFileURL.ConfigFile', function(){
+				configFileGloble = Ext.create("ConfigFileURL.ConfigFile");
+			});
+		});
+		
+ 	</script>
+ 	</head>
+	<body>
+	</body>
+</html>

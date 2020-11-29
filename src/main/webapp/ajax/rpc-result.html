@@ -1,0 +1,13 @@
+<html>
+<head>
+<script language="javascript">
+function window_onload(){
+  var popupWindow = window.parent;
+  popupWindow.returnValue = "${xml}";
+  popupWindow.close();
+}
+</script>
+</head>
+<body language="javascript" onload="return window_onload()">
+</body>
+</html>

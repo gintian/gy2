@@ -1,0 +1,9 @@
+var PLEASE_INPUT_NUMBER="请输入数字!";
+var CANNOT_FIND_VALUE_FROM_RECORD="无法从record中取得相应值!";
+var CANNOT_FIND_FIELD_FROM_RECORD="无法从record中找到字段!";
+var ERROR_WHEN_GENERATE_DATASET="生成dataset对象错误!";
+var CANNOT_MATCH_COUNT="字段的个数和xml中字段数据的个数不相同!";
+var CANNOT_FIND_RECORD_FROM_DATASET="dataset中没有record!";
+var BUTTON_OF_SUBSET_INIT_ERROR="子集按钮初始化错误!";
+var NUM_IS_NOT_INT_ERROR="只能是整数";
+var PLEASE_SELECT_ONE_RECORD="请选择一条记录";

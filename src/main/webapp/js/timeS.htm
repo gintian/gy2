@@ -1,0 +1,230 @@
+
+<style type="text/css">
+body {
+	background-color: transparent;
+	margin:0px;
+}
+.m_frameborder {
+	border: 1px solid #D4D0C8;
+	width: 70px;
+	height: 18px;
+	background-color: transparent;
+	overflow: hidden;
+	text-align: right;
+	font-family: "Tahoma";
+	font-size: 10px;
+}
+.m_arrow {
+	width: 16px;
+	height: 8px;
+	font-family: "Webdings";
+	font-size: 7px;
+	line-height: 2px;
+	padding-left: 2px;
+	cursor: default;
+}
+.m_input {
+	width: 18px;
+	height: 14px;
+	border: 0px solid black;
+	font-family: "Tahoma";
+	font-size: 9px;
+	text-align: right;
+}
+input{
+	background-color:transparent;
+}
+</style>
+
+<script language="javascript">
+//	Written by cloudchen, 2004/03/15
+function minute(name,fName) {
+	this.name = name;
+	this.fName = fName || "m_input";
+	this.timer = null;
+	this.fObj = null;
+	
+	this.toString = function() {
+		var objDate = new Date();
+		var sMinute_Common = "class=\"m_input\" maxlength=\"2\" name=\""+this.fName+"\" onfocus=\""+this.name+".setFocusObj(this)\" onblur=\""+this.name+".setTime(this)\" onkeyup=\""+this.name+".prevent(this)\" onkeypress=\"if (!/[0-9]/.test(String.fromCharCode(event.keyCode)))event.keyCode=0\" onpaste=\"return false\" ondragenter=\"return false\" style=\"ime-mode:disabled\"";
+		var sButton_Common = "class=\"m_arrow\" onfocus=\"this.blur()\" onmouseup=\""+this.name+".controlTime(event,false)\" disabled"
+		var str = "";
+		str += "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">"
+		str += "<tr>"
+		str += "<td>"
+		str += "<div class=\"m_frameborder\">"
+		str += "<input radix=\"24\" value=\""+this.formatTime(objDate.getHours())+"\" "+sMinute_Common+">:"
+		str += "<input radix=\"60\" value=\""+this.formatTime(objDate.getMinutes())+"\" "+sMinute_Common+">:"
+		str += "<input radix=\"60\" value=\""+this.formatTime(objDate.getSeconds())+"\" "+sMinute_Common+">"
+		str += "</div>"
+		str += "</td>"
+		str += "<td>"
+		str += "<table border=\"0\" cellspacing=\"2\" cellpadding=\"0\">"
+		str += "<tr><td><button id=\""+this.fName+"_up\" "+sButton_Common+">5</button></td></tr>"
+		str += "<tr><td><button id=\""+this.fName+"_down\" "+sButton_Common+">6</button></td></tr>"
+		str += "</table>"
+		str += "</td>"
+		str += "</tr>"
+		str += "</table>"
+		return str;
+	}
+	this.play = function() {
+		this.timer = setInterval(this.name+".playback()",1000);
+	}
+	this.formatTime = function(sTime) {
+		sTime = ("0"+sTime);
+		return sTime.substr(sTime.length-2);
+	}
+	this.playback = function() {
+		var objDate = new Date();
+		var arrDate = [objDate.getHours(),objDate.getMinutes(),objDate.getSeconds()];
+		var objMinute = document.getElementsByName(this.fName);
+		for (var i=0;i<objMinute.length;i++) {
+			objMinute[i].value = this.formatTime(arrDate[i])
+		}
+	}
+	this.prevent = function(obj) {
+		clearInterval(this.timer);
+		this.setFocusObj(obj);
+		var value = parseInt(obj.value,10);
+		var radix = parseInt(obj.radix,10)-1;
+		if (obj.value>radix||obj.value<0) {
+			obj.value = obj.value.substr(0,1);
+		}
+	}
+	this.controlTime = function(evt,cmd) {
+		evt=evt?evt:(window.event?window.event:null);//xuj update 2011-5-11 兼容firefox、chrome
+		var t=evt.target?evt.target:evt.srcElement;
+		evt.cancelBubble = true;
+		if (!this.fObj) return;
+		clearInterval(this.timer);
+		if(!isIE()){
+			cmd = t.innerText=="5"?true:false;
+		}else{
+			//cmd = t.innerHTML=="5"?true:false;
+			/*
+				非IE浏览器 5 不会转成特殊符号   值直接为特殊符号  wangb 20171130
+				Chrome 浏览器特殊处理  <span>▲</span>
+			*/
+			if(isChrome){
+				if(t.innerHTML.length >1)
+					cmd = t.getElementsByTagName('span')[0].innerHTML=="▲"?true:false;
+				else
+					cmd = t.innerHTML=="▲"?true:false;
+			}else{
+				cmd = t.innerHTML=="▲"?true:false;
+			}
+		}	
+		var i = parseInt(this.fObj.value,10);
+		//非IE浏览器直接获取不到值  改为获取属性方式获取值   wangb 20171130 
+		var radix = this.fObj.radix? parseInt(this.fObj.radix,10)-1 : parseInt(this.fObj.getAttribute('radix'),10)-1;
+		if (i==radix&&cmd) {
+			i = 0;
+		} else if (i==0&&!cmd) {
+			i = radix;
+		} else {
+			cmd?i++:i--;
+		}
+		this.fObj.value = this.formatTime(i);
+		this.fObj.select();
+	}
+	this.setTime = function(obj) {
+		obj.value = this.formatTime(obj.value);
+	}
+	this.setFocusObj = function(obj) {
+		eval(this.fName+"_up").disabled = eval(this.fName+"_down").disabled = false;
+		this.fObj = obj;
+	}
+	this.getTime = function() {
+		var arrTime = new Array(3);
+		for (var i=0;i<document.getElementsByName(this.fName).length;i++) {
+			arrTime[i] = document.getElementsByName(this.fName)[i].value;
+		}
+		return arrTime.join(":")
+	}
+	this.getTimeMinute = function() {
+		var arrTime = new Array(2);
+		for (var i=0;i<document.getElementsByName(this.fName).length-1;i++) {
+			arrTime[i] = document.getElementsByName(this.fName)[i].value;
+		}
+		//arrTime[2]="00";
+		return arrTime.join(":")
+	}
+}
+var m = new minute("m");
+document.write(m);
+m.play();
+
+/*判断 浏览器  IE  firefox  chrome  safari    wangb 20171130 */
+var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1; //判断Chrome浏览器
+var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1; //判断是否Safari浏览器 
+var isFireFox=userAgent.indexOf("Firefox")>0;//判断是否是火狐浏览器
+function getBrowseVersion()
+{
+    var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器  
+    var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
+    if(isIE)
+    	return true;
+    else
+    	return false;
+}
+/*针对非IE浏览器下 显示 时分秒控件显示问题处理     wangb 20171130*/
+if(!getBrowseVersion()){
+	var m_frameborder = document.getElementsByClassName('m_frameborder')[0];
+	var minputup = document.getElementById('m_input_up');
+	var minputdown = document.getElementById('m_input_down');
+	if(isChrome){// Chrome 浏览器特殊处理
+		m_frameborder.style.height='17px';
+		minputup.innerHTML ='<span onmouseup="m.controlTime(event,false)">▲</span>';
+		minputdown.innerHTML='<span onmouseup="m.controlTime(event,false)">▼</span>';
+		minputup.firstChild.style.display='block';
+		minputup.firstChild.style.transform='scale(0.5)';
+		minputdown.firstChild.style.transform='scale(0.5)';
+		minputdown.firstChild.style.display='block';
+	}else if(isSafari){// safari 浏览器特殊处理
+		var frameborder = document.getElementsByClassName('m_frameborder')[0];
+	 	frameborder.style.height="26px";
+		var inputs = document.getElementsByClassName('m_input');
+		for(var i = 0 ; i < inputs.length ; i++){
+			inputs[i].style.width = "20px";
+			inputs[i].style.height = "24px";
+			inputs[i].style.textAlign = "center";
+		}
+		var tr = frameborder.parentNode.parentNode; //.nextSbiling.firstChild;
+		var btnTable = tr.getElementsByTagName('table')[0]
+		btnTable.setAttribute('cellspacing','0');
+		minputup.innerHTML ='▲';
+		minputdown.innerHTML='▼';
+	}else if(isFireFox){// firefox 浏览器特殊处理
+		m_frameborder.style.height='18px';
+		var table = minputup.parentNode.parentNode.parentNode.parentNode;
+		table.setAttribute('cellspacing','0');
+		minputup.innerHTML ='▲';
+		minputdown.innerHTML='▼';
+		minputup.style.height = '10px';
+		minputup.style.paddingTop = '2px';
+		minputup.style.fontSize = '6px';
+		minputdown.style.height = '10px';
+		minputdown.style.paddingTop = '2px';
+		minputdown.style.fontSize = '6px';
+	}
+	
+}
+/**取IE版本，如果返回0为其他浏览器*/
+function isIE()
+{
+   var  version=0;
+   if(navigator.appName.indexOf("Internet Explorer") != -1)
+   {
+      var temp=navigator.appVersion.split("MSIE");
+      version=parseFloat(temp[1]);
+   }
+    /*IE 10 以后appName是NetScape了，IE内核为Trident，使用此标识判断是否IE guodd 2019-03-01*/
+    if(navigator.appVersion.indexOf("Trident") != -1 && navigator.appName.indexOf("Netscape") != -1) {
+        version = 10;
+    }
+   return version===0;
+}
+
+</script>

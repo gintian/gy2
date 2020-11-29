@@ -1,0 +1,119 @@
+锘匡豢@charset "utf-8";
+/* CSS Document
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,span{margin:0;padding:0; border:none;} */
+.content{
+        position: absolute;
+    	top: 50%;
+    	height: 240px;
+    	margin-top: -120px;
+    }
+.complex_border_color{
+    border: 1pt solid #C4D8EE;
+}
+.border_bottom{
+	border-bottom-color: #78C5FF !important;
+	/*border-bottom:solid 2px #78C5FF;*/
+	}
+.TableRow{
+    width:90px;
+    height:38px;
+    font-size: 22px;
+}
+.img-middle{vertical-align:middle;}
+
+.certifc_title{
+	font-family:瀹嬩綋;
+    font-size: 18px;
+    position:relative;
+    cursor:pointer;
+    border-bottom:solid 2px #FFFFFF !important;
+}
+.border_bottom{
+	font-family:瀹嬩綋;
+	font-size: 18px;
+    position:relative;
+    cursor:pointer;
+	border-bottom-color: #78C5FF !important;
+}
+
+
+
+.x-list .x-list-disclosure::before{
+	 line-height: 50px !important;
+}
+.template_label{
+	padding:14px 6px 14px 6px;
+}
+.template_label_area{
+	padding:15px 6px 15px 6px;
+}
+.template_input{
+	padding:15px 0px 15px 0px;
+}
+
+.x-field-required .x-form-label:after{content:"*";display:inline;color:red}
+
+.x-form-fieldset .x-field::before {
+	/*border-bottom: 5px solid #dbdbe0!important;*/
+}
+
+.workflow-timeLine-line{
+	height:30px;
+	width: 0px;
+	border: solid 1px #35baf6;
+	margin: 0 auto;
+}
+
+.workflow-timeLine-shortline{
+	height:12px;
+	width: 0px;
+	border: solid 1px #35baf6;
+	margin: 0 auto;
+}
+
+.workflow-timeLine-longline{
+	background:url(/module/kq/images/line.png) repeat-y center center ;
+}
+
+.workflow-timeLine-point{
+	width:20px;
+	height:20px;
+	background:url(/module/kq/images/yuan.png) no-repeat center center ;
+	background-size:8px 8px;
+	position:relative;
+	padding-right:10px;
+}
+
+.workflow-approver{
+	padding-left:10px;
+	text-align:left;
+	font-size:0.9em;
+}
+.workflow-tuli{
+	font-family:'Helvetica Neue';
+	font-size:1.1em;
+}
+
+.workflow-timeline-textarr{
+	height:100%;
+	border:1px solid rgb(209,209,209);
+	border-radius:6px;
+	padding:16px;
+	font-size:0.9em;
+	line-height:1.8em;
+	text-align: left;
+	background-color: rgb(250,250,250);
+}
+
+.arrow{
+	position:relative;
+	width:12px;
+	height:12px; 
+	left:-28px;
+	top:50px;
+	margin-top:-22px;
+	float:left;
+}
+.arrow *{ display:block; border-width:6px; position:absolute; border-style:solid solid solid solid; font-size:0; line-height:0; }
+.arrow em{border-color:transparent rgb(209,209,209) transparent transparent;}
+.arrow span{border-color:transparent rgb(250,250,250) transparent transparent; right:-1px;}

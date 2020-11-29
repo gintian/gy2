@@ -1,0 +1,166 @@
+div#tbl-container {
+	width:100%;
+	overflow:auto;
+	BORDER-BOTTOM:#94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	MARGIN-RIGHT:0;
+	MARGIN-LEFT:10px;
+ 
+	}
+  .selfTableRow {
+	background-color:#C0DEF6;
+	font-size: 12px;  
+	text-align:center ;
+	vertical-align :middle ;
+	align:center ;
+	border: inset 1px #94B6E6;
+	COLOR : #103B82;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 1pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 1pt solid;
+	
+	}
+	.t_header_locked{
+	/*background-image:url(/images/listtableheader_deep-8.jpg);*/
+	background-repeat:repeat;
+	background-position : center left;
+	BACKGROUND-COLOR: #f4f7f7;  
+	border: inset 1px #94B6E6;
+	COLOR : black;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 0pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 0pt solid;
+	height:30;
+	valign:middle;
+	font-weight: bold;	
+	text-align:center;
+	top: expression(document.getElementById("tbl-container").scrollTop+1); /*IE5+ only*/
+	position: relative;
+	z-index: 15;
+	}
+	.t_header_locked1{
+	/*background-image:url(/images/listtableheader_deep-8.jpg);*/
+	background-repeat:repeat;
+	background-position : center left;
+	BACKGROUND-COLOR: #f4f7f7;  
+	border: inset 1px #94B6E6;
+	COLOR : black;
+	BORDER-BOTTOM: #94B6E6 1pt solid; 
+	BORDER-LEFT: #94B6E6 0pt solid; 
+	BORDER-RIGHT: #94B6E6 1pt solid; 
+	BORDER-TOP: #94B6E6 0pt solid;
+	height:30;
+	valign:middle;
+	font-weight: bold;	
+	text-align:center;
+	top: expression(document.getElementById("tbl-container").scrollTop+1); /*IE5+ only*/
+	position: relative;
+	z-index: 15;
+	}
+ 	.t_cell_locked2 {
+	  /*  background-image:url(/images/listtableheader_deep-8.jpg);*/
+		background-repeat:repeat;
+		background-position : center left;
+		BACKGROUND-COLOR: #f4f7f7;  
+		BORDER-BOTTOM: #94B6E6 0pt solid; 
+		BORDER-LEFT: #94B6E6 0pt solid; 
+		BORDER-RIGHT: #94B6E6 1pt solid; 
+		BORDER-TOP: #94B6E6 0pt solid;
+		height:22;
+		font-weight: bold;	
+		valign:middle;
+		COLOR : black;
+		left: expression(document.getElementById("tbl-container").scrollLeft+1); /*IE5+ only*/
+		top: expression(document.getElementById("tbl-container").scrollTop); /*IE5+ only*/
+		position: relative;
+		z-index: 20;
+	
+	}
+  .t_cell_locked {
+		border: inset 1px #94B6E6;
+		BACKGROUND-COLOR: #ffffff;
+		BORDER-BOTTOM: #94B6E6 0pt solid; 
+		BORDER-LEFT: #94B6E6 0pt solid; 
+		BORDER-RIGHT: #94B6E6 1pt solid; 
+		BORDER-TOP: #94B6E6 1pt solid;
+		font-size: 12px;
+		border-collapse:collapse; 
+		height:22;
+	
+		background-position : center left;
+		left: expression(document.getElementById("tbl-container").scrollLeft+1); /*IE5+ only*/
+		position: relative;
+		z-index: 10;
+	
+	}
+	.t_cell_locked1 {
+		border: inset 1px #94B6E6;
+		BACKGROUND-COLOR: #ffffff;
+		BORDER-BOTTOM: #94B6E6 0pt solid; 
+		BORDER-LEFT: #94B6E6 1pt solid; 
+		BORDER-RIGHT: #94B6E6 1pt solid; 
+		BORDER-TOP: #94B6E6 1pt solid;
+		font-size: 12px;
+		border-collapse:collapse; 
+		height:22;
+	
+		background-position : center left;
+		left: expression(document.getElementById("tbl-container").scrollLeft); /*IE5+ only*/
+		position: relative;
+		z-index: 10;
+	
+	}
+	.t_cell_locked_b2 {
+		border: inset 1px #94B6E6;
+		BACKGROUND-COLOR: #ffffff;
+		BORDER-BOTTOM: #94B6E6 1pt solid; 
+		BORDER-LEFT: #94B6E6 1pt solid; 
+		BORDER-RIGHT: #94B6E6 0pt solid; 
+		BORDER-TOP: #94B6E6 0pt solid;
+		font-size: 12px;
+		border-collapse:collapse; 
+		height:22;
+	
+		background-position : center left;
+		left: expression(document.getElementById("tbl-container").scrollLeft); /*IE5+ only*/
+		position: relative;
+		z-index: 10;
+	
+	}
+	.t_cell_locked_b {
+		border: inset 1px #94B6E6;
+		BACKGROUND-COLOR: #ffffff;
+		BORDER-BOTTOM: #94B6E6 1pt solid; 
+		BORDER-LEFT: #94B6E6 0pt solid; 
+		BORDER-RIGHT: #94B6E6 1pt solid; 
+		BORDER-TOP: #94B6E6 1pt solid;
+		font-size: 12px;
+		border-collapse:collapse; 
+		height:22;
+	
+		background-position : center left;
+		left: expression(document.getElementById("tbl-container").scrollLeft+1); /*IE5+ only*/
+		position: relative;
+		z-index: 10;
+	
+	}
+	.RecordRow2 {
+	border: inset 1px #C4D8EE;
+	BORDER-BOTTOM: #C4D8EE 1pt solid; 
+	BORDER-LEFT: #C4D8EE 1pt solid; 
+	BORDER-RIGHT: #C4D8EE 1pt solid; 
+	BORDER-TOP: #C4D8EE 0pt solid;
+	font-size: 12px;
+	border-collapse:collapse; 
+	height:22;
+}
+
+	
+	
+	
+	
+	

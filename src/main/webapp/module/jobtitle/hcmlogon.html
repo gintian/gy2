@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+	<title>职称评审专家评价系统</title>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
+	</head>
+<script language="JavaScript" src="/module/utils/js/template.js"></script>
+<html> 
+	<body scroll="no" style="margin:0px;padding:0px;overflow-y: hidden;"> 
+		<Iframe name="tt" id="jobtitleiframe" src="" width="100%" height="100%" scrolling="no" frameborder="0"></iframe> 
+	</body> 
+<script>
+	window.onload = function(){
+		Ext.getDom('jobtitleiframe').src = './logon/index/Logon.html'; 
+		if(Ext.isIE){
+			Ext.getDom('jobtitleiframe').height = document.documentElement.clientHeight-10;
+		}
+		
+	}
+</script>
+</html>

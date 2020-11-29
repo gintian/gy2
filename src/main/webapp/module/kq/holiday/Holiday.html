@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>假期管理</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <style>
+	#monthlist ul{
+		list-style-type:none!important;
+		width: 200px;
+		padding-left:0px;
+		-webkit-margin-before:0px;
+		-webkit-margin-after:0px;
+		margin: 0px;
+	} 
+
+	#monthlist ul li {
+		width: 50px;
+		float: left;
+		height: 28px;
+		line-height: 28px;
+		text-align: center;
+		display: block;
+		color: #9A9A9A;
+	}
+	#monthlist ul li:hover {
+		color: #549FE3;;
+		background: #EEEEEE;
+	}
+
+	#monthlist ul li a {
+		display: block;
+		text-align: center;
+		color: #549FE3
+	}
+  </style>
+	<script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+	<script src="../../../../components/querybox/QueryBox.js" ></script>
+	<script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>
+  	<script type="text/javascript">
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'HolidayManageTemplateUL': rootPath+'/module/kq/holiday',
+				'SYSF': rootPath + '/components/fileupload'
+			}
+		});
+		
+		Ext.onReady(function() {
+			Ext.require('HolidayManageTemplateUL.Holiday', function() {
+				projectInforGlobal = Ext.create("HolidayManageTemplateUL.Holiday");
+			});
+		});
+		
+ 	</script>
+  <body>
+  </body>
+</html>

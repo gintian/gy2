@@ -1,0 +1,17 @@
+var sd_parameter = {};
+sd_parameter.remind = '提示';
+sd_parameter.noneSelected = '请选择需要删除的数据！';
+sd_parameter.makeSureDelPre = '确定删除这';
+sd_parameter.makeSureDelSuf = '条记录吗？';
+sd_parameter.insertNamePre = '二开参数_';
+sd_parameter.saveNone = '没有新增或者修改数据！'
+sd_parameter.deleteOK = '删除成功！';
+sd_parameter.saveOK = '保存成功！';
+sd_parameter.saveRepeatTip='名称【{name}】重复，请重新输入！ ';
+sd_parameter.checkNotName="该输入项的内容不能为空！";
+sd_parameter.checkNameLength="该输入项的最大长度是{length}个字符！"
+sd_parameter.checkNotSpace="该输入项内容不能全为空格！";
+sd_parameter.error={};
+sd_parameter.error.renderError = '获取数据出错！';
+sd_parameter.error.deleteError = '删除数据出错！';
+sd_parameter.error.saveError = '保存数据出错！';

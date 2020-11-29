@@ -1,0 +1,51 @@
+<!DOCTYPE weblogic-web-app PUBLIC "-//BEA Systems, Inc.//DTD Web Application 8.1//EN" "weblogic810-web-jar.dtd">
+<weblogic-web-app>
+
+  <jsp-descriptor>
+    <jsp-param>
+      <param-name>compileCommand</param-name>
+      <param-value>javac</param-value>
+    </jsp-param>
+    <jsp-param>
+      <param-name>precompile</param-name>
+      <param-value>false</param-value>
+    </jsp-param>
+    <jsp-param>
+      <param-name>precompileContinue</param-name>
+      <param-value>true</param-value>
+    </jsp-param>
+    <jsp-param>
+      <param-name>keepgenerated</param-name>
+      <param-value>true</param-value>
+    </jsp-param>
+ 
+    <jsp-param>
+      <param-name>encoding</param-name>
+      <param-value>GBK</param-value>
+    </jsp-param>
+	
+  </jsp-descriptor>
+  <!-- weblogic11g applet JSESSIONID-->
+
+  <session-descriptor>
+	<cookie-http-only>false</cookie-http-only>  
+    <session-param>
+      <param-name>TimeoutSecs</param-name>
+      <param-value>60</param-value>
+   </session-param>
+  </session-descriptor>	
+
+  <container-descriptor>
+    <session-monitoring-enabled>true</session-monitoring-enabled>
+    
+  </container-descriptor>
+
+  <charset-params>
+    <input-charset>
+      <resource-path>/*</resource-path>
+      <java-charset-name>GBK</java-charset-name>
+    </input-charset>
+  </charset-params>
+
+  <context-root>/</context-root>
+</weblogic-web-app>

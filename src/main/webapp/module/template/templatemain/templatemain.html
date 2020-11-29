@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7;">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="this is my page">
+	</head>
+	
+	<!-- 人事异动必引入文件-->
+	<script language="JavaScript" src="../../../module/utils/js/template.js"></script>	
+    <script language='JavaScript' src='../../../components/tableFactory/tableFactory.js'></script>
+	<script language="JavaScript" src="../../../module/template/utils/template_util.js"></script>
+	
+	<script type="text/javascript">
+	    //url="/module/template/templatemain/templatemain.html?b_query=link&tab_id=3&view_type=1&ins_id=0";
+	    //判断是否是pc端浏览器打开的
+	    var browser = getBrowser();
+	    var isMobileBrowser = false;
+	    if (browser.versions.android||browser.versions.ucweb||browser.versions.uc7||
+	    	    browser.versions.mdip||browser.versions.ios||browser.versions.winc||
+	    	    browser.versions.iPhone||browser.versions.iPad||browser.versions.winm||
+	    	    browser.versions.weixin) { 
+	    	isMobileBrowser = true;
+	    	//alert("很抱歉,此单据不支持在移动端审批");
+        }
+        //模板所需参数
+ 		var templateBean={};
+		var url = window.location.search;
+		 /**
+		  * 解析url传的参数 
+		  * */
+	    function parseUrl(url) {  
+			if (url.indexOf('encryptParam')>0){//加密参数,需要后台解析				
+				var map = new HashMap();
+				map.put("url",url);
+				map.put("ismobilebrowser",isMobileBrowser.toString());
+			    Rpc({functionId:'MB00001002',async:false,success: parseUrlOK},map);			
+			}
+			else {
+				var map = new HashMap();
+				map.put("url",url);
+				map.put("ismobilebrowser",isMobileBrowser.toString());
+			    Rpc({functionId:'MB00001002',async:false,success: function(form){
+				    	var result = Ext.decode(form.responseText);
+				    	var weiXinUrl = result.weiXinUrl;
+				    	if(isMobileBrowser){
+					    	if (weiXinUrl==""){//无移动应用
+					    		alert("很抱歉,此单据不支持在移动端审批");
+					    	}
+					    	else {//打开移动应用链接
+								window.open(weiXinUrl,"_self");
+					    	}
+				    	}
+				    	else {
+				    		var params= getRequest(url);
+					    	Ext.apply(templateBean,params);
+							if (templateBean.other_param && templateBean.other_param!=""){
+					    		var other_value= getDecodeStr(templateBean.other_param);
+					    		templateBean.other_param=other_value;
+				    		}
+				    	}
+			    	}
+			    },map);	
+				
+				
+				
+			}
+			if(isMobileBrowser)
+				setTemplPropetyOthParam("ismobilebrowser",true);
+	    }
+		 /**
+		  * 赋值后台传回的参数
+		  * */
+	    function parseUrlOK(form) {  
+	    	var result = Ext.decode(form.responseText);
+	    	Ext.apply(templateBean,result);
+			if (templateBean.other_param && templateBean.other_param!=""){
+	    		var other_value= getDecodeStr(templateBean.other_param);
+	    		templateBean.other_param=other_value;
+    		}
+	    }
+	    
+       /**
+           加载所选js类路径
+        */
+        /**
+        Ext.Loader.setConfig({
+            enabled: true,
+            paths: {
+                'TemplateMainUL': '/module/template/templatemain'
+            }
+        });
+        Ext.onReady(function(){
+            Ext.require('TemplateMainUL.TemplateMain', function(){
+                templateBean.callBackFunc="renderForm";
+                Ext.create("TemplateMainUL.TemplateMain", {templPropety:templateBean});
+            });
+        });
+        */
+        templateBean.callBack_init="renderForm";
+        Ext.onReady(function(){
+        	/**54278 中国人民大学：机构调整的菜单定制到招聘模块下，用谷歌浏览器一点就提示超时，ie和360浏览器正常*/
+			//解析url的参数，将参数赋给到templateBean
+			parseUrl(url);		
+            //调用template_util.js的方法
+            createTemplateForm(templateBean);
+        });
+        
+        
+         /**
+          * 渲染主页面
+          * */
+	    function renderForm() {  
+            Ext.create('Ext.container.Viewport',{
+                autoScroll:false,
+                style:'backgroundColor:white',
+                layout:'fit',
+                items:templateMain_me.mainPanel
+            });
+	    }
+	    function getBrowser(){
+	    	var browser={  
+	        		versions:function(){  
+	    	           var u = navigator.userAgent.toLowerCase();  
+	    	           return {//移动终端浏览器版本信息  
+	    	        	    android: u.match(/android/i) == "android", //android
+	    	        	    ucweb: u.match(/ucweb/i) == "ucweb", //uc 
+	    	                uc7: u.match(/rv:1.2.3.4/i) == "rv:1.2.3.4", //uc7
+	    	                mdip: u.match(/midp/i) == "midp", //  
+	    	                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  
+	    	                winc: u.match(/windows ce/i) == "windows ce", //
+	    	                iPhone: u.match(/iphone os/i) == "iphone os", //
+	    	                iPad: u.match(/ipad/i) == "ipad", //是否iPad  
+	    	                winm: u.match(/windows mobile/i) == "windows mobile", //
+	    	                weixin: u.match(/MicroMessenger/i)=="MicroMessenger"//是否是微信打开
+	    	            };  
+	             	}(),  
+	             	language:(navigator.browserLanguage || navigator.language).toLowerCase()  
+	    		};
+	    	return browser;
+	    }
+		
+ 	</script>
+	<body>
+	
+	</body>
+</html>

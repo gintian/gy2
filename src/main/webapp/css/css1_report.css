@@ -1,0 +1,382 @@
+
+.ListTable {
+
+    BACKGROUND-COLOR: #FFFFFF;
+    BORDER-BOTTOM: medium none; 
+    BORDER-COLLAPSE: collapse; 
+    BORDER-LEFT: medium none; 
+    BORDER-RIGHT: medium none; 
+    BORDER-TOP: medium none; 
+    table-layout: fixed;
+	
+
+}
+
+div#headerDiv {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_ltbr {
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #808080   1pt solid; 
+	BORDER-RIGHT:#808080   1pt  solid; 
+	BORDER-TOP: #808080 1pt solid;
+	
+}
+
+
+.RecordRow {
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #808080 1pt solid;
+	
+}
+
+.RecordRow_self {
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #808080 1pt solid;
+	
+}
+
+div#headerDiv_l {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+.RecordRow_self_l{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #808080 1pt solid;
+	
+}
+
+div#headerDiv_r {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_r {
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #808080 1pt solid;
+	
+}
+
+div#headerDiv_t {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 0pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+.RecordRow_self_t {
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #FFFFFF 0pt dotted;
+	
+}
+
+div#headerDiv_b {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+.RecordRow_self_b {
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 0pt solid; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #808080 1pt solid;
+	
+}
+
+div#headerDiv_two {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+.RecordRow_self_two {
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #808080 1pt solid;
+	
+}
+
+div#headerDiv_lr {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+.RecordRow_self_lr{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #808080 1pt solid;	
+}
+div#headerDiv_lt {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 0pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+.RecordRow_self_lt{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #FFFFFF 0pt dotted;	
+}
+div#headerDiv_lb {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+.RecordRow_self_lb{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #808080 1pt solid;	
+}
+
+div#headerDiv_lrt {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 0pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_lrt{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #FFFFFF 0pt dotted;	
+}
+
+div#headerDiv_lrb {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_lrb{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #FFFFFF 0pt dotted; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #808080 1pt solid;	
+}
+
+div#headerDiv_ltb {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 0pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_ltb{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #FFFFFF 0pt dotted;	
+}
+
+div#headerDiv_lrtb {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 0pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 0pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_lrtb{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #FFFFFF 0pt dotted; 
+	BORDER-LEFT: #FFFFFF 0pt dotted; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #FFFFFF 0pt dotted;	
+}
+
+div#headerDiv_rt {
+	    
+		BORDER-BOTTOM:#808080 1pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_rt{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 1pt solid; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #FFFFFF 1pt dotted;	
+}
+div#headerDiv_rb {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 1pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_rb{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #FFFFFF 0pt dotted; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted; 
+	BORDER-TOP: #808080 1pt solid;	
+}
+div#headerDiv_rtb {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 0pt solid; 
+		BORDER-TOP: #808080 0pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_rtb{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #FFFFFF 0pt dotted; 
+	BORDER-LEFT:  #808080 1pt solid; 
+	BORDER-RIGHT: #FFFFFF 0pt dotted;
+	BORDER-TOP: #FFFFFF 0pt dotted;	
+}
+div#headerDiv_tb {
+	    
+		BORDER-BOTTOM:#808080 0pt solid; 
+		BORDER-LEFT: #808080 1pt solid; 
+		BORDER-RIGHT: #808080 1pt solid; 
+		BORDER-TOP: #808080 0pt solid; 
+		overflow:hidden;
+		background-color:#FFFFFF;
+}
+
+.RecordRow_self_tb{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #FFFFFF 0pt dotted; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #FFFFFF 0pt dotted;	
+}
+
+.RecordCell_r{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 0pt solid; 
+	BORDER-LEFT: #808080 0pt solid; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #808080 0pt solid;	
+}
+.RecordCell_l{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 0pt solid; 
+	BORDER-LEFT: #808080 1pt solid; 
+	BORDER-RIGHT: #808080 0pt solid; 
+	BORDER-TOP: #808080 0pt solid;	
+}
+.RecordCell_rt{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 0pt solid; 
+	BORDER-LEFT: #808080 0pt solid; 
+	BORDER-RIGHT: #808080 1pt solid; 
+	BORDER-TOP: #808080 1pt solid;	
+}
+.RecordCell_t{
+	border: inset 1px #808080;
+	BORDER-BOTTOM: #808080 0pt solid; 
+	BORDER-LEFT: #808080 0pt solid; 
+	BORDER-RIGHT: #808080 0pt solid; 
+	BORDER-TOP: #808080 1pt solid;	
+}
+
+
+.ListTable_self {
+
+    BACKGROUND-COLOR: #808080;
+    BORDER-BOTTOM: medium none; 
+    BORDER-COLLAPSE: collapse; 
+    BORDER-LEFT: medium none; 
+    BORDER-RIGHT: medium none; 
+    BORDER-TOP: medium none; 
+    
+}
+
+.TEXT_NB {
+	BACKGROUND-COLOR:transparent;
+	
+	BORDER-BOTTOM: medium none; 
+	BORDER-LEFT: medium none; 
+	BORDER-RIGHT: medium none; 
+	BORDER-TOP: medium none;
+}

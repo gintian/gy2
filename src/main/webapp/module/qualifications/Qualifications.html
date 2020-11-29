@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" 
+"http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type"content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+	</head>
+	
+	<script language="JavaScript"src="../../../module/utils/js/template.js"></script>
+	<script type='text/javascript' src='../../../ckeditor/ckeditor.js'></script>
+	<script type='text/javascript' src="../../../components/ckEditor/CKEditor.js"></script>
+	<script type='text/javascript' src='../../../components/fileupload/FileUpLoad.js'></script>
+	<style type="text/css">
+		.delImg{position:relative !important;left:50px !important; top:10px !important;}
+		.pointTopImg{ position:absolute !important; top:85px !important; }
+		.downLoadImg{ position:absolute !important; top:5px !important; }
+		.qianye{background-image:url('/images/qianye.png')!important;}
+	</style>
+	<script type="text/javascript">
+		Ext.Loader.setConfig({
+			enabled: true,
+			paths: {
+				'QualificationsURL' : '../../../module/qualifications',//主界面
+				'SYSF' : '../../../components/fileupload'
+			}
+		});
+		Ext.onReady(function(){
+			var url = window.location.search;
+			var module_type = url.substring(url.lastIndexOf("=")+1);
+			if(url.indexOf('id') > -1){//如果存在id，则视为从首页待办进来
+				// 请求只读页面
+				Ext.require('QualificationsURL.QualificationsForHome', function(){
+					 QualificationsGlobal = Ext.create("QualificationsURL.QualificationsForHome",{url : url});
+				});
+			} else {
+				// 请求正常的完整页面
+				Ext.require('QualificationsURL.Qualifications', function(){
+					 QualificationsGlobal = Ext.create("QualificationsURL.Qualifications",{module_type:module_type});
+				});
+			}
+		});
+ 	</script>
+	<body>
+
+	</body>
+	
+
+	</head> 
+ 
+	</html> 
+	
+</html>

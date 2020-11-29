@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+	<wfi-mapping funcid="SYS00000001">
+		<transaction-name>获取角色信息</transaction-name>
+		<transaction-desc>获取角色信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.worktablesetting.LoadRoleDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00001001">
+		<transaction-name>查询已配置的二维码表单</transaction-name>
+		<transaction-desc>查询已配置的二维码表单</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.setting.SearchQRCardTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00001002">
+		<transaction-name>添加或修改二维码表单配置参数</transaction-name>
+		<transaction-desc>添加或修改二维码表单配置参数</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.setting.SaveQRCardParamTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00001003">
+		<transaction-name>查询二维码表单内容描述信息</transaction-name>
+		<transaction-desc>查询二维码表单内容描述信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.setting.SaveQRCardInfoTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00001004">
+		<transaction-name>导出二维码表单内容描述信息</transaction-name>
+		<transaction-desc>导出二维码表单内容描述信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.setting.ExportQRCardInfoTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000002005">
+		<transaction-name>查询二维码欢迎页面数据</transaction-name>
+		<transaction-desc>查询二维码欢迎页面数据</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.mobliewriter.SearchQRCardInfoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000002006">
+		<transaction-name>查询二维码</transaction-name>
+		<transaction-desc>查询二维码据</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.mobliewriter.SearchApplyPostInfoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="SYS0000002007">
+		<transaction-name>保存数据到临时目录下</transaction-name>
+		<transaction-desc>保存数据到临时目录下</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.mobliewriter.SaveFileTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000002008">
+		<transaction-name>解析子集数据</transaction-name>
+		<transaction-desc>解析子集数据</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.mobliewriter.ParseSubdomain" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000002010">
+		<transaction-name>判断模版审批流程</transaction-name>
+		<transaction-desc>判断模版审批流程</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.mobliewriter.CheckQRCardTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000002011">
+		<transaction-name>由下向上级联</transaction-name>
+		<transaction-desc>由下向上级联</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.template.templatecard.transaction.SearchParentTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000002012">
+		<transaction-name>二维码报批保存表单模板信息</transaction-name>
+		<transaction-desc>二维码报批保存表单模板信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.qrcard.mobliewriter.SaveQRCardTemplateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="SYS0000001001">
+		<transaction-name>服务号企业号初始化</transaction-name>
+		<transaction-desc>服务号企业号初始化</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SearchWXSettingParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001002">
+		<transaction-name>服务号配置</transaction-name>
+		<transaction-desc>服务号配置</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SearchWXServerParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001003">
+		<transaction-name>服务号保存更新</transaction-name>
+		<transaction-desc>服务号保存更新</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXServerParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001004">
+		<transaction-name>服务号删除</transaction-name>
+		<transaction-desc>服务号删除</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.DeleteWXServerParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001005">
+		<transaction-name>查询服务号菜单信息</transaction-name>
+		<transaction-desc>查询服务号菜单信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SearchWXServerMenuSettingTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001006">
+		<transaction-name>保存菜单信息</transaction-name>
+		<transaction-desc>保存菜单信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXServerMenuSettingTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001007">
+		<transaction-name>发布服务号</transaction-name>
+		<transaction-desc>发布服务号</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXServerMenuSettingTrans" />
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SettingWXServerMenuTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001008">
+		<transaction-name>加载已存在的企业号应用配置</transaction-name>
+		<transaction-desc>加载已存在的企业号应用配置</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SearchWXEnterpriseAppParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001009">
+		<transaction-name>保存企业号应用配置</transaction-name>
+		<transaction-desc>保存企业号应用配置</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXEnterpriseAppParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001010">
+		<transaction-name>删除企业号应用</transaction-name>
+		<transaction-desc>删除企业号应用</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.DeleteWXEnterpriseAppParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001011">
+		<transaction-name>保存企业号参数配置</transaction-name>
+		<transaction-desc>保存企业号参数配置</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXEnterpriseParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001012">
+		<transaction-name>同步企业微信号应用配置</transaction-name>
+		<transaction-desc>同步企业微信号应用配置</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXEnterpriseAppParamTrans" />
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SettingWXEnterpriseParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001013">
+		<transaction-name>保存企业微信号应用自定义菜单</transaction-name>
+		<transaction-desc>保存企业微信号应用自定义菜单</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXEnterpriseAppCustomMenuTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000001014">
+		<transaction-name>发布企业微信号应用自定义菜单</transaction-name>
+		<transaction-desc>发布企业微信号应用自定义菜单</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SaveWXEnterpriseAppCustomMenuTrans" />
+			<wfi-class
+					mainClass="com.hjsj.hrms.transaction.sys.sms.weixin.SettingWXEnterpriseParamTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00000002">
+		<transaction-name>应用注册业务类</transaction-name>
+		<transaction-desc>应用注册业务类</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.regothersys.SysRegTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="SYS20200520">
+		<transaction-name>编号规则</transaction-name>
+		<transaction-desc>编号规则</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.numberrule.NumberRuleTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="SYS20200521">
+		<transaction-name>指纹人脸录入</transaction-name>
+		<transaction-desc>指纹人脸录入</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.fingerprint.transaction.FingerPrintInfoTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="SYS00000003">
+		<transaction-name>条件选择初始化</transaction-name>
+		<transaction-desc>条件选择初始化</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.regothersys.DefineConTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- 服务大厅设置 -->
+	<wfi-mapping funcid="SYS00003001">
+		<transaction-name>服务大厅设置交易类</transaction-name>
+		<transaction-desc>服务大厅设置交易类</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.servicehallsetting.ServiceHallSettingTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- 分布式上报开始 -->
+	<wfi-mapping funcid="SYS0000003001">
+		<transaction-name>显示接收方案</transaction-name>
+		<transaction-desc>显示接收方案</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.ShowProgrammeTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003002">
+		<transaction-name>一次性加载机构树</transaction-name>
+		<transaction-desc>一次性加载机构树</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetAllUnitDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003003">
+		<transaction-name>定义上报单位</transaction-name>
+		<transaction-desc>定义上报单位</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.SaveReportingUnitTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003004">
+		<transaction-name>创建导入方案</transaction-name>
+		<transaction-desc>创建导入方案</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.CreateInputPlanTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003005">
+		<transaction-name>创建导入方案</transaction-name>
+		<transaction-desc>创建导入方案</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetNeedLimitFieldSet"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003006">
+		<transaction-name>第三步设置必填指标，根据字标集显示已选指标的指标</transaction-name>
+		<transaction-desc>第三步设置必填指标，根据字标集显示已选指标的指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.ShowRequiredFielditemTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003007">
+		<transaction-name>第四步设置保护条件，根据字标显示子标名称</transaction-name>
+		<transaction-desc>第四步设置保护条件，根据字标显示子标名称</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.ShowFielditemdescTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003008">
+		<transaction-name>保存数据规范</transaction-name>
+		<transaction-desc>保存数据规范</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.SaveProgrammeTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003010">
+		<transaction-name>回显数据</transaction-name>
+		<transaction-desc>回显数据</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.ShowDataStandardTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003011">
+		<transaction-name>保护指标条件生成右侧已选的指标</transaction-name>
+		<transaction-desc>保护指标条件生成右侧已选的指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.ShowProtectPeopleFieldTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003012">
+		<transaction-name>前台展示日志记录表</transaction-name>
+		<transaction-desc>前台展示日志记录表</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.datalog.transaction.ShowLogRecordTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003013">
+		<transaction-name>删除日志</transaction-name>
+		<transaction-desc>删除日志</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.datalog.transaction.DeleteLogRecordTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003014">
+		<transaction-name>导出日志的excel</transaction-name>
+		<transaction-desc>导出日志的excel</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.datalog.transaction.ExportLogRecordExcelTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003015">
+		<transaction-name>展示校验规则表</transaction-name>
+		<transaction-desc>展示校验规则表</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.ShowValidateRulesTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003016">
+		<transaction-name>新增修改删除校验规则</transaction-name>
+		<transaction-desc>新增修改删除校验规则</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.OperateValidateRulesTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003018">
+		<transaction-name>回显校验规则</transaction-name>
+		<transaction-desc>回显校验规则</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.ShowValidateRulesDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003022">
+		<transaction-name>保存过滤条件</transaction-name>
+		<transaction-desc>保存过滤条件</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.SaveFilterConditionTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003023">
+		<transaction-name>获取对应关系子集列表</transaction-name>
+		<transaction-desc>获取对应关系子集列表</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetFieldItemStoreTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003024">
+		<transaction-name>获取中间库表代码项</transaction-name>
+		<transaction-desc>获取中间库表代码项</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetExtendFieldItemTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003025">
+		<transaction-name>获取重工hr库表代码项</transaction-name>
+		<transaction-desc>获取重工hr库表代码项</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetFieldItemTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003026">
+		<transaction-name>保存代码对应方案</transaction-name>
+		<transaction-desc>保存代码对应方案</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.SaveFieldMatchTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003027">
+		<transaction-name>一键创建中间库表</transaction-name>
+		<transaction-desc>一键创建中间库表</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.CreateMidDbTableTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003028">
+		<transaction-name>查询已选的上报单位</transaction-name>
+		<transaction-desc>查询已选的上报单位</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetSelectedUnitTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003029">
+		<transaction-name>设置人员库类别-主集的代码型指标store</transaction-name>
+		<transaction-desc>设置人员库类别-主集的代码型指标store</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetCodeFieldsDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003030">
+		<transaction-name>设置人员库类别-grid_panelstore</transaction-name>
+		<transaction-desc>设置人员库类别-grid_panelstore</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetPersonnelLibraryMappingDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003031">
+		<transaction-name>设置人员库类别-获得所有人员库</transaction-name>
+		<transaction-desc>设置人员库类别-获得所有人员库</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetDbnameListTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003034">
+		<transaction-name>获得指标json数据</transaction-name>
+		<transaction-desc>获得指标json数据</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.GetFieldsTreeDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003035">
+		<transaction-name>检查此单位是否配置数据标准</transaction-name>
+		<transaction-desc>检查此单位是否配置数据标准</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.CheckHaveSchemeTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003036">
+		<transaction-name>上报数据主界面</transaction-name>
+		<transaction-desc>上报数据主界面</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.reportdata.ReportDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003037">
+		<transaction-name>上报数据主界面操作</transaction-name>
+		<transaction-desc>上报数据主界面操作</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.reportdata.OperaReportDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003038">
+		<transaction-name>保存上报负责人/导出方案</transaction-name>
+		<transaction-desc>保存上报负责人/导出方案</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.setscheme.transaction.SavaLeaderOrExportSchemeTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003101">
+		<transaction-name>生成上报数据页面数据操作</transaction-name>
+		<transaction-desc>生成上报数据页面数据操作</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.generatedata.GenerateDataOperateTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003102">
+		<transaction-name>生成上报数据页面创建方案相关操作</transaction-name>
+		<transaction-desc>生成上报数据页面创建方案相关操作</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.generatedata.CreateReportSchemeTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS0000003201">
+		<transaction-name>生成上报数据包</transaction-name>
+		<transaction-desc>生成上报数据包</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.distributedreporting.generatedata.GenerateDataPackageTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- 分布式上报结束 -->
+	<wfi-mapping funcid="SYS00004001">
+		<transaction-name>二开参数设置</transaction-name>
+		<transaction-desc>二开参数设置</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.sdparameter.transaction.SDParameterTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- 云同步开始 -->
+	<wfi-mapping funcid="SYS00005001">
+		<transaction-name>获取云平台数据</transaction-name>
+		<transaction-desc>获取云平台数据</transaction-desc>
+		<log-attribute>1</log-attribute>
+
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.hrcloud.SyncConfigTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00005002">
+		<transaction-name>获取云平台代码</transaction-name>
+		<transaction-desc>获取云平台代码</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.hrcloud.CodeMatchTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00005003">
+		<transaction-name>云平台手工执行同步</transaction-name>
+		<transaction-desc>云平台手工执行同步</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.hrcloud.HRCloudSyncTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00005004">
+		<transaction-name>云平台同步详情</transaction-name>
+		<transaction-desc>云平台同步详情</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.hrcloud.SyncInfoTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- 云同步结束  -->
+	<!-- BI工具箱开始  -->
+	<wfi-mapping funcid="SYS00006001">
+		<transaction-name>BI工具箱</transaction-name>
+		<transaction-desc>BI工具箱</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.bi_toolbox.transaction.LoadBIDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<!-- BI工具箱结束  -->
+	<!--文件服务配置远程存储介质开始-->
+	<wfi-mapping funcid="SYS00007001">
+		<transaction-name>查询文件存储位置</transaction-name>
+		<transaction-desc>查询文件存储位置</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.filepathsetting.transaction.SearchFilePathSetting"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00007002">
+		<transaction-name>保存文件存储位置</transaction-name>
+		<transaction-desc>保存文件存储位置</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.filepathsetting.transaction.SaveFilePathSetting"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="SYS00007003">
+		<transaction-name>文件迁移与一键还原</transaction-name>
+		<transaction-desc>文件迁移与一键还原</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.filepathsetting.transaction.FileMoveTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+	<!--文件服务配置远程存储介质结束-->
+
+	<wfi-mapping funcid="SYS00008001">
+		<transaction-name>测试文件存储位置</transaction-name>
+		<transaction-desc>测试文件存储位置</transaction-desc>
+		<log-attribute>1</log-attribute>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.system.dashboard.transaction.SearchDashBoardDataTrans"/>
+		</wf-sequence>
+	</wfi-mapping>
+</wf-mappings>

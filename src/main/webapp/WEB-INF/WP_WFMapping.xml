@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-mappings>
+
+    <wfi-mapping funcid="WP00001001">
+    	<transaction-name>协办任务审批</transaction-name>
+    	<transaction-desc>协办任务审批</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.workplan.cooperationtask.transaction.CooperationTaskApproveTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP00001002">
+    	<transaction-name>协办审批页面模糊查询协办任务</transaction-name>
+    	<transaction-desc>协办审批页面模糊查询协办任务</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.workplan.cooperationtask.transaction.SearchCooperationTaskTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP00001003">
+    	<transaction-name>我的协办任务</transaction-name>
+    	<transaction-desc>我的协办任务</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.workplan.cooperationtask.transaction.MyCooperationTaskTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP00001004">
+    	<transaction-name>审批（批准或退回）协办任务</transaction-name>
+    	<transaction-desc>审批（批准或退回）协办任务</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.workplan.cooperationtask.transaction.ApprovalCoopTaskTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    
+     <wfi-mapping funcid="WP00001005">
+    	<transaction-name>提醒审批人审批协办任务</transaction-name>
+    	<transaction-desc>提醒审批人审批协办任务</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.workplan.cooperationtask.transaction.SendCoopRemindMsgTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP00001006">
+    	<transaction-name>变更任务协作人</transaction-name>
+    	<transaction-desc>变更任务协作人</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.workplan.cooperationtask.transaction.ChangeCooperTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    
+    
+    <wfi-mapping funcid="WP00001007">
+    	<transaction-name>我的协办页面模糊查询协办任务</transaction-name>
+    	<transaction-desc>我的协办页面模糊查询协办任务</transaction-desc>
+    	<wf-sequence>
+    		<wfi-class mainClass="com.hjsj.hrms.module.workplan.cooperationtask.transaction.SearchMycoopTaskTrans"/>
+    	</wf-sequence>
+    </wfi-mapping>
+    
+     <wfi-mapping funcid="WP20000001">
+        <transaction-name>参数配置交易</transaction-name>
+        <transaction-desc>参数配置交易</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.config.transaction.WorkPlanConfigTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="WP20000002">
+        <transaction-name>区间设置信息获取与更新</transaction-name>
+        <transaction-desc>区间设置信息获取与更新</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.config.transaction.WorkPlanFunctionTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP20000003">
+        <transaction-name>人员设置信息获取与更新</transaction-name>
+        <transaction-desc>人员设置信息获取与更新</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.config.transaction.WorkPlanFillpersonTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+        <wfi-mapping funcid="WP00002001">
+         <transaction-name>初始化年计划</transaction-name>
+         <transaction-desc>初始化年计划</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.yearplan.transaction.YearPlanTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="WP00002002">
+         <transaction-name>保存年计划</transaction-name>
+         <transaction-desc>保存年计划</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.yearplan.transaction.CreateYearPlanTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP00002003">
+         <transaction-name>查询年计划</transaction-name>
+         <transaction-desc>查询年计划</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.yearplan.transaction.SearchYearPlanTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP00002004">
+         <transaction-name>编辑年计划</transaction-name>
+         <transaction-desc>编辑年计划</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.yearplan.transaction.SearchYearPlanTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <!--年计划  任务跟踪      start-->
+    <wfi-mapping funcid="WP00002005">
+         <transaction-name>年计划任务跟踪</transaction-name>
+         <transaction-desc>年计划任务跟踪</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.yearplan.transaction.YearPlanTraceTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+     <wfi-mapping funcid="WP00002006">
+         <transaction-name>年计划跟踪审批流程</transaction-name>
+         <transaction-desc>年计划审批流程</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.yearplan.transaction.YearPlanApprovalTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP00002007">
+         <transaction-name>年计划导出Excel</transaction-name>
+         <transaction-desc>年计划导出Excel</transaction-desc>
+         <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.yearplan.transaction.ExportExcelTrans"/>
+         </wf-sequence>
+    </wfi-mapping>
+    <!-- 年计划  任务跟踪     end   -->
+    <wfi-mapping funcid="WP30000001">
+        <transaction-name>我的日志</transaction-name>
+        <transaction-desc>我的日志</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.worklog.transaction.WorkLogTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP40000001">
+        <transaction-name>员工日志</transaction-name>
+        <transaction-desc>员工日志</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.worklog.transaction.EmployeLogTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP40000002">
+        <transaction-name>员工日志快速查询</transaction-name>
+        <transaction-desc>员工日志快速查询</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.worklog.transaction.SearchEmployeLogTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP40000003">
+        <transaction-name>显示多层级部门</transaction-name>
+        <transaction-desc>显示多层级部门</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.worklog.transaction.ShowUplevelCodeTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP40000004">
+        <transaction-name>员工监控导出</transaction-name>
+        <transaction-desc>员工监控导出</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.worklog.transaction.ExportWorkLogTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP20000004">
+        <transaction-name>周总结</transaction-name>
+        <transaction-desc>周总结</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.weeklysummary.transaction.WeeklySummaryTrans"/>
+    </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP20000005">
+        <transaction-name>总结导出</transaction-name>
+        <transaction-desc>总结导出</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.weeklysummary.transaction.ExportSummaryTrans"/>
+    </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP10000005">
+        <transaction-name>计划下载模板</transaction-name>
+        <transaction-desc>计划下载模板</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.plantask.transaction.DownloadWorkPlanTaskTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    
+    <wfi-mapping funcid="WP10000006">
+        <transaction-name>计划导入模板</transaction-name>
+        <transaction-desc>计划导入模板</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.plantask.transaction.ImportWorkPlanTaskTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+    <wfi-mapping funcid="WP50000001">
+        <transaction-name>工作计划监控页面</transaction-name>
+        <transaction-desc>工作计划监控页面</transaction-desc> 
+        <transaction-type>0</transaction-type>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.workplan.workplanhr.transaction.WorkPlanHrMainTrans"/>
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

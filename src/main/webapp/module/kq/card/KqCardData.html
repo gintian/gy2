@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>打卡数据</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    
+    <script language="JavaScript" src="../../../../module/utils/js/template.js"></script>
+    <script language="JavaScript" src="../../../../js/common.js"></script>
+    <script language="JavaScript" src="../../../../js/function.js"></script>
+    <script language='JavaScript' src='../../../../components/tableFactory/tableFactory.js'></script>
+    <script language='JavaScript' src='../../../../module/kq/kq_resource_zh_CN.js'></script>
+    <body>
+    </body>
+    <script type="text/javascript">
+    Ext.Loader.setConfig( {
+        enabled : true,
+        paths : {
+            'KqCardDataURL' : rootPath + '/module/kq/card',
+            'SYSF': rootPath + '/components/fileupload'
+        }
+    });
+
+    Ext.onReady(function() {
+        var map = new HashMap();
+        Ext.require('KqCardDataURL.KqCardData', function() {
+            projectInforGlobal = Ext.create("KqCardDataURL.KqCardData", map);
+        });
+    });
+    //去除浏览器右键菜单
+    document.oncontextmenu = function(){return false;};
+    </script>
+    </html>

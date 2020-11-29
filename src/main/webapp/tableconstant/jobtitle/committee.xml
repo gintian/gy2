@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableconstant>
+    <tools>         
+	    <menubar privid="380020201" type="button" id="" text="输出"  icon="">
+            <menuitem  functype="export" id="" privid="" text="导出Excel" icon="/images/export.gif" />
+        </menubar>
+    </tools>
+<table selectable="true" editable="true" sortable="true" lockable="true" />
+</tableconstant>

@@ -1,0 +1,516 @@
+package com.hjsj.hrms.transaction.kq.register;
+
+import com.hjsj.hrms.businessobject.kq.KqParameter;
+import com.hjsj.hrms.businessobject.kq.register.CollectRegister;
+import com.hjsj.hrms.businessobject.kq.register.RegisterInitInfoData;
+import com.hjsj.hrms.businessobject.sys.report.Sys_Oth_Parameter;
+import com.hjsj.hrms.utils.PubFunc;
+import com.hjsj.hrms.utils.ResourceFactory;
+import com.hrms.frame.codec.SafeCode;
+import com.hrms.frame.dao.ContentDAO;
+import com.hrms.frame.utility.AdminCode;
+import com.hrms.frame.utility.CodeItem;
+import com.hrms.hjsj.sys.Constant;
+import com.hrms.hjsj.sys.DataDictionary;
+import com.hrms.hjsj.sys.FieldItem;
+import com.hrms.struts.constant.SystemConfig;
+import com.hrms.struts.exception.GeneralException;
+import com.hrms.struts.exception.GeneralExceptionHandler;
+import com.hrms.struts.facade.transaction.IBusiness;
+import org.apache.commons.lang.StringUtils;
+import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.hssf.util.HSSFColor;
+import org.apache.poi.ss.usermodel.BorderStyle;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+import org.apache.poi.ss.usermodel.VerticalAlignment;
+import org.apache.poi.ss.util.CellRangeAddressList;
+
+import javax.sql.RowSet;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.sql.Date;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+//import org.apache.poi.hssf.util.HSSFDataValidation;
+
+/**
+ * <p>
+ * Title:ExportExcelTrans.java
+ * </p>
+ * <p>
+ * Description:导出模板
+ * </p>
+ * <p>
+ * Company:hjsj
+ * </p>
+ * <p>
+ * create time:2009-12-08 13:00:00
+ * </p>
+ * 
+ * @author xujian
+ * @version 1.0
+ * 
+ */
+public class ExportTemplateTrans extends IBusiness {
+
+	public void execute() throws GeneralException {
+		//xiexd 2014.09.12 从服务器中取出导出的sql
+		String sqlstr = (String) this.userView.getHm().get("kq_sql_1");
+		//this.userView.getHm().remove("kq_sql_1");
+		String colums = (String) this.getFormHM().get("colums");
+		String tablename = (String) this.getFormHM().get("tablename");
+		tablename=tablename!=null?tablename:"Q03";
+		ArrayList list = new ArrayList();
+		sqlstr = SafeCode.decode(sqlstr);
+		sqlstr = PubFunc.keyWord_reback(sqlstr);
+		/** 项目过滤 */
+		ArrayList fieldlist = DataDictionary.getFieldList("Q03",
+				Constant.USED_FIELD_SET);
+		if("Q05".equalsIgnoreCase(tablename)){
+			fieldlist=CollectRegister.newFieldItemList(fieldlist, this.frameconn);
+		} else if("Q03".equalsIgnoreCase(tablename)){
+			fieldlist = RegisterInitInfoData.newFieldItemList(fieldlist,this.userView,this.frameconn);
+		}
+
+		KqParameter para = new KqParameter(this.userView, "", this.getFrameconn());
+        HashMap hashmap = para.getKqParamterMap();
+        String g_no = (String) hashmap.get("g_no");
+        if(g_no == null)
+        	g_no = "";
+        FieldItem newFieldItem = new FieldItem();
+    	newFieldItem.setFieldsetid("Q03");
+    	newFieldItem.setItemid(g_no);
+    	newFieldItem.setItemtype("A");
+    	newFieldItem.setCodesetid("0");
+    	newFieldItem.setItemdesc("工号");
+    
+		for (int i = 0; i < fieldlist.size(); i++) {
+			FieldItem field = (FieldItem) fieldlist.get(i);
+			
+			if (colums.indexOf(field.getItemid()) == -1) {
+				continue;
+			}
+			if(!field.isVisible()){
+				continue;
+			}
+//			if(field.getItemid().equalsIgnoreCase("q03z3")||field.getItemid().equalsIgnoreCase("c010k")||field.getItemid().equalsIgnoreCase("q03z5")){
+//				continue;
+//			}
+			//c010k 可以导出，c010k是A01主集中的信息
+			if("q03z3".equalsIgnoreCase(field.getItemid())|| "q03z5".equalsIgnoreCase(field.getItemid())|| "modtime".equalsIgnoreCase(field.getItemid())|| "modusername".equalsIgnoreCase(field.getItemid())){
+				continue;
+			}
+			list.add(field);
+			if("a0101".equals(field.getItemid()))//在姓名之后增加工号列
+				list.add(newFieldItem);
+		}
+
+		HSSFWorkbook wb = new HSSFWorkbook(); // 创建新的Excel 工作簿
+		HSSFSheet sheet = wb.createSheet();
+		// sheet.setProtect(true);
+		HSSFFont font2 = wb.createFont();
+		font2.setFontHeightInPoints((short) 10);
+		HSSFCellStyle style2 = wb.createCellStyle();
+		style2.setFont(font2);
+		style2.setAlignment(HorizontalAlignment.CENTER);
+		style2.setVerticalAlignment(VerticalAlignment.CENTER);
+		style2.setWrapText(true);
+		style2.setBorderBottom(BorderStyle.THIN);
+		style2.setBorderLeft(BorderStyle.THIN);
+		style2.setBorderRight(BorderStyle.THIN);
+		style2.setBorderTop(BorderStyle.THIN);
+		style2.setBottomBorderColor((short) 8);
+		style2.setLeftBorderColor((short) 8);
+		style2.setRightBorderColor((short) 8);
+		style2.setTopBorderColor((short) 8);
+		style2.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+		style2.setFillForegroundColor(HSSFColor.LIGHT_GREEN.index);
+
+		HSSFCellStyle style1 = wb.createCellStyle();
+		style1.setFont(font2);
+		style1.setAlignment(HorizontalAlignment.CENTER);
+		style1.setVerticalAlignment(VerticalAlignment.CENTER);
+		style1.setWrapText(true);
+		style1.setBorderBottom(BorderStyle.THIN);
+		style1.setBorderLeft(BorderStyle.THIN);
+		style1.setBorderRight(BorderStyle.THIN);
+		style1.setBorderTop(BorderStyle.THIN);
+		style1.setBottomBorderColor((short) 8);
+		style1.setLeftBorderColor((short) 8);
+		style1.setRightBorderColor((short) 8);
+		style1.setTopBorderColor((short) 8);
+		style1.setDataFormat(HSSFDataFormat.getBuiltinFormat("text"));// 文本格式
+
+		HSSFCellStyle styleN = dataStyle(wb);
+		styleN.setAlignment(HorizontalAlignment.RIGHT);
+		styleN.setWrapText(true);
+		HSSFDataFormat df = wb.createDataFormat();
+		styleN.setDataFormat(df.getFormat(decimalwidth(0)));
+
+		HSSFCellStyle styleF1 = dataStyle(wb);
+		styleF1.setAlignment(HorizontalAlignment.RIGHT);
+		styleF1.setWrapText(true);
+		HSSFDataFormat df1 = wb.createDataFormat();
+		styleF1.setDataFormat(df1.getFormat(decimalwidth(1)));
+
+		HSSFCellStyle styleF2 = dataStyle(wb);
+		styleF2.setAlignment(HorizontalAlignment.RIGHT);
+		styleF2.setWrapText(true);
+		HSSFDataFormat df2 = wb.createDataFormat();
+		styleF2.setDataFormat(df2.getFormat(decimalwidth(2)));
+
+		HSSFCellStyle styleF3 = dataStyle(wb);
+		styleF3.setAlignment(HorizontalAlignment.RIGHT);
+		styleF3.setWrapText(true);
+		HSSFDataFormat df3 = wb.createDataFormat();
+		styleF3.setDataFormat(df3.getFormat(decimalwidth(3)));
+
+		HSSFCellStyle styleF4 = dataStyle(wb);
+		styleF4.setAlignment(HorizontalAlignment.RIGHT);
+		styleF4.setWrapText(true);
+		HSSFDataFormat df4 = wb.createDataFormat();
+		styleF4.setDataFormat(df4.getFormat(decimalwidth(4)));
+
+		HSSFCellStyle styleF5 = dataStyle(wb);
+		styleF5.setAlignment(HorizontalAlignment.RIGHT);
+		styleF5.setWrapText(true);
+		HSSFDataFormat df5 = wb.createDataFormat();
+		styleF5.setDataFormat(df5.getFormat(decimalwidth(5)));
+
+		sheet.setColumnWidth(0,0);
+		HSSFPatriarch patr = sheet.createDrawingPatriarch();
+
+		HSSFRow row = sheet.createRow(0);
+		HSSFCell cell = row.createCell(0);
+//		cell.setEncoding(HSSFCell.ENCODING_UTF_16);
+		cell.setCellValue(cellStr("主键标识串"));
+		cell.setCellStyle(style2);
+
+		String fieldExplain = "";
+		HSSFComment comm = null;
+		ArrayList codeCols = new ArrayList();
+		for (int i = 0; i < list.size(); i++) {
+			FieldItem field = (FieldItem) list.get(i);
+			String fieldName = field.getItemid().toLowerCase();
+			String fieldLabel = field.getItemdesc();
+
+			fieldExplain = DataDictionary.getFieldItem(fieldName).getExplain();
+			if (SystemConfig.getPropertyValue("excel_template_desc") != null
+					&& "true"
+							.equalsIgnoreCase(SystemConfig.getPropertyValue("excel_template_desc")) && fieldExplain != null
+					&& fieldExplain.trim().length() > 0) {
+				fieldLabel += "\r\n如：" + fieldExplain;
+				sheet.setColumnWidth(i + 1, 5000);
+			}
+
+			cell = row.createCell(i + 1);
+//			cell.setEncoding(HSSFCell.ENCODING_UTF_16);
+			cell.setCellValue(cellStr(fieldLabel));
+			cell.setCellStyle(style2);
+			comm = patr.createComment(new HSSFClientAnchor(0, 0, 0, 1,
+					(short) (i + 2), 0, (short) (i + 3), 1));
+			comm.setString(new HSSFRichTextString(fieldName));
+			cell.setCellComment(comm);
+			if (!"0".equals(field.getCodesetid()))
+				codeCols.add(field.getCodesetid() + ":"
+						+ new Integer(i + 1).toString());
+		}
+		HashMap dbMap = new HashMap();
+		try {
+		    //显示部门层数
+	        Sys_Oth_Parameter sysoth=new Sys_Oth_Parameter(this.getFrameconn());       
+	        String uplevel = sysoth.getValue(Sys_Oth_Parameter.DISPLAY_E0122);         
+	        if(uplevel==null||uplevel.length()==0)                                     
+	            uplevel="0";
+	        int iUpLevel = Integer.parseInt(uplevel);
+	        
+			int rowCount = 1;
+			ContentDAO dao = new ContentDAO(this.frameconn);
+			
+			String dbSql = "select pre , dbname  from dbname";
+			this.frowset=dao.search(dbSql);
+			while(this.frowset.next())
+			{
+				dbMap.put(this.frowset.getString("pre").toLowerCase(), this.frowset.getString("dbname"));
+			}
+			
+			RowSet rset = dao.search(sqlstr);
+			while (rset.next()) {
+				String nASE = rset.getString("NBASE");
+				String a0100 = rset.getString("A0100");
+				String q03z0 = rset.getString("q03z0");
+				String b0110 = rset.getString("b0110");
+				String e0122 = rset.getString("e0122");
+
+				String flag = nASE + "|" + a0100 + "|" + q03z0;
+				b0110 = b0110 != null ? getOrgName("UN", b0110, iUpLevel) : "";
+				e0122 = e0122 != null ? getOrgName("UM", e0122, iUpLevel) : "";
+
+				row = sheet.getRow(rowCount);
+				if(row==null)
+				    row = sheet.createRow(rowCount);
+				rowCount++;				
+
+				cell = row.createCell(0);
+//				cell.setEncoding(HSSFCell.ENCODING_UTF_16);
+				cell.setCellValue(cellStr(flag));
+				cell.setCellStyle(style1);
+
+				for (int i = 0; i < list.size(); i++) {
+					FieldItem field = (FieldItem) list.get(i);
+					String fieldName = field.getItemid().toLowerCase();
+					String itemtype = DataDictionary.getFieldItem(fieldName)
+							.getItemtype();
+					int decwidth = DataDictionary.getFieldItem(fieldName)
+							.getDecimalwidth();
+					String codesetid = DataDictionary.getFieldItem(fieldName)
+							.getCodesetid();
+
+
+					cell = row.createCell(1 + i);
+					if ("N".equals(itemtype)) {
+						if (decwidth == 0)
+							cell.setCellStyle(styleN);
+						else if (decwidth == 1)
+							cell.setCellStyle(styleF1);
+						else if (decwidth == 2)
+							cell.setCellStyle(styleF2);
+						else if (decwidth == 3)
+							cell.setCellStyle(styleF3);
+						else if (decwidth == 4)
+							cell.setCellStyle(styleF4);
+						// else if(decwidth==5)
+						// cell.setCellStyle(styleF5);
+						cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+						double d = rset.getDouble(fieldName);
+						if(d!=0){
+							cell.setCellValue(d);
+						}else{
+							cell.setCellValue("");
+						}
+					} else if ("D".equals(itemtype)) {
+						// linbz 20160802 日期接收方式 改为getDate()
+						Date date = rset.getDate(fieldName);
+						SimpleDateFormat sdf=new SimpleDateFormat("yyyy.MM.dd");
+						String value = "";
+						if(date == null || "".equals(date)){
+							cell.setCellValue("");
+						}else {
+							value = sdf.format(date);
+							int itemlen = field.getItemlength();
+							value = value.replaceAll("/", ".");
+							value = value.replace("-", ".");
+							if (itemlen == 4) {
+								cell.setCellValue(value.substring(0, 4));
+							}else if (itemlen == 7) {
+								cell.setCellValue(value.substring(0, 7));
+							}else if (itemlen == 10) {
+								cell.setCellValue(value.substring(0, 10));
+							}else {
+								cell.setCellValue(value.substring(0, 19));
+							}
+						}
+						cell.setCellStyle(style1);
+					} else {
+						String value = rset.getString(fieldName);
+						if (value != null) {
+						    if ("b0110".equalsIgnoreCase(fieldName)) {
+						        cell.setCellValue(new HSSFRichTextString(b0110)); 
+						    } else if ("e0122".equalsIgnoreCase(fieldName)) {
+						        cell.setCellValue(new HSSFRichTextString(e0122));
+						    } else {
+    							String codevalue = value;
+    							if (codevalue.trim().length() > 0
+    									&& codesetid != null
+    									&& codesetid.trim().length() > 0
+    									&& !"0".equals(codesetid) && !"nbase".equalsIgnoreCase(fieldName))
+    								value = AdminCode.getCode(codesetid, codevalue) != null ? AdminCode
+    										.getCode(codesetid, codevalue)
+    										.getCodename()
+    										: "";
+    						    else if("nbase".equalsIgnoreCase(fieldName))
+    							    value = dbMap.get(codevalue.toLowerCase())!=null?(String)dbMap.get(codevalue.toLowerCase()):"";
+    							cell.setCellValue(new HSSFRichTextString(value));
+						    }
+						}
+						cell.setCellStyle(style1);
+					}
+
+				}
+			}
+			rowCount--;
+			int index = 0;
+			String[] lettersUpper = { "A", "B", "C", "D", "E", "F", "G", "H",
+					"I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+					"U", "V", "W", "X", "Y", "Z" };
+			for (int n = 0; n < codeCols.size(); n++) {
+				String codeCol = (String) codeCols.get(n);
+				String[] temp = codeCol.split(":");
+				String codesetid = temp[0];
+				int codeCol1 = Integer.valueOf(temp[1]).intValue();
+				StringBuffer codeBuf = new StringBuffer();
+				if (!"UM".equals(codesetid) && !"UN".equals(codesetid)
+						&& !"@k".equalsIgnoreCase(codesetid) && !"@@".equals(codesetid)) {
+					codeBuf
+							.append("select codesetid,codeitemid,codeitemdesc from codeitem where codesetid='"
+									+ codesetid + "' and codeitemid=childid");
+				} else {
+					if (!"UN".equals(codesetid) && !"@@".equals(codesetid))
+						codeBuf
+								.append("select codesetid,codeitemid,codeitemdesc from organization where codesetid='"
+										+ codesetid
+										+ "' and  codeitemid not in (select parentid from organization where codesetid='"
+										+ codesetid + "')");
+					else if ("UN".equals(codesetid)) {
+						codeBuf.append("select count(*) from organization where codesetid='UN' AND codeitemid not in (select parentid from organization where codesetid='"
+												+ codesetid + "')");
+						rset = dao.search(codeBuf.toString());
+						if (rset.next())
+							if (rset.getInt(1) <= 1) {
+								codeBuf.setLength(0);
+								codeBuf
+										.append("select codesetid,codeitemid,codeitemdesc from organization where codesetid='UN'");
+							} else if (rset.getInt(1) > 1) {
+								codeBuf.setLength(0);
+								codeBuf
+										.append("select codesetid,codeitemid,codeitemdesc from organization where codesetid='"
+												+ codesetid
+												+ "' and  codeitemid not in (select parentid from organization where codesetid='"
+												+ codesetid + "')");
+							}
+					}	else if ("@@".equals(codesetid)) {
+						codeBuf.setLength(0);
+						codeBuf.append("select pre codeitemid, dbname codeitemdesc from dbname");
+					}
+				}
+				rset = dao.search(codeBuf.toString());
+
+				int m = 0;
+				while (rset.next()) {
+					row = sheet.getRow(m + 0);
+					if(row==null)
+					    row = sheet.createRow(m + 0);
+					
+					cell = row.createCell(208 + index);
+					cell.setCellValue(new HSSFRichTextString(rset
+							.getString("codeitemdesc")));
+					m++;
+				}
+				if(m > 1){
+					sheet.setColumnWidth(208 + index,0);
+					String strFormula = "$H" + lettersUpper[index] + "$1:$H"
+							+ lettersUpper[index] + "$" + Integer.toString(m); // 表示BA列1-m行作为下拉列表来源数据
+//				HSSFDataValidation data_validation = new HSSFDataValidation(
+//						(short) 1, (short) codeCol1, (short) rowCount,
+//						(short) codeCol1); // 定义生成下拉筐的范围
+//				data_validation
+//						.setDataValidationType(HSSFDataValidation.DATA_TYPE_LIST);
+//				data_validation.setFirstFormula(strFormula);
+//				data_validation.setSecondFormula(null);
+//				data_validation.setExplicitListFormula(true);
+//				data_validation.setSurppressDropDownArrow(false);
+//				data_validation.setEmptyCellAllowed(false);
+//				data_validation.setShowPromptBox(false);
+//				sheet.addValidationData(data_validation);
+				
+					if (rowCount>0) {
+					    CellRangeAddressList addressList = new CellRangeAddressList( 1, rowCount, codeCol1, codeCol1);
+					    DVConstraint dvConstraint = DVConstraint.createFormulaListConstraint(strFormula);
+					    HSSFDataValidation dataValidation = new HSSFDataValidation(addressList, dvConstraint);
+					    dataValidation.setSuppressDropDownArrow(false);		
+					    sheet.addValidationData(dataValidation);	
+                    }
+				}
+				index++;
+			}
+
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+
+		// 59250   统一命名为： 登陆用户_相应信息
+		String tableName = ("Q05".equalsIgnoreCase(tablename)) ? ResourceFactory.getProperty("kq.init.staffy").trim()
+				: ResourceFactory.getProperty("kq.init.staff").trim();
+		String outName = this.userView.getUserName() + "_" + tableName + ".xls";
+		String pathFile = System.getProperty("java.io.tmpdir")
+		                + System.getProperty("file.separator")
+		                + outName;
+		
+		FileOutputStream fileOut = null;
+		try {
+			File file = new File(pathFile);
+			fileOut = new FileOutputStream(file);
+			wb.write(fileOut);
+			fileOut.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw GeneralExceptionHandler.Handle(e);
+		} finally {
+		    PubFunc.closeIoResource(fileOut);
+		    sheet = null;
+	        wb = null;
+		}
+
+		//xiexd 2014.09.12 对下载的文件名进行加密
+		outName = PubFunc.encrypt(outName);
+		getFormHM().put("outName", SafeCode.decode(outName));
+	}
+
+	private HSSFRichTextString cellStr(String context) {
+		return new HSSFRichTextString(context);
+	}
+
+	private String decimalwidth(int len) {
+		StringBuffer decimal = new StringBuffer("0");
+		if (len > 0)
+			decimal.append(".");
+		
+		for (int i = 0; i < len; i++) {
+			decimal.append("0");
+		}
+		decimal.append("_ ");
+		return decimal.toString();
+	}
+
+	private HSSFCellStyle dataStyle(HSSFWorkbook workbook) {
+		HSSFCellStyle style = workbook.createCellStyle();
+		style.setBorderBottom(BorderStyle.THIN);
+		style.setBorderLeft(BorderStyle.THIN);
+		style.setBorderRight(BorderStyle.THIN);
+		style.setBorderTop(BorderStyle.THIN);
+		style.setVerticalAlignment(VerticalAlignment.CENTER);
+		style.setBottomBorderColor((short) 8);
+		style.setLeftBorderColor((short) 8);
+		style.setRightBorderColor((short) 8);
+		style.setTopBorderColor((short) 8);
+		return style;
+	}
+	
+	/**
+	 * 取多层级代码名称
+	 * @Title: getOrgName   
+	 * @Description: XX集团\YY单位 
+	 * @param codeSetId
+	 * @param codeId
+	 * @param upLevel
+	 * @return
+	 */
+	private String getOrgName(String codeSetId, String codeId, int upLevel) {
+	    String orgName = "";
+	    
+    	CodeItem item = AdminCode.getCode(codeSetId, codeId, upLevel);
+        if(item != null)
+            orgName = item.getCodename();
+        else 
+            orgName = AdminCode.getCodeName(codeSetId, codeId);
+        
+        if(StringUtils.isBlank(orgName))
+            orgName = AdminCode.getCodeName(codeSetId, codeId);
+        
+        return orgName;
+	}
+}

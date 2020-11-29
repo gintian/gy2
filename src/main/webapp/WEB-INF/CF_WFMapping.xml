@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		********************声明*******************
+		交易类号：CF（模块缩写）+2位（版本号）+2位（子模块号）+4位（交易序号）
+		参数配置：CF01010001-CF01019999
+		证书类别：CF01020001-CF01029999
+		门      户：CF01030001-CF01039999
+		业务办理：CF01040001-CF01049999
+		档案管理：CF01050001-CF01059999
+		管理制度：CF01060001-CF01069999
+	-->
+<wf-mappings>
+    <!-- 配置 -->
+	<wfi-mapping funcid="CF01010001">
+		<transaction-name>证照管理-配置</transaction-name>
+		<transaction-desc>证照管理-配置</transaction-desc>
+		<wf-sequence>
+			<wfi-class
+				mainClass="com.hjsj.hrms.module.certificate.config.transaction.CertificateConfigTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<!-- 门户dashboard -->
+	<wfi-mapping funcid="CF01030001">
+		<transaction-name>证书管理-门户</transaction-name>
+		<transaction-desc>证书管理-门户</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.dashboard.transaction.CertificateDashboardTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01030002">
+		<transaction-name>证书管理-自助门户-查询借阅证书</transaction-name>
+		<transaction-desc>证书管理-自助门户-查询借阅证书</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.dashboard.transaction.SearchCertificateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+    <!-- 档案管理 -->
+	<wfi-mapping funcid="CF01050001">
+		<transaction-name>证书管理-档案管理</transaction-name>
+		<transaction-desc>证书管理-档案管理</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CertificateManageTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+
+	<wfi-mapping funcid="CF01050002">
+		<transaction-name>证书管理-档案管理-借阅台账</transaction-name>
+		<transaction-desc>证书管理-档案管理-借阅台账</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CertificateBorrowedListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	
+	<wfi-mapping funcid="CF01050003">
+		<transaction-name>证书管理-下载模板</transaction-name>
+		<transaction-desc>证书管理-下载模板</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.ExportCertificateTemplateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050004">
+		<transaction-name>证书管理-导入证书信息</transaction-name>
+		<transaction-desc>证书管理-导入证书信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.ImportCertificateDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050005">
+		<transaction-name>证书管理-导入证书信息</transaction-name>
+		<transaction-desc>证书管理-导入证书信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.SaveImportCertificateDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050006">
+		<transaction-name>证书管理-导入证书信息</transaction-name>
+		<transaction-desc>证书管理-导入证书信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.GetImportFielditemTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050007">
+		<transaction-name>证书管理-档案管理-借阅台账-快速查询</transaction-name>
+		<transaction-desc>证书管理-档案管理-借阅台账-快速查询</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.SearchCertificateBorrowedListTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050008">
+		<transaction-name>证书管理-导入证书信息</transaction-name>
+		<transaction-desc>证书管理-导入证书信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.ImportCertificateAttachmentTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050009">
+		<transaction-name>证书管理-证书借阅子集信息</transaction-name>
+		<transaction-desc>证书管理-证书借阅子集信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CertificateFieldSetConfigTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050010">
+		<transaction-name>证书管理-借阅的证书信息</transaction-name>
+		<transaction-desc>证书管理-借阅的证书信息</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CertificateBorrowedDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050011">
+		<transaction-name>证书管理-归还证书</transaction-name>
+		<transaction-desc>证书管理-归还证书</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CertificateReturnDataTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050012">
+		<transaction-name>证书管理-校验证书</transaction-name>
+		<transaction-desc>证书管理-校验证书</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CheckCertificateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050013">
+		<transaction-name>证书管理-证书借阅登记</transaction-name>
+		<transaction-desc>证书管理-证书借阅登记</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.BorrowCertificateTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050014">
+		<transaction-name>证书管理-证书借阅登记</transaction-name>
+		<transaction-desc>证书管理-证书借阅登记</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CheckCertificateInfoTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050015">
+		<transaction-name>证书管理-证书借阅台账-栏目设置可添加指标</transaction-name>
+		<transaction-desc>证书管理-证书借阅台账-栏目设置可添加指标</transaction-desc>
+		<wf-sequence>
+			<wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.GetCertPrivItemsTrans" />
+		</wf-sequence>
+	</wfi-mapping>
+	<wfi-mapping funcid="CF01050016">
+        <transaction-name>证书管理-导出Excel</transaction-name>
+        <transaction-desc>证书管理-导出Excel</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.CertificateDateExportTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+	<wfi-mapping funcid="CF01050017">
+        <transaction-name>证书管理-导出报错信息</transaction-name>
+        <transaction-desc>证书管理-导出报错信息</transaction-desc>
+        <wf-sequence>
+            <wfi-class mainClass="com.hjsj.hrms.module.certificate.manage.transaction.ExportExcelMsgTrans" />
+        </wf-sequence>
+    </wfi-mapping>
+</wf-mappings>

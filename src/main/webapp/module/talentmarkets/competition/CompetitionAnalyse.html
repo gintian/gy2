@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//w3c//DTD HTML 4.01 Transitional//EN"
+			"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh">
+<head>
+	<title>岗位竞聘分析</title>
+    <!--统一编码为GBK-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--兼容浏览器，防止ie的怪异模式（quirks)下Ext报错-->
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+    <!--加载ExtJs框架和一些必须的文件 -->
+    <script language="JavaScript" src="/module/utils/js/template.js"></script>
+    <script language="JavaScript" src="../../../echarts/echarts.min.js" charset="UTF-8"></script>
+    <script language="JavaScript" src="../../../echarts/shine.js" charset="UTF-8"></script>
+    <script language="JavaScript" src="/components/codeSelector/codeSelector.js"></script>
+    <script language="JavaScript" src="/components/extWidget/field/CodeTreeCombox.js"></script>
+    <link rel="stylesheet" href="../../../ext/ext6/resources/ext-theme.css" type="text/css"/>
+    </head> 
+    <script type="text/javascript">  
+        Ext.Loader.setPath("Talentmarkets","..");
+        Ext.Loader.setConfig({
+           paths:{
+               "EHR":rootPath+"/components"
+           }
+         });
+        Ext.onReady(function(){
+	       Ext.require("Talentmarkets.competition.CompetitionAnalyse",function(){
+				Ext.widget('viewport',{
+					layout:'fit',
+					items:Ext.create("Talentmarkets.competition.CompetitionAnalyse")
+				});	    	   
+	       }) 
+        });
+    </script>  
+ <body>  
+ 
+ </body>
+</html>

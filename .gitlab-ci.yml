@@ -1,0 +1,111 @@
+stages:
+  - 基础编译
+  - 单元测试
+  - 代码扫描
+  - 预编译构建
+  - dev打包
+  - test打包
+  - prod打包
+  - 发布dev
+  - 发布test
+variables:
+  appName: hrs-backend.war
+
+基础编译:
+  stage: 基础编译
+  before_script: ['mvn dependency:copy-dependencies']
+  script: mvn -B package -Dmaven.test.skip=true
+  only:
+    refs:
+      - /feature_.*/
+  artifacts:
+    paths:
+      - target/
+
+单元测试:
+  stage: 单元测试
+  script: mvn -B test && mvn -B jacoco:report jacoco:report-integration jacoco:report-aggregate
+  only:
+    refs:
+      - /feature_.*/
+  dependencies:
+    - 基础编译
+  artifacts:
+    paths:
+      - target/
+
+代码扫描:
+  stage: 代码扫描
+  script: mvn -B sonar:sonar
+  after_script: [echo " <=== sonar success ===> "]
+  only:
+    refs:
+      - /feature_.*/
+  when: manual
+  dependencies:
+    - 基础编译
+  artifacts:
+    paths:
+      - target/
+
+预编译构建:
+  stage: 预编译构建
+  script: mvn -B compile
+  only:
+    - develop
+
+dev打包:
+  stage: dev打包
+  script: mvn -B clean && mvn -B package -Dmaven.test.skip=true -Pdev
+  after_script: [
+    echo " <===  dev package over ===> ",
+    rm -rf /home/gitlab-runner/targets/dev/*,
+    cp target/hrs-backend.war /home/gitlab-runner/targets/dev/
+  ]
+  dependencies:
+    - 预编译构建
+  artifacts:
+    paths:
+      - target/
+  only:
+      refs:
+        - /feature_.*/
+  when: manual
+
+test打包:
+  stage: test打包
+  script: mvn -B clean && mvn -B package -Dmaven.test.skip=true -Psit
+  after_script: [
+    echo " <===  ceshi package over ===> ",
+    rm -rf /home/gitlab-runner/targets/ceshi/*,
+    cp target/hrs-backend.war /home/gitlab-runner/targets/ceshi/
+  ]
+  dependencies:
+    - 预编译构建
+  artifacts:
+    paths:
+      - target/
+  only:
+    - develop
+
+发布dev:
+  stage: 发布dev
+  script: 'chmod +x ./deploy-easyops.sh && ./deploy-easyops.sh 551b080a437cf3fbe303d8c8e06e1127 $CI_COMMIT_TAG'
+  dependencies:
+    - dev打包
+  only:
+    refs:
+      - /.*_feature_newfixbug_.*$/ #暂使用包含feature_newfixbug的标签
+    variables:
+      - $CI_TRIGGERED_BY_PM=='true'
+
+发布test:
+  stage: 发布test
+  script: 'chmod +x ./deploy-easyops.sh && ./deploy-easyops.sh 423f0a640dc4799658b8b2e34ea5efd8 $CI_COMMIT_TAG'
+  dependencies:
+    - test打包
+  only:
+    refs:
+      - /.*_develop_.*$/ #使用包含develop的标签
+    variables:
+      - $CI_TRIGGERED_BY_PM=='true'
